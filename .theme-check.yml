@@ -1,0 +1,21 @@
+MatchingTranslations:
+  enabled: false
+
+UndefinedObject:
+  enabled: true
+  exclude_snippets: true
+
+NestedSnippet:
+  enabled: false
+
+TemplateLength:
+  enabled: false
+
+LiquidTag:
+  enabled: false
+
+SchemaJsonFormat:
+  enabled: false
+
+ignore:
+  - node_modules/**/*
