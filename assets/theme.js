@@ -3444,7 +3444,7 @@ class SecondaryMedia extends HTMLElement {
       this.carousel = new Flickity(this, {
         accessibility: false,
         draggable: false,
-        pageDots: true,
+        pageDots: false,
         prevNextButtons: false,
         wrapAround: true,
         rightToLeft: theme.config.rtl,
