@@ -440,7 +440,7 @@
         "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-center",
         "heading_tag": "h2",
-        "button_label": "See More",
+        "button_label": "",
         "button_link": "",
         "button_icon": true,
         "color_text": "",
