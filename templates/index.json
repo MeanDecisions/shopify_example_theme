@@ -431,6 +431,24 @@
         "rounded": false
       }
     },
+    "reveal_image_with_text_7CLX96": {
+      "type": "reveal-image-with-text",
+      "settings": {
+        "image": "shopify://shop_images/Webtest_47f18f72-0f36-443e-89e0-5db6a089753a.png",
+        "content_width": "medium",
+        "heading": "Forum Sofa by Robin Day",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-center",
+        "heading_tag": "h2",
+        "button_label": "See More",
+        "button_link": "",
+        "button_icon": true,
+        "color_text": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": ""
+      }
+    },
     "video-with-text-overlay": {
       "type": "video-with-text-overlay",
       "blocks": {
@@ -472,6 +490,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/Forum.mp4",
@@ -1373,6 +1392,7 @@
     "image-comparison",
     "image_with_text_overlay_9tf9wj",
     "product_bundle_tj3Vfp",
+    "reveal_image_with_text_7CLX96",
     "video-with-text-overlay",
     "rich_text_Cf9jGA",
     "featured-product",
