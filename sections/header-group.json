@@ -11,84 +11,6 @@
   "type": "header",
   "name": "t:sections.header-group.name",
   "sections": {
-    "slideshow_hero_RmGajD": {
-      "type": "slideshow-hero",
-      "blocks": {
-        "video_JRpaq6": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Case_Collection_Video_1920x1080.mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "video_url_mobile": "",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
-        },
-        "image_hnYRaU": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
-            "heading": "Lighting",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "Explore Now",
-            "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
-        },
-        "image_aLpGwM": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
-            "heading": "Ella Swivel Armchair",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
-        }
-      },
-      "block_order": [
-        "video_JRpaq6",
-        "image_hnYRaU",
-        "image_aLpGwM"
-      ],
-      "disabled": true,
-      "settings": {
-        "logo": "shopify://shop_images/Logo_34692c66-9172-4190-b44f-8ea1e8abee51.svg",
-        "logo_width": 1000,
-        "autoplay": true,
-        "autoplay_speed": 3,
-        "show_navigation": true,
-        "image_height": "100vh",
-        "content_width": "small",
-        "image_height_mobile": "auto",
-        "color_text": "#ffffff",
-        "color_background": "#ffffff",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "only_homepage": true,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -453,11 +375,88 @@
         "full_width": true,
         "rounded": false
       }
+    },
+    "slideshow_hero_RmGajD": {
+      "type": "slideshow-hero",
+      "blocks": {
+        "video_JRpaq6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Case_Collection_Video_1920x1080.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": false,
+            "button_secondary_style": false
+          }
+        },
+        "image_hnYRaU": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
+            "heading": "Lighting",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Explore Now",
+            "button_link": "",
+            "button_icon": false,
+            "button_secondary_style": false
+          }
+        },
+        "image_aLpGwM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
+            "heading": "Ella Swivel Armchair",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": false,
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "video_JRpaq6",
+        "image_hnYRaU",
+        "image_aLpGwM"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/Logo_34692c66-9172-4190-b44f-8ea1e8abee51.svg",
+        "logo_width": 1000,
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "100vh",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "only_homepage": true,
+        "divider": false,
+        "rounded": false
+      }
     }
   },
   "order": [
-    "slideshow_hero_RmGajD",
     "announcement-bar",
-    "header"
+    "header",
+    "slideshow_hero_RmGajD"
   ]
 }
