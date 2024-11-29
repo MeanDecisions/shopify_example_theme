@@ -136,6 +136,32 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "all",
+            "image": "shopify://shop_images/IMG_2999.jpg",
+            "title": "All products",
+            "description": "Check out all our products",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_jAyYh8": {
+          "type": "collection",
+          "settings": {
+            "collection": "benches",
+            "image": "shopify://shop_images/20241015_CASE_675-Detail.jpg",
+            "title": "675 Chair",
+            "description": "by Matthew Hilton",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "collection-3": {
           "type": "collection",
           "settings": {
@@ -156,32 +182,6 @@
             "image": "shopify://shop_images/Frame_1.png",
             "title": "Accessories",
             "description": "Collection description",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "all",
-            "image": "shopify://shop_images/IMG_2999.jpg",
-            "title": "All products",
-            "description": "Check out all our products",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_jAyYh8": {
-          "type": "collection",
-          "settings": {
-            "collection": "benches",
-            "image": "shopify://shop_images/Untitled_design_195.jpg",
-            "title": "Ella Lounge Chair",
-            "description": "by Matthew Hilton",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -216,10 +216,10 @@
         }
       },
       "block_order": [
-        "collection-3",
-        "collection-4",
         "collection-1",
         "collection_jAyYh8",
+        "collection-3",
+        "collection-4",
         "collection-2",
         "collection_yidcCV"
       ],
