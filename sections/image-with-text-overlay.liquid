@@ -1,6 +1,3 @@
-{% assign banner_button_url = collection.metafields.custom.dynamic_banner_button_url %}
-
-
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
@@ -125,7 +122,7 @@
                     
                   {%- when 'button' -%}
                     {%- if block.settings.button_label != blank -%}
-                      <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--fixed button--{{ block.settings.button_size }} icon-with-text" href="{{ banner_button_url.value.url }}" is="hover-link" {{ block.shopify_attributes }}>
+                      <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--fixed button--{{ block.settings.button_size }} icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link" {{ block.shopify_attributes }}>
                         <span class="btn-fill" data-fill></span>
                         <span class="btn-text">
                           {%- liquid
