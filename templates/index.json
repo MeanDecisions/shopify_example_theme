@@ -140,9 +140,9 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "all",
-            "image": "shopify://shop_images/IMG_2999.jpg",
-            "title": "All products",
+            "collection": "living-room-furniture",
+            "image": "shopify://shop_images/20241015_CASE_Lucent.jpg",
+            "title": "Living Room",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -176,24 +176,11 @@
             "overlay_opacity": 0
           }
         },
-        "collection-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "dining-accessories",
-            "image": "shopify://shop_images/Frame_1.png",
-            "title": "Accessories",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "collection-2": {
           "type": "collection",
           "settings": {
             "collection": "dining-tables",
-            "image": "shopify://shop_images/Frame_2.png",
+            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
             "title": "Lighting",
             "description": "",
             "overlay_content": true,
@@ -206,8 +193,21 @@
           "type": "collection",
           "settings": {
             "collection": "living-room-furniture",
-            "image": "shopify://shop_images/20241015_CASE_Linn-Sofa-_-Accessories_Landscape.jpg",
-            "title": "Living Room",
+            "image": "shopify://shop_images/20241015_CASE_Landscape-of-full-collection.jpg",
+            "title": "Bedroom",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-accessories",
+            "image": "shopify://shop_images/Frame_1.png",
+            "title": "Accessories",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -220,9 +220,9 @@
         "collection-1",
         "collection_jAyYh8",
         "collection-3",
-        "collection-4",
         "collection-2",
-        "collection_yidcCV"
+        "collection_yidcCV",
+        "collection-4"
       ],
       "settings": {
         "columns": 3,
