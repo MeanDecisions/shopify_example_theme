@@ -435,6 +435,7 @@
       "type": "reveal-image-with-text",
       "settings": {
         "image": "shopify://shop_images/Webtest_c48bb5be-588b-4ae2-8311-c3a6411eb084.png",
+        "image_mobile": "shopify://shop_images/webtest_mobile_d6241bd1-922d-40a5-ba60-590ddebb4b37.png",
         "content_width": "medium",
         "heading": "Forum Sofa by Robin Day",
         "heading_size": "title-xl tracking-heading",
