@@ -842,7 +842,7 @@
       "settings": {
         "product_limit": 6,
         "columns": 4,
-        "carousel_on_desktop": true,
+        "carousel_on_desktop": false,
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
