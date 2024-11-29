@@ -840,13 +840,22 @@
             "products": [],
             "title": "Textiles"
           }
+        },
+        "collection_6faLtG": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "products": [],
+            "title": "Home Accessories"
+          }
         }
       },
       "block_order": [
         "collection-1",
         "collection_zMtNVL",
         "collection-3",
-        "collection-2"
+        "collection-2",
+        "collection_6faLtG"
       ],
       "settings": {
         "product_limit": 6,
