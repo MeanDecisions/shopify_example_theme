@@ -778,6 +778,7 @@
         "text_NJBwNr",
         "button_HfKG8X"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Terence_Woodgate_Solid_Table_Light_Small_Serpentine_Green_Bedside2_ON.jpg",
         "image_2": "shopify://shop_images/Case_Furniture___Soft_-02.jpg",
@@ -1403,8 +1404,8 @@
     "images_with_text_KqgRqB",
     "scrolling-text-1",
     "countdown-timer",
-    "shop-the-look",
     "reveal_image_with_text_overlay_7WVaNB",
+    "shop-the-look",
     "testimonials-banner",
     "featured-collections",
     "collection_list_rFNr7H",
