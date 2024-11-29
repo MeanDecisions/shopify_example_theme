@@ -427,6 +427,7 @@
     },
     "product_bundle_tj3Vfp": {
       "type": "product-bundle",
+      "disabled": true,
       "settings": {
         "collection": "living-room-furniture",
         "products": [],
@@ -730,6 +731,7 @@
     },
     "empty_space_Mty7jL": {
       "type": "empty-space",
+      "disabled": true,
       "settings": {
         "desktop_height": 100,
         "mobile_height": 28,
@@ -803,118 +805,67 @@
         "enable_parallax": true
       }
     },
-    "scrolling-text-1": {
-      "type": "scrolling-text",
+    "featured-collections": {
+      "type": "featured-collections",
       "blocks": {
-        "text": {
-          "type": "text",
+        "collection-1": {
+          "type": "collection",
           "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
-            "text_size": 160,
-            "text_font": "body",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
+            "collection": "armchairs",
+            "products": [],
+            "title": "Armchairs"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "charlotte-lancelot",
+            "products": [],
+            "title": "Textiles"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "beds",
+            "products": [],
+            "title": "Beds"
           }
         }
       },
       "block_order": [
-        "text"
+        "collection-1",
+        "collection-2",
+        "collection-3"
       ],
-      "disabled": true,
       "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Best Sellers",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
-        "padding_top": 120,
-        "padding_bottom": 120,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "countdown-timer": {
-      "type": "countdown-timer",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Countdown timer</p>",
-            "text_size": "subtext-custom",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "spacing": {
-          "type": "spacing",
-          "settings": {
-            "height": 24,
-            "height_mobile": 16
-          }
-        },
-        "timer": {
-          "type": "timer",
-          "settings": {
-            "year": "2025",
-            "month": "01",
-            "day": "1",
-            "hour": "03",
-            "minute": "00",
-            "text_font": "heading",
-            "text_size": "title-lg tracking-heading",
-            "message": ""
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Discover sales",
-            "button_link": "",
-            "button_size": "md",
-            "button_icon": true,
-            "button_secondary_style": true
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "spacing",
-        "timer",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image_height": "750px",
-        "content_width": "medium",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "image_height_mobile": "500px",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_highlight": "#fcd34d",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
+        "color_button_text": "",
+        "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 30,
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "divider": false,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
+        "full_width": false,
+        "rounded": false
       }
     },
     "reveal_image_with_text_overlay_7WVaNB": {
@@ -1119,69 +1070,6 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "armchairs",
-            "products": [],
-            "title": "Armchairs"
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "charlotte-lancelot",
-            "products": [],
-            "title": "Textiles"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "beds",
-            "products": [],
-            "title": "Beds"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "settings": {
-        "product_limit": 6,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Best Sellers",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#f9f9f3",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "collection_list_rFNr7H": {
@@ -1402,12 +1290,10 @@
     "featured-product",
     "empty_space_Mty7jL",
     "images_with_text_KqgRqB",
-    "scrolling-text-1",
-    "countdown-timer",
+    "featured-collections",
     "reveal_image_with_text_overlay_7WVaNB",
     "shop-the-look",
     "testimonials-banner",
-    "featured-collections",
     "collection_list_rFNr7H",
     "scrolling-text-2",
     "blog-posts-collage"
