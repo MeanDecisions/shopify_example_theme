@@ -931,7 +931,7 @@
         "heading_pYyeKQ": {
           "type": "heading",
           "settings": {
-            "heading": "Eos Outdoor Collection",
+            "heading": "Dining Room Furniture",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -941,7 +941,7 @@
         "text_FtnRrF": {
           "type": "text",
           "settings": {
-            "text": "<p>Our award winning Eos collection, designed by Matthew Hilton</p>",
+            "text": "<p>Design your perfect dining space.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -965,7 +965,7 @@
         "link_GAUezm"
       ],
       "settings": {
-        "image": "shopify://shop_images/S06.jpg",
+        "image": "shopify://shop_images/20241015_CASE_Cross-Round-Table_Landscape.jpg",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
