@@ -205,10 +205,10 @@
         "collection_yidcCV": {
           "type": "collection",
           "settings": {
-            "collection": "bestsellers",
-            "image": "shopify://shop_images/S16.jpg",
-            "title": "",
-            "description": "Our most bought products",
+            "collection": "living-room-furniture",
+            "image": "shopify://shop_images/20241015_CASE_Linn-Sofa-_-Accessories_Landscape.jpg",
+            "title": "Living Room",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
