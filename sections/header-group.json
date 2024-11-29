@@ -32,7 +32,6 @@
         },
         "image_hnYRaU": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
             "heading": "Lighting",
@@ -46,7 +45,6 @@
         },
         "image_aLpGwM": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
             "heading": "Ella Swivel Armchair",
@@ -65,11 +63,12 @@
         "image_aLpGwM"
       ],
       "settings": {
-        "logo_width": 1600,
+        "logo": "shopify://shop_images/Artboard_1.png",
+        "logo_width": 2000,
         "autoplay": true,
         "autoplay_speed": 3,
         "show_navigation": true,
-        "image_height": "750px",
+        "image_height": "100vh",
         "content_width": "small",
         "image_height_mobile": "auto",
         "color_text": "#ffffff",
