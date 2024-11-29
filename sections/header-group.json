@@ -11,6 +11,57 @@
   "type": "header",
   "name": "t:sections.header-group.name",
   "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping and returns",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "icon": "email",
+            "text": "A question? Visit our contact page",
+            "link": "shopify://pages/contact-us",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "announcement-2"
+      ],
+      "settings": {
+        "show_social": false,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "invert_icons_selectors": false,
+        "announcement_position": "center",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "color_text": "#fafafa",
+        "color_background": "#265874",
+        "gradient_background": "",
+        "color_highlight": "#ffddbf",
+        "gradient_highlight": "",
+        "hide_homepage": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -398,62 +449,11 @@
         "divider": false,
         "rounded": false
       }
-    },
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "icon": "truck",
-            "text": "Free shipping and returns",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "icon": "email",
-            "text": "A question? Visit our contact page",
-            "link": "shopify://pages/contact-us",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "announcement-1",
-        "announcement-2"
-      ],
-      "settings": {
-        "show_social": false,
-        "enable_language_selector": true,
-        "enable_country_selector": true,
-        "invert_icons_selectors": false,
-        "announcement_position": "center",
-        "autoplay": true,
-        "autoplay_speed": 5,
-        "show_navigation": false,
-        "color_text": "#fafafa",
-        "color_background": "#265874",
-        "gradient_background": "",
-        "color_highlight": "#ffddbf",
-        "gradient_highlight": "",
-        "hide_homepage": false,
-        "full_width": true,
-        "rounded": false
-      }
     }
   },
   "order": [
-    "header",
+    "announcement-bar",
     "slideshow_hero_RmGajD",
-    "announcement-bar"
+    "header"
   ]
 }
