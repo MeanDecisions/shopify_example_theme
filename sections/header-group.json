@@ -382,14 +382,14 @@
         "video_JRpaq6": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Comp 1.mp4",
+            "video": "shopify://files/videos/Eos3.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "video_url_mobile": "",
-            "heading": "",
+            "heading": "Eos Outdoor Collection",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "button_label": "",
+            "button_label": "Explore Now",
             "button_link": "",
             "button_icon": false,
             "button_secondary_style": false
