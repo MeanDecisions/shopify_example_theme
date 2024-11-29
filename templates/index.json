@@ -477,9 +477,9 @@
         "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-center",
         "heading_tag": "h2",
-        "button_label": "",
+        "button_label": "See Options",
         "button_link": "",
-        "button_icon": true,
+        "button_icon": false,
         "color_text": "",
         "color_button_text": "",
         "color_button_background": "",
@@ -708,6 +708,7 @@
         "read_more",
         "spinning_text"
       ],
+      "disabled": true,
       "settings": {
         "product": "forum-3-seater-sofa",
         "enable_sticky_info": true,
