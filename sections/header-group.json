@@ -17,10 +17,11 @@
         "image_hnYRaU": {
           "type": "image",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
+            "heading": "Lighting",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "button_label": "",
+            "button_label": "Explore Now",
             "button_link": "",
             "button_icon": false,
             "button_secondary_style": false
@@ -37,18 +38,35 @@
             "button_icon": false,
             "button_secondary_style": false
           }
+        },
+        "video_JRpaq6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Eos3.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "Eos Outdoor Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_icon": false,
+            "button_secondary_style": false
+          }
         }
       },
       "block_order": [
         "image_hnYRaU",
-        "image_aLpGwM"
+        "image_aLpGwM",
+        "video_JRpaq6"
       ],
       "settings": {
         "logo_width": 1600,
         "autoplay": false,
         "autoplay_speed": 5,
         "show_navigation": true,
-        "image_height": "650px",
+        "image_height": "100vh",
         "content_width": "small",
         "image_height_mobile": "auto",
         "color_text": "#ffffff",
