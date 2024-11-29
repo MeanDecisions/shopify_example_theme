@@ -817,12 +817,12 @@
             "title": "Armchairs"
           }
         },
-        "collection-2": {
+        "collection_zMtNVL": {
           "type": "collection",
           "settings": {
-            "collection": "charlotte-lancelot",
+            "collection": "dining-tables",
             "products": [],
-            "title": "Textiles"
+            "title": "Dining Tables"
           }
         },
         "collection-3": {
@@ -832,12 +832,21 @@
             "products": [],
             "title": "Beds"
           }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "charlotte-lancelot",
+            "products": [],
+            "title": "Textiles"
+          }
         }
       },
       "block_order": [
         "collection-1",
-        "collection-2",
-        "collection-3"
+        "collection_zMtNVL",
+        "collection-3",
+        "collection-2"
       ],
       "settings": {
         "product_limit": 6,
