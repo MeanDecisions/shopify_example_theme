@@ -14,6 +14,22 @@
     "slideshow_hero_RmGajD": {
       "type": "slideshow-hero",
       "blocks": {
+        "video_JRpaq6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Eos3.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "Eos Outdoor Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_icon": false,
+            "button_secondary_style": false
+          }
+        },
         "image_hnYRaU": {
           "type": "image",
           "settings": {
@@ -30,7 +46,8 @@
         "image_aLpGwM": {
           "type": "image",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
+            "heading": "Ella Swivel Armchair",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
@@ -38,33 +55,17 @@
             "button_icon": false,
             "button_secondary_style": false
           }
-        },
-        "video_JRpaq6": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Eos3.mp4",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "video_url_mobile": "",
-            "heading": "Eos Outdoor Furniture",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
         }
       },
       "block_order": [
+        "video_JRpaq6",
         "image_hnYRaU",
-        "image_aLpGwM",
-        "video_JRpaq6"
+        "image_aLpGwM"
       ],
       "settings": {
         "logo_width": 1600,
-        "autoplay": false,
-        "autoplay_speed": 5,
+        "autoplay": true,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "100vh",
         "content_width": "small",
