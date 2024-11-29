@@ -250,7 +250,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": true,
         "rounded": false
@@ -382,7 +382,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 20,
+        "padding_top": 0,
         "padding_bottom": 20,
         "divider": false,
         "full_width": true,
@@ -917,6 +917,71 @@
         "parallax_direction": "vertical"
       }
     },
+    "reveal_image_with_text_overlay_7WVaNB": {
+      "type": "reveal-image-with-text-overlay",
+      "blocks": {
+        "subheading_8WUDkb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "New Colours",
+            "subheading_size": "subtitle-sm",
+            "secondary_color": false
+          }
+        },
+        "heading_pYyeKQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Eos Outdoor Collection",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FtnRrF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our award winning Eos collection, designed by Matthew Hilton</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "link_GAUezm": {
+          "type": "link",
+          "settings": {
+            "label": "Text",
+            "link": "shopify://collections/eos-garden-furniture"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8WUDkb",
+        "heading_pYyeKQ",
+        "text_FtnRrF",
+        "link_GAUezm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/S06.jpg",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/Webheader.jpg",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0
+      }
+    },
     "shop-the-look": {
       "type": "shop-the-look",
       "blocks": {
@@ -987,71 +1052,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "reveal_image_with_text_overlay_7WVaNB": {
-      "type": "reveal-image-with-text-overlay",
-      "blocks": {
-        "subheading_8WUDkb": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "New Colours",
-            "subheading_size": "subtitle-sm",
-            "secondary_color": false
-          }
-        },
-        "heading_pYyeKQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Eos Outdoor Collection",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_FtnRrF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our award winning Eos collection, designed by Matthew Hilton</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "link_GAUezm": {
-          "type": "link",
-          "settings": {
-            "label": "Text",
-            "link": "shopify://collections/eos-garden-furniture"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_8WUDkb",
-        "heading_pYyeKQ",
-        "text_FtnRrF",
-        "link_GAUezm"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/S06.jpg",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/Webheader.jpg",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0
       }
     },
     "testimonials-banner": {
