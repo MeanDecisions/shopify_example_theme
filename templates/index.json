@@ -92,7 +92,7 @@
           "type": "text",
           "settings": {
             "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
-            "text_size": "subtext-lg",
+            "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
@@ -108,7 +108,7 @@
         "text_alignment": "left",
         "text_alignment_mobile": "left",
         "heading": "Design Without Compromise",
-        "heading_size": "title-lg tracking-heading",
+        "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
