@@ -200,7 +200,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 40,
+        "padding_top": 100,
         "padding_bottom": 40,
         "divider": false,
         "full_width": true,
@@ -1344,8 +1344,8 @@
   },
   "order": [
     "slideshow",
-    "collection-list",
     "rich-text",
+    "collection-list",
     "image-comparison",
     "featured_collection_QjKgKT",
     "image_with_text_overlay_9tf9wj",
