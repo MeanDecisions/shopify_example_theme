@@ -84,7 +84,7 @@
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": 0,
     "currency_code_enabled": false,
-    "swatch_config": "Black:3a3a3a3a",
+    "swatch_config": "",
     "swatch_image_tooltip": true,
     "product_image_ratio": "square",
     "product_image_fill": false,
