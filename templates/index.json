@@ -85,6 +85,55 @@
         "parallax_direction": "zoom"
       }
     },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Design Without Compromise",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "Our Story",
+        "button_link": "",
+        "button_icon": false,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#87874e",
+        "color_button_gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 20,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -204,55 +253,6 @@
         "padding_bottom": 40,
         "divider": false,
         "full_width": true,
-        "rounded": false
-      }
-    },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Design Without Compromise",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "Our Story",
-        "button_link": "",
-        "button_icon": false,
-        "highlighted_text": "text",
-        "highlighted_scribble": "circle",
-        "color_text": "rgba(0,0,0,0)",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "#87874e",
-        "color_button_gradient": "",
-        "padding_top": 60,
-        "padding_bottom": 20,
-        "divider": false,
-        "narrow": false,
         "rounded": false
       }
     },
@@ -482,7 +482,7 @@
         "button_icon": false,
         "color_text": "",
         "color_button_text": "",
-        "color_button_background": "#4d3011",
+        "color_button_background": "#87874e",
         "color_button_gradient": ""
       }
     },
