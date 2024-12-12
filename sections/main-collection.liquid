@@ -85,7 +85,7 @@ sticky-filters.is-sticky.scrolling-up {
 
       {%- if enable_filtering or enable_sorting or subcollections != blank -%}
         <sticky-filters class="collection__topbar">
-        <div class="collection__topbar hidden xl:flex items-center gap-4 sticky top-0">
+        <div class="collection__topbar hidden xl:flex items-center gap-4 sticky top-0" style="background: #fffffa"> 
           {%- if enable_filtering and collection.all_products_count > 0 -%}
             {%- if filter_type == 'drawer' -%}
               {%- render 'facets-drawer',

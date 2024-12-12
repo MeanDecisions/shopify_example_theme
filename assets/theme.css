@@ -14556,3 +14556,7 @@ lookbook-element .banner__box .title-wrapper {
     }
   }
 }
+
+.locale-selectors__container {
+  background: transparent !important;
+}
