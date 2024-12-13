@@ -284,41 +284,6 @@ sticky-filters.is-sticky.scrolling-up {
 </div>
 
 
-{% comment %} <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const topbar = document.querySelector('.collection__topbar');
-    const stickyOffset = topbar.offsetTop; 
-    let lastScrollTop = 0;
-
-    if (topbar) {
-        window.addEventListener('scroll', function () {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        
-            if (scrollTop >= stickyOffset) {
-                topbar.classList.add('is-sticky');
-
-             
-                if (scrollTop > lastScrollTop) {
-                   
-                    topbar.classList.add('scrolling-down');
-                    topbar.classList.remove('scrolling-up');
-                } else {
-             
-                    topbar.classList.add('scrolling-up');
-                    topbar.classList.remove('scrolling-down');
-                }
-            } else {
-              
-                topbar.classList.remove('is-sticky', 'scrolling-down', 'scrolling-up');
-            }
-
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
-        });
-    }
-});
-</script> {% endcomment %}
-
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
