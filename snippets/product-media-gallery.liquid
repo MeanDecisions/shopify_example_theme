@@ -12,6 +12,7 @@
   image_ratio
   image_ratio_mobile
   hide_variants
+  matching_variant_images
   enable_video_autoplay
   enable_video_looping
   first_3d_model
@@ -111,6 +112,8 @@
           {%- if gallery_layout == 'columns' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}
           {%- if gallery_layout == 'scroll' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}"
         >
+
+         
           {%- if featured_media != null -%}
             {%- render 'product-media',
               product: product,
@@ -132,8 +135,42 @@
             -%}
           {%- endif -%}
 
+          {%- if matching_variant_images -%} 
+
+          {% for variant in product.variants %}
+            {{ variant.metafields.variant.variant_images }}
+          {% endfor %}
+
+            {% comment %} {%- for media in product.media -%}
+        
+          
+            
+              
+                {%- render 'product-media',
+                  product: product,
+                  product_id: product_id,
+                  section_id: section_id,
+                  media: media,
+                  featured_media: featured_media,
+                  variant_images: variant_images,
+                  hide_variants: hide_variants,
+                  gallery_layout: gallery_layout,
+                  image_zoom: image_zoom,
+                  image_fill: image_fill,
+                  image_ratio: image_ratio,
+                  image_ratio_mobile: image_ratio_mobile,
+                  preload: false,
+                  sizes: sizes,
+                  autoplay: enable_video_autoplay,
+                  loop: enable_video_looping
+                -%}
+    
+            {%- endfor -%} {% endcomment %}
+        {% else %}
           {%- for media in product.media -%}
+          
             {%- if media.id != featured_media.id -%}
+            
               {%- render 'product-media',
                 product: product,
                 product_id: product_id,
@@ -154,6 +191,10 @@
               -%}
             {%- endif -%}
           {%- endfor -%}
+
+          {% endif %}
+
+          
         </div>
       </slider-element>
 
