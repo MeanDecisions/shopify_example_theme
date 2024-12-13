@@ -10,7 +10,7 @@ class StickyFilters extends HTMLElement {
 
 
         window.addEventListener('scroll', this.handleScroll);
-        console.log('imported')
+ 
     }
 
     disconnectedCallback() {
