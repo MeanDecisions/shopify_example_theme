@@ -505,9 +505,13 @@
                   {%- render 'icon', icon: 'plus-alt', size: 'xs', class: 'flex-auto' -%}
                 </summary>
                 <div class="details__content rte text-sm text-opacity">
-                  {{ block.settings.content }}
-                  {{ block.settings.page.content }}
-                  {{ block.settings.liquid }}
+                  {%- if block.settings.heading == 'Dimensions' -%}
+                    {%- render 'dimensions-drawer' -%}
+                  {%- else -%}
+                    {{ block.settings.content }}
+                    {{ block.settings.page.content }}
+                    {{ block.settings.liquid }}
+                  {%- endif -%}
                 </div>
               </details>
 

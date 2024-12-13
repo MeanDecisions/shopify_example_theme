@@ -90,7 +90,11 @@
               {%- when 'collapsible_tab' -%}
                 {%- capture collapsible_content -%}
                   {%- liquid
-                    if block.settings.content != blank
+                    if block.settings.heading == 'Dimensions'
+                      echo '<div class="col-span-full">'
+                      render 'dimensions-drawer'
+                      echo '</div>'
+                    elsif block.settings.content != blank
                       assign metafield_content = block.settings.content
   
                       if metafield_content contains '<h6>'

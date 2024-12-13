@@ -1,0 +1,23 @@
+<div class="dimensions-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+  <div class="dimensions-info">
+    {% assign titles = product.metafields.dimensions.titles | split: ',' %}
+    {% assign values = product.metafields.dimension.values-1 | split: ',' %}
+    
+    {% for title in titles %}
+      <div class="dimension-row">
+        <span class="dimension-title">{{ title | strip }}:</span>
+        <span class="dimension-value">{{ values[forloop.index0] | strip }}</span>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="dimensions-image">
+    {% comment %} {{ product.metafields.dimensions.product-dimensions-image }} {% endcomment %}
+    <img src="{{ product.metafields.dimensions.product-dimensions-image }}" alt="Product Dimensions" width="80%" height="80%" class="product-dimensions-image">
+        
+  
+  </div>
+</div>
+
+
+
