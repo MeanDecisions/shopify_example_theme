@@ -115,6 +115,8 @@
                 </p>
               {%- endif -%}
 
+           
+
             {%- when 'sku' -%}
               <p class="product__sku" id="Sku-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
                 {{- product.selected_or_first_available_variant.sku -}}
@@ -123,6 +125,11 @@
             {%- when 'description' -%}
               <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{- product.description -}}
+              </div>
+
+            {%- when 'short_description' -%}
+              <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+         {{product.metafields.product.seo_short_description}} <a href="#product-details" class="see-details">See Details</a>
               </div>
             
             {%- when 'title' -%}
@@ -1425,6 +1432,37 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "text-sm",
+              "label": "t:sections.global.settings.text_size.options__1.label"
+            },
+            {
+              "value": "text-base",
+              "label": "t:sections.global.settings.text_size.options__2.label"
+            },
+            {
+              "value": "text-base lg:text-lg",
+              "label": "t:sections.global.settings.text_size.options__3.label"
+            },
+            {
+              "value": "text-base lg:text-xl",
+              "label": "t:sections.global.settings.text_size.options__4.label"
+            }
+          ],
+          "default": "text-base",
+          "label": "t:sections.global.settings.text_size.label"
+        }
+      ]
+    },
+    {
+      "type": "short_description",
+      "name": "Short Description",
       "limit": 1,
       "settings": [
         {

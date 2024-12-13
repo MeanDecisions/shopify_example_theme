@@ -14560,3 +14560,22 @@ lookbook-element .banner__box .title-wrapper {
 .locale-selectors__container {
   background: transparent !important;
 }
+
+
+.see-details {
+  color: #000;
+  text-decoration: underline;
+}
+
+.accordion-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion-description {
+    width: 100%;
+  }
+}
