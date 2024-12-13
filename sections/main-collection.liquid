@@ -1,8 +1,43 @@
+<script src="{{ 'sticky-filters.js' | asset_url }}"></script> 
+
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+
+
+.collection__topbar {
+  z-index: 9;
+  background: white;
+  padding-bottom: 10px;
+}
+
+sticky-filters {
+  display: block; 
+  z-index: 9;
+  background: white;
+  padding-top: 88px; 
+  padding-bottom: 10px;
+  transition: padding 0.3s ease; 
+}
+
+
+sticky-filters.is-sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+sticky-filters.is-sticky.scrolling-down {
+  padding-top: 10px;
+}
+
+sticky-filters.is-sticky.scrolling-up {
+  padding-top: 88px;
+}
+
+
 </style>
 
 <script src="{{ 'collection.js' | asset_url }}" defer></script>
@@ -49,7 +84,8 @@
       {%- endif -%}
 
       {%- if enable_filtering or enable_sorting or subcollections != blank -%}
-        <div class="collection__topbar hidden xl:flex items-center gap-4">
+        <sticky-filters class="collection__topbar">
+        <div class="collection__topbar hidden xl:flex items-center gap-4 sticky top-0" style="background: #fffffa"> 
           {%- if enable_filtering and collection.all_products_count > 0 -%}
             {%- if filter_type == 'drawer' -%}
               {%- render 'facets-drawer',
@@ -140,6 +176,7 @@
             </div>
           {%- endif -%}
         </div>
+        </sticky-filters>
       {%- endif -%}
 
       {%- liquid
@@ -245,6 +282,7 @@
     {%- endpaginate -%}
   </div>
 </div>
+
 
 <script type="application/ld+json">
 {

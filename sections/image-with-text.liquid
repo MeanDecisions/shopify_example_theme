@@ -1,3 +1,5 @@
+<script src="{{ 'read-more.js' | asset_url }}"></script> 
+
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
@@ -16,6 +18,13 @@
       }
     }
   {% endif -%}
+
+  .text-container {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
 </style>
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
@@ -95,9 +104,14 @@
     
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}
+                  <read-more data-max-lines="3">
                   <div class="rte leading-normal {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.secondary_color %} text-opacity{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size:{{ block.settings.text_max_size }}px;"{% endif %} {{ block.shopify_attributes }}>
-                    {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
+                    <div class="text-container">
+                      {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
+                    </div>
+                    <button class="read-more-toggle font-bold" style="display: none;">Read More</button>
                   </div>
+                  </read-more>
                 {%- endif -%}
 
               {%- when 'icon' -%}
@@ -167,6 +181,8 @@
     </div>
   </div>
 </div>
+
+
 
 {% schema %}
 {
