@@ -111,9 +111,9 @@
           class="product__media-list flex gap-1
           {%- if gallery_layout == 'columns' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}
           {%- if gallery_layout == 'scroll' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}"
+           id="VariantMetafield-{{ section.id }}-{{ product.id }}"
         >
-
-         
+          
           {%- if featured_media != null -%}
             {%- render 'product-media',
               product: product,
@@ -123,6 +123,7 @@
               featured_media: featured_media,
               variant_images: variant_images,
               hide_variants: hide_variants,
+              matching_variant_images: matching_variant_images,
               gallery_layout: gallery_layout,
               image_zoom: image_zoom,
               image_fill: image_fill,
@@ -134,23 +135,20 @@
               loop: enable_video_looping
             -%}
           {%- endif -%}
-
-          {%- if matching_variant_images -%} 
-
-          {% for variant in product.variants %}
-            {{ variant.metafields.variant.variant_images }}
-          {% endfor %}
-
-            {% comment %} {%- for media in product.media -%}
-        
-          
-            
-              
+     {% comment %} custom variant images powered by metafield {% endcomment %}
+         {% if matching_variant_images %}
+          {%- if media.id != featured_media.id -%}
+         
+       
+            {% comment %} <div id="VariantMetafield-{{ section.id }}-{{ product.id }}"> {% endcomment %}
+              {% assign variant_images = product.selected_or_first_available_variant.metafields.variant.variant_images.value %}
+              {% for image in variant_images %}
+{% comment %} metafield images here {% endcomment %}
                 {%- render 'product-media',
                   product: product,
                   product_id: product_id,
                   section_id: section_id,
-                  media: media,
+                  media: image,
                   featured_media: featured_media,
                   variant_images: variant_images,
                   hide_variants: hide_variants,
@@ -164,13 +162,16 @@
                   autoplay: enable_video_autoplay,
                   loop: enable_video_looping
                 -%}
-    
-            {%- endfor -%} {% endcomment %}
-        {% else %}
-          {%- for media in product.media -%}
-          
-            {%- if media.id != featured_media.id -%}
+              {% endfor %}
+            {% comment %} </div> {% endcomment %}
             
+          
+          {%- endif -%}
+          
+        {% else %}
+           {% comment %} built in theme variant images not powered by metafield {% endcomment %}
+          {%- for media in product.media -%}
+            {%- if media.id != featured_media.id -%}
               {%- render 'product-media',
                 product: product,
                 product_id: product_id,
@@ -191,10 +192,7 @@
               -%}
             {%- endif -%}
           {%- endfor -%}
-
-          {% endif %}
-
-          
+        {% endif %}
         </div>
       </slider-element>
 

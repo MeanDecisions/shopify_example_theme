@@ -59,6 +59,8 @@
   <script src="{{ 'volume-pricing.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
+
+
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if media_count > 0 %}{% if section.settings.full_width %} page-width--full{% endif %}{% else %} page-width--narrow{% endif %} relative">
     <div class="featured-product product product--{{ section.settings.gallery_layout }}{% if media_count == 0 %} no-media{% endif %} flex flex-col items-start lg:grid gap-5 w-full relative">
@@ -76,6 +78,7 @@
           mobile_layout: section.settings.mobile_layout,
           mobile_thumbnail: section.settings.mobile_thumbnail,
           hide_variants: section.settings.hide_variants,
+          matching_variant_images: section.settings.matching_variant_images,
           enable_video_autoplay: section.settings.enable_video_autoplay,
           matching_variant_images: section.settings.matching_variant_images,
           enable_video_looping: section.settings.enable_video_looping,
@@ -950,8 +953,8 @@
       "type": "checkbox",
       "id": "matching_variant_images",
       "default": false,
-      "label": "Only show matching variant imgages",
-      "info": "Shows only the images that match the variant selected"
+      "label": "Only show matching metafield images",
+      "info": "Shows only the images that match the variant selected from the metafield"
     },
     {
       "type": "checkbox",

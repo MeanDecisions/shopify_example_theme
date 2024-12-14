@@ -4555,12 +4555,14 @@ class ProductInfo extends HTMLElement {
       const updateSourceFromDestination = (id) => {
         const source = parsedHTML.getElementById(`${id}-${this.sectionId}-${this.productId}`);
         const destination = document.querySelector(`#${id}-${this.sectionId}-${this.productId}`);
+        console.log('Updating', id, {source, destination}); // Add this line
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
         }
       };
-
+      updateSourceFromDestination('VariantMetafield');
+      updateSourceFromDestination('VariantTitle');
       updateSourceFromDestination('Price');
       updateSourceFromDestination('StickyPrice');
       updateSourceFromDestination('Sku');
