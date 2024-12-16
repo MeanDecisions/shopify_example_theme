@@ -296,19 +296,6 @@
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "collection_HVrhni": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/studio-small-designer-profile.jpg",
-            "title": "Studio Small",
-            "description": "",
-            "overlay_content": false,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
@@ -327,8 +314,7 @@
         "collection_fPkFU4",
         "collection_8CdWXi",
         "collection_hJjyqc",
-        "collection_wn4339",
-        "collection_HVrhni"
+        "collection_wn4339"
       ],
       "settings": {
         "columns": 5,
