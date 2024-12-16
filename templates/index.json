@@ -730,15 +730,6 @@
         "rounded": false
       }
     },
-    "empty_space_Mty7jL": {
-      "type": "empty-space",
-      "settings": {
-        "desktop_height": 100,
-        "mobile_height": 28,
-        "color_background": "",
-        "gradient_background": ""
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -1249,7 +1240,6 @@
     "video-with-text-overlay",
     "rich_text_Cf9jGA",
     "featured-product",
-    "empty_space_Mty7jL",
     "featured-collections",
     "reveal_image_with_text_overlay_7WVaNB",
     "shop-the-look",
