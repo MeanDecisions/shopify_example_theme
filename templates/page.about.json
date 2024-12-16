@@ -148,149 +148,12 @@
     },
     "empty_space_yNyFtC": {
       "type": "empty-space",
+      "disabled": true,
       "settings": {
         "desktop_height": 80,
         "mobile_height": 0,
         "color_background": "",
         "gradient_background": ""
-      }
-    },
-    "timeline": {
-      "type": "timeline",
-      "blocks": {
-        "content-1": {
-          "type": "content",
-          "settings": {
-            "subheading": "2015",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-2": {
-          "type": "content",
-          "settings": {
-            "subheading": "2017",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-3": {
-          "type": "content",
-          "settings": {
-            "subheading": "2018",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-4": {
-          "type": "content",
-          "settings": {
-            "subheading": "2019",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-5": {
-          "type": "content",
-          "settings": {
-            "subheading": "2021",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-6": {
-          "type": "content",
-          "settings": {
-            "subheading": "2022",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content-7": {
-          "type": "content",
-          "settings": {
-            "subheading": "2024",
-            "heading": "Image with text",
-            "heading_tag": "h2",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "content-1",
-        "content-2",
-        "content-3",
-        "content-4",
-        "content-5",
-        "content-6",
-        "content-7"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_ratio": "portrait",
-        "image_ratio_mobile": "wide",
-        "heading": "Our History",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#ffffff",
-        "color_background": "#444c48",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "rgba(0,0,0,0)",
-        "color_button_background": "rgba(0,0,0,0)",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
       }
     },
     "timeline_jM7XXf": {
@@ -299,10 +162,11 @@
         "content_wPrp3p": {
           "type": "content",
           "settings": {
-            "subheading": "Text",
+            "image": "shopify://shop_images/Aero1.webp",
+            "subheading": "2004",
             "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Case is founded by Paul Newman, Matthew Hilton and </p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -313,10 +177,10 @@
         "content_Cagjx9": {
           "type": "content",
           "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
+            "subheading": "2006",
+            "heading": "Case Launches",
             "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>The Profile Chair and Extending Table by Matthew Hilton are released.</p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -1074,7 +938,6 @@
     "image-with-text-overlay",
     "images-with-text",
     "empty_space_yNyFtC",
-    "timeline",
     "timeline_jM7XXf",
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
