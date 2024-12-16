@@ -29,6 +29,7 @@
       "blocks": {
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Twenty Years of Award Winning Design</p>",
             "text_size": "subtext-lg",
@@ -415,6 +416,66 @@
         "rounded": false
       }
     },
+    "rich_text_cEBa6E": {
+      "type": "rich-text",
+      "blocks": {
+        "text_z6LtbT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2004 – 2024</p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_tMbRQi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Twenty Years of Award-Winning Design",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_z6LtbT",
+        "heading_tMbRQi"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "image_with_text_Gjb7cG": {
       "type": "image-with-text",
       "blocks": {
@@ -422,7 +483,7 @@
           "type": "heading",
           "settings": {
             "heading": "Design Without Compromise",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -491,7 +552,7 @@
           "type": "heading",
           "settings": {
             "heading": "Working in Collaboration with the Industry’s Finest",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -560,7 +621,7 @@
           "type": "heading",
           "settings": {
             "heading": "Designed and Made To Last",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1006,6 +1067,7 @@
     "empty_space_yNyFtC",
     "timeline",
     "timeline_jM7XXf",
+    "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
     "image_with_text_7iirHd",
     "image_with_text_73V76m",
