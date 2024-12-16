@@ -28,6 +28,12 @@
             "show_rating": true
           }
         },
+        "short_description_3EVUrb": {
+          "type": "short_description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -112,6 +118,7 @@
       "block_order": [
         "vendor",
         "title",
+        "short_description_3EVUrb",
         "description",
         "countdown",
         "variant_picker",
@@ -130,7 +137,8 @@
         "thumbnail_position": "beside",
         "image_ratio": "adapt_first",
         "image_zoom": "lightbox",
-        "hide_variants": false,
+        "hide_variants": true,
+        "matching_variant_images": true,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width",
@@ -594,8 +602,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 1",
-            "content": "<p>Collapsible content 1</p>",
+            "heading": "Dimensions",
+            "content": "",
             "metafields": ""
           }
         },
