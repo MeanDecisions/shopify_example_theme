@@ -4024,6 +4024,12 @@ class SliderDots extends HTMLElement {
 
   reset() {
     this._items = Array.from(this.children);
+    this.resetIndexes();
+    
+    // Rebind click events
+    this.items.forEach((item) => {
+      item.addEventListener('click', this.onButtonClick.bind(this));
+    });
   }
 
   onChange(event) {
@@ -4559,9 +4565,18 @@ class ProductInfo extends HTMLElement {
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
+          
+          // If this is the thumbnails, reset the dots
+          if (id === 'VariantMetafieldThumbs') {
+            const mediaDots = destination.closest('media-dots');
+            if (mediaDots) {
+              mediaDots.reset();
+            }
+          }
         }
       };
       updateSourceFromDestination('VariantMetafield');
+      updateSourceFromDestination('VariantMetafieldThumbs');
       updateSourceFromDestination('VariantTitle');
       updateSourceFromDestination('Price');
       updateSourceFromDestination('StickyPrice');
@@ -4592,6 +4607,12 @@ class ProductInfo extends HTMLElement {
           variant: variant
         }
       }));
+
+      // Reset the slider after updating content
+      const slider = this.querySelector('slider-element');
+      if (slider) {
+        slider.reset();
+      }
     };
   }
 
@@ -5345,7 +5366,7 @@ customElements.define('media-hover-button', MediaHoverButton, { extends: 'button
 class MediaDots extends SliderDots {
   constructor() {
     super();
-
+    
     if (theme.config.isTouch) {
       new theme.initWhenVisible(this.resetIndexes.bind(this));
     }
@@ -5354,13 +5375,17 @@ class MediaDots extends SliderDots {
     }
   }
 
+  reset() {
+    super.reset(); // Call parent reset
+    this.resetIndexes();
+  }
+
   resetIndexes() {
     let newIndex = 1;
-
+    
     this.itemsToShow.forEach((item, index) => {
       item.setAttribute('data-index', newIndex);
       item.setAttribute('aria-current', index === 0 ? 'true' : 'false');
-
       newIndex++;
     });
   }
