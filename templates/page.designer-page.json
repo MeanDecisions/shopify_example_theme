@@ -60,7 +60,7 @@
         "text_alignment": "left",
         "text_alignment_mobile": "left",
         "heading": "Products by Designer",
-        "heading_size": "title-xl tracking-heading",
+        "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "large",
         "heading_tag": "h2",
@@ -96,7 +96,7 @@
             "image": "shopify://shop_images/mhilton22.jpg",
             "title": "Matthew Hilton",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -109,7 +109,7 @@
             "image": "shopify://shop_images/robin-day-designer-portrait_3.jpg",
             "title": "Robin Day",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -122,7 +122,7 @@
             "image": "shopify://shop_images/shin-azumi-designer-profile.jpg",
             "title": "Shin Azumi",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -135,7 +135,7 @@
             "image": "shopify://shop_images/terence-woodgate-square-1.jpg",
             "title": "Terence Woodgate",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -148,7 +148,7 @@
             "image": "shopify://shop_images/david-irwin-designer-profile.jpg",
             "title": "David Irwin",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -161,7 +161,7 @@
             "image": "shopify://shop_images/eleanor-pritchard-designer-profile.jpg",
             "title": "Eleanor Pritchard",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -174,7 +174,7 @@
             "image": "shopify://shop_images/gareth-neal-designer-profile.jpg",
             "title": "Gareth Neal",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -184,10 +184,10 @@
           "type": "collection",
           "settings": {
             "collection": "jenkins-uhnger-furniture",
-            "image": "shopify://shop_images/Jenkins-_-Uhnger.jpg",
+            "image": "shopify://shop_images/Screenshot_2022-11-29_150616.jpg",
             "title": "Jenkins & Uhnger",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -200,7 +200,7 @@
             "image": "shopify://shop_images/Charlotte_Lancelot-4.jpg",
             "title": "Charlotte Lancelot",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -213,7 +213,7 @@
             "image": "shopify://shop_images/patricia-perez-designer-profile.jpg",
             "title": "Patricia Perez",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -226,7 +226,7 @@
             "image": "shopify://shop_images/nazanin-kamali-designer-profile_68ef6e39-54b2-46a9-a12d-854132b01084.jpg",
             "title": "Nazanin Kamali",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -239,7 +239,7 @@
             "image": "shopify://shop_images/samuel-wilkinson-designer-profile.jpg",
             "title": "Samuel Wilkinson",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -252,7 +252,7 @@
             "image": "shopify://shop_images/brendon-farrell-designer-profile.jpg",
             "title": "Brendon Farrell",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -265,7 +265,7 @@
             "image": "shopify://shop_images/ann-kristin-einarsen-designer-profile_80d44675-00d5-4ae7-ad51-41725eae8096.jpg",
             "title": "Ann Kristin Einarsen",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -278,7 +278,7 @@
             "image": "shopify://shop_images/marina-bautier-designer-profile_e2a5b86f-d3aa-4417-b285-4424b694906d.jpg",
             "title": "Marina Bautier",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
@@ -291,7 +291,7 @@
             "image": "shopify://shop_images/sarah-henrik-bottger-designer-profile.jpg",
             "title": "Studio Böttger",
             "description": "",
-            "overlay_content": false,
+            "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 0
@@ -320,7 +320,7 @@
         "columns": 5,
         "carousel_on_desktop": false,
         "image_type": "collection",
-        "image_ratio": "portrait",
+        "image_ratio": "landscape",
         "show_products_count": true,
         "show_view_all": false,
         "columns_mobile": "2",
@@ -341,10 +341,10 @@
         "color_button_text": "rgba(0,0,0,0)",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "divider": true,
+        "full_width": false,
         "rounded": false
       }
     },
