@@ -139,10 +139,10 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "contemporary-sofas",
-            "image": "shopify://shop_images/S17-V2jpg.jpg",
-            "title": "Sofas",
-            "description": "Collection description",
+            "collection": "living-room-furniture",
+            "image": "shopify://shop_images/20241015_CASE_Lucent.jpg",
+            "title": "Living Room",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -152,10 +152,10 @@
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "dining-accessories",
-            "image": "shopify://shop_images/Frame_1.png",
-            "title": "Accessories",
-            "description": "Collection description",
+            "collection": "dining-chairs",
+            "image": "shopify://shop_images/20241015_CASE_675-Detail.jpg",
+            "title": "Chairs",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -165,10 +165,10 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "all",
-            "image": "shopify://shop_images/IMG_2999.jpg",
-            "title": "All products",
-            "description": "Check out all our products",
+            "collection": "sofas-armchairs",
+            "image": "shopify://shop_images/S17-V2jpg.jpg",
+            "title": "Sofas & Armchairs",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -178,10 +178,10 @@
         "collection_jAyYh8": {
           "type": "collection",
           "settings": {
-            "collection": "benches",
-            "image": "shopify://shop_images/Untitled_design_195.jpg",
-            "title": "Ella Lounge Chair",
-            "description": "by Matthew Hilton",
+            "collection": "lighting",
+            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
+            "title": "Lighting",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -192,9 +192,9 @@
           "type": "collection",
           "settings": {
             "collection": "dining-tables",
-            "image": "shopify://shop_images/Frame_2.png",
-            "title": "Lighting",
-            "description": "Collection description",
+            "image": "shopify://shop_images/20241015_CASE_Landscape-of-full-collection.jpg",
+            "title": "Bedroom",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -204,10 +204,10 @@
         "collection_yidcCV": {
           "type": "collection",
           "settings": {
-            "collection": "bestsellers",
-            "image": "shopify://shop_images/S16.jpg",
-            "title": "Bestsellers",
-            "description": "Our most bought products",
+            "collection": "dining-accessories",
+            "image": "shopify://shop_images/Accessories_a0fa1156-6f93-4eda-9cfe-0174a9b0e4eb.jpg",
+            "title": "Accessories",
+            "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -312,6 +312,40 @@
         "rounded": false
       }
     },
+    "featured_collection_QjKgKT": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "news-in",
+        "products": [],
+        "product_limit": 8,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "New Arrivals",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "image_with_text_overlay_9tf9wj": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -327,7 +361,7 @@
         "heading_zyLpxT": {
           "type": "heading",
           "settings": {
-            "heading": "Autumnal Living",
+            "heading": "Winter Living",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -349,7 +383,7 @@
         "button_BXHKRQ": {
           "type": "button",
           "settings": {
-            "button_label": "View Details",
+            "button_label": "View Our Selection",
             "button_link": "",
             "button_size": "sm",
             "button_icon": false,
@@ -392,6 +426,7 @@
     },
     "product_bundle_tj3Vfp": {
       "type": "product-bundle",
+      "disabled": true,
       "settings": {
         "collection": "living-room-furniture",
         "products": [],
@@ -429,6 +464,25 @@
         "divider": false,
         "full_width": true,
         "rounded": false
+      }
+    },
+    "reveal_image_with_text_9B8Dy6": {
+      "type": "reveal-image-with-text",
+      "settings": {
+        "image": "shopify://shop_images/Webtest3.png",
+        "image_mobile": "shopify://shop_images/webtest_mobile.png",
+        "content_width": "medium",
+        "heading": "Forum 3-Seater Sofa by Robin Day",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-center",
+        "heading_tag": "h2",
+        "button_label": "See All Forum Sofa Options",
+        "button_link": "",
+        "button_icon": false,
+        "color_text": "",
+        "color_button_text": "",
+        "color_button_background": "#87874e",
+        "color_button_gradient": ""
       }
     },
     "video-with-text-overlay": {
@@ -472,6 +526,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/Forum.mp4",
@@ -652,6 +707,7 @@
         "read_more",
         "spinning_text"
       ],
+      "disabled": true,
       "settings": {
         "product": "forum-2-seater-sofa",
         "enable_sticky_info": true,
@@ -682,18 +738,74 @@
         "gradient_background": ""
       }
     },
-    "featured_collection_QjKgKT": {
-      "type": "featured-collection",
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "armchairs",
+            "products": [],
+            "title": "Armchairs"
+          }
+        },
+        "collection_FLc4Xd": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-tables",
+            "products": [],
+            "title": "Dining Tables"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "charlotte-lancelot",
+            "products": [],
+            "title": "Textiles"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "beds",
+            "products": [],
+            "title": "Beds"
+          }
+        },
+        "collection_9xEYTR": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "products": [],
+            "title": "Home Accessories"
+          }
+        },
+        "collection_YxFT8p": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-furniture",
+            "products": [],
+            "title": "Outdoor Furniture"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection_FLc4Xd",
+        "collection-2",
+        "collection-3",
+        "collection_9xEYTR",
+        "collection_YxFT8p"
+      ],
       "settings": {
-        "collection": "news-in",
-        "products": [],
-        "product_limit": 8,
+        "product_limit": 6,
         "columns": 4,
         "carousel_on_desktop": true,
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "New Arrivals",
+        "heading": "Best Sellers",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -702,37 +814,45 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#f9f9f3",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "",
+        "color_button_background": "#265874",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "images_with_text_KqgRqB": {
-      "type": "images-with-text",
+    "reveal_image_with_text_overlay_7WVaNB": {
+      "type": "reveal-image-with-text-overlay",
       "blocks": {
-        "heading_E4HRAH": {
+        "subheading_8WUDkb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-sm",
+            "secondary_color": false
+          }
+        },
+        "heading_pYyeKQ": {
           "type": "heading",
           "settings": {
-            "heading": "Speak To Us",
-            "heading_size": "title-md",
+            "heading": "Dining Room Furniture",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "text_NJBwNr": {
+        "text_FtnRrF": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Design your perfect dining space.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -741,158 +861,36 @@
             "highlighted_scribble": "circle"
           }
         },
-        "button_HfKG8X": {
-          "type": "button",
+        "link_GAUezm": {
+          "type": "link",
           "settings": {
-            "button_label": "Get In Touch",
-            "button_link": "",
-            "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "label": "Explore Here",
+            "link": "shopify://collections/dining-room-furniture"
           }
         }
       },
       "block_order": [
-        "heading_E4HRAH",
-        "text_NJBwNr",
-        "button_HfKG8X"
+        "subheading_8WUDkb",
+        "heading_pYyeKQ",
+        "text_FtnRrF",
+        "link_GAUezm"
       ],
       "settings": {
-        "image": "shopify://shop_images/Terence_Woodgate_Solid_Table_Light_Small_Serpentine_Green_Bedside2_ON.jpg",
-        "image_2": "shopify://shop_images/Case_Furniture___Soft_-02.jpg",
-        "image_ratio": "portrait",
-        "image_width": "large",
-        "layout": "image_first",
+        "image": "shopify://shop_images/20241015_CASE_Cross-Round-Table_Landscape.jpg",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/Webheader.jpg",
+        "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
+        "color_text": "#ffffff",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": true,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
-      }
-    },
-    "scrolling-text-1": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
-            "text_size": 160,
-            "text_font": "body",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 120,
-        "padding_bottom": 120,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "countdown-timer": {
-      "type": "countdown-timer",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Countdown timer</p>",
-            "text_size": "subtext-custom",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "spacing": {
-          "type": "spacing",
-          "settings": {
-            "height": 24,
-            "height_mobile": 16
-          }
-        },
-        "timer": {
-          "type": "timer",
-          "settings": {
-            "year": "2025",
-            "month": "01",
-            "day": "1",
-            "hour": "03",
-            "minute": "00",
-            "text_font": "heading",
-            "text_size": "title-lg tracking-heading",
-            "message": ""
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Discover sales",
-            "button_link": "",
-            "button_size": "md",
-            "button_icon": true,
-            "button_secondary_style": true
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "spacing",
-        "timer",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image_height": "750px",
-        "content_width": "medium",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "image_height_mobile": "500px",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_highlight": "#fcd34d",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 30,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
+        "color_overlay": "#171717",
+        "overlay_opacity": 0
       }
     },
     "shop-the-look": {
@@ -967,71 +965,6 @@
         "rounded": false
       }
     },
-    "reveal_image_with_text_overlay_7WVaNB": {
-      "type": "reveal-image-with-text-overlay",
-      "blocks": {
-        "subheading_8WUDkb": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "New Colours",
-            "subheading_size": "subtitle-sm",
-            "secondary_color": false
-          }
-        },
-        "heading_pYyeKQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Eos Outdoor Collection",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_FtnRrF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our award winning Eos collection, designed by Matthew Hilton</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "link_GAUezm": {
-          "type": "link",
-          "settings": {
-            "label": "Text",
-            "link": "shopify://collections/eos-garden-furniture"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_8WUDkb",
-        "heading_pYyeKQ",
-        "text_FtnRrF",
-        "link_GAUezm"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/S06.jpg",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/Webheader.jpg",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0
-      }
-    },
     "testimonials-banner": {
       "type": "testimonials-banner",
       "blocks": {
@@ -1097,69 +1030,6 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "armchairs",
-            "products": [],
-            "title": "Armchairs"
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "charlotte-lancelot",
-            "products": [],
-            "title": "Textiles"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "beds",
-            "products": [],
-            "title": "Beds"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "settings": {
-        "product_limit": 6,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Best Sellers",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#f9f9f3",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "collection_list_rFNr7H": {
@@ -1371,20 +1241,18 @@
     "rich-text",
     "collection-list",
     "image-comparison",
+    "featured_collection_QjKgKT",
     "image_with_text_overlay_9tf9wj",
     "product_bundle_tj3Vfp",
+    "reveal_image_with_text_9B8Dy6",
     "video-with-text-overlay",
     "rich_text_Cf9jGA",
     "featured-product",
     "empty_space_Mty7jL",
-    "featured_collection_QjKgKT",
-    "images_with_text_KqgRqB",
-    "scrolling-text-1",
-    "countdown-timer",
-    "shop-the-look",
-    "reveal_image_with_text_overlay_7WVaNB",
-    "testimonials-banner",
     "featured-collections",
+    "reveal_image_with_text_overlay_7WVaNB",
+    "shop-the-look",
+    "testimonials-banner",
     "collection_list_rFNr7H",
     "scrolling-text-2",
     "blog-posts-collage"
