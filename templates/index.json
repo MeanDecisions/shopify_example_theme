@@ -91,8 +91,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Working with world-renowned award-winning designers, Case is dedicated to creating exceptional contemporary design.</p>",
-            "text_size": "subtext-xl",
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
+            "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
@@ -125,7 +125,7 @@
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "",
+        "color_button_background": "#87874e",
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 0,
