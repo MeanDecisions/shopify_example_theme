@@ -1,1 +1,520 @@
-{"sections":{"main-page":{"type":"main-page","disabled":true,"settings":{"heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","text_size":"text-base","padding_top":72,"padding_bottom":120,"divider":false,"narrow":true,"rounded":false}},"rich_text_GXWjy8":{"type":"rich-text","blocks":{"heading_NABeGn":{"type":"heading","disabled":true,"settings":{"heading":"Case Furniture works in collaboration with world-renowned, award-winning furniture designers.","heading_size":"title-sm","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_FqbFkj":{"type":"text","settings":{"text":"<p>Case Furniture works in collaboration with world-renowned, award-winning furniture designers.<\/p>","text_size":"subtext-xl","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["heading_NABeGn","text_FqbFkj"],"settings":{"text_alignment":"left","text_alignment_mobile":"left","heading":"{{ page.title }}Designers","heading_size":"title-xl tracking-heading","heading_alignment":"text-left md:items-end md:flex-row","heading_width":"small","heading_tag":"h2","subheading":"","description":"","button_label":"","button_link":"","button_icon":true,"highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":100,"divider":false,"narrow":false,"rounded":false}},"image_with_text_tYq6rY":{"type":"image-with-text","blocks":{"heading_6VKxNH":{"type":"heading","settings":{"heading":"Image with text","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text_e7c8nC":{"type":"text","settings":{"text":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>","text_size":"subtext-md","text_max_size":32,"text_font":"body","secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}},"button_xw7GrQ":{"type":"button","settings":{"button_label":"Button label","button_link":"","button_size":"md","button_icon":true,"button_secondary_style":false}}},"block_order":["heading_6VKxNH","text_e7c8nC","button_xw7GrQ"],"settings":{"image":"shopify:\/\/shop_images\/matthew-hilton-studio-rectangle_e02dbbb1-5f5f-44bd-847d-8e375a829ab2.jpg","image_height":"650px","image_width":"large","layout":"text_first","text_alignment":"left","content_position":"align-self-center","image_height_mobile":"auto","text_alignment_mobile":"left","color_text":"","color_background":"","gradient_background":"","color_background_2":"","gradient_background_2":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false,"enable_parallax":true,"parallax_direction":"vertical"}}},"order":["main-page","rich_text_GXWjy8","image_with_text_tYq6rY"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_GXWjy8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NABeGn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Case Furniture works in collaboration with world-renowned, award-winning furniture designers.",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FqbFkj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Case Furniture works in collaboration with world-renowned, award-winning furniture designers.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NABeGn",
+        "text_FqbFkj"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Designers",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "portfolio_on_scroll_DN9WAR": {
+      "type": "portfolio-on-scroll",
+      "blocks": {
+        "profile_7FK6Hj": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "heading": "Matthew Hilton",
+            "text": "",
+            "color_text": "#ffffff",
+            "color_background": "rgba(0,0,0,0)"
+          }
+        },
+        "profile_V4EYRp": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_ApA9EB": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_QHPhAb": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "profile_7FK6Hj",
+        "profile_V4EYRp",
+        "profile_ApA9EB",
+        "profile_QHPhAb"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_ratio": "portrait",
+        "heading": "Our Designers",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Case Furniture works in collaboration with world-renowned, award-winning furniture designers.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "image_with_text_tYq6rY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6VKxNH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_e7c8nC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_xw7GrQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_icon": true,
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6VKxNH",
+        "text_e7c8nC",
+        "button_xw7GrQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/matthew-hilton-studio-rectangle_e02dbbb1-5f5f-44bd-847d-8e375a829ab2.jpg",
+        "image_height": "650px",
+        "image_width": "large",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "collection_list_BJEN7Y": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_3JM6nD": {
+          "type": "collection",
+          "settings": {
+            "collection": "matthew-hilton-furniture",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "title": "Matthew Hilton",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_E4xAzn": {
+          "type": "collection",
+          "settings": {
+            "collection": "robin-day-furniture",
+            "image": "shopify://shop_images/robin-day-designer-portrait_3.jpg",
+            "title": "Robin Day",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Bc9pYe": {
+          "type": "collection",
+          "settings": {
+            "collection": "shin-azumi-furniture",
+            "image": "shopify://shop_images/shin-azumi-designer-profile.jpg",
+            "title": "Shin Azumi",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_mRNLK6": {
+          "type": "collection",
+          "settings": {
+            "collection": "terence-woodgate-furniture",
+            "image": "shopify://shop_images/terence-woodgate-square-1.jpg",
+            "title": "Terence Woodgate",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7zJBaU": {
+          "type": "collection",
+          "settings": {
+            "collection": "david-irwin-furniture",
+            "image": "shopify://shop_images/david-irwin-designer-profile.jpg",
+            "title": "David Irwin",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Vx6Eqm": {
+          "type": "collection",
+          "settings": {
+            "collection": "eleanor-pritchard-rugs",
+            "image": "shopify://shop_images/eleanor-pritchard-designer-profile.jpg",
+            "title": "Eleanor Pritchard",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_tHJBJY": {
+          "type": "collection",
+          "settings": {
+            "collection": "gareth-neal-kitchenware",
+            "image": "shopify://shop_images/gareth-neal-designer-profile.jpg",
+            "title": "Gareth Neal",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_bNkkKQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "jenkins-uhnger-furniture",
+            "image": "shopify://shop_images/Jenkins-_-Uhnger.jpg",
+            "title": "Jenkins & Uhnger",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_MAfKJT": {
+          "type": "collection",
+          "settings": {
+            "collection": "charlotte-lancelot",
+            "image": "shopify://shop_images/Charlotte_Lancelot-4.jpg",
+            "title": "Charlotte Lancelot",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_yrm8KQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "patricia-perez-furniture",
+            "image": "shopify://shop_images/patricia-perez-designer-profile.jpg",
+            "title": "Patricia Perez",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_jkrQck": {
+          "type": "collection",
+          "settings": {
+            "collection": "nazanin-kamali-furniture",
+            "image": "shopify://shop_images/nazanin-kamali-designer-profile_68ef6e39-54b2-46a9-a12d-854132b01084.jpg",
+            "title": "Nazanin Kamali",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_G784zG": {
+          "type": "collection",
+          "settings": {
+            "collection": "samuel-wilkinson-furniture",
+            "image": "shopify://shop_images/samuel-wilkinson-designer-profile.jpg",
+            "title": "Samuel Wilkinson",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_fPkFU4": {
+          "type": "collection",
+          "settings": {
+            "collection": "brendon-farrell-furniture",
+            "image": "shopify://shop_images/brendon-farrell-designer-profile.jpg",
+            "title": "Brendon Farrell",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_8CdWXi": {
+          "type": "collection",
+          "settings": {
+            "collection": "ann-kristin-einarsen-furniture",
+            "image": "shopify://shop_images/ann-kristin-einarsen-designer-profile_80d44675-00d5-4ae7-ad51-41725eae8096.jpg",
+            "title": "Ann Kristin Einarsen",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_hJjyqc": {
+          "type": "collection",
+          "settings": {
+            "collection": "marina-bautier-furniture",
+            "image": "shopify://shop_images/marina-bautier-designer-profile_e2a5b86f-d3aa-4417-b285-4424b694906d.jpg",
+            "title": "Marina Bautier",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_wn4339": {
+          "type": "collection",
+          "settings": {
+            "collection": "sarah-and-henrik-bottger-furniture",
+            "image": "shopify://shop_images/sarah-henrik-bottger-designer-profile.jpg",
+            "title": "Studio Böttger",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_HVrhni": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/studio-small-designer-profile.jpg",
+            "title": "Studio Small",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_3JM6nD",
+        "collection_E4xAzn",
+        "collection_Bc9pYe",
+        "collection_mRNLK6",
+        "collection_7zJBaU",
+        "collection_Vx6Eqm",
+        "collection_tHJBJY",
+        "collection_bNkkKQ",
+        "collection_MAfKJT",
+        "collection_yrm8KQ",
+        "collection_jkrQck",
+        "collection_G784zG",
+        "collection_fPkFU4",
+        "collection_8CdWXi",
+        "collection_hJjyqc",
+        "collection_wn4339",
+        "collection_HVrhni"
+      ],
+      "settings": {
+        "columns": 5,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "portrait",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "Products by Designer",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "rgba(0,0,0,0)",
+        "gradient_highlight": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "rich_text_GXWjy8",
+    "portfolio_on_scroll_DN9WAR",
+    "image_with_text_tYq6rY",
+    "collection_list_BJEN7Y"
+  ]
+}
