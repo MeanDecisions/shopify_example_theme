@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,6 +14,7 @@
       "disabled": true,
       "settings": {
         "heading_size": "title-xl",
+        "heading_alignment": "text-left",
         "heading_tag": "h1",
         "text_size": "text-lg md:text-2xl",
         "padding_top": 72,
@@ -21,7 +31,7 @@
           "type": "heading",
           "settings": {
             "heading": "Contact Us",
-            "heading_size": "title-xl tracking-heading",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -30,7 +40,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>We'd love to hear from you. Our team is here to help. <\/p>",
+            "text": "<p>If you have any questions about any of our products or services please get in touch, we’d love to help.</p>",
             "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
@@ -50,6 +60,7 @@
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
@@ -88,7 +99,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Find Our Store",
+            "heading": "Visit Our Showroom",
             "heading_size": "text-2xl lg:text-3xl",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -106,7 +117,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>151 O’Connor Street, Ottawa ON K2P 2L8, Canada<\/p>",
+            "text": "<p>23 East Hill<br/>London<br/>SW18 2HZ<br/>United Kingdom</p>",
             "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_font": "body",
@@ -126,7 +137,7 @@
         "liquid": {
           "type": "liquid",
           "settings": {
-            "liquid": "<table>\n  <tr>\n    <td>Mon - Fri<\/td>\n    <td>8:30am - 10:30pm<\/td>\n  <\/tr>\n  <tr>\n    <td>Saturday<\/td>\n    <td>8:30am - 10:30pm<\/td>\n  <\/tr>\n  <tr>\n    <td>Sunday<\/td>\n    <td>8:30am - 10:30pm<\/td>\n  <\/tr>\n<\/table>",
+            "liquid": "<table>\n  <tr>\n    <td>Mon - Fri</td>\n    <td>9:30am - 18:00pm</td>\n  </tr>\n  <tr>\n    <td>Saturday</td>\n    <td>10:00am - 16:00pm</td>\n  </tr>\n  <tr>\n    <td>Sunday</td>\n    <td>Closed</td>\n  </tr>\n</table>",
             "text_size": "subtext-sm"
           }
         },
@@ -159,13 +170,12 @@
       ],
       "settings": {
         "transparent_header": false,
-        "map_address": "620 King St W, Toronto, ON M5V 1M7, Canada",
+        "map_address": "23 East Hill London SW18 2HZ United Kingdom",
         "map_api_key": "",
         "map_zoom": 16,
         "map_style": "dark",
-        "image": "",
-        "image_height": "650px",
-        "content_position": "md:items-center md:justify-end",
+        "image_height": "750px",
+        "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
         "content_position_mobile": "image_first",
         "image_height_mobile": "400px",
@@ -182,7 +192,7 @@
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": true,
+        "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
@@ -193,28 +203,41 @@
         "contact-1": {
           "type": "contact",
           "settings": {
-            "heading": "Address",
-            "text": "<p><a href=\"#\" title=\"mailto:shop@yourstore.com\">shop@yourstore.com<\/a><\/p>"
+            "heading": "Email Us",
+            "text": "<p><a href=\"#\" title=\"mailto:info@casefurniture.com\">info@casefurniture.com</a></p>"
           }
         },
         "contact-2": {
           "type": "contact",
           "settings": {
-            "heading": "Email",
-            "text": "<p><a href=\"#\" title=\"mailto:contact@yourstore.com\">contact@yourstore.com<\/a><br\/><a href=\"#\" title=\"mailto:sales@yourstore.com\">sales@yourstore.com<\/a><\/p>"
+            "heading": "Call us",
+            "text": "<p>020 8870 4488<br/></p>"
           }
         },
         "contact-3": {
           "type": "contact",
           "settings": {
-            "heading": "Phone",
-            "text": "<p><a href=\"#\" title=\"tel:+33 (0) 31-305-210\">+33 (0) 31-305-210<br\/><\/a>mo – fri: 09:00 – 17:00<\/p>"
+            "heading": "Press enquiries",
+            "text": "<p><a href=\"#\" title=\"#mailto:press@casefurniture.com\">press@casefurniture.com</a></p>"
           }
         },
         "media": {
           "type": "media",
           "settings": {
             "heading": "Follow us"
+          }
+        },
+        "custom_field_PDP6nk": {
+          "type": "custom_field",
+          "settings": {
+            "type": "text",
+            "title": "First Name*",
+            "required": true,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
           }
         },
         "custom_field-1": {
@@ -228,6 +251,19 @@
             "unchecked_value": "No",
             "radio_options": "",
             "select_options": ""
+          }
+        },
+        "custom_field_QKGK7L": {
+          "type": "custom_field",
+          "settings": {
+            "type": "select",
+            "title": "Country",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": "United Kingdom, France. Germany, Belgium"
           }
         },
         "custom_field-2": {
@@ -249,7 +285,9 @@
         "contact-2",
         "contact-3",
         "media",
+        "custom_field_PDP6nk",
         "custom_field-1",
+        "custom_field_QKGK7L",
         "custom_field-2"
       ],
       "settings": {
@@ -258,10 +296,10 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Let your customers get in touch with you by filling out the email form below.<\/p>",
+        "description": "<p>Let your customers get in touch with you by filling out the email form below.</p>",
         "button_label": "",
         "button_link": "",
-        "button_icon": true,
+        "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
@@ -276,7 +314,7 @@
         "padding_bottom": 120,
         "divider": false,
         "narrow": false,
-        "rounded": true
+        "rounded": false
       }
     }
   },
