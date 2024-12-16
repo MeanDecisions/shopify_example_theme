@@ -364,6 +364,20 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "content_7KbbTE": {
+          "type": "content",
+          "settings": {
+            "subheading": "Text",
+            "heading": "Heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
@@ -371,8 +385,10 @@
         "content_Cagjx9",
         "content_eB9VJg",
         "content_t36X7C",
-        "content_4BJcn9"
+        "content_4BJcn9",
+        "content_7KbbTE"
       ],
+      "disabled": true,
       "settings": {
         "image_ratio": "landscape",
         "image_ratio_mobile": "wide",
@@ -441,8 +457,9 @@
         "button_J8QCYc"
       ],
       "settings": {
-        "image_height": "650px",
-        "image_width": "small",
+        "image": "shopify://shop_images/IMG_2999.jpg",
+        "image_height": "500px",
+        "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -509,8 +526,9 @@
         "button_CCdtTJ"
       ],
       "settings": {
-        "image_height": "650px",
-        "image_width": "large",
+        "image": "shopify://shop_images/152A1522_fb913b02-78df-432d-9c6c-b664c8543036.jpg",
+        "image_height": "500px",
+        "image_width": "medium",
         "layout": "text_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -577,8 +595,9 @@
         "button_6aLQwJ"
       ],
       "settings": {
-        "image_height": "650px",
-        "image_width": "small",
+        "image": "shopify://shop_images/tanso-bench-2.jpg",
+        "image_height": "500px",
+        "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
