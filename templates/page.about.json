@@ -57,7 +57,7 @@
       ],
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/DSC00855_copy.jpg",
+        "image": "shopify://shop_images/IMG_2999.jpg",
         "image_height": "750px",
         "content_width": "large",
         "content_position": "md:items-end md:justify-start",
@@ -72,7 +72,7 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#000000",
-        "overlay_opacity": 10,
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -483,7 +483,7 @@
           "type": "heading",
           "settings": {
             "heading": "Design Without Compromise",
-            "heading_size": "title-sm",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -518,7 +518,7 @@
         "button_J8QCYc"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_2999.jpg",
+        "image": "shopify://shop_images/DSC00855_copy.jpg",
         "image_height": "500px",
         "image_width": "medium",
         "layout": "image_first",
@@ -552,7 +552,7 @@
           "type": "heading",
           "settings": {
             "heading": "Working in Collaboration with the Industry’s Finest",
-            "heading_size": "title-sm",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -621,7 +621,7 @@
           "type": "heading",
           "settings": {
             "heading": "Designed and Made To Last",
-            "heading_size": "title-sm",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -656,7 +656,7 @@
         "button_6aLQwJ"
       ],
       "settings": {
-        "image": "shopify://shop_images/tanso-bench-2.jpg",
+        "image": "shopify://shop_images/DSC00816_copy.jpg",
         "image_height": "500px",
         "image_width": "medium",
         "layout": "image_first",
@@ -711,6 +711,7 @@
         },
         "button_pqwYJU": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
@@ -880,6 +881,7 @@
       "block_order": [
         "testimonial"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "title-md",
@@ -972,49 +974,48 @@
         "logo-1": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/aPartners_logo.svg",
+            "height": 72,
             "link": ""
           }
         },
         "logo-2": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Partners_logo_1.svg",
+            "height": 80,
             "link": ""
           }
         },
         "logo-3": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Partners_logo_3.svg",
+            "height": 80,
             "link": ""
           }
         },
         "logo-4": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Partners_logo_2.svg",
+            "height": 72,
             "link": ""
           }
         },
         "logo-5": {
           "type": "logo",
           "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Partners_logo_4.svg",
+            "height": 80,
             "link": ""
           }
         },
         "logo-6": {
           "type": "logo",
           "settings": {
-            "height": 60,
-            "link": ""
-          }
-        },
-        "logo-7": {
-          "type": "logo",
-          "settings": {
-            "height": 60,
+            "image": "shopify://shop_images/Partners_logo.svg",
+            "height": 100,
             "link": ""
           }
         }
@@ -1025,8 +1026,7 @@
         "logo-3",
         "logo-4",
         "logo-5",
-        "logo-6",
-        "logo-7"
+        "logo-6"
       ],
       "settings": {
         "layout": "marquee",
@@ -1053,10 +1053,19 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 60,
-        "padding_bottom": 120,
+        "padding_bottom": 60,
         "divider": false,
         "full_width": true,
         "rounded": true
+      }
+    },
+    "empty_space_P9PCiR": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 100,
+        "mobile_height": 68,
+        "color_background": "",
+        "gradient_background": ""
       }
     }
   },
@@ -1076,6 +1085,7 @@
     "scrolling-text",
     "testimonials",
     "rich-text",
-    "logo-list"
+    "logo-list",
+    "empty_space_P9PCiR"
   ]
 }
