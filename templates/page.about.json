@@ -287,7 +287,7 @@
         "text_z6LtbT": {
           "type": "text",
           "settings": {
-            "text": "<p>2004 – 2024</p>",
+            "text": "<p>Case</p>",
             "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
