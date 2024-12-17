@@ -140,9 +140,9 @@
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "living-room-furniture",
+            "collection": "contemporary-tables",
             "image": "shopify://shop_images/20241015_CASE_Lucent.jpg",
-            "title": "Living Room",
+            "title": "Tables",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -155,7 +155,7 @@
           "settings": {
             "collection": "dining-chairs",
             "image": "shopify://shop_images/20241015_CASE_675-Detail.jpg",
-            "title": "Chairs",
+            "title": "Seating",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -166,9 +166,9 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "sofas-armchairs",
-            "image": "shopify://shop_images/S17-V2jpg.jpg",
-            "title": "Sofas & Armchairs",
+            "collection": "storage",
+            "image": "shopify://shop_images/20241015_CASE_Blue-Slot_Portrait.jpg",
+            "title": "Storage",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
