@@ -561,7 +561,7 @@
         "padding_bottom": 80,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     }
   },
