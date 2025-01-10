@@ -14598,3 +14598,7 @@ lookbook-element .banner__box .title-wrapper {
   margin-top: auto !important;
   margin-right: auto !important;
 }
+
+.mb-6 {
+  margin-bottom: 24px !important;
+}
