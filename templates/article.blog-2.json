@@ -29,6 +29,7 @@
         },
         "comments": {
           "type": "comments",
+          "disabled": true,
           "settings": {
             "show_gravatar": true
           }
@@ -45,9 +46,9 @@
         "show_tags": true,
         "show_date": true,
         "show_comments": false,
-        "show_author": true,
+        "show_author": false,
         "show_image": true,
-        "image_height": "750px",
+        "image_height": "650px",
         "enable_parallax": true,
         "parallax_direction": "vertical",
         "padding_top": 72,
@@ -62,7 +63,10 @@
       "settings": {
         "blog": "",
         "post_limit": 3,
+        "columns": 3,
+        "carousel_on_desktop": false,
         "show_view_all": true,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "image_ratio": "landscape",
         "show_tags": true,
@@ -74,6 +78,7 @@
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
+        "subheading": "",
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
@@ -81,6 +86,7 @@
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
+        "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
@@ -88,7 +94,7 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     }
   },
