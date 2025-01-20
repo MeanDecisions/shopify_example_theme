@@ -398,7 +398,7 @@
         "button_J8QCYc"
       ],
       "settings": {
-        "image": "shopify://shop_images/DSC00855_copy.jpg",
+        "image": "shopify://shop_images/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
         "image_height": "500px",
         "image_width": "small",
         "layout": "image_first",
@@ -453,7 +453,7 @@
             "text_alignment": "left",
             "text_alignment_mobile": "left",
             "image": "shopify://shop_images/S17-V2jpg.jpg",
-            "image_ratio": "adapt",
+            "image_ratio": "portrait",
             "heading": "Designer",
             "heading_size": "text-2xl lg:text-3xl",
             "text": "<p>From solo interior designers to larger design studios, we’re here to help you with projects of all shapes and sizes. Get personal service with a dedicated account manager who understand your unique needs and will work with you to achieve your design vision. From COM options, to CAD drawings we got you covered.</p>",
@@ -470,8 +470,8 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Screenshot_2024-10-18_at_15.16.22.png",
-            "image_ratio": "adapt",
+            "image": "shopify://shop_images/Untitled_design_214.jpg",
+            "image_ratio": "portrait",
             "heading": "Wholesale",
             "heading_size": "text-2xl lg:text-3xl",
             "text": "<p>Through experienced large-volume production, strong global manufacturing and a large distribution network, Case is sold worldwide through direct channels and esteemed retailers. We build long lasting relationships, working with our retailers to meet their specific needs.</p>",
