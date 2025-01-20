@@ -281,23 +281,125 @@
         "rounded": false
       }
     },
+    "scrolling_text_VptqFz": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_w4fDJx": {
+          "type": "text",
+          "settings": {
+            "text": "Professionals",
+            "text_size": 12,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_w4fDJx"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 26,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": false,
+        "color_text": "#fffffa",
+        "color_background": "#444c48",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_wc9i7i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_He7mzh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Case",
+            "subheading_size": "subtitle-sm",
+            "secondary_color": false
+          }
+        },
+        "heading_FjLAfm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Professionals",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h1",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_tDBKFt": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_He7mzh",
+        "heading_FjLAfm",
+        "text_tDBKFt"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#05273a",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "rich_text_cEBa6E": {
       "type": "rich-text",
       "blocks": {
         "text_z6LtbT": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Case</p>",
-            "text_size": "subtext-lg",
+            "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
-            "secondary_color": true,
+            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "heading_tMbRQi": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Professionals",
             "heading_size": "title-xl tracking-heading",
@@ -397,7 +499,7 @@
         "button_J8QCYc"
       ],
       "settings": {
-        "image": "shopify://shop_images/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+        "image": "shopify://shop_images/Frame_1.png",
         "image_height": "500px",
         "image_width": "small",
         "layout": "image_first",
@@ -685,6 +787,8 @@
     "images-with-text",
     "empty_space_yNyFtC",
     "timeline_jM7XXf",
+    "scrolling_text_VptqFz",
+    "image_with_text_overlay_wc9i7i",
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
