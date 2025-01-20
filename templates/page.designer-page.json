@@ -435,6 +435,61 @@
         "parallax_direction": "vertical"
       }
     },
+    "featured_collections_z4rwbM": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_LAedWb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products": [],
+            "title": ""
+          }
+        },
+        "collection_6XqpRq": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products": [],
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_LAedWb",
+        "collection_6XqpRq"
+      ],
+      "disabled": true,
+      "settings": {
+        "product_limit": 12,
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Matthew Hilton",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "Designed by",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "featured_collection_ciVLGn": {
       "type": "featured-collection",
       "settings": {
@@ -465,6 +520,40 @@
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": true,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured_collection_7rGqVb": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "More Designers",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f9f9f3",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
         "full_width": false,
         "rounded": false
       }
@@ -696,7 +785,9 @@
     "rich_text_GXWjy8",
     "collection_list_BJEN7Y",
     "image_with_text_Whq8jJ",
+    "featured_collections_z4rwbM",
     "featured_collection_ciVLGn",
+    "featured_collection_7rGqVb",
     "collage_8rGkmR"
   ]
 }
