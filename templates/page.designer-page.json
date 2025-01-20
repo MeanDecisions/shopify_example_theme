@@ -237,6 +237,79 @@
         "rounded": false
       }
     },
+    "rich_text_CBdLWi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_z9NDqk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Our Designers",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_9V3jdL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Case Furniture works in collaboration with world-renowned, award-winning furniture designers.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_Li4Mhb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_icon": true,
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_z9NDqk",
+        "text_9V3jdL",
+        "button_Li4Mhb"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Our Designers",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "collection_list_BJEN7Y": {
       "type": "collection-list",
       "blocks": {
@@ -467,7 +540,6 @@
         "collection_hJjyqc",
         "collection_wn4339"
       ],
-      "disabled": true,
       "settings": {
         "columns": 5,
         "carousel_on_desktop": false,
@@ -477,7 +549,7 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "heading": "Products by Designer",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -979,6 +1051,7 @@
     "image_with_text_zW7JBp",
     "rich_text_GXWjy8",
     "rich_text_FyAAhe",
+    "rich_text_CBdLWi",
     "collection_list_BJEN7Y",
     "image_with_text_Whq8jJ",
     "featured_collections_z4rwbM",
