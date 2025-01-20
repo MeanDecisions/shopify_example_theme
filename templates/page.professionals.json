@@ -305,7 +305,7 @@
         "enable_twin": false,
         "enable_parallax": false,
         "color_text": "#fffffa",
-        "color_background": "#444c48",
+        "color_background": "#265874",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -320,6 +320,7 @@
       "blocks": {
         "subheading_He7mzh": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Case",
             "subheading_size": "subtitle-sm",
@@ -426,6 +427,7 @@
         "heading_tMbRQi",
         "text_r3iUxr"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -517,8 +519,8 @@
         "color_button_text": "#05273a",
         "color_button_background": "#def3f3",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 100,
+        "padding_top": 92,
+        "padding_bottom": 92,
         "divider": false,
         "full_width": false,
         "rounded": false,
