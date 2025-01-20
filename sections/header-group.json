@@ -376,6 +376,40 @@
         "rounded": false
       }
     },
+    "scrolling_text_iWnFfH": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_HEywKh": {
+          "type": "text",
+          "settings": {
+            "text": "Professionals",
+            "text_size": 20,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_HEywKh"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 7,
+        "grid_horizontal": 60,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "#fffffa",
+        "color_background": "#265874",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
     "slideshow_hero_nFgMC6": {
       "type": "slideshow-hero",
       "blocks": {
@@ -454,6 +488,7 @@
   "order": [
     "announcement-bar",
     "header",
+    "scrolling_text_iWnFfH",
     "slideshow_hero_nFgMC6"
   ]
 }

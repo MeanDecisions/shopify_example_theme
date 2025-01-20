@@ -299,9 +299,21 @@
         "heading_tMbRQi": {
           "type": "heading",
           "settings": {
-            "heading": "Twenty Years of Award-Winning Design",
+            "heading": "Professionals",
             "heading_size": "title-xl tracking-heading",
             "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_r3iUxr": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -309,7 +321,8 @@
       },
       "block_order": [
         "text_z6LtbT",
-        "heading_tMbRQi"
+        "heading_tMbRQi",
+        "text_r3iUxr"
       ],
       "settings": {
         "text_alignment": "left",
@@ -326,8 +339,8 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
+        "color_text": "#fffffa",
+        "color_background": "#05273a",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -335,7 +348,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 72,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -346,6 +359,7 @@
       "blocks": {
         "heading_CfrG7b": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Design Without Compromise",
             "heading_size": "title-md",
@@ -357,8 +371,8 @@
         "text_RjtxHm": {
           "type": "text",
           "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
-            "text_size": "subtext-md",
+            "text": "<p>We offer specific furniture supply services for our trade and commercial customers. Whether you would like to stock Case Furniture products in your store or specify a product for a project, we’d be happy to help. Please contact<a href=\"mailto:sales@casefurniture.com\" target=\"_blank\">sales@casefurniture.com</a>or call<a href=\"tel:02088704488\" target=\"_blank\">0208 870 4488</a>to set up an account or discuss any trade enquiry in more detail. Alternatively, fill out the form below with details of your requirements, and a member of our dedicated sales team will be in touch with you shortly.</p>",
+            "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
@@ -368,6 +382,7 @@
         },
         "button_J8QCYc": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Explore Collections",
             "button_link": "",
@@ -391,8 +406,8 @@
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
+        "color_text": "#fffffa",
+        "color_background": "#05273a",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
@@ -401,286 +416,98 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
+        "padding_top": 0,
         "padding_bottom": 100,
         "divider": false,
         "full_width": false,
         "rounded": false,
         "enable_parallax": true,
-        "parallax_direction": "vertical"
+        "parallax_direction": "horizontal"
       }
     },
-    "image_with_text_7iirHd": {
-      "type": "image-with-text",
+    "multicolumn_7BYHg6": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_mbKB4g": {
-          "type": "heading",
+        "column_CA6LAz": {
+          "type": "column",
           "settings": {
-            "heading": "Working in Collaboration with the Industry’s Finest",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_7DQMNr": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Everything in our range is created by our team of renowned designers and skilled manufacturers, who are each specialists in their fields. We carefully select our designers because they have a passion for what they do, and that passion shines through in each product they create. From the very first sketch, our process for every product is a genuine collaborative effort.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_CCdtTJ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Meet Our Designers",
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Narin_Contract_v2.jpg",
+            "image_ratio": "portrait",
+            "heading": "Contract",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>For commercial spaces, we offer a range of customisable options, including custom colours and sizes, ensuring that each piece fits seamlessly into the design vision. With many stocked items meaning short lead times, plus warranted products, trade customers can rely on Case to meet their project deadlines with high-quality furniture.</p>",
+            "button_label": "",
             "button_link": "",
-            "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_mbKB4g",
-        "text_7DQMNr",
-        "button_CCdtTJ"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/152A1522_fb913b02-78df-432d-9c6c-b664c8543036.jpg",
-        "image_height": "500px",
-        "image_width": "small",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "image_with_text_73V76m": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_6eWiJz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed and Made To Last",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
+            "button_icon": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "text_6g4xVW": {
-          "type": "text",
+        "column_B3N7QQ": {
+          "type": "column",
           "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_6aLQwJ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Explore Our Range",
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/S17-V2jpg.jpg",
+            "image_ratio": "adapt",
+            "heading": "Designer",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>From solo interior designers to larger design studios, we’re here to help you with projects of all shapes and sizes. Get personal service with a dedicated account manager who understand your unique needs and will work with you to achieve your design vision. From COM options, to CAD drawings we got you covered.</p>",
+            "button_label": "",
             "button_link": "",
-            "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_6eWiJz",
-        "text_6g4xVW",
-        "button_6aLQwJ"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/DSC00816_copy.jpg",
-        "image_height": "500px",
-        "image_width": "small",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "rich_text_NPkN4L": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_cMqW8q": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Working in collaboration with the industry’s finest",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
+            "button_icon": true,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "text_DbbTPC": {
-          "type": "text",
+        "column_QgcjDi": {
+          "type": "column",
           "settings": {
-            "text": "<p>Paul Newman graduated in 1981 with a BA Furniture degree from Hornsey College of Art, after completing a foundation course at Chelsea College of Art.</p><p>Paul began what would be an illustrious career in design in less than illustrious surroundings, launching his first business Bonomi Design in 1981 in what he described as a “pretty dismal workshop” in North London with two friends from college. They designed and made products for a variety of clients including Liberty’s, Heal’s as Ron Arad.</p><p>In 1988, the company received a grant to exhibit their range of stools and chairs at the prestigious Milan Furniture Fair. It was here that Paul met Australian retailer Aero, who had five successful stores across the country. Excited about Paul’s new collection, Aero started to produce the product range under licence.</p><p>In 1989, Paul’s entrepreneurial business acumen led to the opening of a UK franchise of Aero in Westbourne Grove, West London, selling an eclectic mix of contemporary furniture, lighting and accessories. Thirty-five percent of the collection were its own branded product, while the remaining 65% came from other international brands. With its adventurous and eclectic collection, Aero soon rose to prominence, and new investment saw Paul open a second London store on Chelsea’s prestigious King’s Road. The business expanded and by 1998, Aero was a shop, retail and wholesale business selling to high end design stores such as Heals and the Conran shop. Ahead of its time in many ways, the business also included a successful mail-order catalogue.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_pqwYJU": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Screenshot_2024-10-18_at_15.16.22.png",
+            "image_ratio": "adapt",
+            "heading": "Wholesale",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Through experienced large-volume production, strong global manufacturing and a large distribution network, Case is sold worldwide through direct channels and esteemed retailers. We build long lasting relationships, working with our retailers to meet their specific needs.</p>",
+            "button_label": "",
             "button_link": "",
-            "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "heading_cMqW8q",
-        "text_DbbTPC",
-        "button_pqwYJU"
+        "column_CA6LAz",
+        "column_B3N7QQ",
+        "column_QgcjDi"
       ],
       "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Where it All Started",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
-        "divider": true,
-        "narrow": false,
-        "rounded": false
-      }
-    },
-    "portfolio": {
-      "type": "portfolio",
-      "blocks": {
-        "profile-1": {
-          "type": "profile",
-          "settings": {
-            "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#000000"
-          }
-        },
-        "profile-2": {
-          "type": "profile",
-          "settings": {
-            "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#000000"
-          }
-        },
-        "profile-3": {
-          "type": "profile",
-          "settings": {
-            "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "color_text": "#ffffff",
-            "color_background": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "profile-1",
-        "profile-2",
-        "profile-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "columns": 4,
-        "carousel_on_desktop": false,
-        "layout": "grid",
-        "image_ratio": "portrait",
-        "image_ratio_mobile": "portrait",
+        "gap": "large",
+        "columns": 3,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Talk about your <em>brand</em>",
+        "heading": "",
         "heading_size": "title-md",
-        "heading_alignment": "text-left justify-start",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
-        "subheading": "Add a tagline",
-        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+        "subheading": "",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_icon": true,
-        "highlighted_text": "scribble",
+        "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_highlight": "#ccd8b5",
+        "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
@@ -692,236 +519,155 @@
         "rounded": false
       }
     },
-    "scrolling-text": {
-      "type": "scrolling-text",
+    "collection_list_tqRqFY": {
+      "type": "collection-list",
       "blocks": {
-        "text": {
-          "type": "text",
+        "collection_fVaaxX": {
+          "type": "collection",
           "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
-            "text_size": 160,
-            "text_font": "body",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
+            "collection": "",
+            "image": "shopify://shop_images/PALA_CONSOLE_WALNUT_Hero.jpg",
+            "title": "Product Assets",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_YqkHjD": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "Designer Profiles",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Ymx6MQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "Catalogues",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_VrRXhF": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "New Images",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_HztizU": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "Swatches",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
           }
         }
       },
       "block_order": [
-        "text"
+        "collection_fVaaxX",
+        "collection_YqkHjD",
+        "collection_Ymx6MQ",
+        "collection_VrRXhF",
+        "collection_HztizU"
       ],
-      "disabled": true,
       "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
+        "columns": 5,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "heading": "Toolbox",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#def3f3",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 92,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "contact_form_TTpAP3": {
+      "type": "contact-form",
+      "blocks": {
+        "custom_field_ct6awx": {
+          "type": "custom_field",
+          "settings": {
+            "type": "text",
+            "title": "Company Name",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_ct6awx"
+      ],
+      "settings": {
+        "heading": "Apply for an account",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
-        "rounded": false
-      }
-    },
-    "testimonials": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 84,
-        "padding_bottom": 120,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Partners and Collaborators</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Who We've Worked With",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "heading"
-      ],
-      "settings": {
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#fffffa",
-        "gradient_background": "",
-        "color_highlight": "#c5e8b8",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 120,
-        "padding_bottom": 20,
-        "divider": false,
         "narrow": true,
-        "rounded": true
-      }
-    },
-    "logo-list": {
-      "type": "logo-list",
-      "blocks": {
-        "logo-1": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/aPartners_logo.svg",
-            "height": 72,
-            "link": ""
-          }
-        },
-        "logo-2": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Partners_logo_1.svg",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo-3": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Partners_logo_3.svg",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo-4": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Partners_logo_2.svg",
-            "height": 72,
-            "link": ""
-          }
-        },
-        "logo-5": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Partners_logo_4.svg",
-            "height": 80,
-            "link": ""
-          }
-        },
-        "logo-6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Partners_logo.svg",
-            "height": 100,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo-1",
-        "logo-2",
-        "logo-3",
-        "logo-4",
-        "logo-5",
-        "logo-6"
-      ],
-      "settings": {
-        "layout": "marquee",
-        "grid_horizontal": 120,
-        "direction": "right",
-        "speed": 10,
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#fffffa",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 32,
-        "padding_bottom": 60,
-        "divider": false,
-        "full_width": true,
-        "rounded": true
+        "rounded": false
       }
     },
     "empty_space_P9PCiR": {
@@ -942,14 +688,9 @@
     "timeline_jM7XXf",
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
-    "image_with_text_7iirHd",
-    "image_with_text_73V76m",
-    "rich_text_NPkN4L",
-    "portfolio",
-    "scrolling-text",
-    "testimonials",
-    "rich-text",
-    "logo-list",
+    "multicolumn_7BYHg6",
+    "collection_list_tqRqFY",
+    "contact_form_TTpAP3",
     "empty_space_P9PCiR"
   ]
 }
