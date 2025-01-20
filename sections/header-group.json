@@ -383,7 +383,7 @@
           "type": "text",
           "settings": {
             "text": "Professionals",
-            "text_size": 20,
+            "text_size": 12,
             "text_font": "body",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -395,7 +395,7 @@
       ],
       "settings": {
         "direction": "left",
-        "speed": 7,
+        "speed": 26,
         "grid_horizontal": 60,
         "enable_twin": false,
         "enable_parallax": true,
@@ -404,8 +404,8 @@
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
+        "padding_top": 8,
+        "padding_bottom": 8,
         "divider": false,
         "rounded": false
       }
