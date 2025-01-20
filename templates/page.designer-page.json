@@ -524,14 +524,74 @@
         "rounded": false
       }
     },
-    "featured_collection_7rGqVb": {
-      "type": "featured-collection",
+    "collection_list_MdBq9q": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_VewmgA": {
+          "type": "collection",
+          "settings": {
+            "collection": "terence-woodgate-furniture",
+            "image": "shopify://shop_images/terence-woodgate-square-1.jpg",
+            "title": "Terence Woodgate",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_6XyTj6": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchenware",
+            "image": "shopify://shop_images/gareth-neal-designer-profile.jpg",
+            "title": "Gareth Neal",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NkP4AH": {
+          "type": "collection",
+          "settings": {
+            "collection": "patricia-perez-furniture",
+            "image": "shopify://shop_images/patricia-perez-designer-profile.jpg",
+            "title": "Patricia Perez",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_rB7GdL": {
+          "type": "collection",
+          "settings": {
+            "collection": "david-irwin-furniture",
+            "image": "shopify://shop_images/david-irwin-designer-profile.jpg",
+            "title": "David Irwin",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_VewmgA",
+        "collection_6XyTj6",
+        "collection_NkP4AH",
+        "collection_rB7GdL"
+      ],
       "settings": {
-        "collection": "",
-        "products": [],
-        "product_limit": 6,
         "columns": 4,
         "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "portrait",
+        "show_products_count": false,
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
@@ -544,7 +604,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#f9f9f3",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -787,7 +847,7 @@
     "image_with_text_Whq8jJ",
     "featured_collections_z4rwbM",
     "featured_collection_ciVLGn",
-    "featured_collection_7rGqVb",
+    "collection_list_MdBq9q",
     "collage_8rGkmR"
   ]
 }
