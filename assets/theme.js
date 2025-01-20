@@ -2563,7 +2563,7 @@ class SplitWords extends HTMLElement {
     const splitting = Splitting({ target: this, by: 'words' });
 
     splitting[0].words.forEach((item, index) => {
-      // Hide the word if it's "Contemporary"
+   
       if (item.textContent.trim() === 'Contemporary') {
         item.style.display = 'none';
         return;
@@ -4032,7 +4032,7 @@ class SliderDots extends HTMLElement {
     this._items = Array.from(this.children);
     this.resetIndexes();
     
-    // Rebind click events
+
     this.items.forEach((item) => {
       item.addEventListener('click', this.onButtonClick.bind(this));
     });
@@ -4567,12 +4567,12 @@ class ProductInfo extends HTMLElement {
       const updateSourceFromDestination = (id) => {
         const source = parsedHTML.getElementById(`${id}-${this.sectionId}-${this.productId}`);
         const destination = document.querySelector(`#${id}-${this.sectionId}-${this.productId}`);
-        console.log('Updating', id, {source, destination}); // Add this line
+       
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
           
-          // If this is the thumbnails, reset the dots
+        
           if (id === 'VariantMetafieldThumbs') {
             const mediaDots = destination.closest('media-dots');
             if (mediaDots) {
@@ -4614,7 +4614,7 @@ class ProductInfo extends HTMLElement {
         }
       }));
 
-      // Reset the slider after updating content
+      
       const slider = this.querySelector('slider-element');
       if (slider) {
         slider.reset();
@@ -5382,7 +5382,7 @@ class MediaDots extends SliderDots {
   }
 
   reset() {
-    super.reset(); // Call parent reset
+    super.reset(); 
     this.resetIndexes();
   }
 
