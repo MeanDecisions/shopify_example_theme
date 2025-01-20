@@ -33,7 +33,7 @@
             "image": "shopify://shop_images/mhilton22.jpg",
             "image_width": "custom",
             "image_max_width": 560,
-            "image_max_width_mobile": 50
+            "image_max_width_mobile": 600
           }
         },
         "heading_NABeGn": {
@@ -407,6 +407,7 @@
         "text_YVzyii",
         "button_MPDCJh"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "650px",
         "image_width": "medium",
@@ -445,11 +446,11 @@
         "show_view_all": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Matthew Hilton with Case",
+        "heading": "Matthew Hilton",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
-        "subheading": "",
+        "subheading": "Designed by",
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
@@ -463,7 +464,7 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": false,
+        "divider": true,
         "full_width": false,
         "rounded": false
       }
