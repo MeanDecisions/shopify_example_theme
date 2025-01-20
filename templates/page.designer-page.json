@@ -27,22 +27,37 @@
     "rich_text_GXWjy8": {
       "type": "rich-text",
       "blocks": {
+        "image_cMWwrn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_width": "custom",
+            "image_max_width": 560,
+            "image_max_width_mobile": 50
+          }
+        },
         "heading_NABeGn": {
           "type": "heading",
           "disabled": true,
           "settings": {
-            "heading": "Case Furniture works in collaboration with world-renowned, award-winning furniture designers.",
+            "heading": "London-based designer Matthew Hilton has beenwith Case from the start. The figure behind some of the company’s most iconiccollections, including the Cross table series and range of Ella chairs, Hiltonhas helped shape the Case’s aesthetic identity with his sleek, understateddesigns. “Case represents a balance of all the things I like: style, guts andpersonality.”",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
+        "spacing_BWLbMG": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
         "text_FqbFkj": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Case Furniture works in collaboration with world-renowned, award-winning furniture designers.</p>",
+            "text": "<p>Hilton studied at Portsmouth College of Art and later pursued furniture design at Kingston Polytechnic. He began his career in the 1980s, working for industrial and furniture design studios before establishing his own design practice in 1985. Today he’s one of Britain’s foremost industry-leading figures, working across a range of furniture, lighting and product design. His  collaborators include prominent brands such as SCP, De La Espada and Ercol and his creations can also be found in the permanent collections of such high-profile institutions as the Victoria & Albert Museum and The Museum of the Home in London.</p><p></p><p>His designs, often characterised by clean lines, minimalist forms, and high-quality materials, are rooted in a deep respect for craftsmanship and remain sought after for their seamless blend of elegance and functionality. “I find inspiration in the work of 20th century Italian designers like Enzo Mari and Achille Castiglioni,” says Hilton. “But also figures like David Bowie. He never stopped moving and wasn’t ever afraid<br/>to experiment.” </p>",
             "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
@@ -53,21 +68,22 @@
         }
       },
       "block_order": [
+        "image_cMWwrn",
         "heading_NABeGn",
+        "spacing_BWLbMG",
         "text_FqbFkj"
       ],
-      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Products by Designer",
-        "heading_size": "title-lg tracking-heading",
+        "heading": "Matthew Hilton",
+        "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "large",
         "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
+        "subheading": "Our Designers",
+        "description": "<h4>London-based designer Matthew Hilton has been with Case from the start. The figure behind some of the company’s most iconic collections, including the Cross table series and range of Ella chairs, Hilton has helped shape the Case’s aesthetic identity with his sleek, understated designs. “Case represents a balance of all the things I like: style, guts and personality.” </h4>",
+        "button_label": "Explore All Matthew Hilton Furniture",
         "button_link": "",
         "button_icon": true,
         "highlighted_text": "none",
@@ -317,6 +333,7 @@
         "collection_hJjyqc",
         "collection_wn4339"
       ],
+      "disabled": true,
       "settings": {
         "columns": 5,
         "carousel_on_desktop": false,
@@ -346,6 +363,108 @@
         "padding_bottom": 60,
         "divider": true,
         "full_width": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_Whq8jJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HLKGdV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_YVzyii": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_MPDCJh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_icon": true,
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HLKGdV",
+        "text_YVzyii",
+        "button_MPDCJh"
+      ],
+      "settings": {
+        "image_height": "650px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": true,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "featured_collection_ciVLGn": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "matthew-hilton-furniture",
+        "products": [],
+        "product_limit": 12,
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Matthew Hilton with Case",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -575,6 +694,8 @@
     "main-page",
     "rich_text_GXWjy8",
     "collection_list_BJEN7Y",
+    "image_with_text_Whq8jJ",
+    "featured_collection_ciVLGn",
     "collage_8rGkmR"
   ]
 }
