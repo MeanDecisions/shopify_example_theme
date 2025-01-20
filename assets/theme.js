@@ -2563,6 +2563,12 @@ class SplitWords extends HTMLElement {
     const splitting = Splitting({ target: this, by: 'words' });
 
     splitting[0].words.forEach((item, index) => {
+      // Hide the word if it's "Contemporary"
+      if (item.textContent.trim() === 'Contemporary') {
+        item.style.display = 'none';
+        return;
+      }
+
       const wrapper = document.createElement('animate-element');
       wrapper.className = 'block';
       wrapper.setAttribute('data-animate', this.getAttribute('data-animate'));

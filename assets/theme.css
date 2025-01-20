@@ -4580,10 +4580,14 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
 
 /*! details-summary */
 
-.details {
-  border-block-end: 1px solid rgb(var(--color-border-light));
+/* .details {
+  border-block-start: 1px solid rgb(var(--color-border-light));
   box-sizing: content-box
 }
+
+.details:last-child {
+  border-block-end: 1px solid rgb(var(--color-border-light));
+} */
 
 .details summary::-webkit-details-marker {
   display: none
@@ -10823,12 +10827,24 @@ html.touch .logo-list--right .logo-bar.animate {
   }
 }
 
-.accordions {
+/* .accordions {
   border-block: 1px solid rgb(var(--color-border));
+} */
+
+/* .accordion+.accordion {
+  border-block-start: 1px solid rgb(var(--color-border));
+} */
+
+.accordion {
+  border-top: 1px solid rgb(var(--color-border));
 }
 
-.accordion+.accordion {
-  border-block-start: 1px solid rgb(var(--color-border));
+.accordion:last-child {
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+
+.accordion:first-child {
+ margin-top: 40px;
 }
 
 .accordion--text {
