@@ -603,7 +603,7 @@
         "subheading": "",
         "description": "",
         "button_label": "Get In Touch",
-        "button_link": "",
+        "button_link": "shopify://pages/about-us",
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
