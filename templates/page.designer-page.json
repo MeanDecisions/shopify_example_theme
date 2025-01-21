@@ -280,6 +280,7 @@
         "text_9V3jdL",
         "button_Li4Mhb"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -540,6 +541,7 @@
         "collection_hJjyqc",
         "collection_wn4339"
       ],
+      "disabled": true,
       "settings": {
         "columns": 5,
         "carousel_on_desktop": false,
