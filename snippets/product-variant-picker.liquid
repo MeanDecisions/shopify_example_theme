@@ -24,7 +24,7 @@
             assign downcased_option = option.name | downcase
             for trigger in swatch_trigger_list
               assign swatch_trigger = trigger | strip
-              if downcased_option contains swatch_trigger
+              if downcased_option contains swatch_trigger or downcased_option contains 'finish' or downcased_option contains 'frame' or downcased_option contains 'upholstery'
                 assign is_color = true
               elsif swatch_trigger == 'color' and downcased_option contains 'colour'
                 assign is_color = true
