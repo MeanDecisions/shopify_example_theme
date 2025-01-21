@@ -4580,10 +4580,6 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
 
 /*! details-summary */
 
-.details {
-  border-block-end: 1px solid rgb(var(--color-border-light));
-  box-sizing: content-box
-}
 
 .details summary::-webkit-details-marker {
   display: none
@@ -10823,12 +10819,18 @@ html.touch .logo-list--right .logo-bar.animate {
   }
 }
 
-.accordions {
-  border-block: 1px solid rgb(var(--color-border));
+
+
+.accordion {
+  border-top: 1px solid rgb(var(--color-border));
 }
 
-.accordion+.accordion {
-  border-block-start: 1px solid rgb(var(--color-border));
+.accordion:last-child {
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+
+.accordion:first-child {
+ margin-top: 40px;
 }
 
 .accordion--text {
@@ -14559,4 +14561,46 @@ lookbook-element .banner__box .title-wrapper {
 
 .locale-selectors__container {
   background: transparent !important;
+}
+
+
+.see-details {
+  color: #000;
+  text-decoration: underline;
+}
+
+.accordion-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion-description {
+    width: 100%;
+  }
+}
+
+/* dimensions drawer */
+
+.dimension-row {
+  margin-bottom: 10px;
+}
+.dimension-title {
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .dimensions-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.product-dimensions-image {
+  margin-top: auto !important;
+  margin-right: auto !important;
+}
+
+.mb-6 {
+  margin-bottom: 24px !important;
 }

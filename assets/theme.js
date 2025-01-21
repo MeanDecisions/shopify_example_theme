@@ -2563,6 +2563,12 @@ class SplitWords extends HTMLElement {
     const splitting = Splitting({ target: this, by: 'words' });
 
     splitting[0].words.forEach((item, index) => {
+   
+      if (item.textContent.trim() === 'Contemporary') {
+        item.style.display = 'none';
+        return;
+      }
+
       const wrapper = document.createElement('animate-element');
       wrapper.className = 'block';
       wrapper.setAttribute('data-animate', this.getAttribute('data-animate'));
@@ -4024,6 +4030,12 @@ class SliderDots extends HTMLElement {
 
   reset() {
     this._items = Array.from(this.children);
+    this.resetIndexes();
+    
+
+    this.items.forEach((item) => {
+      item.addEventListener('click', this.onButtonClick.bind(this));
+    });
   }
 
   onChange(event) {
@@ -4555,12 +4567,23 @@ class ProductInfo extends HTMLElement {
       const updateSourceFromDestination = (id) => {
         const source = parsedHTML.getElementById(`${id}-${this.sectionId}-${this.productId}`);
         const destination = document.querySelector(`#${id}-${this.sectionId}-${this.productId}`);
+       
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
+          
+        
+          if (id === 'VariantMetafieldThumbs') {
+            const mediaDots = destination.closest('media-dots');
+            if (mediaDots) {
+              mediaDots.reset();
+            }
+          }
         }
       };
-
+      updateSourceFromDestination('VariantMetafield');
+      updateSourceFromDestination('VariantMetafieldThumbs');
+      updateSourceFromDestination('VariantTitle');
       updateSourceFromDestination('Price');
       updateSourceFromDestination('StickyPrice');
       updateSourceFromDestination('Sku');
@@ -4590,6 +4613,12 @@ class ProductInfo extends HTMLElement {
           variant: variant
         }
       }));
+
+      
+      const slider = this.querySelector('slider-element');
+      if (slider) {
+        slider.reset();
+      }
     };
   }
 
@@ -5343,7 +5372,7 @@ customElements.define('media-hover-button', MediaHoverButton, { extends: 'button
 class MediaDots extends SliderDots {
   constructor() {
     super();
-
+    
     if (theme.config.isTouch) {
       new theme.initWhenVisible(this.resetIndexes.bind(this));
     }
@@ -5352,13 +5381,17 @@ class MediaDots extends SliderDots {
     }
   }
 
+  reset() {
+    super.reset(); 
+    this.resetIndexes();
+  }
+
   resetIndexes() {
     let newIndex = 1;
-
+    
     this.itemsToShow.forEach((item, index) => {
       item.setAttribute('data-index', newIndex);
       item.setAttribute('aria-current', index === 0 ? 'true' : 'false');
-
       newIndex++;
     });
   }

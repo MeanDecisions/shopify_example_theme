@@ -1054,6 +1054,36 @@
     ]
   },
   {
+    "name": "Integrations",
+    "settings": [
+      
+      {
+        "type": "checkbox",
+        "id": "enable_yotpo",
+        "default": true,
+        "label": "Enable Yotpo Reviews"
+      },
+      {
+        "type": "text",
+        "id": "yotpo_stars_id",
+        "label": "Yotpo Stars ID",
+        "default": "278684"
+      },
+      {
+        "type": "text",
+        "id": "yotpo_reviews_id",
+        "label": "Yotpo ID",
+        "default": "252913"
+      },
+      {
+        "type": "text",
+        "id": "yotpo_app_key",
+        "label": "Yotpo App Key",
+        "default": "GBwkxOdNyucjWQzUF2DdeBjONqAGUSHycofjcB5h"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
