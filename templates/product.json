@@ -28,12 +28,6 @@
             "show_rating": true
           }
         },
-        "short_description_3EVUrb": {
-          "type": "short_description",
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -118,7 +112,6 @@
       "block_order": [
         "vendor",
         "title",
-        "short_description_3EVUrb",
         "description",
         "countdown",
         "variant_picker",
@@ -602,8 +595,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Dimensions",
-            "content": "",
+            "heading": "Collapsible row 1",
+            "content": "<p>Collapsible content 1</p>",
             "metafields": ""
           }
         },
