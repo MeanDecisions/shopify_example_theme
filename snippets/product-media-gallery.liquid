@@ -161,30 +161,31 @@
           {% comment %} custom variant images powered by metafield {% endcomment %}
           {% if matching_variant_images %}
             {%- if media.id != featured_media.id -%}
-              {% comment %} <div id="VariantMetafield-{{ section.id }}-{{ product.id }}"> {% endcomment %}
+            
               {% assign variant_images = product.selected_or_first_available_variant.metafields.variant.variant_images.value %}
-              {% for image in variant_images %}
-                {% comment %} metafield images here {% endcomment %}
-                {%- render 'product-media',
-                  product: product,
-                  product_id: product_id,
-                  section_id: section_id,
-                  media: image,
-                  featured_media: featured_media,
-                  variant_images: variant_images,
-                  hide_variants: hide_variants,
-                  gallery_layout: gallery_layout,
-                  image_zoom: image_zoom,
-                  image_fill: image_fill,
-                  image_ratio: image_ratio,
-                  image_ratio_mobile: image_ratio_mobile,
-                  preload: false,
-                  sizes: sizes,
-                  autoplay: enable_video_autoplay,
-                  loop: enable_video_looping
-                -%}
-              {% endfor %}
-              {% comment %} </div> {% endcomment %}
+              {% if variant_images != blank %}
+                {% for image in variant_images %}
+                  {%- render 'product-media',
+                    product: product,
+                    product_id: product_id,
+                    section_id: section_id,
+                    media: image,
+                    featured_media: featured_media,
+                    variant_images: variant_images,
+                    hide_variants: hide_variants,
+                    gallery_layout: gallery_layout,
+                    image_zoom: image_zoom,
+                    image_fill: image_fill,
+                    image_ratio: image_ratio,
+                    image_ratio_mobile: image_ratio_mobile,
+                    preload: false,
+                    sizes: sizes,
+                    autoplay: enable_video_autoplay,
+                    loop: enable_video_looping
+                  -%}
+                {% endfor %}
+              {% endif %}
+        
             {%- endif -%}
 
           {% else %}
@@ -262,13 +263,18 @@
 {% comment %} custom variant images powered by metafield {% endcomment %}
 {% if matching_variant_images %}
   {%- if media.id != featured_media.id -%}
-    {% comment %} <div id="VariantMetafield-{{ section.id }}-{{ product.id }}"> {% endcomment %}
     {% assign variant_images = product.selected_or_first_available_variant.metafields.variant.variant_images.value %}
-    {% for image in variant_images %}
-      {% comment %} metafield images here {% endcomment %}
-      {%- render 'product-thumbnail', product: product, media: image, featured_media: featured_media, variant_images: variant_images, hide_variants: hide_variants -%}
-    {% endfor %}
-    {% comment %} </div> {% endcomment %}
+    {% if variant_images != blank %}
+      {% for image in variant_images %}
+        {%- render 'product-thumbnail',
+          product: product,
+          media: image,
+          featured_media: featured_media,
+          variant_images: variant_images,
+          hide_variants: hide_variants
+        -%}
+      {% endfor %}
+    {% endif %}
   {%- endif -%}
 
 {% else %}
