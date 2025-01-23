@@ -626,10 +626,10 @@
             "icon_width": 24,
             "heading": "Downloads",
             "content": "<p>Add your download description here.</p>",
-            "file_title_1": "",
-            "file_1": "",
-            "file_title_2": "",
-            "file_2": "",
+            "file_title_1": "Product Specification Sheet",
+            "file_1": "{{ product.metafields[\"product-files\"][\"Product-specification-sheet\"].value }}",
+            "file_title_2": "Assembly Instructions",
+            "file_2": "{{ product.metafields[\"product-files\"][\"Assembly-instructions\"].value }}",
             "file_title_3": "",
             "file_3": ""
           }
