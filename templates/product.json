@@ -57,6 +57,7 @@
         },
         "collapsible_tab_6DtxEJ": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "heading": "Dimensions",
@@ -97,6 +98,7 @@
         },
         "complementary": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "product_limit": 4,
