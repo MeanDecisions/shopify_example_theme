@@ -4190,7 +4190,7 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
   --tw-ring-inset: inset;
   --tw-ring-color: rgb(var(--color-foreground)/ 0.115);
   --swatch-radius: 0px;
-  --swatch-offset: 3px;
+  --swatch-offset: 0px;
   --swatch-size: var(--sp-7d5);
   --swatch-margin: calc(var(--swatch-offset)*2);
   background-color: var(--swatch-background);
@@ -4221,7 +4221,7 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
 .color-swatch::after {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
+  --tw-shadow-colored: 0 0 0 4px #d9d9d9;
   --tw-shadow-color: rgb(var(--color-foreground));
   --tw-shadow: var(--tw-shadow-colored);
   border-radius: inherit;
@@ -11190,7 +11190,7 @@ noscript .product-form__input {
 }
 
 .variant-picker .color-swatch {
-  --swatch-size: var(--sp-8d5);
+  --swatch-size: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {

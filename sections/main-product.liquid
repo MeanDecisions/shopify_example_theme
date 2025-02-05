@@ -59,8 +59,6 @@
   <script src="{{ 'volume-pricing.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-
-
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if media_count > 0 %}{% if section.settings.full_width %} page-width--full{% endif %}{% else %} page-width--narrow{% endif %} relative">
     <div class="featured-product product product--{{ section.settings.gallery_layout }}{% if media_count == 0 %} no-media{% endif %} flex flex-col items-start lg:grid gap-5 w-full relative">
@@ -78,9 +76,7 @@
           mobile_layout: section.settings.mobile_layout,
           mobile_thumbnail: section.settings.mobile_thumbnail,
           hide_variants: section.settings.hide_variants,
-          matching_variant_images: section.settings.matching_variant_images,
           enable_video_autoplay: section.settings.enable_video_autoplay,
-          matching_variant_images: section.settings.matching_variant_images,
           enable_video_looping: section.settings.enable_video_looping,
           first_3d_model: first_3d_model,
           product_form_id: product_form_id
@@ -119,8 +115,6 @@
                 </p>
               {%- endif -%}
 
-           
-
             {%- when 'sku' -%}
               <p class="product__sku" id="Sku-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
                 {{- product.selected_or_first_available_variant.sku -}}
@@ -130,25 +124,20 @@
               <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{- product.description -}}
               </div>
-
-            {%- when 'short_description' -%}
-              <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
-         {{product.metafields.product.seo_short_description}} <a href="#product-details" class="see-details">See Details</a>
-              </div>
             
             {%- when 'title' -%}
               {%- liquid
                 assign price_block = section.blocks | where: "type", "price" | first
                 assign rating_block = section.blocks | where: "type", "rating" | first
               -%}
-              <div class="product__title{% if price_block == blank and block.settings.show_price %} with-price{% endif %}" {{ block.shopify_attributes }}>
-                <h1 class="heading leading-none {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} col-span-full">
+              <div class="product__title flex items-start justify-between gap-4{% if price_block == blank and block.settings.show_price %} with-price{% endif %}" {{ block.shopify_attributes }}>
+                <h1 class="heading leading-none {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} w-3/4">
                   <split-words class="split-words block" data-animate="fade-up">{{ product.title }}</split-words>
                 </h1>
 
                 {%- if price_block == blank and block.settings.show_price -%}
-                  <div id="Price-{{ section.id }}-{{ product.id }}" class="product__price">
-                    {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5' -%}
+                  <div id="Price-{{ section.id }}-{{ product.id }}" class="product__price w-1/4 text-right">
+                    {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 justify-end lg:gap-1d5' -%}
                     
                     {%- if product.quantity_price_breaks_configured? -%}
                       <div class="text-opacity text-sm font-medium leading-tight" id="VolumeNote-{{ section.id }}-{{ product.id }}">
@@ -509,13 +498,9 @@
                   {%- render 'icon', icon: 'plus-alt', size: 'xs', class: 'flex-auto' -%}
                 </summary>
                 <div class="details__content rte text-sm text-opacity">
-                  {%- if block.settings.heading == 'Dimensions' -%}
-                    {%- render 'dimensions-drawer' -%}
-                  {%- else -%}
-                    {{ block.settings.content }}
-                    {{ block.settings.page.content }}
-                    {{ block.settings.liquid }}
-                  {%- endif -%}
+                  {{ block.settings.content }}
+                  {{ block.settings.page.content }}
+                  {{ block.settings.liquid }}
                 </div>
               </details>
 
@@ -948,13 +933,6 @@
       "id": "hide_variants",
       "default": false,
       "label": "t:sections.main-product.settings.hide_variants.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "matching_variant_images",
-      "default": false,
-      "label": "Only show matching metafield images",
-      "info": "Shows only the images that match the variant selected from the metafield"
     },
     {
       "type": "checkbox",
@@ -1447,37 +1425,6 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "select",
-          "id": "text_size",
-          "options": [
-            {
-              "value": "text-sm",
-              "label": "t:sections.global.settings.text_size.options__1.label"
-            },
-            {
-              "value": "text-base",
-              "label": "t:sections.global.settings.text_size.options__2.label"
-            },
-            {
-              "value": "text-base lg:text-lg",
-              "label": "t:sections.global.settings.text_size.options__3.label"
-            },
-            {
-              "value": "text-base lg:text-xl",
-              "label": "t:sections.global.settings.text_size.options__4.label"
-            }
-          ],
-          "default": "text-base",
-          "label": "t:sections.global.settings.text_size.label"
-        }
-      ]
-    },
-    {
-      "type": "short_description",
-      "name": "Short Description",
       "limit": 1,
       "settings": [
         {
