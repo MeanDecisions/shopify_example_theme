@@ -24,6 +24,12 @@
     <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png" />
   {%- endif -%}
 
+   <!-- YOTPO Code -->
+   {%- if settings.enable_yotpo and template.name == 'product' -%}
+    <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/{{ settings.yotpo_app_key }}" async></script>
+  {%- endif -%}
+  <!-- End YOTPO Code -->
+
   <title>
     {{- page_title -}}
     {%- if current_tags -%}

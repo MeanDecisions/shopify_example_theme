@@ -4614,7 +4614,7 @@ class ProductInfo extends HTMLElement {
         }
       }));
 
-      
+
       const slider = this.querySelector('slider-element');
       if (slider) {
         slider.reset();
@@ -5382,7 +5382,7 @@ class MediaDots extends SliderDots {
   }
 
   reset() {
-    super.reset(); 
+    super.reset();
     this.resetIndexes();
   }
 

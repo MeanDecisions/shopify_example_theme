@@ -48,15 +48,16 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "show_variant_labels": false,
+            "show_variant_labels": true,
             "picker_type": "button",
             "enable_color_swatches": true,
-            "color_swatch_type": "variant",
+            "color_swatch_type": "color",
             "size_chart": ""
           }
         },
         "collapsible_tab_6DtxEJ": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "heading": "Dimensions",
@@ -97,6 +98,7 @@
         },
         "complementary": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "product_limit": 4,
@@ -626,10 +628,10 @@
             "icon_width": 24,
             "heading": "Downloads",
             "content": "<p>Add your download description here.</p>",
-            "file_title_1": "",
-            "file_1": "",
-            "file_title_2": "",
-            "file_2": "",
+            "file_title_1": "Product Specification Sheet",
+            "file_1": "{{ product.metafields[\"product-files\"][\"Product-specification-sheet\"].value }}",
+            "file_title_2": "Assembly Instructions",
+            "file_2": "{{ product.metafields[\"product-files\"][\"Assembly-instructions\"].value }}",
             "file_title_3": "",
             "file_3": ""
           }
