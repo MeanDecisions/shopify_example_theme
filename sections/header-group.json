@@ -368,7 +368,7 @@
         "enable_language_selector": true,
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
-        "color_text": "#444c48",
+        "color_text": "#1b1b1b",
         "color_background": "#fffffa",
         "padding_top": 18,
         "padding_bottom": 18,
