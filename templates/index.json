@@ -92,7 +92,7 @@
           "type": "collection",
           "settings": {
             "collection": "contemporary-tables",
-            "image": "shopify://shop_images/20241015_CASE_Lucent.jpg",
+            "image": "shopify://shop_images/Standalone-Cross-Rectangular_Portrait_20241015_CASE.jpg",
             "title": "Tables",
             "description": "",
             "overlay_content": true,
@@ -105,7 +105,7 @@
           "type": "collection",
           "settings": {
             "collection": "dining-chairs",
-            "image": "shopify://shop_images/20241015_CASE_675-Detail.jpg",
+            "image": "shopify://shop_images/Ella-and-ottoman_Portrait_20241015_CASE_1768d7e9-bfed-4882-b46e-f461d8811f5f.jpg",
             "title": "Seating",
             "description": "",
             "overlay_content": true,
@@ -132,7 +132,7 @@
           "settings": {
             "collection": "lighting",
             "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
-            "title": "Lighting",
+            "title": "Lighting & Accessories",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -157,8 +157,8 @@
           "type": "collection",
           "settings": {
             "collection": "dining-accessories",
-            "image": "shopify://shop_images/Accessories_a0fa1156-6f93-4eda-9cfe-0174a9b0e4eb.jpg",
-            "title": "Accessories",
+            "image": "shopify://shop_images/S05.jpg",
+            "title": "Outdoor",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
