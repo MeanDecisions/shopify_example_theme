@@ -738,7 +738,14 @@
           "type": "collection",
           "settings": {
             "collection": "armchairs",
-            "products": [],
+            "products": [
+              "ella-swivel-lounge-chair",
+              "forum-armchair",
+              "nordin-armchair",
+              "stanley-armchair",
+              "ella-lounge-chair",
+              "rene-armchair"
+            ],
             "title": "Armchairs"
           }
         },
@@ -762,8 +769,13 @@
           "type": "collection",
           "settings": {
             "collection": "beds",
-            "products": [],
-            "title": "Beds"
+            "products": [
+              "forum-2-seater-sofa",
+              "linn-3-seater-sofa",
+              "odyssey-2-seater-sofa",
+              "linn-2-seater-sofa"
+            ],
+            "title": "Sofas"
           }
         },
         "collection_9xEYTR": {
@@ -798,7 +810,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Best Sellers",
+        "heading": "Living Room",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
