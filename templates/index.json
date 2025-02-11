@@ -267,7 +267,7 @@
     "featured_collection_QjKgKT": {
       "type": "featured-collection",
       "settings": {
-        "collection": "news-in",
+        "collection": "bestsellers",
         "products": [],
         "product_limit": 8,
         "columns": 4,
@@ -275,7 +275,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "New Arrivals",
+        "heading": "Bestsellers",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
