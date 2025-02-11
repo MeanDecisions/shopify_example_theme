@@ -207,14 +207,14 @@
             "button_secondary_style": true,
             "content_position": "md:items-end",
             "text_alignment": "left",
-            "content_position_mobile": "items-center",
-            "text_alignment_mobile": "center",
+            "content_position_mobile": "items-end",
+            "text_alignment_mobile": "left",
             "color_text": "#ffffff",
             "color_button_text": "#4d5940",
             "color_button_background": "#ffffff",
             "color_button_gradient": "",
             "color_overlay": "#000000",
-            "overlay_opacity": 9
+            "overlay_opacity": 0
           }
         }
       },
@@ -232,7 +232,7 @@
         "filter_type": "drawer",
         "filter_color_swatches": true,
         "enable_sorting": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 100,
         "divider": false,
         "full_width": false,
