@@ -270,6 +270,7 @@
         "heading_xYeqaX",
         "text_8HEbeN"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ collection.image }}",
         "image_height": "450px",
