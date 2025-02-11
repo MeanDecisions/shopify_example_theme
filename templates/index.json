@@ -85,55 +85,6 @@
         "parallax_direction": "zoom"
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Design Without Compromise",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "Our Story",
-        "button_link": "shopify://pages/about-us",
-        "button_icon": false,
-        "highlighted_text": "text",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "#87874e",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -249,8 +200,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": true,
         "rounded": false
@@ -344,6 +295,56 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Design Without Compromise",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "Our Story",
+        "button_link": "shopify://pages/about-us",
+        "button_icon": false,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#87874e",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
         "rounded": false
       }
     },
@@ -1015,7 +1016,7 @@
         "color_highlight": "",
         "gradient_highlight": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 30,
+        "overlay_opacity": 10,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -1230,10 +1231,10 @@
   },
   "order": [
     "slideshow",
-    "rich-text",
     "collection-list",
     "image-comparison",
     "featured_collection_QjKgKT",
+    "rich-text",
     "image_with_text_overlay_9tf9wj",
     "product_bundle_tj3Vfp",
     "reveal_image_with_text_9B8Dy6",
