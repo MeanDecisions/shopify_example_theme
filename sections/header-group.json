@@ -411,11 +411,11 @@
         "image_GRE6KX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
-            "heading": "Lighting Collections",
+            "image": "shopify://shop_images/RENE_SOFA_032---OVERHANG-ROUND-AND-RENE-SOFA-AND-SPINDLE-RUG.jpg",
+            "heading": "Living Room",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "button_label": "Explore Collection",
+            "button_label": "Explore Furniture",
             "button_link": "",
             "button_icon": false,
             "button_secondary_style": false
