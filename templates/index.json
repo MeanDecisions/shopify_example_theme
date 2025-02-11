@@ -811,10 +811,10 @@
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "#265874",
+        "color_button_background": "#87874e",
         "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "divider": false,
         "full_width": false,
         "rounded": false
