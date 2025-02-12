@@ -11433,7 +11433,7 @@ noscript .product-form__input {
 }
 
 .variant-picker .color-swatch {
-  --swatch-size: var(--sp-8d5);
+  --swatch-size: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
