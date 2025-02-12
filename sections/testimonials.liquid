@@ -30,7 +30,14 @@
               {%- endif -%}
 
               {%- if block.settings.author != blank or block.settings.author_info != blank -%}
-                <cite>— {{ block.settings.author }}
+                <cite>—&nbsp;
+                  {%- if block.settings.author_url != blank -%}
+                    <a href="{{ block.settings.author_url }}" class="reversed-link">
+                  {%- endif -%}
+                    {{- block.settings.author -}}
+                  {%- if block.settings.author_url != blank -%}
+                    </a>
+                  {%- endif -%}
                   {%- if block.settings.author_info != blank -%}
                     <span class="block text-base font-normal">{{ block.settings.author_info }}</span>
                   {%- endif -%}
@@ -168,6 +175,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",
@@ -384,6 +397,11 @@
           "type": "text",
           "id": "author_info",
           "label": "t:sections.testimonials.blocks.testimonial.settings.author_info.label"
+        },
+        {
+          "type": "url",
+          "id": "author_url",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.author_url.label"
         },
         {
           "type": "image_picker",

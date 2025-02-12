@@ -9,74 +9,76 @@
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}{% if section.settings.enable_twin %} section--plain{% endif %}">
   <div class="relative z-1">
-    {%- capture marquee -%}
-    {%- liquid
-      assign first_block = section.blocks | first
-      assign last_block = section.blocks | last
-      if first_block.type == 'text' and last_block.type == 'text'
-        assign with_dot = true
-      endif
+    {%- if section.blocks.size > 0 -%}
+      {%- capture marquee -%}
+        {%- liquid
+          assign first_block = section.blocks | first
+          assign last_block = section.blocks | last
+          if first_block.type == 'text' and last_block.type == 'text'
+            assign with_dot = true
+          endif
 
-      assign with_gradient = false
-      if section.settings.gradient_highlight != blank and section.settings.gradient_highlight != 'rgba(0,0,0,0)'
-        assign with_gradient = true
-      endif
-    -%}
-      <div class="marquee{% if with_dot %} with-dot{% endif %} flex items-center flex-auto whitespace-nowrap">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'text' -%}
-              <div class="scrolling-text__item with-text flex items-center flex-auto {{ block.settings.text_font }} tracking-heading" style="--font-size: {{ block.settings.text_size }}px;{% if block.settings.text_size >= 100 %}--stencil-stroke-width: 0.01em;{% endif %}" {{ block.shopify_attributes }}>
-                {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
-              </div>
-            {%- when 'image' -%}
-              {%- liquid
-                assign image_height = block.settings.height
-                assign image_height_2x = block.settings.height | times: 2
-              -%}
-              <div class="scrolling-text__item with-media flex items-center flex-auto media media--transparent relative" style="--image-height: {{ image_height }}px;" {{ block.shopify_attributes }}>
-                {%- if block.settings.image != blank -%}
-                  <img
-                    srcset="{{ block.settings.image | image_url: height: image_height }} 1x, {{ block.settings.image | image_url: height: image_height_2x }} 2x"
-                    src="{{ block.settings.image | image_url: height: image_height }}"
-                    alt="{{ block.settings.image.alt | escape }}"
-                    loading="lazy"
-                    width="{{ image_height | times: block.settings.image.aspect_ratio }}"
-                    height="{{ image_height }}"
-                    is="lazy-image"
-                  />
-                {%- else -%}
-                  {{- 'logo' | placeholder_svg_tag: 'placeholder' -}}
-                {%- endif -%}
-              </div>
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
-    {%- endcapture -%}
+          assign with_gradient = false
+          if section.settings.gradient_highlight != blank and section.settings.gradient_highlight != 'rgba(0,0,0,0)'
+            assign with_gradient = true
+          endif
+        -%}
+        <div class="marquee{% if with_dot %} with-dot{% endif %} flex items-center flex-auto whitespace-nowrap">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                <div class="scrolling-text__item with-text flex items-center flex-auto {{ block.settings.text_font }} tracking-heading" style="--font-size: {{ block.settings.text_size }}px;{% if block.settings.text_size >= 100 %}--stencil-stroke-width: 0.01em;{% endif %}" {{ block.shopify_attributes }}>
+                  {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
+                </div>
+              {%- when 'image' -%}
+                {%- liquid
+                  assign image_height = block.settings.height
+                  assign image_height_2x = block.settings.height | times: 2
+                -%}
+                <div class="scrolling-text__item with-media flex items-center flex-auto media media--transparent relative" style="--image-height: {{ image_height }}px;" {{ block.shopify_attributes }}>
+                  {%- if block.settings.image != blank -%}
+                    <img
+                      srcset="{{ block.settings.image | image_url: height: image_height }} 1x, {{ block.settings.image | image_url: height: image_height_2x }} 2x"
+                      src="{{ block.settings.image | image_url: height: image_height }}"
+                      alt="{{ block.settings.image.alt | escape }}"
+                      loading="lazy"
+                      width="{{ image_height | times: block.settings.image.aspect_ratio }}"
+                      height="{{ image_height }}"
+                      is="lazy-image"
+                    />
+                  {%- else -%}
+                    {{- 'logo' | placeholder_svg_tag: 'placeholder' -}}
+                  {%- endif -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      {%- endcapture -%}
 
-    {%- if section.settings.enable_twin -%}
-      {%- liquid
-        assign direction = section.settings.direction
-        if direction == 'left'
-          assign reversed = 'right'
-        else
-          assign reversed = 'left'
-        endif
-      -%}
-      <div class="scrolling-wrapper with-{{ direction }} relative z-1">
-        <marquee-element class="scrolling-text scrolling-text--{{ direction }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ direction }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
+      {%- if section.settings.enable_twin -%}
+        {%- liquid
+          assign direction = section.settings.direction
+          if direction == 'left'
+            assign reversed = 'right'
+          else
+            assign reversed = 'left'
+          endif
+        -%}
+        <div class="scrolling-wrapper with-{{ direction }} relative z-1">
+          <marquee-element class="scrolling-text scrolling-text--{{ direction }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ direction }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
+            {{- marquee -}}
+          </marquee-element>
+        </div>
+        <div class="scrolling-wrapper with-{{ direction }} relative">
+          <marquee-element class="scrolling-text scrolling-text--{{ reversed }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ reversed }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
+            {{- marquee -}}
+          </marquee-element>
+        </div>
+      {%- else -%}
+        <marquee-element class="scrolling-text scrolling-text--{{ section.settings.direction }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ section.settings.direction }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
           {{- marquee -}}
         </marquee-element>
-      </div>
-      <div class="scrolling-wrapper with-{{ direction }} relative">
-        <marquee-element class="scrolling-text scrolling-text--{{ reversed }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ reversed }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
-          {{- marquee -}}
-        </marquee-element>
-      </div>
-    {%- else -%}
-      <marquee-element class="scrolling-text scrolling-text--{{ section.settings.direction }} flex items-center" data-speed="{{ section.settings.speed }}" data-direction="{{ section.settings.direction }}"{% if section.settings.enable_parallax %} data-parallax="1.5"{% endif %}>
-        {{- marquee -}}
-      </marquee-element>
+      {%- endif -%}
     {%- endif -%}
   </div>
 </div>

@@ -7,7 +7,7 @@
 -%}
 
 {%- if show_section -%}
-  {%- style -%}
+  <style>
     :root {--topbar-height: var(--sp-12);}
     
     @media screen and (min-width: 1536px) {
@@ -20,7 +20,7 @@
       --color-foreground: {{ section.settings.color_text.rgb }};
       --color-highlight: {{ section.settings.color_highlight.rgb }};
     }
-  {%- endstyle -%}
+  </style>
 
   {%- liquid
     assign announcement_block_count = section.blocks.size
@@ -139,6 +139,8 @@
                             aria-current="true"
                           {% endif %}
                           data-value="{{ language.iso_code }}"
+                          title="{{ language.endonym_name | capitalize | escape }}"
+                          data-no-instant
                         >
                           {{- language.endonym_name | capitalize -}}
                         </a>
@@ -171,6 +173,8 @@
                             aria-current="true"
                           {% endif %}
                           data-value="{{ country.iso_code }}"
+                          title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+                          data-no-instant
                         >
                           {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
                         </a>

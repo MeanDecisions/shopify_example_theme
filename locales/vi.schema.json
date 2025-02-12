@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "header-group": {
@@ -57,6 +66,18 @@
         "button_link": {
           "label": "Liên kết trên nút"
         },
+        "button_style": {
+          "options__1": {
+            "label": "Nút đặc"
+          },
+          "options__2": {
+            "label": "Nút viền ngoài"
+          },
+          "options__3": {
+            "label": "Liên kết"
+          },
+          "label": "Kiểu nút"
+        },
         "button_size": {
           "options__1": {
             "label": "Nhỏ"
@@ -69,11 +90,11 @@
           },
           "label": "Kích thước nút"
         },
+        "button_external": {
+          "label": "Mở liên kết trong tab mới"
+        },
         "button_icon": {
           "label": "Hiển thị biểu tượng nút"
-        },
-        "button_secondary_style": {
-          "label": "Sử dụng kiểu nút viền ngoài"
         },
         "color_accent": {
           "label": "Liên kết"
@@ -341,9 +362,15 @@
             "label": "750px"
           },
           "options__10": {
-            "label": "Toàn màn hình"
+            "label": "850px"
           },
           "options__11": {
+            "label": "900px"
+          },
+          "options__12": {
+            "label": "Toàn màn hình"
+          },
+          "options__13": {
             "label": "Điều chỉnh theo hình ảnh đầu tiên"
           },
           "label": "Chiều cao trên máy tính để bàn"
@@ -742,6 +769,9 @@
         }
       },
       "blocks": {
+        "breadcrumb": {
+          "name": "Breadcrumb"
+        },
         "subheading": {
           "name": "Tiêu đề phụ"
         },
@@ -782,16 +812,6 @@
     },
     "apps": {
       "name": "Ứng dụng",
-      "settings": {
-        "header__reviews": {
-          "content": "Đánh giá sản phẩm Shopify",
-          "info": "Cài đặt [ứng dụng Shopify Product Reviews](https://apps.shopify.com/product-reviews) để sử dụng tính năng này. Chỉ hiển thị trên các trang sản phẩm."
-        },
-        "enable_reviews_integration": {
-          "label": "Bật tích hợp đánh giá sản phẩm",
-          "info": "Điều chỉnh ứng dụng Đánh giá sản phẩm theo giao diện của chủ đề. Tắt để sử dụng thiết kế ứng dụng gốc."
-        }
-      },
       "presets": {
         "name": "Ứng dụng"
       }
@@ -1095,6 +1115,44 @@
         "name": "Danh sách bộ sưu tập"
       }
     },
+    "compact-product-bundle": {
+      "name": "Gói sản phẩm nhỏ gọn",
+      "settings": {
+        "layout": {
+          "options__1": {
+            "label": "Hình ảnh đầu tiên"
+          },
+          "options__2": {
+            "label": "Hình ảnh thứ hai"
+          },
+          "label": "Vị trí hình ảnh trên máy tính để bàn",
+          "info": "Hình ảnh đầu tiên là bố cục mặc định trên thiết bị di động."
+        },
+        "content_position": {
+          "options__1": {
+            "label": "Bên trên"
+          },
+          "options__2": {
+            "label": "Ở giữa"
+          },
+          "options__3": {
+            "label": "Bên dưới"
+          }
+        },
+        "image_height_mobile": {
+          "label": "Chiều cao hình ảnh trên thiết bị di động"
+        }
+      },
+      "presets": {
+        "name": "Gói sản phẩm nhỏ gọn"
+      }
+    },
+    "floating-product-bundle": {
+      "name": "Gói sản phẩm nổi",
+      "presets": {
+        "name": "Gói sản phẩm nổi"
+      }
+    },
     "contact-form": {
       "name": "Biểu mẫu liên hệ",
       "settings": {
@@ -1252,6 +1310,9 @@
         "timer": {
           "name": "Hẹn giờ",
           "settings": {
+            "paragraph": {
+              "content": "Ngày hết hạn dựa trên [múi giờ chính của cửa hàng](/admin/settings/general)."
+            },
             "compact": {
               "label": "Sử dụng kiểu nhỏ gọn"
             },
@@ -1576,6 +1637,16 @@
         }
       },
       "blocks": {
+        "global": {
+          "settings": {
+            "container_width": {
+              "label": "Chiều rộng cột"
+            },
+            "opened": {
+              "label": "Mặc định hiển thị mở"
+            }
+          }
+        },
         "logo_social": {
           "name": "Logo",
           "settings": {
@@ -1593,19 +1664,11 @@
             "menu": {
               "label": "Chọn menu",
               "info": "Chỉ hiển thị các mục menu cấp cao nhất."
-            },
-            "container_width": {
-              "label": "Chiều rộng cột"
             }
           }
         },
         "text": {
-          "name": "Chữ",
-          "settings": {
-            "container_width": {
-              "label": "Chiều rộng cột"
-            }
-          }
+          "name": "Chữ"
         },
         "brand_information": {
           "name": "Thông tin thương hiệu",
@@ -1633,9 +1696,6 @@
             },
             "button_link_4": {
               "label": "Liên kết dòng giới thiệu #4"
-            },
-            "container_width": {
-              "label": "Chiều rộng cột"
             }
           }
         }
@@ -1816,6 +1876,10 @@
             },
             "image_height": {
               "label": "Chiều cao hình ảnh"
+            },
+            "description": {
+              "label": "Văn bản thay thế hình ảnh",
+              "info": "Mô tả hình ảnh cho khách hàng sử dụng trình đọc màn hình."
             }
           }
         },
@@ -2029,7 +2093,12 @@
       "name": "Địa chỉ"
     },
     "main-login": {
-      "name": "Đăng nhập"
+      "name": "Đăng nhập",
+      "settings": {
+        "enable_shop_login_button": {
+          "label": "Bật Đăng nhập bằng Shop"
+        }
+      }
     },
     "main-order": {
       "name": "Đặt hàng"
@@ -2114,9 +2183,6 @@
       "blocks": {
         "title": {
           "name": "Tiêu đề bài đăng trên blog"
-        },
-        "breadcrumb": {
-          "name": "Breadcrumb"
         }
       }
     },
@@ -2235,7 +2301,13 @@
           "name": "Ghi chú giỏ hàng"
         },
         "buttons": {
-          "name": "Nút thanh toán"
+          "name": "Nút thanh toán",
+          "settings": {
+            "show_accelerated_buttons": {
+              "label": "Hiển thị các nút tăng tốc",
+              "info": "Định cấu hình các nút thanh toán nhanh trong [cài đặt thanh toán](/admin/settings/payments) của bạn"
+            }
+          }
         },
         "free_shipping": {
           "name": "Tin nhắn miễn phí vận chuyển",
@@ -2333,7 +2405,6 @@
           "name": "Mô tả bộ sưu tập"
         },
         "breadcrumb": {
-          "name": "Breadcrumb",
           "settings": {
             "show_collections_link": {
               "label": "Hiển thị trang bộ sưu tập trong danh sách đường dẫn"
@@ -2629,7 +2700,6 @@
       },
       "blocks": {
         "breadcrumb": {
-          "name": "Breadcrumb",
           "settings": {
             "show_collections_link": {
               "label": "Hiển thị trang bộ sưu tập trong breadcrumb"
@@ -2749,6 +2819,15 @@
               "info": "Chọn 0 để luôn hiển thị còn hàng nếu có."
             },
             "show_inventory_quantity": {
+              "options__1": {
+                "label": "Không"
+              },
+              "options__2": {
+                "label": "Ngưỡng tồn kho thấp"
+              },
+              "options__3": {
+                "label": "Luôn luôn"
+              },
               "label": "Hiển thị số lượng hàng tồn kho"
             },
             "show_inventory_transfer": {
@@ -2889,6 +2968,27 @@
             }
           }
         },
+        "back_in_stock": {
+          "name": "Thông báo có hàng",
+          "settings": {
+            "header": {
+              "content": "Thông báo có hàng",
+              "info": "Nhắc thu thập thông tin email để thông báo khi sản phẩm có hàng trở lại."
+            },
+            "paragraph": {
+              "content": "Lưu ý, thông báo qua email sẽ KHÔNG được tự động gửi đến khách hàng khi có sản phẩm - bạn sẽ cần phải thực hiện việc này."
+            },
+            "enabled": {
+              "label": "Bật thông báo có hàng"
+            },
+            "show_name": {
+              "label": "Hiển thị tên"
+            },
+            "show_phone": {
+              "label": "Hiển thị số điện thoại"
+            }
+          }
+        },
         "line_item_property": {
           "name": "Thuộc tính mục hàng",
           "settings": {
@@ -3024,6 +3124,17 @@
       },
       "presets": {
         "name": "Bản đồ"
+      }
+    },
+    "maps": {
+      "name": "Nhiều bản đồ",
+      "blocks": {
+        "map": {
+          "name": "Bản đồ"
+        }
+      },
+      "presets": {
+        "name": "Nhiều bản đồ"
       }
     },
     "mobile-dock": {
@@ -3288,7 +3399,10 @@
           "info": "Tìm hiểu cách tạo mã giảm giá [tại đây](https://help.shopify.com/manual/discounts)"
         },
         "minimum_quantity": {
-          "label": "Sản phẩm tối thiểu cần yêu cầu"
+          "label": "Mặt hàng tối thiểu cần yêu cầu"
+        },
+        "maximum_quantity": {
+          "label": "Mặt hàng tối đa"
         },
         "allow_quantity_change": {
           "label": "Cho phép thay đổi số lượng cho từng sản phẩm"
@@ -3365,6 +3479,29 @@
         "product_limit": {
           "label": "Số lượng sản phẩm liên quan"
         }
+      }
+    },
+    "quick-order-list": {
+      "name": "Danh sách đặt hàng nhanh",
+      "settings": {
+        "layout": {
+          "label": "Bố cục trên máy tính để bàn",
+          "options__1": {
+            "label": "Ngang"
+          },
+          "options__2": {
+            "label": "Thanh bên"
+          }
+        },
+        "show_image": {
+          "label": "Hiển thị hình ảnh"
+        },
+        "show_sku": {
+          "label": "Hiển thị SKU"
+        }
+      },
+      "presets": {
+        "name": "Danh sách đặt hàng nhanh"
       }
     },
     "recently-viewed": {
@@ -3547,6 +3684,9 @@
             },
             "author_info": {
               "label": "Thông tin tác giả"
+            },
+            "author_url": {
+              "label": "URL tác giả"
             }
           }
         }
@@ -3605,7 +3745,7 @@
         },
         "description": {
           "label": "Văn bản thay thế cho video",
-          "info": "Mô tả video cho khách hàng bằng trình đọc màn hình. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video)"
+          "info": "Mô tả video cho khách hàng sử dụng trình đọc màn hình. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video)"
         }
       },
       "presets": {
@@ -3696,6 +3836,18 @@
             "label": "Bên phải"
           },
           "label": "Căn chỉnh văn bản"
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Bình thường"
+          },
+          "options__2": {
+            "label": "Nửa đậm"
+          },
+          "options__3": {
+            "label": "In đậm"
+          },
+          "label": "Độ dày"
         }
       }
     },
@@ -3871,6 +4023,9 @@
             "label": "Tiêu đề"
           }
         },
+        "type_navigation_weight": {
+          "label": "Độ dày phông chữ menu"
+        },
         "type_navigation_size": {
           "label": "Kích thước cơ sở của menu"
         },
@@ -3885,6 +4040,9 @@
           "options__2": {
             "label": "Tiêu đề"
           }
+        },
+        "type_button_weight": {
+          "label": "Độ dày phông chữ nút"
         },
         "type_button_size": {
           "label": "Kích thước cơ sở của nút"
@@ -3901,6 +4059,9 @@
             "label": "Tiêu đề"
           }
         },
+        "type_product_weight": {
+          "label": "Độ dày phông chữ lưới sản phẩm"
+        },
         "type_product_size": {
           "label": "Kích thước cơ sở của lưới sản phẩm"
         },
@@ -3911,7 +4072,7 @@
           "content": "Biểu tượng"
         },
         "icon_weight": {
-          "label": "Cân nặng"
+          "label": "Độ dày"
         }
       }
     },
@@ -4177,8 +4338,8 @@
           "content": "Tài khoản xã hội"
         },
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https://twitter.com/shopify"
+          "label": "X (Twitter)",
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -4223,7 +4384,7 @@
           "label": "Chia sẻ trên facebook"
         },
         "share_twitter": {
-          "label": "Tweet trên Twitter"
+          "label": "Chia sẻ trên X"
         },
         "share_pinterest": {
           "label": "Ghim trên Pinterest"
@@ -4271,6 +4432,37 @@
         },
         "typewriter_starter_text": {
           "label": "Gợi ý từ khóa"
+        }
+      }
+    },
+    "advanced": {
+      "name": "Nâng cao",
+      "settings": {
+        "header__links": {
+          "content": "Liên kết"
+        },
+        "preload_links": {
+          "label": "Tải trước liên kết khi di chuột qua",
+          "info": "Điều này sẽ tăng tốc độ tải trang theo cảm nhận."
+        },
+        "external_links_new_tab": {
+          "label": "Mở các liên kết bên ngoài trong tab mới"
+        },
+        "header__tab_attention": {
+          "content": "Chú ý đến tab"
+        },
+        "enable_tab_attention": {
+          "label": "Bật chú ý đến tab",
+          "info": "Cho phép bạn cập nhật tiêu đề tab trình duyệt một cách động khi tab mất tiêu điểm."
+        },
+        "tab_attention_message_1": {
+          "label": "Tin nhắn 1"
+        },
+        "tab_attention_message_2": {
+          "label": "Tin nhắn 2",
+        },
+        "tab_attention_message_delay": {
+          "label": "Độ trễ tin nhắn"
         }
       }
     }

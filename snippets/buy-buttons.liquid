@@ -28,6 +28,12 @@
     if quantity_block
       assign show_quantity_selector = false
     endif
+
+    assign back_in_stock_block = section.blocks | where: "type", "back_in_stock" | first
+    assign enable_back_in_stock = block.settings.enable_back_in_stock
+    if back_in_stock_block
+      assign enable_back_in_stock = false
+    endif
   -%}
   {%- form 'product',
     product,
@@ -190,7 +196,7 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-      <div class="buy-buttons{% if product.quantity_price_breaks_configured? != true and show_quantity_selector %} flex{% else %} grid{% endif %} gap-4">
+      <div class="buy-buttons{% if enable_back_in_stock %} back-in-stock{% endif %}{% if product.quantity_price_breaks_configured? != true and show_quantity_selector %} flex{% else %} grid{% endif %} gap-4">
         {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
           {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
           <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only">{{ 'products.quantity.label' | t }}</label>
@@ -230,7 +236,8 @@
           class="product-form__submit button button--primary button--fixed w-full"
           is="hover-button"
           {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled{% endif -%}
-          {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
+          {%- if product.template_suffix == 'pre-order' %} data-pre-order{% endif -%}
+          {%- if enable_back_in_stock %} data-back-in-stock{% endif -%}
         >
           <span class="btn-fill" data-fill></span>
           <span class="btn-text">
@@ -245,6 +252,19 @@
             -%}
           </span>
         </button>
+
+        {%- if enable_back_in_stock -%}
+          <button
+            type="button"
+            class="product-form__alert button button--primary button--fixed w-full"
+            is="hover-button"
+            aria-controls="BackInStockDrawer-{{ section_id }}-{{ product_id }}"
+            aria-expanded="false"
+          >
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">{{ 'products.product.sold_out' | t }} - {{ 'products.back_in_stock.label' | t }}</span>
+          </button>
+        {%- endif -%}
 
         {%- liquid
           unless product.quantity_price_breaks_configured? != true and show_quantity_selector
@@ -286,4 +306,60 @@
       -%}
     </div>
   {%- endform -%}
+
+  {%- if enable_back_in_stock -%}
+    <div id="BackInStock-{{ section_id }}-{{ product_id }}">
+      {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+        <back-in-stock-drawer id="BackInStockDrawer-{{ section_id }}-{{ product_id }}" class="drawer drawer--end z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+          role="dialog"
+          aria-modal="true"
+          aria-label="{{ product.title | escape }}"
+          shopify-design-mode
+          hidden
+        >
+          <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="BackInStockDrawer-{{ section_id }}-{{ product_id }}" aria-expanded="false"></overlay-element>
+          <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+            <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
+              <span class="drawer__title heading lg:text-3xl text-2xl leading-none tracking-tight grid gap-4">
+                {{ product.title | escape }}
+                {%- unless product.has_only_default_variant -%}
+                  <dl class="grid gap-1d5">
+                    {%- for option in product.options_with_values -%}
+                      <div class="flex gap-2 text-sm text-opacity leading-tight">
+                        <dt>{{ option.name | escape }}:</dt>
+                        <dd>
+                          {%- for value in option.values -%}
+                            {%- if option.selected_value == value -%}
+                              <span class="font-medium">{{ value | escape }}</span>
+                            {%- endif -%}
+                          {%- endfor -%}
+                        </dd>
+                      </div>
+                    {%- endfor -%}
+                  </dl>
+                {%- endunless -%}
+              </span>
+              <button class="button button--secondary button--close drawer__close hidden sm:flex items-center justify-center" type="button" is="hover-button" aria-controls="BackInStockDrawer-{{ section_id }}-{{ product_id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+                <span class="btn-fill" data-fill></span>
+                <span class="btn-text">
+                  {%- render 'icon', icon: 'close', size: 'sm' -%}
+                </span>
+              </button>
+            </gesture-element>
+            <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
+              <div class="drawer__scrollable relative flex flex-col gap-5 md:gap-7 grow shrink">
+                {%- render 'back-in-stock',
+                  product: product,
+                  product_id: product_id,
+                  section_id: section_id,
+                  show_name: block.settings.show_back_in_stock_name,
+                  show_phone: block.settings.show_back_in_stock_phone
+                -%}
+              </div>
+            </div>
+          </div>
+        </back-in-stock-drawer>        
+      {%- endif -%}
+    </div>
+  {%- endif -%}
 </div>

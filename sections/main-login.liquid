@@ -79,6 +79,13 @@
             render 'alert', status: 'success', content: success_message
           endif
         -%}
+
+        {%- if section.settings.enable_shop_login_button -%}
+          <div class="sign-in-with-shop-provider rte text-center">
+            {{- shop | login_button -}}
+            <p>{{ 'customer.login.alternate_provider_separator' | t }}</p>
+          </div>
+        {%- endif -%}
         
         <div class="grid gap-5">
           <div class="field">
@@ -158,6 +165,12 @@
 {
   "name": "t:sections.main-login.name",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_shop_login_button",
+      "label": "t:sections.main-login.settings.enable_shop_login_button.label",
+      "default": false
+    },
     {
       "type": "header",
       "content": "t:sections.global.settings.header__heading.content"

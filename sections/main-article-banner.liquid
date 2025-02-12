@@ -9,12 +9,10 @@
 
   assign article_alt = article_image.alt | default: article.title
 
-  # theme-check-disable UndefinedObject
   assign number_of_comments = article.comments_count
   if comment.status == 'pending'
     assign number_of_comments = article.comments_count | plus: 1
   endif
-  # theme-check-enable UndefinedObject
 -%}
 
 <style>
@@ -45,8 +43,8 @@
     
       {%- if section.blocks.size > 0 -%}
         <div class="banner__content overflow-hidden{% if article_image != blank %} absolute z-1 top-0 left-0 w-full h-full{% endif %}">
-          <div class="page-width w-full h-full flex {{ section.settings.content_position }} {{ section.settings.content_position_mobile }}">
-            <div class="banner__box md:text-{{ section.settings.text_alignment }} text-{{ section.settings.text_alignment_mobile }}">
+          <div class="page-width{% if article_image == blank %} page-width--narrow{% endif %} w-full h-full flex {{ section.settings.content_position }} {{ section.settings.content_position_mobile }}">
+            <div class="banner__box md:text-{{ section.settings.text_alignment }} text-{{ section.settings.text_alignment_mobile }}{% if article_image == blank %} w-full{% endif %}">
               {%- assign delay = 0 -%}
               {%- for block in section.blocks -%}
                 {%- liquid
@@ -214,6 +212,14 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
+          "value": "850px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__11.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__12.label",
           "value": "100vh"
         }
       ],
@@ -522,7 +528,7 @@
     },
     {
       "type": "breadcrumb",
-      "name": "t:sections.main-article-banner.blocks.breadcrumb.name",
+      "name": "t:sections.global.blocks.breadcrumb.name",
       "limit": 1
     },
     {

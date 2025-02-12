@@ -48,17 +48,13 @@
 
     {%- if section.settings.button_label != blank -%}
       <p>
-        <a class="button button--secondary icon-with-text"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} is="hover-link">
-          <span class="btn-fill" data-fill></span>
-          <span class="btn-text">
-            {%- liquid
-              echo section.settings.button_label | escape
-              if section.settings.button_icon
-                render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-              endif
-            -%}
-          </span>
-        </a>
+        {%- render 'button',
+          style: 'secondary',
+          label: section.settings.button_label,
+          link: section.settings.button_link,
+          external: section.settings.button_external,
+          show_icon: section.settings.button_icon
+        -%}
       </p>
     {%- endif -%}
 

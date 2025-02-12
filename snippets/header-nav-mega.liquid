@@ -36,7 +36,7 @@
         </ul>
         {%- if block.settings.button_label != blank -%}
           <div class="mega-menu__footer relative">
-            <a class="flex items-center justify-between w-full h-full"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+            <a class="flex items-center justify-between w-full h-full"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %}>
               <span class="{% if block.settings.menu_width != 'small' %}heading {% endif %}reversed-link text-lg-2xl tracking-tight">{{ block.settings.button_label | escape }}</span>
               {%- render 'icon', icon: 'arrow-right', size: 'lg', class: 'transform' -%}
             </a>
@@ -80,7 +80,7 @@
             assign promo_overlay_opacity = 'promo_overlay_opacity_' | append: i
             assign promo_overlay_opacity = block.settings[promo_overlay_opacity]
           -%}
-          <li class="mega-menu__item opacity-0 w-full">
+          <li class="mega-menu__item flex opacity-0 w-full">
             <div class="media-card media-card--{{ settings.card_style }}{% if promo_overlay_content %} media-card--overlap{% endif %} overflow-hidden">
               <a class="media-card__link flex flex-col w-full h-full relative"{% if promo_link != blank %} href="{{ promo_link }}"{% else %} role="link" aria-disabled="true"{% endif %}
                 aria-label="{{ promo_heading | default: promo_subtext | escape }}"

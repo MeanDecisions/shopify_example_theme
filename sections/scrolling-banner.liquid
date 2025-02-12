@@ -22,12 +22,12 @@
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
     {%- liquid
-      assign withBackground = false
+      assign with_background = false
       if section.settings.gradient_background_2 != blank and section.settings.gradient_background_2 != 'rgba(0,0,0,0)'
-        assign withBackground = true
+        assign with_background = true
       endif
       if section.settings.color_background_2 != blank and section.settings.color_background_2 != 'rgba(0,0,0,0)'
-        assign withBackground = true
+        assign with_background = true
       endif
 
       assign with_gradient = false
@@ -35,9 +35,9 @@
         assign with_gradient = true
       endif
     -%}
-    <div class="grid{% if withBackground %} gap-4{% else %} gap-10{% endif %} lg:hidden">
+    <div class="grid{% if with_background %} gap-4{% else %} gap-10{% endif %} lg:hidden">
       {%- for block in section.blocks -%}
-        <div class="image-with-text{% if withBackground %} with-background{% endif %} with-scrolling flex flex-col flex-col-reverse overflow-hidden">
+        <div class="image-with-text{% if with_background %} with-background{% endif %} with-scrolling flex flex-col flex-col-reverse overflow-hidden">
           <div class="image-with-text__item grow shrink-0 relative">
             <div class="image-with-text__media h-full">
               <media-element class="image-with-text__image block media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }} relative overflow-hidden">
@@ -135,17 +135,13 @@
               {%- endif -%}
 
               {%- if block.settings.button_label != blank -%}
-                <a class="button button--primary icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
-                  <span class="btn-fill" data-fill></span>
-                  <span class="btn-text">
-                    {%- liquid
-                      echo block.settings.button_label | escape
-                      if block.settings.button_icon
-                        render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                      endif
-                    -%}
-                  </span>
-                </a>
+                {%- render 'button',
+                  label: block.settings.button_label,
+                  link: block.settings.button_link,
+                  style: block.settings.button_style,
+                  external: block.settings.button_external,
+                  show_icon: block.settings.button_icon
+                -%}
               {%- endif -%}
             </div>
           </div>
@@ -153,7 +149,7 @@
       {%- endfor -%}
     </div>
     <scrolling-banner class="scrolling-banner hidden lg:block">
-      <sticky-element class="md:sticky top-0 image-with-text{% if withBackground %} with-background{% endif %} with-scrolling flex lg:gap-2 flex-col{% if section.settings.layout == 'image_first' %} lg:flex-row{% else %} lg:flex-row-reverse{% endif %} overflow-hidden">
+      <sticky-element class="md:sticky top-0 image-with-text{% if with_background %} with-background{% endif %} with-scrolling flex lg:gap-2 flex-col{% if section.settings.layout == 'image_first' %} lg:flex-row{% else %} lg:flex-row-reverse{% endif %} overflow-hidden">
         <div class="image-with-text__item grow shrink-0{% if section.settings.image_width == 'small' %} lg:grow-0{% endif %} relative">
           <div class="image-with-text__media h-full">
             <media-element class="image-with-text__image block media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }} relative overflow-hidden">
@@ -260,17 +256,13 @@
                 {%- endif -%}
   
                 {%- if block.settings.button_label != blank -%}
-                  <a class="button button--primary icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
-                    <span class="btn-fill" data-fill></span>
-                    <span class="btn-text">
-                      {%- liquid
-                        echo block.settings.button_label | escape
-                        if block.settings.button_icon
-                          render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                        endif
-                      -%}
-                    </span>
-                  </a>
+                  {%- render 'button',
+                    label: block.settings.button_label,
+                    link: block.settings.button_link,
+                    style: block.settings.button_style,
+                    external: block.settings.button_external,
+                    show_icon: block.settings.button_icon
+                  -%}
                 {%- endif -%}
               </div>
             </div>
@@ -323,10 +315,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "100vh"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "100vh"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "adapt"
         }
       ],
@@ -907,6 +907,32 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
@@ -1361,6 +1387,32 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.global.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         },
         {
           "type": "checkbox",
