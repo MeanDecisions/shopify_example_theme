@@ -28,6 +28,13 @@
             "show_rating": true
           }
         },
+        "text_J68pPR": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.product.seo_short_description.value }} <a href=\"#product-details\" title=\"#product-details\">See Details</a>",
+            "text_size": "text-base"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -114,6 +121,7 @@
       "block_order": [
         "vendor",
         "title",
+        "text_J68pPR",
         "description",
         "countdown",
         "variant_picker",
