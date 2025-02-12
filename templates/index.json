@@ -24,8 +24,9 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://collections/eos-garden-furniture",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
           }
         },
         "slide-1": {
@@ -37,8 +38,9 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://products/solid-rechargeable-table-light",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
           }
         },
         "slide-2": {
@@ -50,8 +52,9 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
           }
         }
       },
@@ -60,7 +63,6 @@
         "slide-1",
         "slide-2"
       ],
-      "disabled": true,
       "settings": {
         "autoplay": true,
         "autoplay_speed": 4,
@@ -246,6 +248,7 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
@@ -339,6 +342,7 @@
         "description": "",
         "button_label": "Our Story",
         "button_link": "shopify://pages/about-us",
+        "button_external": false,
         "button_icon": false,
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
@@ -445,6 +449,7 @@
         "columns": 3,
         "columns_mobile": "1",
         "minimum_quantity": 3,
+        "maximum_quantity": 3,
         "prevent_duplicate_products": true,
         "allow_quantity_change": true,
         "quantity_increment": "1",
@@ -489,6 +494,7 @@
         "heading_tag": "h2",
         "button_label": "See All Forum 3 Seater Sofa Options",
         "button_link": "shopify://products/forum-3-seater-sofa",
+        "button_external": false,
         "button_icon": false,
         "color_text": "",
         "color_button_text": "",
@@ -526,9 +532,10 @@
           "settings": {
             "button_label": "See Options",
             "button_link": "",
+            "button_style": "primary",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": true
+            "button_external": false,
+            "button_icon": false
           }
         }
       },
@@ -600,6 +607,7 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
@@ -669,6 +677,7 @@
           "settings": {
             "inventory_threshold": 15,
             "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
             "color_scheme": "accent-1"
           }
         },
@@ -677,7 +686,10 @@
           "settings": {
             "show_quantity_selector": false,
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": false,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
           }
         },
         "pickup_availability": {
@@ -879,7 +891,8 @@
           "type": "link",
           "settings": {
             "label": "Explore Here",
-            "link": "shopify://collections/dining-room-furniture"
+            "link": "shopify://collections/dining-room-furniture",
+            "external": false
           }
         }
       },
@@ -904,7 +917,8 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 0
+        "overlay_opacity": 0,
+        "enable_parallax": true
       }
     },
     "shop-the-look": {
@@ -959,6 +973,7 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "scribble",
         "highlighted_scribble": "squiggle-underline",
@@ -989,6 +1004,7 @@
             "text": "<p>Oki Nami Stool <br/><em>by</em> Nazanin Kamali</p>",
             "author": "at Canadio Restaurant Santader",
             "author_info": "",
+            "author_url": "",
             "image_ratio": "square",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1002,6 +1018,7 @@
             "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "",
+            "author_url": "",
             "image_ratio": "rounded",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1015,6 +1032,7 @@
             "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "",
+            "author_url": "",
             "image_ratio": "rounded",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
