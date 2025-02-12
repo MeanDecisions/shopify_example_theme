@@ -36,6 +36,13 @@ customElements.define('tab-list', TabList, { extends: 'ul' });
 class CartDrawer extends DrawerElement {
   constructor() {
     super();
+
+    this.onPrepareBundledSectionsListener = this.onPrepareBundledSections.bind(this);
+    this.onCartRefreshListener = this.onCartRefresh.bind(this);
+  }
+
+  get sectionId() {
+    return this.getAttribute('data-section-id');
   }
 
   get shouldAppendToBody() {
@@ -53,14 +60,22 @@ class CartDrawer extends DrawerElement {
   connectedCallback() {
     super.connectedCallback();
 
-    document.addEventListener('cart:bundled-sections', this.onPrepareBundledSections.bind(this));
+    document.addEventListener('cart:bundled-sections', this.onPrepareBundledSectionsListener);
+    document.addEventListener('cart:refresh', this.onCartRefreshListener);
     if (this.recentlyViewed) {
       this.recentlyViewed.addEventListener('is-empty', this.onRecentlyViewedEmpty.bind(this));
     }
   }
 
+  disconnectedCallback() {
+    super.disconnectedCallback();
+
+    document.removeEventListener('cart:bundled-sections', this.onPrepareBundledSectionsListener);
+    document.removeEventListener('cart:refresh', this.onCartRefreshListener);
+  }
+
   onPrepareBundledSections(event) {
-    event.detail.sections.push(theme.utils.sectionId(this));
+    event.detail.sections.push(this.sectionId);
   }
 
   onRecentlyViewedEmpty() {
@@ -71,6 +86,20 @@ class CartDrawer extends DrawerElement {
       </div>
     </div>
     `;
+  }
+
+  async onCartRefresh(event) {
+    const id = `MiniCart-${this.sectionId}`;
+    if (document.getElementById(id) === null) return;
+
+    const responseText = await (await fetch(`${theme.routes.root_url}?section_id=${this.sectionId}`)).text();
+    const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html');
+
+    document.getElementById(id).innerHTML = parsedHTML.getElementById(id).innerHTML;
+
+    if (event.detail.open === true) {
+      this.show();
+    }
   }
 
   show(focusElement = null, animate = true) {
@@ -122,7 +151,6 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    // this.updateQuantity(event.target.getAttribute('data-index'), event.target.value, document.activeElement.getAttribute('name'), event.target);
     this.validateQuantity(event);
   }
 
@@ -178,7 +206,10 @@ class CartItems extends HTMLElement {
 
   onCartError(errors, target) {
     if (target) {
-      this.updateQuantity(target.getAttribute('data-index'), target.defaultValue, document.activeElement.getAttribute('name'), target);
+      // this.updateQuantity(target.getAttribute('data-index'), target.defaultValue, document.activeElement.getAttribute('name'), target);
+      this.disableLoading(target.getAttribute('data-index'));
+      this.setValidity(target, errors);
+      return;
     }
     else {
       window.location.href = theme.routes.cart_url;
@@ -219,6 +250,11 @@ class CartItems extends HTMLElement {
     if (loader) loader.hidden = false;
   }
 
+  disableLoading(line) {
+    const loader = document.getElementById(`Loader-${this.sectionId}-${line}`);
+    if (loader) loader.hidden = true;
+  }
+
   setValidity(target, message) {
     target.setCustomValidity(message);
     target.reportValidity();
@@ -233,13 +269,13 @@ class CartItems extends HTMLElement {
     let message = '';
 
     if (inputValue < parseInt(target.getAttribute('data-min'))) {
-      message = theme.quickOrderListStrings.min_error.replace('[min]', target.getAttribute('data-min'));
+      message = theme.quickOrderListStrings.minError.replace('[min]', target.getAttribute('data-min'));
     }
     else if (inputValue > parseInt(target.max)) {
-      message = theme.quickOrderListStrings.max_error.replace('[max]', target.max);
+      message = theme.quickOrderListStrings.maxError.replace('[max]', target.max);
     }
     else if (inputValue % parseInt(target.step) !== 0) {
-      message = theme.quickOrderListStrings.step_error.replace('[step]', target.step);
+      message = theme.quickOrderListStrings.stepError.replace('[step]', target.step);
     }
 
     if (message) {
@@ -275,8 +311,12 @@ class MainCart extends HTMLElement {
     document.addEventListener('cart:bundled-sections', this.onPrepareBundledSections.bind(this));
   }
 
+  get sectionId() {
+    return this.getAttribute('data-section-id');
+  }
+
   onPrepareBundledSections(event) {
-    event.detail.sections.push(theme.utils.sectionId(this));
+    event.detail.sections.push(this.sectionId);
   }
 }
 customElements.define('main-cart', MainCart);

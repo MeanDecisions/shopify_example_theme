@@ -8,12 +8,10 @@
 {%- liquid
   echo 'article.css' | asset_url | stylesheet_tag
 
-  # theme-check-disable UndefinedObject
   assign number_of_comments = article.comments_count
   if comment.status == 'pending'
     assign number_of_comments = article.comments_count | plus: 1
   endif
-  # theme-check-enable UndefinedObject
 -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
@@ -146,13 +144,11 @@
                       </h3>
 
                       <ul class="grid gap-5">
-                        {% # theme-check-disable UndefinedObject %}
                         {%- if comment.status == 'pending' -%}
                           <li id="Comment-{{ comment.id }}" class="comment-card">
                             {%- render 'article-comment', comment: comment, show_gravatar: block.settings.show_gravatar -%}
                           </li>
                         {%- endif -%}
-                        {% # theme-check-enable UndefinedObject %}
           
                         {%- for comment in article.comments -%}
                           <li id="Comment-{{ comment.id }}" class="comment-card">

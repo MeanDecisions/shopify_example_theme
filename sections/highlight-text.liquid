@@ -38,7 +38,7 @@
 
           {%- when 'image' -%}
             {%- if block.settings.link != blank -%}
-              <a class="inline-block" href="{{ block.settings.link }}">
+              <a class="inline-block" href="{{ block.settings.link }}" aria-label="{{ block.settings.description | escape }}">
             {%- endif -%}
               {%- liquid
                 assign image_width = block.settings.image_width
@@ -50,7 +50,7 @@
               {%- capture widths -%}{{ image_width_mobile }}, {{ image_width_mobile_2x }}, {{ image_width }}, {{ image_width_2x }}{%- endcapture -%}
               {%- capture sizes -%}(max-width: 767px) min({{ image_width_mobile }}px, 100vw), min({{ image_width }}px, 100vw){%- endcapture -%}
               {%- if block.settings.image != blank -%}
-                <picture class="media media--height media--transparent media--fit block w-full h-full relative overflow-hidden" is="animate-picture" data-animate="zoom-out" style="{{ style }}" {{ block.shopify_attributes }}>
+                <picture class="media media--height media--transparent media--fit inline-block w-full h-full relative overflow-hidden" is="animate-picture" data-animate="zoom-out" style="{{ style }}" {{ block.shopify_attributes }}>
                   {%- if block.settings.image_mobile -%}
                     <source
                       media="(max-width: 767px)"
@@ -61,10 +61,11 @@
                     >
                   {%- endif -%}
 
-                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, is: 'lazy-image' -}}
+                  {%- assign image_alt = block.settings.image.alt | default: block.settings.description | escape -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, is: 'lazy-image' -}}
                 </picture>
               {%- else -%}
-                <animate-element data-animate="zoom-out" class="media media--height media--transparent media--fit block w-full h-full relative overflow-hidden" style="{{ style }}" {{ block.shopify_attributes }}>
+                <animate-element data-animate="zoom-out" class="media media--height media--transparent media--fit inline-block w-full h-full relative overflow-hidden" style="{{ style }}" {{ block.shopify_attributes }}>
                   {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder' -}}
                 </animate-element>
               {%- endif -%}
@@ -94,13 +95,13 @@
     {
       "type": "text_alignment",
       "id": "text_alignment",
-      "default": "left",
+      "default": "center",
       "label": "t:sections.global.settings.text_alignment.label"
     },
     {
       "type": "text_alignment",
       "id": "text_alignment_mobile",
-      "default": "left",
+      "default": "center",
       "label": "t:sections.global.settings.text_alignment_mobile.label"
     },
     {
@@ -221,6 +222,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",
@@ -398,7 +405,7 @@
           "type": "inline_richtext",
           "id": "heading",
           "label": "t:sections.global.settings.heading.label",
-          "default": "Rich text"
+          "default": "Example heading"
         },
         {
           "type": "select",
@@ -696,7 +703,7 @@
           "type": "range",
           "id": "image_width",
           "label": "t:sections.highlight-text.blocks.image.settings.image_width.label",
-          "default": 50,
+          "default": 150,
           "min": 20,
           "max": 400,
           "step": 5,
@@ -706,7 +713,7 @@
           "type": "range",
           "id": "image_height",
           "label": "t:sections.highlight-text.blocks.image.settings.image_height.label",
-          "default": 50,
+          "default": 90,
           "min": 20,
           "max": 400,
           "step": 5,
@@ -716,6 +723,12 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.global.settings.link.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.highlight-text.blocks.image.settings.description.label",
+          "info": "t:sections.highlight-text.blocks.image.settings.description.info"
         },
         {
           "type": "header",
@@ -730,7 +743,7 @@
           "type": "range",
           "id": "image_width_mobile",
           "label": "t:sections.highlight-text.blocks.image.settings.image_width.label",
-          "default": 50,
+          "default": 90,
           "min": 20,
           "max": 200,
           "step": 5,
@@ -778,10 +791,13 @@
       "name": "t:sections.highlight-text.presets.name",
       "blocks": [
         {
-          "type": "text"
+          "type": "heading"
         },
         {
           "type": "image"
+        },
+        {
+          "type": "heading"
         }
       ]
     }

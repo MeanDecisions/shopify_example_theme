@@ -147,7 +147,7 @@
 
             {%- if price_block == blank and block.settings.show_price -%}
               <div id="Price-{{ section_id }}" class="product__price">
-                {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5' -%}
+                {%- render 'product-price', product: product, placeholder: true, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5' -%}
               </div>
             {%- endif -%}
           </div>
@@ -155,7 +155,7 @@
         {%- when 'price' -%}
           <div class="product__price grid gap-3" {{ block.shopify_attributes }}>
             <div class="no-js-hidden" id="Price-{{ section_id }}">
-              {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:gap-1d5' -%}
+              {%- render 'product-price', product: product, placeholder: true, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:gap-1d5' -%}
             </div>
 
             {%- if block.settings.show_taxes_notice -%}
@@ -309,7 +309,7 @@
                 {%- render 'icon-accordion', icon: block.settings.icon -%}
                 <span class="text-base font-medium leading-none">{{ block.settings.heading | default: block.settings.page.title | escape }}</span>
               </div>
-              {%- render 'icon', icon: 'plus-alt', size: 'xs', class: 'flex-auto' -%}
+              {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
             </summary>
             <div class="details__content rte text-sm text-opacity">
               {{ block.settings.content }}

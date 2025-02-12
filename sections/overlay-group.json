@@ -14,24 +14,23 @@
     "cart-drawer": {
       "type": "cart-drawer",
       "settings": {
-        "show_vendor": true,
+        "show_vendor": false,
         "show_cart_note": true,
         "show_shipping_calculator": true,
         "show_view_cart_button": true,
         "show_checkout_button": true,
         "show_free_shipping_bar": true,
-        "free_shipping_minimum_amount": "0",
+        "free_shipping_minimum_amount": "1000",
         "cart_recommendations_enabled": true,
         "cart_recommendations_heading": "You may also like",
-        "cart_recommendations_limit": 2,
+        "cart_recommendations_limit": 5,
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
         "cart_recommendations_products": [
-          "675-chair",
-          "altura-bench"
         ],
-        "empty_cart_message": "<p>Not sure where to start?<br/>Try these collections:</p>",
-        "empty_cart_collections": [],
+        "empty_cart_message": "<p>Not sure where to start?<br\/>Try these collections:</p>",
+        "empty_cart_collections": [
+        ],
         "recent_products_enabled": true,
         "recent_products_heading": "Recently viewed",
         "recent_products_limit": 5,
@@ -41,7 +40,8 @@
     },
     "search-drawer": {
       "type": "search-drawer",
-      "settings": {}
+      "settings": {
+      }
     },
     "newsletter-popup": {
       "type": "newsletter-popup",
@@ -68,7 +68,7 @@
             "highlighted_scribble": "basic-underline"
           }
         },
-        "spacing-1": {
+        "spacing": {
           "type": "spacing",
           "settings": {
             "height": 32,
@@ -77,7 +77,8 @@
         },
         "form": {
           "type": "form",
-          "settings": {}
+          "settings": {
+          }
         },
         "text-2": {
           "type": "text",
@@ -93,11 +94,11 @@
         },
         "media": {
           "type": "media",
-          "settings": {}
+          "settings": {
+          }
         },
         "floating": {
           "type": "floating",
-          "disabled": true,
           "settings": {
             "heading": "Get 20% Off",
             "content_position": "left-0",
@@ -113,13 +114,12 @@
       "block_order": [
         "text-1",
         "heading",
-        "spacing-1",
+        "spacing",
         "form",
         "text-2",
         "media",
         "floating"
       ],
-      "disabled": true,
       "settings": {
         "mode": "enabled",
         "only_homepage": true,
@@ -128,9 +128,10 @@
         "expiry": 30,
         "text_alignment": "left",
         "content_position": "right-0",
+        "image": "",
         "color_drawer_text": "#171717",
         "color_drawer_background": "#ffffff",
-        "color_drawer_highlight": "#ffffff",
+        "color_drawer_highlight": "#ffddbf",
         "color_drawer_button_text": "#ffffff",
         "color_drawer_button_background": "#171717",
         "color_drawer_button_gradient": "",
@@ -190,6 +191,8 @@
         "expiry": 30,
         "text_alignment": "center",
         "content_position": "center-0",
+        "image": "",
+        "background_image": "",
         "blur_background_image": false,
         "color_drawer_text": "#171717",
         "color_drawer_background": "#ffffff",
@@ -262,43 +265,43 @@
     "mobile-dock": {
       "type": "mobile-dock",
       "blocks": {
-        "mobile-dock-0": {
+        "mobile-dock-1": {
           "type": "home",
           "settings": {
             "custom_icon": "",
             "title": "Home"
           }
         },
-        "mobile-dock-1": {
+        "mobile-dock-2": {
           "type": "menu",
           "settings": {
             "custom_icon": "",
             "title": "Menu"
           }
         },
-        "mobile-dock-2": {
+        "mobile-dock-3": {
           "type": "search",
           "settings": {
             "custom_icon": "",
             "title": "Search"
           }
         },
-        "mobile-dock-3": {
+        "mobile-dock-4": {
           "type": "link",
           "settings": {
             "custom_icon": "",
             "title": "Shop",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
-        "mobile-dock-4": {
+        "mobile-dock-5": {
           "type": "cart",
           "settings": {
             "custom_icon": "",
             "title": "Cart"
           }
         },
-        "mobile-dock-5": {
+        "mobile-dock-6": {
           "type": "account",
           "settings": {
             "custom_icon": "",
@@ -307,12 +310,12 @@
         }
       },
       "block_order": [
-        "mobile-dock-0",
         "mobile-dock-1",
         "mobile-dock-2",
         "mobile-dock-3",
         "mobile-dock-4",
-        "mobile-dock-5"
+        "mobile-dock-5",
+        "mobile-dock-6"
       ],
       "settings": {
         "color_text": "#000000",

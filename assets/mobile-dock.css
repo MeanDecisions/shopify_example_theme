@@ -97,7 +97,7 @@
     transform: translateY(0)
   }
 
-  .mobile-dock-section~.page-container :is(.facet-sticky, .product-bundle, .product-sticky-form) {
+  .mobile-dock-section~.page-container :is(.facet-sticky, .product-sticky-form) {
     transition: transform var(--animation-primary);
   }
 
@@ -110,8 +110,6 @@
     padding-block-end: calc(var(--mobile-dock-height) + clamp(var(--sp-10), 3.368vw, var(--sp-16)));
   }
 
-  .header-sticky.header-hidden~.mobile-dock-section~.page-container .product-bundle,
-  .mobile-dock-section.active~.page-container .product-bundle,
   .header-sticky.header-hidden~.mobile-dock-section~.page-container .product-sticky-form,
   .mobile-dock-section.active~.page-container .product-sticky-form {
     transform: translateY(calc(var(--mobile-dock-height) * -1));

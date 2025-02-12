@@ -146,6 +146,7 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
         elementToFocus.setSelectionRange(0, elementToFocus.value.length);
       }
     },
+    
     removeTrapFocus: (elementToFocus = null) => {
       document.removeEventListener('focusin', theme.a11y.trapFocusHandlers.focusin);
       document.removeEventListener('focusout', theme.a11y.trapFocusHandlers.focusout);
@@ -195,9 +196,9 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
       });
     },
 
-    fetchConfig: (type = 'json') => {
+    fetchConfig: (type = 'json', method = 'POST') => {
       return {
-        method: 'POST',
+        method: method,
         headers: { 'Content-Type': 'application/json', 'Accept': `application/${type}` }
       };
     },
@@ -283,6 +284,62 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
       document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth > 0 ? scrollbarWidth : 0}px`);
     },
 
+    externalLinksNewTab: () => {
+      if (theme.settings.externalLinksNewTab) {
+        document.addEventListener('click', (evt) => {
+          const link = evt.target.tagName === 'A' ? evt.target : evt.target.closest('a');
+          if (link && link.tagName === 'A' && window.location.hostname !== new URL(link.href).hostname) {
+            link.target = '_blank';
+          }
+        });
+      }
+    }
+  };
+
+  theme.HTMLUpdateUtility = {
+    /**
+     * Used to swap an HTML node with a new node.
+     * The new node is inserted as a previous sibling to the old node, the old node is hidden, and then the old node is removed.
+     *
+     * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
+     */
+    viewTransition: (oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) => {
+      preProcessCallbacks?.forEach((callback) => callback(newContent));
+
+      const newNodeWrapper = document.createElement('div');
+      theme.HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
+      const newNode = newNodeWrapper.firstChild;
+
+      // dedupe IDs
+      const uniqueKey = Date.now();
+      oldNode.querySelectorAll('[id], [form]').forEach((element) => {
+        element.id && (element.id = `${element.id}-${uniqueKey}`);
+        element.form && element.setAttribute('form', `${element.form.getAttribute('id')}-${uniqueKey}`);
+      });
+
+      oldNode.parentNode.insertBefore(newNode, oldNode);
+      oldNode.style.display = 'none';
+
+      postProcessCallbacks?.forEach((callback) => callback(newNode));
+
+      setTimeout(() => oldNode.remove(), 500);
+    },
+
+    // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
+    setInnerHTML: (element, html) => {
+      element.innerHTML = html;
+      element.querySelectorAll('script').forEach((oldScriptTag) => {
+        const newScriptTag = document.createElement('script');
+        Array.from(oldScriptTag.attributes).forEach((attribute) => {
+          newScriptTag.setAttribute(attribute.name, attribute.value);
+        });
+        newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
+        oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
+      });
+    }
+  };
+
+  theme.Currency = {
     formatMoney: (cents, format = "") => {
       if (typeof cents === "string") {
         cents = cents.replace(".", "");
@@ -337,49 +394,6 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
       } else {
         return formatString.replace(placeholderRegex, value);
       }
-    }
-  };
-
-  theme.HTMLUpdateUtility = {
-    /**
-     * Used to swap an HTML node with a new node.
-     * The new node is inserted as a previous sibling to the old node, the old node is hidden, and then the old node is removed.
-     *
-     * The function currently uses a double buffer approach, but this should be replaced by a view transition once it is more widely supported https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
-     */
-    viewTransition: (oldNode, newContent, preProcessCallbacks = [], postProcessCallbacks = []) => {
-      preProcessCallbacks?.forEach((callback) => callback(newContent));
-
-      const newNodeWrapper = document.createElement('div');
-      theme.HTMLUpdateUtility.setInnerHTML(newNodeWrapper, newContent.outerHTML);
-      const newNode = newNodeWrapper.firstChild;
-
-      // dedupe IDs
-      const uniqueKey = Date.now();
-      oldNode.querySelectorAll('[id], [form]').forEach((element) => {
-        element.id && (element.id = `${element.id}-${uniqueKey}`);
-        element.form && element.setAttribute('form', `${element.form.getAttribute('id')}-${uniqueKey}`);
-      });
-
-      oldNode.parentNode.insertBefore(newNode, oldNode);
-      oldNode.style.display = 'none';
-
-      postProcessCallbacks?.forEach((callback) => callback(newNode));
-
-      setTimeout(() => oldNode.remove(), 500);
-    },
-
-    // Sets inner HTML and reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
-    setInnerHTML: (element, html) => {
-      element.innerHTML = html;
-      element.querySelectorAll('script').forEach((oldScriptTag) => {
-        const newScriptTag = document.createElement('script');
-        Array.from(oldScriptTag.attributes).forEach((attribute) => {
-          newScriptTag.setAttribute(attribute.name, attribute.value);
-        });
-        newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
-        oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
-      });
     }
   };
 
@@ -881,7 +895,7 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
     class ScriptLoader {
       constructor(callback, delay = 5000) {
         this.loadScriptTimer = setTimeout(callback, delay);
-        this.userInteractionEvents = ["mouseover", "mousemove", "keydown", "touchstart", "touchend", "touchmove", "wheel"];
+        this.userInteractionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];
 
         this.onScriptLoader = this.triggerScriptLoader.bind(this, callback);
         this.userInteractionEvents.forEach((event) => {
@@ -910,9 +924,20 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
     document.body.removeAttribute('data-page-rendering');
   });
 
+  // Improve iOS Safari resizing
+  theme.windowWidth = window.innerWidth;
+  window.addEventListener('resize', () => {
+    const { innerWidth } = window;
+    if (innerWidth !== theme.windowWidth) {
+      theme.windowWidth = innerWidth;
+      document.dispatchEvent(new CustomEvent('window:resize'));
+    }
+  });
+
   theme.DOMready(theme.headerGroup.init);
   theme.DOMready(theme.utils.setScrollbarWidth);
-  window.addEventListener('resize', theme.utils.throttle(theme.utils.setScrollbarWidth));
+  theme.DOMready(theme.utils.externalLinksNewTab);
+  document.addEventListener('window:resize', theme.utils.throttle(theme.utils.setScrollbarWidth));
 
   /*============================================================================
     Things that don't require DOM to be ready
@@ -1064,7 +1089,7 @@ class CustomHeader extends HTMLElement {
     requestAnimationFrame(() => {
       document.documentElement.style.setProperty('--header-height', Math.round(this.clientHeight) + 'px');
 
-      if (this.classList.contains('header--center')) {
+      if (this.classList.contains('header--center') && document.documentElement.style.getPropertyValue('--header-nav-height').length === 0) {
         document.documentElement.style.setProperty('--header-nav-height', Math.round(document.getElementById('MenuToggle')?.clientHeight) + 'px');
       }
     });
@@ -1109,9 +1134,19 @@ class StickyHeader extends CustomHeader {
       this.headerSection.classList.add('header-scrolled');
       document.documentElement.style.setProperty('--sticky-header-height', Math.round(this.clientHeight) + 'px');
       document.dispatchEvent(new CustomEvent('header:scrolled', { bubbles: true, detail: { scrolled: true } }));
+
+      if (scrollTop > (this.headerBounds.top + this.firstScrollTop + this.headerBounds.height * 2)) {
+        this.headerSection.classList.add('header-nav-scrolled');
+        this.headerSection.querySelectorAll('details').forEach((details) => {
+          if (details.hasAttribute('open')) {
+            details.open = false;
+          }
+        });
+      }
     }
     else {
       this.headerSection.classList.remove('header-scrolled');
+      this.headerSection.classList.remove('header-nav-scrolled');
       document.dispatchEvent(new CustomEvent('header:scrolled', { bubbles: true, detail: { scrolled: false } }));
     }
 
@@ -1491,7 +1526,7 @@ class FooterDetails extends AccordionDetails {
     super();
 
     this.load();
-    window.addEventListener('resize', this.load.bind(this));
+    document.addEventListener('matchSmall', this.load.bind(this));
     document.addEventListener('unmatchSmall', this.load.bind(this));
   }
 
@@ -1499,20 +1534,18 @@ class FooterDetails extends AccordionDetails {
     return theme.config.mqlSmall;
   }
 
+  get openDefault() {
+    return this.hasAttribute('data-opened');
+  }
+
   load() {
-    if (theme.config.mqlSmall) {
-      if (this.open) {
-        this._open = false;
-        this.removeAttribute('open');
-        this.setAttribute('aria-expanded', 'false');
-        this.classList.remove('active');
-      }
+    if (!theme.config.mqlSmall || this.openDefault) {
+      this.open = true;
     }
     else {
-      this._open = true;
-      this.setAttribute('open', '');
-      this.setAttribute('aria-expanded', 'true');
-      this.classList.add('active');
+      if (this.open && !this.openDefault) {
+        this.open = false;
+      }
     }
   }
 }
@@ -1741,13 +1774,6 @@ class ModalElement extends HTMLElement {
 
   disconnectedCallback() {
     this.abortController?.abort();
-
-    /*
-    if (this.parentElement === document.body && this.originalParentBeforeAppend) {
-      this.originalParentBeforeAppend.appendChild(this);
-      this.originalParentBeforeAppend = null;
-    }
-    */
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -2080,6 +2106,33 @@ class ShareDrawer extends DrawerElement {
 }
 customElements.define('share-drawer', ShareDrawer);
 
+class BackInStockDrawer extends DrawerElement {
+  constructor() {
+    super();
+
+    if (theme.config.isTouch) {
+      new theme.initWhenVisible(this.init.bind(this));
+    }
+    else {
+      this.init();
+    }
+  }
+
+  get submited() {
+    return this.querySelector('.alert') !== null;
+  }
+
+  init() {
+    // Open modal if errors or success message exist
+    if (this.submited) {
+      setTimeout(() => {
+        this.show();
+      }, 1000);
+    }
+  }
+}
+customElements.define('back-in-stock-drawer', BackInStockDrawer);
+
 class MenuDetails extends HTMLDetailsElement {
   constructor() {
     super();
@@ -2097,10 +2150,13 @@ class MenuDetails extends HTMLDetailsElement {
   }
 
   get closeButton() {
-    return this.querySelector('button');
+    return this.querySelector('[data-close]');
   }
 
-  onSummaryClick() {
+  onSummaryClick(event) {
+    event.preventDefault();
+    this.setAttribute('open', '');
+
     setTimeout(() => {
       this.parent.classList.add('active');
       this.classList.add('active');
@@ -2563,12 +2619,6 @@ class SplitWords extends HTMLElement {
     const splitting = Splitting({ target: this, by: 'words' });
 
     splitting[0].words.forEach((item, index) => {
-   
-      if (item.textContent.trim() === 'Contemporary') {
-        item.style.display = 'none';
-        return;
-      }
-
       const wrapper = document.createElement('animate-element');
       wrapper.className = 'block';
       wrapper.setAttribute('data-animate', this.getAttribute('data-animate'));
@@ -3450,7 +3500,7 @@ class SecondaryMedia extends HTMLElement {
       this.carousel = new Flickity(this, {
         accessibility: false,
         draggable: false,
-        pageDots: false,
+        pageDots: true,
         prevNextButtons: false,
         wrapAround: true,
         rightToLeft: theme.config.rtl,
@@ -3659,6 +3709,10 @@ class GMap extends HTMLElement {
     window.gmNoop = () => { };
   }
 
+  get geocoder() {
+    return this._geocoder = this._geocoder || new google.maps.Geocoder();
+  }
+
   prepMapApi() {
     this.loadScript()
       .then(this.initMap.bind(this))
@@ -3684,9 +3738,7 @@ class GMap extends HTMLElement {
   }
 
   initMap() {
-    const geocoder = new google.maps.Geocoder();
-
-    geocoder.geocode({ address: this.getAttribute('data-map-address') }, (results, status) => {
+    this.geocoder.geocode({ address: this.getAttribute('data-map-address') }, (results, status) => {
       if (status !== google.maps.GeocoderStatus.OK) {
 
         // Show errors only to merchant in the editor.
@@ -3744,16 +3796,51 @@ class GMap extends HTMLElement {
 
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
-
-        window.addEventListener('resize', () => {
-          google.maps.event.trigger(map, 'resize');
-          map.setCenter(center);
-        });
       }
     });
   }
 }
 customElements.define('g-map', GMap);
+
+class GMapLocations extends HTMLUListElement {
+  constructor() {
+    super();
+
+    Motion.inView(this, this.init.bind(this), { margin: '200px 0px 200px 0px' });
+  }
+
+  get items() {
+    return this._items = this._items || Array.from(this.hasAttribute('selector') ? this.querySelectorAll(this.getAttribute('selector')) : this.children);
+  }
+
+  get controlledElement() {
+    return this.hasAttribute('aria-controls') ? document.getElementById(this.getAttribute('aria-controls')) : null;
+  }
+
+  init() {
+    this.items.forEach((item) => {
+      item.addEventListener('click', this.onButtonClick.bind(this));
+    });
+  }
+
+  onButtonClick(event) {
+    const target = event.currentTarget;
+    if (target.classList.contains('active') || !target.hasAttribute('data-map-address')) return;
+
+    if (this.controlledElement) {
+      this.controlledElement.setAttribute('data-map-address', target.getAttribute('data-map-address'));
+      this.controlledElement.initMap();
+    }
+
+    this.items.forEach((item) => {
+      item.classList.remove('active');
+      item.querySelector('[data-map-button]')?.classList.add('button--secondary');
+    });
+    target.classList.add('active');
+    target.querySelector('[data-map-button]')?.classList.remove('button--secondary');
+  }
+}
+customElements.define('g-map-locations', GMapLocations, { extends: 'ul' });
 
 class PreviousButton extends HoverButton {
   constructor() {
@@ -4030,12 +4117,6 @@ class SliderDots extends HTMLElement {
 
   reset() {
     this._items = Array.from(this.children);
-    this.resetIndexes();
-    
-
-    this.items.forEach((item) => {
-      item.addEventListener('click', this.onButtonClick.bind(this));
-    });
   }
 
   onChange(event) {
@@ -4097,14 +4178,7 @@ class DeferredMedia extends HTMLElement {
     }
 
     if (this.autoplay) {
-      Motion.inView(this, () => {
-        if (!this.paused) {
-          this.play();
-        }
-        return () => {
-          this.pause();
-        };
-      });
+      Motion.inView(this, this.init.bind(this));
     }
   }
 
@@ -4151,6 +4225,15 @@ class DeferredMedia extends HTMLElement {
       this.paused = false;
       this.play();
     }
+  }
+
+  init() {
+    if (!this.paused) {
+      this.play();
+    }
+    return () => {
+      this.pause();
+    };
   }
 
   play() {
@@ -4384,6 +4467,8 @@ class VariantSelects extends HTMLElement {
   connectedCallback() {
     this.addEventListener('change', (event) => {
       const target = this.getInputForEventTarget(event.target);
+      this.updateSelectionMetadata(event.target);
+      
       theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.optionValueSelectionChange, {
         data: {
           event,
@@ -4392,6 +4477,13 @@ class VariantSelects extends HTMLElement {
         }
       });
     });
+  }
+
+  updateSelectionMetadata(target) {
+    if (target.tagName === 'SELECT' && target.selectedOptions.length) {
+      Array.from(target.options).find((option) => option.hasAttribute('selected')).removeAttribute('selected');
+      target.selectedOptions[0].setAttribute('selected', '');
+    }
   }
 
   getInputForEventTarget(target) {
@@ -4489,7 +4581,7 @@ class ProductInfo extends HTMLElement {
 
     this.renderProductInfo({
       requestUrl: this.buildRequestUrlWithParams(productUrl, selectedOptionValues),
-      targetId: target.id,
+      targetId: target.tagName === 'OPTION' ? target.parentElement.id : target.id,
       callback: this.handleUpdateProductInfo()
     });
   }
@@ -4517,6 +4609,8 @@ class ProductInfo extends HTMLElement {
       .then(() => {
         // set focus to last clicked option value
         const activeElement = document.getElementById(targetId);
+        if (activeElement === null) return;
+
         if (activeElement.hasAttribute('align-selected')) {
           const scrollElement = activeElement.closest(activeElement.getAttribute('align-selected'));
           scrollElement.scrollTo({
@@ -4567,29 +4661,19 @@ class ProductInfo extends HTMLElement {
       const updateSourceFromDestination = (id) => {
         const source = parsedHTML.getElementById(`${id}-${this.sectionId}-${this.productId}`);
         const destination = document.querySelector(`#${id}-${this.sectionId}-${this.productId}`);
-       
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
-          
-        
-          if (id === 'VariantMetafieldThumbs') {
-            const mediaDots = destination.closest('media-dots');
-            if (mediaDots) {
-              mediaDots.reset();
-            }
-          }
         }
       };
-      updateSourceFromDestination('VariantMetafield');
-      updateSourceFromDestination('VariantMetafieldThumbs');
-      updateSourceFromDestination('VariantTitle');
+
       updateSourceFromDestination('Price');
       updateSourceFromDestination('StickyPrice');
       updateSourceFromDestination('Sku');
       updateSourceFromDestination('Inventory');
       updateSourceFromDestination('Volume');
       updateSourceFromDestination('PricePerItem');
+      updateSourceFromDestination('BackInStock');
 
       this.updateQuantityRules(this.sectionId, this.productId, parsedHTML);
       updateSourceFromDestination('QuantityRules');
@@ -4613,12 +4697,6 @@ class ProductInfo extends HTMLElement {
           variant: variant
         }
       }));
-
-
-      const slider = this.querySelector('slider-element');
-      if (slider) {
-        slider.reset();
-      }
     };
   }
 
@@ -4654,10 +4732,10 @@ class ProductInfo extends HTMLElement {
   }
 
   setUnavailable() {
-    this.productForm?.toggleSubmitButton(true, theme.variantStrings.unavailable);
-    this.productStickyForm?.toggleSubmitButton(true, theme.variantStrings.unavailable);
+    this.productForm?.toggleSubmitButton(true, theme.variantStrings.unavailable, true);
+    this.productStickyForm?.toggleSubmitButton(true, theme.variantStrings.unavailable, true);
 
-    const selectors = ['Price', 'StickyPrice', 'Inventory', 'Sku', 'PricePerItem', 'VolumeNote', 'Volume', 'QuantityRules', 'QuantityRulesCart']
+    const selectors = ['Price', 'StickyPrice', 'Inventory', 'Sku', 'PricePerItem', 'BackInStock', 'VolumeNote', 'Volume', 'QuantityRules', 'QuantityRulesCart']
       .map((id) => `#${id}-${this.sectionId}-${this.productId}`)
       .join(', ');
     document.querySelectorAll(selectors).forEach((selector) => selector.setAttribute('hidden', ''));
@@ -4798,10 +4876,10 @@ class ProductForm extends HTMLFormElement {
           return;
         }
 
-        const cartJson = await (await fetch(`${theme.routes.cart_url}`, { ...theme.utils.fetchConfig()})).json();
+        const cartJson = await (await fetch(theme.routes.cart_url, { ...theme.utils.fetchConfig('json', 'GET')})).json();
         cartJson['sections'] = parsedState['sections'];
 
-        theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'product-form', cart: cartJson });
+        theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'product-form', productVariantId: formData.get('id'), cart: cartJson });
         document.dispatchEvent(new CustomEvent('ajaxProduct:added', {
           detail: {
             product: parsedState
@@ -4849,21 +4927,28 @@ class ProductForm extends HTMLFormElement {
     this.errorMessage.innerText = errorMessage;
   }
 
-  toggleSubmitButton(disable = true, text) {
+  toggleSubmitButton(disable = true, text, unavailable = false) {
     if (!this.submitButton) return;
+
+    this.submitButton.removeAttribute('loading');
+    this.submitButton.removeAttribute('unavailable');
 
     const submitButtonText = this.submitButton.querySelector('.btn-text');
     const submitButtonTextChild = this.submitButton.querySelector('.btn-text span');
 
     if (disable) {
       this.submitButton.setAttribute('disabled', '');
+      if (unavailable) this.submitButton.setAttribute('unavailable', '');
       if (text) {
         (submitButtonTextChild || submitButtonText).textContent = text;
+      }
+      else {
+        this.submitButton.setAttribute('loading', '');
       }
     }
     else {
       this.submitButton.removeAttribute('disabled');
-      (submitButtonTextChild || submitButtonText).textContent = this.submitButton.getAttribute('data-pre-order') === 'true' ? theme.variantStrings.preOrder : theme.variantStrings.addToCart;
+      (submitButtonTextChild || submitButtonText).textContent = this.submitButton.hasAttribute('data-pre-order') ? theme.variantStrings.preOrder : theme.variantStrings.addToCart;
     }
   }
 }
@@ -4873,7 +4958,7 @@ class ProductStickyForm extends HTMLElement {
   constructor() {
     super();
 
-    this.scopeFrom = document.getElementById(this.getAttribute('form'));
+    this.scopeFrom = document.querySelector('.quick-order-list') || document.getElementById(this.getAttribute('form'));
     this.scopeTo = document.querySelector('.footer-group');
 
     if (!this.scopeFrom || !this.scopeTo) {
@@ -4978,7 +5063,7 @@ class ProductStickyForm extends HTMLElement {
     }
     else {
       this.submitButton.removeAttribute('disabled');
-      (submitButtonTextChild || submitButtonText).textContent = this.submitButton.getAttribute('data-pre-order') === 'true' ? theme.variantStrings.preOrder : theme.variantStrings.addToCart;
+      (submitButtonTextChild || submitButtonText).textContent = this.submitButton.hasAttribute('data-pre-order') ? theme.variantStrings.preOrder : theme.variantStrings.addToCart;
     }
   }
 
@@ -5372,7 +5457,7 @@ customElements.define('media-hover-button', MediaHoverButton, { extends: 'button
 class MediaDots extends SliderDots {
   constructor() {
     super();
-    
+
     if (theme.config.isTouch) {
       new theme.initWhenVisible(this.resetIndexes.bind(this));
     }
@@ -5381,17 +5466,13 @@ class MediaDots extends SliderDots {
     }
   }
 
-  reset() {
-    super.reset();
-    this.resetIndexes();
-  }
-
   resetIndexes() {
     let newIndex = 1;
-    
+
     this.itemsToShow.forEach((item, index) => {
       item.setAttribute('data-index', newIndex);
       item.setAttribute('aria-current', index === 0 ? 'true' : 'false');
+
       newIndex++;
     });
   }
@@ -5604,7 +5685,7 @@ class CountdownTimer extends HTMLElement {
   }
 
   get date() {
-    return this._date = this._date || new Date(`${this.getAttribute('data-month')}/${this.getAttribute('data-day')}/${this.getAttribute('data-year')} ${this.getAttribute('data-hour')}:${this.getAttribute('data-minute')}:00`);
+    return this._date = this._date || new Date(this.getAttribute('data-expires'));
   }
 
   get isCompact() {
@@ -5691,7 +5772,7 @@ class ImageComparison extends HTMLElement {
   init() {
     this.active = false;
 
-    this.button.addEventListener('touchstart', this.startHandler.bind(this), theme.supportsPassive ? { passive: true } : false);
+    this.button.addEventListener('touchstart', this.startHandler.bind(this), theme.supportsPassive ? { passive: false } : false);
     document.body.addEventListener('touchend', this.endHandler.bind(this), theme.supportsPassive ? { passive: true } : false);
     document.body.addEventListener('touchmove', this.onHandler.bind(this), theme.supportsPassive ? { passive: true } : false);
     
@@ -5711,7 +5792,8 @@ class ImageComparison extends HTMLElement {
     }, 1e3);
   }
 
-  startHandler() {
+  startHandler(event) {
+    event.preventDefault();
     this.active = true;
     this.classList.add('scrolling');
   }
@@ -6018,10 +6100,10 @@ class SlideshowHero extends SlideshowElement {
   }
 
   get nextSection() {
-    let nextSibling = this.heroSection.nextSibling;
+    let nextSibling = this.heroSection.nextElementSibling;
     for (let i = 0; i < 20; i++) {
-      if (nextSibling.classList.contains('shopify-section')) break;
-      nextSibling = nextSibling.nextSibling;
+      if (nextSibling.classList.contains('shopify-section') && !nextSibling.classList.contains('header-section')) break;
+      nextSibling = nextSibling.nextElementSibling;
     }
 
     if (nextSibling && nextSibling.nodeType != 1) {
@@ -6282,7 +6364,7 @@ class RevealBanner extends HTMLElement {
   init() {
     const tracker = this.querySelector('.reveal-banner__tracker');
     Motion.scroll(
-      Motion.animate(this.querySelector('.banner__media'), { clipPath: ['inset(20% 35% 0% 35% round var(--rounded-block))', 'inset(0% 0%)'] }, { easing: 'linear' }),
+      Motion.animate(this.querySelectorAll('.banner__media'), { clipPath: ['inset(20% 35% 0% 35% round var(--rounded-block))', 'inset(0% 0%)'] }, { easing: 'linear' }),
       { target: tracker, offset: Motion.ScrollOffset.Enter }
     );
     
@@ -6321,7 +6403,7 @@ class SplittingBanner extends HTMLElement {
     const wrapper = this.querySelector('.splitting-wrapper');
     const tracker = this.querySelector('.reveal-banner__tracker');
     Motion.scroll(Motion.timeline([
-      [splitting[0].chars, { opacity: [0, 1] }, { delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) }],
+      [splitting[0].chars, { opacity: [0.3, 1] }, { delay: theme.config.motionReduced ? 0 : Motion.stagger(0.1) }],
       //[wrapper, { transform: ['translateY(-20vh)', 'translateY(0)'] }, { easing: 'linear', at: '<' }]
     ]), { target: tracker, offset: Motion.ScrollOffset.Enter });
 
@@ -6461,6 +6543,7 @@ class ProductBundle extends HTMLElement {
   constructor() {
     super();
 
+    this.template;
     this.bundleCount = 0;
 
     this.addEventListener('bundle:added', this.onAddHandler.bind(this));
@@ -6471,6 +6554,12 @@ class ProductBundle extends HTMLElement {
 
   get bundleMin() {
     return this.hasAttribute('data-minimum') ? parseInt(this.getAttribute('data-minimum')) : 3;
+  }
+
+  get bundleMax() {
+    const minimum = this.bundleMin;
+    const maximum = this.hasAttribute('data-maximum') ? parseInt(this.getAttribute('data-maximum')) : 3;
+    return maximum > minimum ? maximum : minimum;
   }
 
   get variants() {
@@ -6489,6 +6578,10 @@ class ProductBundle extends HTMLElement {
     return this.hasAttribute('data-prevent-duplicate');
   }
 
+  get template() {
+    return this._template = this._template || this.querySelector('[data-product-bundle-variant][available]').cloneNode(true);
+  }
+
   onChangeHandler() {
     this.updateTotal();
     this.updateTotalWithCurrency();
@@ -6502,13 +6595,13 @@ class ProductBundle extends HTMLElement {
       let message = '';
 
       if (inputValue < parseInt(target.getAttribute('data-min'))) {
-        message = theme.quickOrderListStrings.min_error.replace('[min]', target.getAttribute('data-min'));
+        message = theme.quickOrderListStrings.minError.replace('[min]', target.getAttribute('data-min'));
       }
       else if (inputValue > parseInt(target.max)) {
-        message = theme.quickOrderListStrings.max_error.replace('[max]', target.max);
+        message = theme.quickOrderListStrings.maxError.replace('[max]', target.max);
       }
       else if (inputValue % parseInt(target.step) !== 0) {
-        message = theme.quickOrderListStrings.step_error.replace('[step]', target.step);
+        message = theme.quickOrderListStrings.stepError.replace('[step]', target.step);
       }
 
       if (message) {
@@ -6577,7 +6670,7 @@ class ProductBundle extends HTMLElement {
           return;
         }
 
-        const cartJson = await (await fetch(`${theme.routes.cart_url}`, { ...theme.utils.fetchConfig()})).json();
+        const cartJson = await (await fetch(theme.routes.cart_url, { ...theme.utils.fetchConfig('json', 'GET')})).json();
         cartJson['sections'] = parsedState['sections'];
 
         theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'product-bundle', cart: cartJson });
@@ -6638,7 +6731,7 @@ class ProductBundle extends HTMLElement {
     });
 
     const element = this.querySelector('[data-product-bundle-total]');
-    element.innerHTML = theme.utils.formatMoney(subtotal, theme.settings.moneyFormat);
+    element.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   }
 
   updateTotalWithCurrency() {
@@ -6652,7 +6745,7 @@ class ProductBundle extends HTMLElement {
     });
 
     const element = this.querySelector('[data-product-bundle-total-with-currency]');
-    element.innerHTML = theme.utils.formatMoney(subtotal, theme.settings.moneyWithCurrencyFormat);
+    element.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyWithCurrencyFormat);
   }
 
   updateProgressBar() {
@@ -6663,12 +6756,21 @@ class ProductBundle extends HTMLElement {
 
   addVariant(product, variant) {
     this.bundleCount++;
+
     if (this.bundleCount >= this.bundleMin) {
-      this.closest('.product-bundle-wrapper').setAttribute('locked', '');
       this.submitButton.disabled = false;
     }
+    if (this.bundleCount >= this.bundleMax) {
+      this.closest('.product-bundle-wrapper').setAttribute('locked', '');
+    }
 
-    const variantElement = this.getAvailableAvriant();
+    let variantElement = this.getAvailableAvriant();
+    if (variantElement === null) {
+      variantElement = this.template.cloneNode(true);
+      variantElement.style.order = this.bundleCount;
+      this.querySelector('.product-bundle__body').appendChild(variantElement);
+    }
+
     if (variantElement) {
       const preview_image = variant.featured_media ? variant.featured_media.preview_image.src : variant.default_featured_media;
       const media = variantElement.querySelector('[data-product-bundle-variant-media]');
@@ -6689,7 +6791,7 @@ class ProductBundle extends HTMLElement {
           ` : ''}
         </div>
         <div class="price text-sm flex flex-wrap gap-1d5" data-price="${variant.price}" data-product-bundle-variant-price>
-          ${theme.utils.formatMoney(variant.price, theme.settings.moneyFormat)}
+          ${theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat)}
         </div>`;
 
       variantElement.product = product;
@@ -6713,15 +6815,21 @@ class ProductBundle extends HTMLElement {
     variant.querySelector('quantity-input').reset();
 
     this.bundleCount--;
+
     if (this.bundleCount < this.bundleMin) {
-      this.closest('.product-bundle-wrapper').removeAttribute('locked');
       this.submitButton.disabled = true;
+    }
+    else {
+      variant.remove();
+    }
+    if (this.bundleCount < this.bundleMax) {
+      this.closest('.product-bundle-wrapper').removeAttribute('locked');
     }
   }
 
   reorderVariants() {
     let order = 0;
-    let minimum = this.bundleMin * -1;
+    let minimum = Math.max(this.bundleMin, this.bundleCount) * -1;
     this.variants.forEach((variant) => {
       variant.style.order = variant.hasAttribute('available') ? order++ : minimum++;
     });
@@ -6732,6 +6840,7 @@ class ProductBundle extends HTMLElement {
       this.clearVariant(variant);
     });
 
+    this.reorderVariants();
     this.updateTotal();
     this.updateTotalWithCurrency();
     this.updateProgressBar();
@@ -6781,7 +6890,7 @@ class ScrollingBanner extends HTMLElement {
       new theme.initWhenVisible(this.init.bind(this));
     }
     else {
-      Motion.inView(this, this.init.bind(this), { margin: '200px 0px 200px 0px' });
+      Motion.inView(this, this.init.bind(this), { margin: '600px 0px 600px 0px' });
     }
   }
 

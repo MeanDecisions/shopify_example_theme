@@ -16,6 +16,7 @@
   <recipient-form
     class="recipient-form grid gap-6"
     data-section-id="{{ section_id }}"
+    data-product-id="{{ product_id }}"
     data-product-variant-id="{{ product.selected_or_first_available_variant.id }}"
   >
     <label for="Recipient-checkbox-{{ section_id }}-{{ product_id }}" class="flex items-center gap-3">
@@ -29,17 +30,15 @@
     </label>
 
     <div
-      class="product-form__recipient-error-message-wrapper"
+      class="product-form__recipient-error-message"
       role="alert"
       {% unless form.errors %}
         hidden
       {% endunless %}
     >
       {%- liquid
-        if form.errors
-          assign form_errors = form.errors | default_errors
-          render 'alert', status: 'error', content: form_errors
-        endif
+        assign form_errors = form.errors | default: '<ul></ul>'
+        render 'alert', status: 'error', content: form_errors
       -%}
     </div>
 
@@ -48,7 +47,7 @@
     <div class="recipient-fields grid gap-4 hidden" id="Recipient-fields-{{ section_id }}-{{ product_id }}">
       <div class="field">
         <input
-          class="input is-floating"
+          class="input is-floating{% if form.errors contains 'email' %} invalid{% endif %}"
           id="Recipient-email-{{ section_id }}-{{ product_id }}"
           type="email"
           placeholder="{{ 'recipient.form.email' | t }}"
@@ -60,7 +59,7 @@
 
       <div class="field">
         <input
-          class="input is-floating"
+          class="input is-floating{% if form.errors contains 'name' %} invalid{% endif %}"
           autocomplete="name"
           type="text"
           id="Recipient-name-{{ section_id }}-{{ product_id }}"
@@ -77,7 +76,7 @@
           assign message_label_rendered = 'recipient.form.message_label' | t
         -%}
         <textarea
-          class="textarea is-floating"
+          class="textarea is-floating{% if form.errors contains 'message' %} invalid{% endif %}"
           rows="3"
           id="Recipient-message-{{ section_id }}-{{ product_id }}"
           name="properties[Message]"
@@ -91,7 +90,7 @@
 
       <div class="field">
         <input
-          class="input is-floating"
+          class="input is-floating{% if form.errors contains 'send_on' %} invalid{% endif %}"
           autocomplete="send_on"
             type="date"
             id="Recipient-send-on-{{ section_id }}-{{ product_id }}"

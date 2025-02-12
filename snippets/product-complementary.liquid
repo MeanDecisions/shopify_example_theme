@@ -3,6 +3,8 @@
 
   Accepts:
   - limit: {Number} Number of items to show.
+  - image_ratio: {String} Size of the product image card. Values are "square", "landscape" and "portrait". Default is "square" (optional)
+  - image_fill: {Boolean} Zoom image to fill space. Default: false (optional)
   - show_vendor: {Boolean} Show the product vendor. Default: false
   - show_price: {Boolean} Show the product price. Default: false
   - product_id: {String} The ID of the current product.
@@ -46,7 +48,7 @@
     <product-complementary class="horizontal-products block{% if products_count > 1 %} flickity{% endif %}">
       {%- liquid
         for recommendation in recommendations_products
-          render 'product-card-horizontal', product: recommendation, show_vendor: show_vendor, show_price: show_price, show_quick_add: true, show_quick_view: settings.product_quick_view
+          render 'product-card-horizontal', product: recommendation, image_ratio: image_ratio, image_fill: image_fill, show_vendor: show_vendor, show_price: show_price, show_quick_add: true, show_quick_view: settings.product_quick_view
         endfor
       -%}
     </product-complementary>

@@ -231,7 +231,7 @@
                     -%}
 
                   {%- when 'article' -%}
-                    {%-liquid
+                    {%- liquid
                       assign article = item
                       assign featured_media = article.image
                       assign image_ratio = settings.product_image_ratio
@@ -317,7 +317,7 @@
                   {%- when 'page' -%}
                     <div class="card article-card product-card product-card--{{ settings.card_style }}{% if settings.card_border_thickness > 0 %} product-card--thickness{% endif %} no-media flex flex-col leading-none relative overflow-hidden">
                       <div class="product-card__media relative h-auto">
-                        <span class="block aspect-{{ image_ratio }}"></span>
+                        <span class="block aspect-{{ settings.product_image_ratio }}"></span>
                       </div>
                       <div class="product-card__content grow flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full">
                         <div class="product-card__details flex flex-col lg:flex-row items-baseline gap-2 w-full">
@@ -669,16 +669,36 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "secondary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
           "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": true,
-          "label": "t:sections.global.settings.button_secondary_style.label"
         },
         {
           "type": "select",
@@ -883,16 +903,36 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "secondary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
           "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": true,
-          "label": "t:sections.global.settings.button_secondary_style.label"
         },
         {
           "type": "select",

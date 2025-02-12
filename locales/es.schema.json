@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "header-group": {
@@ -57,6 +66,18 @@
         "button_link": {
           "label": "Enlace de botón"
         },
+        "button_style": {
+          "options__1": {
+            "label": "Botón sólido"
+          },
+          "options__2": {
+            "label": "Botón con contorno"
+          },
+          "options__3": {
+            "label": "Enlace"
+          },
+          "label": "Estilo del botón"
+        },
         "button_size": {
           "options__1": {
             "label": "Pequeño"
@@ -69,11 +90,11 @@
           },
           "label": "Tamaño del botón"
         },
+        "button_external": {
+          "label": "Abrir enlace en una pestaña nueva"
+        },
         "button_icon": {
           "label": "Mostrar icono del botón"
-        },
-        "button_secondary_style": {
-          "label": "Usar estilo de botón con contorno"
         },
         "color_accent": {
           "label": "Acento"
@@ -341,9 +362,15 @@
             "label": "750px"
           },
           "options__10": {
-            "label": "Pantalla completa"
+            "label": "850px"
           },
           "options__11": {
+            "label": "900px"
+          },
+          "options__12": {
+            "label": "Pantalla completa"
+          },
+          "options__13": {
             "label": "Adaptar a la primera imagen"
           },
           "label": "Altura del escritorio"
@@ -742,6 +769,9 @@
         }
       },
       "blocks": {
+        "breadcrumb": {
+          "name": "Migas de pan"
+        },
         "subheading": {
           "name": "Subtítulo"
         },
@@ -782,16 +812,6 @@
     },
     "apps": {
       "name": "Aplicaciones",
-      "settings": {
-        "header__reviews": {
-          "content": "Shopify Product Reviews",
-          "info": "Install the [Shopify Product Reviews app](https://apps.shopify.com/product-reviews) to use this feature. Only shows on product pages."
-        },
-        "enable_reviews_integration": {
-          "label": "Enable Shopify Product Reviews integration",
-          "info": "Adjust the Shopify Product Reviews app to the look and feel of the theme. Turn off to use the original app design."
-        }
-      },
       "presets": {
         "name": "Aplicaciones"
       }
@@ -874,15 +894,15 @@
         },
         "show_social": {
           "label": "Mostrar íconos de redes sociales",
-          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](\/editor?context=theme&category=social%20media)."
+          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](/editor?context=theme&category=social%20media)."
         },
         "enable_country_selector": {
-          "label": "Activar selector de país\/región",
-          "info": "Para agregar un país o una región, ve a la [configuración del mercado](\/admin\/settings\/markets)."
+          "label": "Activar selector de país/región",
+          "info": "Para agregar un país o una región, ve a la [configuración del mercado](/admin/settings/markets)."
         },
         "enable_language_selector": {
           "label": "Activar selector de idioma",
-          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](\/admin\/settings\/languages)."
+          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](/admin/settings/languages)."
         },
         "invert_icons_selectors": {
           "label": "Invertir iconos y selectores"
@@ -955,7 +975,7 @@
       "name": "Carrito lateral",
       "settings": {
         "paragraph": {
-          "content": "El cajón del carrito no le aparecerá a sus clientes si ha configurado el tipo de carrito como \"Página\" en su [configuración del tema](\/editor?context=theme&category=cart)."
+          "content": "El cajón del carrito no le aparecerá a sus clientes si ha configurado el tipo de carrito como \"Página\" en su [configuración del tema](/editor?context=theme&category=cart)."
         },
         "show_vendor": {
           "label": "Mostrar proveedor"
@@ -975,7 +995,7 @@
         },
         "header__free_shipping": {
           "content": "Barra de envío gratis",
-          "info": "Asegúrate de haber configurado correctamente tus [tarifas de entrega](\/admin\/settings\/shipping)."
+          "info": "Asegúrate de haber configurado correctamente tus [tarifas de entrega](/admin/settings/shipping)."
         },
         "show_free_shipping_bar": {
           "label": "Mostrar barra de envío gratis"
@@ -986,7 +1006,7 @@
         },
         "header__cart_recommendations": {
           "content": "Recomendaciones del carrito",
-          "info": "Las recomendaciones dinámicas se basan en los artículos de tu carrito. Cambian y mejoran con el tiempo. [Más información](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)."
+          "info": "Las recomendaciones dinámicas se basan en los artículos de tu carrito. Cambian y mejoran con el tiempo. [Más información](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)."
         },
         "cart_recommendations_enabled": {
           "label": "Habilitar recomendaciones de carrito"
@@ -1095,11 +1115,49 @@
         "name": "Lista de colecciones"
       }
     },
+    "compact-product-bundle": {
+      "name": "Paquete de productos compacto",
+      "settings": {
+        "layout": {
+          "options__1": {
+            "label": "Imagen primero"
+          },
+          "options__2": {
+            "label": "Imagen segunda"
+          },
+          "label": "Colocación de imágenes en el escritorio",
+          "info": "\"Imagen primero\" es el diseño móvil predeterminado."
+        },
+        "content_position": {
+          "options__1": {
+            "label": "Arriba"
+          },
+          "options__2": {
+            "label": "Centrada"
+          },
+          "options__3": {
+            "label": "Abajo"
+          }
+        },
+        "image_height_mobile": {
+          "label": "Altura de la imagen móvil"
+        }
+      },
+      "presets": {
+        "name": "Paquete de productos compacto"
+      }
+    },
+    "floating-product-bundle": {
+      "name": "Paquete de productos flotantes",
+      "presets": {
+        "name": "Paquete de productos flotantes"
+      }
+    },
     "contact-form": {
       "name": "Formulario de contacto",
       "settings": {
         "paragraph": {
-          "content": "Todos los envíos se realizan a la dirección de correo electrónico del cliente de su tienda. [Saber más](https:\/\/help.shopify.com\/en\/manual\/using-themes\/change-the-layout\/add-contact-form#view-contact-form-submissions)."
+          "content": "Todos los envíos se realizan a la dirección de correo electrónico del cliente de su tienda. [Saber más](https://help.shopify.com/en/manual/using-themes/change-the-layout/add-contact-form#view-contact-form-submissions)."
         }
       },
       "blocks": {
@@ -1252,6 +1310,9 @@
         "timer": {
           "name": "Temporizador",
           "settings": {
+            "paragraph": {
+              "content": "La fecha de vencimiento se basa en la [zona horaria principal de la tienda](/admin/settings/general)."
+            },
             "compact": {
               "label": "Utilizar el estilo compacto"
             },
@@ -1501,22 +1562,22 @@
       "name": "Derechos de autor a pie de página",
       "settings": {
         "header__country_selector": {
-          "content": "Selector de país\/región",
-          "info": "Para agregar un país o una región, ve a la [configuración del mercado](\/admin\/settings\/markets)."
+          "content": "Selector de país/región",
+          "info": "Para agregar un país o una región, ve a la [configuración del mercado](/admin/settings/markets)."
         },
         "enable_country_selector": {
-          "label": "Activar selector de país\/región"
+          "label": "Activar selector de país/región"
         },
         "header__language_selector": {
           "content": "Selector de idioma",
-          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](\/admin\/settings\/languages)."
+          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](/admin/settings/languages)."
         },
         "enable_language_selector": {
           "label": "Activar selector de idioma"
         },
         "header__policy": {
           "content": "Enlaces a las políticas",
-          "info": "Para agregar las políticas de la tienda, ve a tu [configuración de políticas](\/admin\/settings\/legal)."
+          "info": "Para agregar las políticas de la tienda, ve a tu [configuración de políticas](/admin/settings/legal)."
         },
         "show_policy": {
           "label": "Mostrar enlaces a las políticas"
@@ -1549,7 +1610,7 @@
         },
         "header__newsletter": {
           "content": "Suscriptor de correo electrónico",
-          "info": "Suscriptores agregados automáticamente a tu lista de clientes \"marketing aceptado\". [Más información](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+          "info": "Suscriptores agregados automáticamente a tu lista de clientes \"marketing aceptado\". [Más información](https://help.shopify.com/manual/customers/manage-customers)"
         },
         "enable_newsletter": {
           "label": "Mostrar suscriptor de correo electrónico"
@@ -1562,7 +1623,7 @@
         },
         "header__social": {
           "content": "Íconos de redes sociales",
-          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](\/editor?context=theme&category=social%20media)."
+          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](/editor?context=theme&category=social%20media)."
         },
         "show_social": {
           "label": "Mostrar íconos de redes sociales"
@@ -1576,6 +1637,16 @@
         }
       },
       "blocks": {
+        "global": {
+          "settings": {
+            "container_width": {
+              "label": "Ancho de columna"
+            },
+            "opened": {
+              "label": "Mostrar inicialmente como abierto"
+            }
+          }
+        },
         "logo_social": {
           "name": "Logotipo",
           "settings": {
@@ -1593,19 +1664,11 @@
             "menu": {
               "label": "Seleccionar un menú",
               "info": "Muestra solo los elementos del menú de nivel superior."
-            },
-            "container_width": {
-              "label": "Ancho de columna"
             }
           }
         },
         "text": {
-          "name": "Texto",
-          "settings": {
-            "container_width": {
-              "label": "Ancho de columna"
-            }
-          }
+          "name": "Texto"
         },
         "brand_information": {
           "name": "Información de marca",
@@ -1633,9 +1696,6 @@
             },
             "button_link_4": {
               "label": "Enlace al eslogan n.º 4"
-            },
-            "container_width": {
-              "label": "Ancho de columna"
             }
           }
         }
@@ -1645,7 +1705,7 @@
       "name": "Encabezado",
       "settings": {
         "paragraph__logo_help": {
-          "content": "Edita tu logotipo en [configuración del tema](\/editor?context=theme&category=logo)."
+          "content": "Edita tu logotipo en [configuración del tema](/editor?context=theme&category=logo)."
         },
         "menu": {
           "label": "Menú"
@@ -1713,14 +1773,14 @@
         },
         "show_social": {
           "label": "Mostrar íconos de redes sociales",
-          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](\/editor?context=theme&category=social%20media)."
+          "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](/editor?context=theme&category=social%20media)."
         },
         "header__country_selector": {
-          "content": "Selector de país\/región",
-          "info": "Para agregar un país o una región, ve a la [configuración del mercado](\/admin\/settings\/markets)."
+          "content": "Selector de país/región",
+          "info": "Para agregar un país o una región, ve a la [configuración del mercado](/admin/settings/markets)."
         },
         "enable_country_selector": {
-          "label": "Activar selector de país\/región"
+          "label": "Activar selector de país/región"
         },
         "show_country_name": {
           "label": "Mostrar nombre del país"
@@ -1730,7 +1790,7 @@
         },
         "header__language_selector": {
           "content": "Selector de idioma",
-          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](\/admin\/settings\/languages)."
+          "info": "Para agregar un idioma, ve a tu [configuración de idiomas](/admin/settings/languages)."
         },
         "enable_language_selector": {
           "label": "Activar selector de idioma"
@@ -1816,6 +1876,10 @@
             },
             "image_height": {
               "label": "Altura de imagen"
+            },
+            "description": {
+              "label": "Texto alternativo de la imagen",
+              "info": "Describe la imagen para los clientes que utilizan lectores de pantalla."
             }
           }
         },
@@ -2029,7 +2093,12 @@
       "name": "Direcciones"
     },
     "main-login": {
-      "name": "Inicio de sesión"
+      "name": "Inicio de sesión",
+      "settings": {
+        "enable_shop_login_button": {
+          "label": "Habilitar Iniciar sesión con Shop"
+        }
+      }
     },
     "main-order": {
       "name": "Pedido"
@@ -2114,9 +2183,6 @@
       "blocks": {
         "title": {
           "name": "Título de la entrada del blog"
-        },
-        "breadcrumb": {
-          "name": "Migas de pan"
         }
       }
     },
@@ -2235,7 +2301,13 @@
           "name": "Nota del carrito"
         },
         "buttons": {
-          "name": "Botón de pago"
+          "name": "Botón de pago",
+          "settings": {
+            "show_accelerated_buttons": {
+              "label": "Mostrar botones acelerados",
+              "info": "Configure botones de pago acelerado en su [configuración de pago](/admin/settings/payments)"
+            }
+          }
         },
         "free_shipping": {
           "name": "Mensaje de envío gratis",
@@ -2309,14 +2381,14 @@
       "name": "Banner de colección",
       "settings": {
         "paragraph": {
-          "content": "agregar una descripción o imagen editando tu colección. [Más información](https:\/\/help.shopify.com\/manual\/products\/collections\/collection-layout)"
+          "content": "agregar una descripción o imagen editando tu colección. [Más información](https://help.shopify.com/manual/products/collections/collection-layout)"
         },
         "show_description": {
           "label": "Mostrar descripción de la colección"
         },
         "show_image": {
           "label": "Mostrar imagen de la colección",
-          "info": "Para mejores resultados, utiliza una imagen con una relación de aspecto 16:9. [Más información](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+          "info": "Para mejores resultados, utiliza una imagen con una relación de aspecto 16:9. [Más información](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "image": {
           "info": "Por defecto a la imagen de la colección."
@@ -2333,7 +2405,6 @@
           "name": "Descripción de la colección"
         },
         "breadcrumb": {
-          "name": "Migas de pan",
           "settings": {
             "show_collections_link": {
               "label": "Mostrar la página de colecciones en la lista de migas de pan"
@@ -2365,7 +2436,7 @@
         },
         "enable_filtering": {
           "label": "Habilitar filtrado",
-          "info": "Personaliza los filtros con la aplicación Search & Discovery. [Más información](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
+          "info": "Personaliza los filtros con la aplicación Search & Discovery. [Más información](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
         },
         "filter_collapsed": {
           "label": "Minimizar los filtros"
@@ -2629,7 +2700,6 @@
       },
       "blocks": {
         "breadcrumb": {
-          "name": "Migas de pan",
           "settings": {
             "show_collections_link": {
               "label": "Mostrar la página de colecciones en la lista de migas de pan"
@@ -2749,6 +2819,15 @@
               "info": "Elige 0 para que siempre se muestre en existencias si está disponible."
             },
             "show_inventory_quantity": {
+              "options__1": {
+                "label": "Ninguno"
+              },
+              "options__2": {
+                "label": "Umbral de inventario bajo"
+              },
+              "options__3": {
+                "label": "Siempre"
+              },
               "label": "Mostrar recuento de inventario"
             },
             "show_inventory_transfer": {
@@ -2889,6 +2968,27 @@
             }
           }
         },
+        "back_in_stock": {
+          "name": "Alerta de stock nuevamente",
+          "settings": {
+            "header": {
+              "content": "Alerta de stock nuevamente",
+              "info": "Solicitud para recopilar información de correo electrónico para notificar cuando el producto vuelva a estar disponible."
+            },
+            "paragraph": {
+              "content": "Tenga en cuenta que las alertas por correo electrónico NO se enviarán automáticamente al cliente cuando el producto esté disponible; deberá hacerlo usted."
+            },
+            "enabled": {
+              "label": "Habilitar alerta de stock nuevamente"
+            },
+            "show_name": {
+              "label": "Mostrar nombre"
+            },
+            "show_phone": {
+              "label": "Mostrar número de teléfono"
+            }
+          }
+        },
         "line_item_property": {
           "name": "Propiedad de la línea de pedido",
           "settings": {
@@ -3026,6 +3126,17 @@
         "name": "Mapa"
       }
     },
+    "maps": {
+      "name": "Mapas",
+      "blocks": {
+        "map": {
+          "name": "Mapa"
+        }
+      },
+      "presets": {
+        "name": "Mapas"
+      }
+    },
     "mobile-dock": {
       "name": "Opciones del móvil",
       "blocks": {
@@ -3113,7 +3224,7 @@
       "name": "Suscriptor de correo electrónico",
       "settings": {
         "paragraph": {
-          "content": "Suscriptores agregados automáticamente a tu lista de clientes \"marketing aceptado\". [Más información](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+          "content": "Suscriptores agregados automáticamente a tu lista de clientes \"marketing aceptado\". [Más información](https://help.shopify.com/manual/customers/manage-customers)"
         }
       },
       "blocks": {
@@ -3215,7 +3326,7 @@
             },
             "show_social": {
               "label": "Mostrar íconos de redes sociales",
-              "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](\/editor?context=theme&category=social%20media)."
+              "info": "Para mostrar tus cuentas de redes sociales, vincúlalas en la [configuración de tu tema](/editor?context=theme&category=social%20media)."
             },
             "social_heading": {
               "label": "Encabezado de redes sociales"
@@ -3288,7 +3399,10 @@
           "info": "Aprenda a crear códigos de descuento [aquí](https://help.shopify.com/manual/discounts)"
         },
         "minimum_quantity": {
-          "label": "Productos mínimos a exigir"
+          "label": "Artículos mínimos a requerir"
+        },
+        "maximum_quantity": {
+          "label": "Artículos máximos"
         },
         "allow_quantity_change": {
           "label": "Permitir cambio de cantidad para cada producto"
@@ -3360,11 +3474,34 @@
       "name": "Productos relacionados",
       "settings": {
         "paragraph": {
-          "content": "Las recomendaciones dinámicas usan información de pedidos y productos para cambiar y mejorar con el tiempo. [Más información](https:\/\/help.shopify.com\/themes\/development\/recommended-products)"
+          "content": "Las recomendaciones dinámicas usan información de pedidos y productos para cambiar y mejorar con el tiempo. [Más información](https://help.shopify.com/themes/development/recommended-products)"
         },
         "product_limit": {
           "label": "Número de productos relacionados"
         }
+      }
+    },
+    "quick-order-list": {
+      "name": "Lista de pedidos rápidos",
+      "settings": {
+        "layout": {
+          "label": "Diseño para computadora",
+          "options__1": {
+            "label": "Horizontal"
+          },
+          "options__2": {
+            "label": "Barra lateral"
+          }
+        },
+        "show_image": {
+          "label": "Mostrar imágenes"
+        },
+        "show_sku": {
+          "label": "Mostrar SKU"
+        }
+      },
+      "presets": {
+        "name": "Lista de pedidos rápidos"
       }
     },
     "recently-viewed": {
@@ -3415,7 +3552,7 @@
       "name": "Cajón de búsqueda",
       "settings": {
         "paragraph": {
-          "content": "El cajón de búsqueda no se mostrará a sus clientes si ha habilitado la función de búsqueda en su [configuración del tema](\/editor?context=theme&category=search)."
+          "content": "El cajón de búsqueda no se mostrará a sus clientes si ha habilitado la función de búsqueda en su [configuración del tema](/editor?context=theme&category=search)."
         }
       }
     },
@@ -3547,6 +3684,9 @@
             },
             "author_info": {
               "label": "Información del autor"
+            },
+            "author_url": {
+              "label": "URL del autor"
             }
           }
         }
@@ -3696,6 +3836,18 @@
             "label": "Derecha"
           },
           "label": "Alineación de texto"
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Regular"
+          },
+          "options__2": {
+            "label": "Seminegrita"
+          },
+          "options__3": {
+            "label": "Negrita"
+          },
+          "label": "Peso"
         }
       }
     },
@@ -3871,6 +4023,9 @@
             "label": "Encabezado"
           }
         },
+        "type_navigation_weight": {
+          "label": "Peso de la fuente de navegación"
+        },
         "type_navigation_size": {
           "label": "Tamaño base de navegación"
         },
@@ -3886,6 +4041,9 @@
             "label": "Encabezado"
           }
         },
+        "type_button_weight": {
+          "label": "Peso de fuente de los botones"
+        },
         "type_button_size": {
           "label": "Tamaño base botones"
         },
@@ -3900,6 +4058,9 @@
           "options__2": {
             "label": "Encabezado"
           }
+        },
+        "type_product_weight": {
+          "label": "Peso de fuente de la cuadrícula del producto"
         },
         "type_product_size": {
           "label": "Tamaño base de la rejilla de productos"
@@ -4177,28 +4338,28 @@
           "content": "Cuentas de redes sociales"
         },
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https:\/\/twitter.com\/shopify"
+          "label": "X (Twitter)",
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
-          "info": "https:\/\/www.facebook.com\/shopify\/"
+          "info": "https://facebook.com/shopify"
         },
         "social_pinterest_link": {
           "label": "Pinterest",
-          "info": "https:\/\/pinterest.com\/shopify"
+          "info": "https://pinterest.com/shopify"
         },
         "social_instagram_link": {
           "label": "Instagram",
-          "info": "http:\/\/instagram.com\/shopify"
+          "info": "http://instagram.com/shopify"
         },
         "social_tiktok_link": {
           "label": "TikTok",
-          "info": "https:\/\/tiktok.com\/@shopify"
+          "info": "https://tiktok.com/@shopify"
         },
         "social_tumblr_link": {
           "label": "Tumblr",
-          "info": "https:\/\/shopify.tumblr.com"
+          "info": "https://shopify.tumblr.com"
         },
         "social_linkedin_link": {
           "label": "LinkedIn",
@@ -4206,15 +4367,15 @@
         },
         "social_snapchat_link": {
           "label": "Snapchat",
-          "info": "https:\/\/www.snapchat.com\/add\/shopify"
+          "info": "https://www.snapchat.com/add/shopify"
         },
         "social_youtube_link": {
           "label": "YouTube",
-          "info": "https:\/\/www.youtube.com\/shopify"
+          "info": "https://www.youtube.com/shopify"
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https:\/\/vimeo.com\/shopify"
+          "info": "https://vimeo.com/shopify"
         },
         "header__sharing_options": {
           "content": "Opciones para compartir"
@@ -4223,7 +4384,7 @@
           "label": "Compartir en Facebook"
         },
         "share_twitter": {
-          "label": "Compartir en Twitter"
+          "label": "Compartir en X"
         },
         "share_pinterest": {
           "label": "Guardar en Pinterest"
@@ -4271,6 +4432,37 @@
         },
         "typewriter_starter_text": {
           "label": "Texto de inicio de búsqueda"
+        }
+      }
+    },
+    "advanced": {
+      "name": "Avanzado",
+      "settings": {
+        "header__links": {
+          "content": "Enlaces"
+        },
+        "preload_links": {
+          "label": "Precargar enlaces al pasar el cursor",
+          "info": "Esto debería aumentar la velocidad de carga percibida de las páginas."
+        },
+        "external_links_new_tab": {
+          "label": "Abrir enlaces externos en una nueva pestaña"
+        },
+        "header__tab_attention": {
+          "content": "Atención a la pestaña"
+        },
+        "enable_tab_attention": {
+          "label": "Habilitar atención a la pestaña",
+          "info": "Permite actualizar dinámicamente el título de la pestaña del navegador cuando pierde el foco."
+        },
+        "tab_attention_message_1": {
+          "label": "Mensaje 1"
+        },
+        "tab_attention_message_2": {
+          "label": "Mensaje 2",
+        },
+        "tab_attention_message_delay": {
+          "label": "Retraso del mensaje"
         }
       }
     }
