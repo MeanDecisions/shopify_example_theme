@@ -15,7 +15,7 @@
         "spacing": {
           "type": "spacing",
           "settings": {
-            "height": 48,
+            "height": 12,
             "height_mobile": 0
           }
         },
@@ -50,8 +50,8 @@
       ],
       "settings": {
         "transparent_header": false,
-        "show_image": false,
-        "image_height": "750px",
+        "show_image": true,
+        "image_height": "400px",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
         "image_height_mobile": "auto",
