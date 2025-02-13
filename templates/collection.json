@@ -28,7 +28,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "title-xl"
+            "title_size": "title-lg tracking-heading"
           }
         },
         "description_48FUR8": {
