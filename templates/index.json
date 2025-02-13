@@ -994,6 +994,7 @@
         },
         "text_eNkJcM": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Open 6 days a week</p>",
             "text_size": "subtext-md",
@@ -1025,7 +1026,7 @@
         "image": "shopify://shop_images/showroom-graphics2-smaller.jpg",
         "image_height": "650px",
         "content_width": "small",
-        "content_position": "md:items-center md:justify-start",
+        "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
