@@ -634,7 +634,7 @@
             "icon": "none",
             "icon_width": 24,
             "heading": "Downloads",
-            "content": "<p>Add your download description here.</p>",
+            "content": "",
             "file_title_1": "Product Specification Sheet",
             "file_1": "{{ product.metafields[\"product-files\"][\"Product-specification-sheet\"].value }}",
             "file_title_2": "Assembly Instructions",
