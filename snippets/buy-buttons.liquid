@@ -37,7 +37,13 @@
     class: 'product-form grid gap-8',
     is: 'product-form'
   -%}
-    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled />
+    <input 
+      type="hidden" 
+      name="id" 
+      value="{{ product.selected_or_first_available_variant.id }}" 
+      disabled
+      data-variant-select 
+    />
 
     {%- liquid
       if gift_card_recipient_feature_active
@@ -190,96 +196,107 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-      <div class="buy-buttons{% if product.quantity_price_breaks_configured? != true and show_quantity_selector %} flex{% else %} grid{% endif %} gap-4">
-        {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
-          {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
-          <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only">{{ 'products.quantity.label' | t }}</label>
-          <quantity-input class="quantity inline-flex flex-auto relative" data-section-id="{{ section_id }}" data-product-id="{{ product_id }}">
-            <button type="button" name="minus" class="quantity__button" aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}">
-              {%- render 'icon', icon: 'chevron-left', size: 'sm', class: 'stroke-2 transform' -%}
-            </button>
-            <input
-              id="Quantity-{{ section_id }}-{{ product_id }}"
-              class="quantity__input text-sm sm:text-base font-medium text-center"
-              type="number"
-              name="quantity"
-              inputmode="numeric"
-              autocomplete="off"
-              data-quantity-variant-id="{{ product.selected_or_first_available_variant.id }}"
-              data-cart-quantity="{{ cart_qty }}"
-              data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-              min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-              {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-              {% endif %}
-              step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-              value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+      <div class="buy-buttons{% if product.quantity_price_breaks_configured? != true and show_quantity_selector %} flex{% else %} grid{% endif %} gap-4" data-buy-buttons>
+        {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+          <div class="klaviyo-bis-form w-full" data-klaviyo-form>
+            <form class="grid gap-4">
+              <div class="field flex gap-4 bg-[#F9F9F4]">
+                <div class="w-full">
+                  <input
+                    type="email"
+                    id="klaviyo-bis-email"
+                    class="input w-full"
+                    style="background-color: transparent; padding-inline: 0px"
+                    required
+                    placeholder="{{ 'Enter your email for updates on this product'}}"
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="button w-1/4 rounded-full klaviyo-bis-submit"
+                  style="background-color: #4D5450; border-radius: 9999px; padding: 0px 16px;"
+                  is="hover-button"
+                  data-subscribe-klaviyo-btn
+                >
+                  <span class="btn-fill" data-fill></span>
+                  <span class="btn-text">
+                    {%- render 'icon', icon: 'arrow-right', size: 'sm', class: 'stroke-2 transform' -%}
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        {%- else -%}
+          <div class="add-to-cart-buttons" data-add-to-cart-buttons>
+            {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
+              {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
+              <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only">{{ 'products.quantity.label' | t }}</label>
+              <quantity-input class="quantity inline-flex flex-auto relative" data-section-id="{{ section_id }}" data-product-id="{{ product_id }}">
+                <button type="button" name="minus" class="quantity__button" aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}">
+                  {%- render 'icon', icon: 'chevron-left', size: 'sm', class: 'stroke-2 transform' -%}
+                </button>
+                <input
+                  id="Quantity-{{ section_id }}-{{ product_id }}"
+                  class="quantity__input text-sm sm:text-base font-medium text-center"
+                  type="number"
+                  name="quantity"
+                  inputmode="numeric"
+                  autocomplete="off"
+                  data-quantity-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                  data-cart-quantity="{{ cart_qty }}"
+                  data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                  min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                  {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+                    data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                    max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                  {% endif %}
+                  step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+                  value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                  form="{{ product_form_id }}"
+                />
+                <button type="button" name="plus" class="quantity__button" aria-label="{{ 'products.quantity.increase' | t: product: product.title | escape }}">
+                  {%- render 'icon', icon: 'chevron-right', size: 'sm', class: 'stroke-2 transform' -%}
+                </button>
+              </quantity-input>
+            {%- endif -%}
+            
+            <button
+              type="submit"
+              name="add"
               form="{{ product_form_id }}"
-            />
-            <button type="button" name="plus" class="quantity__button" aria-label="{{ 'products.quantity.increase' | t: product: product.title | escape }}">
-              {%- render 'icon', icon: 'chevron-right', size: 'sm', class: 'stroke-2 transform' -%}
+              class="product-form__submit button button--primary button--fixed w-full"
+              is="hover-button"
+              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled{% endif -%}
+              {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
+            >
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text">
+                {%- liquid
+                  if product.selected_or_first_available_variant.available == false or quantity_rule_soldout
+                    echo 'products.product.sold_out' | t
+                  elsif product.template_suffix != 'pre-order'
+                    echo 'products.product.add_to_cart' | t
+                  else
+                    echo 'products.product.pre_order' | t
+                  endif
+                -%}
+              </span>
             </button>
-          </quantity-input>
-        {%- endif -%}
-        
-        <button
-          type="submit"
-          name="add"
-          form="{{ product_form_id }}"
-          class="product-form__submit button button--primary button--fixed w-full"
-          is="hover-button"
-          {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled{% endif -%}
-          {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
-        >
-          <span class="btn-fill" data-fill></span>
-          <span class="btn-text">
+
             {%- liquid
-              if product.selected_or_first_available_variant.available == false or quantity_rule_soldout
-                echo 'products.product.sold_out' | t
-              elsif product.template_suffix != 'pre-order'
-                echo 'products.product.add_to_cart' | t
-              else
-                echo 'products.product.pre_order' | t
-              endif
+              unless product.quantity_price_breaks_configured? != true and show_quantity_selector
+                if show_dynamic_checkout and product.selected_or_first_available_variant.available and quantity_rule_soldout != true
+                  echo form | payment_button
+                endif
+              endunless
             -%}
-          </span>
-        </button>
-
-        {%- liquid
-          unless product.quantity_price_breaks_configured? != true and show_quantity_selector
-            if show_dynamic_checkout
-              echo form | payment_button
-            endif
-          endunless
-        -%}
-      </div>
-
-      {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
-        {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 or product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null -%}
-          <div class="quantity__rules text-sm font-medium leading-tight" id="QuantityRules-{{ section_id }}-{{ product_id }}">
-            {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
-              <span class="divider">
-                {{- 'products.quantity.multiples_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment -}}
-              </span>
-            {%- endif -%}
-            {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
-              <span class="divider">
-                {{- 'products.quantity.minimum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.min -}}
-              </span>
-            {%- endif -%}
-            {%- if product.selected_or_first_available_variant.quantity_rule.max != null -%}
-              <span class="divider">
-                {{- 'products.quantity.maximum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.max -}}
-              </span>
-            {%- endif -%}
           </div>
         {%- endif -%}
-      {%- endif -%}
+      </div>
 
       {%- liquid
         if product.quantity_price_breaks_configured? != true and show_quantity_selector
-          if show_dynamic_checkout
+          if show_dynamic_checkout and product.selected_or_first_available_variant.available and quantity_rule_soldout != true
             echo form | payment_button
           endif
         endif
