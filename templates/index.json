@@ -1038,11 +1038,11 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 38,
+        "overlay_opacity": 20,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": false,
+        "full_width": true,
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
