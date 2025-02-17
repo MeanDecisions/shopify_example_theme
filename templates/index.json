@@ -763,7 +763,7 @@
           "settings": {
             "collection": "dining-tables",
             "products": [],
-            "title": "Dining Tables"
+            "title": "Tables"
           }
         },
         "collection-2": {
@@ -792,15 +792,15 @@
           "settings": {
             "collection": "accessories",
             "products": [],
-            "title": "Home Accessories"
+            "title": "Accessories"
           }
         },
         "collection_YxFT8p": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-furniture",
+            "collection": "lighting",
             "products": [],
-            "title": "Outdoor Furniture"
+            "title": "Lighting"
           }
         }
       },
