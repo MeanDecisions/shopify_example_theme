@@ -3,7 +3,7 @@
     "name": "theme_info",
     "theme_name": "Concept",
     "theme_author": "RoarTheme",
-    "theme_version": "2.0.0",
+    "theme_version": "3.1.0",
     "theme_documentation_url": "https:\/\/roartheme.co\/blogs\/concept",
     "theme_support_url": "https:\/\/haloroar.ticksy.com"
   },
@@ -341,6 +341,26 @@
         ]
       },
       {
+        "type": "select",
+        "id": "type_navigation_weight",
+        "label": "t:settings_schema.typography.settings.type_navigation_weight.label",
+        "default": "500",
+        "options": [
+          {
+            "value": "400",
+            "label": "t:settings_schema.global.settings.font_weight.options__1.label"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.global.settings.font_weight.options__2.label"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.global.settings.font_weight.options__3.label"
+          }
+        ]
+      },
+      {
         "type": "range",
         "id": "type_navigation_size",
         "label": "t:settings_schema.typography.settings.type_navigation_size.label",
@@ -371,6 +391,26 @@
         ]
       },
       {
+        "type": "select",
+        "id": "type_button_weight",
+        "label": "t:settings_schema.typography.settings.type_button_weight.label",
+        "default": "500",
+        "options": [
+          {
+            "value": "400",
+            "label": "t:settings_schema.global.settings.font_weight.options__1.label"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.global.settings.font_weight.options__2.label"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.global.settings.font_weight.options__3.label"
+          }
+        ]
+      },
+      {
         "type": "range",
         "id": "type_button_size",
         "label": "t:settings_schema.typography.settings.type_button_size.label",
@@ -397,6 +437,26 @@
           {
             "value": "heading",
             "label": "t:settings_schema.typography.settings.type_product_font.options__2.label"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "type_product_weight",
+        "label": "t:settings_schema.typography.settings.type_product_weight.label",
+        "default": "500",
+        "options": [
+          {
+            "value": "400",
+            "label": "t:settings_schema.global.settings.font_weight.options__1.label"
+          },
+          {
+            "value": "500",
+            "label": "t:settings_schema.global.settings.font_weight.options__2.label"
+          },
+          {
+            "value": "700",
+            "label": "t:settings_schema.global.settings.font_weight.options__3.label"
           }
         ]
       },
@@ -1189,6 +1249,61 @@
         "id": "share_email",
         "default": true,
         "label": "t:settings_schema.social-media.settings.share_email.label"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.advanced.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.advanced.settings.header__links.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "preload_links",
+        "label": "t:settings_schema.advanced.settings.preload_links.label",
+        "info": "t:settings_schema.advanced.settings.preload_links.info",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "external_links_new_tab",
+        "label": "t:settings_schema.advanced.settings.external_links_new_tab.label",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.advanced.settings.header__tab_attention.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_tab_attention",
+        "label": "t:settings_schema.advanced.settings.enable_tab_attention.label",
+        "info": "t:settings_schema.advanced.settings.enable_tab_attention.info",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "tab_attention_message_1",
+        "label": "t:settings_schema.advanced.settings.tab_attention_message_1.label",
+        "default": "Something we said?"
+      },
+      {
+        "type": "text",
+        "id": "tab_attention_message_2",
+        "label": "t:settings_schema.advanced.settings.tab_attention_message_2.label",
+        "default": "We're still here!"
+      },
+      {
+        "type": "range",
+        "id": "tab_attention_message_delay",
+        "label": "t:settings_schema.advanced.settings.tab_attention_message_delay.label",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 3,
+        "unit": "s"
       }
     ]
   }

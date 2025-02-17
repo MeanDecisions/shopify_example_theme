@@ -13,8 +13,8 @@
 -%}
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
-    <div class="product-bundle-wrapper block lg:flex gap-8 lg:gap-10">
-      <div class="grow">
+    <div class="product-bundle-wrapper block lg:flex lg:gap-10">
+      <div class="lg:grow">
         <motion-list class="product-grid card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
           {%- for product in products limit: section.settings.product_limit -%}
             {%- render 'product-card-bundle',
@@ -24,7 +24,6 @@
               lazy_load: false,
               image_ratio: settings.product_image_ratio,
               image_fill: settings.product_image_fill,
-              show_secondary_image: false,
               show_vendor: settings.product_vendor,
               show_rating: settings.product_rating,
               show_color_swatches: settings.product_color_swatches,
@@ -65,8 +64,8 @@
           {%- endfor -%}
         </motion-list>
       </div>
-      <product-bundle class="product-bundle grow-0 block" id="{{ controls }}" data-minimum="{{ section.settings.minimum_quantity }}"{% if section.settings.prevent_duplicate_products %} data-prevent-duplicate{% endif %}>
-        <sticky-element class="product-bundle__sidebar grid gap-7d5 md:gap-10 sticky top-0">
+      <product-bundle class="product-bundle lg:grow-0 block pointer-events-none" id="{{ controls }}" data-minimum="{{ section.settings.minimum_quantity }}" data-maximum="{{ section.settings.maximum_quantity }}"{% if section.settings.prevent_duplicate_products %} data-prevent-duplicate{% endif %}>
+        <sticky-element class="product-bundle__sidebar flex flex-col gap-7d5 md:gap-10 sticky top-0 pointer-events-auto">
           {%- if section.settings.heading != blank or section.settings.subheading != blank or section.settings.description != blank -%}
             <div class="title-wrapper leading-none grid gap-2 {{ section.settings.heading_alignment }} relative z-1">
               {%- if section.settings.subheading != blank -%}
@@ -105,11 +104,11 @@
             </div>
           {%- endif -%}
 
-          <div class="product-bundle__body grid gap-6 md:gap-5">
+          <div class="product-bundle__body flex flex-col gap-6 md:gap-5">
             {%- for i in (1..section.settings.minimum_quantity) -%}
               {%- assign product = products[forloop.index0] -%}
               <div class="horizontal-product flex items-center gap-3" data-product-bundle-variant available>
-                <figure class="horizontal-product__media media media--square aspect-square relative overflow-hidden flex-auto" data-product-bundle-variant-media></figure>
+                <figure class="horizontal-product__media media media--{{ settings.product_image_ratio }}{% unless settings.product_image_fill %} media--contain{% endunless %} aspect-{{ settings.product_image_ratio }} relative overflow-hidden flex-auto" data-product-bundle-variant-media></figure>
                 <div class="horizontal-product__details grow flex flex-col justify-start gap-2d5" data-product-bundle-variant-content>
                   <span class="horizontal-product__skeleton"></span>
                   <span class="horizontal-product__skeleton"></span>
@@ -236,6 +235,15 @@
       "step": 1
     },
     {
+      "type": "range",
+      "id": "maximum_quantity",
+      "label": "t:sections.product-bundle.settings.maximum_quantity.label",
+      "default": 3,
+      "min": 2,
+      "max": 12,
+      "step": 1
+    },
+    {
       "type": "checkbox",
       "id": "prevent_duplicate_products",
       "default": true,
@@ -326,7 +334,7 @@
       "type": "inline_richtext",
       "id": "heading",
       "label": "t:sections.global.settings.heading.label",
-      "default": "Product bundle"
+      "default": "Your bundle"
     },
     {
       "type": "select",

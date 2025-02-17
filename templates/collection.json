@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main-collection-banner": {
@@ -397,7 +388,7 @@
         "text_YYVrPg": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -412,8 +403,7 @@
             "button_label": "Explore Now",
             "button_link": "",
             "button_size": "md",
-            "button_icon": false,
-            "button_secondary_style": true
+            "button_icon": false
           }
         }
       },
@@ -423,10 +413,9 @@
         "text_YYVrPg",
         "button_C3qDAD"
       ],
-      "disabled": true,
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/Untitled_design_191.jpg",
+        "image": "shopify:\/\/shop_images\/Untitled_design_191.jpg",
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -457,7 +446,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
             "image_width": "full_width",
             "image_max_width": 20,
             "image_max_width_mobile": 50
@@ -491,7 +480,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -519,8 +508,6 @@
         "content_position_mobile": "items-center justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#ffffff",
-        "color_background": "#171717",
-        "gradient_background": "",
         "color_highlight": "#e0a580",
         "gradient_highlight": "",
         "color_button_text": "#171717",
@@ -540,7 +527,7 @@
         "product_limit": 6,
         "columns": 4,
         "carousel_on_desktop": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "Recently Viewed",
         "heading_size": "title-md",
@@ -558,11 +545,11 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 72,
+        "padding_bottom": 80,
         "divider": false,
         "full_width": false,
-        "rounded": false
+        "rounded": true
       }
     }
   },

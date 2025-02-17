@@ -11,8 +11,7 @@
         },
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "cart_note": {
           "type": "cart_note",
@@ -22,8 +21,7 @@
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

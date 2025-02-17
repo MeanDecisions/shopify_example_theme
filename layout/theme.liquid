@@ -14,7 +14,6 @@
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
   {% # theme-check-disable RemoteAsset %}
-  <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.gstatic.com">
@@ -36,7 +35,7 @@
       {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
     {%- endif -%}
     {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
-    {%- if template == 'password' -%}
+    {%- if request.page_type == 'password' -%}
       {{- shop.name -}}
     {%- else -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
@@ -64,6 +63,10 @@
 
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+  {%- if settings.enable_tab_attention -%}
+    <script src="{{ 'tab-attention.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
 
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
@@ -100,5 +103,9 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-new-window-message">{{ 'general.accessibility.link_messages.new_window' | t }}</li>
   </ul>
+
+  {%- if request.design_mode == false and settings.preload_links -%}
+    <script src="{{ 'instant-page.js' | asset_url }}" type="module" fetchpriority="low" defer="defer"></script>
+  {%- endif -%}
 </body>
 </html>

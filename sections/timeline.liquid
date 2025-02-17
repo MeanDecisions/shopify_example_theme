@@ -82,17 +82,13 @@
 
                   {%- if block.settings.button_label != blank -%}
                     <p>
-                      <a class="button button--primary button--fixed icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
-                        <span class="btn-fill" data-fill></span>
-                        <span class="btn-text">
-                          {%- liquid
-                            echo block.settings.button_label | escape
-                            if block.settings.button_icon
-                              render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                            endif
-                          -%}
-                        </span>
-                      </a>
+                      {%- render 'button',
+                        label: block.settings.button_label,
+                        link: block.settings.button_link,
+                        style: block.settings.button_style,
+                        external: block.settings.button_external,
+                        show_icon: block.settings.button_icon
+                      -%}
                     </p>
                   {%- endif -%}
                 </div>
@@ -540,6 +536,32 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.global.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         },
         {
           "type": "checkbox",

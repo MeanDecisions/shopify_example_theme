@@ -20,12 +20,12 @@
 
 {%- liquid
   assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
-
+  
   assign media_count = product.media.size
   if hide_variants and media_count > 1
     assign media_count = media_count | minus: variant_images.size | plus: 1
   endif
-
+  
   assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
 -%}
 {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min(580px, 30vw){%- endcapture -%}
@@ -66,7 +66,7 @@
                 if option_name_handlized == gang_option_name
                   assign gang_exist = true
                   assign gang_connect = gang_connect_item
-
+                  
                   assign option_key = 'option' | append: forloop.index
                   assign current_option_value = product.selected_or_first_available_variant[option_key] | handleize
                   assign current_connect = option_name_handlized | append: '_' | append: current_option_value
@@ -133,7 +133,7 @@
         <div
           class="
             product__media-list flex gap-1
-            {%- if gallery_layout == 'columns' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}
+          {%- if gallery_layout == 'columns' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}
             {%- if gallery_layout == 'scroll' %} lg:grid lg:gap-4 xl:gap-5 grid-cols-2{% endif -%}
           "
           id="VariantMetafield-{{ section.id }}-{{ product.id }}">
@@ -191,27 +191,27 @@
           {% else %}
             {% comment %} built in theme variant images not powered by metafield {% endcomment %}
             {%- for media in product.media -%}
-              {%- if media.id != featured_media.id -%}
-                {%- render 'product-media',
-                  product: product,
-                  product_id: product_id,
-                  section_id: section_id,
-                  media: media,
-                  featured_media: featured_media,
-                  variant_images: variant_images,
-                  hide_variants: hide_variants,
-                  gallery_layout: gallery_layout,
-                  image_zoom: image_zoom,
-                  image_fill: image_fill,
-                  image_ratio: image_ratio,
-                  image_ratio_mobile: image_ratio_mobile,
-                  preload: false,
-                  sizes: sizes,
-                  autoplay: enable_video_autoplay,
-                  loop: enable_video_looping
-                -%}
-              {%- endif -%}
-            {%- endfor -%}
+            {%- if media.id != featured_media.id -%}
+              {%- render 'product-media',
+                product: product,
+                product_id: product_id,
+                section_id: section_id,
+                media: media,
+                featured_media: featured_media,
+                variant_images: variant_images,
+                hide_variants: hide_variants,
+                gallery_layout: gallery_layout,
+                image_zoom: image_zoom,
+                image_fill: image_fill,
+                image_ratio: image_ratio,
+                image_ratio_mobile: image_ratio_mobile,
+                preload: false,
+                sizes: sizes,
+                autoplay: enable_video_autoplay,
+                loop: enable_video_looping
+              -%}
+            {%- endif -%}
+          {%- endfor -%}
           {% endif %}
         </div>
       </slider-element>
@@ -266,39 +266,39 @@
     {% assign variant_images = product.selected_or_first_available_variant.metafields.variant.variant_images.value %}
     {% if variant_images != blank %}
       {% for image in variant_images %}
-        {%- render 'product-thumbnail',
-          product: product,
+              {%- render 'product-thumbnail',
+                product: product,
           media: image,
-          featured_media: featured_media,
-          variant_images: variant_images,
+                featured_media: featured_media,
+                variant_images: variant_images,
           hide_variants: hide_variants
-        -%}
+              -%}
       {% endfor %}
     {% endif %}
-  {%- endif -%}
-
+            {%- endif -%}
+    
 {% else %}
   {% comment %} built in theme variant images not powered by metafield {% endcomment %}
-  {%- for media in product.media -%}
-    {%- if media.id != featured_media.id -%}
+            {%- for media in product.media -%}
+              {%- if media.id != featured_media.id -%}
       {%- render 'product-thumbnail', product: product, media: media, featured_media: featured_media, variant_images: variant_images, hide_variants: hide_variants -%}
-    {%- endif -%}
-  {%- endfor -%}
+              {%- endif -%}
+            {%- endfor -%}
 {% endif %}
 
 
 
-      </media-dots>
-      {%- if gallery_layout != 'dots' -%}
-        <template>
-          <slot></slot>
-          <s dir="{% render 'direction' %}" style="--t: 0; --b: 0; --l: 0; --r: 0;">
-            <span class="t">{%- render 'icon', icon: 'chevron-up' -%}</span>
-            <span class="b">{%- render 'icon', icon: 'chevron-down' -%}</span>
-            <span class="l">{%- render 'icon', icon: 'chevron-left' -%}</span>
-            <span class="r">{%- render 'icon', icon: 'chevron-right' -%}</span>
-          </s>
-          <style>
+          </media-dots>
+        {%- if gallery_layout != 'dots' -%}
+          <template>
+            <slot></slot>
+            <s dir="{% render 'direction' %}" style="--t: 0; --b: 0; --l: 0; --r: 0;">
+              <span class="t">{%- render 'icon', icon: 'chevron-up' -%}</span>
+              <span class="b">{%- render 'icon', icon: 'chevron-down' -%}</span>
+              <span class="l">{%- render 'icon', icon: 'chevron-left' -%}</span>
+              <span class="r">{%- render 'icon', icon: 'chevron-right' -%}</span>
+            </s>
+            <style>
             :host {
               display: inline-block;
               position: relative;
@@ -353,13 +353,13 @@
             s[dir='rtl'] :is(.icon-chevron-left, .icon-chevron-right) {
               transform: scaleX(-1);
             }
-            @media screen and (max-width: 1023px) {
+              @media screen and (max-width: 1023px) {
               s {
                 display: none;
               }
-            }
-          </style>
-        </template>
+              }
+            </style>
+          </template>
         </scroll-shadow>
       {%- endif -%}
     {%- endif -%}
@@ -384,7 +384,7 @@
       </button>
     {%- endif -%}
   </div>
-
+  
   {%- if spinning_block != blank and spinning_block.settings.text != blank -%}
     <spinning-text
       class="product__spinning text-xs md:text-base lg:text-lg uppercase flex items-center justify-center absolute top-0 z-10"

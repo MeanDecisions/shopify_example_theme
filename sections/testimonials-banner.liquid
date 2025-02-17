@@ -36,7 +36,7 @@
 
             {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', is: 'lazy-image', class: 'banner__image' -}}
           {%- else -%}
-            {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay' -}}
+            {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay placeholder' -}}
           {%- endif -%}
         </picture>
       </media-element>
@@ -65,7 +65,14 @@
                       {%- endif -%}
         
                       {%- if block.settings.author != blank or block.settings.author_info != blank -%}
-                        <cite>— {{ block.settings.author }}
+                        <cite>—&nbsp;
+                          {%- if block.settings.author_url != blank -%}
+                            <a href="{{ block.settings.author_url }}" class="reversed-link">
+                          {%- endif -%}
+                            {{- block.settings.author -}}
+                          {%- if block.settings.author_url != blank -%}
+                            </a>
+                          {%- endif -%}
                           {%- if block.settings.author_info != blank -%}
                             <span class="block text-base font-normal">{{ block.settings.author_info }}</span>
                           {%- endif -%}
@@ -142,6 +149,14 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
+          "value": "850px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__11.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__12.label",
           "value": "100vh"
         }
       ],
@@ -447,6 +462,11 @@
           "type": "text",
           "id": "author_info",
           "label": "t:sections.testimonials.blocks.testimonial.settings.author_info.label"
+        },
+        {
+          "type": "url",
+          "id": "author_url",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.author_url.label"
         },
         {
           "type": "image_picker",

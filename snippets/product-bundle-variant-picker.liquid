@@ -57,7 +57,7 @@
               endfor
             endif
 
-            assign option_idx0 = forloop.index0
+            assign option_index_0 = forloop.index0
           -%}
           <fieldset class="js product-form__input variant-input-wrapper relative"
             data-option-index="option{{ forloop.index }}"
@@ -72,7 +72,7 @@
                 </div>
               {%- endif -%}
             </div>
-            <scroll-shadow class="grid w-full">
+            <scroll-shadow class="product-card__bottom grid w-full">
               <ul class="scroll-area swatches swatches--{{ settings.rounded_swatch }}{% if color_swatch_type == 'variant' %} swatches--variant{% endif %} grid justify-start gap-4">
                 {%- for value in option.values -%}
                   <li>
@@ -92,12 +92,12 @@
                       {%- if is_color or value.swatch != blank -%}
                         {%- liquid
                           if value.swatch == blank
-                            if settings.swatch_config != blank
-                              assign file_extension = swatch_file_extension | default: 'png'
-                              assign file_name = value | handle | append: '.' | append: file_extension
-                              assign swatch_fallback = value | split: ' ' | last | handle
-                              assign swatch_fallback_override = false
+                            assign file_extension = swatch_file_extension | default: 'png'
+                            assign file_name = value | handle | append: '.' | append: file_extension
+                            assign swatch_fallback = value | split: ' ' | last | handle
+                            assign swatch_fallback_override = false
 
+                            if settings.swatch_config != blank
                               assign value_downcase = value | downcase
                               assign swatch_config = settings.swatch_config | newline_to_br | split: '<br />'
                               for swatch in swatch_config
@@ -115,13 +115,13 @@
                                   break
                                 endif
                               endfor
+                            endif
 
-                              assign swatch_image = blank
-                              if images[file_name] != blank
-                                assign swatch_image = images[file_name] | image_url: width: 72
-                              elsif file_name contains '//cdn.shopify.com/'
-                                assign swatch_image = file_name
-                              endif
+                            assign swatch_image = blank
+                            if images[file_name] != blank
+                              assign swatch_image = images[file_name] | image_url: width: 72
+                            elsif file_name contains '//cdn.shopify.com/'
+                              assign swatch_image = file_name
                             endif
                           else
                             assign swatch_image = blank
@@ -136,7 +136,7 @@
 
                           if color_swatch_type == 'variant'
                             for variant in product.variants
-                              assign variant_value = variant.options[option_idx0]
+                              assign variant_value = variant.options[option_index_0]
                               if variant_value contains value and variant.image
                                 assign swatch_image = variant.image | image_url: width: 144
                                 assign swatch_fallback_override = false
@@ -147,7 +147,7 @@
                         -%}
                         <label
                           for="{{ section_id }}-{{ product_id }}-{{ option.name | handle }}-{{ forloop.index0 }}"
-                          class="color-swatch relative"
+                          class="color-swatch{% if swatch_image != blank %} with-image{% endif %} relative"
                           title="{{ value | escape }}"
                           style="--swatch-background: {{ swatch_fallback }};{% if swatch_fallback_override == false and swatch_image != blank %} background-image: url({{ swatch_image }});{% endif %}"
                         >
@@ -174,7 +174,7 @@
                 </s>
                 <style>
                   :host{display:inline-block;position:relative}:host([hidden]){display:none}
-                  s{position:absolute;inset:0;pointer-events:none;}
+                  s{position:absolute;inset:0;pointer-events:none;{% if settings.card_style == 'card' %}--color-background:var(--color-placeholder);{% endif %}}
                   s span{position:absolute;inset-block:0;width:var(--sp-12);opacity:0;transition:opacity var(--animation-short);}
                   s .l{inset-inline-start:0;opacity:var(--l);background:linear-gradient(90deg,rgb(var(--color-background)) 0%,transparent 100%);}
                   s .r{inset-inline-end:0;opacity:var(--r);background:linear-gradient(270deg,rgb(var(--color-background)) 0%,transparent 100%);}
