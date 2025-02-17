@@ -1012,7 +1012,7 @@
             "button_link": "shopify://pages/showroom",
             "button_size": "sm",
             "button_icon": false,
-            "button_secondary_style": true
+            "button_secondary_style": false
           }
         }
       },
