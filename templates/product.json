@@ -648,8 +648,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 4",
-            "content": "<p>Collapsible content 4</p>",
+            "heading": "Delivery",
+            "content": "<p>All our UK deliveries come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information.<br/><br/>If an item is shown as ‘in stock’ on the website, these are located in our London showroom or UK warehouse. If you order accessories or smaller furniture items these will be sent to you by our favoured courier service in a few working days. For all large furniture orders, our friendly staff will be in contact about delivery and to discuss access. Furniture will be kerb-side delivered by pallet for items that do not qualify for our white glove delivery or hasn't been purchased as an additional service.<br/><br/>If you have any questions about delivery, please get in touch with us via our <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact us\">contact page</a> or live chat.</p><p>Please note: Access that requires additional planning will incur a cost at the customers expense.</p>",
             "metafields": ""
           }
         },
