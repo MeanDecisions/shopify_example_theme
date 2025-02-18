@@ -42,16 +42,6 @@
             "text_size": "text-base"
           }
         },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -89,10 +79,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -123,12 +109,10 @@
         "title",
         "text_J68pPR",
         "description",
-        "countdown",
         "variant_picker",
         "collapsible_tab_6DtxEJ",
         "inventory",
         "buy_buttons",
-        "pickup_availability",
         "share",
         "complementary",
         "sticky_buy_button"
@@ -147,7 +131,7 @@
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": false,
         "padding_top": 0,
-        "padding_bottom": 60,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": true,
         "rounded": false
