@@ -1,11 +1,11 @@
 {%- if section.blocks.size > 0 -%}
-  {%- style -%}
+  <style>
     #shopify-section-{{ section.id }} {
       --section-padding-top: {{ section.settings.padding_top }}px;
       --section-padding-bottom: {{ section.settings.padding_bottom }}px;
       {%- render 'section-variables', section: section -%}
     }
-  {%- endstyle -%}
+  </style>
 
   <link rel="stylesheet" href="{{ 'mobile-dock.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'mobile-dock.css' | asset_url | stylesheet_tag }}</noscript>
@@ -78,7 +78,7 @@
             </a>
 
         {%- when 'link' -%}
-          <a class="dock__item flex flex-col items-center justify-center gap-1d5 grow shrink-0 cursor-pointer" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+          <a class="dock__item flex flex-col items-center justify-center gap-1d5 grow shrink-0 cursor-pointer" href="{{ block.settings.link }}"{% if block.settings.external %} target="_blank" rel="noopener"{% endif %} {{ block.shopify_attributes }}>
             {%- liquid
               if block.settings.custom_icon != blank
                 echo block.settings.custom_icon
@@ -273,6 +273,12 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.mobile-dock.blocks.link.settings.link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         }
       ]
     }

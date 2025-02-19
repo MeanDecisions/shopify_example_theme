@@ -76,6 +76,8 @@
                                 aria-current="true"
                               {% endif %}
                               data-value="{{ language.iso_code }}"
+                              title="{{ language.endonym_name | capitalize | escape }}"
+                              data-no-instant
                             >
                               {{- language.endonym_name | capitalize -}}
                             </a>
@@ -134,6 +136,8 @@
                                 aria-current="true"
                               {% endif %}
                               data-value="{{ country.iso_code }}"
+                              title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+                              data-no-instant
                             >
                               {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
                             </a>

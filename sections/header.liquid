@@ -1,4 +1,4 @@
-{%- style -%}
+<style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -6,7 +6,7 @@
     --color-foreground: {{ section.settings.color_text.rgb }};
     --color-transparent: {{ section.settings.transparent_color_text.rgb }};
   }
-{%- endstyle -%}
+</style>
 
 {%- liquid
   assign header_layout = section.settings.header_layout

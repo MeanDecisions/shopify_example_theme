@@ -14,24 +14,24 @@
     "multicolumn-with-icons": {
       "type": "multicolumn-with-icons",
       "blocks": {
-        "column-2": {
-          "type": "column",
-          "settings": {
-            "icon": "box",
-            "custom_icon": "",
-            "heading": "Free Delivery",
-            "text": "<p>On all UK orders</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "column-1": {
           "type": "column",
           "settings": {
             "icon": "support",
             "custom_icon": "",
             "heading": "Customer service",
-            "text": "<p>We're here to help</p>",
+            "text": "<p>It’s not actually free we just price it into the products.<\/p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "",
+            "heading": "Fast Free Shipping",
+            "text": "<p>Get free shipping on orders of $150 or more<\/p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -60,8 +60,8 @@
         }
       },
       "block_order": [
-        "column-2",
         "column-1",
+        "column-2",
         "column-3",
         "column-4"
       ],

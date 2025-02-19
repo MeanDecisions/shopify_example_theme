@@ -60,7 +60,7 @@
               placeholder="{{ 'contact.form.email' | t | escape }}"
               required
             >
-            <label class="label is-floating" for="ContactFormEmail-{{ section.id }}">{{- 'contact.form.email' | t }}</label>
+            <label class="label is-floating" for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
           </div>
 
           {%- for block in custom_fields -%}
@@ -90,17 +90,17 @@
                   {%- if options.size > 0 -%}
                     <ul class="grid gap-2 leading-none" role="list">
                       {%- for option in options -%}
-                        {%- assign option2 = option | strip | escape -%}
+                        {%- assign option_2 = option | strip | escape -%}
                         <li>
                           <label for="ContactFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}" class="inline-flex items-center gap-3">
                             <input
                               type="radio"
                               id="ContactFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}"
                               name="contact[{{ custom_name }}]"
-                              value="{{ option2 }}"
+                              value="{{ option_2 }}"
                               {%- if block.settings.required %} required{% endif -%}
                             />
-                            {{- option2 -}}
+                            {{- option_2 -}}
                           </label>
                         </li>
                       {%- endfor -%}
@@ -143,8 +143,8 @@
                       >
                         <option value="" disabled selected></option>
                         {%- for option in options -%}
-                          {%- assign option2 = option | strip | escape -%}
-                          <option value="{{ option2 }}">{{ option2 }}</option>
+                          {%- assign option_2 = option | strip | escape -%}
+                          <option value="{{ option_2 }}">{{ option_2 }}</option>
                         {%- endfor -%}
                       </select>
                       {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
@@ -341,6 +341,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",

@@ -45,7 +45,7 @@
       "login_form_password": "Password",
       "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"link\">Log in here<\/a>",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "breadcrumbs": {
@@ -55,14 +55,14 @@
     },
     "social": {
       "share_on_facebook": "Facebook",
-      "share_on_twitter": "Twitter",
+      "share_on_twitter": "X (Twitter)",
       "share_on_pinterest": "Pinterest",
       "share_on_telegram": "Telegram",
       "share_on_whatsapp": "WhatsApp",
       "share_by_email": "E-mail",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Tweet on Twitter",
+        "share_on_twitter": "Share on X",
         "share_on_pinterest": "Pin on Pinterest",
         "share_on_telegram": "Share on Telegram",
         "share_on_whatsapp": "Share on WhatsApp",
@@ -70,7 +70,7 @@
       },
       "social_platform": "{{ name }} on {{ platform }}",
       "links": {
-        "twitter": "Twitter",
+        "twitter": "X (Twitter)",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -169,10 +169,12 @@
       "view_all": "View all"
     },
     "map": {
+      "back": "Back",
+      "view_details": "View details",
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
       "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> permissions of your app."
+      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and  <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> permissions of your app."
     },
     "slideshow": {
       "play_slideshow": "Play slideshow",
@@ -185,9 +187,9 @@
       "discounts_at_checkout": "Discounts will be applied at checkout."
     },
     "quick_order_list": {
-      "product_total": "Product subtotal",
+      "product_total": "Subtotal",
       "view_cart": "View cart",
-      "each": "{{ money }}/ea",
+      "each": "{{ money }}\/ea",
       "product": "Product",
       "variant": "Variant",
       "variant_total": "Variant total",
@@ -200,7 +202,7 @@
         "other": "{{ quantity }} items removed"
       },
       "product_variants": "Product variants",
-      "total_items": "Total items",
+      "total_items": "Total items: {{ count }}",
       "remove_all_single_item_confirmation": "Remove 1 item from your cart?",
       "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
       "remove_all": "Remove all",
@@ -213,6 +215,7 @@
   "blogs": {
     "article": {
       "written_by_html": "by {{ author }}",
+      "filter": "Filter",
       "all_tags": "All",
       "read_more": "Read more"
     },
@@ -237,9 +240,11 @@
       "remove": "Remove",
       "note": "Order note",
       "subtotal": "Subtotal",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+      "cart_error": "There was an error while updating your cart. Please try again.",
+      "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes included and shipping calculated at checkout.",
       "update": "Update cart",
       "checkout": "Check out",
@@ -249,6 +254,7 @@
     },
     "headings": {
       "product": "Product",
+      "price": "Price",
       "total": "Total",
       "quantity": "Quantity"
     },
@@ -295,10 +301,10 @@
     }
   },
   "localization": {
-    "country_label": "Country/region",
+    "country_label": "Country\/region",
     "language_label": "Language",
     "update_language": "Update language",
-    "update_country": "Update country/region"
+    "update_country": "Update country\/region"
   },
   "contact": {
     "form": {
@@ -337,9 +343,9 @@
       "address1": "Address 1",
       "address2": "Address 2",
       "city": "City",
-      "country": "Country/region",
+      "country": "Country\/region",
       "province": "Province",
-      "zip": "Postal/ZIP code",
+      "zip": "Postal\/ZIP code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add address",
@@ -358,7 +364,8 @@
       "create_account": "Create account",
       "return": "Return to Store",
       "guest_title": "Continue as a guest",
-      "guest_continue": "Continue"
+      "guest_continue": "Continue",
+      "alternate_provider_separator": "or"
     },
     "orders": {
       "title": "Order history",
@@ -431,7 +438,7 @@
   },
   "products": {
     "general": {
-      "color_swatch_trigger": "color,colour,finish,frame,upholstery,fabric,leather",
+      "color_swatch_trigger": "Color",
       "size_trigger": "Size",
       "size_chart": "Size chart",
       "save_html": "Save {{ saved_amount }}",
@@ -489,12 +496,14 @@
       "title": "Volume Pricing",
       "note": "Volume pricing available",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "at {{ price }}/ea",
+      "price_at_each": "at {{ price }}\/ea",
       "price_range": "{{ minimum }} - {{ maximum }}"
     },
     "inventory": {
       "in_stock": "In stock, ready to ship",
-      "low_stock": {
+      "in_stock_with_count": "{{ count }} in stock",
+      "low_stock": "Low stock",
+      "low_stock_with_count": {
         "one": "Hurry, only {{ count }} item left in stock!",
         "other": "Hurry, only {{ count }} items left in stock!"
       },
@@ -509,11 +518,22 @@
       "view_store_info": "View store information",
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
-      "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}</span>",
+      "pick_up_available_at_html": "Pickup available at {{ location_name }}",
       "pick_up_unavailable": "Pickup currently unavailable",
-      "pick_up_unavailable_at_html": "Pickup currently unavailable at <span class=\"color-foreground\">{{ location_name }}</span>",
+      "pick_up_unavailable_at_html": "Pickup currently unavailable at {{ location_name }}",
       "unavailable": "Couldn't load pickup availability",
       "refresh": "Refresh"
+    },
+    "back_in_stock": {
+      "label": "Notify me when it’s available",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone number",
+        "message": "Back-in-stock alert",
+        "send": "Notify me",
+        "post_success": "Your email has been received."
+      }
     }
   },
   "gift_cards": {

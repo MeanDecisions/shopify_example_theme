@@ -45,7 +45,7 @@
       "login_form_password": "Password",
       "login_form_error": "Password errata!",
       "login_form_submit": "Accedi",
-      "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"link\">Accedi qui</a>",
+      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"link\">Accedi qui<\/a>",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
     "breadcrumbs": {
@@ -55,14 +55,14 @@
     },
     "social": {
       "share_on_facebook": "Facebook",
-      "share_on_twitter": "Twitter",
+      "share_on_twitter": "X (Twitter)",
       "share_on_pinterest": "Pinterest",
       "share_on_telegram": "Telegram",
       "share_on_whatsapp": "WhatsApp",
       "share_by_email": "E-mail",
       "alt_text": {
         "share_on_facebook": "Condividi su Facebook",
-        "share_on_twitter": "Twitta su Twitter",
+        "share_on_twitter": "Condividi su X",
         "share_on_pinterest": "Aggiungi un pin su Pinterest",
         "share_on_telegram": "Condividi su Telegram",
         "share_on_whatsapp": "Condividi su WhatsApp",
@@ -70,7 +70,7 @@
       },
       "social_platform": "{{ name }} su {{ platform }}",
       "links": {
-        "twitter": "Twitter",
+        "twitter": "X (Twitter)",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -169,10 +169,12 @@
       "view_all": "Visualizza tutto"
     },
     "map": {
+      "back": "Indietro",
+      "view_details": "Visualizza i dettagli",
       "address_error": "Errore nella ricerca di questo indirizzo",
       "address_no_results": "Nessun risultato per questo indirizzo",
       "address_query_limit_html": "Hai superato il limite di utilizzo delle API di Google. Considera l'aggiornamento ad un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Piano Premium<\/a>.",
-      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> e <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> della tua applicazione."
+      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> e  <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> della tua applicazione."
     },
     "slideshow": {
       "play_slideshow": "Avvia presentazione",
@@ -185,24 +187,22 @@
       "discounts_at_checkout": "Gli sconti verranno applicati al momento del pagamento."
     },
     "quick_order_list": {
-      "product_total": "Subtotale prodotto",
+      "product_total": "Subtotale",
       "view_cart": "Visualizza carrello",
-      "each": "{{ money }}/ciascuno",
+      "each": "{{ money }}\/ciascuno",
       "product": "Prodotto",
       "variant": "Variante",
       "variant_total": "Totale varianti",
       "items_added": {
         "one": "{{ quantity }} articolo aggiunto",
-        "other": "{{ quantity }} articoli aggiunti",
-        "many": "{{ quantity }} articoli aggiunti"
+        "other": "{{ quantity }} articoli aggiunti"
       },
       "items_removed": {
         "one": "{{ quantity }} articolo rimosso",
-        "other": "{{ quantity }} articoli rimossi",
-        "many": "{{ quantity }} articoli rimossi"
+        "other": "{{ quantity }} articoli rimossi"
       },
       "product_variants": "Varianti di prodotto",
-      "total_items": "Articoli totali",
+      "total_items": "Articoli totali: {{ count }}",
       "remove_all_items_confirmation": "Rimuovere tutti i {{ quantity }} articoli dal tuo carrello?",
       "remove_all": "Rimuovi tutto",
       "cancel": "Annulla",
@@ -215,6 +215,7 @@
   "blogs": {
     "article": {
       "written_by_html": "scritto da {{ author }}",
+      "filter": "Filtra",
       "all_tags": "Tutto",
       "read_more": "Continua a leggere"
     },
@@ -239,9 +240,11 @@
       "remove": "Rimuovi",
       "note": "Istruzioni speciali per l'ordine",
       "subtotal": "Subtotale",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione</a> calcolate al momento del check-out",
+      "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova più tardi.",
+      "cart_quantity_error_html": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
+      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione<\/a> calcolate al momento del check-out",
       "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del check-out",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
       "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del check-out",
       "update": "Aggiorna",
       "checkout": "Check-out",
@@ -251,6 +254,7 @@
     },
     "headings": {
       "product": "Prodotto",
+      "price": "Prezzo",
       "total": "Totale",
       "quantity": "Quantità"
     },
@@ -297,10 +301,10 @@
     }
   },
   "localization": {
-    "country_label": "Paese/Area geografica",
+    "country_label": "Paese\/Area geografica",
     "language_label": "Lingua",
     "update_language": "Aggiorna lingua",
-    "update_country": "Aggiorna paese/area geografica"
+    "update_country": "Aggiorna paese\/area geografica"
   },
   "contact": {
     "form": {
@@ -339,7 +343,7 @@
       "address1": "Indirizzo - campo 1",
       "address2": "Indirizzo - campo 2",
       "city": "Città",
-      "country": "Paese/Area geografica",
+      "country": "Paese\/Area geografica",
       "province": "Provincia",
       "zip": "CAP",
       "phone": "Numero di telefono",
@@ -360,7 +364,8 @@
       "create_account": "Crea account",
       "return": "Torna al negozio",
       "guest_title": "Continua senza registrarti",
-      "guest_continue": "Continua"
+      "guest_continue": "Continua",
+      "alternate_provider_separator": "oppure"
     },
     "orders": {
       "title": "Cronologia ordini",
@@ -491,12 +496,14 @@
       "title": "Prezzi basati sui volumi",
       "note": "Prezzi basati sui volumi disponibili",
       "minimum": "Più di {{ quantity }}",
-      "price_at_each": "a {{ price }}/ciascuno",
+      "price_at_each": "a {{ price }}\/ciascuno",
       "price_range": "{{ minimum }} - {{ maximum }}"
     },
     "inventory": {
       "in_stock": "In magazzino, pronto per la spedizione",
-      "low_stock": {
+      "in_stock_with_count": "{{ count }} disponibile",
+      "low_stock": "Scorte ridotte",
+      "low_stock_with_count": {
         "one": "Sbrigati, solo {{ count }} oggetto rimasto in magazzino!",
         "other": "Sbrigati, solo {{ count }} oggetti rimasti in magazzino!"
       },
@@ -511,11 +518,22 @@
       "view_store_info": "Visualizza i dettagli del negozio",
       "check_other_stores": "Verifica la disponibilità in altri negozi",
       "pick_up_available": "Ritiro disponibile",
-      "pick_up_available_at_html": "Ritiro disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
+      "pick_up_available_at_html": "Ritiro disponibile presso la sede {{ location_name }}",
       "pick_up_unavailable": "Ritiro attualmente non disponibile",
-      "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede <span class=\"color-foreground\">{{ location_name }}</span>",
+      "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso la sede {{ location_name }}",
       "unavailable": "Impossibile caricare la disponibilità di ritiro",
       "refresh": "Aggiorna"
+    },
+    "back_in_stock": {
+      "label": "Avvisami quando sarà disponibile",
+      "form": {
+        "name": "Nome",
+        "email": "Indirizzo email",
+        "phone": "Numero di telefono",
+        "message": "Avviso di disponibilità in magazzino",
+        "send": "Avvisami",
+        "post_success": "La tua email è stata ricevuta."
+      }
     }
   },
   "gift_cards": {

@@ -38,6 +38,8 @@
 
 .article-card__title {
   font-family: var(--font-product-family);
+  font-weight: var(--font-product-weight);
+  text-transform: var(--font-product-text-transform);
 }
 
 .article-card__top {
@@ -116,6 +118,10 @@
 
 .blog-collage .article-card:nth-child(1) .article-card__title {
   font-size: clamp(var(--text-2xl), 2.526vw, var(--text-5xl));
+}
+
+.blog-collage .article-card:nth-child(1) .reversed-link {
+  --reversed-link-gap: min(100%, 1.12em);
 }
 
 @media screen and (max-width: 639px) {

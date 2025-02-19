@@ -24,8 +24,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://collections/eos-garden-furniture",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "slide-1": {
@@ -37,8 +36,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://products/solid-rechargeable-table-light",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "slide-2": {
@@ -50,8 +48,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -397,8 +394,7 @@
             "button_label": "View Our Selection",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -527,8 +523,7 @@
             "button_label": "See Options",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": true
+            "button_icon": false
           }
         }
       },
@@ -1011,8 +1006,7 @@
             "button_label": "Learn More",
             "button_link": "shopify://pages/showroom",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },

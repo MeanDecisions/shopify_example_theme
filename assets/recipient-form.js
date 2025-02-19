@@ -4,23 +4,21 @@ if (!customElements.get('recipient-form')) {
     class RecipientForm extends HTMLElement {
       constructor() {
         super();
-        this.recipientFieldsLiveRegion = this.querySelector(`#Recipient-fields-live-region-${this.sectionId}`);
-        this.checkboxInput = this.querySelector(`#Recipient-checkbox-${this.sectionId}`);
+        this.recipientFieldsLiveRegion = this.querySelector(`#Recipient-fields-live-region-${this.sectionId}-${this.productId}`);
+        this.checkboxInput = this.querySelector(`#Recipient-checkbox-${this.sectionId}-${this.productId}`);
         this.checkboxInput.disabled = false;
-        this.hiddenControlField = this.querySelector(`#Recipient-control-${this.sectionId}`);
+        this.hiddenControlField = this.querySelector(`#Recipient-control-${this.sectionId}-${this.productId}`);
         this.hiddenControlField.disabled = true;
-        this.fieldsContainer = this.querySelector(`#Recipient-fields-${this.sectionId}`);
-        this.emailInput = this.querySelector(`#Recipient-email-${this.sectionId}`);
-        this.nameInput = this.querySelector(`#Recipient-name-${this.sectionId}`);
-        this.messageInput = this.querySelector(`#Recipient-message-${this.sectionId}`);
-        this.sendonInput = this.querySelector(`#Recipient-send-on-${this.sectionId}`);
-        this.offsetProperty = this.querySelector(`#Recipient-timezone-offset-${this.sectionId}`);
+        this.fieldsContainer = this.querySelector(`#Recipient-fields-${this.sectionId}-${this.productId}`);
+        this.emailInput = this.querySelector(`#Recipient-email-${this.sectionId}-${this.productId}`);
+        this.nameInput = this.querySelector(`#Recipient-name-${this.sectionId}-${this.productId}`);
+        this.messageInput = this.querySelector(`#Recipient-message-${this.sectionId}-${this.productId}`);
+        this.sendonInput = this.querySelector(`#Recipient-send-on-${this.sectionId}-${this.productId}`);
+        this.offsetProperty = this.querySelector(`#Recipient-timezone-offset-${this.sectionId}-${this.productId}`);
         if (this.offsetProperty) this.offsetProperty.value = new Date().getTimezoneOffset().toString();
 
-        this.errorMessageWrapper = this.querySelector('.product-form__recipient-error-message-wrapper');
-        this.errorMessageList = this.errorMessageWrapper?.querySelector('ul');
-        this.errorMessage = this.errorMessageWrapper?.querySelector('.error-message');
-        this.defaultErrorHeader = this.errorMessage?.innerText;
+        this.errorMessage = this.querySelector('.product-form__recipient-error-message');
+        this.errorMessageList = this.errorMessage?.querySelector('ul');
         this.currentProductVariantId = this.getAttribute('data-product-variant-id');
         this.addEventListener('change', this.onChange.bind(this));
         this.onChange();
@@ -28,6 +26,10 @@ if (!customElements.get('recipient-form')) {
 
       get sectionId() {
         return this.getAttribute('data-section-id');
+      }
+
+      get productId() {
+        return this.getAttribute('data-product-id');
       }
 
       cartUpdateUnsubscriber = undefined;
@@ -104,59 +106,36 @@ if (!customElements.get('recipient-form')) {
 
       displayErrorMessage(title, body) {
         this.clearErrorMessage();
-        this.errorMessageWrapper.hidden = false;
+        this.errorMessage.hidden = false;
+
         if (typeof body === 'object') {
-          this.errorMessage.innerText = this.defaultErrorHeader;
-          return Object.entries(body).forEach(([key, value]) => {
-            const errorMessageId = `RecipientForm-${key}-error-${this.sectionId}`;
-            const fieldSelector = `#Recipient-${key}-${this.sectionId}`;
+          Object.entries(body).forEach(([key, value]) => {
             const message = `${value.join(', ')}`;
-            const errorMessageElement = this.querySelector(`#${errorMessageId}`);
-            const errorTextElement = errorMessageElement?.querySelector('.error-message');
-            if (!errorTextElement) return;
 
             if (this.errorMessageList) {
-              this.errorMessageList.appendChild(this.createErrorListItem(fieldSelector, message));
+              this.errorMessageList.appendChild(this.createErrorListItem(message));
             }
-
-            errorTextElement.innerText = `${message}.`;
-            errorMessageElement.classList.remove('hidden');
 
             const inputElement = this[`${key}Input`];
             if (!inputElement) return;
 
-            inputElement.setAttribute('aria-invalid', true);
-            inputElement.setAttribute('aria-describedby', errorMessageId);
+            inputElement.classList.add('invalid');
           });
         }
-
-        this.errorMessage.innerText = body;
       }
 
-      createErrorListItem(target, message) {
+      createErrorListItem(message) {
         const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.setAttribute('href', target);
-        a.innerText = message;
-        li.appendChild(a);
-        li.className = 'error-message';
+        li.innerText = message;
         return li;
       }
 
       clearErrorMessage() {
-        this.errorMessageWrapper.hidden = true;
-
+        this.errorMessage.hidden = true;
         if (this.errorMessageList) this.errorMessageList.innerHTML = '';
 
-        this.querySelectorAll('.recipient-fields .form__message').forEach((field) => {
-          field.classList.add('hidden');
-          const textField = field.querySelector('.error-message');
-          if (textField) textField.innerText = '';
-        });
-
         [this.emailInput, this.messageInput, this.nameInput, this.sendonInput].forEach((inputElement) => {
-          inputElement.setAttribute('aria-invalid', false);
-          inputElement.removeAttribute('aria-describedby');
+          inputElement.classList.remove('invalid');
         });
       }
 
@@ -165,6 +144,7 @@ if (!customElements.get('recipient-form')) {
           this.checkboxInput.checked = false;
           this.clearInputFields();
           this.clearErrorMessage();
+          this.fieldsContainer.classList.add('hidden');
         }
       }
     }

@@ -103,17 +103,17 @@
                   {%- if options.size > 0 -%}
                     <ul class="grid gap-2 leading-none" role="list">
                       {%- for option in options -%}
-                        {%- assign option2 = option | strip | escape -%}
+                        {%- assign option_2 = option | strip | escape -%}
                         <li>
                           <label for="RegisterFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}" class="inline-flex items-center gap-3">
                             <input
                               type="radio"
                               id="RegisterFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}"
                               name="customer[note][{{ custom_name }}]"
-                              value="{{ option2 }}"
+                              value="{{ option_2 }}"
                               {%- if block.settings.required %} required{% endif -%}
                             />
-                            {{- option2 -}}
+                            {{- option_2 -}}
                           </label>
                         </li>
                       {%- endfor -%}
@@ -156,8 +156,8 @@
                       >
                         <option value="" disabled selected></option>
                         {%- for option in options -%}
-                          {%- assign option2 = option | strip | escape -%}
-                          <option value="{{ option2 }}">{{ option2 }}</option>
+                          {%- assign option_2 = option | strip | escape -%}
+                          <option value="{{ option_2 }}">{{ option_2 }}</option>
                         {%- endfor -%}
                       </select>
                       {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}

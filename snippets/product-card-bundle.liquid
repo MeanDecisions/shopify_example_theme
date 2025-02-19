@@ -6,7 +6,6 @@
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
   - image_ratio: {String} Size of the product image card. Values are "square", "landscape" and "portrait". Default is "square" (optional)
   - image_fill: {Boolean} Zoom image to fill space. Default: false (optional)
-  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
   - show_vendor: {Boolean} Show the product vendor. Default: false
   - show_rating: {Boolean} Show the product rating. Default: false
   - show_countdown: {Boolean} Show the countdown timer.
@@ -35,9 +34,9 @@
       assign product_url = product.url
     endif
   -%}
-  <div class="card product-card product-card--{{ settings.card_style }}{% if settings.card_border_thickness > 0 %} product-card--thickness{% endif %}{% unless featured_media %} no-media{% endunless %} flex flex-col leading-none relative overflow-hidden">
+  <div class="card product-card product-card--{{ settings.card_style }}{% if settings.card_border_thickness > 0 %} product-card--thickness{% endif %}{% unless featured_media %} no-media{% endunless %} flex flex-col leading-none relative">
     {%- if featured_media -%}
-      <div class="product-card__media relative h-auto{% unless show_secondary_image and product.media.size > 1 %} overflow-hidden{% endunless %}">
+      <div class="product-card__media relative h-auto overflow-hidden">
         {%- if show_quick_view -%}
           <button type="button" class="quick-view__button button button--secondary z-2 absolute top-0 right-0 opacity-0" is="hover-button" aria-controls="Quickview-{{ section_id }}-{{ product_id }}" aria-expanded="false">
             <span class="btn-fill" data-fill></span>
@@ -46,7 +45,7 @@
               <span class="sr-only">{{ 'products.product.quick_view' | t }}</span>
             </span>
           </button>
-          <quick-view id="Quickview-{{ section_id }}-{{ product_id }}" class="quick-view x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none" data-product-url="{{ product_url }}" role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}" aria-modal="true">
+          <quick-view id="Quickview-{{ section_id }}-{{ product_id }}" class="quick-view x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none" data-product-url="{{ product_url }}" role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}" aria-modal="true">
             <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Quickview-{{ section_id }}-{{ product_id }}" aria-expanded="false"></overlay-element>
             <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
               <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
@@ -99,22 +98,8 @@
 
         {%- render 'product-badges', product: product, show_save_amount: show_save_amount, save_type: save_type, class: 'z-2 absolute grid gap-3' -%}
 
-        <a id="Media-{{ section_id }}-{{ product_id }}" class="block relative media media--{{ image_ratio }}{% unless image_fill %} media--contain{% endunless %}{% unless show_secondary_image and product.media.size > 1 %} overflow-hidden{% endunless %}" href="{{ product_url }}" aria-label="{{ product.title | escape }}" tabindex="-1">
+        <a id="Media-{{ section_id }}-{{ product_id }}" class="block relative media media--{{ image_ratio }}{% unless image_fill %} media--contain{% endunless %} overflow-hidden}" href="{{ product_url }}" aria-label="{{ product.title | escape }}" tabindex="-1">
           {%- unless featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}
-            {%- if show_secondary_image and product.media.size > 1 -%}
-              <template>
-                <div class="media media--height{% unless image_fill %} media--contain{% endunless %} w-full h-full overflow-hidden">
-                  {{- featured_media | image_url: width: featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
-                </div>
-                {%- for media in product.media offset: 1 limit: 3 -%}
-                  <div class="media media--height{% unless image_fill %} media--contain{% endunless %} w-full h-full overflow-hidden">
-                    {{- media | image_url: width: media.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
-                  </div>
-                {%- endfor -%}
-              </template>
-              <secondary-media class="product-card__carousel block absolute top-0 left-0 w-full h-full hidden md:block"></secondary-media>
-            {%- endif -%}
-
             {{- featured_media | image_url: width: featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
           {%- else -%}
             {%- render 'product-video',
@@ -141,11 +126,7 @@
                   {%- render 'icon', icon: 'countdown-compact', size: 'sm', class: 'flex-auto hidden md:block' -%}
                   <countdown-timer
                     class="flex gap-3"
-                    data-year="{{ product.metafields.theme.countdown.value | date: "%Y" }}"
-                    data-month="{{ product.metafields.theme.countdown.value | date: "%m" }}"
-                    data-day="{{ product.metafields.theme.countdown.value | date: "%d" }}"
-                    data-hour="{{ product.metafields.theme.countdown.value | date: "%H" }}"
-                    data-minute="{{ product.metafields.theme.countdown.value | date: "%M" }}"
+                    data-expires="{{ product.metafields.theme.countdown.value | date: '%FT%T%:z' | escape }}"
                     data-compact="true"
                   >
                     <div class="countdown__item">

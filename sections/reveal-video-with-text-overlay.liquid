@@ -11,8 +11,8 @@
       {%- if section.blocks.size > 0 -%}
         <span class="reveal-banner__tracker2nd absolute top-0 h-full"></span>
       {%- endif -%}
-      <div class="reveal-banner__scroller sticky top-0 overflow-hidden">
-        <div class="video-hero banner w-full h-screen relative">
+      <div class="reveal-banner__scroller{% if section.settings.enable_parallax %} sticky top-0 overflow-hidden{% endif %}">
+        <div class="video-hero banner w-full h-screen{% if section.settings.enable_parallax %} relative{% else %} sticky top-0{% endif %}">
           {%- if section.settings.video_mobile or section.settings.video_url_mobile -%}
             {%- render 'video',
               sizes: '100vw',
@@ -123,22 +123,21 @@
                         
                       {%- when 'button' -%}
                         {%- if block.settings.button_label != blank -%}
-                          <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--fixed button--{{ block.settings.button_size }} icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link" {{ block.shopify_attributes }}>
-                            <span class="btn-fill" data-fill></span>
-                            <span class="btn-text">
-                              {%- liquid
-                                echo block.settings.button_label | escape
-                                if block.settings.button_icon
-                                  render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                                endif
-                              -%}
-                            </span>
-                          </a>
+                          {%- render 'button',
+                            label: block.settings.button_label,
+                            link: block.settings.button_link,
+                            size: block.settings.button_size,
+                            style: block.settings.button_style,
+                            external: block.settings.button_external,
+                            show_icon: block.settings.button_icon,
+                            classes: 'button--fixed',
+                            shopify_attributes: block.shopify_attributes
+                          -%}
                         {%- endif -%}
     
                       {%- when 'link' -%}
                         {%- if block.settings.label != blank -%}
-                          <a class="link"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                          <a class="link inline-block"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% if block.settings.external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                             {{- block.settings.label -}}
                           </a>
                         {%- endif -%}
@@ -391,6 +390,16 @@
       "unit": "%",
       "label": "t:sections.global.settings.overlay_opacity.label",
       "default": 70
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_parallax",
+      "label": "t:sections.global.settings.enable_parallax.label",
+      "default": true
     }
   ],
   "blocks": [
@@ -746,6 +755,26 @@
         },
         {
           "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "select",
           "id": "button_size",
           "options": [
             {
@@ -766,15 +795,15 @@
         },
         {
           "type": "checkbox",
-          "id": "button_icon",
-          "label": "t:sections.global.settings.button_icon.label",
-          "default": true
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         },
         {
           "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": false,
-          "label": "t:sections.global.settings.button_secondary_style.label"
+          "id": "button_icon",
+          "label": "t:sections.global.settings.button_icon.label",
+          "default": true
         }
       ]
     },
@@ -792,6 +821,12 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.global.settings.link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         }
       ]
     },

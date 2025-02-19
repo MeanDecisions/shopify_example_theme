@@ -111,8 +111,13 @@ table.no-headings thead~tbody tr:first-child {
   border-block-start: 0;
 }
 
+table.no-headings td {
+  vertical-align: top;
+}
+
 @media screen and (min-width: 768px) {
   table.no-headings td {
+    vertical-align: middle;
     padding-block: var(--sp-10);
   }
 }

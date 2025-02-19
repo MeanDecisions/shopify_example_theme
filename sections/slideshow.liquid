@@ -78,7 +78,7 @@
               </media-element>
               <span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none"></span>
               {%- if block.settings.button_label == blank and block.settings.button_link != blank -%}
-                <a href="{{ block.settings.button_link }}" class="block absolute top-0 left-0 w-full h-full" aria-hidden="true">&nbsp;</a>
+                <a href="{{ block.settings.button_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %} class="block absolute top-0 left-0 w-full h-full" aria-hidden="true">&nbsp;</a>
               {%- endif -%}
             </div>
 
@@ -122,7 +122,7 @@
               </media-element>
               <span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none"></span>
               {%- if block.settings.button_label == blank and block.settings.button_link != blank -%}
-                <a href="{{ block.settings.button_link }}" class="block absolute top-0 left-0 w-full h-full" aria-hidden="true">&nbsp;</a>
+                <a href="{{ block.settings.button_link }}"{% if block.settings.button_external %} target="_blank" rel="noopener"{% endif %} class="block absolute top-0 left-0 w-full h-full" aria-hidden="true">&nbsp;</a>
               {%- endif -%}
             </div>
         {%- endcase -%}
@@ -142,17 +142,15 @@
               {%- endif -%}
 
               {%- if block.settings.button_label != blank -%}
-                <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--blur button--fixed icon-with-text pointer-events-auto"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link" {{ block.shopify_attributes }}>
-                  <span class="btn-fill" data-fill></span>
-                  <span class="btn-text">
-                    {%- liquid
-                      echo block.settings.button_label | escape
-                      if block.settings.button_icon
-                        render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                      endif
-                    -%}
-                  </span>
-                </a>
+                {%- render 'button',
+                  label: block.settings.button_label,
+                  link: block.settings.button_link,
+                  style: block.settings.button_style,
+                  external: block.settings.button_external,
+                  show_icon: block.settings.button_icon,
+                  classes: 'button--blur button--fixed pointer-events-auto',
+                  shopify_attributes: block.shopify_attributes
+                -%}
               {%- endif -%}
             </div>
           {%- endfor -%}
@@ -245,10 +243,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "100vh"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "100vh"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "adapt"
         }
       ],
@@ -553,16 +559,36 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
           "type": "checkbox",
-          "id": "button_icon",
-          "label": "t:sections.global.settings.button_icon.label",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
           "default": false
         },
         {
           "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": false,
-          "label": "t:sections.global.settings.button_secondary_style.label"
+          "id": "button_icon",
+          "label": "t:sections.global.settings.button_icon.label",
+          "default": false
         }
       ]
     },
@@ -715,16 +741,36 @@
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "primary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
           "type": "checkbox",
-          "id": "button_icon",
-          "label": "t:sections.global.settings.button_icon.label",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
           "default": false
         },
         {
           "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": false,
-          "label": "t:sections.global.settings.button_secondary_style.label"
+          "id": "button_icon",
+          "label": "t:sections.global.settings.button_icon.label",
+          "default": false
         }
       ]
     }
@@ -733,6 +779,9 @@
     {
       "name": "t:sections.slideshow.presets.name",
       "blocks": [
+        {
+          "type": "image"
+        },
         {
           "type": "image"
         },

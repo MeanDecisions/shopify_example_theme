@@ -92,7 +92,8 @@
 
       {%- if section.settings.carousel_on_desktop -%}
         <p class="hidden lg:block">{{ view_all }}</p>
-      {%- endif -%}{%- else -%}
+      {%- endif -%}
+    {%- else -%}
       <div class="rte">
         {{- 'onboarding.no_content' | t -}}
       </div>

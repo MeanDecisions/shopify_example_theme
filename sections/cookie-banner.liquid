@@ -17,7 +17,7 @@
 <noscript>{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}</noscript>
 <script src="{{ 'cookie-banner.js' | asset_url }}" defer="defer"></script>
 
-<cookie-banner id="CookieBanner" class="x-modal cookie-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+<cookie-banner id="CookieBanner" class="x-modal cookie-modal drawer z-35 fixed bottom-0 left-0 h-full w-full pointer-events-none"
   data-delay="{{ section.settings.delay }}"
   data-test-mode="{% if section.settings.mode == 'testing' %}true{% else %}false{% endif %}"
   role="dialog"

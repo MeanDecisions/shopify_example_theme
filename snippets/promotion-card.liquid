@@ -85,17 +85,13 @@
           {%- endif -%}
   
           {%- if block.settings.button_label != blank -%}
-            <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
-              <span class="btn-fill" data-fill></span>
-              <span class="btn-text">
-                {%- liquid
-                  echo block.settings.button_label | escape
-                  if block.settings.button_icon
-                    render 'icon', icon: 'arrow-right', size: 'xs', class: 'transform'
-                  endif
-                -%}
-              </span>
-            </a>
+            {%- render 'button',
+              label: block.settings.button_label,
+              link: block.settings.button_link,
+              style: block.settings.button_style,
+              external: block.settings.button_external,
+              show_icon: block.settings.button_icon
+            -%}
           {%- endif -%}
         </div>
       </div>
