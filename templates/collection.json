@@ -49,7 +49,7 @@
         "description_48FUR8"
       ],
       "custom_css": [
-        "sticky-filters.is-sticky.scrolling-up {padding-top:80px;}"
+        "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
       ],
       "settings": {
         "transparent_header": false,
@@ -261,7 +261,7 @@
         "text_8HEbeN": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.description }}</p>",
+            "text": "{{ collection.description }}",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -276,7 +276,6 @@
         "heading_xYeqaX",
         "text_8HEbeN"
       ],
-      "disabled": true,
       "settings": {
         "image": "{{ collection.image }}",
         "image_height": "450px",
@@ -430,6 +429,7 @@
         "text_YYVrPg",
         "button_C3qDAD"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/Untitled_design_191.jpg",
