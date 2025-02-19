@@ -16,6 +16,8 @@
     "white_logo_mobile": "",
     "logo_width_mobile": 140,
     "favicon": "",
+    "nav_single_custom_url_title": "Professionals",
+    "nav_single_custom_url": "shopify://pages/professionals-trade",
     "color_text": "#1b1b1b",
     "color_background": "#fffffa",
     "color_highlight": "#87874e",
