@@ -28,6 +28,13 @@
             "show_rating": true
           }
         },
+        "text_yim4Mz": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.product.seo_short_description.value }} See Details",
+            "text_size": "text-base"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -102,6 +109,7 @@
       "block_order": [
         "vendor",
         "title",
+        "text_yim4Mz",
         "description",
         "variant_picker",
         "collapsible_tab_6DtxEJ",
@@ -436,7 +444,8 @@
             "text_font": "body",
             "secondary_color": false,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
           }
         }
       },
@@ -539,7 +548,8 @@
             "text_font": "body",
             "secondary_color": false,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
           }
         }
       },
@@ -663,7 +673,6 @@
         "description": "",
         "button_label": "",
         "button_link": "",
-        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
