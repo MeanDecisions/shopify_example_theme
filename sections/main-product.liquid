@@ -76,7 +76,9 @@
           mobile_layout: section.settings.mobile_layout,
           mobile_thumbnail: section.settings.mobile_thumbnail,
           hide_variants: section.settings.hide_variants,
+          matching_variant_images: section.settings.matching_variant_images,
           enable_video_autoplay: section.settings.enable_video_autoplay,
+          matching_variant_images: section.settings.matching_variant_images,
           enable_video_looping: section.settings.enable_video_looping,
           first_3d_model: first_3d_model,
           product_form_id: product_form_id
@@ -933,6 +935,13 @@
       "id": "hide_variants",
       "default": false,
       "label": "t:sections.main-product.settings.hide_variants.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "matching_variant_images",
+      "default": false,
+      "label": "Only show matching metafield images",
+      "info": "Shows only the images that match the variant selected from the metafield"
     },
     {
       "type": "checkbox",
