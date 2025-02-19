@@ -58,7 +58,7 @@
     "rounded_card": "square",
     "rounded_block": "square",
     "enable_page_transition": true,
-    "enable_lazy_image": true,
+    "enable_lazy_image": false,
     "buttons_hover": "standard",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
