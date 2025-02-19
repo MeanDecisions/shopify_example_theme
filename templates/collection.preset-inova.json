@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-collection-banner": {
@@ -70,7 +79,6 @@
             "content": "",
             "button_label": "Shop now",
             "button_link": "",
-            "button_style": "primary",
             "button_icon": true,
             "content_position": "md:items-end",
             "text_alignment": "right",
@@ -146,7 +154,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",

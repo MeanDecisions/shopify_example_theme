@@ -70,8 +70,8 @@
             "show_quantity_selector": true,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
-            "enable_back_in_stock": true,
-            "show_back_in_stock_name": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
             "show_back_in_stock_phone": false
           }
         },
@@ -119,7 +119,7 @@
         "image_ratio": "adapt_first",
         "image_zoom": "lightbox",
         "hide_variants": true,
-        "matching_variant_images": true,
+        "matching_variant_images": false,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width",
@@ -579,6 +579,15 @@
     "product-details": {
       "type": "product-details",
       "blocks": {
+        "dimensions_REa8Qe": {
+          "type": "dimensions",
+          "settings": {
+            "icon": "none",
+            "icon_width": 24,
+            "heading": "Dimensions",
+            "content": "<p>Add dimension description here.</p>"
+          }
+        },
         "collapsible_tab-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -597,6 +606,21 @@
             "heading": "Care Instructions",
             "content": "<p>{{ product.metafields.accordion.assembly_care | metafield_tag }}</p>",
             "metafields": ""
+          }
+        },
+        "downloads_f9nUJC": {
+          "type": "downloads",
+          "settings": {
+            "icon": "none",
+            "icon_width": 24,
+            "heading": "Downloads",
+            "content": "<p>Add your download description here.</p>",
+            "file_title_1": "",
+            "file_1": "",
+            "file_title_2": "",
+            "file_2": "",
+            "file_title_3": "",
+            "file_3": ""
           }
         },
         "collapsible_tab-3": {
@@ -618,13 +642,25 @@
             "content": "<p>All our UK orders come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information.<br/><br/>If an item is shown as ‘in stock’ on the website, these are located in our London showroom or UK warehouse. If you order accessories or smaller furniture items these will be sent to you by our favoured courier service in a few working days. For all large furniture orders, our friendly staff will be in contact to arrange delivery and confirm access. Furniture not delivered by our white glove service will delivered to kerb-side by pallet.<br/><br/>If you have any questions about delivery, please get in touch with us via our <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact us\">contact page</a> or live chat.</p><p>Please note: Access that requires additional planning will incur a cost at the customers expense.</p>",
             "metafields": ""
           }
+        },
+        "reviews_4efpQy": {
+          "type": "reviews",
+          "settings": {
+            "icon": "none",
+            "icon_width": 24,
+            "heading": "Reviews",
+            "content": ""
+          }
         }
       },
       "block_order": [
+        "dimensions_REa8Qe",
         "collapsible_tab-1",
         "collapsible_tab-2",
+        "downloads_f9nUJC",
         "collapsible_tab-3",
-        "collapsible_tab-4"
+        "collapsible_tab-4",
+        "reviews_4efpQy"
       ],
       "settings": {
         "style": "with-border",

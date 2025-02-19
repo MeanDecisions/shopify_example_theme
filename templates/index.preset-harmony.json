@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -13,7 +22,6 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_style": "primary",
             "button_icon": false
           }
         },
@@ -27,14 +35,13 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_style": "primary",
             "button_icon": false
           }
         },
         "slide-3": {
           "type": "video",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "video_url_mobile": "",
             "heading": "VIDEO SLIDE",
@@ -42,7 +49,6 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_style": "primary",
             "button_icon": false
           }
         }
@@ -81,7 +87,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br\/><br\/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -97,7 +103,7 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Talk about your <em>brand<\/em>",
+        "heading": "Talk about your <em>brand</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -261,7 +267,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -275,7 +281,6 @@
           "settings": {
             "button_label": "Shop Now",
             "button_link": "",
-            "button_style": "primary",
             "button_size": "md",
             "button_icon": true
           }
@@ -288,7 +293,7 @@
       ],
       "settings": {
         "transparent_header": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -463,7 +468,7 @@
         "layout": "horizontal",
         "image_height": "750px",
         "image_height_mobile": "300px",
-        "heading": "<em>Image comparison<\/em>",
+        "heading": "<em>Image comparison</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -494,16 +499,15 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Build your <em>Bundle<\/em>",
+        "heading": "Build your <em>Bundle</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "large",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>The choice is yours. With our bundle builder, you can select any combination from our range of products. The easiest way to keep everyone happy.<\/p>",
+        "description": "<p>The choice is yours. With our bundle builder, you can select any combination from our range of products. The easiest way to keep everyone happy.</p>",
         "button_label": "",
         "button_link": "",
-        "button_external": false,
         "button_icon": true,
         "highlighted_text": "scribble",
         "highlighted_scribble": "squiggle-underline",
@@ -535,7 +539,6 @@
         "columns": 3,
         "columns_mobile": "1",
         "minimum_quantity": 3,
-        "maximum_quantity": 3,
         "prevent_duplicate_products": true,
         "allow_quantity_change": true,
         "quantity_increment": "1",
@@ -550,7 +553,7 @@
         "heading_alignment": "text-left",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Add at least 3 products to proceed and Save 30%<\/p>",
+        "description": "<p>Add at least 3 products to proceed and Save 30%</p>",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
@@ -574,7 +577,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping and returns<\/strong><\/em>",
+            "text": "<em><strong>Free shipping and returns</strong></em>",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -606,7 +609,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Countdown timer<\/p>",
+            "text": "<p>Countdown timer</p>",
             "text_size": "subtext-custom",
             "text_max_size": 32,
             "text_font": "body",
@@ -640,7 +643,6 @@
           "settings": {
             "button_label": "Shop Now",
             "button_link": "",
-            "button_style": "secondary",
             "button_size": "md",
             "button_icon": true
           }
@@ -724,7 +726,7 @@
       ],
       "settings": {
         "image": "",
-        "heading": "Shop the <em>look<\/em>",
+        "heading": "Shop the <em>look</em>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -759,7 +761,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "image": "",
             "image_ratio": "rounded",
@@ -771,7 +773,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "image": "",
             "image_ratio": "rounded",
@@ -783,7 +785,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "image": "",
             "image_ratio": "rounded",
