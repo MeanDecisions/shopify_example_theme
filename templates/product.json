@@ -52,17 +52,6 @@
             "size_chart": ""
           }
         },
-        "collapsible_tab_6DtxEJ": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "heading": "Dimensions",
-            "content": "<p>L:000 <br/>H: 000<br/></p>",
-            "page": "",
-            "liquid": ""
-          }
-        },
         "inventory": {
           "type": "inventory",
           "settings": {
@@ -113,7 +102,6 @@
         "text_yim4Mz",
         "description",
         "variant_picker",
-        "collapsible_tab_6DtxEJ",
         "inventory",
         "buy_buttons",
         "share",
