@@ -457,37 +457,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "recently_viewed_mGTkzN": {
-      "type": "recently-viewed",
-      "settings": {
-        "product_limit": 6,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Recently viewed",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "images-with-text-overlay": {
       "type": "images-with-text-overlay",
       "blocks": {
@@ -611,7 +580,6 @@
     "image_with_text_UH3Rhh",
     "dynamic_collection_banner_JdUdm8",
     "image_with_text_overlay_78Uj3E",
-    "recently_viewed_mGTkzN",
     "images-with-text-overlay",
     "recently-viewed"
   ]
