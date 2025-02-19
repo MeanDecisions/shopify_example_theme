@@ -4911,6 +4911,10 @@ ol {
   border-end-start-radius: var(--border-radius);
 }
 
+.footer-column {
+  width: 33%;
+}
+
 .section--divider::after {
   content: '';
   inset-block-start: 0;
@@ -14477,8 +14481,9 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 @media screen and (min-width: 768px) {
   .product-sticky-form {
     width: 550px;
-    inset-inline-end: var(--sp-5);
+    inset-inline: 0;  
     inset-block-end: var(--sp-5);
+    margin-inline: auto;  
   }
 
   .product-sticky-form__card {
@@ -14960,3 +14965,46 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 .main-content {
   z-index: 3;
 }
+
+
+.klaviyo-bis-submit {
+  overflow: auto;
+}
+
+.klaviyo-bis-submit .btn-text {
+height: auto;
+}
+
+.klaviyo-bis-submit::after {
+  border: none;
+}
+
+.klaviyo-bis-form {
+  padding: 6px 15px;
+  background-color: #F9F9F4;
+}
+
+
+/* custom klaviyo alert styling */
+
+.klaviyo-bis-oos {
+  background: #F3D2C6 !important;
+  color: #DB805E !important;
+}
+
+.pre-order-badge {
+  background: #FEE5BC !important;
+  color: #F59E0C !important;
+}
+
+@media screen and (max-width: 410px) {
+.pre-order-badge-text {
+font-size: 0.7rem;
+}
+}
+
+@media screen and (min-width: 1023px) {
+  .pre-order-badge-text {
+margin-left: 10px;
+  }
+  }

@@ -104,14 +104,22 @@
     
               {%- when 'text' -%}
                 {%- if block.settings.text != blank -%}
-                  <read-more data-max-lines="3">
+                  {%- if block.settings.enable_read_more -%}
+                    <read-more data-max-lines="3">
+                  {%- endif -%}
                   <div class="rte leading-normal {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.secondary_color %} text-opacity{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size:{{ block.settings.text_max_size }}px;"{% endif %} {{ block.shopify_attributes }}>
                     <div class="text-container">
-                    {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
+
+                      {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble, gradient: with_gradient -%}
+                    </div>
+                    {%- if block.settings.enable_read_more -%}
+                      <button class="read-more-toggle font-bold" style="display: none;">Read More</button>
+                    {%- endif -%}
+
                   </div>
-                    <button class="read-more-toggle font-bold" style="display: none;">Read More</button>
-                  </div>
-                  </read-more>
+                  {%- if block.settings.enable_read_more -%}
+                    </read-more>
+                  {%- endif -%}
                 {%- endif -%}
 
               {%- when 'icon' -%}
@@ -824,6 +832,13 @@
           "default": "circle",
           "label": "t:sections.global.settings.highlighted_scribble.label",
           "info": "t:sections.global.settings.highlighted_scribble.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_read_more",
+          "label": "Enable Read More",
+          "default": false,
+          "info": "When enabled, long text will be truncated with a Read More button"
         }
       ]
     },

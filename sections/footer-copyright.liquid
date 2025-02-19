@@ -8,7 +8,7 @@
 
 <div class="section{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}"{% if section.settings.enable_parallax %} is="footer-parallax"{% endif %}>
   <div class="footer-copyright page-width{% if section.settings.full_width %} page-width--full{% endif %} w-full flex flex-col items-center justify-between gap-4 lg:gap-0 lg:flex-row relative">
-    <div class="rte credits text-center">
+    <div class="rte credits text-center footer-column">
       {%- liquid
         if section.settings.show_copyright
           echo '&copy;&nbsp;'
@@ -21,6 +21,7 @@
           endif
           echo '.&nbsp;'
         endif
+
       -%}
       {%- if section.settings.show_policy -%}
         <ul class="flex flex-wrap gap-3 justify-center lg:justify-start">
@@ -46,7 +47,7 @@
       endif
     -%}
     {%- if enable_language_selector or enable_country_selector -%}
-      <div class="localization flex items-center justify-center flex-col md:flex-row">
+      <div class="localization flex items-center justify-center flex-col md:flex-row footer-column">
         {%- if enable_language_selector -%}
           <div class="grid gap-2">
             {%- form 'localization', id: 'localization_language_form_footer', class: 'localization__form flex items-center relative', is: 'localization-form' -%}
@@ -98,7 +99,7 @@
 
     {%- if section.settings.show_payment_icons -%}
       {%- unless shop.enabled_payment_types == empty -%}
-        <ul class="payment-icons{% if section.settings.monochrome_payment_icons %} payment-icons--gray{% endif %} flex flex-wrap justify-center gap-2 xl:gap-3">
+        <ul class="payment-icons{% if section.settings.monochrome_payment_icons %} payment-icons--gray{% endif %} flex flex-wrap justify-center gap-2 xl:gap-3 footer-column">
           {%- for type in shop.enabled_payment_types -%}
             <li>
               {{- type | payment_type_svg_tag -}}
