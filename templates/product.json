@@ -593,7 +593,7 @@
             "icon": "none",
             "icon_width": 24,
             "heading": "Materials and Contents",
-            "content": "<p>{{ product.metafields.accordion.material_contents | metafield_tag }}</p>",
+            "content": "{{ product.metafields.custom.materials_and_contents | metafield_tag }}",
             "metafields": ""
           }
         },
