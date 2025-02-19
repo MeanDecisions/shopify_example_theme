@@ -623,16 +623,6 @@
             "file_3": ""
           }
         },
-        "collapsible_tab-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "none",
-            "icon_width": 24,
-            "heading": "Collapsible row 3",
-            "content": "<p>Collapsible content 3</p>",
-            "metafields": ""
-          }
-        },
         "collapsible_tab-4": {
           "type": "collapsible_tab",
           "settings": {
@@ -658,7 +648,6 @@
         "collapsible_tab-1",
         "collapsible_tab-2",
         "downloads_f9nUJC",
-        "collapsible_tab-3",
         "collapsible_tab-4",
         "reviews_4efpQy"
       ],

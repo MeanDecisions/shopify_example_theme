@@ -119,8 +119,6 @@
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#ffffff",
-        "color_background": "#171717",
-        "gradient_background": "",
         "color_highlight": "#e0a580",
         "gradient_highlight": "",
         "color_button_text": "#171717",
@@ -204,7 +202,6 @@
             "button_label": "Learn More",
             "button_link": "shopify://collections/all",
             "button_icon": false,
-            "button_secondary_style": false,
             "content_position": "md:items-end",
             "text_alignment": "left",
             "content_position_mobile": "items-end",
@@ -397,7 +394,7 @@
         "text_YYVrPg": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -424,7 +421,7 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/Untitled_design_191.jpg",
+        "image": "shopify://shop_images/Untitled_design_191.jpg",
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -455,7 +452,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
+            "image": "shopify://shop_images/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
             "image_width": "full_width",
             "image_max_width": 20,
             "image_max_width_mobile": 50
@@ -489,7 +486,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
