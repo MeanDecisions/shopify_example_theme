@@ -298,7 +298,7 @@
             "menu_title": "Designers",
             "menu_width": "medium",
             "show_menu_image": false,
-            "button_label": "Button label",
+            "button_label": "See All",
             "button_link": "",
             "promo_image_ratio_1": "adapt",
             "promo_heading_1": "",
@@ -394,6 +394,8 @@
             "heading_tag": "h2",
             "button_label": "Explore Collection",
             "button_link": "shopify://collections/eos-garden-furniture",
+            "button_style": "primary",
+            "button_external": false,
             "button_icon": false
           }
         },
@@ -406,6 +408,8 @@
             "heading_tag": "h2",
             "button_label": "Explore Now",
             "button_link": "shopify://products/ella-swivel-lounge-chair",
+            "button_style": "primary",
+            "button_external": false,
             "button_icon": false
           }
         },
@@ -418,6 +422,8 @@
             "heading_tag": "h2",
             "button_label": "Explore Furniture",
             "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
             "button_icon": false
           }
         }
