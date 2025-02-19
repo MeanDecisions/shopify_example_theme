@@ -1,0 +1,10 @@
+{% liquid
+    assign nav_single_custom_url = settings.nav_single_custom_url | default: null
+    assign nav_single_custom_url_title = settings.nav_single_custom_url_title | default: null
+%}
+
+{% if nav_single_custom_url != blank and nav_single_custom_url_title != blank %}
+    <a href="{{ nav_single_custom_url }}" class="{{ class }} single-custom-url">
+      <span>{{ nav_single_custom_url_title }}</span>
+    </a>
+{% endif %}

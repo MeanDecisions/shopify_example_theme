@@ -11,7 +11,11 @@
   {% render 'product-inventory', product: product, product_form_id: product_form_id %}
 {%- endcomment -%}
 
-{%- assign product_variant = product.selected_or_first_available_variant -%}
+{% liquid
+  assign product_variant = product.selected_or_first_available_variant
+  assign variant_stock_available = product_variant.metafields.stock.available_from
+%}
+
 <div
   class="product__inventory no-js-hidden{% if product_variant.inventory_management != 'shopify' %} sr-only{% endif %}"
   id="Inventory-{{ section_id }}-{{ product_id }}"
@@ -19,7 +23,7 @@
   {{ block.shopify_attributes }}
 >
   {%- if product_variant.inventory_management == 'shopify' -%}
-    {%- if product_variant.metafields.custom.pre_order_date -%}
+    {%- if variant_stock_available -%}
       <div class="alert alert--error inline-flex items-center gap-3 pre-order-badge">
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'flex-auto' -%}
         <span class="text-sm font-medium leading-tight">
@@ -27,7 +31,7 @@
         </span>
       
       </div>
-      <span class="pre-order-badge-text">Shipping: {{ product_variant.metafields.custom.pre_order_date }}</span>
+      <span class="pre-order-badge-text">Shipping: {{ variant_stock_available }}</span>
     {%- elsif product_variant.inventory_quantity > 0 -%}
       {%- if product_variant.inventory_quantity <= block.settings.inventory_threshold -%}
         <div class="grid gap-3 w-full">
@@ -74,7 +78,7 @@
           -%}
         </span>
       </div>
-    {%- elsif product_variant.inventory_quantity <= 0 and product_variant.metafield.custom.pre_order_date -%}
+    {%- elsif product_variant.inventory_quantity <= 0 and variant_stock_available -%}
       <div class="alert alert--error inline-flex items-center gap-3">
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'flex-auto' -%}
         <span class="text-sm font-medium leading-tight">

@@ -50,6 +50,12 @@
               {%- endif -%}
             </li>
           {%- endfor -%}
+
+          <li>
+            {% render 'nav-single-custom-url',
+              class: 'drawer__menu-item block heading text-2xl leading-none tracking-tight mobile'
+            %}
+          </li>
         </ul>
       </nav>
       <div class="drawer__footer grid w-full">

@@ -69,6 +69,25 @@
     ]
   },
   {
+    "name": "Nav menu",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Single Custom URL"
+      },
+      {
+        "type": "text",
+        "id": "nav_single_custom_url_title",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "nav_single_custom_url",
+        "label": "URL/link"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

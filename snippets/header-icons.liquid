@@ -155,6 +155,10 @@
       </div>
     {%- endif -%}
 
+    {% render 'nav-single-custom-url',
+      class: 'reversed-link text-sm-lg font-medium leading-tight desktop'
+    %}
+
     {%- if show_search and settings.enable_search -%}
       <a href="{{ routes.search_url }}" class="search-drawer-button flex items-center justify-center" is="magnet-link" aria-controls="SearchDrawer" aria-expanded="false" >
         <span class="sr-only">{{ 'general.search.title' | t }}</span>
