@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-product": {
@@ -41,7 +50,7 @@
           "settings": {
             "icon": "none",
             "heading": "Dimensions",
-            "content": "<p>L:000 <br\/>H: 000<br\/><\/p>",
+            "content": "<p>L:000 <br/>H: 000<br/></p>",
             "page": "",
             "liquid": ""
           }
@@ -109,16 +118,15 @@
         "thumbnail_position": "beside",
         "image_ratio": "adapt_first",
         "image_zoom": "lightbox",
-        "hide_variants": false,
+        "hide_variants": true,
+        "matching_variant_images": true,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width",
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": false,
         "padding_top": 0,
-
         "padding_bottom": 40,
-
         "divider": false,
         "full_width": true,
         "rounded": false
@@ -130,11 +138,9 @@
         "content-1": {
           "type": "content",
           "settings": {
-
             "icon": "truck",
             "heading": "Shipping",
             "text": "<p>All our UK deliveries come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information on specific delivery options.</p>",
-
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#b45309",
@@ -147,11 +153,9 @@
         "content-2": {
           "type": "content",
           "settings": {
-
             "icon": "swatchbook",
             "heading": "Swatch",
             "text": "<p>You can order a free sample of our fabrics <a href=\"/collections/all-swatches\" target=\"_blank\" title=\"Fabric Swatches\">here</a></p>",
-
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#0369a1",
@@ -166,9 +170,7 @@
           "settings": {
             "icon": "chat_bubble",
             "heading": "FAQ’s",
-
             "text": "<p>You can find answers to our most frequently asked questions <a href=\"/pages/faqs\" target=\"_blank\" title=\"FAQs\">here</a></p>",
-
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#be123c",
@@ -183,9 +185,7 @@
           "settings": {
             "icon": "phone",
             "heading": "Contact Us",
-
             "text": "<p>Call us on 02088704488 or email us at info@casefurniture.com</p>",
-
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#4d7c0f",
@@ -203,10 +203,8 @@
         "content-4"
       ],
       "settings": {
-
         "heading": "Looking for more information?",
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
-
       }
     },
     "video-hero": {
@@ -262,7 +260,7 @@
       "disabled": true,
       "settings": {
         "transparent_header": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -286,7 +284,7 @@
         "image-1": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline<\/em>",
+            "subheading": "<em>Tagline</em>",
             "heading": "Example heading",
             "link": "",
             "invert_subheading_heading": false,
@@ -308,7 +306,7 @@
         "image-2": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline<\/em>",
+            "subheading": "<em>Tagline</em>",
             "heading": "Example heading",
             "link": "",
             "invert_subheading_heading": false,
@@ -330,7 +328,7 @@
         "image-3": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline<\/em>",
+            "subheading": "<em>Tagline</em>",
             "heading": "Example heading",
             "link": "",
             "invert_subheading_heading": false,
@@ -352,7 +350,7 @@
         "image-4": {
           "type": "image",
           "settings": {
-            "subheading": "<em>Tagline<\/em>",
+            "subheading": "<em>Tagline</em>",
             "heading": "Example heading",
             "link": "",
             "invert_subheading_heading": true,
@@ -385,7 +383,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
         "button_label": "View more",
         "button_link": "",
         "button_external": false,
@@ -432,7 +430,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -448,13 +446,13 @@
         "text"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/mhilton22.jpg",
+        "image": "shopify://shop_images/mhilton22.jpg",
         "image_height": "600px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
-        "image_mobile": "shopify:\/\/shop_images\/mhilton22.jpg",
+        "image_mobile": "shopify://shop_images/mhilton22.jpg",
         "image_height_mobile": "400px",
         "text_alignment_mobile": "left",
         "color_text": "#171717",
@@ -482,7 +480,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping and returns<\/strong><\/em>",
+            "text": "<em><strong>Free shipping and returns</strong></em>",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -535,7 +533,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -586,10 +584,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-
             "heading": "Materials and Contents",
             "content": "<p>{{ product.metafields.accordion.material_contents | metafield_tag }}</p>",
-
             "metafields": ""
           }
         },
@@ -598,10 +594,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-
             "heading": "Care Instructions",
             "content": "<p>{{ product.metafields.accordion.assembly_care | metafield_tag }}</p>",
-
             "metafields": ""
           }
         },
@@ -611,7 +605,7 @@
             "icon": "none",
             "icon_width": 24,
             "heading": "Collapsible row 3",
-            "content": "<p>Collapsible content 3<\/p>",
+            "content": "<p>Collapsible content 3</p>",
             "metafields": ""
           }
         },
@@ -620,10 +614,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-
             "heading": "Delivery",
             "content": "<p>All our UK orders come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information.<br/><br/>If an item is shown as ‘in stock’ on the website, these are located in our London showroom or UK warehouse. If you order accessories or smaller furniture items these will be sent to you by our favoured courier service in a few working days. For all large furniture orders, our friendly staff will be in contact to arrange delivery and confirm access. Furniture not delivered by our white glove service will delivered to kerb-side by pallet.<br/><br/>If you have any questions about delivery, please get in touch with us via our <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact us\">contact page</a> or live chat.</p><p>Please note: Access that requires additional planning will incur a cost at the customers expense.</p>",
-
             "metafields": ""
           }
         }
@@ -672,7 +664,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -681,7 +673,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -690,7 +682,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -699,7 +691,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -708,7 +700,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -717,7 +709,7 @@
           "type": "contact",
           "settings": {
             "heading": "Didn’t find your answer?",
-            "text": "<p>Don't hestitate to contact us<\/p>",
+            "text": "<p>Don't hestitate to contact us</p>",
             "show_phone": false,
             "avatar_height": 60,
             "highlighted_text": "none",
@@ -741,7 +733,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs<\/a> page to find out more.<\/p>",
+        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,

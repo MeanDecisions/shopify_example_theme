@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header-group.name",
@@ -22,7 +31,7 @@
           "settings": {
             "icon": "email",
             "text": "A question? Visit our contact page",
-            "link": "shopify:\/\/pages\/contact-us",
+            "link": "shopify://pages/contact-us",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -385,8 +394,7 @@
             "heading_tag": "h2",
             "button_label": "Explore Collection",
             "button_link": "shopify://collections/eos-garden-furniture",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "image_cmKgpi": {
@@ -398,8 +406,7 @@
             "heading_tag": "h2",
             "button_label": "Explore Now",
             "button_link": "shopify://products/ella-swivel-lounge-chair",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "image_GRE6KX": {
@@ -411,8 +418,7 @@
             "heading_tag": "h2",
             "button_label": "Explore Furniture",
             "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
