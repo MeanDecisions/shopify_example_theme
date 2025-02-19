@@ -48,6 +48,9 @@
         "title",
         "description_48FUR8"
       ],
+      "custom_css": [
+        "sticky-filters.is-sticky.scrolling-up {padding-top:80px;}"
+      ],
       "settings": {
         "transparent_header": false,
         "show_image": false,
@@ -124,6 +127,8 @@
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 100,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -162,6 +167,7 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
@@ -201,6 +207,8 @@
             "content": "",
             "button_label": "Learn More",
             "button_link": "shopify://collections/all",
+            "button_style": "secondary",
+            "button_external": false,
             "button_icon": false,
             "content_position": "md:items-end",
             "text_alignment": "left",
@@ -259,7 +267,8 @@
             "text_font": "body",
             "secondary_color": false,
             "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
           }
         }
       },
@@ -408,7 +417,9 @@
           "settings": {
             "button_label": "Explore Now",
             "button_link": "",
+            "button_style": "primary",
             "button_size": "md",
+            "button_external": false,
             "button_icon": false
           }
         }
@@ -519,6 +530,8 @@
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 100,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
