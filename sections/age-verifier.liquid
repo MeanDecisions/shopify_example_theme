@@ -97,7 +97,7 @@
                         </button>
                       {%- endif -%}
                       {%- if block.settings.button_label_2 != blank -%}
-                        <a class="button button--secondary icon-with-text"{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
+                        <a class="button button--secondary icon-with-text"{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% if block.settings.button_external_2 %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
                           <span class="btn-fill" data-fill></span>
                           <span class="btn-text">
                             {%- liquid
@@ -601,6 +601,12 @@
           "type": "url",
           "id": "button_link_2",
           "label": "t:sections.age-verifier.blocks.buttons.settings.button_link_2.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external_2",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
         }
       ]
     },

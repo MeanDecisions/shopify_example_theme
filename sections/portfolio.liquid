@@ -14,6 +14,37 @@
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
+    {%- capture view_all -%}
+      {%- if section.settings.button_label != blank -%}
+        {%- render 'button',
+          style: 'secondary',
+          label: section.settings.button_label,
+          link: section.settings.button_link,
+          external: section.settings.button_external,
+          show_icon: section.settings.button_icon
+        -%}
+      {%- endif -%}
+    {%- endcapture -%}
+    {%- capture indicators -%}
+      {%- if section.blocks.size > 0 and section.settings.carousel_on_desktop -%}
+        <div class="indicators hidden lg:flex gap-2d5">
+          <button class="button button--secondary" type="button" is="previous-button" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.previous' | t | escape }}" disabled>
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">
+              {%- render 'icon', icon: 'chevron-left', class: 'transform' -%}
+            </span>
+          </button>
+          <button class="button button--secondary" type="button" is="next-button" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.next' | t | escape }}">
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">
+              {%- render 'icon', icon: 'chevron-right', class: 'transform' -%}
+            </span>
+          </button>
+        </div>
+        <p class="lg:hidden">{{ view_all }}</p>
+      {%- endif -%}
+    {%- endcapture -%}
+
     {%- capture title_wrapper -%}
       {%- if section.settings.heading != blank or section.settings.description != blank or section.settings.subheading != blank or section.settings.button_label != blank -%}
         <div class="portfolio-title md:flex md:items-end md:justify-between md:gap-8{% if section.settings.layout == 'grid' %} xl:hidden{% endif %} {{ section.settings.heading_alignment }}">
@@ -59,20 +90,11 @@
               </div>
             {%- endif -%}
           </div>
-          {%- if section.settings.button_label != blank -%}
-            <p class="button-wrapper">
-              <a class="button button--secondary icon-with-text"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} is="hover-link">
-                <span class="btn-fill" data-fill></span>
-                <span class="btn-text">
-                  {%- liquid
-                    echo section.settings.button_label | escape
-                    if section.settings.button_icon
-                      render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
-                    endif
-                  -%}
-                </span>
-              </a>
-            </p>
+
+          {%- if section.settings.layout == 'default' and indicators != blank -%}
+            <div class="button-wrapper">{{ indicators }}</div>
+          {%- else -%}
+            <p class="button-wrapper">{{ view_all }}</p>
           {%- endif -%}
         </div>
       {%- endif -%}
@@ -81,10 +103,10 @@
     {{- title_wrapper -}}
 
     {%- if section.blocks.size > 0 -%}
-      <slider-element class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+      <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
         <motion-list class="portfolio card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
           {%- if section.settings.layout == 'grid' and title_wrapper != blank -%}
-            <div class="profile slide hidden xl:grid items-end">
+            <div class="profile card slide hidden xl:grid items-end">
               {{- title_wrapper -}}
             </div>
           {%- endif -%}
@@ -92,6 +114,14 @@
           {%- render 'portfolio', section: section -%}
         </motion-list>
       </slider-element>
+
+      {%- if indicators != blank -%}
+        {%- if section.settings.layout == 'grid' -%}
+          {{- indicators -}}
+        {%- else -%}
+          <p class="hidden lg:block">{{ view_all }}</p>
+        {%- endif -%}
+      {%- endif -%}
     {%- endif -%}
   </div>
 </div>
@@ -334,6 +364,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",

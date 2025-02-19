@@ -10,14 +10,16 @@
 .collection__topbar {
   z-index: 9;
   background: #fffffa;
+
   padding-bottom: 10px;
+
 }
 
 sticky-filters {
   display: block; 
   z-index: 9;
-  background: white;
-  padding-top: 88px; 
+  background: #fffffa;
+  padding-top: 15px; 
   padding-bottom: 10px;
   transition: padding 0.3s ease; 
 }
@@ -34,7 +36,7 @@ sticky-filters.is-sticky.scrolling-down {
 }
 
 sticky-filters.is-sticky.scrolling-up {
-  padding-top: 88px;
+  padding-top: 20px;
 }
 
 
@@ -215,7 +217,7 @@ sticky-filters.is-sticky.scrolling-up {
                   <span class="btn-fill" data-fill></span>
                   <span class="btn-text">
                     {%- liquid
-                      render 'icon', icon: 'close-alt', size: 'xxxs'
+                      render 'icon', icon: 'close-2', size: 'xxxs'
                       echo 'collections.filtering.clear_all' | t
                     -%}
                   </span>
@@ -282,7 +284,6 @@ sticky-filters.is-sticky.scrolling-up {
     {%- endpaginate -%}
   </div>
 </div>
-
 
 <script type="application/ld+json">
 {
@@ -555,16 +556,36 @@ sticky-filters.is-sticky.scrolling-up {
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "secondary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
           "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": true,
-          "label": "t:sections.global.settings.button_secondary_style.label"
         },
         {
           "type": "select",
@@ -769,16 +790,36 @@ sticky-filters.is-sticky.scrolling-up {
           "label": "t:sections.global.settings.button_link.label"
         },
         {
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:sections.global.settings.button_style.options__1.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:sections.global.settings.button_style.options__2.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.global.settings.button_style.options__3.label"
+            }
+          ],
+          "default": "secondary",
+          "label": "t:sections.global.settings.button_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_external",
+          "label": "t:sections.global.settings.button_external.label",
+          "default": false
+        },
+        {
           "type": "checkbox",
           "id": "button_icon",
           "label": "t:sections.global.settings.button_icon.label",
           "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "button_secondary_style",
-          "default": true,
-          "label": "t:sections.global.settings.button_secondary_style.label"
         },
         {
           "type": "select",

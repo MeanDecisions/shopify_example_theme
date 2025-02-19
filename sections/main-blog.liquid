@@ -62,7 +62,8 @@
 
           <div class="blog-filter field md:hidden">
             <div class="inline-block relative">
-              <select class="select" is="tag-filter">
+              <label for="TagFilter" class="sr-only">{{ 'blogs.article.filter' | t }}</label>
+              <select id="TagFilter" class="select" is="tag-filter">
                 <option value="{{ blog.url }}">{{ 'blogs.article.all_tags' | t }}</option>
                 {%- for tag in blog.all_tags -%}
                   <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>

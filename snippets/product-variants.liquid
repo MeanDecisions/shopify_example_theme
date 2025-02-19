@@ -113,11 +113,11 @@
                 {%- liquid
                   if value.swatch == blank
                     if settings.swatch_config != blank
-                      assign file_extension = swatch_file_extension | default: 'png'
-                      assign file_name = value | handle | append: '.' | append: file_extension
-                      assign swatch_fallback = value | split: ' ' | last | handle
-                      assign swatch_fallback_override = false
-      
+                    assign file_extension = swatch_file_extension | default: 'png'
+                    assign file_name = value | handle | append: '.' | append: file_extension
+                    assign swatch_fallback = value | split: ' ' | last | handle
+                    assign swatch_fallback_override = false
+    
                       assign value_downcase = value | downcase
                       assign swatch_config = settings.swatch_config | newline_to_br | split: '<br />'
                       for swatch in swatch_config
@@ -135,13 +135,13 @@
                           break
                         endif
                       endfor
-      
-                      assign swatch_image = blank
-                      if images[file_name] != blank
-                        assign swatch_image = images[file_name] | image_url: width: 72
-                      elsif file_name contains '//cdn.shopify.com/'
-                        assign swatch_image = file_name
-                      endif
+    
+                    assign swatch_image = blank
+                    if images[file_name] != blank
+                      assign swatch_image = images[file_name] | image_url: width: 72
+                    elsif file_name contains '//cdn.shopify.com/'
+                      assign swatch_image = file_name
+                    endif
                     endif
                   else
                     assign swatch_image = blank

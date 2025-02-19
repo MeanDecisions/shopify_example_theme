@@ -12,144 +12,13 @@
     "main-404": {
       "type": "main-404",
       "settings": {
-        "heading_size": "title-xl tracking-heading",
+        "heading_size": "title-lg tracking-heading",
         "heading_tag": "h1",
         "padding_top": 120,
         "padding_bottom": 120,
         "divider": false,
         "narrow": true,
         "rounded": false
-      }
-    },
-    "collage_pdCk6e": {
-      "type": "collage",
-      "blocks": {
-        "image_qjy6Fk": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/Core_45.gif",
-            "image_ratio": "square",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "image_TMHNBB": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/moving_mouro.gif",
-            "image_ratio": "square",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "image_Mn99TY": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "image_4LMhhD": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        }
-      },
-      "block_order": [
-        "image_qjy6Fk",
-        "image_TMHNBB",
-        "image_Mn99TY",
-        "image_4LMhhD"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
       }
     },
     "empty_space_6xi9cK": {
@@ -168,7 +37,7 @@
           "type": "collection",
           "settings": {
             "collection": "bestsellers",
-            "image": "shopify://shop_images/kigumi-black-675_8d01561a-69f3-49a0-a7c9-3fbe1ca37eac.jpg",
+            "image": "shopify:\/\/shop_images\/kigumi-black-675_8d01561a-69f3-49a0-a7c9-3fbe1ca37eac.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -234,7 +103,7 @@
         "color_button_gradient": "",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": true,
+        "divider": false,
         "full_width": false,
         "rounded": false
       }
@@ -251,7 +120,6 @@
   },
   "order": [
     "main-404",
-    "collage_pdCk6e",
     "empty_space_6xi9cK",
     "collection_list_CnVxjL",
     "empty-space"

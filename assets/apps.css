@@ -963,9 +963,9 @@
   justify-content: center;
   overflow: hidden;
   line-height: 1;
-  font-weight: var(--font-medium);
-  font-family: var(--font-navigation-family);
+  font-family: var(--font-button-family);
   font-size: var(--font-button-size);
+  font-weight: var(--font-button-weight);
   text-transform: var(--font-button-text-transform);
   padding: clamp(var(--sp-4d5),1.2vw,var(--sp-5d5)) clamp(var(--sp-6d5),1.473vw,var(--sp-7d5));
   color: rgb(var(--color-button-text));
@@ -1369,9 +1369,9 @@
   justify-content: center;
   overflow: hidden;
   line-height: 1;
-  font-weight: var(--font-medium);
-  font-family: var(--font-navigation-family);
+  font-family: var(--font-button-family);
   font-size: var(--font-button-size);
+  font-weight: var(--font-button-weight);
   text-transform: var(--font-button-text-transform);
   padding: clamp(var(--sp-4d5),1.2vw,var(--sp-5d5)) clamp(var(--sp-6d5),1.473vw,var(--sp-7d5)) !important;
   color: rgb(var(--color-button-text));

@@ -29,9 +29,8 @@
       "blocks": {
         "text": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Twenty Years of Award Winning Design</p>",
+            "text": "<p>Twenty Years of Award Winning Design<\/p>",
             "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
@@ -55,10 +54,9 @@
         "text",
         "heading"
       ],
-      "disabled": true,
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/IMG_2999.jpg",
+        "image": "shopify:\/\/shop_images\/DSC00855_copy.jpg",
         "image_height": "750px",
         "content_width": "large",
         "content_position": "md:items-end md:justify-start",
@@ -73,7 +71,7 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#000000",
-        "overlay_opacity": 0,
+        "overlay_opacity": 10,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -89,7 +87,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Our <em>Journey</em>",
+            "heading": "Our <em>Journey<\/em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -99,7 +97,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br\/><br\/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -114,8 +112,7 @@
             "button_label": "Our History",
             "button_link": "",
             "button_size": "md",
-            "button_icon": true,
-            "button_secondary_style": true
+            "button_icon": true
           }
         }
       },
@@ -149,7 +146,6 @@
     },
     "empty_space_yNyFtC": {
       "type": "empty-space",
-      "disabled": true,
       "settings": {
         "desktop_height": 80,
         "mobile_height": 0,
@@ -163,11 +159,10 @@
         "content_wPrp3p": {
           "type": "content",
           "settings": {
-            "image": "shopify://shop_images/Aero1.webp",
-            "subheading": "2004",
+            "subheading": "Text",
             "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>Case is founded by Paul Newman, Matthew Hilton and </p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -178,10 +173,10 @@
         "content_Cagjx9": {
           "type": "content",
           "settings": {
-            "subheading": "2006",
-            "heading": "Case Launches",
+            "subheading": "Text",
+            "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>The Profile Chair and Extending Table by Matthew Hilton are released.</p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -195,7 +190,7 @@
             "subheading": "Text",
             "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -209,7 +204,7 @@
             "subheading": "Text",
             "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -223,21 +218,7 @@
             "subheading": "Text",
             "heading": "Heading",
             "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_7KbbTE": {
-          "type": "content",
-          "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "button_label": "",
             "button_link": "",
             "button_icon": true,
@@ -251,10 +232,8 @@
         "content_Cagjx9",
         "content_eB9VJg",
         "content_t36X7C",
-        "content_4BJcn9",
-        "content_7KbbTE"
+        "content_4BJcn9"
       ],
-      "disabled": true,
       "settings": {
         "image_ratio": "landscape",
         "image_ratio_mobile": "wide",
@@ -281,66 +260,6 @@
         "rounded": false
       }
     },
-    "rich_text_cEBa6E": {
-      "type": "rich-text",
-      "blocks": {
-        "text_z6LtbT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Case</p>",
-            "text_size": "subtext-lg",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "heading_tMbRQi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Twenty Years of Award-Winning Design",
-            "heading_size": "title-xl tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_z6LtbT",
-        "heading_tMbRQi"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-xl tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "image_with_text_Gjb7cG": {
       "type": "image-with-text",
       "blocks": {
@@ -357,7 +276,7 @@
         "text_RjtxHm": {
           "type": "text",
           "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -372,8 +291,7 @@
             "button_label": "Explore Collections",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -383,8 +301,7 @@
         "button_J8QCYc"
       ],
       "settings": {
-        "image": "shopify://shop_images/DSC00855_copy.jpg",
-        "image_height": "500px",
+        "image_height": "650px",
         "image_width": "small",
         "layout": "image_first",
         "text_alignment": "left",
@@ -402,7 +319,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -426,7 +343,7 @@
         "text_7DQMNr": {
           "type": "text",
           "settings": {
-            "text": "<p>Everything in our range is created by our team of renowned designers and skilled manufacturers, who are each specialists in their fields. We carefully select our designers because they have a passion for what they do, and that passion shines through in each product they create. From the very first sketch, our process for every product is a genuine collaborative effort.</p>",
+            "text": "<p>Everything in our range is created by our team of renowned designers and skilled manufacturers, who are each specialists in their fields. We carefully select our designers because they have a passion for what they do, and that passion shines through in each product they create. From the very first sketch, our process for every product is a genuine collaborative effort.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -441,8 +358,7 @@
             "button_label": "Meet Our Designers",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -452,9 +368,8 @@
         "button_CCdtTJ"
       ],
       "settings": {
-        "image": "shopify://shop_images/152A1522_fb913b02-78df-432d-9c6c-b664c8543036.jpg",
-        "image_height": "500px",
-        "image_width": "small",
+        "image_height": "650px",
+        "image_width": "large",
         "layout": "text_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -470,8 +385,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -495,7 +410,7 @@
         "text_6g4xVW": {
           "type": "text",
           "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -510,8 +425,7 @@
             "button_label": "Explore Our Range",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -521,8 +435,7 @@
         "button_6aLQwJ"
       ],
       "settings": {
-        "image": "shopify://shop_images/DSC00816_copy.jpg",
-        "image_height": "500px",
+        "image_height": "650px",
         "image_width": "small",
         "layout": "image_first",
         "text_alignment": "left",
@@ -539,8 +452,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -565,7 +478,7 @@
         "text_DbbTPC": {
           "type": "text",
           "settings": {
-            "text": "<p>Paul Newman graduated in 1981 with a BA Furniture degree from Hornsey College of Art, after completing a foundation course at Chelsea College of Art.</p><p>Paul began what would be an illustrious career in design in less than illustrious surroundings, launching his first business Bonomi Design in 1981 in what he described as a “pretty dismal workshop” in North London with two friends from college. They designed and made products for a variety of clients including Liberty’s, Heal’s as Ron Arad.</p><p>In 1988, the company received a grant to exhibit their range of stools and chairs at the prestigious Milan Furniture Fair. It was here that Paul met Australian retailer Aero, who had five successful stores across the country. Excited about Paul’s new collection, Aero started to produce the product range under licence.</p><p>In 1989, Paul’s entrepreneurial business acumen led to the opening of a UK franchise of Aero in Westbourne Grove, West London, selling an eclectic mix of contemporary furniture, lighting and accessories. Thirty-five percent of the collection were its own branded product, while the remaining 65% came from other international brands. With its adventurous and eclectic collection, Aero soon rose to prominence, and new investment saw Paul open a second London store on Chelsea’s prestigious King’s Road. The business expanded and by 1998, Aero was a shop, retail and wholesale business selling to high end design stores such as Heals and the Conran shop. Ahead of its time in many ways, the business also included a successful mail-order catalogue.</p>",
+            "text": "<p>Paul Newman graduated in 1981 with a BA Furniture degree from Hornsey College of Art, after completing a foundation course at Chelsea College of Art.<\/p><p>Paul began what would be an illustrious career in design in less than illustrious surroundings, launching his first business Bonomi Design in 1981 in what he described as a “pretty dismal workshop” in North London with two friends from college. They designed and made products for a variety of clients including Liberty’s, Heal’s as Ron Arad.<\/p><p>In 1988, the company received a grant to exhibit their range of stools and chairs at the prestigious Milan Furniture Fair. It was here that Paul met Australian retailer Aero, who had five successful stores across the country. Excited about Paul’s new collection, Aero started to produce the product range under licence.<\/p><p>In 1989, Paul’s entrepreneurial business acumen led to the opening of a UK franchise of Aero in Westbourne Grove, West London, selling an eclectic mix of contemporary furniture, lighting and accessories. Thirty-five percent of the collection were its own branded product, while the remaining 65% came from other international brands. With its adventurous and eclectic collection, Aero soon rose to prominence, and new investment saw Paul open a second London store on Chelsea’s prestigious King’s Road. The business expanded and by 1998, Aero was a shop, retail and wholesale business selling to high end design stores such as Heals and the Conran shop. Ahead of its time in many ways, the business also included a successful mail-order catalogue.<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -576,13 +489,11 @@
         },
         "button_pqwYJU": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -617,7 +528,7 @@
         "padding_top": 72,
         "padding_bottom": 100,
         "divider": true,
-        "narrow": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -628,7 +539,7 @@
           "type": "profile",
           "settings": {
             "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br\/><br\/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -637,7 +548,7 @@
           "type": "profile",
           "settings": {
             "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br\/><br\/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -646,7 +557,7 @@
           "type": "profile",
           "settings": {
             "heading": "Example heading",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br\/><br\/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -657,7 +568,6 @@
         "profile-2",
         "profile-3"
       ],
-      "disabled": true,
       "settings": {
         "columns": 4,
         "carousel_on_desktop": false,
@@ -666,12 +576,12 @@
         "image_ratio_mobile": "portrait",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Talk about your <em>brand</em>",
+        "heading": "Talk about your <em>brand<\/em>",
         "heading_size": "title-md",
         "heading_alignment": "text-left justify-start",
         "heading_tag": "h2",
         "subheading": "Add a tagline",
-        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_icon": true,
@@ -698,7 +608,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
+            "text": "<em><strong>Free shipping and returns<\/strong><\/em>",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -709,7 +619,6 @@
       "block_order": [
         "text"
       ],
-      "disabled": true,
       "settings": {
         "direction": "left",
         "speed": 20,
@@ -734,7 +643,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
             "author_info": "",
             "image_ratio": "rounded",
@@ -746,7 +655,6 @@
       "block_order": [
         "testimonial"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "title-md",
@@ -773,13 +681,150 @@
         "rounded": false
       }
     },
+    "timeline": {
+      "type": "timeline",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "subheading": "2015",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "subheading": "2017",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "subheading": "2018",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "subheading": "2019",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-5": {
+          "type": "content",
+          "settings": {
+            "subheading": "2021",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-6": {
+          "type": "content",
+          "settings": {
+            "subheading": "2022",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content-7": {
+          "type": "content",
+          "settings": {
+            "subheading": "2024",
+            "heading": "Image with text",
+            "heading_tag": "h2",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4",
+        "content-5",
+        "content-6",
+        "content-7"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "wide",
+        "heading": "Our History",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "rgba(0,0,0,0)",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Partners and Collaborators</p>",
+            "text": "<p>Our Partners<\/p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -791,7 +836,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Who We've Worked With",
+            "heading": "Elite audio from Top <em>Brands<\/em>",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -819,7 +864,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#fffffa",
+        "color_background": "#fafafa",
         "gradient_background": "",
         "color_highlight": "#c5e8b8",
         "gradient_highlight": "",
@@ -839,48 +884,49 @@
         "logo-1": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/aPartners_logo.svg",
-            "height": 72,
+            "height": 60,
             "link": ""
           }
         },
         "logo-2": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Partners_logo_1.svg",
-            "height": 80,
+            "height": 60,
             "link": ""
           }
         },
         "logo-3": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Partners_logo_3.svg",
-            "height": 80,
+            "height": 60,
             "link": ""
           }
         },
         "logo-4": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Partners_logo_2.svg",
-            "height": 72,
+            "height": 60,
             "link": ""
           }
         },
         "logo-5": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Partners_logo_4.svg",
-            "height": 80,
+            "height": 60,
             "link": ""
           }
         },
         "logo-6": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Partners_logo.svg",
-            "height": 100,
+            "height": 60,
+            "link": ""
+          }
+        },
+        "logo-7": {
+          "type": "logo",
+          "settings": {
+            "height": 60,
             "link": ""
           }
         }
@@ -891,7 +937,8 @@
         "logo-3",
         "logo-4",
         "logo-5",
-        "logo-6"
+        "logo-6",
+        "logo-7"
       ],
       "settings": {
         "layout": "marquee",
@@ -910,27 +957,18 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#fffffa",
+        "color_background": "#fafafa",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 32,
-        "padding_bottom": 60,
+        "padding_top": 60,
+        "padding_bottom": 120,
         "divider": false,
         "full_width": true,
         "rounded": true
-      }
-    },
-    "empty_space_P9PCiR": {
-      "type": "empty-space",
-      "settings": {
-        "desktop_height": 100,
-        "mobile_height": 68,
-        "color_background": "",
-        "gradient_background": ""
       }
     }
   },
@@ -940,7 +978,6 @@
     "images-with-text",
     "empty_space_yNyFtC",
     "timeline_jM7XXf",
-    "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
     "image_with_text_7iirHd",
     "image_with_text_73V76m",
@@ -948,8 +985,8 @@
     "portfolio",
     "scrolling-text",
     "testimonials",
+    "timeline",
     "rich-text",
-    "logo-list",
-    "empty_space_P9PCiR"
+    "logo-list"
   ]
 }

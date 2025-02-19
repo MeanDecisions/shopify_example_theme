@@ -92,7 +92,7 @@
             {%- endif -%}
           </picture>
           {%- if after_image.settings.subheading != blank or after_image.settings.heading != blank -%}
-            <div class="comparison__box comparison__box--{{ after_image.settings.content_position }} grid items-start absolute top-0 left-0 w-full h-full text-right" style="--color-foreground: {{ before_image.settings.color_text.rgb }};">
+            <div class="comparison__box comparison__box--{{ after_image.settings.content_position }} grid items-start absolute top-0 left-0 w-full h-full text-right" style="--color-foreground: {{ after_image.settings.color_text.rgb }};">
               <div class="grid gap-1 md:gap-2">
                 {%- if after_image.settings.subheading != blank -%}
                   <p class="text-xs md:text-base lg:text-lg text-medium leading-none">{{ after_image.settings.subheading | escape }}</p>
@@ -176,10 +176,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "100vh"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "100vh"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "adapt"
         }
       ],
@@ -353,6 +361,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",

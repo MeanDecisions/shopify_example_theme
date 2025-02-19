@@ -1,10 +1,10 @@
-{%- style -%}
+<style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
     {%- render 'section-variables', section: section -%}
   }
-{%- endstyle -%}
+</style>
 
 {%- liquid
   assign enable_footer_info = false
@@ -63,7 +63,7 @@
             {%- render 'newsletter-form', section_id: section.id, context: 'footer' -%}
 
             {%- if section.settings.newsletter_text != blank -%}
-              <div class="rte text-sm">{{ section.settings.newsletter_text }}</div>
+              <div class="rte text-sm leading-tight">{{ section.settings.newsletter_text }}</div>
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -267,8 +267,8 @@
     {
       "type": "checkbox",
       "id": "enable_parallax",
-      "default": true,
-      "label": "t:sections.global.settings.enable_parallax.label"
+      "label": "t:sections.global.settings.enable_parallax.label",
+      "default": true
     }
   ],
   "blocks": [
@@ -327,12 +327,22 @@
         {
           "type": "range",
           "id": "container_width",
-          "label": "t:sections.footer.blocks.link_list.settings.container_width.label",
+          "label": "t:sections.footer.blocks.global.settings.container_width.label",
           "default": 50,
           "min": 15,
           "max": 95,
           "step": 1,
           "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__mobile.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "opened",
+          "default": false,
+          "label": "t:sections.footer.blocks.global.settings.opened.label"
         }
       ]
     },
@@ -356,12 +366,22 @@
         {
           "type": "range",
           "id": "container_width",
-          "label": "t:sections.footer.blocks.text.settings.container_width.label",
+          "label": "t:sections.footer.blocks.global.settings.container_width.label",
           "default": 50,
           "min": 15,
           "max": 95,
           "step": 1,
           "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__mobile.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "opened",
+          "default": false,
+          "label": "t:sections.footer.blocks.global.settings.opened.label"
         }
       ]
     },
@@ -419,12 +439,22 @@
         {
           "type": "range",
           "id": "container_width",
-          "label": "t:sections.footer.blocks.brand_information.settings.container_width.label",
+          "label": "t:sections.footer.blocks.global.settings.container_width.label",
           "default": 50,
           "min": 15,
           "max": 95,
           "step": 1,
           "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__mobile.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "opened",
+          "default": false,
+          "label": "t:sections.footer.blocks.global.settings.opened.label"
         }
       ]
     }

@@ -24,8 +24,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://collections/eos-garden-furniture",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "slide-1": {
@@ -37,8 +36,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "shopify://products/solid-rechargeable-table-light",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         },
         "slide-2": {
@@ -50,8 +48,7 @@
             "heading_tag": "h2",
             "button_label": "Shop Now",
             "button_link": "",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -397,8 +394,7 @@
             "button_label": "View Our Selection",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": false
+            "button_icon": false
           }
         }
       },
@@ -527,8 +523,7 @@
             "button_label": "See Options",
             "button_link": "",
             "button_size": "sm",
-            "button_icon": false,
-            "button_secondary_style": true
+            "button_icon": false
           }
         }
       },
@@ -763,7 +758,7 @@
           "settings": {
             "collection": "dining-tables",
             "products": [],
-            "title": "Dining Tables"
+            "title": "Tables"
           }
         },
         "collection-2": {
@@ -792,15 +787,15 @@
           "settings": {
             "collection": "accessories",
             "products": [],
-            "title": "Home Accessories"
+            "title": "Accessories"
           }
         },
         "collection_YxFT8p": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-furniture",
+            "collection": "lighting",
             "products": [],
-            "title": "Outdoor Furniture"
+            "title": "Lighting"
           }
         }
       },
@@ -833,7 +828,7 @@
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "#265874",
+        "color_button_background": "#b4b45e",
         "color_button_gradient": "",
         "padding_top": 36,
         "padding_bottom": 36,
@@ -979,6 +974,74 @@
         "rounded": false
       }
     },
+    "image_with_text_overlay_WUy4t7": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_QcMVpz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit our Showroom",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_eNkJcM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Open 6 days a week</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_VCAXda": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/showroom",
+            "button_size": "sm",
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QcMVpz",
+        "text_eNkJcM",
+        "button_VCAXda"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/showroom-graphics2-smaller.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "testimonials-banner": {
       "type": "testimonials-banner",
       "blocks": {
@@ -1026,6 +1089,7 @@
         "testimonial-2",
         "testimonial-3"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/CA_aeADIO_SANTANDER-15_-_Copy.jpg",
@@ -1134,7 +1198,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 48,
-        "padding_bottom": 60,
+        "padding_bottom": 48,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1265,6 +1329,7 @@
     "featured-collections",
     "reveal_image_with_text_overlay_7WVaNB",
     "shop-the-look",
+    "image_with_text_overlay_WUy4t7",
     "testimonials-banner",
     "collection_list_rFNr7H",
     "scrolling-text-2",

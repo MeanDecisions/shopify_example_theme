@@ -35,16 +35,6 @@
             "text_size": "text-base"
           }
         },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -57,7 +47,6 @@
         },
         "collapsible_tab_6DtxEJ": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "heading": "Dimensions",
@@ -69,8 +58,9 @@
         "inventory": {
           "type": "inventory",
           "settings": {
-            "inventory_threshold": 15,
+            "inventory_threshold": 0,
             "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
             "color_scheme": "accent-1"
           }
         },
@@ -79,12 +69,11 @@
           "settings": {
             "show_quantity_selector": true,
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
           }
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
         },
         "share": {
           "type": "share",
@@ -98,7 +87,6 @@
         },
         "complementary": {
           "type": "complementary",
-          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "product_limit": 4,
@@ -115,12 +103,10 @@
         "vendor",
         "title",
         "description",
-        "countdown",
         "variant_picker",
         "collapsible_tab_6DtxEJ",
         "inventory",
         "buy_buttons",
-        "pickup_availability",
         "share",
         "complementary",
         "sticky_buy_button"
@@ -133,13 +119,14 @@
         "image_ratio": "adapt_first",
         "image_zoom": "lightbox",
         "hide_variants": true,
+        "matching_variant_images": false,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width",
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": false,
         "padding_top": 0,
-        "padding_bottom": 84,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": true,
         "rounded": false
@@ -151,9 +138,9 @@
         "content-1": {
           "type": "content",
           "settings": {
-            "icon": "rocket",
-            "heading": "Shipping Information",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "icon": "truck",
+            "heading": "Shipping",
+            "text": "<p>All our UK deliveries come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information on specific delivery options.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#b45309",
@@ -166,9 +153,9 @@
         "content-2": {
           "type": "content",
           "settings": {
-            "icon": "headphone",
-            "heading": "Customer Support",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "icon": "swatchbook",
+            "heading": "Swatch",
+            "text": "<p>You can order a free sample of our fabrics <a href=\"/collections/all-swatches\" target=\"_blank\" title=\"Fabric Swatches\">here</a></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#0369a1",
@@ -183,7 +170,7 @@
           "settings": {
             "icon": "chat_bubble",
             "heading": "FAQ’s",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "text": "<p>You can find answers to our most frequently asked questions <a href=\"/pages/faqs\" target=\"_blank\" title=\"FAQs\">here</a></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#be123c",
@@ -198,7 +185,7 @@
           "settings": {
             "icon": "phone",
             "heading": "Contact Us",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "text": "<p>Call us on 02088704488 or email us at info@casefurniture.com</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
             "color_text": "#4d7c0f",
@@ -216,7 +203,7 @@
         "content-4"
       ],
       "settings": {
-        "heading": "Need help?",
+        "heading": "Looking for more information?",
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
       }
     },
@@ -399,6 +386,7 @@
         "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
         "button_label": "View more",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "scribble",
         "highlighted_scribble": "basic-underline",
@@ -591,7 +579,7 @@
     "product-details": {
       "type": "product-details",
       "blocks": {
-        "dimensions_pxYPMA": {
+        "dimensions_REa8Qe": {
           "type": "dimensions",
           "settings": {
             "icon": "none",
@@ -605,8 +593,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 1",
-            "content": "<p>Collapsible content 1</p>",
+            "heading": "Materials and Contents",
+            "content": "<p>{{ product.metafields.accordion.material_contents | metafield_tag }}</p>",
             "metafields": ""
           }
         },
@@ -615,22 +603,22 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 2",
-            "content": "<p>Collapsible content 2</p>",
+            "heading": "Care Instructions",
+            "content": "<p>{{ product.metafields.accordion.assembly_care | metafield_tag }}</p>",
             "metafields": ""
           }
         },
-        "downloads_3iytK3": {
+        "downloads_f9nUJC": {
           "type": "downloads",
           "settings": {
             "icon": "none",
             "icon_width": 24,
             "heading": "Downloads",
             "content": "<p>Add your download description here.</p>",
-            "file_title_1": "Product Specification Sheet",
-            "file_1": "{{ product.metafields[\"product-files\"][\"Product-specification-sheet\"].value }}",
-            "file_title_2": "Assembly Instructions",
-            "file_2": "{{ product.metafields[\"product-files\"][\"Assembly-instructions\"].value }}",
+            "file_title_1": "",
+            "file_1": "",
+            "file_title_2": "",
+            "file_2": "",
             "file_title_3": "",
             "file_3": ""
           }
@@ -640,12 +628,12 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 4",
-            "content": "<p>Collapsible content 4</p>",
+            "heading": "Delivery",
+            "content": "<p>All our UK orders come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information.<br/><br/>If an item is shown as ‘in stock’ on the website, these are located in our London showroom or UK warehouse. If you order accessories or smaller furniture items these will be sent to you by our favoured courier service in a few working days. For all large furniture orders, our friendly staff will be in contact to arrange delivery and confirm access. Furniture not delivered by our white glove service will delivered to kerb-side by pallet.<br/><br/>If you have any questions about delivery, please get in touch with us via our <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact us\">contact page</a> or live chat.</p><p>Please note: Access that requires additional planning will incur a cost at the customers expense.</p>",
             "metafields": ""
           }
         },
-        "reviews_P4etm3": {
+        "reviews_4efpQy": {
           "type": "reviews",
           "settings": {
             "icon": "none",
@@ -656,12 +644,12 @@
         }
       },
       "block_order": [
-        "dimensions_pxYPMA",
+        "dimensions_REa8Qe",
         "collapsible_tab-1",
         "collapsible_tab-2",
-        "downloads_3iytK3",
+        "downloads_f9nUJC",
         "collapsible_tab-4",
-        "reviews_P4etm3"
+        "reviews_4efpQy"
       ],
       "settings": {
         "style": "with-border",
@@ -675,19 +663,20 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "#000000",
-        "color_background": "#ffffff",
+        "color_background": "#f9f9f4",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 60,
+        "padding_top": 28,
+        "padding_bottom": 28,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -772,6 +761,7 @@
         "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",

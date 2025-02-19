@@ -30,6 +30,25 @@
       {%- endfor -%}
     }
   {% endif -%}
+
+  {%- if section.settings.heading_position != 'none' %}
+    {%- assign color_overlay_brightness = section.settings.color_overlay | color_brightness -%}
+    #shopify-section-{{ section.id }} .banner__box {
+      {%- if color_overlay_brightness < 150 %}
+        --color-foreground: 255 255 255;
+        --color-button-gradient: #ffffff;
+        --color-button-background: 255 255 255;
+        --color-button-border: 255 255 255;
+        --color-button-text: 0 0 0;
+      {% else %}
+        --color-foreground: 0 0 0;
+        --color-button-gradient: #000000;
+        --color-button-background: 0 0 0;
+        --color-button-border: 0 0 0;
+        --color-button-text: 255 255 255;
+      {% endif -%}
+    }
+  {% endif -%}
 </style>
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}" data-section-id="{{ section.id }}">
@@ -58,7 +77,7 @@
 
             {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', is: 'lazy-image', class: 'banner__image' -}}
           {%- else -%}
-            {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay' -}}
+            {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay placeholder' -}}
           {%- endif -%}
         </picture>
       </div>
@@ -79,25 +98,30 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'product' -%}
-              {%- assign product = block.settings.product -%}
+              {%- liquid
+                assign product = block.settings.product
+                if product == null
+                  assign placeholder = true
+                endif
+              -%}
               {% if product != blank %}
                 {%- if settings.product_quick_view -%}
                   <hover-element class="hotspot flex items-center justify-center absolute z-1 cursor-pointer" aria-controls="Quickview-{{ section.id }}-{{ product.id }}" aria-expanded="false" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}>
                     <div class="hotspot__content hidden md:flex gap-2 items-center absolute pointer-events-none{% if block.settings.horizontal < 15 %} with-left{% elsif block.settings.horizontal > 85 %} with-right{% endif %}{% if block.settings.vertical > 70 %} with-bottom{% endif %}">
                       {%- if product.featured_media -%}
-                        <div class="hidden lg:block media media--square relative overflow-hidden flex-auto">
+                        <div class="hidden lg:block media media--{{ settings.product_image_ratio }}{% unless settings.product_image_fill %} media--contain{% endunless %} relative overflow-hidden flex-auto">
                           {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image' -}}
                         </div>
                       {%- endif -%}
                       <div class="rte text-sm leading-none grid gap-2">
                         <p class="heading lg:text-base lg:font-medium leading-tight">{{ product.title }}</p>
 
-                        {%- render 'product-price', product: product -%}
+                        {%- render 'product-price', product: product, placeholder: placeholder -%}
                       </div>
                       {%- render 'icon', icon: 'caret', class: 'absolute' -%}
                     </div>
                   </hover-element>
-                  <quick-view id="Quickview-{{ section.id }}-{{ product.id }}" class="quick-view x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none" data-product-url="{{ product.url }}" role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}" aria-modal="true">
+                  <quick-view id="Quickview-{{ section.id }}-{{ product.id }}" class="quick-view x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none" data-product-url="{{ product.url }}" role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}" aria-modal="true">
                     <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Quickview-{{ section.id }}-{{ product.id }}" aria-expanded="false"></overlay-element>
                     <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
                       <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
@@ -115,14 +139,14 @@
                   <a class="hotspot flex items-center justify-center absolute z-1 cursor-pointer"{% if product != blank %} href="{{ product.url }}" aria-label="{{ product.title | escape }}"{% else %} role="link" aria-disabled="true"{% endif %} id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}>
                     <div class="hotspot__content hidden md:flex gap-2 items-center absolute pointer-events-none{% if block.settings.horizontal < 15 %} with-left{% elsif block.settings.horizontal > 85 %} with-right{% endif %}{% if block.settings.vertical > 70 %} with-bottom{% endif %}">
                       {%- if product.featured_media -%}
-                        <div class="hidden lg:block media media--square relative overflow-hidden flex-auto">
+                        <div class="hidden lg:block media media--{{ settings.product_image_ratio }}{% unless settings.product_image_fill %} media--contain{% endunless %} relative overflow-hidden flex-auto">
                           {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image' -}}
                         </div>
                       {%- endif -%}
                       <div class="rte text-sm leading-none grid gap-2">
                         <p class="heading lg:text-base lg:font-medium leading-tight">{{ product.title }}</p>
 
-                        {%- render 'product-price', product: product -%}
+                        {%- render 'product-price', product: product, placeholder: placeholder -%}
                       </div>
                       {%- render 'icon', icon: 'caret', class: 'absolute' -%}
                     </div>
@@ -133,7 +157,7 @@
               {%- endif -%}
 
             {%- when 'content'-%}
-              <a class="hotspot with-content flex items-center justify-center absolute cursor-pointer"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true" aria-controls="Hotspot-{{ block.id }}" aria-expanded="false"{% endif %} aria-label="{{ block.settings.heading | escape }}" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}>
+              <a class="hotspot with-content flex items-center justify-center absolute cursor-pointer"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true" aria-controls="Hotspot-{{ section.id }}-{{ block.id }}" aria-expanded="false"{% endif %} aria-label="{{ block.settings.heading | escape }}" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}>
                 {% if block.settings.heading != blank or block.settings.text != blank %}
                   <div class="hotspot__content hidden md:flex gap-2 items-center absolute z-1 pointer-events-none{% if block.settings.horizontal < 15 %} with-left{% elsif block.settings.horizontal > 85 %} with-right{% endif %}{% if block.settings.vertical > 70 %} with-bottom{% endif %}">
                     <div class="rte text-sm leading-tight grid gap-2 md:gap-3">
@@ -157,17 +181,17 @@
                 {% endif %}
               </a>
               {% if block.settings.link == blank %}
-                <x-modal id="Hotspot-{{ block.id }}" class="x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+                <x-modal id="Hotspot-{{ section.id }}-{{ block.id }}" class="x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
                   role="dialog"
                   aria-modal="true"
                   aria-label="{{ block.settings.heading | escape }}"
                   hidden
                 >
-                  <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Hotspot-{{ block.id }}" aria-expanded="false"></overlay-element>
+                  <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="Hotspot-{{ section.id }}-{{ block.id }}" aria-expanded="false"></overlay-element>
                   <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
                     <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
                       <span class="drawer__title heading title-md">{{ block.settings.heading | escape }}</span>
-                      <button class="button button--secondary button--close drawer__close hidden sm:flex items-center justify-center" type="button" is="hover-button" aria-controls="Hotspot-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+                      <button class="button button--secondary button--close drawer__close hidden sm:flex items-center justify-center" type="button" is="hover-button" aria-controls="Hotspot-{{ section.id }}-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
                         <span class="btn-fill" data-fill></span>
                         <span class="btn-text">
                           {%- render 'icon', icon: 'close', size: 'sm' -%}
@@ -371,6 +395,12 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
     },
     {
       "type": "checkbox",

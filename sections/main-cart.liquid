@@ -59,7 +59,7 @@
           assign items_in_cart = cart.item_count | minus: gift_wraps_in_cart
         endif
       -%}
-      <main-cart id="MainCart-{{ section.id }}" class="cart__content flex flex-col lg:flex-row">
+      <main-cart id="MainCart-{{ section.id }}" class="cart__content flex flex-col lg:flex-row" data-section-id="{{ section.id }}">
         <div class="grow flex flex-col gap-8 md:gap-12">
           <form class="cart__form" action="{{ routes.cart_url }}" method="POST" id="cart">
             <cart-items class="cart__items block" data-section-id="{{ section.id }}">
@@ -91,7 +91,7 @@
                     {%- capture cart_item -%}
                       <tr class="cart-item" id="CartItem-{{ item.key }}">
                         <td>
-                          <div class="flex items-center gap-4d5 md:gap-10">
+                          <div class="flex items-start md:items-center gap-4d5 md:gap-10">
                             {%- if item.image -%}
                               <a class="cart-item__media media relative overflow-hidden flex-auto" href="{{ item.url }}" tabindex="-1">
                                 {{- item.image | image_url: width: item.image.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image' -}}
@@ -109,14 +109,14 @@
                       
                                 {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != null -%}
                                   <dl class="grid gap-1d5">
-                                    {%- if item.product.has_only_default_variant == false -%}
+                                    {%- unless item.product.has_only_default_variant -%}
                                       {%- for option in item.options_with_values -%}
                                         <div class="flex gap-1 text-xs text-opacity leading-tight">
                                           <dt class="sr-only">{{ option.name }}:</dt>
                                           <dd>{{ option.value }}</dd>
                                         </div>
                                       {%- endfor -%}
-                                    {%- endif -%}
+                                    {%- endunless -%}
                       
                                     {%- for property in item.properties -%}
                                       {%- assign property_first_char = property.first | slice: 0 -%}
@@ -204,64 +204,64 @@
                           </div>
                         </td>
 
-                        {%- liquid
-                          assign has_qty_rules = false
-                          if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
-                            assign has_qty_rules = true
-                          endif
-    
-                          assign has_vol_pricing = false
-                          if item.variant.quantity_price_breaks.size > 0
-                            assign has_vol_pricing = true
-                          endif
-                        -%}
-                        {%- if has_qty_rules or has_vol_pricing -%}
-                          {%- capture qty_rules_vol_pricing -%}
-                            {%- if has_qty_rules -%}
-                              <div class="quantity__rules text-sm font-medium leading-tight">
-                                {%- if item.variant.quantity_rule.increment > 1 -%}
-                                  <span class="divider">
-                                    {{- 'products.quantity.multiples_of' | t: quantity: item.variant.quantity_rule.increment -}}
-                                  </span>
-                                {%- endif -%}
-                                {%- if item.variant.quantity_rule.min > 1 -%}
-                                  <span class="divider">
-                                    {{- 'products.quantity.min_of' | t: quantity: item.variant.quantity_rule.min -}}
-                                  </span>
-                                {%- endif -%}
-                                {%- if item.variant.quantity_rule.max != null -%}
-                                  <span class="divider">
-                                    {{- 'products.quantity.max_of' | t: quantity: item.variant.quantity_rule.max -}}
-                                  </span>
-                                {%- endif -%}
-                              </div>
-                            {%- endif -%}
-                            {%- if has_vol_pricing -%}
-                              {{ 'volume-pricing.css' | asset_url | stylesheet_tag }}
-                              <volume-pricing class="volume-pricing grid gap-6">
-                                <span class="caption-large font-medium">{{ 'products.volume_pricing.title' | t }}</span>
-                                <ul class="list-unstyled">
-                                  <li class="text-sm flex gap-2d5 justify-between">
-                                    <span class="font-medium">{{ item.variant.quantity_rule.min }}+</span>
-                                    {%- assign price = item.variant.price | money_with_currency -%}
-                                    <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
-                                  </li>
-                                  {%- for price_break in item.variant.quantity_price_breaks -%}
+                        <td class="cart-item__quantity text-sm text-right md:text-left">
+                          {%- liquid
+                            assign has_qty_rules = false
+                            if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
+                              assign has_qty_rules = true
+                            endif
+      
+                            assign has_vol_pricing = false
+                            if item.variant.quantity_price_breaks.size > 0
+                              assign has_vol_pricing = true
+                            endif
+                          -%}
+                          {%- if has_qty_rules or has_vol_pricing -%}
+                            {%- capture qty_rules_vol_pricing -%}
+                              {%- if has_qty_rules -%}
+                                <div class="quantity__rules text-sm font-medium leading-tight">
+                                  {%- if item.variant.quantity_rule.increment > 1 -%}
+                                    <span class="divider">
+                                      {{- 'products.quantity.multiples_of' | t: quantity: item.variant.quantity_rule.increment -}}
+                                    </span>
+                                  {%- endif -%}
+                                  {%- if item.variant.quantity_rule.min > 1 -%}
+                                    <span class="divider">
+                                      {{- 'products.quantity.min_of' | t: quantity: item.variant.quantity_rule.min -}}
+                                    </span>
+                                  {%- endif -%}
+                                  {%- if item.variant.quantity_rule.max != null -%}
+                                    <span class="divider">
+                                      {{- 'products.quantity.max_of' | t: quantity: item.variant.quantity_rule.max -}}
+                                    </span>
+                                  {%- endif -%}
+                                </div>
+                              {%- endif -%}
+                              {%- if has_vol_pricing -%}
+                                {{ 'volume-pricing.css' | asset_url | stylesheet_tag }}
+                                <volume-pricing class="volume-pricing grid gap-6">
+                                  <span class="caption-large font-medium">{{ 'products.volume_pricing.title' | t }}</span>
+                                  <ul class="list-unstyled">
                                     <li class="text-sm flex gap-2d5 justify-between">
-                                      <span class="font-medium">
-                                        {{- price_break.minimum_quantity -}}
-                                        <span aria-hidden="true">+</span>
-                                      </span>
-                                      {%- assign price = price_break.price | money_with_currency -%}
+                                      <span class="font-medium">{{ item.variant.quantity_rule.min }}+</span>
+                                      {%- assign price = item.variant.price | money_with_currency -%}
                                       <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
                                     </li>
-                                  {%- endfor -%}
-                                </ul>
-                              </volume-pricing>
-                            {%- endif -%}
-                          {%- endcapture -%}
-                        {%- endif -%}
-                        <td class="cart-item__quantity text-sm text-right md:text-left">
+                                    {%- for price_break in item.variant.quantity_price_breaks -%}
+                                      <li class="text-sm flex gap-2d5 justify-between">
+                                        <span class="font-medium">
+                                          {{- price_break.minimum_quantity -}}
+                                          <span aria-hidden="true">+</span>
+                                        </span>
+                                        {%- assign price = price_break.price | money_with_currency -%}
+                                        <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
+                                      </li>
+                                    {%- endfor -%}
+                                  </ul>
+                                </volume-pricing>
+                              {%- endif -%}
+                            {%- endcapture -%}
+                          {%- endif -%}
                           <div class="cart-quantity__info grid md:flex items-center justify-end md:justify-start gap-3 md:gap-4">
                             {%- if has_qty_rules or has_vol_pricing -%}
                               <button type="button" class="hotspot hidden md:flex items-center justify-center relative cursor-pointer">
@@ -288,7 +288,7 @@
                                       <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
                                         <span class="drawer__title heading title-md grid gap-4">
                                           {{ item.product.title | escape }}
-                                          {%- if item.product.has_only_default_variant == false -%}
+                                          {%- unless item.product.has_only_default_variant -%}
                                             <dl class="grid gap-1d5">
                                               {%- for option in item.options_with_values -%}
                                                 <div class="flex gap-1 text-xs text-opacity leading-tight">
@@ -297,7 +297,7 @@
                                                 </div>
                                               {%- endfor -%}
                                             </dl>
-                                          {%- endif -%}
+                                          {%- endunless -%}
                                         </span>
                                         <button class="button button--secondary button--close drawer__close hidden sm:flex items-center justify-center" type="button" is="hover-button" aria-controls="VolumePricing-{{ section.id }}-{{ item.key }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
                                           <span class="btn-fill" data-fill></span>
@@ -572,9 +572,9 @@
                         </span>
                       </button>
           
-                      {% if additional_checkout_buttons %}
-                        <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
-                      {% endif %}
+                      {%- if block.settings.show_accelerated_buttons and additional_checkout_buttons -%}
+                        <div class="additional-checkout-buttons additional-checkout-buttons--vertical">{{ content_for_additional_checkout_buttons }}</div>
+                      {%- endif -%}
                     </div>
 
                   {%- when 'free_shipping' -%}
@@ -635,7 +635,7 @@
                           {%- if options.size > 0 -%}
                             <ul class="grid gap-2 leading-none" role="list">
                               {%- for option in options -%}
-                                {%- assign option2 = option | strip | escape -%}
+                                {%- assign option_2 = option | strip | escape -%}
                                 <li>
                                   <label for="CartFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}" class="inline-flex items-center gap-3">
                                     <input
@@ -643,11 +643,11 @@
                                       id="CartFormInput-{{ section.id }}-{{ block.id }}-{{ forloop.index0 }}"
                                       name="attributes[{{ custom_name }}]"
                                       form="cart"
-                                      value="{{ option2 }}"
+                                      value="{{ option_2 }}"
                                       {%- if block.settings.required %} required{% endif -%}
-                                      {%- if option2 == custom_value %} checked{% endif -%}
+                                      {%- if option_2 == custom_value %} checked{% endif -%}
                                     />
-                                    {{- option2 -}}
+                                    {{- option_2 -}}
                                   </label>
                                 </li>
                               {%- endfor -%}
@@ -694,8 +694,8 @@
                               >
                                 <option value="" disabled selected></option>
                                 {%- for option in options -%}
-                                  {%- assign option2 = option | strip | escape -%}
-                                  <option value="{{ option2 }}"{% if option2 == custom_value %} selected{% endif %}>{{ option2 }}</option>
+                                  {%- assign option_2 = option | strip | escape -%}
+                                  <option value="{{ option_2 }}"{% if option_2 == custom_value %} selected{% endif %}>{{ option_2 }}</option>
                                 {%- endfor -%}
                               </select>
                               {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
@@ -913,7 +913,16 @@
     {
       "type": "buttons",
       "name": "t:sections.main-cart.blocks.buttons.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_accelerated_buttons",
+          "label": "t:sections.main-cart.blocks.buttons.settings.show_accelerated_buttons.label",
+          "info": "t:sections.main-cart.blocks.buttons.settings.show_accelerated_buttons.info",
+          "default": true
+        }
+      ]
     },
     {
       "type": "free_shipping",
