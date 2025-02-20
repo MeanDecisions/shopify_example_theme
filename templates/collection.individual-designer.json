@@ -128,22 +128,120 @@
         "parallax_direction": "vertical"
       }
     },
+    "rich_text_XCAHVN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WdVkQL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.designer_bio | metafield_tag }}</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_WdVkQL"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_Gj6DUz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_TQtR8b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed By</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_Q8tzVi": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.designer_name.value }}",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_TQtR8b",
+        "heading_Q8tzVi"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": true,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
-        "spacing": {
-          "type": "spacing",
-          "settings": {
-            "height": 12,
-            "height_mobile": 0
-          }
-        },
-        "breadcrumb": {
-          "type": "breadcrumb",
-          "settings": {
-            "show_collections_link": true
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -162,11 +260,10 @@
         }
       },
       "block_order": [
-        "spacing",
-        "breadcrumb",
         "title",
         "description_48FUR8"
       ],
+      "disabled": true,
       "custom_css": [
         "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
       ],
@@ -695,6 +792,8 @@
   "order": [
     "image_with_text_RzfNML",
     "image_with_text_VcGAit",
+    "rich_text_XCAHVN",
+    "rich_text_Gj6DUz",
     "main-collection-banner",
     "images_with_text_overlay_i3wXgU",
     "rich_text_HMy9EW",
