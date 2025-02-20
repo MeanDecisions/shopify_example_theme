@@ -493,7 +493,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "sticky-filters.is-sticky.scrolling-up {padding-top: 50px;}"
+      "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
     ]
   }
 }
