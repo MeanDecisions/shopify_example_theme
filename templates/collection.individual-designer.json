@@ -134,7 +134,7 @@
         "text_WdVkQL": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.designer_bio | metafield_tag }}</p>",
+            "text": "<p>{{ collection.metafields.custom.designer_bio_cont | metafield_tag }}</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
