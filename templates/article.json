@@ -82,10 +82,10 @@
       "type": "blog-posts",
       "settings": {
         "blog": "news",
-        "post_limit": 3,
+        "post_limit": 6,
         "columns": 3,
         "carousel_on_desktop": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "image_ratio": "landscape",
