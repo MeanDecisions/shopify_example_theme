@@ -14,6 +14,7 @@
       "blocks": {
         "spacing": {
           "type": "spacing",
+          "disabled": true,
           "settings": {
             "height": 68,
             "height_mobile": 0
@@ -60,6 +61,7 @@
       "blocks": {
         "next_previous_posts": {
           "type": "next_previous_posts",
+          "disabled": true,
           "settings": {
             "show_date": false,
             "show_comments": false,
