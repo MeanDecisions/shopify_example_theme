@@ -47,7 +47,7 @@
     "type_header_spacing": -30,
     "type_header_capitalize": false,
     "type_body_font": "helvetica_n4",
-    "type_body_size": 13,
+    "type_body_size": 14,
     "type_body_line_height": 1.2,
     "type_body_spacing": 0,
     "type_navigation_font": "body",
@@ -493,7 +493,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "sticky-filters.is-sticky.scrolling-up {padding-top:80px;}"
+      "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
     ]
   }
 }
