@@ -9,6 +9,65 @@
  */
 {
   "sections": {
+    "image_with_text_RzfNML": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_7pE9Wa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Designers</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 128,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "heading_KKHXqD": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.designer_name.value }}",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_7pE9Wa",
+        "heading_KKHXqD"
+      ],
+      "settings": {
+        "image": "{{ collection.metafields.custom.designer_image.value }}",
+        "image_height": "400px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -574,6 +633,7 @@
     }
   },
   "order": [
+    "image_with_text_RzfNML",
     "main-collection-banner",
     "images_with_text_overlay_i3wXgU",
     "rich_text_HMy9EW",
