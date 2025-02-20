@@ -68,6 +68,66 @@
         "parallax_direction": "vertical"
       }
     },
+    "image_with_text_VcGAit": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_3eXP4J": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.designer_bio | metafield_tag }}</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "button_ijPJDL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore All {{ collection.metafields.custom.designer_name.value }} Furniture",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "text_3eXP4J",
+        "button_ijPJDL"
+      ],
+      "settings": {
+        "image": "{{ collection.metafields.custom.secondary_designer_image.value }}",
+        "image_height": "400px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -634,6 +694,7 @@
   },
   "order": [
     "image_with_text_RzfNML",
+    "image_with_text_VcGAit",
     "main-collection-banner",
     "images_with_text_overlay_i3wXgU",
     "rich_text_HMy9EW",
