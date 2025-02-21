@@ -21,9 +21,9 @@
   id="Inventory-{{ section_id }}-{{ product_id }}"
   role="status"
   {{ block.shopify_attributes }}
->
+>   
   {%- if product_variant.inventory_management == 'shopify' -%}
-    {%- if variant_stock_available -%}
+    {%- if product_variant.inventory_quantity <= 0 and variant_stock_available -%}
       <div class="alert alert--error inline-flex items-center gap-3 pre-order-badge">
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'flex-auto' -%}
         <span class="text-sm font-medium leading-tight">
