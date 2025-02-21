@@ -56,7 +56,7 @@
           "type": "inventory",
           "settings": {
             "inventory_threshold": 0,
-            "show_inventory_transfer": true,
+            "show_inventory_transfer": false,
             "show_inventory_quantity": "low",
             "color_scheme": "accent-1"
           }
