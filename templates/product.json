@@ -667,7 +667,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "#000000",
-        "color_background": "#f9f9f4",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -676,7 +676,7 @@
         "color_button_gradient": "",
         "padding_top": 28,
         "padding_bottom": 28,
-        "divider": false,
+        "divider": true,
         "full_width": false,
         "rounded": false
       }
