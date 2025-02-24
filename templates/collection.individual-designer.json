@@ -88,8 +88,8 @@
         "button_ijPJDL": {
           "type": "button",
           "settings": {
-            "button_label": "Explore All {{ collection.metafields.custom.designer_name.value }} Furniture",
-            "button_link": "#main-collection",
+            "button_label": "Explore All {{ collection.metafields.collection.product_designer.value.name.value }} Furniture",
+            "button_link": "{{ collection.url }}",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,
