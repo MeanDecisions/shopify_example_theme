@@ -586,7 +586,7 @@
             "icon": "none",
             "icon_width": 24,
             "heading": "Dimensions",
-            "content": "<p>Add dimension description here.</p>"
+            "content": ""
           }
         },
         "collapsible_tab-1": {
