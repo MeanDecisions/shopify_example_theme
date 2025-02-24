@@ -102,7 +102,7 @@
         "button_ijPJDL"
       ],
       "settings": {
-        "image": "{{ collection.metafields.custom.secondary_designer_image.value }}",
+        "image": "{{ collection.image }}",
         "image_height": "400px",
         "image_width": "medium",
         "layout": "text_first",
