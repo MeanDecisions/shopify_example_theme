@@ -35,11 +35,23 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "button_AyheyV": {
+          "type": "button",
+          "settings": {
+            "button_label": "See Products",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
         "text_7pE9Wa",
-        "heading_KKHXqD"
+        "heading_KKHXqD",
+        "button_AyheyV"
       ],
       "settings": {
         "image": "{{ collection.metafields.collection.product_designer.value.image_desktop.value }}",
