@@ -17,7 +17,7 @@
           "settings": {
             "text": "<p>Our Designers</p>",
             "text_size": "subtext-sm",
-            "text_max_size": 128,
+            "text_max_size": 54,
             "text_font": "body",
             "secondary_color": true,
             "highlighted_text": "none",
