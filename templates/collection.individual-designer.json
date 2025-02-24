@@ -236,9 +236,9 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 60,
+        "padding_top": 32,
         "padding_bottom": 0,
-        "divider": true,
+        "divider": false,
         "narrow": true,
         "rounded": false
       }
