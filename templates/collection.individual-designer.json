@@ -186,9 +186,10 @@
       "blocks": {
         "text_TQtR8b": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p>Designed By</p>",
-            "text_size": "subtext-md",
+            "text": "<p>Designed By {{ collection.metafields.collection.product_designer.value.name.value }}</p>",
+            "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": true,
@@ -199,8 +200,8 @@
         "heading_Q8tzVi": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.metafields.custom.designer_name.value }}",
-            "heading_size": "title-lg tracking-heading",
+            "heading": "{{ collection.metafields.collection.product_designer.value.name.value }} Products",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -236,7 +237,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 60,
-        "padding_bottom": 12,
+        "padding_bottom": 0,
         "divider": true,
         "narrow": true,
         "rounded": false
