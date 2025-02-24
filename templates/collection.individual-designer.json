@@ -41,12 +41,13 @@
         "heading_KKHXqD"
       ],
       "settings": {
-        "image": "{{ collection.metafields.custom.designer_image.value }}",
+        "image": "{{ collection.metafields.collection.product_designer.value.image_desktop.value }}",
         "image_height": "400px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "image_mobile": "{{ collection.metafields.collection.product_designer.value.image_mobile.value }}",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
