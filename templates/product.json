@@ -604,7 +604,7 @@
             "icon": "none",
             "icon_width": 24,
             "heading": "Care Instructions",
-            "content": "<p>{{ product.metafields.accordion.assembly_care | metafield_tag }}</p>",
+            "content": "{{ product.metafields.product.assembly_and_care | metafield_tag }}",
             "metafields": ""
           }
         },
