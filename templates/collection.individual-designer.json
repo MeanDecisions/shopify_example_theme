@@ -243,56 +243,6 @@
         "rounded": false
       }
     },
-    "main-collection-banner": {
-      "type": "main-collection-banner",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "title_size": "title-lg tracking-heading"
-          }
-        },
-        "description_48FUR8": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "description_48FUR8"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
-      ],
-      "settings": {
-        "transparent_header": false,
-        "show_image": false,
-        "image": "{{ collection.metafields.custom.designer_image.value }}",
-        "image_height": "400px",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_overlay": "#000000",
-        "overlay_opacity": 40,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -345,7 +295,7 @@
         "filter_color_swatches": true,
         "enable_sorting": true,
         "padding_top": 0,
-        "padding_bottom": 60,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -444,6 +394,56 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "title-lg tracking-heading"
+          }
+        },
+        "description_48FUR8": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description_48FUR8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": false,
+        "image": "{{ collection.metafields.custom.designer_image.value }}",
+        "image_height": "400px",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
     }
   },
   "order": [
@@ -451,8 +451,8 @@
     "image_with_text_VcGAit",
     "rich_text_XCAHVN",
     "rich_text_Gj6DUz",
-    "main-collection-banner",
     "main-collection",
-    "collection_list_WD48RJ"
+    "collection_list_WD48RJ",
+    "main-collection-banner"
   ]
 }
