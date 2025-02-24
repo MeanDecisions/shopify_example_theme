@@ -348,7 +348,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "{{ product.metafields.custom.product_designer.value.name.value }}",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -376,11 +376,12 @@
       ],
       "settings": {
         "image": "{{ product.metafields.custom.product_designer.value.image_desktop.value }}",
-        "image_height": "600px",
+        "image_height": "500px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
+        "image_mobile": "{{ product.metafields.custom.product_designer.value.image_mobile.value }}",
         "image_height_mobile": "400px",
         "text_alignment_mobile": "left",
         "color_text": "#171717",
@@ -393,8 +394,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "divider": false,
         "full_width": false,
         "rounded": false,
