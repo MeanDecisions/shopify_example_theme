@@ -70,6 +70,54 @@
         "parallax_direction": "vertical"
       }
     },
+    "image_with_text_VcGAit": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_3eXP4J": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.collection.product_designer.value.description | metafield_tag }}",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        }
+      },
+      "block_order": [
+        "text_3eXP4J"
+      ],
+      "settings": {
+        "image": "{{ collection.image }}",
+        "image_height": "400px",
+        "image_width": "small",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "rich_text_XCAHVN": {
       "type": "rich-text",
       "blocks": {
@@ -288,54 +336,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "image_with_text_VcGAit": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_3eXP4J": {
-          "type": "text",
-          "settings": {
-            "text": "{{ collection.metafields.collection.product_designer.value.description | metafield_tag }}",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "enable_read_more": false
-          }
-        }
-      },
-      "block_order": [
-        "text_3eXP4J"
-      ],
-      "settings": {
-        "image": "{{ collection.image }}",
-        "image_height": "400px",
-        "image_width": "medium",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
       }
     },
     "collection_list_WD48RJ": {
