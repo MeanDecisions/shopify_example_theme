@@ -390,7 +390,7 @@
         "color_button_gradient": "",
         "padding_top": 40,
         "padding_bottom": 40,
-        "divider": false,
+        "divider": true,
         "full_width": false,
         "rounded": false
       }
