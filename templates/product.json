@@ -205,77 +205,6 @@
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
       }
     },
-    "video-hero": {
-      "type": "video-hero",
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Video slide 1",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "heading": "Video slide 2",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "slide-3": {
-          "type": "slide",
-          "settings": {
-            "heading": "Video slide 3",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "slide-4": {
-          "type": "slide",
-          "settings": {
-            "heading": "Video slide 4",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2",
-        "slide-3",
-        "slide-4"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "content_width": "medium",
-        "video_url_mobile": "",
-        "color_text": "#ffffff",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 40,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -419,7 +348,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.product_artist.value.title.value }}",
+            "heading": "",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -429,7 +358,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.product_artist.value.description | metafield_tag }}</p>",
+            "text": "{{ product.metafields.custom.product_designer.value.description | metafield_tag }}",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -446,13 +375,12 @@
         "text"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.product_artist.value.image_desktop.value }}",
+        "image": "{{ product.metafields.custom.product_designer.value.image_desktop.value }}",
         "image_height": "600px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
-        "image_mobile": "{{ product.metafields.custom.product_artist.value.image_mobile.value }}",
         "image_height_mobile": "400px",
         "text_alignment_mobile": "left",
         "color_text": "#171717",
@@ -472,41 +400,6 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
-      }
-    },
-    "scrolling-text": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<em><strong>Free shipping and returns</strong></em>",
-            "text_size": 160,
-            "text_font": "body",
-            "highlighted_text": "stencil",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "divider": false,
-        "rounded": false
       }
     },
     "image-with-text-2": {
@@ -844,19 +737,125 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>Free shipping and returns</strong></em>",
+            "text_size": 160,
+            "text_font": "body",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "video-hero": {
+      "type": "video-hero",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 1",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 2",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 3",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-4": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 4",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2",
+        "slide-3",
+        "slide-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "content_width": "medium",
+        "video_url_mobile": "",
+        "color_text": "#ffffff",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
     }
   },
   "order": [
     "main-product",
     "help-drawer",
-    "video-hero",
     "collage",
     "image-with-text-1",
-    "scrolling-text",
     "image-with-text-2",
     "product-details",
     "faq",
     "product-recommendations",
-    "recently-viewed"
+    "recently-viewed",
+    "scrolling-text",
+    "video-hero"
   ]
 }
