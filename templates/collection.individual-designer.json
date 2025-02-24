@@ -28,8 +28,8 @@
         "heading_KKHXqD": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.metafields.custom.designer_name.value }}",
-            "heading_size": "title-xl tracking-heading",
+            "heading": "{{ collection.metafields.collection.product_designer.value.name.value }}",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
