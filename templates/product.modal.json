@@ -56,8 +56,7 @@
         },
         "pickup_availability": {
           "type": "pickup_availability",
-          "settings": {
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -79,8 +78,7 @@
         },
         "read_more": {
           "type": "read_more",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

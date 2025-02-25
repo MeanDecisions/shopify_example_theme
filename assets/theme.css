@@ -4282,7 +4282,7 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
 .color-swatch::after {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-shadow-colored: 0 0 0 4px #d9d9d9;
+  --tw-shadow-colored: 0 0 0 5px #ababab;
   --tw-shadow-color: rgb(var(--color-foreground));
   --tw-shadow: var(--tw-shadow-colored);
   border-radius: inherit;
@@ -4913,6 +4913,12 @@ ol {
 
 .footer-column {
   width: 33%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-column {
+    width: 90%;
+  }
 }
 
 .section--divider::after {
@@ -8052,7 +8058,7 @@ details.active .drawer__promotions .mega-menu__item,
 }
 
 .footer__contact {
-  font-size: clamp(var(--text-xl), 1.578vw, var(--text-3xl));
+  font-size: 16px;
 }
 
 .footer__right {
@@ -9146,7 +9152,7 @@ html.touch .logo-list--right .logo-bar.animate {
 
 @media screen and (min-width: 1280px) {
   .collection__content {
-    margin-block-start: clamp(var(--sp-4), 2.947vw, var(--sp-14));
+    /* margin-block-start: clamp(var(--sp-4), 2.947vw, var(--sp-14)); */
   }
 
   .collection__content #FacetFiltersContainer {
@@ -11443,7 +11449,7 @@ noscript .product-form__input {
 }
 
 .variant-picker .color-swatch {
-  --swatch-size: 1.5rem;
+  --swatch-size: 1.6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -11609,7 +11615,7 @@ noscript .product-form__input {
 }
 
 .product-form-wrapper {
-  margin-block-start: var(--sp-8);
+  margin-block-start: var(--sp-6);
 }
 
 .quantity {
