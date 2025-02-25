@@ -1156,9 +1156,9 @@
         "collection_xqh6pM": {
           "type": "collection",
           "settings": {
-            "collection": "gareth-neal-kitchenware",
-            "image": "shopify://shop_images/1180_GarethNeal-0220-lowRes.jpg",
-            "title": "Gareth Neal",
+            "collection": "nazanin-kamali-furniture",
+            "image": "shopify://shop_images/nazanin-kamali-designer-profile.jpg",
+            "title": "Nazanin Kamali",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -1199,16 +1199,17 @@
         "collection_TYLeK7",
         "collection_U97zFn"
       ],
+      "custom_css": [],
       "settings": {
         "columns": 4,
         "carousel_on_desktop": false,
         "image_type": "collection",
         "image_ratio": "portrait",
         "show_products_count": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Our Designers",
+        "heading": "<a href=\"/pages/our-designers\" title=\"Our Designers\">Our Designers</a>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
