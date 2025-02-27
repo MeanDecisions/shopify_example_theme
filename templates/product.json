@@ -231,7 +231,7 @@
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.product_designer.value.description | metafield_tag }}",
-            "text_size": "subtext-md",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
