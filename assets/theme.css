@@ -5544,7 +5544,7 @@ ol {
   color: rgb(var(--color-foreground));
   background: var(--gradient-background);
   background-color: rgb(var(--color-background));
-  height: 30px;
+  height: 40px;
   font-size: var(--text-2sm);
   transition: height var(--animation-nav);
 }
