@@ -234,7 +234,7 @@
           "type": "spacing",
           "settings": {
             "height": 16,
-            "height_mobile": 12
+            "height_mobile": 4
           }
         },
         "buttons": {
