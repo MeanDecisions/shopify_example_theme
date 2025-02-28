@@ -32,7 +32,10 @@
           "celine-desk"
         ],
         "empty_cart_message": "<p>Not sure where to start?<br/>Try these collections:</p>",
-        "empty_cart_collections": [],
+        "empty_cart_collections": [
+          "all",
+          "bestsellers"
+        ],
         "recent_products_enabled": true,
         "recent_products_heading": "Recently viewed",
         "recent_products_limit": 5,
