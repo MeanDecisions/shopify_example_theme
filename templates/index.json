@@ -920,7 +920,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "enable_parallax": true
+        "enable_parallax": false
       }
     },
     "shop-the-look": {
