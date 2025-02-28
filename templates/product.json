@@ -109,6 +109,9 @@
         "complementary",
         "sticky_buy_button"
       ],
+      "custom_css": [
+        ".form__label {font-weight: 700;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "media_size": 66,
