@@ -772,6 +772,19 @@
             "title": "Armchairs"
           }
         },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "beds",
+            "products": [
+              "forum-2-seater-sofa",
+              "linn-3-seater-sofa",
+              "odyssey-2-seater-sofa",
+              "linn-2-seater-sofa"
+            ],
+            "title": "Sofas"
+          }
+        },
         "collection_FLc4Xd": {
           "type": "collection",
           "settings": {
@@ -786,19 +799,6 @@
             "collection": "charlotte-lancelot",
             "products": [],
             "title": "Textiles"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "beds",
-            "products": [
-              "forum-2-seater-sofa",
-              "linn-3-seater-sofa",
-              "odyssey-2-seater-sofa",
-              "linn-2-seater-sofa"
-            ],
-            "title": "Sofas"
           }
         },
         "collection_9xEYTR": {
@@ -820,9 +820,9 @@
       },
       "block_order": [
         "collection-1",
+        "collection-3",
         "collection_FLc4Xd",
         "collection-2",
-        "collection-3",
         "collection_9xEYTR",
         "collection_YxFT8p"
       ],
@@ -850,7 +850,7 @@
         "color_button_background": "#05273a",
         "color_button_gradient": "",
         "padding_top": 20,
-        "padding_bottom": 36,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": false,
         "rounded": false
