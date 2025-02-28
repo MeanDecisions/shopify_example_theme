@@ -39,7 +39,7 @@
         "button_AyheyV": {
           "type": "button",
           "settings": {
-            "button_label": "<a href=\"#product-details\" title=\"#product-details\">See Products</a>",
+            "button_label": "<a href=\"#main-collection\" title=\"#main-collection\">See Products</a>",
             "button_link": "",
             "button_style": "secondary",
             "button_size": "md",
