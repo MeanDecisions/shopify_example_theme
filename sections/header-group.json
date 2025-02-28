@@ -18,20 +18,8 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping and returns",
+            "text": "Free shipping on all UK orders",
             "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "icon": "email",
-            "text": "A question? Visit our contact page",
-            "link": "shopify://pages/contact-us",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -40,8 +28,7 @@
         }
       },
       "block_order": [
-        "announcement-1",
-        "announcement-2"
+        "announcement-1"
       ],
       "settings": {
         "show_social": false,
