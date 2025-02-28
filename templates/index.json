@@ -377,7 +377,7 @@
         "heading_zyLpxT": {
           "type": "heading",
           "settings": {
-            "heading": "Winter Living",
+            "heading": "Outdoor Furniture",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -387,7 +387,7 @@
         "text_Vr7a9E": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Get ready for summer with our outdoor furniture</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -399,12 +399,12 @@
         "button_BXHKRQ": {
           "type": "button",
           "settings": {
-            "button_label": "View Our Selection",
-            "button_link": "",
-            "button_style": "primary",
+            "button_label": "Explore",
+            "button_link": "shopify://collections/outdoor-furniture",
+            "button_style": "link",
             "button_size": "sm",
             "button_external": false,
-            "button_icon": false
+            "button_icon": true
           }
         }
       },
@@ -416,7 +416,7 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+        "image": "shopify://shop_images/rsz_eos_dining_set_rust_1.jpg",
         "image_height": "750px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
