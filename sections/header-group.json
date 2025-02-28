@@ -355,7 +355,7 @@
         "show_country_flag_desktop": false,
         "logo_position_mobile": "left",
         "show_social": false,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
         "color_text": "#1b1b1b",
