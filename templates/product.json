@@ -110,7 +110,7 @@
         "sticky_buy_button"
       ],
       "custom_css": [
-        ".form__label {font-weight: 700;}"
+        ".form__label {font-weight: 700; font-size: 15px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
