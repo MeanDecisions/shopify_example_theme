@@ -23,7 +23,7 @@
         "free_shipping_minimum_amount": "1000",
         "cart_recommendations_enabled": true,
         "cart_recommendations_heading": "You may also like",
-        "cart_recommendations_limit": 2,
+        "cart_recommendations_limit": 3,
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
         "cart_recommendations_products": [
