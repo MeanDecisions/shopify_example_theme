@@ -251,7 +251,7 @@
         "text"
       ],
       "settings": {
-        "image": "shopify://shop_images/robin-day-designer-portrait_3.jpg",
+        "image": "{{ product.metafields.custom.product_designer.value.image_desktop.value }}",
         "image_height": "500px",
         "image_width": "small",
         "layout": "image_first",
