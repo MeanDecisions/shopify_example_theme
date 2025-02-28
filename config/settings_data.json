@@ -101,7 +101,7 @@
     "product_color_swatch_type": "file",
     "product_save_amount": true,
     "product_save_type": "percent",
-    "product_disable_collection_portion": false,
+    "product_disable_collection_portion": true,
     "cart_type": "drawer",
     "cart_icon": "tote-bag",
     "enable_search": true,
