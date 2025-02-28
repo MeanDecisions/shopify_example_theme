@@ -31,7 +31,7 @@
         </span>
       
       </div>
-      <span class="pre-order-badge-text">Shipping: {{ variant_stock_available }}</span>
+      <span class="pre-order-badge-text">{{ variant_stock_available }}</span>
     {%- elsif product_variant.inventory_quantity > 0 -%}
       {%- if product_variant.inventory_quantity <= block.settings.inventory_threshold -%}
         <div class="grid gap-3 w-full">
