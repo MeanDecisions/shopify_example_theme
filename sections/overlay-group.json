@@ -27,7 +27,9 @@
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
         "cart_recommendations_products": [
-          "675-chair"
+          "675-chair",
+          "cross-extending-table",
+          "celine-desk"
         ],
         "empty_cart_message": "<p>Not sure where to start?<br/>Try these collections:</p>",
         "empty_cart_collections": [],
