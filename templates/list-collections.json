@@ -1,1 +1,159 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"display_type":"all","sort":"alphabetical","image_type":"collection","image_ratio":"square","overlay_content":true,"show_products_count":true,"columns":4,"columns_mobile":"1","heading":"Collections","heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","padding_top":72,"padding_bottom":120,"divider":false,"full_width":false,"rounded":false}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_V8Bkmq": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TBdmff": {
+          "type": "collection",
+          "settings": {
+            "collection": "eos-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Cg43VM": {
+          "type": "collection",
+          "settings": {
+            "collection": "tanso-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_V8Bkmq",
+        "collection_TBdmff",
+        "collection_Cg43VM"
+      ],
+      "settings": {
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "overlay_content": true,
+        "show_products_count": true,
+        "columns": 4,
+        "columns_mobile": "1",
+        "heading": "Collections",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collection_list_pUyjQE": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EKqEXb": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-room-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7VhKtd": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-tables",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Ht7jcn": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-chairs",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_EKqEXb",
+        "collection_7VhKtd",
+        "collection_Ht7jcn"
+      ],
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Dining",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_pUyjQE"
+  ]
+}
