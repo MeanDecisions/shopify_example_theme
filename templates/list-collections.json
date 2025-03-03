@@ -157,20 +157,20 @@
         "image_xUWCcd": {
           "type": "image",
           "settings": {
-            "column_size": 4,
-            "row_size": 2,
+            "column_size": 5,
+            "row_size": 4,
             "subheading": "",
             "heading": "Home Office",
             "link": "shopify://collections/home-office-furniture",
             "invert_subheading_heading": false,
             "image": "shopify://shop_images/slot-shelving-grey-office.jpg",
-            "content_position": "md:items-end md:justify-start",
+            "content_position": "md:items-start md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
             "text_alignment_mobile": "left",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
+            "color_text": "#fffffa",
             "color_highlight": "",
             "gradient_highlight": "",
             "color_overlay": "#171717",
@@ -185,7 +185,7 @@
         "image_nhTFnR": {
           "type": "image",
           "settings": {
-            "column_size": 6,
+            "column_size": 5,
             "row_size": 2,
             "subheading": "",
             "heading": "Home Office Desks",
@@ -240,6 +240,7 @@
         },
         "image_y8UF3g": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "column_size": 5,
             "row_size": 2,
