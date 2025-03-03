@@ -11,6 +11,12 @@
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id %}
 {%- endcomment -%}
 
+{% style %}
+.quantity { 
+  height: 3.75rem !important;
+}
+{% endstyle %}
+
 <div class="product-form-wrapper" {{ block.shopify_attributes }}>
   {%- liquid
     assign gift_card_recipient_feature_active = false
@@ -227,11 +233,11 @@
             </form>
           </div>
         {%- else -%}
-          <div class="add-to-cart-buttons" data-add-to-cart-buttons>
+          <div class="add-to-cart-buttons flex gap-4 w-full" data-add-to-cart-buttons>
             {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
               {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
               <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only">{{ 'products.quantity.label' | t }}</label>
-              <quantity-input class="quantity inline-flex flex-auto relative" data-section-id="{{ section_id }}" data-product-id="{{ product_id }}">
+              <quantity-input class="quantity inline-flex relative w-24" data-section-id="{{ section_id }}" data-product-id="{{ product_id }}">
                 <button type="button" name="minus" class="quantity__button" aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}">
                   {%- render 'icon', icon: 'chevron-left', size: 'sm', class: 'stroke-2 transform' -%}
                 </button>
