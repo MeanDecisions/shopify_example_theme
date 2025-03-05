@@ -468,6 +468,7 @@
         "text_RjtxHm",
         "button_J8QCYc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Frame_1.png",
         "image_height": "500px",
@@ -565,6 +566,7 @@
         "column_B3N7QQ",
         "column_QgcjDi"
       ],
+      "disabled": true,
       "settings": {
         "gap": "large",
         "columns": 3,
@@ -700,15 +702,15 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#def3f3",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 92,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "divider": false,
         "full_width": false,
         "rounded": false
