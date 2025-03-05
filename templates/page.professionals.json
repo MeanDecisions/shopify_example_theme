@@ -817,12 +817,13 @@
         "image_JNVmpE": {
           "type": "image",
           "settings": {
-            "column_size": 5,
-            "row_size": 2,
+            "column_size": 3,
+            "row_size": 1,
             "subheading": "",
             "heading": "",
-            "link": "",
+            "link": "shopify://pages/about-us",
             "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Rarify_logo-stockist.png",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
