@@ -294,40 +294,6 @@
         "rounded": false
       }
     },
-    "scrolling_text_VptqFz": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_w4fDJx": {
-          "type": "text",
-          "settings": {
-            "text": "Professionals",
-            "text_size": 12,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_w4fDJx"
-      ],
-      "settings": {
-        "direction": "left",
-        "speed": 26,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": false,
-        "color_text": "#fffffa",
-        "color_background": "#265874",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "image_with_text_overlay_wc9i7i": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -344,7 +310,7 @@
           "type": "heading",
           "settings": {
             "heading": "Professionals",
-            "heading_size": "title-xl tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h1",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -370,11 +336,12 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+        "image": "shopify://shop_images/COVET_DESK_WEST_STREET_CHAIR_021.jpg",
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/west-street-table-covet-desk-walnut_98aa2c08-825b-4fff-84c7-21a6c1784574.jpg",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
@@ -854,7 +821,6 @@
     "images-with-text",
     "empty_space_yNyFtC",
     "timeline_jM7XXf",
-    "scrolling_text_VptqFz",
     "image_with_text_overlay_wc9i7i",
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
