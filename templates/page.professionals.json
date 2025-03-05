@@ -599,118 +599,100 @@
         "rounded": false
       }
     },
-    "collection_list_tqRqFY": {
-      "type": "collection-list",
+    "multicolumn_xDgpRi": {
+      "type": "multicolumn",
       "blocks": {
-        "collection_fVaaxX": {
-          "type": "collection",
+        "column_EgefLK": {
+          "type": "column",
           "settings": {
-            "collection": "",
-            "image": "shopify://shop_images/PALA_CONSOLE_WALNUT_Hero.jpg",
-            "title": "Product Assets",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Putty.png",
+            "image_ratio": "square",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "collection_YqkHjD": {
-          "type": "collection",
+        "column_6wMLHe": {
+          "type": "column",
           "settings": {
-            "collection": "",
-            "title": "Designer Profiles",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "collection_Ymx6MQ": {
-          "type": "collection",
+        "column_b3LGhA": {
+          "type": "column",
           "settings": {
-            "collection": "",
-            "title": "Catalogues",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_VrRXhF": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "New Images",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_HztizU": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "Swatches",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_ra7nJx": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "description": "",
-            "overlay_content": false,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "collection_fVaaxX",
-        "collection_YqkHjD",
-        "collection_Ymx6MQ",
-        "collection_VrRXhF",
-        "collection_HztizU",
-        "collection_ra7nJx"
+        "column_EgefLK",
+        "column_6wMLHe",
+        "column_b3LGhA"
       ],
       "settings": {
-        "columns": 5,
-        "carousel_on_desktop": false,
-        "image_type": "collection",
-        "image_ratio": "square",
-        "show_products_count": true,
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "heading": "Toolbox",
+        "gap": "medium",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Multicolumn",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -800,6 +782,156 @@
         "color_background": "",
         "gradient_background": ""
       }
+    },
+    "collage_grid_xAp7bW": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_W6rgcG": {
+          "type": "image",
+          "settings": {
+            "column_size": 3,
+            "row_size": 1,
+            "subheading": "",
+            "heading": "<a href=\"/products/675-chair\" title=\"675 Chair\">Files</a>",
+            "link": "shopify://products/675-chair",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Terracotta.png",
+            "content_position": "md:items-start md:justify-end",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_JNVmpE": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_wFfXXz": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_W4Fq4t": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_W6rgcG",
+        "image_JNVmpE",
+        "image_wFfXXz",
+        "image_W4Fq4t"
+      ],
+      "settings": {
+        "row_height": 190,
+        "row_height_mobile": 120,
+        "heading": "Multimedia collage",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
     }
   },
   "order": [
@@ -812,8 +944,9 @@
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
-    "collection_list_tqRqFY",
+    "multicolumn_xDgpRi",
     "contact_form_TTpAP3",
-    "empty_space_P9PCiR"
+    "empty_space_P9PCiR",
+    "collage_grid_xAp7bW"
   ]
 }
