@@ -1085,8 +1085,8 @@
         "column_m7hPLL"
       ],
       "settings": {
-        "gap": "large",
-        "columns": 3,
+        "gap": "small",
+        "columns": 4,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "Selected Projects",
