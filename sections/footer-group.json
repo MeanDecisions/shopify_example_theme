@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "footer",
   "name": "t:sections.footer-group.name",
@@ -20,7 +11,7 @@
             "icon": "support",
             "custom_icon": "",
             "heading": "Customer service",
-            "text": "<p>Speak to a real person</p>",
+            "text": "<p>Speak to a real person<\/p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -31,7 +22,7 @@
             "icon": "box",
             "custom_icon": "",
             "heading": "Fast Free Shipping",
-            "text": "<p>Free shipping on all UK orders </p>",
+            "text": "<p>Free shipping on all UK orders <\/p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -41,8 +32,8 @@
           "settings": {
             "icon": "star",
             "custom_icon": "",
-            "heading": "Rated 4.8/5 Excellent",
-            "text": "<p>On Trustpilot</p>",
+            "heading": "Rated 4.8\/5 Excellent",
+            "text": "<p>On Trustpilot<\/p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -53,7 +44,7 @@
             "icon": "check_mark",
             "custom_icon": "",
             "heading": "Price Match Guarantee",
-            "text": "<p>Site-wide across all products</p>",
+            "text": "<p>Site-wide across all products<\/p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -102,7 +93,7 @@
         "logo_social": {
           "type": "logo_social",
           "settings": {
-            "logo": "shopify://shop_images/White_Logo.svg",
+            "logo": "shopify:\/\/shop_images\/White_Logo.svg",
             "logo_height": 50,
             "show_social": false,
             "enable_follow_on_shop": false

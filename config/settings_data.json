@@ -1,23 +1,14 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/Final_Logo.svg",
-    "white_logo": "shopify://shop_images/White_Logo.svg",
+    "logo": "shopify:\/\/shop_images\/Final_Logo.svg",
+    "white_logo": "shopify:\/\/shop_images\/White_Logo.svg",
     "logo_width": 90,
     "logo_mobile": "",
     "white_logo_mobile": "",
     "logo_width_mobile": 140,
     "favicon": "",
     "nav_single_custom_url_title": "Professionals",
-    "nav_single_custom_url": "shopify://pages/professionals-trade",
+    "nav_single_custom_url": "shopify:\/\/pages\/professionals-trade",
     "color_text": "#1b1b1b",
     "color_background": "#fffffa",
     "color_highlight": "#73a24b",
@@ -112,13 +103,13 @@
     "predictive_search_show_price": false,
     "typewriter_effect_enabled": false,
     "typewriter_starter_text": "",
-    "social_facebook_link": "https:/www.facebook.com/CaseFurnitureLtd/",
+    "social_facebook_link": "https:\/www.facebook.com\/CaseFurnitureLtd\/",
     "social_twitter_link": "",
-    "social_instagram_link": "https://www.instagram.com/Case_Furniture/",
-    "social_youtube_link": "https://www.youtube.com/channel/UCd20IIKsTzf0D6Z7Agl_YRQ",
+    "social_instagram_link": "https:\/\/www.instagram.com\/Case_Furniture\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCd20IIKsTzf0D6Z7Agl_YRQ",
     "social_tiktok_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https://uk.pinterest.com/casefurnitureuk/",
+    "social_pinterest_link": "https:\/\/uk.pinterest.com\/casefurnitureuk\/",
     "social_tumblr_link": "",
     "social_linkedin_link": "",
     "social_vimeo_link": "",

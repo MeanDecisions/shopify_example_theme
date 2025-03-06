@@ -1,23 +1,77 @@
 <div class="dimensions-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
   <div class="dimensions-info">
-    {% assign titles = product.metafields.dimensions.titles | split: ',' %}
-    {% assign values = product.metafields.dimension.values-1 | split: ',' %}
-    
-    {% for title in titles %}
-      <div class="dimension-row">
-        <span class="dimension-title">{{ title | strip }}:</span>
-        <span class="dimension-value">{{ values[forloop.index0] | strip }}</span>
+    <div class="product-dimensions">
+      <div class="dimensions-content">
+        <div class="dimensions-wrapper">
+          <table class="dimensions-table">
+            <thead>
+              <tr>
+                <th class="empty-heading"></th>
+                {% assign dimension_titles = product.metafields.dimensions.titles | split: ',' %}
+                {% for title in dimension_titles %}
+                  <th>{{ title | strip }}</th>
+                {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for i in (1..5) %}
+                {% assign option_name = 'name-' | append: i %}
+                {% if product.metafields.dimensions[option_name] != blank %}
+                  <tr>
+                    <td class="variant-name">{{ product.metafields.dimensions[option_name] }}</td>
+                    {% assign variable = 'values-' | append: i %}
+                    {% assign dimension_values = product.metafields.dimension[variable] | split: ',' %}
+                    {% for value in dimension_values %}
+                      <td>{{ value | strip }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
       </div>
-    {% endfor %}
+    </div>
   </div>
 
-  <div class="dimensions-image">
-    
-    <img src="{{ product.metafields.dimensions.product-dimensions-image }}" alt="Product Dimensions" width="80%" height="80%" class="product-dimensions-image">
-        
+  {% if product.metafields.dimensions.product-dimensions-image != blank %}
+    <div class="dimensions-image">
+      <img src="{{ product.metafields.dimensions.product-dimensions-image }}" alt="Product Dimensions" width="80%" height="80%" class="product-dimensions-image">
+    </div>
+  {% endif %}
+
+
   
-  </div>
+  
 </div>
+
+<style>
+  .dimensions-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+  }
+  
+  .dimensions-table th,
+  .dimensions-table td {
+    padding: 10px;
+    text-align: left;
+
+    background: transparent;
+  }
+  
+  .dimensions-table thead tr {
+
+  }
+  
+  .dimensions-table tbody tr:last-child td {
+  
+  }
+  
+  .variant-name {
+    font-weight: 500;
+  }
+</style>
 
 
 

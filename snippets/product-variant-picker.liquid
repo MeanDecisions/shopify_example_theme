@@ -65,7 +65,7 @@
 					<div class="form__label flex items-center justify-between gap-2 w-full">
 						{%- if block.settings.show_variant_labels -%}
 							<div class="flex gap-2">
-								{{- option.name -}}:
+								<span class="font-bold">{{- option.name -}}:</span>
 								<span class="font-medium" id="{{ section_id }}-{{ product_id }}-option{{ option.position }}">{{ option.selected_value }}</span>
 							</div>
 						{%- endif -%}
@@ -204,7 +204,7 @@
 											-%}
 											<label
 												for="{{ section_id }}-{{ product_id }}-{{ option.name | handle }}-{{ forloop.index0 }}"
-												class="color-swatch inline-block cursor-pointer relative"
+												class="color-swatch inline-block{% unless value.available %} pointer-events-none cursor-not-allowed opacity-50{% endunless %} cursor-pointer relative"
 												title="{{ value | escape }}"
 												style="--swatch-background: {{ swatch_fallback }};{% if swatch_fallback_override == false and swatch_image != blank %} background-image: url({{ swatch_image }});{% endif %}"
 											>
@@ -213,7 +213,7 @@
 										{%- else -%}
 											<label
 												for="{{ section_id }}-{{ product_id }}-{{ option.name | handle }}-{{ forloop.index0 }}"
-												class="label-swatch inline-block text-sm font-medium leading-none cursor-pointer relative"
+												class="label-swatch inline-block text-sm font-medium leading-none{% unless value.available %} pointer-events-none cursor-not-allowed opacity-50{% endunless %} cursor-pointer relative"
 												title="{{ value | escape }}"
 											>
 												{{- value -}}
@@ -298,7 +298,7 @@
 										-%}
 										<label
 											for="{{ section_id }}-{{ product_id }}-{{ option.name | handle }}-{{ forloop.index0 }}"
-												class="color-swatch inline-block cursor-pointer relative"
+												class="color-swatch inline-block{% unless value.available %} pointer-events-none cursor-not-allowed opacity-50{% endunless %} cursor-pointer relative"
 											title="{{ value | escape }}"
 											style="--swatch-background: {{ swatch_fallback }};{% if swatch_fallback_override == false and swatch_image != blank %} background-image: url({{ swatch_image }});{% endif %}"
 										>
@@ -307,7 +307,7 @@
 									{%- else -%}
                     <label
                       for="{{ section_id }}-{{ product_id }}-{{ option.name | handle }}-{{ forloop.index0 }}"
-                      class="label-swatch inline-block text-sm font-medium leading-none cursor-pointer relative"
+                      class="label-swatch inline-block text-sm font-medium leading-none{% unless value.available %} pointer-events-none cursor-not-allowed opacity-50{% endunless %} cursor-pointer relative"
                       title="{{ value | escape }}"
                     >
                       {{- value -}}
@@ -337,7 +337,7 @@
           <div class="form__label flex items-center justify-between gap-2 w-full">
             {%- if block.settings.show_variant_labels -%}
               <label class="flex gap-2" for="Option-{{ section_id }}-{{ product_id }}-{{ forloop.index0 }}">
-                {{- option.name -}}
+                <span class="font-semibold">{{- option.name -}}</span>
               </label>
             {%- endif -%}
             {%- if is_size -%}
