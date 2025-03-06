@@ -185,11 +185,13 @@
           "settings": {
             "position": 8,
             "column_size": "1",
-            "image": "shopify:\/\/shop_images\/20241015_CASE_Linn-Sofa-_-Accessories_Detail.jpg",
-            "heading": "Shop All Collections",
+
+            "image": "shopify://shop_images/20241015_CASE_Linn-Sofa-_-Accessories_Detail.jpg",
+            "heading": "Shop All Products",
             "content": "",
-            "button_label": "Learn More",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_label": "Explore",
+            "button_link": "shopify://collections/all",
+
             "button_style": "secondary",
             "button_external": false,
             "button_icon": false,
@@ -552,7 +554,7 @@
         "padding_bottom": 80,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     }
   },

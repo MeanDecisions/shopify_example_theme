@@ -368,7 +368,7 @@
         "heading_zyLpxT": {
           "type": "heading",
           "settings": {
-            "heading": "Winter Living",
+            "heading": "Outdoor Furniture",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -378,7 +378,9 @@
         "text_Vr7a9E": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+
+            "text": "<p>Get ready for summer with our outdoor furniture</p>",
+
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -390,12 +392,12 @@
         "button_BXHKRQ": {
           "type": "button",
           "settings": {
-            "button_label": "View Our Selection",
-            "button_link": "",
-            "button_style": "primary",
+            "button_label": "Explore",
+            "button_link": "shopify://collections/outdoor-furniture",
+            "button_style": "link",
             "button_size": "sm",
             "button_external": false,
-            "button_icon": false
+            "button_icon": true
           }
         }
       },
@@ -407,7 +409,9 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+
+        "image": "shopify://shop_images/rsz_eos_dining_set_rust_1.jpg",
+
         "image_height": "750px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -763,6 +767,19 @@
             "title": "Armchairs"
           }
         },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "beds",
+            "products": [
+              "forum-2-seater-sofa",
+              "linn-3-seater-sofa",
+              "odyssey-2-seater-sofa",
+              "linn-2-seater-sofa"
+            ],
+            "title": "Sofas"
+          }
+        },
         "collection_FLc4Xd": {
           "type": "collection",
           "settings": {
@@ -777,19 +794,6 @@
             "collection": "charlotte-lancelot",
             "products": [],
             "title": "Textiles"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "beds",
-            "products": [
-              "forum-2-seater-sofa",
-              "linn-3-seater-sofa",
-              "odyssey-2-seater-sofa",
-              "linn-2-seater-sofa"
-            ],
-            "title": "Sofas"
           }
         },
         "collection_9xEYTR": {
@@ -811,9 +815,9 @@
       },
       "block_order": [
         "collection-1",
+        "collection-3",
         "collection_FLc4Xd",
         "collection-2",
-        "collection-3",
         "collection_9xEYTR",
         "collection_YxFT8p"
       ],
@@ -840,8 +844,8 @@
         "color_button_text": "",
         "color_button_background": "#05273a",
         "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -911,7 +915,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "enable_parallax": true
+        "enable_parallax": false
       }
     },
     "shop-the-look": {

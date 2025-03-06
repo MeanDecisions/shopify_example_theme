@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-product": {
@@ -14,6 +23,7 @@
           "type": "title",
           "settings": {
             "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
             "show_price": true,
             "show_rating": true
           }
@@ -41,8 +51,9 @@
         "inventory": {
           "type": "inventory",
           "settings": {
-            "inventory_threshold": 15,
+            "inventory_threshold": 0,
             "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
             "color_scheme": "accent-1"
           }
         },
@@ -51,7 +62,10 @@
           "settings": {
             "show_quantity_selector": true,
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
           }
         },
         "pickup_availability": {
@@ -95,7 +109,8 @@
       ],
       "settings": {
         "image_zoom": "lightbox",
-        "hide_variants": false,
+        "image_fill": false,
+        "hide_variants": true,
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width"

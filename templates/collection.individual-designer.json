@@ -31,7 +31,7 @@
           "type": "button",
           "settings": {
             "button_label": "See Products",
-            "button_link": "",
+            "button_link": "#main-collection",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,

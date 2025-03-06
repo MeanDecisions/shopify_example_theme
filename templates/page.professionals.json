@@ -285,40 +285,6 @@
         "rounded": false
       }
     },
-    "scrolling_text_VptqFz": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_w4fDJx": {
-          "type": "text",
-          "settings": {
-            "text": "Professionals",
-            "text_size": 12,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_w4fDJx"
-      ],
-      "settings": {
-        "direction": "left",
-        "speed": 26,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": false,
-        "color_text": "#fffffa",
-        "color_background": "#265874",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "image_with_text_overlay_wc9i7i": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -335,7 +301,7 @@
           "type": "heading",
           "settings": {
             "heading": "Professionals",
-            "heading_size": "title-xl tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h1",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -361,11 +327,14 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/LINN_SOFA_033-LINNSOFA-COLOURCORRECTIONPETROLORSETTO.jpg",
+
+        "image": "shopify://shop_images/COVET_DESK_WEST_STREET_CHAIR_021.jpg",
+
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/west-street-table-covet-desk-walnut_98aa2c08-825b-4fff-84c7-21a6c1784574.jpg",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
@@ -389,11 +358,12 @@
     "rich_text_cEBa6E": {
       "type": "rich-text",
       "blocks": {
-        "text_z6LtbT": {
+        "text_GBQBVw": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Case<\/p>",
+
+            "text": "<p>Case Professionals platform is tailored to provide support to our trade and commercial customers.</p>",
+
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -402,39 +372,25 @@
             "highlighted_scribble": "circle"
           }
         },
-        "heading_tMbRQi": {
-          "type": "heading",
-          "disabled": true,
+        "button_m9zhPj": {
+          "type": "button",
           "settings": {
-            "heading": "Professionals",
-            "heading_size": "title-xl tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_r3iUxr": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_size": "subtext-lg",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "button_label": "Join Us",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": false
           }
         }
       },
       "block_order": [
-        "text_z6LtbT",
-        "heading_tMbRQi",
-        "text_r3iUxr"
+        "text_GBQBVw",
+        "button_m9zhPj"
       ],
-      "disabled": true,
       "settings": {
         "text_alignment": "left",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "heading": "",
         "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
@@ -445,19 +401,19 @@
         "button_label": "",
         "button_link": "",
         "button_external": false,
-        "button_icon": true,
+        "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#fffffa",
-        "color_background": "#05273a",
+        "color_text": "#1b1b1b",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 20,
+        "padding_bottom": 16,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -507,6 +463,7 @@
         "text_RjtxHm",
         "button_J8QCYc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_1.png",
         "image_height": "500px",
@@ -604,6 +561,7 @@
         "column_B3N7QQ",
         "column_QgcjDi"
       ],
+      "disabled": true,
       "settings": {
         "gap": "large",
         "columns": 3,
@@ -636,9 +594,10 @@
         "rounded": false
       }
     },
-    "collection_list_tqRqFY": {
-      "type": "collection-list",
+    "collage_grid_xAp7bW": {
+      "type": "collage-grid",
       "blocks": {
+
         "collection_fVaaxX": {
           "type": "collection",
           "settings": {
@@ -650,104 +609,432 @@
             "color_text": "#ffffff",
             "color_overlay": "#000000",
             "overlay_opacity": 30
+
           }
         },
-        "collection_YqkHjD": {
-          "type": "collection",
+        "image_JNVmpE": {
+          "type": "image",
           "settings": {
-            "collection": "",
-            "title": "Designer Profiles",
-            "description": "",
-            "overlay_content": true,
+            "column_size": 3,
+            "row_size": 1,
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://pages/about-us",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Rarify_logo-stockist.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
             "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_Ymx6MQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "Catalogues",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_VrRXhF": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "New Images",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_HztizU": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "Swatches",
-            "description": "",
-            "overlay_content": true,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_ra7nJx": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "description": "",
-            "overlay_content": false,
-            "color_text": "#ffffff",
-            "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "image_hover": "shopify://shop_images/Partners_logo_4.svg",
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
           }
         }
       },
       "block_order": [
-        "collection_fVaaxX",
-        "collection_YqkHjD",
-        "collection_Ymx6MQ",
-        "collection_VrRXhF",
-        "collection_HztizU",
-        "collection_ra7nJx"
+        "image_W6rgcG",
+        "image_JNVmpE"
       ],
       "settings": {
-        "columns": 5,
-        "carousel_on_desktop": false,
-        "image_type": "collection",
-        "image_ratio": "square",
-        "show_products_count": true,
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "heading": "Toolbox",
+        "row_height": 150,
+        "row_height_mobile": 120,
+        "heading": "Quick Access",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#def3f3",
+        "color_text": "#1b1b1b",
+        "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 92,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "image_with_text_AENgAE": {
+      "type": "image-with-text",
+      "blocks": {
+        "icon_njjDni": {
+          "type": "icon",
+          "settings": {
+            "icon": "award",
+            "icon_image": "shopify://shop_images/matthew-hilton-designer-profile.jpg",
+            "icon_width": 48
+          }
+        },
+        "heading_64p6LY": {
+          "type": "heading",
+          "settings": {
+            "heading": "ELLA SWIVEL LOUNGE CHAIR",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "subheading_JapcWW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "ELLA LOUNGE CHAIR",
+            "subheading_size": "subtitle-lg",
+            "secondary_color": true
+          }
+        },
+        "text_Jb8hAQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair.</p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "button_GTPXzL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": true,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "icon_njjDni",
+        "heading_64p6LY",
+        "subheading_JapcWW",
+        "text_Jb8hAQ",
+        "button_GTPXzL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
+        "image_height": "550px",
+        "image_width": "large",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "#1b1b1b",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_background_2": "#d0dfdf",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_38LN86": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HFi4tC": {
+          "type": "heading",
+          "settings": {
+            "heading": "NARIN FOLDING CHAIR",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_6iQrED": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted with a solid wood frame, this smart and robust design features a smooth sweeping transition from the turned legs into the formed backrest, which also doubles as the mount for the pivot from where the back leg rotates. The seat and back are formed from layered birch ply with a clear lacquer oak veneer and stainless steel fixings. Now available in the outdoor version</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "button_MejahA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_HFi4tC",
+        "text_6iQrED",
+        "button_MejahA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Narin_Contract_v2.jpg",
+        "image_height": "650px",
+        "image_width": "large",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#e37a53",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_An3fAn": {
+      "type": "image-with-text",
+      "blocks": {
+        "icon_7wK96N": {
+          "type": "icon",
+          "settings": {
+            "icon": "none",
+            "icon_image": "shopify://shop_images/terence-woodgate-designer-profile.jpg",
+            "icon_width": 48
+          }
+        },
+        "heading_7VUJhn": {
+          "type": "heading",
+          "settings": {
+            "heading": "SLOT SHELVING",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Q94xJP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Slot, designed by Terence Woodgate, is an adjustable wall-mounted shelving system with hidden fixing holes and slots. Designed with simplicity at its core, Slot was created using the principles of reverse engineering; by positioning the vertical supports away from the wall, the shelves can be fixed to hidden slots facing the wall, creating a seamless look.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "button_FGrwfH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "icon_7wK96N",
+        "heading_7VUJhn",
+        "text_Q94xJP",
+        "button_FGrwfH"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/slot-shelving-white-900-600-900_5308bdf4-8120-46c0-8452-1968fda571ae.jpg",
+        "image_height": "650px",
+        "image_width": "large",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#f6f6f6",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_wkgT73": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GH4Tcc": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Restaurante_Canadio_5_d23f8e6f-4e0b-4c16-9b8c-3f2f927af7f7.jpg",
+            "image_ratio": "portrait",
+            "heading": "<a href=\"/blogs/news/canadio-restaurant-santander-spain\" target=\"_blank\" title=\"Cañadío Restaurant, Santander, Spain\">Canadio Restaurant, Spain</a>",
+            "heading_size": "text-base-xl",
+            "text": "",
+            "button_label": "See Project",
+            "button_link": "shopify://blogs/news/canadio-restaurant-santander-spain",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_FAEkrE": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/bay-of-islands-new-zealand.jpg",
+            "image_ratio": "portrait",
+            "heading": "Bay of Islands House, NZ",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "See Project",
+            "button_link": "shopify://blogs/news/bay-of-islands-house-new-zealand",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_m93EE4": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/hotelgreystone2.jpg",
+            "image_ratio": "portrait",
+            "heading": "Hotel Greystone, Miami, USA",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "See Project",
+            "button_link": "https://casefurniture.com/blogs/news/discover-hotel-greystone",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_m7hPLL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/royal-william-yard-6.jpg",
+            "image_ratio": "portrait",
+            "heading": "Royal William Yard, Plymouth, UK",
+            "heading_size": "text-base-xl",
+            "text": "",
+            "button_label": "See Project",
+            "button_link": "shopify://blogs/news/royal-william-yard-plymouth-uk",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_GH4Tcc",
+        "column_FAEkrE",
+        "column_m93EE4",
+        "column_m7hPLL"
+      ],
+      "settings": {
+        "gap": "small",
+        "columns": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Selected Projects",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "shopify://blogs/news/royal-william-yard-plymouth-uk",
+        "button_external": true,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -768,10 +1055,24 @@
             "radio_options": "",
             "select_options": ""
           }
+        },
+        "custom_field_9pyLeN": {
+          "type": "custom_field",
+          "settings": {
+            "type": "radio",
+            "title": "Enquiry Type",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "Contract, Trade, Stockist",
+            "select_options": ""
+          }
         }
       },
       "block_order": [
-        "custom_field_ct6awx"
+        "custom_field_ct6awx",
+        "custom_field_9pyLeN"
       ],
       "settings": {
         "heading": "Apply for an account",
@@ -794,8 +1095,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -809,6 +1110,110 @@
         "color_background": "",
         "gradient_background": ""
       }
+    },
+    "image_with_text_overlay_YNAyEn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_ec9rAz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Outdoor Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_9RQFcf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>See our award winning outdoor furniture<br/></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_QXCAdU": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Our Selection",
+            "button_link": "shopify://collections/outdoor-furniture",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ec9rAz",
+        "text_9RQFcf",
+        "button_QXCAdU"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/EOS_lounge_chair-_editorial.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/EOS_side_chair_and_table_white_-_editorial_-_portrait.jpg",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "featured_collection_YqYEkN": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "bestsellers",
+        "products": [],
+        "product_limit": 8,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Bestsellers",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -817,13 +1222,18 @@
     "images-with-text",
     "empty_space_yNyFtC",
     "timeline_jM7XXf",
-    "scrolling_text_VptqFz",
     "image_with_text_overlay_wc9i7i",
     "rich_text_cEBa6E",
     "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
-    "collection_list_tqRqFY",
+    "collage_grid_xAp7bW",
+    "image_with_text_AENgAE",
+    "image_with_text_38LN86",
+    "image_with_text_An3fAn",
+    "multicolumn_wkgT73",
     "contact_form_TTpAP3",
-    "empty_space_P9PCiR"
+    "empty_space_P9PCiR",
+    "image_with_text_overlay_YNAyEn",
+    "featured_collection_YqYEkN"
   ]
 }

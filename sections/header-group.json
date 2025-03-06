@@ -9,30 +9,19 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping and returns",
+            "text": "Free shipping on all UK orders",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "icon": "email",
-            "text": "A question? Visit our contact page",
-            "link": "shopify:\/\/pages\/contact-us",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
+
+
         }
       },
       "block_order": [
-        "announcement-1",
-        "announcement-2"
+        "announcement-1"
       ],
       "settings": {
         "show_social": false,
@@ -177,7 +166,9 @@
             "show_menu_image": false,
             "button_label": "",
             "button_link": "",
-            "promo_image_1": "shopify:\/\/shop_images\/odyssey-sofa-homepage-banner_6efd6e3f-48c1-4b6e-8b24-1f5dcfa1b790.jpg",
+
+            "promo_image_1": "shopify://shop_images/rsz_int06_valentine_bed_01_walnut_d3.jpg",
+
             "promo_image_ratio_1": "landscape",
             "promo_heading_1": "Living Room",
             "promo_subtext_1": "",
@@ -347,7 +338,7 @@
         "mega_menu_TKCnaD"
       ],
       "settings": {
-        "menu": "main-menu-2",
+        "menu": "main-menu-3",
         "menu_mobile": "",
         "menu_active": "block",
         "hover_menu": true,
@@ -359,7 +350,7 @@
         "show_country_flag_desktop": false,
         "logo_position_mobile": "left",
         "show_social": false,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "enable_country_selector": true,
         "transparent_color_text": "#ffffff",
         "color_text": "#1b1b1b",

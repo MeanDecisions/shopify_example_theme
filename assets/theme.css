@@ -5550,7 +5550,7 @@ ol {
   color: rgb(var(--color-foreground));
   background: var(--gradient-background);
   background-color: rgb(var(--color-background));
-  height: var(--topbar-height);
+  height: 40px;
   font-size: var(--text-2sm);
   transition: height var(--animation-nav);
 }
@@ -7727,7 +7727,7 @@ details.active .drawer__promotions .mega-menu__item,
 }
 
 .mega-menu__nav.grid {
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: auto auto;
 }

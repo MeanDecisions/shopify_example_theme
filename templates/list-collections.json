@@ -1,1 +1,314 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"display_type":"all","sort":"alphabetical","image_type":"collection","image_ratio":"square","overlay_content":true,"show_products_count":true,"columns":4,"columns_mobile":"1","heading":"Collections","heading_size":"title-xl tracking-heading","heading_alignment":"text-left","heading_tag":"h1","padding_top":72,"padding_bottom":120,"divider":false,"full_width":false,"rounded":false}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_V8Bkmq": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TBdmff": {
+          "type": "collection",
+          "settings": {
+            "collection": "eos-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Cg43VM": {
+          "type": "collection",
+          "settings": {
+            "collection": "tanso-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_V8Bkmq",
+        "collection_TBdmff",
+        "collection_Cg43VM"
+      ],
+      "settings": {
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "overlay_content": true,
+        "show_products_count": true,
+        "columns": 4,
+        "columns_mobile": "1",
+        "heading": "Collections",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collection_list_pUyjQE": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EKqEXb": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-room-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7VhKtd": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-tables",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Ht7jcn": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-chairs",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_EKqEXb",
+        "collection_7VhKtd",
+        "collection_Ht7jcn"
+      ],
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Dining",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collage_grid_XURVVF": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_xUWCcd": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 4,
+            "subheading": "",
+            "heading": "Home Office",
+            "link": "shopify://collections/home-office-furniture",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/slot-shelving-grey-office.jpg",
+            "content_position": "md:items-start md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#fffffa",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_nhTFnR": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Home Office Desks",
+            "link": "shopify://collections/home-office-desks",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/675_chair_and_Celine_desk.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_TAXtVA": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Home Office Chairs",
+            "link": "shopify://collections/home-office-chairs",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Case-Furniture_Ziba_chair_Light_Grey-608x487.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_y8UF3g": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Accessories",
+            "link": "shopify://collections/accessories",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/trove-box-square.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_xUWCcd",
+        "image_nhTFnR",
+        "image_TAXtVA",
+        "image_y8UF3g"
+      ],
+      "settings": {
+        "row_height": 240,
+        "row_height_mobile": 130,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f9f9f3",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_pUyjQE",
+    "collage_grid_XURVVF"
+  ]
+}

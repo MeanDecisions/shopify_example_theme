@@ -10,18 +10,23 @@
         "show_shipping_calculator": true,
         "show_view_cart_button": true,
         "show_checkout_button": true,
-        "show_free_shipping_bar": true,
+        "show_free_shipping_bar": false,
         "free_shipping_minimum_amount": "1000",
         "cart_recommendations_enabled": true,
         "cart_recommendations_heading": "You may also like",
-        "cart_recommendations_limit": 2,
+        "cart_recommendations_limit": 3,
         "show_cart_recommendations_vendor": false,
         "show_cart_recommendations_price": true,
         "cart_recommendations_products": [
-          "675-chair"
+          "675-chair",
+          "cross-extending-table",
+          "celine-desk"
         ],
-        "empty_cart_message": "<p>Not sure where to start?<br\/>Try these collections:<\/p>",
-        "empty_cart_collections": [],
+        "empty_cart_message": "<p>Not sure where to start?<br/>Try these collections:</p>",
+        "empty_cart_collections": [
+          "all",
+          "bestsellers"
+        ],
         "recent_products_enabled": true,
         "recent_products_heading": "Recently viewed",
         "recent_products_limit": 5,
@@ -39,7 +44,7 @@
         "text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>FIRST TIMER?<\/p>",
+            "text": "<p>FIRST TIMER?</p>",
             "text_size": "subtext-custom",
             "text_max_size": 12,
             "text_font": "body",
@@ -51,7 +56,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up and get <em>20% off<\/em> your first order",
+            "heading": "Sign up and get <em>20% off</em> your first order",
             "heading_size": "text-2xl lg:text-3xl",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
@@ -72,7 +77,7 @@
         "text-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.<\/p>",
+            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.</p>",
             "text_size": "text-sm",
             "text_max_size": 32,
             "text_font": "body",
@@ -142,7 +147,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Are you 18 years old or older?<\/p>",
+            "text": "<p>Are you 18 years old or older?</p>",
             "text_size": "text-base",
             "text_max_size": 32,
             "text_font": "body",
@@ -163,7 +168,8 @@
           "settings": {
             "button_label_1": "Yes, I am",
             "button_label_2": "No, I’m not",
-            "button_link_2": ""
+            "button_link_2": "",
+            "button_external_2": false
           }
         }
       },
@@ -194,6 +200,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "We use cookies",
             "heading_size": "text-lg-2xl",
@@ -205,7 +212,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>This site uses cookies for better user experience and analytics.<\/p>",
+            "text": "<p>This site uses cookies for better user experience and analytics.</p>",
             "text_size": "text-base",
             "text_max_size": 32,
             "text_font": "body",
@@ -218,7 +225,7 @@
           "type": "spacing",
           "settings": {
             "height": 16,
-            "height_mobile": 12
+            "height_mobile": 4
           }
         },
         "buttons": {
@@ -277,7 +284,8 @@
           "settings": {
             "custom_icon": "",
             "title": "Shop",
-            "link": "shopify:\/\/collections\/all"
+            "link": "shopify://collections/all",
+            "external": false
           }
         },
         "mobile-dock-4": {
