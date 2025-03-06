@@ -712,7 +712,7 @@
         "text_9RQFcf": {
           "type": "text",
           "settings": {
-            "text": "<p>'Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair. </p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.'<br/><br/></p>",
+            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair. </p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -743,11 +743,79 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_AENgAE": {
+      "type": "image-with-text",
+      "blocks": {
+        "icon_njjDni": {
+          "type": "icon",
+          "settings": {
+            "icon": "award",
+            "icon_image": "shopify://shop_images/matthew-hilton-designer-profile.jpg",
+            "icon_width": 48
+          }
+        },
+        "heading_64p6LY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Introducing",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Jb8hAQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair.</p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        }
+      },
+      "block_order": [
+        "icon_njjDni",
+        "heading_64p6LY",
+        "text_Jb8hAQ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
+        "image_height": "650px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#c5c5c5",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
@@ -851,6 +919,7 @@
     "multicolumn_7BYHg6",
     "collage_grid_xAp7bW",
     "image_with_text_overlay_YNAyEn",
+    "image_with_text_AENgAE",
     "contact_form_TTpAP3",
     "empty_space_P9PCiR"
   ]
