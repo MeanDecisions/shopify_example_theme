@@ -786,12 +786,24 @@
             "highlighted_scribble": "circle",
             "enable_read_more": false
           }
+        },
+        "button_GTPXzL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": true,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
         "icon_njjDni",
         "heading_64p6LY",
-        "text_Jb8hAQ"
+        "text_Jb8hAQ",
+        "button_GTPXzL"
       ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
@@ -803,17 +815,17 @@
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
         "color_text": "",
-        "color_background": "#d0dfdf",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_background_2": "",
+        "color_background_2": "#d0dfdf",
         "gradient_background_2": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": false,
         "rounded": false,
@@ -829,19 +841,6 @@
           "settings": {
             "type": "text",
             "title": "Company Name",
-            "required": false,
-            "full_width": false,
-            "checked_value": "Yes",
-            "unchecked_value": "No",
-            "radio_options": "",
-            "select_options": ""
-          }
-        },
-        "custom_field_pTYaDz": {
-          "type": "custom_field",
-          "settings": {
-            "type": "text",
-            "title": "Phone Number",
             "required": false,
             "full_width": false,
             "checked_value": "Yes",
@@ -866,7 +865,6 @@
       },
       "block_order": [
         "custom_field_ct6awx",
-        "custom_field_pTYaDz",
         "custom_field_9pyLeN"
       ],
       "settings": {
