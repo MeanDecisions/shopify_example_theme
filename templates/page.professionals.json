@@ -1056,12 +1056,33 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "column_m7hPLL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/royal-william-yard-6.jpg",
+            "image_ratio": "adapt",
+            "heading": "Royal William Yard, Plymouth, UK",
+            "heading_size": "text-base-xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://blogs/news/royal-william-yard-plymouth-uk",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
         "column_GH4Tcc",
         "column_FAEkrE",
-        "column_m93EE4"
+        "column_m93EE4",
+        "column_m7hPLL"
       ],
       "settings": {
         "gap": "large",
