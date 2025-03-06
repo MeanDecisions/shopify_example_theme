@@ -850,7 +850,7 @@
           "type": "heading",
           "settings": {
             "heading": "NARIN FOLDING CHAIR",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -920,9 +920,9 @@
         "heading_7VUJhn": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
+            "heading": "SLOT SHELVING",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -930,7 +930,7 @@
         "text_Q94xJP": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Slot, designed by Terence Woodgate, is an adjustable wall-mounted shelving system with hidden fixing holes and slots. Designed with simplicity at its core, Slot was created using the principles of reverse engineering; by positioning the vertical supports away from the wall, the shelves can be fixed to hidden slots facing the wall, creating a seamless look.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -960,7 +960,7 @@
       "settings": {
         "image": "shopify://shop_images/slot-shelving-white-900-600-900_5308bdf4-8120-46c0-8452-1968fda571ae.jpg",
         "image_height": "650px",
-        "image_width": "medium",
+        "image_width": "large",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -969,7 +969,7 @@
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
-        "color_background_2": "",
+        "color_background_2": "#f6f6f6",
         "gradient_background_2": "",
         "color_highlight": "",
         "gradient_highlight": "",
