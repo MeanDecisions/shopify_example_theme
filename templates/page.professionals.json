@@ -696,63 +696,6 @@
         "enable_parallax": false
       }
     },
-    "image_with_text_overlay_YNAyEn": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_ec9rAz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Introducing",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_9RQFcf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair. </p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.<br/></p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ec9rAz",
-        "text_9RQFcf"
-      ],
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
-        "image_height": "650px",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "image_with_text_AENgAE": {
       "type": "image-with-text",
       "blocks": {
@@ -1187,6 +1130,75 @@
         "gradient_background": ""
       }
     },
+    "image_with_text_overlay_YNAyEn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_ec9rAz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Outdoor Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_9RQFcf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>See our award winning outdoor furniture<br/></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_QXCAdU": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Our Selection",
+            "button_link": "shopify://collections/outdoor-furniture",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ec9rAz",
+        "text_9RQFcf",
+        "button_QXCAdU"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/S05.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "featured_collection_YqYEkN": {
       "type": "featured-collection",
       "settings": {
@@ -1233,13 +1245,13 @@
     "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
     "collage_grid_xAp7bW",
-    "image_with_text_overlay_YNAyEn",
     "image_with_text_AENgAE",
     "image_with_text_38LN86",
     "image_with_text_An3fAn",
     "multicolumn_wkgT73",
     "contact_form_TTpAP3",
     "empty_space_P9PCiR",
+    "image_with_text_overlay_YNAyEn",
     "featured_collection_YqYEkN"
   ]
 }
