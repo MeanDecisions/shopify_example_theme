@@ -817,7 +817,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
-        "image_height": "650px",
+        "image_height": "550px",
         "image_width": "large",
         "layout": "image_first",
         "text_alignment": "left",
@@ -943,7 +943,7 @@
         "button_FGrwfH": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Discover",
             "button_link": "",
             "button_style": "primary",
             "button_size": "md",
@@ -976,12 +976,12 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 16,
+        "padding_bottom": 16,
         "divider": false,
         "full_width": false,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
