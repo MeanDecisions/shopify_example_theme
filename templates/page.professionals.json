@@ -994,6 +994,105 @@
         "parallax_direction": "vertical"
       }
     },
+    "multicolumn_wkgT73": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GH4Tcc": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Restaurante_Canadio_5_d23f8e6f-4e0b-4c16-9b8c-3f2f927af7f7.jpg",
+            "image_ratio": "portrait",
+            "heading": "<a href=\"/blogs/news/canadio-restaurant-santander-spain\" target=\"_blank\" title=\"Cañadío Restaurant, Santander, Spain\">Canadio Restaurant, Spain</a>",
+            "heading_size": "text-base-xl",
+            "text": "",
+            "button_label": "See Project",
+            "button_link": "shopify://blogs/news/canadio-restaurant-santander-spain",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_FAEkrE": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_m93EE4": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_GH4Tcc",
+        "column_FAEkrE",
+        "column_m93EE4"
+      ],
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Multicolumn",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "contact_form_TTpAP3": {
       "type": "contact-form",
       "blocks": {
@@ -1081,6 +1180,7 @@
     "image_with_text_AENgAE",
     "image_with_text_38LN86",
     "image_with_text_An3fAn",
+    "multicolumn_wkgT73",
     "contact_form_TTpAP3",
     "empty_space_P9PCiR"
   ]
