@@ -917,6 +917,14 @@
     "image_with_text_An3fAn": {
       "type": "image-with-text",
       "blocks": {
+        "icon_7wK96N": {
+          "type": "icon",
+          "settings": {
+            "icon": "none",
+            "icon_image": "shopify://shop_images/terence-woodgate-designer-profile.jpg",
+            "icon_width": 48
+          }
+        },
         "heading_7VUJhn": {
           "type": "heading",
           "settings": {
@@ -953,6 +961,7 @@
         }
       },
       "block_order": [
+        "icon_7wK96N",
         "heading_7VUJhn",
         "text_Q94xJP",
         "button_FGrwfH"
