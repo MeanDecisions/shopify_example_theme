@@ -875,7 +875,7 @@
             "button_label": "Discover",
             "button_link": "",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": true
           }
@@ -946,7 +946,7 @@
             "button_label": "Discover",
             "button_link": "",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": true
           }
