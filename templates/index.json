@@ -159,7 +159,8 @@
         "collection_yidcCV": {
           "type": "collection",
           "settings": {
-            "collection": "dining-accessories",
+            "collection": "outdoor-furniture",
+            "image": "shopify://shop_images/EOS_lounge_chair-_editorial.jpg",
             "title": "Outdoor",
             "description": "",
             "overlay_content": true,
