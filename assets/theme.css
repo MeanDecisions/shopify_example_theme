@@ -8693,6 +8693,7 @@ html.touch .logo-list--right .logo-bar.animate {
   word-wrap: break-word;
   height: fit-content;
   padding-top: 25px;
+  padding-bottom: 45px;
 }
 
 @media screen and (min-width: 768px) {
