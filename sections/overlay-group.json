@@ -232,6 +232,7 @@
         },
         "spacing": {
           "type": "spacing",
+          "disabled": true,
           "settings": {
             "height": 16,
             "height_mobile": 4
