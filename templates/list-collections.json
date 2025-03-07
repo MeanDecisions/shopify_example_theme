@@ -275,8 +275,8 @@
         "image_y8UF3g"
       ],
       "settings": {
-        "row_height": 240,
-        "row_height_mobile": 130,
+        "row_height": 160,
+        "row_height_mobile": 120,
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
