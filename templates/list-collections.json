@@ -373,7 +373,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "Dining",
-        "heading_size": "title-lg tracking-heading",
+        "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
@@ -521,7 +521,7 @@
       "settings": {
         "row_height": 160,
         "row_height_mobile": 120,
-        "heading": "",
+        "heading": "Home Office",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
