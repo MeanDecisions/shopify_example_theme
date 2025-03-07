@@ -365,7 +365,7 @@
       ],
       "settings": {
         "columns": 4,
-        "carousel_on_desktop": true,
+        "carousel_on_desktop": false,
         "image_type": "collection",
         "image_ratio": "square",
         "show_products_count": true,
@@ -388,8 +388,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 24,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -609,7 +609,7 @@
       ],
       "settings": {
         "columns": 4,
-        "carousel_on_desktop": true,
+        "carousel_on_desktop": false,
         "image_type": "collection",
         "image_ratio": "square",
         "show_products_count": true,
