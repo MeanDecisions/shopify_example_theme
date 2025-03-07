@@ -88,7 +88,7 @@
         "text_nicFBm": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -192,15 +192,13 @@
         "promotion": {
           "type": "promotion",
           "settings": {
-            "position": 8,
+            "position": 12,
             "column_size": "1",
-
             "image": "shopify://shop_images/20241015_CASE_Linn-Sofa-_-Accessories_Detail.jpg",
             "heading": "Shop All Products",
             "content": "",
             "button_label": "Explore",
             "button_link": "shopify://collections/all",
-
             "button_style": "secondary",
             "button_external": false,
             "button_icon": false,
@@ -397,7 +395,7 @@
         "text_YYVrPg": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -427,7 +425,7 @@
       "disabled": true,
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/Untitled_design_191.jpg",
+        "image": "shopify://shop_images/Untitled_design_191.jpg",
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -458,7 +456,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
+            "image": "shopify://shop_images/Untitled_design_213_16c3892c-af04-4683-af29-1f40746ad42f.jpg",
             "image_width": "full_width",
             "image_max_width": 20,
             "image_max_width_mobile": 50
@@ -492,7 +490,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
