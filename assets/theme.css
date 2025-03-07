@@ -11576,7 +11576,7 @@ noscript .product-form__input {
 
 .product__title.with-price {
   display: grid;
-  gap: var(--sp-5);
+  gap: 8px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: flex-end;
   justify-content: space-between;
