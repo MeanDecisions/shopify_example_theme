@@ -15,15 +15,15 @@
         "slide-3": {
           "type": "video",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/Eos3.mp4",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video": "shopify://files/videos/Eos3.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "video_url_mobile": "",
             "heading": "Eos Outdoor Furniture",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/eos-garden-furniture",
+            "button_link": "shopify://collections/eos-garden-furniture",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -32,12 +32,12 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/S16.jpg",
+            "image": "shopify://shop_images/S16.jpg",
             "heading": "Solid Rechargeable Table Light",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "button_label": "Shop Now",
-            "button_link": "shopify:\/\/products\/solid-rechargeable-table-light",
+            "button_link": "shopify://products/solid-rechargeable-table-light",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -46,7 +46,7 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_191.jpg",
+            "image": "shopify://shop_images/Untitled_design_191.jpg",
             "heading": "Home Office Essentials",
             "heading_size": "title-md",
             "heading_tag": "h2",
@@ -95,7 +95,7 @@
           "type": "collection",
           "settings": {
             "collection": "contemporary-tables",
-            "image": "shopify:\/\/shop_images\/Standalone-Cross-Rectangular_Portrait_20241015_CASE.jpg",
+            "image": "shopify://shop_images/Standalone-Cross-Rectangular_Portrait_20241015_CASE.jpg",
             "title": "Tables",
             "description": "",
             "overlay_content": true,
@@ -108,7 +108,7 @@
           "type": "collection",
           "settings": {
             "collection": "dining-chairs",
-            "image": "shopify:\/\/shop_images\/Ella-and-ottoman_Portrait_20241015_CASE_1768d7e9-bfed-4882-b46e-f461d8811f5f.jpg",
+            "image": "shopify://shop_images/Ella-and-ottoman_Portrait_20241015_CASE_1768d7e9-bfed-4882-b46e-f461d8811f5f.jpg",
             "title": "Seating",
             "description": "",
             "overlay_content": true,
@@ -121,7 +121,7 @@
           "type": "collection",
           "settings": {
             "collection": "storage",
-            "image": "shopify:\/\/shop_images\/20241015_CASE_Blue-Slot_Portrait.jpg",
+            "image": "shopify://shop_images/20241015_CASE_Blue-Slot_Portrait.jpg",
             "title": "Shelving",
             "description": "",
             "overlay_content": true,
@@ -134,7 +134,7 @@
           "type": "collection",
           "settings": {
             "collection": "lighting",
-            "image": "shopify:\/\/shop_images\/20241015_CASE_Soft-Lanterns.jpg",
+            "image": "shopify://shop_images/20241015_CASE_Soft-Lanterns.jpg",
             "title": "Lighting & Accessories",
             "description": "",
             "overlay_content": true,
@@ -147,7 +147,7 @@
           "type": "collection",
           "settings": {
             "collection": "dining-tables",
-            "image": "shopify:\/\/shop_images\/20241015_CASE_Landscape-of-full-collection.jpg",
+            "image": "shopify://shop_images/20241015_CASE_Landscape-of-full-collection.jpg",
             "title": "Bedroom",
             "description": "",
             "overlay_content": true,
@@ -160,7 +160,6 @@
           "type": "collection",
           "settings": {
             "collection": "dining-accessories",
-            "image": "shopify:\/\/shop_images\/S05.jpg",
             "title": "Outdoor",
             "description": "",
             "overlay_content": true,
@@ -241,7 +240,7 @@
         "layout": "horizontal",
         "image_height": "750px",
         "image_height_mobile": "300px",
-        "heading": "<em>Image comparison<\/em>",
+        "heading": "<em>Image comparison</em>",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -276,9 +275,9 @@
           "profile-chair",
           "675-chair",
           "cross-extending-table",
-          "narin-folding-chair",
-          "dulwich-extending-table",
           "forum-2-seater-sofa",
+          "dulwich-extending-table",
+          "narin-folding-chair",
           "slot-shelving-double",
           "ella-lounge-chair"
         ],
@@ -317,7 +316,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.<\/p>",
+            "text": "<p>At Case, we believe that good design values both style and function equally, and that good design should be accessible to everyone. By utilising modern manufacturing techniques, carefully sourcing materials and working with the best minds in the business, we design everything we make with a simple ethos: to not make you choose between quality and price.</p>",
             "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_font": "body",
@@ -342,7 +341,7 @@
         "subheading": "",
         "description": "",
         "button_label": "Our Story",
-        "button_link": "shopify:\/\/pages\/about-us",
+        "button_link": "shopify://pages/about-us",
         "button_external": false,
         "button_icon": false,
         "highlighted_text": "text",
@@ -387,9 +386,7 @@
         "text_Vr7a9E": {
           "type": "text",
           "settings": {
-
             "text": "<p>Get ready for summer with our outdoor furniture</p>",
-
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -418,9 +415,7 @@
       ],
       "settings": {
         "transparent_header": false,
-
         "image": "shopify://shop_images/rsz_eos_dining_set_rust_1.jpg",
-
         "image_height": "750px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -491,15 +486,15 @@
     "reveal_image_with_text_9B8Dy6": {
       "type": "reveal-image-with-text",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Webtest3.png",
-        "image_mobile": "shopify:\/\/shop_images\/webtest_mobile.png",
+        "image": "shopify://shop_images/Webtest3.png",
+        "image_mobile": "shopify://shop_images/webtest_mobile.png",
         "content_width": "medium",
         "heading": "Forum 3-Seater Sofa by Robin Day",
         "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-center",
         "heading_tag": "h2",
         "button_label": "See All Forum 3 Seater Sofa Options",
-        "button_link": "shopify:\/\/products\/forum-3-seater-sofa",
+        "button_link": "shopify://products/forum-3-seater-sofa",
         "button_external": false,
         "button_icon": false,
         "color_text": "",
@@ -524,7 +519,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>by Robin Day<\/p>",
+            "text": "<p>by Robin Day</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -553,8 +548,8 @@
       "disabled": true,
       "settings": {
         "transparent_header": false,
-        "video": "shopify:\/\/files\/videos\/Forum.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify://files/videos/Forum.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "enable_video_autoplay": true,
         "enable_video_looping": true,
@@ -587,7 +582,7 @@
         "text_pwzbAf": {
           "type": "text",
           "settings": {
-            "text": "<p>Working with world-renowned award-winning designers, Case is dedicated to creating exceptional contemporary design. Through collaborations with globally recognized, award-winning designers, Case consistently delivers exceptional and contemporary designs.<\/p>",
+            "text": "<p>Working with world-renowned award-winning designers, Case is dedicated to creating exceptional contemporary design. Through collaborations with globally recognized, award-winning designers, Case consistently delivers exceptional and contemporary designs.</p>",
             "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_font": "body",
@@ -884,7 +879,7 @@
         "text_FtnRrF": {
           "type": "text",
           "settings": {
-            "text": "<p>Design your perfect dining space.<\/p>",
+            "text": "<p>Design your perfect dining space.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -897,7 +892,7 @@
           "type": "link",
           "settings": {
             "label": "Explore Here",
-            "link": "shopify:\/\/collections\/dining-room-furniture",
+            "link": "shopify://collections/dining-room-furniture",
             "external": false
           }
         }
@@ -909,11 +904,11 @@
         "link_GAUezm"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/HEATHFIELD_ORLA_690_full_frame_b9f6073d-ca30-4049-984d-8688b914c92d.jpg",
+        "image": "shopify://shop_images/HEATHFIELD_ORLA_690_full_frame_b9f6073d-ca30-4049-984d-8688b914c92d.jpg",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
-        "image_mobile": "shopify:\/\/shop_images\/20241015_CASE_Cross-Round-Table_Landscape.jpg",
+        "image_mobile": "shopify://shop_images/20241015_CASE_Cross-Round-Table_Landscape.jpg",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#ffffff",
@@ -970,7 +965,7 @@
         "product_NNhLd8"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/marlow-table-narin-chair-styleshot-1_9cdcbfc7-bc67-4ef4-ad70-d041a562a8ab.jpg",
+        "image": "shopify://shop_images/marlow-table-narin-chair-styleshot-1_9cdcbfc7-bc67-4ef4-ad70-d041a562a8ab.jpg",
         "heading": "Shop The Look",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
@@ -1017,7 +1012,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Open 6 days a week<\/p>",
+            "text": "<p>Open 6 days a week</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -1030,7 +1025,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "shopify:\/\/pages\/showroom",
+            "button_link": "shopify://pages/showroom",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
@@ -1045,7 +1040,7 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/showroom-graphics2-smaller.jpg",
+        "image": "shopify://shop_images/showroom-graphics2-smaller.jpg",
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
@@ -1077,7 +1072,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "text": "<p>Oki Nami Stool <br\/><em>by<\/em> Nazanin Kamali<\/p>",
+            "text": "<p>Oki Nami Stool <br/><em>by</em> Nazanin Kamali</p>",
             "author": "at Canadio Restaurant Santader",
             "author_info": "",
             "author_url": "",
@@ -1091,7 +1086,7 @@
           "disabled": true,
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "",
             "author_url": "",
@@ -1105,7 +1100,7 @@
           "disabled": true,
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "",
             "author_url": "",
@@ -1123,7 +1118,7 @@
       "disabled": true,
       "settings": {
         "transparent_header": false,
-        "image": "shopify:\/\/shop_images\/CA_aeADIO_SANTANDER-15_-_Copy.jpg",
+        "image": "shopify://shop_images/CA_aeADIO_SANTANDER-15_-_Copy.jpg",
         "image_height": "750px",
         "content_position": "md:items-center md:justify-center",
         "image_height_mobile": "500px",
@@ -1148,7 +1143,7 @@
           "type": "collection",
           "settings": {
             "collection": "terence-woodgate-furniture",
-            "image": "shopify:\/\/shop_images\/33986748_1677058909038725_5566613954504949760_n.jpg",
+            "image": "shopify://shop_images/33986748_1677058909038725_5566613954504949760_n.jpg",
             "title": "Terence Woodgate",
             "description": "",
             "overlay_content": true,
@@ -1161,7 +1156,7 @@
           "type": "collection",
           "settings": {
             "collection": "nazanin-kamali-furniture",
-            "image": "shopify:\/\/shop_images\/nazanin-kamali-designer-profile.jpg",
+            "image": "shopify://shop_images/nazanin-kamali-designer-profile.jpg",
             "title": "Nazanin Kamali",
             "description": "",
             "overlay_content": true,
@@ -1174,7 +1169,7 @@
           "type": "collection",
           "settings": {
             "collection": "matthew-hilton-furniture",
-            "image": "shopify:\/\/shop_images\/mhilton22.jpg",
+            "image": "shopify://shop_images/mhilton22.jpg",
             "title": "Matthew Hilton",
             "description": "",
             "overlay_content": true,
@@ -1187,7 +1182,7 @@
           "type": "collection",
           "settings": {
             "collection": "david-irwin-furniture",
-            "image": "shopify:\/\/shop_images\/152A1522_fb913b02-78df-432d-9c6c-b664c8543036.jpg",
+            "image": "shopify://shop_images/152A1522_fb913b02-78df-432d-9c6c-b664c8543036.jpg",
             "title": "David irwin",
             "description": "",
             "overlay_content": true,
@@ -1213,7 +1208,7 @@
         "show_view_all": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "<a href=\"\/pages\/our-designers\" title=\"Our Designers\">Our Designers<\/a>",
+        "heading": "<a href=\"/pages/our-designers\" title=\"Our Designers\">Our Designers</a>",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
