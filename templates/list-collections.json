@@ -616,7 +616,7 @@
           "type": "image",
           "settings": {
             "column_size": 6,
-            "row_size": 2,
+            "row_size": 3,
             "subheading": "",
             "heading": "Beds",
             "link": "shopify://collections/beds",
@@ -672,7 +672,7 @@
           "type": "image",
           "settings": {
             "column_size": 4,
-            "row_size": 1,
+            "row_size": 2,
             "subheading": "",
             "heading": "Drawers",
             "link": "shopify://collections/chests-of-drawers",
@@ -703,8 +703,8 @@
         "image_rfUALy"
       ],
       "settings": {
-        "row_height": 400,
-        "row_height_mobile": 170,
+        "row_height": 170,
+        "row_height_mobile": 120,
         "heading": "Bedroom",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
