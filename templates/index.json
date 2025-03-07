@@ -789,8 +789,23 @@
         "collection_FLc4Xd": {
           "type": "collection",
           "settings": {
-            "collection": "dining-tables",
-            "products": [],
+            "collection": "contemporary-tables",
+            "products": [
+              "cross-oval-coffee-table",
+              "cross-side-table",
+              "prinds-table",
+              "lucent-coffee-table",
+              "pala-console-table-1",
+              "cross-round-coffee-table",
+              "ballet-table",
+              "bridge-extension-table",
+              "cross-fixed-table",
+              "cross-round-table",
+              "dulwich-extending-table",
+              "kigumi-table",
+              "lucent-large-side-table",
+              "marlow-drop-leaf-table"
+            ],
             "title": "Tables"
           }
         },
@@ -800,14 +815,6 @@
             "collection": "charlotte-lancelot",
             "products": [],
             "title": "Textiles"
-          }
-        },
-        "collection_9xEYTR": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "products": [],
-            "title": "Accessories"
           }
         },
         "collection_YxFT8p": {
@@ -824,7 +831,6 @@
         "collection-3",
         "collection_FLc4Xd",
         "collection-2",
-        "collection_9xEYTR",
         "collection_YxFT8p"
       ],
       "settings": {
