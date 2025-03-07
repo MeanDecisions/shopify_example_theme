@@ -608,6 +608,130 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "collage_grid_h8nJtb": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_XYbACb": {
+          "type": "image",
+          "settings": {
+            "column_size": 6,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Beds",
+            "link": "shopify://collections/beds",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/rsz_int06_valentine_bed_01_walnut_d3.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_PmcR4m": {
+          "type": "image",
+          "settings": {
+            "column_size": 4,
+            "row_size": 1,
+            "subheading": "",
+            "heading": "Bedside Tables",
+            "link": "shopify://collections/bedside-tables",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/valentine_bedside_oak_styleshot_7.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_rfUALy": {
+          "type": "image",
+          "settings": {
+            "column_size": 4,
+            "row_size": 1,
+            "subheading": "",
+            "heading": "Drawers",
+            "link": "shopify://collections/chests-of-drawers",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/valentine-tallboy-walnut-stained-styleshot.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_XYbACb",
+        "image_PmcR4m",
+        "image_rfUALy"
+      ],
+      "settings": {
+        "row_height": 400,
+        "row_height_mobile": 170,
+        "heading": "Bedroom",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "See All",
+        "button_link": "shopify://collections/bedroom-furniture",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
     }
   },
   "order": [
@@ -616,6 +740,7 @@
     "collage_grid_FGNQLw",
     "collection_list_pUyjQE",
     "collage_grid_XURVVF",
-    "collection_list_CwH6cC"
+    "collection_list_CwH6cC",
+    "collage_grid_h8nJtb"
   ]
 }
