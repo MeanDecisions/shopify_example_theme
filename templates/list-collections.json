@@ -108,12 +108,26 @@
             "color_overlay": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_M3PECn": {
+          "type": "collection",
+          "settings": {
+            "collection": "sun-loungers",
+            "image": "shopify://shop_images/eos-sun-lounger-black_bda841cf-f2e4-4138-8304-8b8b1e684190.jpg",
+            "title": "Sun Loungers",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
         "collection_V8Bkmq",
         "collection_TBdmff",
-        "collection_Cg43VM"
+        "collection_Cg43VM",
+        "collection_M3PECn"
       ],
       "settings": {
         "display_type": "selected",
@@ -258,7 +272,7 @@
         "image_qekwDn"
       ],
       "settings": {
-        "row_height": 200,
+        "row_height": 180,
         "row_height_mobile": 120,
         "heading": "<a href=\"/collections/living-room-furniture\" title=\"Contemporary Living Room Furniture\">Living Room</a>",
         "heading_size": "title-md",
@@ -326,12 +340,26 @@
             "color_overlay": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_mXmpFG": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchenware",
+            "image": "shopify://shop_images/Orb_Grinder_Styleshot1.jpg",
+            "title": "Accessories",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
         "collection_EKqEXb",
         "collection_7VhKtd",
-        "collection_Ht7jcn"
+        "collection_Ht7jcn",
+        "collection_mXmpFG"
       ],
       "settings": {
         "columns": 4,
