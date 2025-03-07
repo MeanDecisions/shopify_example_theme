@@ -9,6 +9,67 @@
  */
 {
   "sections": {
+    "rich_text_qgCfyh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UmhBHW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contemporary Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h1",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_TANYha": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore our curated collection of furniture for every area of your home. From dining tables and chairs to stylish pieces for the living room, dining room, outdoor, and home office. Our collections are created in collaboration with award-winning designers.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UmhBHW",
+        "text_TANYha"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "blocks": {
@@ -460,6 +521,7 @@
     }
   },
   "order": [
+    "rich_text_qgCfyh",
     "main",
     "collage_grid_FGNQLw",
     "collection_list_pUyjQE",
