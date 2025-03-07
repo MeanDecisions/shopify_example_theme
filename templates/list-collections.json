@@ -321,6 +321,7 @@
           "type": "collection",
           "settings": {
             "collection": "dining-tables",
+            "image": "shopify://shop_images/cross-extending-table-oak-styleshot-square_5a0e27cf-f46d-4995-ab3d-44501576647d.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -333,6 +334,7 @@
           "type": "collection",
           "settings": {
             "collection": "dining-chairs",
+            "image": "shopify://shop_images/profile-chair-oak-stacked-lifestyle_033f9c19-0610-4c45-85ee-596522675191.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
