@@ -8692,7 +8692,7 @@ html.touch .logo-list--right .logo-bar.animate {
 .banner__box {
   word-wrap: break-word;
   height: fit-content;
-  padding-block: clamp(var(--sp-10), 3.368vw, var(--sp-16));
+  padding-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
