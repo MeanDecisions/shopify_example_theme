@@ -518,6 +518,96 @@
         "rounded": false,
         "enable_parallax": false
       }
+    },
+    "collection_list_CwH6cC": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_HgLNtP": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "title": "Accessories",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_4jKpJd": {
+          "type": "collection",
+          "settings": {
+            "collection": "lighting",
+            "title": "Lighting",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_heJcjf": {
+          "type": "collection",
+          "settings": {
+            "collection": "textiles",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_RKgFbN": {
+          "type": "collection",
+          "settings": {
+            "collection": "rugs",
+            "title": "Rugs",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_HgLNtP",
+        "collection_4jKpJd",
+        "collection_heJcjf",
+        "collection_RKgFbN"
+      ],
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Collections",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -525,6 +615,7 @@
     "main",
     "collage_grid_FGNQLw",
     "collection_list_pUyjQE",
-    "collage_grid_XURVVF"
+    "collage_grid_XURVVF",
+    "collection_list_CwH6cC"
   ]
 }
