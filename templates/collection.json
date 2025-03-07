@@ -342,6 +342,7 @@
         "text_gLrTWG",
         "button_arfNjG"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "{{ collection.metafields.custom.dynamic_banner_img.value }}",
@@ -572,8 +573,8 @@
     "main-collection",
     "image_with_text_UH3Rhh",
     "dynamic_collection_banner_JdUdm8",
+    "recently-viewed",
     "image_with_text_overlay_78Uj3E",
-    "images-with-text-overlay",
-    "recently-viewed"
+    "images-with-text-overlay"
   ]
 }
