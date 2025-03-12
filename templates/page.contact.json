@@ -329,7 +329,7 @@
         "text_irgcz7": {
           "type": "text",
           "settings": {
-            "text": "<p>You can get in touch with a member of the team in any of the ways below:</p>",
+            "text": "<p>You can get in touch with a member of the team through any of the ways below:</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
