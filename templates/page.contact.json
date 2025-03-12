@@ -462,7 +462,7 @@
         "text_mf3NNa": {
           "type": "text",
           "settings": {
-            "text": "<p>For press and marketing enquiries, please get in touch with a member of the team at:</p><p><a href=\"mailto:press@casefurniture.com\" title=\"mailto:press@casefurniture.com\">press@casefurniture.com</a></p>",
+            "text": "<p>For press and marketing enquiries, please get in touch with a member of the team at: </p><p><a href=\"mailto:press@casefurniture.com\" title=\"mailto:press@casefurniture.com\">press@casefurniture.com</a></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
