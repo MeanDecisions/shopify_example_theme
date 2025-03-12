@@ -285,7 +285,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/case-furniture-showroom-rectangle.jpg",
-        "image_height": "650px",
+        "image_height": "550px",
         "image_width": "large",
         "layout": "image_first",
         "text_alignment": "left",
@@ -302,12 +302,12 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "divider": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
         "full_width": true,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
