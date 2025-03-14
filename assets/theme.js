@@ -4676,11 +4676,12 @@ class ProductInfo extends HTMLElement {
           destination.innerHTML = source.innerHTML;
           destination.removeAttribute('hidden');
           
-  
           if (id === 'VariantMetafieldThumbs') {
             const mediaDots = destination.closest('media-dots');
             if (mediaDots) {
               mediaDots.reset();
+              mediaDots.resetIndexes();
+              mediaDots.transitionTo(1, true);
             }
           }
         }
@@ -4723,6 +4724,7 @@ class ProductInfo extends HTMLElement {
       const slider = this.querySelector('slider-element');
       if (slider) {
         slider.reset();
+        slider.select(1, true);
       }
 
 
@@ -4827,7 +4829,33 @@ class ProductInfo extends HTMLElement {
   }
 
   updateMedia() {
- 
+    return (parsedHTML, mediaId) => {
+      if (!mediaId) return;
+
+      const mediaGallery = this.querySelector('media-gallery');
+      if (!mediaGallery) return;
+
+      const slider = mediaGallery.querySelector('slider-element');
+      const mediaDots = mediaGallery.querySelector('media-dots');
+
+      // Force reset both slider and dots
+      if (slider) {
+        slider.reset();
+        setTimeout(() => {
+          slider.select(1, true);
+        }, 0);
+      }
+
+      if (mediaDots) {
+        mediaDots.reset();
+        mediaDots.resetIndexes();
+        setTimeout(() => {
+          mediaDots.transitionTo(1, true);
+        }, 0);
+      }
+
+      mediaGallery.setActiveMedia(mediaId, true);
+    }
   }
 }
 customElements.define('product-info', ProductInfo);

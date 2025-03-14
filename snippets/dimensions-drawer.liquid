@@ -1,5 +1,5 @@
 <div class="dimensions-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-  <div class="dimensions-info">
+  {% comment %} <div class="dimensions-info">
     <div class="product-dimensions">
       <div class="dimensions-content">
         <div class="dimensions-wrapper">
@@ -32,7 +32,40 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
+
+
+  
+  <table class="dimensions-table">
+    <thead>
+      <tr>
+        <th class="empty-heading"></th>
+        {% for i in (1..5) %}
+          {% assign option_name = 'name-' | append: i %}
+          {% if product.metafields.dimensions[option_name] != blank %}
+            <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% assign dimension_titles = product.metafields.dimensions.titles | split: ',' %}
+      {% assign values_1 = product.metafields.dimension.values-1 | split: ',' %}
+      {% assign values_2 = product.metafields.dimension.values-2 | split: ',' %}
+      {% assign values_3 = product.metafields.dimension.values-3 | split: ',' %}
+      
+      {% assign last_index = dimension_titles.size | minus: 1 %}
+      {% for index in (0..last_index) %}
+        <tr>
+          <td>{{ dimension_titles[index] | strip }}</td>
+          <td>{{ values_1[index] | strip }}</td>
+          <td>{{ values_2[index] | strip }}</td>
+          <td>{{ values_3[index] | strip }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 
   {% if product.metafields.dimensions.product-dimensions-image != blank %}
     <div class="dimensions-image">
@@ -50,18 +83,24 @@
     width: 100%;
     border-collapse: collapse;
     border: none;
+    box-shadow: none !important;
   }
   
   .dimensions-table th,
   .dimensions-table td {
     padding: 10px;
     text-align: left;
-
     background: transparent;
+    border: none;
   }
   
   .dimensions-table thead tr {
-
+    border-bottom: 1px solid black;
+    font-weight: bold;
+  }
+  
+  .dimensions-table tbody tr td:first-child {
+    font-weight: bold;
   }
   
   .dimensions-table tbody tr:last-child td {
@@ -71,6 +110,11 @@
   .variant-name {
     font-weight: 500;
   }
+
+  .dimensions-table tbody tr {
+    border-block-start: 0 !important;
+  }
+
 </style>
 
 

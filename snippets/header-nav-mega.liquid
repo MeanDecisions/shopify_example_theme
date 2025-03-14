@@ -17,7 +17,7 @@
                   {{- childlink.object.image | image_url: width: childlink.object.image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
                 </a>
               {%- endif -%}
-              <a href="{{ childlink.url }}" class="{% if block.settings.menu_width != 'small' %}heading {% endif %}reversed-link text-base-xl leading-tight tracking-tight{% if childlink.current %} is-active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+              <a href="{{ childlink.url }}" class="{% if block.settings.menu_width != 'small' %}heading {% endif %}reversed-link text-base-xl leading-tight tracking-tight font-bold {% if childlink.current %} is-active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                 {{- childlink.title | escape -}}
               </a>
               {%- if childlink.links != blank -%}
