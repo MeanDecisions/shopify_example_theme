@@ -227,7 +227,7 @@
         "enable_filtering": true,
         "filter_collapsed": true,
         "filter_type": "drawer",
-        "filter_color_swatches": true,
+        "filter_color_swatches": false,
         "enable_sorting": true,
         "padding_top": 0,
         "padding_bottom": 60,
@@ -369,6 +369,37 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "image_with_text_overlay_78Uj3E": {
@@ -532,37 +563,6 @@
         "full_width": true,
         "rounded": true,
         "enable_parallax": true
-      }
-    },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-        "product_limit": 6,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Recently Viewed",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 80,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     }
   },
