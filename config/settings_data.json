@@ -65,7 +65,7 @@
     "page_width": 2000,
     "rounded_button": "square",
     "rounded_input": "round-slight",
-    "rounded_swatch": "square",
+    "rounded_swatch": "round",
     "rounded_card": "square",
     "rounded_block": "square",
     "enable_page_transition": true,
