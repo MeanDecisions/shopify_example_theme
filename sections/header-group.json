@@ -373,7 +373,7 @@
           "settings": {
             "video": "shopify://files/videos/Eos3.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
+            "description": "Eos Outdoor Collection",
             "video_url_mobile": "",
             "heading": "Eos Outdoor Collection",
             "heading_size": "title-lg tracking-heading",
@@ -407,7 +407,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Explore Furniture",
-            "button_link": "",
+            "button_link": "shopify://collections/living-room-furniture",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
