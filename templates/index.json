@@ -1240,79 +1240,6 @@
         "rounded": false
       }
     },
-    "scrolling-text-2": {
-      "type": "scrolling-text",
-      "blocks": {
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-4": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-5": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-6": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        },
-        "image-7": {
-          "type": "image",
-          "settings": {
-            "height": 60
-          }
-        }
-      },
-      "block_order": [
-        "image-1",
-        "image-2",
-        "image-3",
-        "image-4",
-        "image-5",
-        "image-6",
-        "image-7"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "right",
-        "speed": 5,
-        "grid_horizontal": 140,
-        "enable_twin": true,
-        "enable_parallax": true,
-        "color_text": "",
-        "color_background": "#fde68a",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "divider": false,
-        "rounded": false
-      }
-    },
     "blog-posts-collage": {
       "type": "blog-posts-collage",
       "disabled": true,
@@ -1368,7 +1295,6 @@
     "image_with_text_overlay_WUy4t7",
     "testimonials-banner",
     "collection_list_rFNr7H",
-    "scrolling-text-2",
     "blog-posts-collage"
   ]
 }

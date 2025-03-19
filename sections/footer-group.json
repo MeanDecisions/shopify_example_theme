@@ -108,16 +108,6 @@
             "enable_follow_on_shop": false
           }
         },
-        "link_list-1": {
-          "type": "link_list",
-          "disabled": true,
-          "settings": {
-            "heading": "Furniture",
-            "menu": "main-menu-2",
-            "container_width": 25,
-            "opened": false
-          }
-        },
         "link_list_CQLE3z": {
           "type": "link_list",
           "settings": {
@@ -132,7 +122,7 @@
           "settings": {
             "heading": "Information",
             "menu": "footer",
-            "container_width": 50,
+            "container_width": 60,
             "opened": false
           }
         },
@@ -148,14 +138,13 @@
             "button_link_3": "",
             "button_label_4": "",
             "button_link_4": "",
-            "container_width": 94,
+            "container_width": 88,
             "opened": false
           }
         }
       },
       "block_order": [
         "logo_social",
-        "link_list-1",
         "link_list_CQLE3z",
         "link_list-2",
         "brand_information"
