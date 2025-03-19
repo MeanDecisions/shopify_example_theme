@@ -39,13 +39,30 @@
   <table class="dimensions-table">
     <thead>
       <tr>
-        <th class="empty-heading"></th>
+        {% assign option_count = 0 %}
         {% for i in (1..5) %}
           {% assign option_name = 'name-' | append: i %}
           {% if product.metafields.dimensions[option_name] != blank %}
-            <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+            {% assign option_count = option_count | plus: 1 %}
           {% endif %}
         {% endfor %}
+
+        {% if option_count == 1 %}
+          {% for i in (1..5) %}
+            {% assign option_name = 'name-' | append: i %}
+            {% if product.metafields.dimensions[option_name] != blank %}
+              <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <th class="empty-heading"></th>
+          {% for i in (1..5) %}
+            {% assign option_name = 'name-' | append: i %}
+            {% if product.metafields.dimensions[option_name] != blank %}
+              <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </tr>
     </thead>
     <tbody>
@@ -57,10 +74,15 @@
       {% assign last_index = dimension_titles.size | minus: 1 %}
       {% for index in (0..last_index) %}
         <tr>
-          <td>{{ dimension_titles[index] | strip }}</td>
-          <td>{{ values_1[index] | strip }}</td>
-          <td>{{ values_2[index] | strip }}</td>
-          <td>{{ values_3[index] | strip }}</td>
+          {% if option_count == 1 %}
+            <td>{{ dimension_titles[index] | strip }}</td>
+            <td>{{ values_1[index] | strip }}</td>
+          {% else %}
+            <td>{{ dimension_titles[index] | strip }}</td>
+            <td>{{ values_1[index] | strip }}</td>
+            {% if values_2[index] != blank %}<td>{{ values_2[index] | strip }}</td>{% endif %}
+            {% if values_3[index] != blank %}<td>{{ values_3[index] | strip }}</td>{% endif %}
+          {% endif %}
         </tr>
       {% endfor %}
     </tbody>
@@ -115,7 +137,13 @@
     border-block-start: 0 !important;
   }
 
+  .dimensions-table tbody tr td {   
+    font-size: 0.875rem;
+    padding: 8px 10px;
+  }
+
+  .dimensions-table thead tr th {
+    font-size: 0.875rem;
+    padding: 8px 10px;
+  }
 </style>
-
-
-
