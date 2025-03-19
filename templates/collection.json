@@ -116,14 +116,6 @@
     "main-collection": {
       "type": "main-collection",
       "blocks": {
-        "subcollections": {
-          "type": "subcollections",
-          "settings": {
-            "menu": "",
-            "per_row": 5,
-            "show_count": true
-          }
-        },
         "promotion": {
           "type": "promotion",
           "settings": {
@@ -151,7 +143,6 @@
         }
       },
       "block_order": [
-        "subcollections",
         "promotion"
       ],
       "settings": {
