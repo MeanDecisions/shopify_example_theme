@@ -194,7 +194,7 @@
         "product": "boucle",
         "enable_sticky_info": true,
         "media_size": 35,
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "columns",
         "thumbnail_position": "beside",
         "image_ratio": "square",
         "image_zoom": "lightbox",
@@ -205,7 +205,7 @@
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": true,
         "padding_top": 24,
-        "padding_bottom": 28,
+        "padding_bottom": 24,
         "divider": false,
         "full_width": false,
         "rounded": false
