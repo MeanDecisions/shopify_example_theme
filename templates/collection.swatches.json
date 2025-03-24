@@ -122,7 +122,7 @@
             "title_size": "product-title-md",
             "title_size_mobile": "product-title-md",
             "show_price": true,
-            "show_rating": true
+            "show_rating": false
           }
         },
         "description_bAFCRb": {
@@ -195,7 +195,7 @@
         "enable_sticky_info": true,
         "media_size": 35,
         "gallery_layout": "thumbnail",
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "image_ratio": "square",
         "image_zoom": "lightbox",
         "hide_variants": false,
