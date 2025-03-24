@@ -190,6 +190,7 @@
         "read_more_WDPdtB",
         "spinning_text_WiVQbk"
       ],
+      "disabled": true,
       "settings": {
         "product": "boucle",
         "enable_sticky_info": true,
