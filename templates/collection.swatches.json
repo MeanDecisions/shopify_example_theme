@@ -26,7 +26,6 @@
         },
         "description_48FUR8": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -41,7 +40,7 @@
         "description_48FUR8"
       ],
       "custom_css": [
-        "sticky-filters.is-sticky.scrolling-up {padding-top: 80px;}"
+        "sticky-filters.is-sticky.scrolling-up {padding-top: 50px;}"
       ],
       "settings": {
         "transparent_header": false,
@@ -60,7 +59,7 @@
         "divider": false,
         "full_width": true,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
