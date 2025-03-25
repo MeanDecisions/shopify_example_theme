@@ -691,7 +691,7 @@
           "settings": {
             "show_border": false,
             "text_alignment": "left",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "left",
             "image": "shopify://shop_images/Assets_Wide.svg",
             "image_ratio": "wide",
             "heading": "Product Assets",
@@ -752,7 +752,7 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Swatches_Wide.svg",
+            "image": "shopify://shop_images/Swatches_WideWide.svg",
             "image_ratio": "wide",
             "heading": "Swatches",
             "heading_size": "text-base-xl",
@@ -771,7 +771,7 @@
           "settings": {
             "show_border": false,
             "text_alignment": "left",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "left",
             "image": "shopify://shop_images/Profiles_Black_copy_5Wide.svg",
             "image_ratio": "wide",
             "heading": "Designer Profiles",
