@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Explore our curated collection of furniture for every area of your home. From dining tables and chairs to stylish pieces for the living room, dining room, outdoor, and home office. Our collections are created in collaboration with award-winning designers.</p>",
-            "text_size": "subtext-md",
+            "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
@@ -79,7 +79,7 @@
         "color_button_gradient": "",
         "padding_top": 20,
         "padding_bottom": 72,
-        "divider": true,
+        "divider": false,
         "narrow": false,
         "rounded": false
       }
