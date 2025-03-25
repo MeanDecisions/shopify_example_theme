@@ -347,7 +347,7 @@
       ],
       "settings": {
         "menu": "main-menu-full",
-        "menu_mobile": "main-menu-mobile",
+        "menu_mobile": "main-menu-full",
         "menu_active": "block",
         "hover_menu": true,
         "header_layout": "left",
