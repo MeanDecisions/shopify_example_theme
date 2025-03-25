@@ -285,7 +285,7 @@
             "menu_width": "medium",
             "show_menu_image": false,
             "button_label": "See All",
-            "button_link": "",
+            "button_link": "shopify://pages/our-designers",
             "promo_image_ratio_1": "adapt",
             "promo_heading_1": "",
             "promo_subtext_1": "",
