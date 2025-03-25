@@ -122,7 +122,7 @@
           "settings": {
             "heading": "Information",
             "menu": "footer",
-            "container_width": 60,
+            "container_width": 50,
             "opened": false
           }
         },
