@@ -24,87 +24,6 @@
         "rounded": false
       }
     },
-    "rich_text_FyAAhe": {
-      "type": "rich-text",
-      "blocks": {
-        "image_YwtWmk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/mhilton22.jpg",
-            "image_width": "full_width",
-            "image_max_width": 560,
-            "image_max_width_mobile": 600
-          }
-        },
-        "heading_4gaEUV": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "London-based designer Matthew Hilton has beenwith Case from the start. The figure behind some of the company’s most iconiccollections, including the Cross table series and range of Ella chairs, Hiltonhas helped shape the Case’s aesthetic identity with his sleek, understateddesigns. “Case represents a balance of all the things I like: style, guts andpersonality.”",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "spacing_wK7ALL": {
-          "type": "spacing",
-          "settings": {
-            "height": 40,
-            "height_mobile": 28
-          }
-        },
-        "text_DJmEL4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Hilton studied at Portsmouth College of Art and later pursued furniture design at Kingston Polytechnic. He began his career in the 1980s, working for industrial and furniture design studios before establishing his own design practice in 1985. Today he’s one of Britain’s foremost industry-leading figures, working across a range of furniture, lighting and product design. His  collaborators include prominent brands such as SCP, De La Espada and Ercol and his creations can also be found in the permanent collections of such high-profile institutions as the Victoria & Albert Museum and The Museum of the Home in London.</p><p></p><p>His designs, often characterised by clean lines, minimalist forms, and high-quality materials, are rooted in a deep respect for craftsmanship and remain sought after for their seamless blend of elegance and functionality. “I find inspiration in the work of 20th century Italian designers like Enzo Mari and Achille Castiglioni,” says Hilton. “But also figures like David Bowie. He never stopped moving and wasn’t ever afraid<br/>to experiment.” </p>",
-            "text_size": "subtext-lg",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "image_YwtWmk",
-        "heading_4gaEUV",
-        "spacing_wK7ALL",
-        "text_DJmEL4"
-      ],
-      "disabled": true,
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Matthew Hilton",
-        "heading_size": "title-xl tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "large",
-        "heading_tag": "h2",
-        "subheading": "Our Designers",
-        "description": "<h4>London-based designer Matthew Hilton has been with Case from the start. The figure behind some of the company’s most iconic collections, including the Cross table series and range of Ella chairs, Hilton has helped shape the Case’s aesthetic identity with his sleek, understated designs. “Case represents a balance of all the things I like: style, guts and personality.” </h4>",
-        "button_label": "Explore All Matthew Hilton Furniture",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "rich_text_CBdLWi": {
       "type": "rich-text",
       "blocks": {
@@ -173,8 +92,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_top": 32,
+        "padding_bottom": 40,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -833,7 +752,6 @@
   },
   "order": [
     "main-page",
-    "rich_text_FyAAhe",
     "rich_text_CBdLWi",
     "collection_list_BJEN7Y",
     "image_with_text_Whq8jJ",
