@@ -346,7 +346,7 @@
         "mega_menu_TKCnaD"
       ],
       "settings": {
-        "menu": "main-menu-full",
+        "menu": "main-menu-full-desktop",
         "menu_mobile": "main-menu-full",
         "menu_active": "block",
         "hover_menu": true,
