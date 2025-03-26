@@ -13408,7 +13408,7 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
   .collage.with-richtext,
   .collage.with-richtext .title-wrapper,
   .collage.with-richtext .rich-text {
-    padding-inline: var(--grid-gap);
+    padding-inline: 0px;
   }
 }
 
