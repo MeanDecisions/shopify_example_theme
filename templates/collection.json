@@ -41,7 +41,7 @@
         "description_48FUR8"
       ],
       "custom_css": [
-        "sticky-filters.is-sticky.scrolling-up {padding-top: 60px;}"
+        "sticky-filters.is-sticky.scrolling-up {padding-top: 40px;}"
       ],
       "settings": {
         "transparent_header": false,
