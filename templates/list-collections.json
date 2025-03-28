@@ -14,7 +14,6 @@
       "blocks": {
         "heading_UmhBHW": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Contemporary Furniture",
             "heading_size": "title-lg tracking-heading",
@@ -34,29 +33,16 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "text_TANYha": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
         }
       },
       "block_order": [
         "heading_UmhBHW",
-        "text_bVh8it",
-        "text_TANYha"
+        "text_bVh8it"
       ],
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Case Furniture",
+        "heading": "",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
