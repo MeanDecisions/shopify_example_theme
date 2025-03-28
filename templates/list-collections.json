@@ -70,13 +70,13 @@
         "rounded": false
       }
     },
-    "main": {
-      "type": "main-list-collections",
+    "collection_list_pUyjQE": {
+      "type": "collection-list",
       "blocks": {
-        "collection_V8Bkmq": {
+        "collection_EKqEXb": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-furniture",
+            "collection": "dining-room-furniture",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -85,10 +85,11 @@
             "overlay_opacity": 30
           }
         },
-        "collection_TBdmff": {
+        "collection_7VhKtd": {
           "type": "collection",
           "settings": {
-            "collection": "eos-garden-furniture",
+            "collection": "dining-tables",
+            "image": "shopify://shop_images/cross-extending-table-oak-styleshot-square_5a0e27cf-f46d-4995-ab3d-44501576647d.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -97,10 +98,11 @@
             "overlay_opacity": 30
           }
         },
-        "collection_Cg43VM": {
+        "collection_Ht7jcn": {
           "type": "collection",
           "settings": {
-            "collection": "tanso-garden-furniture",
+            "collection": "dining-chairs",
+            "image": "shopify://shop_images/profile-chair-oak-stacked-lifestyle_033f9c19-0610-4c45-85ee-596522675191.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -109,12 +111,12 @@
             "overlay_opacity": 30
           }
         },
-        "collection_M3PECn": {
+        "collection_mXmpFG": {
           "type": "collection",
           "settings": {
-            "collection": "sun-loungers",
-            "image": "shopify://shop_images/eos-sun-lounger-black_bda841cf-f2e4-4138-8304-8b8b1e684190.jpg",
-            "title": "Sun Loungers",
+            "collection": "kitchenware",
+            "image": "shopify://shop_images/Orb_Grinder_Styleshot1.jpg",
+            "title": "Accessories",
             "description": "",
             "overlay_content": false,
             "color_text": "#ffffff",
@@ -124,28 +126,40 @@
         }
       },
       "block_order": [
-        "collection_V8Bkmq",
-        "collection_TBdmff",
-        "collection_Cg43VM",
-        "collection_M3PECn"
+        "collection_EKqEXb",
+        "collection_7VhKtd",
+        "collection_Ht7jcn",
+        "collection_mXmpFG"
       ],
       "settings": {
-        "display_type": "selected",
-        "sort": "alphabetical",
-        "image_type": "collection",
-        "image_ratio": "portrait",
-        "overlay_content": true,
-        "show_products_count": false,
         "columns": 4,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": false,
+        "show_view_all": false,
         "columns_mobile": "1",
-        "heading": "Outdoor Furniture",
+        "swipe_on_mobile": true,
+        "heading": "Dining Room",
         "heading_size": "title-md",
-        "heading_alignment": "text-left",
+        "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
-        "padding_top": 32,
-        "padding_bottom": 20,
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 24,
         "divider": false,
-        "full_width": false,
+        "full_width": true,
         "rounded": false
       }
     },
@@ -302,13 +316,13 @@
         "enable_parallax": false
       }
     },
-    "collection_list_pUyjQE": {
-      "type": "collection-list",
+    "main": {
+      "type": "main-list-collections",
       "blocks": {
-        "collection_EKqEXb": {
+        "collection_V8Bkmq": {
           "type": "collection",
           "settings": {
-            "collection": "dining-room-furniture",
+            "collection": "outdoor-furniture",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -317,11 +331,10 @@
             "overlay_opacity": 30
           }
         },
-        "collection_7VhKtd": {
+        "collection_TBdmff": {
           "type": "collection",
           "settings": {
-            "collection": "dining-tables",
-            "image": "shopify://shop_images/cross-extending-table-oak-styleshot-square_5a0e27cf-f46d-4995-ab3d-44501576647d.jpg",
+            "collection": "eos-garden-furniture",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -330,11 +343,10 @@
             "overlay_opacity": 30
           }
         },
-        "collection_Ht7jcn": {
+        "collection_Cg43VM": {
           "type": "collection",
           "settings": {
-            "collection": "dining-chairs",
-            "image": "shopify://shop_images/profile-chair-oak-stacked-lifestyle_033f9c19-0610-4c45-85ee-596522675191.jpg",
+            "collection": "tanso-garden-furniture",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -343,12 +355,12 @@
             "overlay_opacity": 30
           }
         },
-        "collection_mXmpFG": {
+        "collection_M3PECn": {
           "type": "collection",
           "settings": {
-            "collection": "kitchenware",
-            "image": "shopify://shop_images/Orb_Grinder_Styleshot1.jpg",
-            "title": "Accessories",
+            "collection": "sun-loungers",
+            "image": "shopify://shop_images/eos-sun-lounger-black_bda841cf-f2e4-4138-8304-8b8b1e684190.jpg",
+            "title": "Sun Loungers",
             "description": "",
             "overlay_content": false,
             "color_text": "#ffffff",
@@ -358,40 +370,28 @@
         }
       },
       "block_order": [
-        "collection_EKqEXb",
-        "collection_7VhKtd",
-        "collection_Ht7jcn",
-        "collection_mXmpFG"
+        "collection_V8Bkmq",
+        "collection_TBdmff",
+        "collection_Cg43VM",
+        "collection_M3PECn"
       ],
       "settings": {
-        "columns": 4,
-        "carousel_on_desktop": false,
+        "display_type": "selected",
+        "sort": "alphabetical",
         "image_type": "collection",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
+        "overlay_content": true,
         "show_products_count": false,
-        "show_view_all": false,
+        "columns": 4,
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Dining",
+        "heading": "Outdoor Furniture",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-left",
         "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 28,
-        "padding_bottom": 24,
+        "padding_top": 32,
+        "padding_bottom": 20,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -556,7 +556,8 @@
           "type": "collection",
           "settings": {
             "collection": "accessories",
-            "title": "Accessories",
+            "image": "shopify://shop_images/industry-candlestick-476194.jpg",
+            "title": "Decorative",
             "description": "",
             "overlay_content": false,
             "color_text": "#ffffff",
@@ -616,7 +617,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Homeware",
+        "heading": "Accessories",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -766,9 +767,9 @@
   },
   "order": [
     "rich_text_qgCfyh",
-    "main",
-    "collage_grid_FGNQLw",
     "collection_list_pUyjQE",
+    "collage_grid_FGNQLw",
+    "main",
     "collage_grid_XURVVF",
     "collection_list_CwH6cC",
     "collage_grid_h8nJtb"
