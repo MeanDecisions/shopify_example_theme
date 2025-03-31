@@ -14,6 +14,7 @@
       "blocks": {
         "heading_UmhBHW": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Contemporary Furniture",
             "heading_size": "title-lg tracking-heading",
@@ -39,11 +40,12 @@
         "heading_UmhBHW",
         "text_bVh8it"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-lg tracking-heading",
+        "heading": "Furniture",
+        "heading_size": "title-xl tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
@@ -63,8 +65,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 20,
-        "padding_bottom": 32,
+        "padding_top": 32,
+        "padding_bottom": 60,
         "divider": false,
         "narrow": false,
         "rounded": false
