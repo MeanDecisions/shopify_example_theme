@@ -356,7 +356,7 @@
           "settings": {
             "collection": "matthew-hilton-furniture",
             "image": "shopify://shop_images/mhilton22.jpg",
-            "title": "",
+            "title": "Matthew Hilton",
             "description": "",
             "overlay_content": true,
             "color_text": "#ffffff",
@@ -389,7 +389,7 @@
         "carousel_on_desktop": true,
         "image_type": "collection",
         "image_ratio": "portrait",
-        "show_products_count": true,
+        "show_products_count": false,
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
