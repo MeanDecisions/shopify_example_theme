@@ -490,7 +490,7 @@
         "product_limit": 8,
         "columns": 4,
         "carousel_on_desktop": true,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "heading": "You may also like",
         "heading_size": "title-md",
@@ -508,11 +508,11 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 40,
+        "padding_top": 32,
         "padding_bottom": 12,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     },
     "recently-viewed": {
