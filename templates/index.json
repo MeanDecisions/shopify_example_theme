@@ -185,7 +185,7 @@
         "image_ratio": "adapt",
         "show_products_count": false,
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "heading": "Collections",
         "heading_size": "title-md",
