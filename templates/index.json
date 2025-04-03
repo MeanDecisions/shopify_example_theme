@@ -487,7 +487,7 @@
     "reveal_image_with_text_9B8Dy6": {
       "type": "reveal-image-with-text",
       "settings": {
-        "image": "shopify://shop_images/Webtest3.png",
+        "image": "shopify://shop_images/Webtest.png",
         "image_mobile": "shopify://shop_images/webtest_mobile.png",
         "content_width": "medium",
         "heading": "Forum 3-Seater Sofa by Robin Day",
