@@ -76,7 +76,7 @@
         "filter_color_swatches": true,
         "enable_sorting": true,
         "padding_top": 0,
-        "padding_bottom": 60,
+        "padding_bottom": 28,
         "divider": false,
         "full_width": false,
         "rounded": false
