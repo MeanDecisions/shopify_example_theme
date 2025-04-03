@@ -384,13 +384,14 @@
         "collection_Lap8M3",
         "collection_DJjDHh"
       ],
+      "disabled": true,
       "settings": {
         "columns": 4,
         "carousel_on_desktop": false,
         "image_type": "collection",
         "image_ratio": "portrait",
         "show_products_count": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "heading": "Case Designers",
@@ -465,6 +466,37 @@
         "enable_parallax": true,
         "parallax_direction": "vertical"
       }
+    },
+    "recently_viewed_cQFYnG": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 8,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -474,6 +506,7 @@
     "image_with_text_overlay_g8rR7n",
     "main-collection",
     "collection_list_WD48RJ",
-    "main-collection-banner"
+    "main-collection-banner",
+    "recently_viewed_cQFYnG"
   ]
 }
