@@ -7499,7 +7499,7 @@ details.active .drawer__promotions .mega-menu__item,
   --header-nav-gap: clamp(var(--sp-4), 1.263vw, var(--sp-6));
   gap: var(--header-nav-gap);
   padding-block-start: var(--sp-3);
-  padding-block-end: var(--sp-14);
+  padding-block-end: 25px;
 }
 
 .mega-menu__item {
