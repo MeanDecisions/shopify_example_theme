@@ -867,14 +867,6 @@
     "reveal_image_with_text_overlay_7WVaNB": {
       "type": "reveal-image-with-text-overlay",
       "blocks": {
-        "subheading_8WUDkb": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "subheading_size": "subtitle-sm",
-            "secondary_color": false
-          }
-        },
         "heading_pYyeKQ": {
           "type": "heading",
           "settings": {
@@ -907,7 +899,6 @@
         }
       },
       "block_order": [
-        "subheading_8WUDkb",
         "heading_pYyeKQ",
         "text_FtnRrF",
         "link_GAUezm"
