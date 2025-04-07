@@ -22,9 +22,19 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {}
     }
   },
   "order": [
-    "main-page"
+    "shogun-helper",
+    "main-page",
+    "shogun-optimizer"
   ]
 }
