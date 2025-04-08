@@ -1297,78 +1297,6 @@
         "rounded": false
       }
     },
-    "image_with_text_NrkWb7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_dD387Y": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign-up to our trade newsletter",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_QAEWp6": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "enable_read_more": false
-          }
-        },
-        "button_jDNk7V": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_dD387Y",
-        "text_QAEWp6",
-        "button_jDNk7V"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Rectangle_118.png",
-        "image_height": "adapt",
-        "image_width": "small",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "#fffffa",
-        "color_background": "#87874e",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
     "contact_form_TTpAP3": {
       "type": "contact-form",
       "blocks": {
@@ -1483,6 +1411,7 @@
         "text_9RQFcf",
         "button_QXCAdU"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/EOS_lounge_chair-_editorial.jpg",
@@ -1544,6 +1473,169 @@
         "full_width": true,
         "rounded": false
       }
+    },
+    "image_with_text_NrkWb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dD387Y": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign-up to our trade newsletter",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_QAEWp6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "button_jDNk7V": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_dD387Y",
+        "text_QAEWp6",
+        "button_jDNk7V"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_118.png",
+        "image_height": "adapt",
+        "image_width": "small",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "#fffffa",
+        "color_background": "#87874e",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "newsletter_VAH6pY": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_QDkynx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join Our Trade Newsletter",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_fKt3HU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know when we launch new products and offers</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "form_Eb3BWg": {
+          "type": "form",
+          "settings": {}
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_nEmq9C": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "YvJ8TE"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QDkynx",
+        "text_fKt3HU",
+        "form_Eb3BWg",
+        "klaviyo_email_marketing_sms_form_embed_block_nEmq9C"
+      ],
+      "settings": {
+        "content_width": "medium",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#f9f9f3",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "divider": true,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "17441289037e69e22c": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_qTHPU4": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "YvJ8TE"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_qTHPU4"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1564,10 +1656,12 @@
     "image_with_text_38LN86",
     "image_with_text_An3fAn",
     "multicolumn_wkgT73",
-    "image_with_text_NrkWb7",
     "contact_form_TTpAP3",
     "empty_space_P9PCiR",
     "image_with_text_overlay_YNAyEn",
-    "featured_collection_YqYEkN"
+    "featured_collection_YqYEkN",
+    "image_with_text_NrkWb7",
+    "newsletter_VAH6pY",
+    "17441289037e69e22c"
   ]
 }
