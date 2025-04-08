@@ -571,7 +571,7 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Custom orders, for any size business",
+        "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
@@ -592,8 +592,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 92,
-        "padding_bottom": 92,
+        "padding_top": 36,
+        "padding_bottom": 24,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -785,6 +785,26 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "column_mJQ6VH": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Logo_b4325e5a-c055-493a-bc8f-5fd6a28d7854.svg",
+            "image_ratio": "adapt",
+            "heading": "<a href=\"/pages/contact-us\" title=\"Contact us\">Contact Us</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://pages/contact-us",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
@@ -792,7 +812,8 @@
         "column_gebEHt",
         "column_ckz8Ug",
         "column_panPgr",
-        "column_TRUExP"
+        "column_TRUExP",
+        "column_mJQ6VH"
       ],
       "settings": {
         "gap": "medium",
