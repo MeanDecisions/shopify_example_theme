@@ -91,6 +91,12 @@
 <!-- Google Consent Mode V2 Consentmo -->
 {% render 'gcm-integration-script' %}
 
+  <!-- Begin: Northbeam metadata info -->
+  <script>
+    localStorage.setItem('nb__region_code', "{{ localization.country.iso_code }}");
+    localStorage.setItem('nb__currency_code', "{{ localization.country.currency.iso_code }}");
+  </script>
+<!-- End: Northbeam metadata info -->
 <!-- Begin: Northbeam pixel -->
 <script>(function(){var e;(n=e=e||{}).A="identify",n.B="trackPageView",n.C="fireEmailCaptureEvent",n.D="fireCustomGoal",n.E="firePurchaseEvent",n.F="trackPageViewInitial",n.G="identifyCustomerId";var n="//j.northbeam.io/ota-sp/7207df04-9f06-414a-a969-da49f6c803a9.js";function r(n){for(var t=[],e=1;e<arguments.length;e++)t[e-1]=arguments[e];a.push({fnName:n,args:t})}var t,a=[],i=((t={})[e.F]=function(n){r(e.F,n)},(i={_q:a})[e.A]=function(n,t){return r(e.A,n,t)},i[e.B]=function(){return r(e.B)},i[e.C]=function(n,t){return r(e.C,n,t)},i[e.D]=function(n,t){return r(e.D,n,t)},i[e.E]=function(n){return r(e.E,n)},i[e.G]=function(n,t){return r(e.G,n,t)},window.Northbeam=i,document.createElement("script"));i.async=!0,i.src=n,document.head.appendChild(i),t.trackPageViewInitial(window.location.href);})()</script>
 <!-- End: Northbeam pixel -->
