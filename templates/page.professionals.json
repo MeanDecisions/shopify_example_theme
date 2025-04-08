@@ -683,6 +683,54 @@
         "rounded": false
       }
     },
+    "rich_text_ywaUFe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hAiQg7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quick Access",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hAiQg7"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 16,
+        "padding_bottom": 12,
+        "divider": true,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "multicolumn_W6khqt": {
       "type": "multicolumn",
       "blocks": {
@@ -1508,6 +1556,7 @@
     "image_with_text_overlay_wc9i7i",
     "rich_text_cEBa6E",
     "logo_list_8RkrKh",
+    "rich_text_ywaUFe",
     "multicolumn_W6khqt",
     "rich_text_Ciikwp",
     "image_with_text_AENgAE",
