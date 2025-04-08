@@ -83,71 +83,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "images-with-text": {
-      "type": "images-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our <em>Journey</em>",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Our History",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_ratio": "portrait",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 120,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
-      }
-    },
     "empty_space_yNyFtC": {
       "type": "empty-space",
       "disabled": true,
@@ -156,142 +91,6 @@
         "mobile_height": 0,
         "color_background": "",
         "gradient_background": ""
-      }
-    },
-    "timeline_jM7XXf": {
-      "type": "timeline",
-      "blocks": {
-        "content_wPrp3p": {
-          "type": "content",
-          "settings": {
-            "image": "shopify://shop_images/Aero1.webp",
-            "subheading": "2004",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Case is founded by Paul Newman, Matthew Hilton and </p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_Cagjx9": {
-          "type": "content",
-          "settings": {
-            "subheading": "2006",
-            "heading": "Case Launches",
-            "heading_tag": "h2",
-            "text": "<p>The Profile Chair and Extending Table by Matthew Hilton are released.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_eB9VJg": {
-          "type": "content",
-          "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_t36X7C": {
-          "type": "content",
-          "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_4BJcn9": {
-          "type": "content",
-          "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "content_7KbbTE": {
-          "type": "content",
-          "settings": {
-            "subheading": "Text",
-            "heading": "Heading",
-            "heading_tag": "h2",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "content_wPrp3p",
-        "content_Cagjx9",
-        "content_eB9VJg",
-        "content_t36X7C",
-        "content_4BJcn9",
-        "content_7KbbTE"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_ratio": "landscape",
-        "image_ratio_mobile": "wide",
-        "heading": "Twenty Years of Award-Winning Design",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "image_with_text_Gjb7cG": {
@@ -543,7 +342,7 @@
         "text_GBQBVw": {
           "type": "text",
           "settings": {
-            "text": "<p>Case Professionals platform is tailored to provide support to our trade and commercial customers.</p>",
+            "text": "<p>We offer specific furniture supply services for our trade and commercial customers. Whether you would like to stock Case Furniture products in your store or specify a product for a project, we’d be happy to help. Please contact <a href=\"mailto:sales@casefurniture.com\" target=\"_blank\">sales@casefurniture.com </a>or call <a href=\"tel:02088704488\" target=\"_blank\">0208 870 4488 </a>to set up an account or discuss any trade enquiry in more detail.</p><p>Alternatively, fill out the form below with details of your requirements, and a member of our dedicated sales team will be in touch with you shortly.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -558,7 +357,7 @@
             "button_label": "Join Us",
             "button_link": "",
             "button_style": "primary",
-            "button_size": "md",
+            "button_size": "sm",
             "button_external": false,
             "button_icon": false
           }
@@ -1612,9 +1411,7 @@
   "order": [
     "main",
     "image-with-text-overlay",
-    "images-with-text",
     "empty_space_yNyFtC",
-    "timeline_jM7XXf",
     "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
     "image_with_text_overlay_wc9i7i",
