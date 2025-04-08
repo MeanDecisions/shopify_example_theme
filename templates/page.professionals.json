@@ -968,7 +968,7 @@
         "text_Jb8hAQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Lounge Chair.</p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.</p>",
+            "text": "<p>Introducing our latest addition to the Matthew Hilton range - the Ella Swivel Lounge Chair.</p><p>With its striking, unique shape and elegant design, it's sure to be the centerpiece of any living space. The chair features distinctive 'wings' that reach out on either side, providing comfort and support. Now available with a swivel base.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -982,11 +982,11 @@
           "type": "button",
           "settings": {
             "button_label": "Discover",
-            "button_link": "",
+            "button_link": "shopify://products/ella-swivel-lounge-chair",
             "button_style": "primary",
             "button_size": "sm",
-            "button_external": true,
-            "button_icon": true
+            "button_external": false,
+            "button_icon": false
           }
         }
       },
@@ -1058,7 +1058,7 @@
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
-            "button_icon": true
+            "button_icon": false
           }
         }
       },
@@ -1146,6 +1146,7 @@
         "text_Q94xJP",
         "button_FGrwfH"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/slot-shelving-white-900-600-900_5308bdf4-8120-46c0-8452-1968fda571ae.jpg",
         "image_height": "650px",
