@@ -692,7 +692,7 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Assets_Wide_copy.svg",
+            "image": "shopify://shop_images/Data_Assets_Outlined.svg",
             "image_ratio": "wide",
             "heading": "Product Assets",
             "heading_size": "text-base-xl",
