@@ -909,7 +909,7 @@
     "custom_liquid_eaaGUj": {
       "type": "custom-liquid",
       "settings": {
-        "liquid": "<div id=\"contact_form_TTpAP3\"></div>",
+        "liquid": "<div id=\"contact_form\"></div>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
