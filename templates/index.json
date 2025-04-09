@@ -88,6 +88,105 @@
         "parallax_direction": "zoom"
       }
     },
+    "scrolling_text_bDVmxC": {
+      "type": "scrolling-text",
+      "blocks": {
+        "image_eyq3tC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Final_Logo.svg",
+            "height": 20
+          }
+        },
+        "text_Eganfj": {
+          "type": "text",
+          "settings": {
+            "text": "Spend over £500 and save £50",
+            "text_size": 16,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_krbNyH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Final_Logo.svg",
+            "height": 20
+          }
+        },
+        "text_QDwHQh": {
+          "type": "text",
+          "settings": {
+            "text": "Spend over £1000 and save £125",
+            "text_size": 16,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_fEBKVn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Final_Logo.svg",
+            "height": 20
+          }
+        },
+        "text_NwDjnj": {
+          "type": "text",
+          "settings": {
+            "text": "Spend over £2500 and save £400",
+            "text_size": 16,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_cbm3xV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Final_Logo.svg",
+            "height": 20
+          }
+        },
+        "text_BiCtfp": {
+          "type": "text",
+          "settings": {
+            "text": "Spend over £5000 and save £1000",
+            "text_size": 16,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_eyq3tC",
+        "text_Eganfj",
+        "image_krbNyH",
+        "text_QDwHQh",
+        "image_fEBKVn",
+        "text_NwDjnj",
+        "image_cbm3xV",
+        "text_BiCtfp"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 50,
+        "enable_twin": false,
+        "enable_parallax": false,
+        "color_text": "",
+        "color_background": "#f4c14b",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -1270,6 +1369,7 @@
   },
   "order": [
     "slideshow",
+    "scrolling_text_bDVmxC",
     "collection-list",
     "image-comparison",
     "featured_collection_QjKgKT",

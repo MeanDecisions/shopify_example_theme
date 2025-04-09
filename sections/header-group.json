@@ -25,10 +25,23 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "announcement_CAqg3k": {
+          "type": "announcement",
+          "settings": {
+            "icon": "gift",
+            "text": "Save upto £1000 with Case",
+            "link": "",
+            "hide_icon_mobile": false,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
-        "announcement-1"
+        "announcement-1",
+        "announcement_CAqg3k"
       ],
       "settings": {
         "show_social": false,
@@ -445,47 +458,11 @@
         "divider": false,
         "rounded": false
       }
-    },
-    "scrolling_text_iWnFfH": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_HEywKh": {
-          "type": "text",
-          "settings": {
-            "text": "Professionals",
-            "text_size": 12,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text_HEywKh"
-      ],
-      "disabled": true,
-      "settings": {
-        "direction": "left",
-        "speed": 26,
-        "grid_horizontal": 60,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "#fffffa",
-        "color_background": "#265874",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "divider": false,
-        "rounded": false
-      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "slideshow_hero_nFgMC6",
-    "scrolling_text_iWnFfH"
+    "slideshow_hero_nFgMC6"
   ]
 }
