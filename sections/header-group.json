@@ -429,12 +429,31 @@
             "button_external": false,
             "button_icon": false
           }
+        },
+        "video_jTTeWH": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/Spring-Savings-Web-Banner.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "video_url_mobile": "",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
         }
       },
       "block_order": [
         "video_838WGE",
         "image_cmKgpi",
-        "image_GRE6KX"
+        "image_GRE6KX",
+        "video_jTTeWH"
       ],
       "settings": {
         "logo_width": 1000,
