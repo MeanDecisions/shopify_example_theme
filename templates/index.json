@@ -1027,10 +1027,10 @@
         "product-1": {
           "type": "product",
           "settings": {
-            "product": "narin-folding-chair",
+            "product": "prinds-table",
             "color_text": "#ffffff",
-            "vertical": 57,
-            "horizontal": 24,
+            "vertical": 48,
+            "horizontal": 59,
             "vertical_mobile": 25,
             "horizontal_mobile": 25
           }
@@ -1038,10 +1038,10 @@
         "product_Tb4BJq": {
           "type": "product",
           "settings": {
-            "product": "marlow-drop-leaf-table",
+            "product": "675-chair",
             "color_text": "#ffffff",
-            "vertical": 50,
-            "horizontal": 80,
+            "vertical": 67,
+            "horizontal": 76,
             "vertical_mobile": 50,
             "horizontal_mobile": 50
           }
@@ -1049,10 +1049,10 @@
         "product_NNhLd8": {
           "type": "product",
           "settings": {
-            "product": "industry-candlestick",
+            "product": "solid-rechargeable-table-light",
             "color_text": "#ffffff",
-            "vertical": 27,
-            "horizontal": 91,
+            "vertical": 33,
+            "horizontal": 32,
             "vertical_mobile": 50,
             "horizontal_mobile": 50
           }
@@ -1064,7 +1064,7 @@
         "product_NNhLd8"
       ],
       "settings": {
-        "image": "shopify://shop_images/marlow-table-narin-chair-styleshot-1_9cdcbfc7-bc67-4ef4-ad70-d041a562a8ab.jpg",
+        "image": "shopify://shop_images/Prinds-table-terracotta-against-wall-with-675chair-img-sqr.png",
         "heading": "Shop The Look",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
