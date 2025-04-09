@@ -373,13 +373,13 @@
         "collection": "bestsellers",
         "products": [
           "profile-chair",
-          "675-chair",
+          "ella-lounge-chair",
           "cross-extending-table",
           "forum-2-seater-sofa",
-          "dulwich-extending-table",
-          "ella-lounge-chair",
           "slot-shelving-double",
-          "narin-folding-chair"
+          "675-chair",
+          "celine-desk",
+          "dulwich-extending-table"
         ],
         "product_limit": 8,
         "columns": 4,
