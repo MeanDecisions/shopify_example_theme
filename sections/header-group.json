@@ -14,18 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "icon": "truck",
-            "text": "Free shipping on all UK orders",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "announcement_CAqg3k": {
           "type": "announcement",
           "settings": {
@@ -37,11 +25,23 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping on all UK orders",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
-        "announcement-1",
-        "announcement_CAqg3k"
+        "announcement_CAqg3k",
+        "announcement-1"
       ],
       "settings": {
         "show_social": false,
