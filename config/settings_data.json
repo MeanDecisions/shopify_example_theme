@@ -106,7 +106,7 @@
     "cart_icon": "tote-bag",
     "enable_search": true,
     "predictive_search_enabled": true,
-    "predictive_search_limit": 5,
+    "predictive_search_limit": 7,
     "predictive_search_recommendation": "",
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": false,
