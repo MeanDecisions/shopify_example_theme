@@ -370,7 +370,7 @@
           "type": "button",
           "settings": {
             "button_label": "Join Us",
-            "button_link": "https://casefurniture.com/pages/professionals-trade#contact_form_TTpAP3",
+            "button_link": "#contact_form_TTpAP3",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
