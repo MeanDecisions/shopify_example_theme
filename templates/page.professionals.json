@@ -303,11 +303,27 @@
             "button_external": false,
             "button_icon": false
           }
+        },
+        "link_FLn9xM": {
+          "type": "link",
+          "settings": {
+            "label": "Text",
+            "link": "#contact_form",
+            "external": false
+          }
+        },
+        "liquid_KzMGDg": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<a href=\"#contact_form\">Join Us</a>"
+          }
         }
       },
       "block_order": [
         "text_GBQBVw",
-        "button_m9zhPj"
+        "button_m9zhPj",
+        "link_FLn9xM",
+        "liquid_KzMGDg"
       ],
       "settings": {
         "text_alignment": "left",
