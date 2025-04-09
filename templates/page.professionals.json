@@ -297,23 +297,16 @@
           "type": "button",
           "settings": {
             "button_label": "Join Us",
-            "button_link": "#contact_form_TTpAP3",
+            "button_link": "https://casefurniture.com/pages/professionals-trade#contact_form",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
             "button_icon": false
           }
         },
-        "link_FLn9xM": {
-          "type": "link",
-          "settings": {
-            "label": "Text",
-            "link": "#contact_form",
-            "external": false
-          }
-        },
         "liquid_KzMGDg": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<a href=\"https://casefurniture.com/pages/professionals-trade#contact_form\" title=\"#contact_form\">See Details</a>"
           }
@@ -322,7 +315,6 @@
       "block_order": [
         "text_GBQBVw",
         "button_m9zhPj",
-        "link_FLn9xM",
         "liquid_KzMGDg"
       ],
       "settings": {
