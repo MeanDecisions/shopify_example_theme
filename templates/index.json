@@ -172,7 +172,7 @@
       ],
       "settings": {
         "direction": "left",
-        "speed": 20,
+        "speed": 15,
         "grid_horizontal": 50,
         "enable_twin": false,
         "enable_parallax": false,
