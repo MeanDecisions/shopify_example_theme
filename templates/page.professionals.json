@@ -797,7 +797,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
-        "image_height": "adapt",
+        "image_height": "500px",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
@@ -868,7 +868,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Narin_Contract_v2.jpg",
-        "image_height": "adapt",
+        "image_height": "500px",
         "image_width": "medium",
         "layout": "text_first",
         "text_alignment": "left",
