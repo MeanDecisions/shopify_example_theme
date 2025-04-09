@@ -577,8 +577,8 @@
           "type": "column",
           "settings": {
             "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "image": "shopify://shop_images/Images_Black_copy_4.svg",
             "image_ratio": "wide",
             "heading": "New Images",
@@ -597,8 +597,8 @@
           "type": "column",
           "settings": {
             "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "image": "shopify://shop_images/Swatches_Square_copy_2.svg",
             "image_ratio": "wide",
             "heading": "Swatches",
@@ -617,8 +617,8 @@
           "type": "column",
           "settings": {
             "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "image": "shopify://shop_images/Profiles_Black_copy_4.svg",
             "image_ratio": "wide",
             "heading": "Designer Profiles",
@@ -637,8 +637,8 @@
           "type": "column",
           "settings": {
             "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "image": "shopify://shop_images/Contact_Us_icon_dce56ed3-b07d-4e20-b392-275ec612c1f0.png",
             "image_ratio": "wide",
             "heading": "<a href=\"/pages/contact-us\" title=\"Contact us\">Contact Us</a>",
