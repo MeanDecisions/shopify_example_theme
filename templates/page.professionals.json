@@ -797,8 +797,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_in_living_room.png",
-        "image_height": "550px",
-        "image_width": "large",
+        "image_height": "adapt",
+        "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -839,7 +839,7 @@
         "text_6iQrED": {
           "type": "text",
           "settings": {
-            "text": "<p>Crafted with a solid wood frame, this smart and robust design features a smooth sweeping transition from the turned legs into the formed backrest, which also doubles as the mount for the pivot from where the back leg rotates. The seat and back are formed from layered birch ply with a clear lacquer oak veneer and stainless steel fixings. Now available in the outdoor version</p>",
+            "text": "<p>Crafted with a solid wood frame, this smart and robust design features a smooth sweeping transition from the turned legs into the formed backrest, which also doubles as the mount for the pivot from where the back leg rotates.</p><p>The seat and back are formed from layered birch ply with a clear lacquer oak veneer and stainless steel fixings. Now available in the outdoor version</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -853,7 +853,7 @@
           "type": "button",
           "settings": {
             "button_label": "Discover",
-            "button_link": "",
+            "button_link": "shopify://products/narin-folding-chair",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
@@ -868,8 +868,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Narin_Contract_v2.jpg",
-        "image_height": "650px",
-        "image_width": "large",
+        "image_height": "adapt",
+        "image_width": "medium",
         "layout": "text_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
