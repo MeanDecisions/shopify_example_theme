@@ -24,79 +24,6 @@
         "rounded": false
       }
     },
-    "image_with_text_Gjb7cG": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_CfrG7b": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Design Without Compromise",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_RjtxHm": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We offer specific furniture supply services for our trade and commercial customers. Whether you would like to stock Case Furniture products in your store or specify a product for a project, we’d be happy to help. Please contact<a href=\"mailto:sales@casefurniture.com\" target=\"_blank\">sales@casefurniture.com</a>or call<a href=\"tel:02088704488\" target=\"_blank\">0208 870 4488</a>to set up an account or discuss any trade enquiry in more detail. Alternatively, fill out the form below with details of your requirements, and a member of our dedicated sales team will be in touch with you shortly.</p>",
-            "text_size": "subtext-lg",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "enable_read_more": false
-          }
-        },
-        "button_J8QCYc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Apply for an Account",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "sm",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_CfrG7b",
-        "text_RjtxHm",
-        "button_J8QCYc"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Frame_1.png",
-        "image_height": "500px",
-        "image_width": "small",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "#444c48",
-        "color_background": "#f9f9f3",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#05273a",
-        "color_button_background": "#def3f3",
-        "color_button_gradient": "",
-        "padding_top": 92,
-        "padding_bottom": 92,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "horizontal"
-      }
-    },
     "multicolumn_7BYHg6": {
       "type": "multicolumn",
       "blocks": {
@@ -370,7 +297,7 @@
           "type": "button",
           "settings": {
             "button_label": "Join Us",
-            "button_link": "#contact_form_TTpAP3",
+            "button_link": "https://casefurniture.com/pages/professionals-trade#contact_form_TTpAP3",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
@@ -1309,7 +1236,6 @@
   },
   "order": [
     "main",
-    "image_with_text_Gjb7cG",
     "multicolumn_7BYHg6",
     "logo_list_8RkrKh",
     "image_with_text_overlay_wc9i7i",
