@@ -297,7 +297,7 @@
           "type": "button",
           "settings": {
             "button_label": "Join Us",
-            "button_link": "https://casefurniture.com/pages/professionals-trade#contact_form_TTpAP3",
+            "button_link": "#contact_form_TTpAP3",
             "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
@@ -906,6 +906,23 @@
         "rounded": false
       }
     },
+    "custom_liquid_eaaGUj": {
+      "type": "custom-liquid",
+      "settings": {
+        "liquid": "<div id=\"contact_form_TTpAP3\"></div>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "contact_form_TTpAP3": {
       "type": "contact-form",
       "blocks": {
@@ -982,6 +999,7 @@
         "custom_field_DN7pm7",
         "custom_field_9pyLeN"
       ],
+      "custom_css": [],
       "settings": {
         "heading": "Apply for an account",
         "heading_size": "title-md",
@@ -1246,6 +1264,7 @@
     "image_with_text_38LN86",
     "image_with_text_An3fAn",
     "multicolumn_wkgT73",
+    "custom_liquid_eaaGUj",
     "contact_form_TTpAP3",
     "empty_space_P9PCiR",
     "image_with_text_overlay_YNAyEn",
