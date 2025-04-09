@@ -221,6 +221,14 @@
             "image_max_width_mobile": 50
           }
         },
+        "subheading_6dYGXn": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Designer",
+            "subheading_size": "subtitle-md",
+            "secondary_color": false
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -247,6 +255,7 @@
       },
       "block_order": [
         "image",
+        "subheading_6dYGXn",
         "heading",
         "text"
       ],
