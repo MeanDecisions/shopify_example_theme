@@ -457,7 +457,7 @@
             "show_border": false,
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/Contact_Us_icon_dce56ed3-b07d-4e20-b392-275ec612c1f0.png",
+            "image": "shopify://shop_images/Logo.svg",
             "image_ratio": "wide",
             "heading": "<a href=\"/pages/contact-us\" title=\"Contact us\">Contact Us</a>",
             "heading_size": "text-base-xl",
@@ -907,8 +907,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 52,
+        "padding_bottom": 52,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1029,8 +1029,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 24,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "divider": false,
         "narrow": false,
         "rounded": false
@@ -1158,10 +1158,23 @@
           "type": "heading",
           "settings": {
             "heading": "Sign-up to our trade newsletter",
-            "heading_size": "title-md",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
+          }
+        },
+        "text_EbBgdB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know when we launch new products and offers</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
           }
         },
         "klaviyo_email_marketing_sms_form_embed_block_xM4xNQ": {
@@ -1173,7 +1186,11 @@
       },
       "block_order": [
         "heading_dD387Y",
+        "text_EbBgdB",
         "klaviyo_email_marketing_sms_form_embed_block_xM4xNQ"
+      ],
+      "custom_css": [
+        ".image-with-text .rich-text > * + *:not(.spacing-section) {margin-block-start: 20px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Rectangle_118.png",
@@ -1184,8 +1201,8 @@
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
-        "color_text": "#fffffa",
-        "color_background": "#1b1b1b",
+        "color_text": "#1b1b1b",
+        "color_background": "#f9f9f3",
         "gradient_background": "",
         "color_background_2": "",
         "gradient_background_2": "",
