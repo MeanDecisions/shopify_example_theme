@@ -194,8 +194,8 @@
         "heading_ijrLgA": {
           "type": "heading",
           "settings": {
-            "heading": "Spend More, <strong>Save More</strong>",
-            "heading_size": "title-md",
+            "heading": "Spend More, Save More",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
