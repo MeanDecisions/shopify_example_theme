@@ -170,6 +170,7 @@
         "image_cbm3xV",
         "text_BiCtfp"
       ],
+      "disabled": true,
       "settings": {
         "direction": "left",
         "speed": 15,
@@ -184,6 +185,66 @@
         "padding_top": 12,
         "padding_bottom": 12,
         "divider": false,
+        "rounded": false
+      }
+    },
+    "highlight_text_MVEcQy": {
+      "type": "highlight-text",
+      "blocks": {
+        "heading_ijrLgA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Spend More, <strong>Save More</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FDger3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Spend £500 and save <strong>£50</strong> | Spend £1000 and save <strong>£125</strong> | Spend £2500 and save <strong>£400</strong> | Spend £5000 and save<strong> £1000</strong></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ijrLgA",
+        "text_FDger3"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#fbf9f9",
+        "color_background": "#1b1b1b",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -1370,6 +1431,7 @@
   "order": [
     "slideshow",
     "scrolling_text_bDVmxC",
+    "highlight_text_MVEcQy",
     "collection-list",
     "image-comparison",
     "featured_collection_QjKgKT",
