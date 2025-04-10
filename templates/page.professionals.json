@@ -885,7 +885,7 @@
       "settings": {
         "gap": "small",
         "columns": 4,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "heading": "Case Studies",
         "heading_size": "title-md",
