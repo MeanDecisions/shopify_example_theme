@@ -185,13 +185,13 @@
         "enable_twin": false,
         "enable_parallax": false,
         "color_text": "#1b1b1b",
-        "color_background": "#f4c14b",
+        "color_background": "#fffffa",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "padding_top": 12,
         "padding_bottom": 12,
-        "divider": false,
+        "divider": true,
         "rounded": false
       }
     },
