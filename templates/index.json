@@ -371,76 +371,18 @@
         "rounded": false
       }
     },
-    "image-comparison": {
-      "type": "image-comparison",
-      "blocks": {
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "Before image",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "After image",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image-1",
-        "image-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "horizontal",
-        "image_height": "750px",
-        "image_height_mobile": "300px",
-        "heading": "<em>Image comparison</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "Add a tagline",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "text",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "linear-gradient(90deg, rgba(206, 248, 248, 1), rgba(68, 76, 72, 1) 100%)",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "featured_collection_QjKgKT": {
       "type": "featured-collection",
       "settings": {
         "collection": "bestsellers",
         "products": [
           "profile-chair",
-          "ella-lounge-chair",
-          "cross-extending-table",
           "forum-2-seater-sofa",
-          "slot-shelving-double",
-          "675-chair",
+          "ella-lounge-chair",
           "celine-desk",
+          "slot-shelving-double",
+          "cross-extending-table",
+          "675-chair",
           "dulwich-extending-table"
         ],
         "product_limit": 8,
@@ -549,49 +491,6 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
-      }
-    },
-    "product_bundle_tj3Vfp": {
-      "type": "product-bundle",
-      "disabled": true,
-      "settings": {
-        "collection": "living-room-furniture",
-        "products": [],
-        "product_limit": 6,
-        "columns": 3,
-        "columns_mobile": "1",
-        "minimum_quantity": 3,
-        "maximum_quantity": 3,
-        "prevent_duplicate_products": true,
-        "allow_quantity_change": true,
-        "quantity_increment": "1",
-        "quantity_minimum": "1",
-        "quantity_maximum": "",
-        "show_variant_labels": true,
-        "picker_type": "button",
-        "enable_color_swatches": true,
-        "color_swatch_type": "color",
-        "heading": "Autumnal Living",
-        "heading_size": "lg:text-4xl text-2xl",
-        "heading_alignment": "text-left",
-        "heading_tag": "h2",
-        "subheading": "Add at least 3 products to proceed and save 20%",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
       }
     },
     "reveal_image_with_text_9B8Dy6": {
@@ -735,132 +634,6 @@
         "padding_bottom": 72,
         "divider": true,
         "narrow": false,
-        "rounded": false
-      }
-    },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_size": "text-sm"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "title_size": "product-title-lg",
-            "title_size_mobile": "product-title-md",
-            "show_price": true,
-            "show_rating": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "color_swatch_type": "color",
-            "size_chart": ""
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": false,
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false,
-            "enable_back_in_stock": false,
-            "show_back_in_stock_name": false,
-            "show_back_in_stock_phone": false
-          }
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share",
-            "show_help_desk": true,
-            "help_label": "Need help?",
-            "help_page": ""
-          }
-        },
-        "read_more": {
-          "type": "read_more",
-          "settings": {}
-        },
-        "spinning_text": {
-          "type": "spinning_text",
-          "disabled": true,
-          "settings": {
-            "text": "Featured product"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "title",
-        "description",
-        "countdown",
-        "variant_picker",
-        "inventory",
-        "buy_buttons",
-        "pickup_availability",
-        "share",
-        "read_more",
-        "spinning_text"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "forum-2-seater-sofa",
-        "enable_sticky_info": true,
-        "media_size": 64,
-        "gallery_layout": "columns",
-        "thumbnail_position": "beside",
-        "image_ratio": "adapt_first",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "mobile_layout": "full_width",
-        "image_ratio_mobile": "adapt_first",
-        "mobile_thumbnail": false,
-        "padding_top": 80,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
         "rounded": false
       }
     },
@@ -1383,14 +1156,11 @@
     "scrolling_text_bDVmxC",
     "highlight_text_MVEcQy",
     "collection-list",
-    "image-comparison",
     "featured_collection_QjKgKT",
     "image_with_text_overlay_9tf9wj",
-    "product_bundle_tj3Vfp",
     "reveal_image_with_text_9B8Dy6",
     "video-with-text-overlay",
     "rich_text_Cf9jGA",
-    "featured-product",
     "featured-collections",
     "reveal_image_with_text_overlay_7WVaNB",
     "shop-the-look",
