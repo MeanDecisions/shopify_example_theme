@@ -413,7 +413,7 @@
         "text_mjAB8r"
       ],
       "custom_css": [
-        ".highlight-text {margin-bottom: -7px;}"
+        ".highlight-text {margin-bottom: -10px;}"
       ],
       "settings": {
         "text_alignment": "center",
