@@ -616,8 +616,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_lifestyle_-_SQR.png",
-        "image_height": "500px",
-        "image_width": "medium",
+        "image_height": "600px",
+        "image_width": "small",
         "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
@@ -686,7 +686,7 @@
         "button_MejahA"
       ],
       "settings": {
-        "image": "shopify://shop_images/Prinds-table-terracotta-living-room-with-675chair-img-sqr.png",
+        "image": "shopify://shop_images/Prinds-table-terracotta-living-room-with-675chair-img-sqr_1c593a72-8eb7-4997-a034-17409493ac7f.png",
         "image_height": "500px",
         "image_width": "medium",
         "layout": "text_first",
