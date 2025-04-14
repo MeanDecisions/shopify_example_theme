@@ -234,6 +234,7 @@
         },
         "text_tDBKFt": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "",
             "text_size": "subtext-md",
@@ -284,7 +285,7 @@
         "text_GBQBVw": {
           "type": "text",
           "settings": {
-            "text": "<p>We offer bespoke services for our trade and commercial customers. Whether you would like to stock Case Furniture products or specify a product for a project, we’d be happy to help. Please contact <a href=\"mailto:sales@casefurniture.com\" target=\"_blank\">sales@casefurniture.com </a>or call <a href=\"tel:02088704488\" target=\"_blank\">0208 870 4488 </a>to set up an account or discuss your trade enquiry in more detail.</p><p>Alternatively, fill out the form below with details of your requirements, and a member of our dedicated sales team will be in touch with you shortly.<br/><br/></p>",
+            "text": "<p>Case Professionals is a platform designed to support our trade and commercial customers.</p><p>Whether you're a solo interior designer or part of a larger company, we're here to help bring your vision to life—no matter the scale or scope of your project.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
