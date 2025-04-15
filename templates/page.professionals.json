@@ -614,9 +614,7 @@
         "text_Jb8hAQ",
         "button_GTPXzL"
       ],
-      "custom_css": [
-        ".media--400px {height: 340px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_lifestyle_-_SQR.png",
         "image_height": "600px",
@@ -637,7 +635,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 24,
-        "padding_bottom": 32,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": true,
         "rounded": false,
