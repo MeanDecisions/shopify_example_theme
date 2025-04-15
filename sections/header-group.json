@@ -406,11 +406,18 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "line_break_RbeEhQ": {
+          "type": "line_break",
+          "settings": {
+            "mobile_disabled": false
+          }
         }
       },
       "block_order": [
         "heading_Rx68xK",
-        "text_mjAB8r"
+        "text_mjAB8r",
+        "line_break_RbeEhQ"
       ],
       "custom_css": [
         ".highlight-text {margin-bottom: -10px;}"
