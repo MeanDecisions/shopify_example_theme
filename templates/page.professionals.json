@@ -682,6 +682,9 @@
         "text_EPHPWi",
         "klaviyo_email_marketing_sms_form_embed_block_xUh4TQ"
       ],
+      "custom_css": [
+        ".banner__box {word-wrap: break-word; height: fit-content; padding-top: 25px; padding-bottom: 15px;}"
+      ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "content_width": "large",
@@ -698,7 +701,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "narrow": false,
+        "narrow": true,
         "rounded": false
       }
     },
