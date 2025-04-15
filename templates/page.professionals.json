@@ -1193,6 +1193,7 @@
         "text_EbBgdB",
         "klaviyo_email_marketing_sms_form_embed_block_xM4xNQ"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text .rich-text > * + *:not(.spacing-section) {margin-block-start: 0px;}"
       ],
@@ -1223,6 +1224,63 @@
         "enable_parallax": true,
         "parallax_direction": "vertical"
       }
+    },
+    "newsletter_9aKKTb": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_at46UB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our trade newsletter",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_EPHPWi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know about our latest products and offers.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_xUh4TQ": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "YvJ8TE"
+          }
+        }
+      },
+      "block_order": [
+        "heading_at46UB",
+        "text_EPHPWi",
+        "klaviyo_email_marketing_sms_form_embed_block_xUh4TQ"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "content_width": "large",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#f9f9f3",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 8,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1242,6 +1300,7 @@
     "empty_space_P9PCiR",
     "image_with_text_overlay_YNAyEn",
     "featured_collection_YqYEkN",
-    "image_with_text_NrkWb7"
+    "image_with_text_NrkWb7",
+    "newsletter_9aKKTb"
   ]
 }
