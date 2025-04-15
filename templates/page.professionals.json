@@ -614,6 +614,9 @@
         "text_Jb8hAQ",
         "button_GTPXzL"
       ],
+      "custom_css": [
+        ".media--400px {height: 340px;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Ella_Swivel_chair_lifestyle_-_SQR.png",
         "image_height": "600px",
@@ -686,8 +689,8 @@
         "button_MejahA"
       ],
       "settings": {
-        "image": "shopify://shop_images/Prinds-table-terracotta-living-room-with-675chair-img-sqr.png",
-        "image_height": "500px",
+        "image": "shopify://shop_images/Prinds-table-terracotta-living-room-with-675chair-img-sqr_7c4de45a-0247-4f36-832e-a08b1820b467.png",
+        "image_height": "600px",
         "image_width": "medium",
         "layout": "text_first",
         "text_alignment": "left",
@@ -1127,7 +1130,7 @@
         "columns": 4,
         "carousel_on_desktop": true,
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "heading": "Bestsellers",
         "heading_size": "title-md",
@@ -1191,7 +1194,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_xM4xNQ"
       ],
       "custom_css": [
-        ".image-with-text .rich-text > * + *:not(.spacing-section) {margin-block-start: 20px;}"
+        ".image-with-text .rich-text > * + *:not(.spacing-section) {margin-block-start: 0px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Rectangle_118.png",
