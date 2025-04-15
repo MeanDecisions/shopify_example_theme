@@ -1171,7 +1171,7 @@
         "text_EbBgdB": {
           "type": "text",
           "settings": {
-            "text": "<p>Be the first to know when we launch new products and offers.</p>",
+            "text": "<p>Be the first to know about our latest products and offers.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
