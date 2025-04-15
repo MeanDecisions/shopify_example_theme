@@ -661,7 +661,7 @@
         "text_EPHPWi": {
           "type": "text",
           "settings": {
-            "text": "<p>Be the first to know about our latest products and offers.</p>",
+            "text": "<p>Be the first to know about our latest products and offers</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -683,7 +683,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_xUh4TQ"
       ],
       "custom_css": [
-        ".banner__box {word-wrap: break-word; height: fit-content; padding-top: 25px; padding-bottom: 15px;}"
+        ".banner__box {word-wrap: break-word; height: fit-content; padding-top: 25px; padding-bottom: 25px;}"
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
