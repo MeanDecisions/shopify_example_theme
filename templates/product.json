@@ -259,6 +259,9 @@
         "heading",
         "text"
       ],
+      "custom_css": [
+        ".image-with-text .rich-text > * + *:not(.spacing-section) {margin-block-start: 10px;}"
+      ],
       "settings": {
         "image": "{{ product.metafields.custom.product_designer.value.image_desktop.value }}",
         "image_height": "400px",
