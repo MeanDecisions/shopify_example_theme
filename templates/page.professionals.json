@@ -1057,8 +1057,8 @@
             "full_width": false,
             "checked_value": "Yes",
             "unchecked_value": "No",
-            "radio_options": "Contract, Trade, Stockist",
-            "select_options": "Contract, Trade, Stockist"
+            "radio_options": "Architect, Dealer, Interior Designer, Stockist",
+            "select_options": "Architect, Dealer, Interior Designer, Stockist"
           }
         }
       },
