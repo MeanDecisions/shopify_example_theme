@@ -696,7 +696,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 16,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
