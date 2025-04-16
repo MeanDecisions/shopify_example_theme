@@ -1074,7 +1074,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "heading": "Apply for an account",
+        "heading": "Apply for a Trade Account",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -1087,7 +1087,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
-        "color_background": "#f2f2e7",
+        "color_background": "#f9f9f3",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1097,7 +1097,7 @@
         "padding_top": 40,
         "padding_bottom": 40,
         "divider": false,
-        "narrow": false,
+        "narrow": true,
         "rounded": false
       }
     },
