@@ -559,7 +559,7 @@
         "color_button_gradient": "",
         "padding_top": 60,
         "padding_bottom": 28,
-        "divider": true,
+        "divider": false,
         "narrow": false,
         "rounded": false
       }
