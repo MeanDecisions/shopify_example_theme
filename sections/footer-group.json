@@ -96,105 +96,6 @@
         "rounded": false
       }
     },
-    "scrolling_text_WNw77m": {
-      "type": "scrolling-text",
-      "blocks": {
-        "image_xywJA4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Final_Logo.svg",
-            "height": 20
-          }
-        },
-        "text_XgnLpn": {
-          "type": "text",
-          "settings": {
-            "text": "Spend over £500 and save £50",
-            "text_size": 16,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "image_PbGTTC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Final_Logo.svg",
-            "height": 20
-          }
-        },
-        "text_zfJU6F": {
-          "type": "text",
-          "settings": {
-            "text": "Spend over £1000 and save £125",
-            "text_size": 16,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "image_NdHTn3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Final_Logo.svg",
-            "height": 20
-          }
-        },
-        "text_7Qec8g": {
-          "type": "text",
-          "settings": {
-            "text": "Spend over £2500 and save £400",
-            "text_size": 16,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "image_rXFggq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Final_Logo.svg",
-            "height": 20
-          }
-        },
-        "text_9dMYqN": {
-          "type": "text",
-          "settings": {
-            "text": "Spend over £5000 and save £1000",
-            "text_size": 16,
-            "text_font": "body",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "image_xywJA4",
-        "text_XgnLpn",
-        "image_PbGTTC",
-        "text_zfJU6F",
-        "image_NdHTn3",
-        "text_7Qec8g",
-        "image_rXFggq",
-        "text_9dMYqN"
-      ],
-      "settings": {
-        "direction": "left",
-        "speed": 15,
-        "grid_horizontal": 50,
-        "enable_twin": false,
-        "enable_parallax": false,
-        "color_text": "#1b1b1b",
-        "color_background": "#fffffa",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "divider": true,
-        "rounded": false
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -293,7 +194,6 @@
   },
   "order": [
     "multicolumn-with-icons",
-    "scrolling_text_WNw77m",
     "footer",
     "footer-copyright"
   ]
