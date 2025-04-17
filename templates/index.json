@@ -635,10 +635,10 @@
           "settings": {
             "collection": "armchairs",
             "products": [
-              "ella-swivel-lounge-chair",
               "forum-armchair",
-              "stanley-armchair",
               "ella-lounge-chair",
+              "ella-swivel-lounge-chair",
+              "stanley-armchair",
               "nordin-armchair",
               "rene-armchair"
             ],
@@ -651,10 +651,10 @@
             "collection": "beds",
             "products": [
               "forum-2-seater-sofa",
+              "forum-3-seater-sofa",
               "linn-3-seater-sofa",
               "odyssey-2-seater-sofa",
               "kelston-2-seater-sofa",
-              "forum-3-seater-sofa",
               "linn-2-seater-sofa"
             ],
             "title": "Sofas"
