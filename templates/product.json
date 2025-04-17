@@ -144,8 +144,8 @@
             "text": "<p>All our UK deliveries come with free shipping. If you are ordering from outside the UK, please refer to our <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">delivery page</a> for further information on specific delivery options.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "color_text": "#b45309",
-            "color_background": "#fffbeb",
+            "color_text": "#1b1b1b",
+            "color_background": "#fffffa",
             "gradient_background": "",
             "color_highlight": "#ffddbf",
             "gradient_highlight": ""
@@ -159,8 +159,8 @@
             "text": "<p>You can order a free sample of our fabrics <a href=\"/collections/all-swatches\" target=\"_blank\" title=\"Fabric Swatches\">here</a></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "color_text": "#0369a1",
-            "color_background": "#f0f9ff",
+            "color_text": "#1b1b1b",
+            "color_background": "#fffffa",
             "gradient_background": "",
             "color_highlight": "#ffddbf",
             "gradient_highlight": ""
@@ -174,8 +174,8 @@
             "text": "<p>You can find answers to our most frequently asked questions <a href=\"/pages/faqs\" target=\"_blank\" title=\"FAQs\">here</a></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "color_text": "#be123c",
-            "color_background": "#fff1f2",
+            "color_text": "#1b1b1b",
+            "color_background": "#fffffa",
             "gradient_background": "",
             "color_highlight": "#ffddbf",
             "gradient_highlight": ""
@@ -189,8 +189,8 @@
             "text": "<p>Call us on 02088704488 or email us at info@casefurniture.com</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "color_text": "#4d7c0f",
-            "color_background": "#f7fee7",
+            "color_text": "#1b1b1b",
+            "color_background": "#fffffa",
             "gradient_background": "",
             "color_highlight": "#ffddbf",
             "gradient_highlight": ""
