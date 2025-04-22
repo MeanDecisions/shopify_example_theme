@@ -409,7 +409,7 @@
             "heading": "Home Office",
             "link": "shopify://collections/home-office-furniture",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/COVET_DESK_WEST_STREET_CHAIR_021.png",
+            "image": "shopify://shop_images/COVET_DESK_WEST_STREET_CHAIR_021_5b63a231-6e8d-41d1-ab7e-8914c778af4e.png",
             "content_position": "md:items-start md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
@@ -453,7 +453,7 @@
             "color_highlight_hover": "",
             "gradient_highlight_hover": "",
             "color_overlay_hover": "",
-            "overlay_opacity_hover": 10
+            "overlay_opacity_hover": 0
           }
         },
         "image_TAXtVA": {
@@ -649,12 +649,12 @@
           "type": "image",
           "settings": {
             "column_size": 6,
-            "row_size": 3,
+            "row_size": 4,
             "subheading": "",
             "heading": "Beds",
             "link": "shopify://collections/beds",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/rsz_int06_valentine_bed_01_walnut_d3.jpg",
+            "image": "shopify://shop_images/rsz_int06_valentine_bed_01_walnut_d3.png",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
@@ -677,12 +677,12 @@
           "type": "image",
           "settings": {
             "column_size": 4,
-            "row_size": 1,
+            "row_size": 2,
             "subheading": "",
             "heading": "Bedside Tables",
             "link": "shopify://collections/bedside-tables",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/valentine_bedside_oak_styleshot_7.jpg",
+            "image": "shopify://shop_images/valentine_bedside_oak_styleshot_7.png",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
@@ -710,7 +710,7 @@
             "heading": "Drawers",
             "link": "shopify://collections/chests-of-drawers",
             "invert_subheading_heading": false,
-            "image": "shopify://shop_images/CASE_Pala_Tallboy_walnut_bedroom_closeup_lifestyle_sqr_img.png",
+            "image": "shopify://shop_images/valentine-chest-matthew-hilton-lifestyle.jpg",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "left",
             "content_position_mobile": "items-end justify-start",
