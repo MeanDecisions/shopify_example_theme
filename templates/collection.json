@@ -9,14 +9,7 @@
  */
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {}
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {}
-    },
+   
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -500,18 +493,10 @@
         "enable_parallax": true
       }
     },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {}
-    },
-    "shogun-optimizer": {
-      "type": "shogun-optimizer",
-      "settings": {}
-    }
+   
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
+    
     "main-collection-banner",
     "rich_text_HMy9EW",
     "main-collection",
@@ -520,7 +505,6 @@
     "recently-viewed",
     "image_with_text_overlay_78Uj3E",
     "images-with-text-overlay",
-    "shogun-below",
-    "shogun-optimizer"
+   
   ]
 }
