@@ -5249,9 +5249,23 @@ class MediaGallery extends HTMLElement {
         this.sliderDots.items.forEach((item) => item.hidden = item.getAttribute('data-gang-connect') !== newMedia.getAttribute('data-gang-connect'));
         this.sliderDots.reset();
         this.sliderDots.resetIndexes();
-        this.sliderDots.transitionTo(1, true);
       }
     }
+
+    // Reset both slider and dots
+    this.sliderGallery.reset();
+    if (this.sliderDots) {
+      this.sliderDots.reset();
+      this.sliderDots.resetIndexes();
+    }
+
+    // Force transition to first slide
+    setTimeout(() => {
+      this.sliderGallery.select(1, true);
+      if (this.sliderDots) {
+        this.sliderDots.transitionTo(1, true);
+      }
+    }, 0);
 
     this.setActiveMedia(currentVariant.featured_media.id, this.hideVariants);
 
