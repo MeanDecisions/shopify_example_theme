@@ -17,12 +17,12 @@
         "announcement_CAqg3k": {
           "type": "announcement",
           "settings": {
-            "icon": "check_mark",
-            "text": "Price Match Guarantee",
-            "link": "https://casefurniture.com/pages/price-promise",
+            "icon": "none",
+            "text": "Sale ends midnight Monday 5th",
+            "link": "shopify://collections/all",
             "hide_icon_mobile": false,
             "text_mobile": "",
-            "highlighted_text": "none",
+            "highlighted_text": "scribble",
             "highlighted_scribble": "circle"
           }
         },
