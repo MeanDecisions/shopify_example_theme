@@ -387,7 +387,6 @@
       "blocks": {
         "video_838WGE": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Eos3.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -405,7 +404,6 @@
         },
         "image_cmKgpi": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
             "heading": "Ella Swivel Armchair",
@@ -420,7 +418,6 @@
         },
         "image_GRE6KX": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/RENE_SOFA_032---OVERHANG-ROUND-AND-RENE-SOFA-AND-SPINDLE-RUG.jpg",
             "heading": "Living Room",
@@ -453,6 +450,7 @@
         },
         "image_3HHTKA": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/EOS_lounge_chair-_editorial.jpg",
             "image_mobile": "shopify://shop_images/Case_Furniture_-_Eos_Side_Chair_and_Extending_table_-_black_-vert.png",
