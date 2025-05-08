@@ -23,15 +23,16 @@
   {{ block.shopify_attributes }}
 >   
   {%- if product_variant.inventory_management == 'shopify' -%}
-    {%- if product_variant.inventory_quantity <= 0 and variant_stock_available -%}
+    {%- if product_variant.inventory_quantity <= 0 -%}
       <div class="alert alert--error inline-flex items-center gap-3 pre-order-badge">
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'flex-auto' -%}
         <span class="text-sm font-medium leading-tight">
           {{- 'Stock arriving' -}}
         </span>
-      
       </div>
-      <span class="pre-order-badge-text">{{ variant_stock_available }}</span>
+      {%- if variant_stock_available -%}
+        <span class="pre-order-badge-text">{{ variant_stock_available }}</span>
+      {%- endif -%}
     {%- elsif product_variant.inventory_quantity > 0 -%}
       {%- if product_variant.inventory_quantity <= block.settings.inventory_threshold -%}
         <div class="grid gap-3 w-full">

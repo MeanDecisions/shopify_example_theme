@@ -119,20 +119,13 @@
         "rounded": true
       }
     },
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {}
-    },
-    "shogun-optimizer": {
-      "type": "shogun-optimizer",
-      "settings": {}
-    }
+  
   },
   "order": [
-    "shogun-helper",
+
     "main-article-banner",
     "main-article",
     "blog-posts",
-    "shogun-optimizer"
+ 
   ]
 }

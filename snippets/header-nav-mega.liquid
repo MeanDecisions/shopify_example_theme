@@ -8,7 +8,7 @@
 <div class="mega-menu__container invisible">
   <ul class="mega-menu__list page-width{% if full_width %} page-width--full{% endif %} flex flex-wrap w-full h-full overflow-hidden" role="list" tabindex="-1">
     {%- if link.links != blank -%}
-      <li class="mega-menu__item mega-menu__item--nav mega-menu__item--{{ block.settings.menu_width }}{% unless show_promotions %} mega-menu__item--full{% endunless %} opacity-0 w-full grid">
+      <li class="mega-menu__item mega-menu__item--nav mega-menu__item--{{ block.settings.menu_width }}{% unless show_promotions %} mega-menu__item--full{% endunless %} opacity-0 w-full grid{% if show_promotions and block.settings.promo_image_1 != blank and block.settings.promo_image_2 != blank and block.settings.promo_image_3 != blank %} mega-menu__item--three-promos{% endif %}">
         <ul class="mega-menu__nav{% if link.links.size > 6 %} mega-menu__nav--more{% endif %}{% if show_promotions %} grid{% else %} flex flex-wrap{% endif %}">
           {%- for childlink in link.links -%}
             <li class="opacity-0">

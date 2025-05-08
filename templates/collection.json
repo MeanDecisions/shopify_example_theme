@@ -7,16 +7,8 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {}
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {}
-    },
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -162,7 +154,7 @@
         "enable_filtering": true,
         "filter_collapsed": true,
         "filter_type": "drawer",
-        "filter_color_swatches": false,
+        "filter_color_swatches": true,
         "enable_sorting": true,
         "padding_top": 0,
         "padding_bottom": 40,
@@ -499,19 +491,9 @@
         "rounded": true,
         "enable_parallax": true
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {}
-    },
-    "shogun-optimizer": {
-      "type": "shogun-optimizer",
-      "settings": {}
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "main-collection-banner",
     "rich_text_HMy9EW",
     "main-collection",
@@ -519,8 +501,6 @@
     "dynamic_collection_banner_JdUdm8",
     "recently-viewed",
     "image_with_text_overlay_78Uj3E",
-    "images-with-text-overlay",
-    "shogun-below",
-    "shogun-optimizer"
+    "images-with-text-overlay"
   ]
 }
