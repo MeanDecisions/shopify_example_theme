@@ -16,11 +16,10 @@
       "blocks": {
         "announcement_CAqg3k": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "icon": "none",
-            "text": "Sale ends midnight Monday 5th",
-            "link": "shopify://collections/all",
+            "icon": "check_mark",
+            "text": "Price Match Guarantee",
+            "link": "shopify://pages/price-promise",
             "hide_icon_mobile": false,
             "text_mobile": "",
             "highlighted_text": "scribble",
