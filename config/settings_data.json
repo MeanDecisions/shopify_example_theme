@@ -96,7 +96,7 @@
     "product_countdown": false,
     "product_quick_add": true,
     "product_quick_view": true,
-    "product_color_swatches": true,
+    "product_color_swatches": false,
     "product_max_color_swatches": 5,
     "product_color_swatch_type": "file",
     "product_save_amount": true,
