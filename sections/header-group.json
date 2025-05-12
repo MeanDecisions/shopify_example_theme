@@ -31,7 +31,7 @@
           "settings": {
             "icon": "gift",
             "text": "Free shipping on all UK orders",
-            "link": "",
+            "link": "shopify://collections/all",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
