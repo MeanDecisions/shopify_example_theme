@@ -14,6 +14,7 @@
       "blocks": {
         "breadcrumb": {
           "type": "breadcrumb",
+          "disabled": true,
           "settings": {
             "show_collections_link": true
           }
