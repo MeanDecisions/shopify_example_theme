@@ -29,7 +29,6 @@
       "blocks": {
         "heading_z9NDqk": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Our Designers",
             "heading_size": "title-lg tracking-heading",
@@ -38,10 +37,17 @@
             "highlighted_scribble": "circle"
           }
         },
+        "spacing_xRpmTH": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
         "text_9V3jdL": {
           "type": "text",
           "settings": {
-            "text": "<p>Our award-winning products are the result of longstanding collaborations with globally recognised and talented experts in their field.<br/></p><p>Get to know the trusted, world-renowned furniture designers Case work with.</p>",
+            "text": "<p>Our award-winning products are the result of longstanding collaborations with the expertise of globally recognised and talented designers.<br/>Get to know the trusted, world-renowned furniture designers Case work with.</p>",
             "text_size": "subtext-lg",
             "text_max_size": 32,
             "text_font": "body",
@@ -65,13 +71,14 @@
       },
       "block_order": [
         "heading_z9NDqk",
+        "spacing_xRpmTH",
         "text_9V3jdL",
         "button_Li4Mhb"
       ],
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Our Designers",
+        "heading": "",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
