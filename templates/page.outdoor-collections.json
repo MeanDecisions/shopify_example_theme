@@ -39,6 +39,7 @@
         },
         "text_w6n3bx": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Explore our assortment of sofas, tables, chairs, benches and accessories for your garden.</p>",
             "text_size": "subtext-md",
