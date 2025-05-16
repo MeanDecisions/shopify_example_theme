@@ -1004,7 +1004,7 @@
           "settings": {
             "type": "text",
             "title": "Company Name",
-            "required": false,
+            "required": true,
             "full_width": false,
             "checked_value": "Yes",
             "unchecked_value": "No",
