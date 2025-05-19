@@ -185,6 +185,11 @@
         "type": "shopify://apps/doofinder-search-discovery/blocks/doofinder-script/1abc6bc6-ff36-4a37-9034-effae4a47cf6",
         "disabled": false,
         "settings": {}
+      },
+      "6628239160433917566": {
+        "type": "shopify://apps/littledata-revenue-tracking/blocks/LittledataLayer/45a35ed8-a2b2-46c3-84fa-6f58497c5345",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
