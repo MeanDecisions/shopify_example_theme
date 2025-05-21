@@ -438,6 +438,7 @@
         },
         "video_jTTeWH": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Spring-Savings-Web-Banner.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
