@@ -390,6 +390,7 @@
       "blocks": {
         "video_838WGE": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Eos3.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -407,6 +408,7 @@
         },
         "image_cmKgpi": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
             "heading": "Ella Swivel Armchair",
@@ -421,6 +423,7 @@
         },
         "image_GRE6KX": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/RENE_SOFA_032---OVERHANG-ROUND-AND-RENE-SOFA-AND-SPINDLE-RUG.jpg",
             "heading": "Living Room",
@@ -435,7 +438,6 @@
         },
         "video_jTTeWH": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Spring-Savings-Web-Banner.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -453,7 +455,6 @@
         },
         "image_Wd8NBP": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Sale_header_1532eefa-9d4c-48bb-a9c6-5427944be7ab.jpg",
             "image_mobile": "shopify://shop_images/Sale_header_mobile.jpg",
