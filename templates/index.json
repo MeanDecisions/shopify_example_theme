@@ -381,12 +381,12 @@
         "button_BXHKRQ": {
           "type": "button",
           "settings": {
-            "button_label": "Explore",
+            "button_label": "Explore Here",
             "button_link": "shopify://collections/outdoor-furniture",
             "button_style": "link",
             "button_size": "sm",
             "button_external": false,
-            "button_icon": true
+            "button_icon": false
           }
         }
       },
