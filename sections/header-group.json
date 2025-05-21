@@ -463,7 +463,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Explore Sale",
-            "button_link": "shopify://collections/solas",
+            "button_link": "shopify://collections/outdoor-furniture",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
