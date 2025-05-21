@@ -1017,7 +1017,7 @@
         "image_type": "collection",
         "image_ratio": "portrait",
         "show_products_count": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "<a href=\"/pages/our-designers\" title=\"Our Designers\">Our Designers</a>",
