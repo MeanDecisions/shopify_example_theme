@@ -1031,26 +1031,6 @@
             "highlighted_scribble": "circle"
           }
         },
-        "column_yVUWxz": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/mhilton22.jpg",
-            "image_ratio": "square",
-            "heading": "Alberto Battaglia",
-            "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "column_Wjwdkm": {
           "type": "column",
           "settings": {
@@ -1091,26 +1071,6 @@
             "highlighted_scribble": "circle"
           }
         },
-        "column_egQTNb": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/mhilton22.jpg",
-            "image_ratio": "square",
-            "heading": "Carolina Lopez",
-            "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Sales Support</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "column_UCAtVc": {
           "type": "column",
           "settings": {
@@ -1124,6 +1084,46 @@
             "text": "<p>Middle East Sales</p>",
             "button_label": "",
             "button_link": "shopify://pages/contact-us",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_yVUWxz": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Alberto Battaglia",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Job Title</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_egQTNb": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Carolina Lopez",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Sales Support</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
             "button_style": "secondary",
             "button_external": false,
             "button_icon": true,
@@ -1155,11 +1155,11 @@
       "block_order": [
         "column_xqdHUm",
         "column_P3R3NM",
-        "column_yVUWxz",
         "column_Wjwdkm",
         "column_Hfxzbh",
-        "column_egQTNb",
         "column_UCAtVc",
+        "column_yVUWxz",
+        "column_egQTNb",
         "column_RxRW6L"
       ],
       "settings": {
