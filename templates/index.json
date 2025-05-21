@@ -397,7 +397,7 @@
       ],
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/rsz_eos_dining_set_rust_1_rectangular_table_and_chairs.jpg",
+        "image": "shopify://shop_images/rsz_eos_dining_set_rust_1_rectangular_table_and_chairs.png",
         "image_height": "750px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
