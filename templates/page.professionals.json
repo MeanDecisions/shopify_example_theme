@@ -541,7 +541,7 @@
             "heading": "Canadio Restaurant, Spain",
             "heading_size": "text-lg-2xl",
             "text": "",
-            "button_label": "See Project",
+            "button_label": "Read More",
             "button_link": "shopify://blogs/news/canadio-restaurant-santander-spain",
             "button_style": "link",
             "button_external": false,
@@ -561,7 +561,7 @@
             "heading": "Bay of Islands House, NZ",
             "heading_size": "text-lg-2xl",
             "text": "",
-            "button_label": "See Project",
+            "button_label": "Read More",
             "button_link": "shopify://blogs/news/bay-of-islands-house-new-zealand",
             "button_style": "link",
             "button_external": false,
@@ -581,11 +581,11 @@
             "heading": "The Junipero Hotel, Palm Springs, USA",
             "heading_size": "text-lg-2xl",
             "text": "",
-            "button_label": "",
+            "button_label": "Read More",
             "button_link": "shopify://blogs/news/junipero-hotel-palm-springs-ca",
             "button_style": "link",
             "button_external": false,
-            "button_icon": true,
+            "button_icon": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -596,16 +596,58 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/royal-william-yard-6.jpg",
+            "image": "shopify://shop_images/sartfell-3.jpg",
             "image_ratio": "landscape",
-            "heading": "After Care",
+            "heading": "Sartfell Retreat, Isle of Man",
             "heading_size": "text-lg-2xl",
             "text": "",
-            "button_label": "",
-            "button_link": "shopify://blogs/news/royal-william-yard-plymouth-uk",
+            "button_label": "Read More",
+            "button_link": "shopify://blogs/news/sartfell-retreat-isle-of-man-uk",
             "button_style": "link",
             "button_external": false,
-            "button_icon": true,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_CTbLgN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/san-juan-residence-kitchen-slide.jpg",
+            "image_ratio": "landscape",
+            "heading": "San Juan Residence, Pacific Northwest",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "Read More",
+            "button_link": "shopify://blogs/news/san-juan-residence",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_wrzjFR": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/kigumi-black-675_87208b54-f391-481a-9f3c-e2cbaa90e5bc.jpg",
+            "image_ratio": "landscape",
+            "heading": "675 Chair",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "Read More",
+            "button_link": "shopify://blogs/news/casestudy-675-chair",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -615,7 +657,9 @@
         "column_4hwYrb",
         "column_LixPxL",
         "column_PB3UBb",
-        "column_AdP7Ty"
+        "column_AdP7Ty",
+        "column_CTbLgN",
+        "column_wrzjFR"
       ],
       "settings": {
         "gap": "small",
@@ -646,404 +690,6 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "rich_text_cEBa6E": {
-      "type": "rich-text",
-      "blocks": {
-        "text_GBQBVw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Case Professionals is a platform designed to support our trade and commercial customers.</p><p>Whether you're a solo interior designer or part of a larger company, we're here to help bring your vision to life—no matter the scale or scope of your project.<br/><br/></p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_m9zhPj": {
-          "type": "button",
-          "settings": {
-            "button_label": "Join Us",
-            "button_link": "https://casefurniture.com/pages/professionals-trade#shopify-section-template--24391968489845__contact_form_TTpAP3",
-            "button_style": "primary",
-            "button_size": "sm",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "liquid_KzMGDg": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "<a href=\"https://casefurniture.com/pages/professionals-trade#contact_form\" title=\"#contact_form\">See Details</a>"
-          }
-        }
-      },
-      "block_order": [
-        "text_GBQBVw",
-        "button_m9zhPj",
-        "liquid_KzMGDg"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#1b1b1b",
-        "color_background": "#fffffa",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 36,
-        "padding_bottom": 44,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
-    "multicolumn_W6khqt": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_8dhABC": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Assets_Black_copy_4_1b547b12-4453-4fa1-83a9-66e237bfd2a8.svg",
-            "image_ratio": "square",
-            "heading": "Catalogue",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905336#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_gebEHt": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Catalogue_Black_copy_4.svg",
-            "image_ratio": "square",
-            "heading": "3D Files",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_ckz8Ug": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Solas_CafeTable_and_Armchair_garden_SQR.jpg",
-            "image_ratio": "square",
-            "heading": "<a href=\"https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct\" title=\"https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct\">Images</a>",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_panPgr": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Swatches_Square_copy_2.svg",
-            "image_ratio": "square",
-            "heading": "<a href=\"https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct\" title=\"https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct\">Swatches</a>",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_TRUExP": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Profiles_Black_copy_4.svg",
-            "image_ratio": "square",
-            "heading": "Product Assets",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_mJQ6VH": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/phone_acb184d3-51f6-40f6-9296-b2b96ce4a603.svg",
-            "image_ratio": "square",
-            "heading": "Contact Us",
-            "heading_size": "text-lg-2xl",
-            "text": "",
-            "button_label": "",
-            "button_link": "shopify://pages/contact-us",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_8dhABC",
-        "column_gebEHt",
-        "column_ckz8Ug",
-        "column_panPgr",
-        "column_TRUExP",
-        "column_mJQ6VH"
-      ],
-      "settings": {
-        "gap": "medium",
-        "columns": 3,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "heading": "Design Toolbox",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": true,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#f9f9f3",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 52,
-        "padding_bottom": 52,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
-    "multicolumn_CwWdUb": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_P3R3NM": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Assets_Black_copy_4_1b547b12-4453-4fa1-83a9-66e237bfd2a8.svg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905336#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_yVUWxz": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Catalogue_Black_copy_4.svg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_Wjwdkm": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Solas_CafeTable_and_Armchair_garden_SQR.jpg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_Hfxzbh": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Swatches_Square_copy_2.svg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_egQTNb": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Profiles_Black_copy_4.svg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_UCAtVc": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/phone_acb184d3-51f6-40f6-9296-b2b96ce4a603.svg",
-            "image_ratio": "square",
-            "heading": "Name",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Job Title</p>",
-            "button_label": "",
-            "button_link": "shopify://pages/contact-us",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_P3R3NM",
-        "column_yVUWxz",
-        "column_Wjwdkm",
-        "column_Hfxzbh",
-        "column_egQTNb",
-        "column_UCAtVc"
-      ],
-      "settings": {
-        "gap": "medium",
-        "columns": 3,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "heading": "Our Sales Team",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": true,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#f9f9f3",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 52,
-        "padding_bottom": 52,
-        "divider": false,
-        "full_width": true,
         "rounded": false
       }
     },
@@ -1104,6 +750,405 @@
         "padding_bottom": 40,
         "divider": false,
         "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_cEBa6E": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GBQBVw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Case Professionals is a platform designed to support our trade and commercial customers.</p><p>Whether you're a solo interior designer or part of a larger company, we're here to help bring your vision to life—no matter the scale or scope of your project.<br/><br/></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_m9zhPj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Us",
+            "button_link": "https://casefurniture.com/pages/professionals-trade#shopify-section-template--24391968489845__contact_form_TTpAP3",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "liquid_KzMGDg": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<a href=\"https://casefurniture.com/pages/professionals-trade#contact_form\" title=\"#contact_form\">See Details</a>"
+          }
+        }
+      },
+      "block_order": [
+        "text_GBQBVw",
+        "button_m9zhPj",
+        "liquid_KzMGDg"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1b1b1b",
+        "color_background": "#fffffa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 44,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_W6khqt": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8dhABC": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Assets_Black_copy_4_1b547b12-4453-4fa1-83a9-66e237bfd2a8.svg",
+            "image_ratio": "square",
+            "heading": "Catalogue",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905336#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_gebEHt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Sketch.png",
+            "image_ratio": "square",
+            "heading": "3D Files",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ckz8Ug": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Solas_CafeTable_and_Armchair_garden_SQR.jpg",
+            "image_ratio": "square",
+            "heading": "<a href=\"https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct\" title=\"https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct\">Images</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "Images",
+            "button_link": "https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct",
+            "button_style": "link",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_panPgr": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Swatches_Square_copy_2.svg",
+            "image_ratio": "square",
+            "heading": "<a href=\"https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct\" title=\"https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct\">Swatches</a>",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_TRUExP": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
+            "image_ratio": "square",
+            "heading": "Product Assets",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_mJQ6VH": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/250402_CASE_PALA_031_web.png",
+            "image_ratio": "square",
+            "heading": "Contact Us",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://pages/contact-us",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_8dhABC",
+        "column_gebEHt",
+        "column_ckz8Ug",
+        "column_panPgr",
+        "column_TRUExP",
+        "column_mJQ6VH"
+      ],
+      "settings": {
+        "gap": "medium",
+        "columns": 3,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "heading": "Design Toolbox",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": true,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_CwWdUb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_P3R3NM": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Pernille Brodersen",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Senior Sales Manager</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905336#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_yVUWxz": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Alberto Battaglia",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Job Title</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905354#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Wjwdkm": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Rebecca Ohana",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Retail Manager</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905346#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Hfxzbh": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Anna Maganetti",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Trade Account Manager</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905353#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_egQTNb": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Carolina Lopez",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Sales Support</p>",
+            "button_label": "",
+            "button_link": "https://casefurniture.kontainer.com/folder/905356#token=vANKc4EQpG&type=direct",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_UCAtVc": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Kareena Jain",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Sales Support</p>",
+            "button_label": "",
+            "button_link": "shopify://pages/contact-us",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_P3R3NM",
+        "column_yVUWxz",
+        "column_Wjwdkm",
+        "column_Hfxzbh",
+        "column_egQTNb",
+        "column_UCAtVc"
+      ],
+      "settings": {
+        "gap": "medium",
+        "columns": 3,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "heading": "Our Sales Team",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": true,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": true,
         "rounded": false
       }
     },
@@ -1285,40 +1330,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "featured_collection_YqYEkN": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "bestsellers",
-        "products": [],
-        "product_limit": 8,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "heading": "Bestsellers",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h3",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 24,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
     "image_with_text_NrkWb7": {
       "type": "image-with-text",
       "blocks": {
@@ -1398,15 +1409,14 @@
     "multicolumn_wkgT73",
     "contact_form_TTpAP3",
     "multicolumn_XpQAzx",
+    "newsletter_9aKKTb",
     "rich_text_cEBa6E",
     "multicolumn_W6khqt",
     "multicolumn_CwWdUb",
-    "newsletter_9aKKTb",
     "image_with_text_An3fAn",
     "custom_liquid_eaaGUj",
     "empty_space_P9PCiR",
     "image_with_text_overlay_YNAyEn",
-    "featured_collection_YqYEkN",
     "image_with_text_NrkWb7"
   ]
 }
