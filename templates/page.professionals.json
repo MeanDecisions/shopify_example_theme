@@ -991,6 +991,26 @@
     "multicolumn_CwWdUb": {
       "type": "multicolumn",
       "blocks": {
+        "column_xqdHUm": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/5f9e407e-1eee-4d55-81f6-829838d16d36.jpg",
+            "image_ratio": "square",
+            "heading": "Andy Mackay",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Director</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "column_P3R3NM": {
           "type": "column",
           "settings": {
@@ -1039,7 +1059,7 @@
             "text_alignment_mobile": "left",
             "image": "shopify://shop_images/mhilton22.jpg",
             "image_ratio": "square",
-            "heading": "Rebecca Ohana",
+            "heading": "Rebecca O'Hana",
             "heading_size": "text-2xl lg:text-3xl",
             "text": "<p>Retail Manager</p>",
             "button_label": "",
@@ -1099,9 +1119,29 @@
             "text_alignment_mobile": "left",
             "image": "shopify://shop_images/mhilton22.jpg",
             "image_ratio": "square",
-            "heading": "Kareena Jain",
+            "heading": "Ines Bakkali",
             "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Sales Support</p>",
+            "text": "<p>Middle East Sales</p>",
+            "button_label": "",
+            "button_link": "shopify://pages/contact-us",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_RxRW6L": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/mhilton22.jpg",
+            "image_ratio": "square",
+            "heading": "Aisulu Sadykova",
+            "heading_size": "text-2xl lg:text-3xl",
+            "text": "<p>Job Title</p>",
             "button_label": "",
             "button_link": "shopify://pages/contact-us",
             "button_style": "secondary",
@@ -1113,16 +1153,18 @@
         }
       },
       "block_order": [
+        "column_xqdHUm",
         "column_P3R3NM",
         "column_yVUWxz",
         "column_Wjwdkm",
         "column_Hfxzbh",
         "column_egQTNb",
-        "column_UCAtVc"
+        "column_UCAtVc",
+        "column_RxRW6L"
       ],
       "settings": {
         "gap": "medium",
-        "columns": 3,
+        "columns": 4,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "heading": "Our Sales Team",
