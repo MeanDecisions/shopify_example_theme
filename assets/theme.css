@@ -15056,6 +15056,18 @@ cart-drawer quantity-input {
   height: auto;
 }
 
+@media screen and (max-width: 1140px) {
+  .header__menu>ul.with-block .menu__item {
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (max-width: 1074px) {
+  .header__menu>ul.with-block .menu__item {
+    padding-inline: 0.75rem;
+  }
+}
+
 @media (max-width: 1023px) {
   .single-custom-url {
     padding-top: 18px;
@@ -15084,3 +15096,22 @@ cart-drawer quantity-input {
     display: none;
   }
 } 
+
+/* stockists app */
+.stockist-search-filter-checkboxes {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+  padding-top: 5px !important;
+}
+
+.stockist-search-filter-checkbox {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+ 
+#stockist-widget .stockist-search-filter-checkbox input {
+  margin-top: 0px !important;
+  border: 1px solid #000;
+}

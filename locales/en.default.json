@@ -531,7 +531,8 @@
       "pick_up_unavailable": "Pickup currently unavailable",
       "pick_up_unavailable_at_html": "Pickup currently unavailable at {{ location_name }}",
       "unavailable": "Couldn't load pickup availability",
-      "refresh": "Refresh"
+      "refresh": "Refresh",
+      "in_stock_with_count_ready_to_ship": "{{ count }} in stock, ready to ship"
     },
     "back_in_stock": {
       "label": "Notify me when it’s available",

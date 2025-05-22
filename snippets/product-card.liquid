@@ -240,7 +240,7 @@
 
       {%- if show_color_swatches -%}
         {%- liquid
-          assign swatch_trigger_list = 'products.general.color_swatch_trigger' | t | downcase | append: ',finish' | split: ','
+          assign swatch_trigger_list = 'products.general.color_swatch_trigger' | t | downcase | append: ',finish,upholstery' | split: ','
           assign swatch_file_extension = 'png'
           assign color_count = 0
         -%}
