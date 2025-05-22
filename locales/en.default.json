@@ -510,7 +510,7 @@
     },
     "inventory": {
       "in_stock": "In stock, ready to ship",
-      "in_stock_with_count": "{{ count }} in stock ready to ship",
+      "in_stock_with_count": "{{ count }} in stock, ready to ship",
       "low_stock": "Low stock",
       "low_stock_with_count": {
         "one": "Hurry, only {{ count }} item left in stock!",
