@@ -50,7 +50,7 @@
           </sticky-element>
         {%- endif -%}
         <div class="accordion-description">
-        {{product.description}}
+        {{section.settings.product_details_description}}
         </div>
         <accordions-details class="accordions w-full">
           {%- assign first_row = true -%}
@@ -520,6 +520,16 @@
       "id": "open_first_row",
       "default": false,
       "label": "t:sections.product-details.settings.open_first_row.label"
+    },
+    {
+      "type": "header",
+      "content": "Product details description"
+    },
+    {
+      "type": "richtext",
+      "id": "product_details_description",
+      "label": "Description",
+      "default": "<p>Product description here</p>"
     },
     {
       "type": "inline_richtext",
