@@ -841,7 +841,7 @@
         "button_label": "View All",
         "button_link": "shopify://blogs/news",
         "button_external": true,
-        "button_icon": true,
+        "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
