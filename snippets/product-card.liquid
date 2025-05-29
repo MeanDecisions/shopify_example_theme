@@ -238,12 +238,21 @@
         {%- endif -%}
       </div>
 
+      
       {%- if show_color_swatches -%}
+        {%- if enable_upholstery_swatches -%}
         {%- liquid
           assign swatch_trigger_list = 'products.general.color_swatch_trigger' | t | downcase | append: ',finish,upholstery' | split: ','
           assign swatch_file_extension = 'png'
           assign color_count = 0
         -%}
+        {%- else -%}
+          {%- liquid
+            assign swatch_trigger_list = 'products.general.color_swatch_trigger' | t | downcase | append: ',finish' | split: ','
+            assign swatch_file_extension = 'png'
+            assign color_count = 0
+          -%}
+        {%- endif -%}
         {%- for option in product.options_with_values -%}
           {%- liquid
             assign is_color = false
