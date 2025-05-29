@@ -240,7 +240,6 @@
         "heading_F4VPhh",
         "text_B6EJFJ"
       ],
-      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -605,7 +604,7 @@
           "type": "custom_field",
           "settings": {
             "type": "text",
-            "title": "Country",
+            "title": "Phone Number with Country Code",
             "required": false,
             "full_width": false,
             "checked_value": "Yes",
@@ -900,7 +899,6 @@
       "custom_css": [
         ".banner__box {word-wrap: break-word; height: fit-content; padding-top: 25px; padding-bottom: 25px;}"
       ],
-      "name": "t:sections.newsletter.presets.name",
       "settings": {
         "content_width": "large",
         "text_alignment": "center",

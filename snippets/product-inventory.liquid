@@ -52,7 +52,7 @@
           {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'flex-auto' -%}
           <span class="text-sm font-medium leading-tight">
             {%- liquid
-              if block.settings.show_inventory_quantity == 'always'
+              if block.settings.show_inventory_quantity == 'always' or product_variant.inventory_quantity <= 5
                 echo 'products.inventory.in_stock_with_count' | t: count: product_variant.inventory_quantity
               else
                 echo 'products.inventory.in_stock' | t
