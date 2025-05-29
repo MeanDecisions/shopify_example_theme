@@ -604,8 +604,8 @@
           "type": "custom_field",
           "settings": {
             "type": "text",
-            "title": "Phone Number with Country Code",
-            "required": false,
+            "title": "Phone Number",
+            "required": true,
             "full_width": false,
             "checked_value": "Yes",
             "unchecked_value": "No",
