@@ -402,6 +402,20 @@
             "button_icon": false
           }
         },
+        "image_cmKgpi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
+            "heading": "Ella Swivel Armchair",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Explore Now",
+            "button_link": "shopify://products/ella-swivel-lounge-chair",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
         "video_838WGE": {
           "type": "video",
           "settings": {
@@ -414,20 +428,6 @@
             "heading_tag": "h2",
             "button_label": "Explore Collection",
             "button_link": "shopify://collections/eos-garden-furniture",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_cmKgpi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20241015_CASE_Ella-Group_Landscape-of-group.jpg",
-            "heading": "Ella Swivel Armchair",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "Explore Now",
-            "button_link": "shopify://products/ella-swivel-lounge-chair",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -468,8 +468,8 @@
       },
       "block_order": [
         "image_Wd8NBP",
-        "video_838WGE",
         "image_cmKgpi",
+        "video_838WGE",
         "image_GRE6KX",
         "video_jTTeWH"
       ],
