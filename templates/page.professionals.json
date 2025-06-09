@@ -361,7 +361,6 @@
         "column_m93EE4",
         "column_m7hPLL"
       ],
-      "disabled": true,
       "settings": {
         "gap": "small",
         "columns": 4,
@@ -895,7 +894,6 @@
         "text_EPHPWi",
         "klaviyo_email_marketing_sms_form_embed_block_xUh4TQ"
       ],
-      "disabled": true,
       "custom_css": [
         ".banner__box {word-wrap: break-word; height: fit-content; padding-top: 25px; padding-bottom: 25px;}"
       ],
@@ -911,8 +909,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 24,
+        "padding_bottom": 24,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -1451,10 +1449,10 @@
     "logo_list_8RkrKh",
     "rich_text_z6gMKU",
     "multicolumn_wkgT73",
-    "multicolumn_W6khqt",
     "contact_form_TTpAP3",
     "multicolumn_XpQAzx",
     "newsletter_9aKKTb",
+    "multicolumn_W6khqt",
     "rich_text_cEBa6E",
     "multicolumn_CwWdUb",
     "image_with_text_An3fAn",
