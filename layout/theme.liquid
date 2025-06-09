@@ -54,6 +54,8 @@
     render 'css-variables'
     echo 'theme.css' | asset_url | stylesheet_tag: preload: true
     
+    echo 'header-responsive.css' | asset_url | stylesheet_tag
+    
     if direction == 'rtl'
       echo 'rtl.css' | asset_url | stylesheet_tag: preload: true
     endif
