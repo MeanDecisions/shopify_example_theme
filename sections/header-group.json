@@ -390,10 +390,9 @@
       "blocks": {
         "image_Wd8NBP": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/IMG_2192.jpg",
-            "heading": "Solas Outdoor Collection",
+            "image": "shopify://shop_images/Sale_header_169bcc6f-506e-40e4-8ee3-ecfd32109932.jpg",
+            "heading": "Summer Sale – 20% off",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Explore All",
@@ -420,6 +419,7 @@
         },
         "video_838WGE": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Eos3.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
