@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "middle-east"
+  },
+  "sections": {
+    "slideshow_hero_nFgMC6": {
+      "blocks": {
+        "image_Wd8NBP": {
+          "settings": {
+            "image": "shopify://shop_images/LINN_SOFA_014_-_LINN_SOFA_AND_CROSS_SIDE_AND_OVERHANG_RECT_AND_SOLID_AND_PURLIN_TUFTED_cfe5fb1d-f723-4eb3-97cb-0fd4e9c923d8.jpg",
+            "heading": "Timeless Designs"
+          }
+        }
+      }
+    }
+  }
+}
