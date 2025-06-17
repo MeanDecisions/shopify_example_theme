@@ -19,6 +19,15 @@
         "inventory": {
           "disabled": true,
           "settings": {}
+        },
+        "sticky_buy_button": {
+          "disabled": false,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": false
+          }
         }
       }
     }
