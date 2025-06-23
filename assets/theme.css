@@ -9684,6 +9684,26 @@ html.touch .logo-list--right .logo-bar.animate {
 .product-card__media {
   border-start-start-radius: var(--card-radius);
   border-start-end-radius: var(--card-radius);
+  aspect-ratio: 1;  /* Force square aspect ratio */
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+  position: relative;
+}
+
+.product-card__media .media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the area without distortion */
+  object-position: center;
 }
 
 .product-card__media video-media .deferred-poster {
@@ -15124,3 +15144,47 @@ cart-drawer quantity-input {
 .accordion-description a {
  color: #000 !important;
 }
+
+@media screen and (max-width: 1000px) {
+  .left-column-contact {
+    width: 100%;
+  }
+  .right-column-contact {
+    width: 100%;
+  }
+
+  .parent-contact-form {
+    flex-direction: column-reverse;
+  }
+}
+.parent-contact-form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.left-column-contact {
+  width: 40%;
+}
+
+.right-column-contact {
+  width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  .parent-contact-form {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  
+  .left-column-contact {
+    width: 100%;
+  }
+  
+  .right-column-contact {
+    width: 100%;
+  }
+}
+
+
+

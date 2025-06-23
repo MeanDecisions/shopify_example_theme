@@ -239,15 +239,17 @@ sticky-filters.is-sticky.scrolling-up {
             <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid relative">
               {%- for product in collection.products -%}
                 {%- liquid
-                  for block in section.blocks
-                    if block.type == 'promotion' or block.type == 'promotion_video'
-                      if forloop.parentloop.index != block.settings.position
-                        continue
-                      endif
+                  if paginate.current_page == 1
+                    for block in section.blocks
+                      if block.type == 'promotion' or block.type == 'promotion_video'
+                        if forloop.parentloop.index != block.settings.position
+                          continue
+                        endif
 
-                      render 'promotion-card', block: block
-                    endif
-                  endfor
+                        render 'promotion-card', block: block
+                      endif
+                    endfor
+                  endif
 
                   assign lazy_load = false
                   if forloop.index > 2
