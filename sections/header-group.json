@@ -392,7 +392,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Sale_header_29ec92f1-5a95-4fa8-a96b-6acb5467f200.jpg",
-            "heading": "Summer Sale – 20% off",
+            "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Explore All",
