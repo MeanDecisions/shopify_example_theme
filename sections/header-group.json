@@ -391,7 +391,7 @@
         "image_Wd8NBP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sale_header_169bcc6f-506e-40e4-8ee3-ecfd32109932.jpg",
+            "image": "shopify://shop_images/Sale_header_29ec92f1-5a95-4fa8-a96b-6acb5467f200.jpg",
             "heading": "Summer Sale – 20% off",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -454,14 +454,14 @@
           "type": "video",
           "disabled": true,
           "settings": {
-            "video": "shopify://files/videos/Spring-Savings-Web-Banner.mp4",
+            "video": "shopify://files/videos/Summer_Sale_Header.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "video_url_mobile": "",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "button_label": "Shop Now",
+            "button_label": "Explore Now",
             "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_external": false,
