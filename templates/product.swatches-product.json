@@ -105,7 +105,7 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": 66,
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "columns",
         "thumbnail_position": "below",
         "image_ratio": "adapt_first",
         "image_zoom": "lightbox",
@@ -256,6 +256,7 @@
       "settings": {
         "style": "with-border",
         "open_first_row": true,
+        "product_details_description": "<p>Product description here</p>",
         "specifications_heading": "",
         "heading": "Product details",
         "heading_size": "title-md",
