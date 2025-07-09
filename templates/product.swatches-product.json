@@ -107,7 +107,7 @@
         "media_size": 66,
         "gallery_layout": "columns",
         "thumbnail_position": "below",
-        "image_ratio": "adapt_first",
+        "image_ratio": "square",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "matching_variant_images": false,
