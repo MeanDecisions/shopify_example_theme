@@ -37,11 +37,24 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "announcement_Phqqye": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "Warehouse Sale 12-13 July: Book Free Early Access",
+            "link": "https://www.eventbrite.com/e/case-furniture-warehouse-sale-tickets-1441016662629?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
         "announcement_CAqg3k",
-        "announcement-1"
+        "announcement-1",
+        "announcement_Phqqye"
       ],
       "settings": {
         "show_social": false,
