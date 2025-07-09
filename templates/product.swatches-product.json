@@ -256,7 +256,7 @@
       "settings": {
         "style": "with-border",
         "open_first_row": true,
-        "product_details_description": "<p>Product description here</p>",
+        "product_details_description": "{{ product.description }}",
         "specifications_heading": "",
         "heading": "Product details",
         "heading_size": "title-md",
