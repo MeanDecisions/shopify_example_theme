@@ -41,7 +41,7 @@
         "announcement_Phqqye": {
           "type": "announcement",
           "settings": {
-            "icon": "none",
+            "icon": "box",
             "text": "Warehouse Sale 12-13 July: Book Free Early Access",
             "link": "https://www.eventbrite.com/e/case-furniture-warehouse-sale-tickets-1441016662629?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
             "hide_icon_mobile": true,
