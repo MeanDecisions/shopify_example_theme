@@ -37,6 +37,12 @@
 margin-top: 10px;
 }
 
+@media screen and (max-width: 639px) {
+  .product-drawer-inner {
+    height: 90dvh;
+  }
+}
+
 </style>
 
 {%- liquid
@@ -848,17 +854,14 @@ margin-top: 10px;
   aria-labelledby="ProductEnquireModal-title"
 >
   <span class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none"></span>
-  <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
-    <gesture-element class="drawer__header flex items-center justify-between opacity-0 invisible relative contact-drawer-header">
-      <h2 id="ProductEnquireModal-title" class="modal__title heading">Enquire Now</h2>
+  <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden product-drawer-inner">
+    <div class="drawer__header flex items-center justify-between opacity-100 visible relative contact-drawer-header">
+      <h2 id="ProductEnquireModal-title" class="modal__title heading ProductEnquireModal-title">Enquire Now</h2>
   
-      <button class="button button--secondary button--close drawer__close flex items-center justify-center" type="button" is="hover-button" aria-controls="ProductEnquireModal" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
-        <span class="btn-fill" data-fill></span>
-        <span class="btn-text">
-          {%- render 'icon', icon: 'close', size: 'sm' -%}
-        </span>
+      <button class="button button--close flex items-center justify-center p-2 bg-white rounded-full" type="button" aria-controls="ProductEnquireModal" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon', icon: 'close', size: 'sm' -%}
       </button>
-    </gesture-element>
+    </div>
     <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
       <div class="rte p-6">
        {% render 'product-contact-form' %}
