@@ -15124,3 +15124,11 @@ cart-drawer quantity-input {
 .accordion-description a {
  color: #000 !important;
 }
+
+.contact-drawer-header {
+  margin-bottom: 2rem;
+}
+
+.product-drawer-inner {
+  padding-bottom: 2rem;
+}
