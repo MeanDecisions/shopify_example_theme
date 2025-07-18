@@ -14,6 +14,19 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_Phqqye": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "box",
+            "text": "Warehouse Sale 12-13 July: Book Free Early Access",
+            "link": "https://www.eventbrite.com/e/case-furniture-warehouse-sale-tickets-1441016662629?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "announcement_CAqg3k": {
           "type": "announcement",
           "settings": {
@@ -40,6 +53,7 @@
         }
       },
       "block_order": [
+        "announcement_Phqqye",
         "announcement_CAqg3k",
         "announcement-1"
       ],
@@ -391,8 +405,8 @@
         "image_Wd8NBP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sale_header_169bcc6f-506e-40e4-8ee3-ecfd32109932.jpg",
-            "heading": "Summer Sale – 20% off",
+            "image": "shopify://shop_images/Sale_header_29ec92f1-5a95-4fa8-a96b-6acb5467f200.jpg",
+            "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Explore All",
@@ -451,14 +465,14 @@
           "type": "video",
           "disabled": true,
           "settings": {
-            "video": "shopify://files/videos/Spring-Savings-Web-Banner.mp4",
+            "video": "shopify://files/videos/Summer_Sale_Header.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "",
             "video_url_mobile": "",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
-            "button_label": "Shop Now",
+            "button_label": "Explore Now",
             "button_link": "shopify://collections/all",
             "button_style": "primary",
             "button_external": false,

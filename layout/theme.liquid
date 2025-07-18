@@ -231,6 +231,74 @@
     });
   </script>
 
+  <modal-element
+    id="ProductEnquireModal"
+    class="x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="ProductEnquireModal-title"
+  >
+    <span class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none"></span>
+    <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden product-drawer-inner">
+      <div class="drawer__header flex items-center justify-between opacity-100 visible relative contact-drawer-header">
+        <h2 id="ProductEnquireModal-title" class="modal__title heading ProductEnquireModal-title">Enquire Now</h2>
+ 
+        <button class="modal-close-btn" type="button" aria-label="Close modal">
+          {%- render 'icon', icon: 'close', size: 'sm' -%}
+        </button>
+      </div>
+      <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
+        <div class="rte p-6">
+         {% render 'product-contact-form' %}
+        </div>
+      </div>
+    </div>
+  </modal-element>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('ProductEnquireModal');
+      const closeBtn = modal.querySelector('.modal-close-btn');
+      
+      // Function to show modal
+      function showModal() {
+        modal.style.opacity = '1';
+        modal.style.display = 'flex';
+        modal.style.pointerEvents = 'auto';
+        // Show the modal content
+        const drawerContent = modal.querySelector('.drawer__content');
+        if (drawerContent) {
+          drawerContent.classList.remove('invisible', 'opacity-0');
+          drawerContent.classList.add('visible', 'opacity-100');
+        }
+      }
+
+      // Function to hide modal
+      function hideModal() {
+        modal.style.opacity = '0';
+        modal.style.display = 'none';
+        modal.style.pointerEvents = 'none';
+        // Hide the modal content
+        const drawerContent = modal.querySelector('.drawer__content');
+        if (drawerContent) {
+          drawerContent.classList.add('invisible', 'opacity-0');
+          drawerContent.classList.remove('visible', 'opacity-100');
+        }
+      }
+      
+      // Handle close button click
+      closeBtn.addEventListener('click', hideModal);
+
+      // Handle enquire button click
+      document.addEventListener('click', (event) => {
+        const enquiryButton = event.target.closest('[aria-controls="ProductEnquireModal"]');
+        if (!enquiryButton) return;
+        event.preventDefault();
+        showModal();
+      });
+    });
+  </script>
+
   {%- if request.design_mode == false and settings.preload_links -%}
     <script src="{{ 'instant-page.js' | asset_url }}" type="module" fetchpriority="low" defer="defer"></script>
   {%- endif -%}

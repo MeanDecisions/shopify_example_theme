@@ -15145,6 +15145,7 @@ cart-drawer quantity-input {
  color: #000 !important;
 }
 
+
 @media screen and (max-width: 1000px) {
   .left-column-contact {
     width: 100%;
@@ -15187,4 +15188,13 @@ cart-drawer quantity-input {
 }
 
 
+
+
+.contact-drawer-header {
+  margin-bottom: 2rem;
+}
+
+.product-drawer-inner {
+  padding-bottom: 2rem;
+}
 

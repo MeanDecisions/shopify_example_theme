@@ -105,9 +105,9 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": 66,
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "columns",
         "thumbnail_position": "below",
-        "image_ratio": "adapt_first",
+        "image_ratio": "square",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "matching_variant_images": false,
@@ -119,7 +119,7 @@
         "padding_top": 0,
         "padding_bottom": 40,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -256,6 +256,7 @@
       "settings": {
         "style": "with-border",
         "open_first_row": true,
+        "product_details_description": "{{ product.description }}",
         "specifications_heading": "",
         "heading": "Product details",
         "heading_size": "title-md",

@@ -28,6 +28,21 @@
     }
   }
   {%- endif -%}
+
+  .contact-drawer-header {
+  margin-bottom: 20px;
+}
+
+.ProductEnquireModal-title { 
+margin-top: 10px;
+}
+
+@media screen and (max-width: 639px) {
+  .product-drawer-inner {
+    height: 90dvh;
+  }
+}
+
 </style>
 
 {%- liquid
@@ -831,6 +846,30 @@
   </script>  
 </div>
 
+{% comment %} <modal-element
+  id="ProductEnquireModal"
+  class="x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="ProductEnquireModal-title"
+>
+  <span class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none"></span>
+  <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden product-drawer-inner">
+    <div class="drawer__header flex items-center justify-between opacity-100 visible relative contact-drawer-header">
+      <h2 id="ProductEnquireModal-title" class="modal__title heading ProductEnquireModal-title">Enquire Now</h2>
+  
+      <button class="button button--close flex items-center justify-center p-2 bg-white rounded-full" type="button" aria-controls="ProductEnquireModal" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon', icon: 'close', size: 'sm' -%}
+      </button>
+    </div>
+    <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
+      <div class="rte p-6">
+       {% render 'product-contact-form' %}
+      </div>
+    </div>
+  </div>
+</modal-element> {% endcomment %}
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
@@ -1436,6 +1475,26 @@
       "name": "t:sections.main-product.blocks.buy_buttons.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "header",
+          "content": "Buy Buttons & Enquire Now"
+        },
+        {
+          "type": "select",
+          "id": "buy_or_enquire",
+          "options": [
+            {
+              "value": "buy",
+              "label": "Show Buy Buttons"
+            },
+            {
+              "value": "enquire",
+              "label": "Show Enquire Now Button"
+            }
+          ],
+          "default": "buy",
+          "label": "Show Buy Buttons"
+        },
         {
           "type": "checkbox",
           "id": "show_quantity_selector",
