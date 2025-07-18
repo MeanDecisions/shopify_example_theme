@@ -64,6 +64,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "buy_or_enquire": "enquire",
             "show_quantity_selector": true,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
