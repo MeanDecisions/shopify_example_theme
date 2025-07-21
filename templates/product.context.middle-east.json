@@ -20,14 +20,15 @@
           "disabled": true,
           "settings": {}
         },
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": false,
+            "buy_or_enquire": "enquire"
+          }
+        },
         "sticky_buy_button": {
           "disabled": false,
           "settings": {}
-        },
-        "buy_buttons": {
-          "settings": {
-            "show_dynamic_checkout": false
-          }
         }
       }
     }
