@@ -8,12 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "middle-east": {
-      "parent": "@default"
-    },
-    "usa": {
-      "parent": "@default"
-    }
-  }
+  "parent": "footer-group.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {}
 }
