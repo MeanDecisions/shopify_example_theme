@@ -7,10 +7,7 @@
 </style>
 
 {%- liquid
-  assign section_rendering_api = false
-  if section.index == nil
-    assign section_rendering_api = true
-  endif
+  assign section_rendering_api = true
 -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">

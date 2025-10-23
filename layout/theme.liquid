@@ -8,6 +8,7 @@
 
 
 
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -61,8 +62,11 @@
     endif
   -%}
 
+
+
   <link rel="stylesheet" href="{{ 'apps.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
 
+  
   {{ content_for_header }}
 
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
@@ -78,17 +82,12 @@
 
   {%- render 'js-variables' -%}
 
+
+
 <!-- Facebook Pixel Code -->
     <script nonce=3D"4UzJl940">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=3Df.fbq=3Dfunction(){n.callMeth=od?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq==3Dn;n.push=3Dn;n.loaded=3D!0;n.version=3D'2.0';n.queue=3D[];t=3Db.createElemen=t(e);t.async=3D!0;t.src=3Dv;s=3Db.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}=(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '617125983234632');fbq('track', "PageView");</script><noscript><img height=3D"1" width=3D"1" style=3D"display:none"src=3D"https://www.facebook.com/tr?id=3D617125983234632&ev=3DPageView&nosc=ript=3D1"/></noscript>
   <!-- End Facebook Pixel Code -->
   
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "nkikb93s1o");
-</script>
 
 <!-- Microsoft UET integration script Consentmo -->
 {% render 'microsoft-uet-integration-script' %}  
@@ -109,7 +108,6 @@
   
   <script async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UJgH98"></script>
 
-  {% render 'shogun-head' %}
 </head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}{% if request.design_mode %} shopify-design-mode{% endif %}" data-rounded-button="{{ settings.rounded_button }}" data-rounded-input="{{ settings.rounded_input }}" data-rounded-block="{{ settings.rounded_block }}" data-rounded-card="{{ settings.rounded_card }}" data-button-hover="{{ settings.buttons_hover }}"{% if settings.enable_lazy_image %} data-lazy-image{% endif %} data-title-animation data-page-rendering>
@@ -131,7 +129,7 @@
       {{ content_for_layout }}
     </main>
 
-    <footer-group class="footer-group block w-full">
+    <footer-group class="footer-group block w-full"> 
       {%- sections 'footer-group' -%}
     </footer-group>
   </div>
@@ -223,6 +221,74 @@
             }, 2000);
           });
       }
+    });
+  </script>
+
+  <modal-element
+    id="ProductEnquireModal"
+    class="x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="ProductEnquireModal-title"
+  >
+    <span class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none"></span>
+    <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden product-drawer-inner">
+      <div class="drawer__header flex items-center justify-between opacity-100 visible relative contact-drawer-header">
+        <h2 id="ProductEnquireModal-title" class="modal__title heading ProductEnquireModal-title">Enquire Now</h2>
+ 
+        <button class="modal-close-btn" type="button" aria-label="Close modal">
+          {%- render 'icon', icon: 'close', size: 'sm' -%}
+        </button>
+      </div>
+      <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
+        <div class="rte p-6">
+         {% render 'product-contact-form' %}
+        </div>
+      </div>
+    </div>
+  </modal-element>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('ProductEnquireModal');
+      const closeBtn = modal.querySelector('.modal-close-btn');
+      
+      // Function to show modal
+      function showModal() {
+        modal.style.opacity = '1';
+        modal.style.display = 'flex';
+        modal.style.pointerEvents = 'auto';
+        // Show the modal content
+        const drawerContent = modal.querySelector('.drawer__content');
+        if (drawerContent) {
+          drawerContent.classList.remove('invisible', 'opacity-0');
+          drawerContent.classList.add('visible', 'opacity-100');
+        }
+      }
+
+      // Function to hide modal
+      function hideModal() {
+        modal.style.opacity = '0';
+        modal.style.display = 'none';
+        modal.style.pointerEvents = 'none';
+        // Hide the modal content
+        const drawerContent = modal.querySelector('.drawer__content');
+        if (drawerContent) {
+          drawerContent.classList.add('invisible', 'opacity-0');
+          drawerContent.classList.remove('visible', 'opacity-100');
+        }
+      }
+      
+      // Handle close button click
+      closeBtn.addEventListener('click', hideModal);
+
+      // Handle enquire button click
+      document.addEventListener('click', (event) => {
+        const enquiryButton = event.target.closest('[aria-controls="ProductEnquireModal"]');
+        if (!enquiryButton) return;
+        event.preventDefault();
+        showModal();
+      });
     });
   </script>
 

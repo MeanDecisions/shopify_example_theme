@@ -7046,3 +7046,32 @@ class ScrollingBanner extends HTMLElement {
   }
 }
 customElements.define('scrolling-banner', ScrollingBanner);
+
+// Add event listener for enquiry button clicks
+document.addEventListener('click', (event) => {
+  const enquiryButton = event.target.closest('[aria-controls="ProductEnquireModal"]');
+  if (!enquiryButton) return;
+
+  event.preventDefault();
+  
+  // Find any open quickview modal
+  const quickViewModal = document.querySelector('quick-view[open]');
+  const enquiryModal = document.getElementById('ProductEnquireModal');
+  
+  if (quickViewModal) {
+    // Listen for the quickview close event before opening enquiry modal
+    document.body.addEventListener(
+      'modal:afterHide',
+      () => {
+        setTimeout(() => {
+          enquiryModal?.show();
+        });
+      },
+      { once: true }
+    );
+    quickViewModal.hide();
+  } else {
+    // If no quickview is open, just open the enquiry modal
+    enquiryModal?.show();
+  }
+});
