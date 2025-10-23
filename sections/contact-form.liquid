@@ -7,10 +7,23 @@
 </style>
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
-  <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative">
-    {%- render 'section-heading', section: section -%}
+  <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative parent-contact-form">
+    <div class="left-column-contact">
+      {%- if section.settings.image -%}
+        <div class="contact__image w-full">
+          <div class="aspect-square lg:aspect-auto lg:h-full">
+            {{ section.settings.image | image_url: width: 600 | image_tag: 
+              loading: 'lazy',
+              class: 'w-full h-full object-cover rounded-lg'
+            }}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+    
+    <div class="right-column-contact">
+      {%- render 'section-heading', section: section -%}
 
-    <div class="contact flex flex-col lg:flex-row">
       {%- liquid
         assign custom_fields = section.blocks | where: "type", "custom_field"
         assign form_id = 'ContactForm-' | append: section.id
@@ -171,7 +184,7 @@
             <label for="ContactSubmit-{{ section.id }}" class="sr-only">{{ 'contact.form.send' | t }}</label>
             <button type="submit" id="ContactSubmit-{{ section.id }}" class="button button--primary button--fixed" is="hover-button">
               <span class="btn-fill" data-fill></span>
-              <span class="btn-text">{{ 'contact.form.send' | t }}</span>
+              <span class="btn-text">Apply</span>
             </button>
           </div>
 
@@ -353,6 +366,17 @@
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "image",
+      "info": "Contact form image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Contact Image",
+      "info": "Displayed on the left side on desktop, below the form on mobile"
     },
     {
       "type": "header",
