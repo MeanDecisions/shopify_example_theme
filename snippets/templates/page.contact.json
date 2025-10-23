@@ -1,0 +1,553 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-lg md:text-2xl",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>We'd love to hear from you. Our team is here to help. <br/>Let your customers get in touch with you by filling out the email form below.</p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 36,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact-1": {
+          "type": "contact",
+          "settings": {
+            "heading": "Address",
+            "text": "<p>23 East Hill<br/>London<br/>SW18 2HZ</p>"
+          }
+        },
+        "contact-2": {
+          "type": "contact",
+          "settings": {
+            "heading": "Email",
+            "text": "<p>info@casefurniture.com</p>"
+          }
+        },
+        "contact-3": {
+          "type": "contact",
+          "settings": {
+            "heading": "Phone",
+            "text": "<p>020 8870 4488</p>"
+          }
+        },
+        "media": {
+          "type": "media",
+          "settings": {
+            "heading": "Follow us"
+          }
+        },
+        "custom_field-1": {
+          "type": "custom_field",
+          "settings": {
+            "type": "text",
+            "title": "Phone number",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field-2": {
+          "type": "custom_field",
+          "settings": {
+            "type": "select",
+            "title": "Subject",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": "Product, Order, Press, Other"
+          }
+        }
+      },
+      "block_order": [
+        "contact-1",
+        "contact-2",
+        "contact-3",
+        "media",
+        "custom_field-1",
+        "custom_field-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "contact_with_map_9mactC": {
+      "type": "contact-with-map",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-start",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "map_address": "23 East Hill, London, SW18 2HZ",
+        "map_api_key": "",
+        "map_zoom": 14,
+        "map_style": "dark",
+        "image_height": "550px",
+        "image_height_mobile": "400px",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "divider": false,
+        "narrow": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_N4P7JG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tbXLYX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Showroom and Office Address",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_7VjyQ6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>23 East Hill<br/>London<br/>SW18 2HZ<br/>United Kingdom</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        },
+        "spacing_VjTgKf": {
+          "type": "spacing",
+          "disabled": true,
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
+        "heading_R7pAmK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Opening Hours",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_7YkjFD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Monday–Friday</strong><br/>9:30am–6pm<br/><br/><strong>Saturday</strong><br/>10am–4pm<br/><br/><strong>Sunday</strong><br/>Closed</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "enable_read_more": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tbXLYX",
+        "text_7VjyQ6",
+        "spacing_VjTgKf",
+        "heading_R7pAmK",
+        "text_7YkjFD"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/case-furniture-showroom-rectangle.jpg",
+        "image_height": "550px",
+        "image_width": "large",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 36,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_96Mgcz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UppwxP": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "You can get in touch with a member of the team in any of the ways below:",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_irgcz7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can get in touch with a member of the team through any of the ways below:</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_n7C6QX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Phone Us</strong><br/>020 8870 4488</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_hBejVh": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Email Us<br/></strong>info@casefurniture.com</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "spacing_yjmKWV": {
+          "type": "spacing",
+          "disabled": true,
+          "settings": {
+            "height": 20,
+            "height_mobile": 28
+          }
+        },
+        "text_98jww7": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Video Call Us<br/></strong>Book a consultation</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "spacing_CiL6Ed": {
+          "type": "spacing",
+          "disabled": true,
+          "settings": {
+            "height": 20,
+            "height_mobile": 28
+          }
+        },
+        "text_HJkbwH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Write To Us<br/></strong>23 East Hill<br/>London<br/>SW18 2HZ<br/>United Kingdom</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UppwxP",
+        "text_irgcz7",
+        "text_n7C6QX",
+        "text_hBejVh",
+        "spacing_yjmKWV",
+        "text_98jww7",
+        "spacing_CiL6Ed",
+        "text_HJkbwH"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "General Enquiries",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": true,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "rich_text_fjWU4V": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iwiVeU": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "You can get in touch with a member of the team in any of the ways below:",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_mf3NNa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For press and marketing enquiries, please get in touch with a member of the team at: </p><p><a href=\"mailto:press@casefurniture.com\" title=\"mailto:press@casefurniture.com\">press@casefurniture.com</a></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iwiVeU",
+        "text_mf3NNa"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Press Enquiries",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 36,
+        "padding_bottom": 48,
+        "divider": true,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "recently_viewed_d97DUD": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "contact-form",
+    "contact_with_map_9mactC",
+    "image_with_text_N4P7JG",
+    "rich_text_96Mgcz",
+    "rich_text_fjWU4V",
+    "recently_viewed_d97DUD"
+  ]
+}

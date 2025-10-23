@@ -1,0 +1,130 @@
+
+
+<div class="dimensions-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+
+  
+  <table class="dimensions-table">
+    <thead>
+      <tr>
+        {% assign option_count = 0 %}
+        {% for i in (1..5) %}
+          {% assign option_name = 'name-' | append: i %}
+          {% if product.metafields.dimensions[option_name] != blank %}
+            {% assign option_count = option_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% if option_count == 1 %}
+          {% for i in (1..5) %}
+            {% assign option_name = 'name-' | append: i %}
+            {% if product.metafields.dimensions[option_name] != blank %}
+              <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <th class="empty-heading"></th>
+          {% for i in (1..5) %}
+            {% assign option_name = 'name-' | append: i %}
+            {% if product.metafields.dimensions[option_name] != blank %}
+              <th class="font-bold">{{ product.metafields.dimensions[option_name] }}</th>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </tr>
+    </thead>
+    <tbody>
+      {% assign dimension_titles = product.metafields.dimensions.titles | split: ',' %}
+      {% assign values_1 = product.metafields.dimension.values-1 | split: ',' %}
+      {% assign values_2 = product.metafields.dimension.values-2 | split: ',' %}
+      {% assign values_3 = product.metafields.dimension.values-3 | split: ',' %}
+      
+      {% assign last_index = dimension_titles.size | minus: 1 %}
+      {% for index in (0..last_index) %}
+        <tr>
+          {% if option_count == 1 %}
+            <td>{{ dimension_titles[index] | strip }}</td>
+            <td>{{ values_1[index] | strip }}</td>
+          {% else %}
+            <td>{{ dimension_titles[index] | strip }}</td>
+            <td>{{ values_1[index] | strip }}</td>
+            {% if values_2[index] != blank %}<td>{{ values_2[index] | strip }}</td>{% endif %}
+            {% if values_3[index] != blank %}<td>{{ values_3[index] | strip }}</td>{% endif %}
+          {% endif %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+  {% if product.metafields.dimensions.product-dimensions-image != blank %}
+    <div class="dimensions-image">
+      <img src="{{ product.metafields.dimensions.product-dimensions-image }}" alt="Product Dimensions" width="80%" height="80%" class="product-dimensions-image">
+    </div>
+  {% endif %}
+
+
+  
+  
+</div>
+
+
+
+<style>
+  .dimensions-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .dimensions-table th,
+  .dimensions-table td {
+    padding: 10px;
+    text-align: left;
+    background: transparent;
+    border: none;
+  }
+  
+  .dimensions-table thead tr {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+  }
+  
+  .dimensions-table tbody tr td:first-child {
+    font-weight: bold;
+  }
+  
+  .dimensions-table tbody tr:last-child td {
+  
+  }
+  
+  .variant-name {
+    font-weight: 500;
+  }
+
+  .dimensions-table tbody tr {
+    border-block-start: 0 !important;
+  }
+
+  .dimensions-table tbody tr td {   
+    font-size: 0.875rem;
+    padding: 0px 10px;
+
+
+  }
+
+
+
+  .dimensions-table thead tr th {
+    font-size: 0.875rem;
+    padding: 0px 10px;
+  }
+
+  .dimensions-table {
+    align-self: flex-start
+  }
+  .dimensions-table tbody tr {
+    height: 40px;
+  }
+</style>

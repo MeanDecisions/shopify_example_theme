@@ -1,0 +1,779 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_qgCfyh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UmhBHW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Contemporary Furniture",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h1",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_bVh8it": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore our curated collection of furniture for every area of your home. From dining tables and chairs to stylish pieces for the living room, dining room, outdoor, and home office. Our collections are created in collaboration with award-winning designers.</p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UmhBHW",
+        "text_bVh8it"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Furniture",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 60,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "collection_list_pUyjQE": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EKqEXb": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-room-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7VhKtd": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-tables",
+            "image": "shopify://shop_images/cross-table-profile-chair-walnut-styleshot-square_f39df754-77b3-4fa2-8ffb-82b820cf6e37.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Ht7jcn": {
+          "type": "collection",
+          "settings": {
+            "collection": "dining-chairs",
+            "image": "shopify://shop_images/profile-chair-oak-stacked-lifestyle_033f9c19-0610-4c45-85ee-596522675191.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_mXmpFG": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchenware",
+            "image": "shopify://shop_images/industry-candlestick-476194.jpg",
+            "title": "Accessories",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_EKqEXb",
+        "collection_7VhKtd",
+        "collection_Ht7jcn",
+        "collection_mXmpFG"
+      ],
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "<a href=\"/collections/dining-room-furniture\" title=\"Dining Room Furniture\">Dining Room</a>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "collage_grid_FGNQLw": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_KcF3xw": {
+          "type": "image",
+          "settings": {
+            "column_size": 7,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Sofas and Armchairs",
+            "link": "shopify://collections/sofas-armchairs",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/RENE_SOFA_032---OVERHANG-ROUND-AND-RENE-SOFA-AND-SPINDLE-RUG.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 0,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_8yYYY9": {
+          "type": "image",
+          "settings": {
+            "column_size": 3,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Chairs",
+            "link": "shopify://collections/dining-chairs",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/rsz_case_furniture__nabo_london__lounge011.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 0,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_pUV78r": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Coffee & Side Tables",
+            "link": "shopify://collections/coffee-side-tables",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Lucent_Web.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 0,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_qekwDn": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Storage & Shelving",
+            "link": "shopify://collections/storage-shelving",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/SLOT_SHELVING_036_web.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 0,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_KcF3xw",
+        "image_8yYYY9",
+        "image_pUV78r",
+        "image_qekwDn"
+      ],
+      "settings": {
+        "row_height": 220,
+        "row_height_mobile": 120,
+        "heading": "<a href=\"/collections/living-room-furniture\" title=\"Contemporary Living Room Furniture\">Living Room</a>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "shopify://collections/living-room-furniture",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_V8Bkmq": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_TBdmff": {
+          "type": "collection",
+          "settings": {
+            "collection": "eos-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Cg43VM": {
+          "type": "collection",
+          "settings": {
+            "collection": "tanso-garden-furniture",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_M3PECn": {
+          "type": "collection",
+          "settings": {
+            "collection": "sun-loungers",
+            "image": "shopify://shop_images/eos-sun-lounger-black_bda841cf-f2e4-4138-8304-8b8b1e684190.jpg",
+            "title": "Sun Loungers",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_V8Bkmq",
+        "collection_TBdmff",
+        "collection_Cg43VM",
+        "collection_M3PECn"
+      ],
+      "settings": {
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "image_type": "collection",
+        "image_ratio": "portrait",
+        "overlay_content": true,
+        "show_products_count": false,
+        "columns": 4,
+        "columns_mobile": "1",
+        "heading": "Outdoor Furniture",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left",
+        "heading_tag": "h2",
+        "padding_top": 32,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collage_grid_XURVVF": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_xUWCcd": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 4,
+            "subheading": "",
+            "heading": "Home Office",
+            "link": "shopify://collections/home-office-furniture",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/COVET_DESK_WEST_STREET_CHAIR_021_5b63a231-6e8d-41d1-ab7e-8914c778af4e.png",
+            "content_position": "md:items-start md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#fffffa",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_nhTFnR": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Home Office Desks",
+            "link": "shopify://collections/home-office-desks",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Case-Furniture--Celine-desk--07.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 0
+          }
+        },
+        "image_TAXtVA": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Home Office Chairs",
+            "link": "shopify://collections/home-office-chairs",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/DULWICH_DESK__-ZIBA-CHAIR-025_web.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_y8UF3g": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Accessories",
+            "link": "shopify://collections/accessories",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/trove-box-square.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_xUWCcd",
+        "image_nhTFnR",
+        "image_TAXtVA",
+        "image_y8UF3g"
+      ],
+      "settings": {
+        "row_height": 160,
+        "row_height_mobile": 120,
+        "heading": "<a href=\"/collections/home-office-furniture\" title=\"Home Office Furniture\">Home Office</a>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "collection_list_CwH6cC": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_HgLNtP": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify://shop_images/industry-candlestick-476194.jpg",
+            "title": "Decorative",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_4jKpJd": {
+          "type": "collection",
+          "settings": {
+            "collection": "lighting",
+            "title": "Lighting",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_heJcjf": {
+          "type": "collection",
+          "settings": {
+            "collection": "textiles",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_RKgFbN": {
+          "type": "collection",
+          "settings": {
+            "collection": "rugs",
+            "title": "Rugs",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_HgLNtP",
+        "collection_4jKpJd",
+        "collection_heJcjf",
+        "collection_RKgFbN"
+      ],
+      "settings": {
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "<a href=\"/collections/accessories\" title=\"Home Accessories\">Accessories</a>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "collage_grid_h8nJtb": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_XYbACb": {
+          "type": "image",
+          "settings": {
+            "column_size": 6,
+            "row_size": 4,
+            "subheading": "",
+            "heading": "Beds",
+            "link": "shopify://collections/beds",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/rsz_int06_valentine_bed_01_walnut_d3.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_PmcR4m": {
+          "type": "image",
+          "settings": {
+            "column_size": 4,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Bedside Tables",
+            "link": "shopify://collections/bedside-tables",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/valentine_bedside_oak_styleshot_7.png",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_rfUALy": {
+          "type": "image",
+          "settings": {
+            "column_size": 4,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "Drawers",
+            "link": "shopify://collections/chests-of-drawers",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/valentine-chest-matthew-hilton-lifestyle.jpg",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_XYbACb",
+        "image_PmcR4m",
+        "image_rfUALy"
+      ],
+      "settings": {
+        "row_height": 170,
+        "row_height_mobile": 120,
+        "heading": "Bedroom",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "shopify://collections/bedroom-furniture",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    }
+  },
+  "order": [
+    "rich_text_qgCfyh",
+    "collection_list_pUyjQE",
+    "collage_grid_FGNQLw",
+    "main",
+    "collage_grid_XURVVF",
+    "collection_list_CwH6cC",
+    "collage_grid_h8nJtb"
+  ]
+}

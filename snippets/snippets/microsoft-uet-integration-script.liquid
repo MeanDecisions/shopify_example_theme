@@ -1,0 +1,74 @@
+<!-- Microsoft Consent Mode blocking script from Consentmo GDPR app -->
+                <script id='gdpr-mcm-blocking-script'>
+                  // Helper function to initialize UET tags
+                  function initUETTag(tagId, isGranted) {
+                    (function(w, d, t, r, u) {
+                      var f, n, i;
+                      w[u] = w[u] || [], f = function() {
+                        var o = {
+                          ti: tagId,
+                          enableAutoSpaTracking: true
+                        };
+                        o.q = w[u]; w[u] = new UET(o); 
+                        w[u].push('consent', 'default', {
+                          'ad_storage': isGranted ? 'granted' : 'denied'
+                        });
+
+                        w[u].push('pageLoad');
+                      }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+                        var s = this.readyState;
+                        s && s !== 'loaded' && s !== 'complete' || (f(), n.onload = n.onreadystatechange = null)
+                      }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+                    })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');
+                  }
+                
+                  function setMicrosoftConsent(type = 'default', isGranted = false, executeUET) {
+                    window.uetq = window.uetq || [];
+                    window.uetq.push('consent', type, {
+                      'ad_storage': isGranted ? 'granted' : 'denied'
+                    });
+                    if(executeUET) {
+                      initUETTag("32599648", isGranted);
+
+                    }
+                  }
+                  function checkConsentForMCM(adittionalChecks = 0, onlyUpdateConsent = false) {  
+                    let gdprCache = localStorage.getItem('gdprCache') ? JSON.parse(localStorage.getItem('gdprCache')) : null;
+                    let consentSettings = gdprCache && gdprCache.getCookieConsentSettings ? JSON.parse(gdprCache.getCookieConsentSettings) : null;
+                    let countryDetection = gdprCache && gdprCache.countryDetection ? JSON.parse(gdprCache.countryDetection) : null;
+                    let ccsCookie = (document.cookie.match(/^(?:.*;)?\s*cookieconsent_status\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1];
+                    if(consentSettings || (countryDetection && countryDetection.disable === '1')) {
+                      if((consentSettings && consentSettings.status === 'disabled') || countryDetection.disable === '1'){
+                        setMicrosoftConsent('default', true);
+                        setMicrosoftConsent('update', true, true);
+                      } else {
+                        let updatedPreferences = gdprCache && typeof gdprCache.updatedPreferences !== 'undefined' ? gdprCache.updatedPreferences : null;
+                        if(!onlyUpdateConsent) {
+                          let initPreferences = parseInt(consentSettings.checkboxes_behavior);
+                          let isDefaultMarketingEnabled = initPreferences === 1 || initPreferences === 3 || initPreferences === 4 || initPreferences === 6;
+                          setMicrosoftConsent('default', isDefaultMarketingEnabled, updatedPreferences === null); 
+                        }
+                        if (updatedPreferences !== null) {
+                          let isUpdatedMarketingEnabled = parseInt(updatedPreferences.indexOf('marketing')) === -1;
+                          setMicrosoftConsent('update', isUpdatedMarketingEnabled, !onlyUpdateConsent);
+                        }
+                      }
+                    } else {
+                      if (adittionalChecks > 0) {
+                        setTimeout(function() {
+                          checkConsentForMCM(adittionalChecks - 1, onlyUpdateConsent);
+                        }, 1000);
+                      } else {
+                        setMicrosoftConsent('default', true);
+                        setMicrosoftConsent('update', true, true);
+                      }
+                    }
+                  }
+                
+                  checkConsentForMCM(3);
+                
+                  window.addEventListener('click', function (e) {
+                    if (e.target && typeof e.target.className === 'string' && e.target.className.indexOf('isense-cc-submit-consent') >= 0){
+                      checkConsentForMCM(0, true);
+                    }
+                  });</script>
