@@ -65,6 +65,43 @@
       endif
     -%}
 
+
+
+ {%- comment -%} // START MARKET OVERRIDE LOGIC 
+
+ 1. Set the default behavior from your theme setting
+ This will be true if set to 'buy', and false if set to 'enquire'
+2. Check the current market (country)
+3. Apply override logic *only* for the USA 
+Get the override value from the metafield you created
+assign show_buy_button = true  // Force the 'Buy Button'
+assign show_buy_button = false // Force the 'Enquire Button'
+    endif
+    // If metafield is blank, it just uses the default 'show_buy_button' value
+  endif
+  // --- END MARKET OVERRIDE LOGIC ---{%- endcomment -%}
+
+  {%- liquid
+if block.settings.buy_or_enquire == 'buy'
+    assign show_buy_button = true
+  else
+    assign show_buy_button = false
+  endif
+
+  assign current_country_code = localization.country.iso_code
+
+  if current_country_code == 'US'
+       assign product_override = product.metafields.custom.usa_purchase_type_product
+
+      if product_override == 'Buy'
+      assign show_buy_button = true
+        elsif product_override == 'Enquire'
+        assign show_buy_button = false
+      endif
+  endif
+-%}
+
+    {% if show_buy_button %}
     <div class="product-form__buttons grid gap-4"{% unless product.quantity_price_breaks_configured? and show_quantity_selector %} id="QuantityForm-{{ section_id }}-{{ product_id }}"{% endunless %}>
       <div class="product-form__error-message alert alert--error text-sm font-medium leading-tight" role="alert" hidden></div>
 
@@ -308,5 +345,44 @@
         endif
       -%}
     </div>
+    {% else %}
+      <div class="buy-buttons grid gap-4" data-buy-buttons>
+        <button
+          type="button"
+          name="add"
+          class="button button--primary button--full-width"
+          aria-controls="ProductEnquireModal"
+        >
+          {{- 'products.product.enquire_now' | t -}}
+        </button>
+
+        <modal-element
+          id="EnquireModal"
+          class="x-modal drawer z-40 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="EnquireModal-title"
+        >
+          <span class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none"></span>
+          <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+            <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
+              <h2 id="EnquireModal-title" class="modal__title heading">Enquire Now</h2>
+              <button 
+                class="button button--secondary button--close drawer__close z-1 absolute top-0 right-0 flex items-center justify-center opacity-0" 
+                type="button" 
+                is="hover-button" 
+                aria-label="{{ 'accessibility.close' | t | escape }}"
+              >
+                <span class="btn-fill" data-fill></span>
+                <span class="btn-text">
+                  {%- render 'icon', icon: 'close', size: 'sm' -%}
+                </span>
+              </button>
+            </gesture-element>
+        
+          </div>
+        </modal-element>
+      </div>
+    {% endif %}
   {%- endform -%}
 </div>

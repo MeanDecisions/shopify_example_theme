@@ -12,7 +12,7 @@
   {% render 'product-rating', product: product %}
 {%- endcomment -%}
 
-{%- if product.metafields.reviews.rating.value != blank and product.metafields.reviews.rating_count.value > 0 -%}
+{%- if product.metafields.reviews.rating.value != blank and product.metafields.reviews.rating_count.value > 1 -%}
   {% liquid
     assign rating_decimal = 0
     assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
