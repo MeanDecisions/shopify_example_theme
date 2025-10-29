@@ -55,7 +55,7 @@ if (!customElements.get('compact-product-bundle')) {
         this.submitButton.setAttribute('aria-disabled', 'true');
         this.submitButton.setAttribute('aria-busy', 'true');
     
-        fetch(`${theme.routes.cart_add_url}`, { ...theme.utils.fetchConfig('javascript'), body })
+        fetch(theme.routes.cart_add_url, { ...theme.utils.fetchConfig('javascript'), body })
           .then((response) => response.json())
           .then(async (parsedState) => {
             if (parsedState.status) {

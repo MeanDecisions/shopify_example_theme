@@ -177,7 +177,7 @@
           {%- endcapture -%}
           {%- if has_sidebar -%}
             <div class="lg:grow-0 pointer-events-none">
-              <sticky-element class="quick-order-list__sidebar block sticky top-0">
+              <sticky-element class="quick-order-list__sidebar block lg:sticky top-0">
                 {{- quick_order_list_total -}}
               </sticky-element>
             </div>
@@ -345,12 +345,14 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_external",
       "label": "t:sections.global.settings.button_external.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -398,6 +400,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -516,7 +519,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.quick-order-list.presets.name"
+      "name": "t:sections.quick-order-list.name",
+      "category": "t:categories.products"
     }
   ],
   "enabled_on": {

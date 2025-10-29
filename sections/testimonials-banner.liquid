@@ -19,7 +19,7 @@
 </style>
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
-  <div class="relative">
+  <div class="{% unless section.settings.full_width %}page-width {% endunless %}relative">
     <div class="banner media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }} relative">
       <media-element class="banner__media block w-full h-full overflow-hidden"{% if section.settings.enable_parallax %} data-parallax="0.3" data-parallax-dir="{{ section.settings.parallax_direction }}"{% endif %}>
         <picture class="media media--height block w-full h-full relative overflow-hidden">
@@ -149,14 +149,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "850px"
+          "value": "800px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
-          "value": "900px"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "100vh"
         }
       ],
@@ -317,6 +321,16 @@
     },
     {
       "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
       "id": "color_highlight",
       "label": "t:sections.global.settings.color_highlight.label",
       "default": "#e0a580"
@@ -374,6 +388,12 @@
     },
     {
       "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
       "id": "rounded",
       "default": false,
       "label": "t:sections.global.settings.rounded.label"
@@ -385,6 +405,7 @@
       "default": true
     },
     {
+      "visible_if": "{{ section.settings.enable_parallax == true }}",
       "type": "select",
       "id": "parallax_direction",
       "label": "t:sections.global.settings.parallax_direction.label",
@@ -474,6 +495,7 @@
           "label": "t:sections.testimonials.blocks.testimonial.settings.image.label"
         },
         {
+          "visible_if": "{{ block.settings.image != blank }}",
           "type": "select",
           "id": "image_ratio",
           "options": [
@@ -535,6 +557,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -568,7 +591,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.testimonials-banner.presets.name",
+      "name": "t:sections.testimonials-banner.name",
+      "category": "t:categories.brand_trust",
       "blocks": [
         {
           "type": "testimonial"

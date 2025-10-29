@@ -22,18 +22,28 @@
     echo body_font_italic | font_face: font_display: 'swap'
     echo body_font_bold_italic | font_face: font_display: 'swap'
 
-    assign rounded_button = 0.75
+    assign rounded_button = '0.375rem'
     if settings.rounded_button == 'round'
-      assign rounded_button = 3.75
+      assign rounded_button = '3.75rem'
     elsif settings.rounded_button == 'square'
-      assign rounded_button = 0
+      assign rounded_button = '0rem'
     endif
 
-    assign rounded_input = 0.75
+    assign rounded_input = '0.375rem'
     if settings.rounded_input == 'round'
-      assign rounded_input = 3.75
+      assign rounded_input = '3.75rem'
     elsif settings.rounded_input == 'square'
-      assign rounded_input = 0
+      assign rounded_input = '0rem'
+    endif
+
+    assign rounded_card = '0rem'
+    if settings.rounded_card == 'round'
+      assign rounded_card = 'clamp(var(--sp-2d5), 1.053vw, var(--sp-5))'
+    endif
+
+    assign rounded_block = '0rem'
+    if settings.rounded_block == 'round'
+      assign rounded_block = 'clamp(var(--sp-2d5), 1.053vw, var(--sp-5))'
     endif
   -%}
 
@@ -197,10 +207,10 @@
     --grid-gap: clamp(40px, 20vw, 60px);
     --page-padding: var(--sp-5);
     --page-container: min(calc(100vw - var(--scrollbar-width, 0px) - var(--page-padding) * 2), var(--page-width));
-    --rounded-button: {{ rounded_button }}rem;
-    --rounded-input: {{ rounded_input }}rem;
-    --rounded-card: {% if settings.rounded_card == 'round' %}clamp(var(--sp-2d5), 1.053vw, var(--sp-5)){% else %}0rem{% endif %};
-    --rounded-block: {% if settings.rounded_block == 'round' %}clamp(var(--sp-2d5), 1.053vw, var(--sp-5)){% else %}0rem{% endif %};
+    --rounded-button: {{ rounded_button }};
+    --rounded-input: {{ rounded_input }};
+    --rounded-card: {{ rounded_card }};
+    --rounded-block: {{ rounded_block }};
 
     /*! Other */
     --icon-weight: {{ settings.icon_weight }}px;

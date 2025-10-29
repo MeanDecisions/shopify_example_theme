@@ -57,10 +57,10 @@
           <div class="page-width page-width--narrow relative">
             <div class="text-center">
               <div class="giftcard__top grid gap-4 justify-center">
-                <h2 class="giftcard__title heading leading-none title-md">{{ 'gift_cards.issued.subtext' | t }}</h2>
+                <p class="giftcard__title h2 heading leading-none title-md">{{ 'gift_cards.issued.subtext' | t }}</p>
                 {%- if gift_card.enabled == false or gift_card.expired -%}
                   <div class="badges grid justify-center">
-                    <p class="badge badge--onsale badge--expired flex items-center gap-1d5 font-medium leading-none rounded-full">{{ 'gift_cards.issued.expired' | t }}</p>
+                    <p class="badge badge--onsale badge--expired flex items-center gap-1d5 font-medium leading-none">{{ 'gift_cards.issued.expired' | t }}</p>
                   </div>
                 {%- endif -%}
               </div>

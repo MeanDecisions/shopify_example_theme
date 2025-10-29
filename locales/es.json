@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "accessibility": {
@@ -54,7 +45,7 @@
       "login_form_password": "Contraseña",
       "login_form_error": "Contraseña incorrecta",
       "login_form_submit": "Iniciar sesión",
-      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"\/admin\" class=\"link\">Inicia sesión aquí<\/a>",
+      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"/admin\" class=\"link\">Inicia sesión aquí</a>",
       "powered_by_shopify_html": "Esta tienda contará con tecnología Shopify {{ shopify }}"
     },
     "breadcrumbs": {
@@ -88,7 +79,9 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "discord": "Discord",
+        "line": "LINE"
       }
     },
     "newsletter": {
@@ -132,17 +125,28 @@
       "note": {
         "title": "Notas para entrega",
         "caption": "Indicaciones para la entrega del pedido",
+        "placeholder": "Notas para entrega",
         "button": "Aplicar"
       },
       "shipping_calculator": {
         "title": "Gastos de envío",
-        "caption": "Estimación de gastos de envío",
+        "caption": "Estimar envío",
         "tooltip": "Los gastos de envío e impuestos se calculan al finalizar la compra",
         "button": "Calcular",
         "error": "Se han producido uno o más errores al recuperar las tarifas de envío:",
         "not_found": "Lo sentimos, no realizamos envíos a tu dirección.",
         "one_result": "Hay una tarifa de envío para tu dirección:",
         "multiple_results": "Hay varias tarifas de envío para tu dirección:"
+      },
+      "discount": {
+        "title": "Descuento",
+        "caption": "Descuento",
+        "placeholder": "Código de descuento",
+        "button": "Aplicar",
+        "error": "El código de descuento no se puede aplicar a tu carrito",
+        "shipping_error": "Los descuentos de envío se muestran en la pantalla de pago tras agregar una dirección",
+        "applied": "Aplicar código de descuento: {{ code }}",
+        "remove": "Eliminar el descuento {{ code }}"
       },
       "recently_viewed": {
         "empty": "Los productos vistos recientemente están vacíos."
@@ -167,6 +171,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Carrusel",
+      "announcement": "Anuncio",
+      "announcement_bar": "Barra de anuncios"
+    },
     "blog_posts": {
       "view_all": "Ver todo"
     },
@@ -182,10 +191,11 @@
       "view_details": "Ver detalles",
       "address_error": "No se puede encontrar esa dirección",
       "address_no_results": "No hay resultados para esa dirección",
-      "address_query_limit_html": "Se ha excedido el límite de uso de la API de Google . Considere la posibilidad de actualizar a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plan Premium<\/a>.",
-      "auth_error_html": "Hubo un problema de autenticación con su cuenta de Google Maps. Crear y habilitar la <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">API de JavaScript<\/a> y  <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">API de geocodificación<\/a> permiso para su aplicación."
+      "address_query_limit_html": "Se ha excedido el límite de uso de la API de Google . Considere la posibilidad de actualizar a un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plan Premium</a>.",
+      "auth_error_html": "Hubo un problema de autenticación con su cuenta de Google Maps. Crear y habilitar la <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">API de JavaScript</a> y  <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">API de geocodificación</a> permiso para su aplicación."
     },
     "slideshow": {
+      "carousel": "Carrusel",
       "play_slideshow": "Juego de diapositivas",
       "pause_slideshow": "diapositivas pausa"
     },
@@ -198,7 +208,7 @@
     "quick_order_list": {
       "product_total": "Subtotal de productos",
       "view_cart": "Ver carrito",
-      "each": "{{ money }}\/unidad",
+      "each": "{{ money }}/unidad",
       "product": "Producto",
       "variant": "Variante",
       "variant_total": "Total de variantes",
@@ -219,6 +229,9 @@
       "min_error": "Este artículo tiene un mínimo de {{ min }}.",
       "max_error": "Este artículo tiene un máximo de {{ max }}.",
       "step_error": "Solo puedes agregar este artículo en incrementos de {{ step }}"
+    },
+    "comparison-table": {
+      "highlight_differences": "Resaltar diferencias"
     }
   },
   "blogs": {
@@ -251,9 +264,9 @@
       "subtotal": "Subtotal",
       "cart_error": "Hubo un error al actualizar tu carrito de compra. Inténtalo de nuevo.",
       "cart_quantity_error_html": "Solo puedes agregar {{ quantity }} de este artículo a tu carrito.",
-      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago",
+      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago",
       "taxes_included_but_shipping_at_checkout": "Impuestos incluidos y los gastos de envío se calculan en la pantalla de pago",
-      "taxes_included_and_shipping_policy_html": "Impuestos incluidos. Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago.",
+      "taxes_included_and_shipping_policy_html": "Impuestos incluidos. Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
       "taxes_and_shipping_at_checkout": "Los impuestos y gastos de envío se calculan en la pantalla de pago",
       "update": "Actualizar",
       "checkout": "Finalizar pedido",
@@ -269,7 +282,19 @@
     },
     "gift_wrapping": {
       "message_html": "Por {{ price }} por favor envuelve los productos en este pedido.",
-      "note_placeholder": "Mensaje de regalo (gratuito y opcional)"
+      "note_placeholder": "Mensaje de regalo (gratuito y opcional)",
+      "gift_wrapping_label": "Envoltorio de regalo:",
+      "gift_wrapping_list": "Lista de envoltorio de regalo",
+      "gift_wrapping_unavailable": "Este producto no está disponible para envoltorio de regalo. Por favor, comprenda.",
+      "boolean": {
+        "true": "Sí",
+        "false": "Ninguno"
+      },
+      "attributes": {
+        "gift_wrap": "Envoltorio de regalo",
+        "gift_note": "Nota de regalo",
+        "target_product": "Para"
+      }
     }
   },
   "collections": {
@@ -285,7 +310,9 @@
       "product_count_simple": {
         "one": "{{ count }} producto",
         "other": "{{ count }} productos"
-      }
+      },
+      "show_on_model": "Mostrar en modelo",
+      "product_view": "Vista del producto"
     },
     "sorting": {
       "sort_button": "Ordenar por",
@@ -303,17 +330,17 @@
       "in_stock_only": "Solo mostrar disponibles",
       "clear": "Quitar filtro «{{ name }}»",
       "clear_all": "Eliminar todos",
-      "apply": "Aplicar"
+      "view_results": "Ver resultados"
     },
     "subcollections": {
       "all_products": "Todos los productos de {{ collection }}"
     }
   },
   "localization": {
-    "country_label": "País\/región",
+    "country_label": "País/región",
     "language_label": "Idioma",
     "update_language": "Actualizar idioma",
-    "update_country": "Actualizar país\/región"
+    "update_country": "Actualizar país/región"
   },
   "contact": {
     "form": {
@@ -352,7 +379,7 @@
       "address1": "Dirección 1",
       "address2": "Dirección 2",
       "city": "Ciudad",
-      "country": "País\/región",
+      "country": "País/región",
       "province": "Provincia",
       "zip": "Código postal",
       "phone": "Teléfono",
@@ -362,7 +389,7 @@
       "cancel": "Cancelar",
       "edit": "Editar",
       "delete": "Eliminar",
-      "delete_confirm": "¿Estás seguro\/a de que deseas eliminar esta dirección?"
+      "delete_confirm": "¿Estás seguro/a de que deseas eliminar esta dirección?"
     },
     "login": {
       "title": "Iniciar sesión",
@@ -395,6 +422,7 @@
       "payment_status": "Estado del pago",
       "shipping_address": "Dirección de envío",
       "fulfillment_status": "Estado de preparación del pedido",
+      "discounts": "Descuentos",
       "discount": "Descuento",
       "shipping": "Envío",
       "tax": "Impuestos",
@@ -464,9 +492,10 @@
       "view_product": "Ver producto",
       "pre_order": "Hacer un pedido",
       "add_to_bundle": "Añadir al paquete",
+      "shop_the_look": "Compra el Look",
       "vendor": "Proveedor",
       "include_taxes": "Impuestos incluidos.",
-      "shipping_policy_html": "Los <a href='{{ link }}'>gastos de envío<\/a> se calculan en la pantalla de pagos.",
+      "shipping_policy_html": "Los <a href='{{ link }}'>gastos de envío</a> se calculan en la pantalla de pagos.",
       "will_not_ship_until": "Será enviado después {{ date }}",
       "will_be_in_stock_after": "Estará disponible después {{ date }}",
       "waiting_for_stock": "Inventario en el camino",
@@ -480,7 +509,7 @@
       "regular_price": "Precio habitual",
       "sale_price": "Precio de oferta",
       "unit_price": "Precio unitario",
-      "from_price_html": "<small>A partir de<\/small> {{ price }}"
+      "from_price_html": "<small>A partir de</small> {{ price }}"
     },
     "media": {
       "open_media": "Abrir elemento multimedia {{ index }} en una ventana modal",
@@ -565,21 +594,18 @@
   "recipient": {
     "form": {
       "checkbox": "Quiero enviar esto como un regalo.",
+      "expanded": "Formulario del destinatario de la tarjeta de regalo expandido",
+      "collapsed": "Formulario del destinatario de tarjeta de regalo contraído",
       "email_label": "Correo electrónico de la persona destinataria",
+      "email_label_optional_for_no_js_behavior": "Correo electrónico de la persona destinataria (opcional)",
       "email": "Correo electrónico",
       "name_label": "Nombre de la persona destinataria (opcional)",
       "name": "Nombre",
       "message_label": "Mensaje (opcional)",
       "message": "Mensaje",
       "max_characters": "{{ max_chars }} caracteres máx.",
-      "email_label_optional_for_no_js_behavior": "Correo electrónico de la persona destinataria (opcional)",
       "send_on": "AAAA-MM-DD",
-      "send_on_label": "Enviar el (opcional)",
-      "expanded": "Formulario del destinatario de la tarjeta de regalo expandido",
-      "collapsed": "Formulario del destinatario de tarjeta de regalo contraído"
+      "send_on_label": "Enviar el (opcional)"
     }
-  },
-  "date_formats": {
-    "month_day_year": "%d de %B de %Y"
   }
 }

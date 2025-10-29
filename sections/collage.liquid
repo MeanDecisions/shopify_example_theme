@@ -162,12 +162,14 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_external",
       "label": "t:sections.global.settings.button_external.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -215,6 +217,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -575,6 +578,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -690,6 +694,7 @@
           "info": "t:sections.video.settings.video_url.info"
         },
         {
+          "visible_if": "{{ block.settings.video_url != blank }}",
           "type": "image_picker",
           "id": "cover_image",
           "label": "t:sections.video.settings.cover_image.label"
@@ -808,6 +813,7 @@
           "info": "t:sections.video.settings.video_url.info"
         },
         {
+          "visible_if": "{{ block.settings.video_url_mobile != blank }}",
           "type": "image_picker",
           "id": "cover_image_mobile",
           "label": "t:sections.video.settings.cover_image_mobile.label"
@@ -932,6 +938,7 @@
           "label": "t:sections.global.settings.highlighted_text.label"
         },
         {
+          "visible_if": "{{ block.settings.highlighted_text == 'scribble' }}",
           "type": "select",
           "id": "highlighted_scribble",
           "options": [
@@ -1002,7 +1009,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.collage.presets.name",
+      "name": "t:sections.collage.name",
+      "category": "t:categories.media",
       "blocks": [
         {
           "type": "image"

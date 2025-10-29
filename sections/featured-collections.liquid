@@ -7,7 +7,10 @@
 </style>
 
 {%- liquid
-  assign section_rendering_api = true
+  assign section_rendering_api = false
+  if section.index == nil
+    assign section_rendering_api = true
+  endif
 -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
@@ -16,25 +19,47 @@
 
     {%- if section.blocks.size > 0 -%}
       <tabs-element class="tab-list flex gap-6 justify-between">
-        <div class="scroll-area grid">
-          <div class="flex gap-4" role="tablist">
-            {%- for block in section.blocks -%}
-              {%- assign collection = block.settings.collection -%}
-              <button class="tab__item button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %} whitespace-nowrap"{% if forloop.first %} disabled{% endif %} type="button"{% if section_rendering_api or forloop.first %} is="hover-button"{% else %} is="api-hover-button" data-id="TabPanelContent-{{ block.id }}" data-section-id="{{ section.id }}"{% endif %} role="tab" aria-controls="TabPanel-{{ block.id }}" data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
-                <span class="btn-fill" data-fill></span>
-                <span class="btn-text">
-                  {%- liquid
-                    if block.settings.title != blank or collection != blank
-                      echo block.settings.title | default: collection.title | escape
-                    else
-                      echo 'onboarding.collection_title' | t | escape
-                    endif
-                  -%}
-                </span>
-              </button>
-            {%- endfor -%}
+        <scroll-shadow class="scroll-shadow grid overflow-hidden">
+          <div class="scroll-area grid">
+            <div class="flex gap-4" role="tablist">
+              {%- for block in section.blocks -%}
+                {%- assign collection = block.settings.collection -%}
+                <button class="tab__item button{% if forloop.first %} button--primary{% else %} button--secondary{% endif %} whitespace-nowrap"{% if forloop.first %} disabled{% endif %} type="button" is="hover-button" role="tab" aria-controls="TabPanel-{{ block.id }}" data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+                  {%- unless forloop.first -%}
+                    {%- unless section_rendering_api -%}
+                      <api-button class="api-only" data-id="TabPanelContent-{{ block.id }}" data-section-id="{{ section.id }}"></api-button>
+                    {%- endunless -%}
+                  {%- endunless -%}
+                  <span class="btn-fill" data-fill></span>
+                  <span class="btn-text">
+                    {%- liquid
+                      if block.settings.title != blank or collection != blank
+                        echo block.settings.title | default: collection.title | escape
+                      else
+                        echo 'onboarding.collection_title' | t | escape
+                      endif
+                    -%}
+                  </span>
+                </button>
+              {%- endfor -%}
+            </div>
           </div>
-        </div>
+          <template>
+            <slot></slot>
+            <s dir="{% render 'direction' %}" style="--t: 0;--b: 0;--l: 0;--r: 0;">
+              <span class="l"></span>
+              <span class="r"></span>
+            </s>
+            <style>
+              :host{display:inline-block;position:relative}:host([hidden]){display:none}
+              s{position:absolute;inset:0;pointer-events:none;{% if settings.card_style == 'card' %}--color-background:var(--color-placeholder){% endif %}}
+              s span{position:absolute;inset-block:0;width:var(--sp-12);opacity:0;transition:opacity var(--animation-short);}
+              s .l{inset-inline-start:0;opacity:var(--l);background:linear-gradient(90deg,rgb(var(--color-background)) 0%,transparent 100%);}
+              s .r{inset-inline-end:0;opacity:var(--r);background:linear-gradient(270deg,rgb(var(--color-background)) 0%,transparent 100%);}
+              s[dir=rtl] :is(.icon-chevron-left,.icon-chevron-right){transform:scaleX(-1);}
+            </style>
+          </template>
+        </scroll-shadow>
         
         {%- if section.settings.carousel_on_desktop -%}
           {%- for block in section.blocks -%}
@@ -64,7 +89,7 @@
         <div id="TabPanel-{{ block.id }}" role="tabpanel"{% unless forloop.first %} hidden{% endunless %}>
           <div id="TabPanelContent-{{ block.id }}">
             {%- if section_rendering_api or forloop.first -%}
-              <slider-element id="Slider-{{ block.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+              <slider-element id="Slider-{{ block.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card"{% if section.settings.carousel_on_desktop or section.settings.swipe_on_mobile %} tabindex="0"{% endif %}>
                 <motion-list class="product-grid card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
                   {%- for product in products limit: section.settings.product_limit -%}
                     {%- render 'product-card',
@@ -82,6 +107,8 @@
                       show_countdown: settings.product_countdown,
                       show_quick_add: settings.product_quick_add,
                       show_quick_view: settings.product_quick_view,
+                      vertical_badges: settings.product_vertical_badges,
+                      show_sold_out: settings.product_sold_out,
                       show_save_amount: settings.product_save_amount,
                       save_type: settings.product_save_type,
                       show_icon_list: settings.product_icon_list
@@ -90,19 +117,9 @@
                     {%- for i in (1..section.settings.product_limit) -%}
                       {%- capture placeholder -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
                       {%- render 'product-card-placeholder',
-                        lazy_load: false,
-                        image_ratio: settings.product_image_ratio,
-                        image_fill: settings.product_image_fill,
-                        show_secondary_image: settings.product_secondary_image,
-                        show_vendor: settings.product_vendor,
-                        show_rating: settings.product_rating,
-                        show_color_swatches: settings.product_color_swatches,
-                        show_countdown: settings.product_countdown,
-                        show_quick_add: settings.product_quick_add,
-                        show_quick_view: settings.product_quick_view,
-                        show_save_amount: settings.product_save_amount,
-                        save_type: settings.product_save_type,
                         placeholder: placeholder
+                        image_ratio: settings.product_image_ratio,
+                        show_vendor: settings.product_vendor
                       -%}
                     {%- endfor -%}
                   {%- endfor -%}
@@ -201,7 +218,7 @@
       "type": "inline_richtext",
       "id": "heading",
       "label": "t:sections.global.settings.heading.label",
-      "default": "Featured collection"
+      "default": "Featured collections"
     },
     {
       "type": "select",
@@ -344,6 +361,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -486,7 +504,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collections.presets.name",
+      "name": "t:sections.featured-collections.name",
+      "category": "t:categories.collections",
       "blocks": [
         {
           "type": "collection"

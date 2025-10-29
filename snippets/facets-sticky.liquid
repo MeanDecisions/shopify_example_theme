@@ -1,18 +1,26 @@
-{%- comment -%}
-  Renders facets sticky
+{%- doc -%}
+  Renders a scroll-triggered sticky filter button with drawer for mobile/tablet devices.
 
-  Accepts:
-  - results: {Object} Liquid 'collection' or 'search' object
-  - enable_color_swatches: {Boolean}
-  - collapsed: {Boolean}
-  - enable_filtering: {Boolean}
-  - enable_sorting: {Boolean}
-  - filter_count: {Number}
-  - section_id: {String}
+  Appears on scroll and provides access to filtering/sorting in a slide-out drawer.
 
-  Usage:
-  {% render 'facets-sticky', results: collection, enable_filtering: true, enable_sorting: true, filter_count: count %}
-{%- endcomment -%}
+  @param {object} results - Shopify collection or search results object
+  @param {boolean} [enable_filtering] - Enable filter options in drawer
+  @param {boolean} [enable_sorting] - Enable sort options in drawer
+  @param {boolean} [enable_color_swatches] - Display colors as swatches
+  @param {boolean} [collapsed] - Start filter groups collapsed
+  @param {number} filter_count - Active filter count for badge display
+  @param {string} section_id - Parent section ID for state tracking
+
+  @example
+  {% render 'facets-sticky',
+     results: collection,
+     enable_filtering: true,
+     enable_sorting: true,
+     enable_color_swatches: true,
+     filter_count: filter_count,
+     section_id: section.id
+  %}
+{%- enddoc -%}
 
 
 {%- if enable_filtering or enable_sorting -%}
@@ -29,7 +37,7 @@
           endif
         -%}
         {%- if enable_filtering -%}
-          <facet-count class="count flex items-center justify-center text-xs font-medium rounded-full"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
+          <facet-count class="facet-count flex items-center justify-center text-xs font-medium rounded-full"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
         {%- endif -%}
       </span>
     </button>
@@ -42,7 +50,7 @@
     >
       <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="FacetDrawerSticky" aria-expanded="false"></overlay-element>
       <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
-        <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
+        <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative" tabindex="0">
           <span class="drawer__title heading lg:text-3xl text-2xl leading-none tracking-tight">
             {%- liquid
               if enable_filtering and enable_sorting
@@ -78,8 +86,8 @@
               <button class="button button--primary w-full" type="button" is="hover-button" aria-controls="FacetDrawerSticky" aria-expanded="false">
                 <span class="btn-fill" data-fill></span>
                 <span class="btn-text flex gap-1">
-                  {{- 'collections.filtering.apply' | t -}}
-                  <facet-count class="block"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
+                  {{- 'collections.filtering.view_results' | t -}}
+                  <results-count class="block">{{ results.results_count | default: results.products_count }}</results-count>
                 </span>
               </button>
             </div>

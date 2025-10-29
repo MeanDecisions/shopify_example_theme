@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "accessibility": {
@@ -88,7 +79,9 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "discord": "Discord",
+        "line": "LINE"
       }
     },
     "newsletter": {
@@ -132,17 +125,28 @@
       "note": {
         "title": "Order note",
         "caption": "Order special instructions",
+        "placeholder": "Order note",
         "button": "Apply"
       },
       "shipping_calculator": {
         "title": "Shipping",
-        "caption": "Estimate shipping rates",
+        "caption": "Estimate shipping",
         "tooltip": "Shipping & taxes will be calculated at checkout",
         "button": "Calculate",
         "error": "One or more errors occurred while retrieving the shipping rates:",
         "not_found": "Sorry, we do not ship to your address.",
         "one_result": "There is one shipping rate for your address:",
         "multiple_results": "There are multiple shipping rates for your address:"
+      },
+      "discount": {
+        "title": "Discount",
+        "caption": "Discount",
+        "placeholder": "Discount code",
+        "button": "Apply",
+        "error": "Discount code cannot be applied to your cart",
+        "shipping_error": "Shipping discounts are shown at checkout after adding an address",
+        "applied": "Applied discount code: {{ code }}",
+        "remove": "Remove discount {{ code }}"
       },
       "recently_viewed": {
         "empty": "Your recently viewed is empty."
@@ -167,6 +171,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Carousel",
+      "announcement": "Announcement",
+      "announcement_bar": "Announcement bar"
+    },
     "blog_posts": {
       "view_all": "View all"
     },
@@ -186,6 +195,7 @@
       "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> and  <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> permissions of your app."
     },
     "slideshow": {
+      "carousel": "Carousel",
       "play_slideshow": "Play slideshow",
       "pause_slideshow": "Pause slideshow"
     },
@@ -219,6 +229,9 @@
       "min_error": "This item has a minimum of {{ min }}",
       "max_error": "This item has a maximum of {{ max }}",
       "step_error": "You can only add this item in increments of {{ step }}"
+    },
+    "comparison-table": {
+      "highlight_differences": "Highlight differences"
     }
   },
   "blogs": {
@@ -269,7 +282,19 @@
     },
     "gift_wrapping": {
       "message_html": "For {{ price }}, please wrap the products in this order.",
-      "note_placeholder": "Gift message (free and optional)"
+      "note_placeholder": "Gift message (free and optional)",
+      "gift_wrapping_label": "Gift wrapping:",
+      "gift_wrapping_list": "Gift wrapping list",
+      "gift_wrapping_unavailable": "This product is not available for gift wrapping. Please understand.",
+      "boolean": {
+        "true": "Yes",
+        "false": "None"
+      },
+      "attributes": {
+        "gift_wrap": "Gift wrapping",
+        "gift_note": "Gift note",
+        "target_product": "For"
+      }
     }
   },
   "collections": {
@@ -285,7 +310,9 @@
       "product_count_simple": {
         "one": "{{ count }} product",
         "other": "{{ count }} products"
-      }
+      },
+      "show_on_model": "Show on model",
+      "product_view": "Product view"
     },
     "sorting": {
       "sort_button": "Sort by",
@@ -303,7 +330,7 @@
       "in_stock_only": "In stock only",
       "clear": "Remove filter \"{{ name }}\"",
       "clear_all": "Clear all",
-      "apply": "Apply"
+      "view_results": "View results"
     },
     "subcollections": {
       "all_products": "All {{ collection }}"
@@ -395,6 +422,7 @@
       "payment_status": "Payment Status",
       "shipping_address": "Shipping Address",
       "fulfillment_status": "Fulfillment Status",
+      "discounts": "Discounts",
       "discount": "Discount",
       "shipping": "Shipping",
       "tax": "Tax",
@@ -464,6 +492,7 @@
       "view_product": "View product",
       "pre_order": "Pre-order",
       "add_to_bundle": "Add to bundle",
+      "shop_the_look": "Shop the Look",
       "vendor": "Vendor",
       "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
@@ -474,8 +503,7 @@
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "read_more": "View full details",
       "quick_add": "Add",
-      "quick_view": "View",
-      "enquire_now": "Enquire Now"
+      "quick_view": "View"
     },
     "price": {
       "regular_price": "Regular price",
@@ -511,7 +539,7 @@
     },
     "inventory": {
       "in_stock": "In stock, ready to ship",
-      "in_stock_with_count": "{{ count }} in stock, ready to ship",
+      "in_stock_with_count": "{{ count }} in stock",
       "low_stock": "Low stock",
       "low_stock_with_count": {
         "one": "Hurry, only {{ count }} item left in stock!",
@@ -532,8 +560,7 @@
       "pick_up_unavailable": "Pickup currently unavailable",
       "pick_up_unavailable_at_html": "Pickup currently unavailable at {{ location_name }}",
       "unavailable": "Couldn't load pickup availability",
-      "refresh": "Refresh",
-      "in_stock_with_count_ready_to_ship": "{{ count }} in stock, ready to ship"
+      "refresh": "Refresh"
     },
     "back_in_stock": {
       "label": "Notify me when it’s available",
@@ -580,8 +607,5 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
-  },
-  "date_formats": {
-    "month_day_year": "%b %d, %Y"
   }
 }

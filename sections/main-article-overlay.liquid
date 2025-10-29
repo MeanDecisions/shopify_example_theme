@@ -31,7 +31,7 @@
             {%- render block -%}
 
           {%- when 'spacing' -%}
-            <empty-element class="block spacing-section{% if block.settings.height_mobile == 0 %} hidden lg:block{% endif %}{% if block.settings.height == 0 %} lg:hidden{% endif %}" style="--spacing-height-desktop: {{ block.settings.height }}px; --spacing-height-mobile: {{ block.settings.height_mobile }}px;" {{ block.shopify_attributes }}></empty-element>
+            <empty-element class="block spacing-section{% if block.settings.height_mobile == 0 %} hidden lg:block{% endif %}{% if block.settings.height == 0 %} lg:hidden{% endif %}" style="--spacing-height-desktop: {{ block.settings.height }}px;--spacing-height-mobile: {{ block.settings.height_mobile }}px;" {{ block.shopify_attributes }}></empty-element>
 
           {%- when 'share' -%}
             <div class="flex flex-wrap items-center justify-between" {{ block.shopify_attributes }}>
@@ -62,7 +62,7 @@
                           {%- if block.settings.show_date -%}
                             <li class="inline-flex gap-2 text-xs relative">
                               {%- render 'icon', icon: 'calendar', size: 'xs', class: 'stroke-1' -%}
-                              {{- blog.previous_article.published_at | time_tag: format: 'month_day_year' -}}
+                              {{- blog.previous_article.published_at | time_tag: format: 'date' -}}
                             </li>
                           {%- endif -%}
                 
@@ -100,7 +100,7 @@
                           {%- if block.settings.show_date -%}
                             <li class="inline-flex gap-2 text-xs relative">
                               {%- render 'icon', icon: 'calendar', size: 'xs', class: 'stroke-1' -%}
-                              {{- blog.next_article.published_at | time_tag: format: 'month_day_year' -}}
+                              {{- blog.next_article.published_at | time_tag: format: 'date' -}}
                             </li>
                           {%- endif -%}
                 
