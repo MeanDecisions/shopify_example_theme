@@ -1,13 +1,371 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
+  "categories": {
+    "banners": "Banner",
+    "basic": "Cơ bản",
+    "collection": "Bộ sưu tập",
+    "collections": "Các bộ sưu tập",
+    "collection_list": "Danh sách bộ sưu tập",
+    "custom": "Tùy chỉnh",
+    "decorative": "Trang trí",
+    "footer": "Chân trang",
+    "forms": "Biểu mẫu",
+    "header": "Đầu trang",
+    "layout": "Bố cục",
+    "links": "Liên kết",
+    "media": "Phương tiện truyền thông",
+    "product": "Sản phẩm",
+    "products": "Các sản phẩm",
+    "product_list": "Danh sách sản phẩm",
+    "other_sections": "Khác",
+    "storytelling": "Kể chuyện"
+  },
+  "blocks": {
+    "group": {
+      "name": "Nhóm",
+      "settings": {
+        "header__layout": {
+          "content": "Bố cục"
+        },
+        "header__size": {
+          "content": "Kích thước"
+        },
+        "header__appearance": {
+          "content": "Giao diện"
+        },
+        "header__typography": {
+          "content": "Kiểu chữ"
+        },
+        "header__animation": {
+          "content": "Hiệu ứng"
+        },
+        "header__icon": {
+          "content": "Biểu tượng"
+        },
+        "header__popup": {
+          "content": "Cửa sổ bật lên"
+        },
+        "header__link": {
+          "content": "Liên kết"
+        },
+        "link": {
+          "label": "Liên kết"
+        },
+        "open_new_tab": {
+          "label": "Mở liên kết trong tab mới"
+        },
+        "direction": {
+          "options__1": {
+            "label": "Dọc"
+          },
+          "options__2": {
+            "label": "Ngang"
+          },
+          "label": "Hướng"
+        },
+        "wrap": {
+          "label": "Xuống dòng nội dung"
+        },
+        "vertical_on_mobile": {
+          "label": "Dọc trên di động"
+        },
+        "alignment": {
+          "options__1": {
+            "label": "Trái"
+          },
+          "options__2": {
+            "label": "Giữa"
+          },
+          "options__3": {
+            "label": "Phải"
+          },
+          "options__4": {
+            "label": "Cách đều"
+          },
+          "label": "Căn chỉnh"
+        },
+        "alignment_mobile": {
+          "label": "Căn chỉnh di động"
+        },
+        "position": {
+          "options__1": {
+            "label": "Trên"
+          },
+          "options__2": {
+            "label": "Giữa"
+          },
+          "options__3": {
+            "label": "Dưới"
+          },
+          "options__4": {
+            "label": "Cách đều"
+          },
+          "label": "Vị trí"
+        },
+        "gap": {
+          "label": "Khoảng cách"
+        },
+        "width": {
+          "options__1": {
+            "label": "Vừa khít"
+          },
+          "options__2": {
+            "label": "Đầy"
+          },
+          "options__3": {
+            "label": "Tùy chỉnh"
+          },
+          "label": "Chiều rộng"
+        },
+        "custom_width": {
+          "label": "Chiều rộng tùy chỉnh"
+        },
+        "width_mobile": {
+          "label": "Chiều rộng di động"
+        },
+        "height": {
+          "options__1": {
+            "label": "Vừa khít"
+          },
+          "options__2": {
+            "label": "Đầy"
+          },
+          "options__3": {
+            "label": "Tùy chỉnh"
+          },
+          "label": "Chiều cao"
+        },
+        "height_mobile": {
+          "label": "Chiều cao trên thiết bị di động"
+        },
+        "custom_height": {
+          "label": "Chiều cao tùy chỉnh"
+        },
+        "section_width": {
+          "options__1": {
+            "label": "Hẹp"
+          },
+          "options__2": {
+            "label": "Trang"
+          },
+          "options__3": {
+            "label": "Rộng"
+          },
+          "options__4": {
+            "label": "Toàn bộ"
+          },
+          "label": "Chiều rộng"
+        },
+        "section_height": {
+          "label": "Chiều cao"
+        },
+        "section_height_mobile": {
+          "label": "Chiều cao trên thiết bị di động"
+        },
+        "background_media": {
+          "options__1": {
+            "label": "Không có"
+          },
+          "options__2": {
+            "label": "Hình ảnh"
+          },
+          "options__3": {
+            "label": "Video"
+          },
+          "label": "Media nền"
+        },
+        "image": {
+          "label": "Hình ảnh"
+        },
+        "image_position": {
+          "options__1": {
+            "label": "Bao phủ"
+          },
+          "options__2": {
+            "label": "Vừa khít"
+          },
+          "label": "Vị trí hình ảnh"
+        },
+        "video": {
+          "label": "Video"
+        },
+        "video_position": {
+          "options__1": {
+            "label": "Bao phủ"
+          },
+          "options__2": {
+            "label": "Chứa đựng"
+          },
+          "label": "Vị trí video"
+        },
+        "borders": {
+          "options__1": {
+            "label": "Không có"
+          },
+          "options__2": {
+            "label": "Liền"
+          },
+          "label": "Viền"
+        },
+        "border_width": {
+          "label": "Độ dày viền"
+        },
+        "border_opacity": {
+          "label": "Độ mờ viền"
+        },
+        "border_radius": {
+          "label": "Bán kính góc"
+        },
+        "background_overlay": {
+          "label": "Lớp phủ nền"
+        },
+        "overlay_color": {
+          "label": "Màu lớp phủ"
+        },
+        "overlay_style": {
+          "options__1": {
+            "label": "Liền"
+          },
+          "options__2": {
+            "label": "Chuyển màu"
+          },
+          "label": "Kiểu lớp phủ"
+        },
+        "gradient_direction": {
+          "options__1": {
+            "label": "Lên"
+          },
+          "options__2": {
+            "label": "Xuống"
+          },
+          "label": "Hướng chuyển màu"
+        },
+        "header__padding": {
+          "content": "Đệm"
+        },
+        "padding_top": {
+          "label": "Trên"
+        },
+        "padding_bottom": {
+          "label": "Dưới"
+        },
+        "padding_left": {
+          "label": "Trái"
+        },
+        "padding_right": {
+          "label": "Phải"
+        },
+        "custom_colors": {
+          "label": "Màu sắc tùy chỉnh"
+        }
+      }
+    },
+    "accordion": {
+      "name": "Danh sách thu gọn",
+      "settings": {
+        "reduce_size": {
+          "label": "Giảm kích thước"
+        }
+      }
+    },
+    "accordion-row": {
+      "name": "Hàng thu gọn"
+    },
+    "button": {
+      "name": "Nút"
+    },
+    "divider": {
+      "name": "Đường phân cách",
+      "settings": {
+        "thickness": {
+          "label": "Độ dày"
+        },
+        "corner_radius": {
+          "options__1": {
+            "label": "Vuông"
+          },
+          "options__2": {
+            "label": "Tròn"
+          },
+          "label": "Bo góc"
+        },
+        "length": {
+          "label": "Độ dài"
+        }
+      }
+    },
+    "heading": {
+      "name": "Tiêu đề"
+    },
+    "icon": {
+      "name": "Biểu tượng"
+    },
+    "image": {
+      "name": "Hình ảnh"
+    },
+    "map": {
+      "name": "Bản đồ"
+    },
+    "popup-link": {
+      "name": "Liên kết cửa sổ bật lên",
+      "settings": {
+        "behavior": {
+          "options__1": {
+            "label": "Mặc định"
+          },
+          "options__2": {
+            "label": "Ngăn kéo"
+          },
+          "label": "Hành vi"
+        },
+        "style": {
+          "label": "Kiểu"
+        },
+        "size": {
+          "label": "Kích thước"
+        }
+      }
+    },
+    "social-icons": {
+       "name": "Biểu tượng truyền thông xã hội",
+      "settings": {
+        "paragraph": {
+          "content": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
+        }
+      }
+    },
+    "spacer": {
+      "name": "Khoảng trống",
+      "settings": {
+        "unit": {
+          "options__1": {
+            "label": "Pixel"
+          },
+          "options__2": {
+            "label": "Phần trăm"
+          },
+          "label": "Đơn vị"
+        },
+        "size": {
+          "label": "Kích thước"
+        },
+        "custom_mobile_size": {
+          "label": "Kích thước di động tùy chỉnh"
+        },
+        "header__size_mobile": {
+          "content": "Kích thước di động"
+        }
+      }
+    },
+    "subheading": {
+      "name": "Tiêu đề phụ"
+    },
+    "text": {
+      "name": "Văn bản"
+    },
+    "video": {
+      "name": "Video"
+    }
+  },
   "sections": {
     "header-group": {
       "name": "Nhóm đầu trang"
@@ -43,6 +401,28 @@
         "header__post": {
           "content": "Thẻ bài blog"
         },
+        "accessibility": {
+          "label": "Khả năng tiếp cận",
+          "info": "Mô tả liên kết cho khách hàng sử dụng trình đọc màn hình."
+        },
+        "aspect_ratio": {
+          "options__1": {
+            "label": "Tự động"
+          },
+          "options__2": {
+            "label": "Vuông"
+          },
+          "options__3": {
+            "label": "Chân dung"
+          },
+          "options__4": {
+            "label": "Phong cảnh"
+          },
+          "options__5": {
+            "label": "Rộng"
+          },
+          "label": "Tỷ lệ khung hình"
+        },
         "collection": {
           "label": "Bộ sưu tập"
         },
@@ -55,6 +435,18 @@
         },
         "product_limit": {
           "label": "Sản phẩm tối đa để hiển thị"
+        },
+        "show_vendor": {
+          "label": "Hiển thị nhà cung cấp"
+        },
+        "show_price": {
+          "label": "Hiển thị giá"
+        },
+        "show_product_vendor": {
+          "label": "Hiển thị nhà cung cấp sản phẩm"
+        },
+        "show_product_price": {
+          "label": "Hiển thị giá sản phẩm"
         },
         "button": {
           "label": "Nút"
@@ -327,6 +719,18 @@
           "label": "Chữ viết nguệch ngoạc được đánh dấu",
           "info": "Yêu cầu đặt kiểu văn bản được đánh dấu thành \"Vẽ nguệch ngoạc bằng tay\"."
         },
+        "effects": {
+          "options__1": {
+            "label": "Không có"
+          },
+          "options__2": {
+            "label": "Xuất hiện"
+          },
+          "options__3": {
+            "label": "Điểm nổi bật"
+          },
+          "label": "Hiệu ứng"
+        },
         "image": {
           "label": "Hình ảnh"
         },
@@ -362,16 +766,25 @@
             "label": "750px"
           },
           "options__10": {
-            "label": "850px"
+            "label": "800px"
           },
           "options__11": {
-            "label": "900px"
+            "label": "850px"
           },
           "options__12": {
-            "label": "Toàn màn hình"
+            "label": "900px"
           },
           "options__13": {
+            "label": "Toàn màn hình"
+          },
+          "options__14": {
             "label": "Điều chỉnh theo hình ảnh đầu tiên"
+          },
+          "options__15": {
+            "label": "Tự động"
+          },
+          "options__16": {
+            "label": "Tùy chỉnh"
           },
           "label": "Chiều cao trên máy tính để bàn"
         },
@@ -405,6 +818,9 @@
           },
           "options__10": {
             "label": "Điều chỉnh theo hình ảnh đầu tiên"
+          },
+          "options__11": {
+            "label": "Tùy chỉnh"
           },
           "label": "Chiều cao trên thiết bị di động"
         },
@@ -628,7 +1044,16 @@
           "label": "Biểu tượng tùy chỉnh"
         },
         "icon_width": {
+          "options__1": {
+            "label": "Vừa vặn"
+          },
+          "options__2": {
+            "label": "Tùy chỉnh"
+          },
           "label": "Chiều rộng biểu tượng"
+        },
+        "custom_width": {
+          "label": "Chiều rộng tùy chỉnh"
         },
         "link": {
           "label": "Liên kết"
@@ -673,6 +1098,9 @@
           },
           "options__2": {
             "label": "Tiêu đề"
+          },
+          "options__3": {
+            "label": "Tiêu đề phụ"
           }
         },
         "text_size": {
@@ -695,6 +1123,15 @@
         },
         "text_max_size": {
           "label": "Kích thước tối đa"
+        },
+        "text_line_height": {
+          "label": "Chiều cao giữa các dòng"
+        },
+        "text_letter_spacing": {
+          "label": "Khoảng cách chữ"
+        },
+        "text_capitalize": {
+          "label": "Viết hoa"
         },
         "text_alignment": {
           "label": "Căn chỉnh nội dung trên máy tính để bàn",
@@ -811,10 +1248,7 @@
       }
     },
     "apps": {
-      "name": "Ứng dụng",
-      "presets": {
-        "name": "Ứng dụng"
-      }
+      "name": "Ứng dụng"
     },
     "age-verifier": {
       "name": "Xác minh độ tuổi",
@@ -876,7 +1310,7 @@
           "info": "Vị trí được tự động tối ưu hóa trên thiết bị di động."
         },
         "paragraph": {
-          "content": "Không xuất hiện trên thiết bị di động nhằm đáp ứng [nguyên tắc chuyển tiếp](https:\/\/developers.google.com\/search\/blog\/2016\/08\/helping-users-easily-access-content-on) của Google nhằm cải thiện SEO."
+          "content": "Không xuất hiện trên thiết bị di động nhằm đáp ứng [nguyên tắc chuyển tiếp](https://developers.google.com/search/blog/2016/08/helping-users-easily-access-content-on) của Google nhằm cải thiện SEO."
         },
         "header": {
           "content": "Hình nền"
@@ -894,15 +1328,15 @@
         },
         "show_social": {
           "label": "Hiển thị biểu tượng truyền thông xã hội",
-          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](\/editor?context=theme&category=social%20media)."
+          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
         },
         "enable_country_selector": {
-          "label": "Bật bộ chọn quốc gia\/khu vực",
-          "info": "Để thêm quốc gia\/khu vực, hãy chuyển đến [cài đặt thị trường](\/admin\/settings\/markets)."
+          "label": "Bật bộ chọn quốc gia/khu vực",
+          "info": "Để thêm quốc gia/khu vực, hãy chuyển đến [cài đặt thị trường](/admin/settings/markets)."
         },
         "enable_language_selector": {
           "label": "Bật bộ chọn ngôn ngữ",
-          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](\/admin\/settings\/ngôn ngữ)."
+          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](/admin/settings/ngôn ngữ)."
         },
         "invert_icons_selectors": {
           "label": "Đảo ngược biểu tượng và bộ chọn"
@@ -960,25 +1394,16 @@
           "label": "Bật nút \"Xem tất cả\"",
           "info": "Nếu blog bao gồm nhiều bài viết blog hơn số lợng hiển thị."
         }
-      },
-      "presets": {
-        "name": "Bài đăng trên blog"
       }
     },
     "blog-posts-collage": {
-      "name": "Bài đăng trên blog ghép ảnh",
-      "presets": {
-        "name": "Bài đăng trên blog ghép ảnh"
-      }
+      "name": "Bài đăng trên blog ghép ảnh"
     },
     "cart-drawer": {
       "name": "Ngăn kéo xe đẩy",
       "settings": {
         "paragraph": {
-          "content": "Ngăn giỏ hàng sẽ không xuất hiện với khách hàng nếu bạn đã đặt loại giỏ hàng thành \"Trang\" trong [cài đặt chủ đề](\/editor?context=theme&category=cart)."
-        },
-        "show_vendor": {
-          "label": "Hiển thị nhà cung cấp"
+          "content": "Ngăn giỏ hàng sẽ không xuất hiện với khách hàng nếu bạn đã đặt loại giỏ hàng thành \"Trang\" trong [cài đặt chủ đề](/editor?context=theme&category=cart)."
         },
         "show_cart_note": {
           "label": "Hiển thị ghi chú giỏ hàng"
@@ -986,6 +1411,9 @@
         "show_shipping_calculator": {
           "label": "Hiển thị công cụ tính giá vận chuyển",
           "info": "Nếu khách hàng của bạn đã đăng nhập, quốc gia trong địa chỉ giao hàng mặc định của họ sẽ được chọn."
+        },
+        "add_discount_code": {
+          "label": "Cho phép sử dụng mã giảm giá"
         },
         "show_view_cart_button": {
           "label": "Hiển thị nút xem giỏ hàng"
@@ -995,7 +1423,7 @@
         },
         "header__free_shipping": {
           "content": "Thanh miễn phí vận chuyển",
-          "info": "Đảm bảo rằng bạn đã định cấu hình đúng [phí vận chuyển](\/admin\/settings\/shipping)."
+          "info": "Đảm bảo rằng bạn đã định cấu hình đúng [phí vận chuyển](/admin/settings/shipping)."
         },
         "show_free_shipping_bar": {
           "label": "Hiển thị thanh miễn phí vận chuyển"
@@ -1006,22 +1434,10 @@
         },
         "header__cart_recommendations": {
           "content": "Đề xuất giỏ hàng",
-          "info": "Đề xuất động sử dụng thông tin về đơn hàng và sản phẩm để thay đổi và cải thiện theo thời gian. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)."
+          "info": "Đề xuất động sử dụng thông tin về đơn hàng và sản phẩm để thay đổi và cải thiện theo thời gian. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)."
         },
         "cart_recommendations_enabled": {
           "label": "Bật đề xuất giỏ hàng"
-        },
-        "cart_recommendations_heading": {
-          "label": "Tiêu đề"
-        },
-        "cart_recommendations_limit": {
-          "label": "Sản phẩm tối đa để hiển thị"
-        },
-        "show_cart_recommendations_vendor": {
-          "label": "Hiển thị nhà cung cấp"
-        },
-        "show_cart_recommendations_price": {
-          "label": "Hiển thị giá"
         },
         "cart_recommendations_products": {
           "label": "Đề xuất sản phẩm",
@@ -1041,18 +1457,6 @@
         },
         "recent_products_enabled": {
           "label": "Bật sản phẩm đã xem gần đây"
-        },
-        "recent_products_heading": {
-          "label": "Tiêu đề"
-        },
-        "recent_products_limit": {
-          "label": "Sản phẩm tối đa để hiển thị"
-        },
-        "show_recent_products_vendor": {
-          "label": "Hiển thị nhà cung cấp"
-        },
-        "show_recent_products_price": {
-          "label": "Hiển thị giá"
         }
       }
     },
@@ -1066,9 +1470,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Ghép ảnh khi cuộn"
       }
     },
     "collage-grid": {
@@ -1098,9 +1499,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Ảnh ghép"
       }
     },
     "collection-list": {
@@ -1110,9 +1508,6 @@
           "label": "Bật nút \"Xem tất cả\"",
           "info": "Nếu danh sách bao gồm nhiều bộ sưu tập hơn hiển thị."
         }
-      },
-      "presets": {
-        "name": "Danh sách bộ sưu tập"
       }
     },
     "compact-product-bundle": {
@@ -1142,22 +1537,16 @@
         "image_height_mobile": {
           "label": "Chiều cao hình ảnh trên thiết bị di động"
         }
-      },
-      "presets": {
-        "name": "Gói sản phẩm nhỏ gọn"
       }
     },
     "floating-product-bundle": {
-      "name": "Gói sản phẩm nổi",
-      "presets": {
-        "name": "Gói sản phẩm nổi"
-      }
+      "name": "Gói sản phẩm nổi"
     },
     "contact-form": {
       "name": "Biểu mẫu liên hệ",
       "settings": {
         "paragraph": {
-          "content": "Tất cả các bài gửi được gửi đến địa chỉ email khách hàng của cửa hàng của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/using-themes\/change-the-layout\/add-contact-form#view-contact-form-submissions)."
+          "content": "Tất cả các bài gửi được gửi đến địa chỉ email khách hàng của cửa hàng của bạn. [Tìm hiểu thêm](https://help.shopify.com/en/manual/using-themes/change-the-layout/add-contact-form#view-contact-form-submissions)."
         }
       },
       "blocks": {
@@ -1168,7 +1557,7 @@
           "name": "Biểu tượng truyền thông xã hội",
           "settings": {
             "paragraph": {
-              "content": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong cài đặt chủ đề của bạn."
+              "content": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
             }
           }
         },
@@ -1229,9 +1618,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Biểu mẫu liên hệ"
       }
     },
     "contact-with-map": {
@@ -1240,16 +1626,13 @@
         "header__map": {
           "content": "Bản đồ"
         }
-      },
-      "presets": {
-        "name": "Liên hệ với bản đồ"
       }
     },
     "cookie-banner": {
       "name": "Biểu ngữ cookie",
       "settings": {
         "paragraph": {
-          "content": "Yêu cầu khách hàng của bạn đồng ý sử dụng cookie và xử lý dữ liệu của họ, theo yêu cầu của Chỉ thị về quyền riêng tư điện tử và Quy định chung về bảo vệ dữ liệu của Liên minh Châu Âu. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/your-account\/privacy\/GDPR)"
+          "content": "Yêu cầu khách hàng của bạn đồng ý sử dụng cookie và xử lý dữ liệu của họ, theo yêu cầu của Chỉ thị về quyền riêng tư điện tử và Quy định chung về bảo vệ dữ liệu của Liên minh Châu Âu. [Tìm hiểu thêm](https://help.shopify.com/manual/your-account/privacy/GDPR)"
         },
         "mode": {
           "options__1": {
@@ -1311,7 +1694,7 @@
           "name": "Hẹn giờ",
           "settings": {
             "paragraph": {
-              "content": "Ngày hết hạn dựa trên [múi giờ chính của cửa hàng](\/admin\/settings\/general)."
+              "content": "Ngày hết hạn dựa trên [múi giờ chính của cửa hàng](/admin/settings/general)."
             },
             "compact": {
               "label": "Sử dụng kiểu nhỏ gọn"
@@ -1448,9 +1831,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Đồng hồ đếm ngược"
       }
     },
     "custom-liquid": {
@@ -1458,12 +1838,12 @@
       "settings": {
         "liquid": {
           "label": "Mã Liquid",
-          "info": "Thêm đoạn mã ứng dụng hoặc mã khác để tạo các tùy chỉnh nâng cao. [Tìm hiểu thêm](https:\/\/shopify.dev\/docs\/api\/liquid)"
+          "info": "Thêm đoạn mã ứng dụng hoặc mã khác để tạo các tùy chỉnh nâng cao. [Tìm hiểu thêm](https://shopify.dev/docs/api/liquid)"
         }
-      },
-      "presets": {
-        "name": "Liquid tùy chỉnh"
       }
+    },
+    "custom-section": {
+      "name": "Mục tùy chỉnh"
     },
     "empty-space": {
       "name": "Không gian trống",
@@ -1474,9 +1854,6 @@
         "height_mobile": {
           "label": "Chiều cao trên thiết bị di động"
         }
-      },
-      "presets": {
-        "name": "Không gian trống"
       }
     },
     "faq": {
@@ -1521,9 +1898,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Câu hỏi thường gặp"
       }
     },
     "featured-collection": {
@@ -1533,16 +1907,10 @@
           "label": "Bật nút \"Xem tất cả\"",
           "info": "Nếu bộ sưu tập có nhiều sản phẩm hơn hiển thị."
         }
-      },
-      "presets": {
-        "name": "Bộ sưu tập nổi bật"
       }
     },
     "featured-collections": {
-      "name": "Bộ sưu tập nổi bật",
-      "presets": {
-        "name": "Nhiều bộ sưu tập nổi bật"
-      }
+      "name": "Các bộ sưu tập nổi bật"
     },
     "featured-product": {
       "name": "Sản phẩm nổi bật",
@@ -1553,31 +1921,28 @@
         "spinning_text": {
           "name": "Xoay văn bản"
         }
-      },
-      "presets": {
-        "name": "Sản phẩm nổi bật"
       }
     },
     "footer-copyright": {
       "name": "Bản quyền chân trang",
       "settings": {
         "header__country_selector": {
-          "content": "Bộ chọn quốc gia\/khu vực",
-          "info": "Để thêm quốc gia\/khu vực, hãy chuyển đến [cài đặt thị trường](\/admin\/settings\/markets)."
+          "content": "Bộ chọn quốc gia/khu vực",
+          "info": "Để thêm quốc gia/khu vực, hãy chuyển đến [cài đặt thị trường](/admin/settings/markets)."
         },
         "enable_country_selector": {
-          "label": "Bật bộ chọn quốc gia\/khu vực"
+          "label": "Bật bộ chọn quốc gia/khu vực"
         },
         "header__language_selector": {
           "content": "Bộ chọn ngôn ngữ",
-          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](\/admin\/settings\/ngôn ngữ)."
+          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](/admin/settings/ngôn ngữ)."
         },
         "enable_language_selector": {
           "label": "Bật bộ chọn ngôn ngữ"
         },
         "header__policy": {
           "content": "Liên kết chính sách",
-          "info": "Để thêm chính sách của cửa hàng, hãy chuyển đến [cài đặt chính sách](\/admin\/settings\/legal)."
+          "info": "Để thêm chính sách của cửa hàng, hãy chuyển đến [cài đặt chính sách](/admin/settings/legal)."
         },
         "show_policy": {
           "label": "Hiển thị liên kết chính sách"
@@ -1610,7 +1975,7 @@
         },
         "header__newsletter": {
           "content": "Đăng ký email",
-          "info": "Người đăng ký được tự động thêm vào danh sách khách hàng \"tiếp thị được chấp nhận\" của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+          "info": "Người đăng ký được tự động thêm vào danh sách khách hàng \"tiếp thị được chấp nhận\" của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/customers/manage-customers)"
         },
         "enable_newsletter": {
           "label": "Hiển thị đăng ký email"
@@ -1623,14 +1988,14 @@
         },
         "header__social": {
           "content": "Biểu tượng truyền thông xã hội",
-          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](\/editor?context=theme&category=social%20media)."
+          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
         },
         "show_social": {
           "label": "Hiển thị biểu tượng truyền thông xã hội"
         },
         "header__follow": {
           "content": "Theo dõi cửa hàng",
-          "info": "Để cho phép khách hàng theo dõi cửa hàng của bạn trên ứng dụng Shop từ cửa hàng, bạn phải bật Shop Pay. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+          "info": "Để cho phép khách hàng theo dõi cửa hàng của bạn trên ứng dụng Shop từ cửa hàng, bạn phải bật Shop Pay. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
         },
         "enable_follow_on_shop": {
           "label": "Bật theo dõi trên Shop"
@@ -1674,28 +2039,28 @@
           "name": "Thông tin thương hiệu",
           "settings": {
             "button_label_1": {
-              "label": "Dòng giới thiệu #1"
+              "label": "Dòng giới thiệu 1"
             },
             "button_link_1": {
-              "label": "Liên kết dòng giới thiệu #1"
+              "label": "Liên kết dòng giới thiệu 1"
             },
             "button_label_2": {
-              "label": "Dòng giới thiệu #2"
+              "label": "Dòng giới thiệu 2"
             },
             "button_link_2": {
-              "label": "Liên kết dòng giới thiệu #2"
+              "label": "Liên kết dòng giới thiệu 2"
             },
             "button_label_3": {
-              "label": "Dòng giới thiệu #3"
+              "label": "Dòng giới thiệu 3"
             },
             "button_link_3": {
-              "label": "Liên kết dòng giới thiệu #3"
+              "label": "Liên kết dòng giới thiệu 3"
             },
             "button_label_4": {
-              "label": "Dòng giới thiệu #4"
+              "label": "Dòng giới thiệu 4"
             },
             "button_link_4": {
-              "label": "Liên kết dòng giới thiệu #4"
+              "label": "Liên kết dòng giới thiệu 4"
             }
           }
         }
@@ -1705,7 +2070,11 @@
       "name": "Đầu trang",
       "settings": {
         "paragraph__logo_help": {
-          "content": "Chỉnh sửa logo của bạn trong [cài đặt chủ đề](\/editor?context=theme&category=logo)."
+          "content": "Chỉnh sửa logo của bạn trong [cài đặt chủ đề](/editor?context=theme&category=logo)."
+        },
+        "logo_h1": {
+          "label": "Kích hoạt logo dưới dạng H1 trên trang chủ",
+          "info": "Cho SEO. Chỉ vô hiệu hóa nếu một phần khác trên trang chủ đã chứa thẻ H1."
         },
         "menu": {
           "label": "Menu"
@@ -1771,16 +2140,19 @@
             "label": "Bên trái"
           }
         },
+        "enable_accordion_menu": {
+          "label": "Bật menu thu gọn"
+        },
         "show_social": {
           "label": "Hiển thị biểu tượng truyền thông xã hội",
-          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](\/editor?context=theme&category=social%20media)."
+          "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
         },
         "header__country_selector": {
-          "content": "Bộ chọn quốc gia\/khu vực",
-          "info": "Để thêm quốc gia\/khu vực, hãy chuyển đến [cài đặt thị trường](\/admin\/settings\/markets)."
+          "content": "Bộ chọn quốc gia/khu vực",
+          "info": "Để thêm quốc gia/khu vực, hãy chuyển đến [cài đặt thị trường](/admin/settings/markets)."
         },
         "enable_country_selector": {
-          "label": "Bật bộ chọn quốc gia\/khu vực"
+          "label": "Bật bộ chọn quốc gia/khu vực"
         },
         "show_country_name": {
           "label": "Hiển thị tên quốc gia"
@@ -1790,7 +2162,7 @@
         },
         "header__language_selector": {
           "content": "Bộ chọn ngôn ngữ",
-          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](\/admin\/settings\/ngôn ngữ)."
+          "info": "Để thêm ngôn ngữ, hãy chuyển đến [cài đặt ngôn ngữ](/admin/settings/ngôn ngữ)."
         },
         "enable_language_selector": {
           "label": "Bật bộ chọn ngôn ngữ"
@@ -1809,7 +2181,7 @@
           "settings": {
             "menu_title": {
               "label": "Mục menu",
-              "info": "Nhập tên của mục menu bạn muốn áp dụng menu lớn. [Tìm hiểu thêm](https:\/\/roartheme.co\/blogs\/concept\/how-to-create-a-mega-menu)"
+              "info": "Nhập tên của mục menu bạn muốn áp dụng menu lớn. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-create-a-mega-menu)"
             },
             "menu_width": {
               "options__1": {
@@ -1827,19 +2199,19 @@
               "label": "Hiển thị hình ảnh mega menu"
             },
             "header__promo_1": {
-              "content": "Khuyến mãi #1"
+              "content": "Khuyến mãi 1"
             },
             "header__promo_2": {
-              "content": "Khuyến mãi #2"
+              "content": "Khuyến mãi 2"
             },
             "header__promo_3": {
-              "content": "Khuyến mãi #3"
+              "content": "Khuyến mãi 3"
             },
             "header__promo_4": {
-              "content": "Khuyến mãi #4"
+              "content": "Khuyến mãi 4"
             },
             "header__promo_5": {
-              "content": "Khuyến mãi #5"
+              "content": "Khuyến mãi 5"
             },
             "promo_image": {
               "label": "Hình ảnh"
@@ -1860,6 +2232,41 @@
               "label": "Nhãn"
             }
           }
+        },
+        "mega_menu_tab": {
+          "name": "Tabbed mega menu",
+          "settings": {
+            "heading_1": {
+              "label": "Tiêu đề 1"
+            },
+            "heading_2": {
+              "label": "Tiêu đề 2"
+            },
+            "target": {
+              "label": "Mục tiêu"
+            },
+            "target_link": {
+              "label": "Liên kết mục tiêu"
+            },
+            "promo_image_ratio": {
+              "info": "Chỉ dành cho di động."
+            },
+            "header__tab_1": {
+              "content": "Thẻ 1"
+            },
+            "header__tab_2": {
+              "content": "Thẻ 2"
+            },
+            "header__tab_3": {
+              "content": "Thẻ 3"
+            },
+            "header__tab_4": {
+              "content": "Thẻ 4"
+            },
+            "header__tab_5": {
+              "content": "Thẻ 5"
+            }
+          }
         }
       }
     },
@@ -1876,10 +2283,6 @@
             },
             "image_height": {
               "label": "Chiều cao hình ảnh"
-            },
-            "description": {
-              "label": "Văn bản thay thế hình ảnh",
-              "info": "Mô tả hình ảnh cho khách hàng sử dụng trình đọc màn hình."
             }
           }
         },
@@ -1891,9 +2294,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Văn bản nổi bật"
       }
     },
     "image-comparison": {
@@ -1926,9 +2326,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "So sánh hình ảnh"
       }
     },
     "image-with-text": {
@@ -1968,9 +2365,6 @@
             "label": "Bên dưới"
           }
         }
-      },
-      "presets": {
-        "name": "Hình ảnh có văn bản"
       }
     },
     "images-with-text": {
@@ -1979,38 +2373,29 @@
         "image_2": {
           "label": "Hình ảnh 2"
         }
-      },
-      "presets": {
-        "name": "Nhiều hình ảnh có văn bản"
       }
     },
     "image-with-text-overlay": {
-      "name": "Hình ảnh có lớp phủ văn bản",
-      "presets": {
-        "name": "Hình ảnh có lớp phủ văn bản"
-      }
+      "name": "Hình ảnh có lớp phủ văn bản"
     },
     "images-with-text-overlay": {
       "name": "Nhiều hình ảnh có lớp phủ văn bản",
       "settings": {
         "image_1": {
-          "label": "Hình ảnh #1"
+          "label": "Hình ảnh 1"
         },
         "image_2": {
-          "label": "Hình ảnh #2"
+          "label": "Hình ảnh 2"
         },
         "image_3": {
-          "label": "Hình ảnh #3"
+          "label": "Hình ảnh 3"
         },
         "image_4": {
-          "label": "Hình ảnh #4"
+          "label": "Hình ảnh 4"
         },
         "image_5": {
-          "label": "Hình ảnh #5"
+          "label": "Hình ảnh 5"
         }
-      },
-      "presets": {
-        "name": "Hình ảnh có lớp phủ văn bản"
       }
     },
     "logo-list": {
@@ -2054,9 +2439,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Danh sách logo"
       }
     },
     "lookbook": {
@@ -2065,7 +2447,10 @@
         "global": {
           "settings": {
             "header": {
-              "content": "Điểm chú ý"
+              "content": "Điểm tương tác"
+            },
+            "color": {
+              "label": "Màu sắc điểm tương tác"
             },
             "vertical": {
               "label": "Vị trí dọc"
@@ -2078,9 +2463,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Lookbook"
       }
     },
     "main-account": {
@@ -2206,7 +2588,7 @@
         },
         "show_image": {
           "label": "Hiển thị hình ảnh nổi bật",
-          "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 16:9. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#under Hiểu-image-aspect-ratio)"
+          "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 16:9. [Tìm hiểu thêm](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#under Hiểu-image-aspect-ratio)"
         },
         "image": {
           "info": "Mặc định là hình ảnh nổi bật."
@@ -2220,10 +2602,10 @@
           "name": "Chia sẻ",
           "settings": {
             "featured_image_info": {
-              "content": "Nếu bạn đưa liên kết vào bài đăng trên mạng xã hội, hình ảnh nổi bật của trang sẽ được hiển thị dưới dạng hình ảnh xem trước. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
+              "content": "Nếu bạn đưa liên kết vào bài đăng trên mạng xã hội, hình ảnh nổi bật của trang sẽ được hiển thị dưới dạng hình ảnh xem trước. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Tiêu đề và mô tả cửa hàng được đính kèm với hình ảnh xem trước. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Tiêu đề và mô tả cửa hàng được đính kèm với hình ảnh xem trước. [Tìm hiểu thêm](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -2275,22 +2657,22 @@
           "label": "Hiển thị đoạn trích"
         },
         "paragraph": {
-          "content": "Thay đổi đoạn trích bằng cách chỉnh sửa bài đăng trên blog của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Thay đổi đoạn trích bằng cách chỉnh sửa bài đăng trên blog của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
         }
       }
     },
     "main-cart": {
       "name": "Trang giỏ hàng",
       "settings": {
-        "show_vendor": {
-          "label": "Hiển thị nhà cung cấp"
-        },
         "show_payment_icons": {
           "label": "Hiển thị biểu tượng thanh toán"
         },
         "show_shipping_calculator": {
           "label": "Hiển thị công cụ tính giá vận chuyển",
           "info": "Nếu khách hàng của bạn đã đăng nhập, quốc gia trong địa chỉ giao hàng mặc định của họ sẽ được chọn."
+        },
+        "add_discount_code": {
+          "label": "Cho phép sử dụng mã giảm giá"
         }
       },
       "blocks": {
@@ -2305,7 +2687,7 @@
           "settings": {
             "show_accelerated_buttons": {
               "label": "Hiển thị các nút tăng tốc",
-              "info": "Định cấu hình các nút thanh toán nhanh trong [cài đặt thanh toán](\/admin\/settings\/payments) của bạn"
+              "info": "Định cấu hình các nút thanh toán nhanh trong [cài đặt thanh toán](/admin/settings/payments) của bạn"
             }
           }
         },
@@ -2313,7 +2695,7 @@
           "name": "Tin nhắn miễn phí vận chuyển",
           "settings": {
             "paragraph": {
-              "content": "Đảm bảo rằng bạn đã định cấu hình đúng [phí vận chuyển](\/admin\/settings\/shipping)"
+              "content": "Đảm bảo rằng bạn đã định cấu hình đúng [phí vận chuyển](/admin/settings/shipping)"
             },
             "minimum_amount": {
               "label": "Số tiền tối thiểu miễn phí vận chuyển",
@@ -2381,14 +2763,14 @@
       "name": "Biểu ngữ bộ sưu tập",
       "settings": {
         "paragraph": {
-          "content": "Thêm mô tả hoặc hình ảnh bằng cách chỉnh sửa bộ sưu tập của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/products\/collections\/collection-layout)"
+          "content": "Thêm mô tả hoặc hình ảnh bằng cách chỉnh sửa bộ sưu tập của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/products/collections/collection-layout)"
         },
         "show_description": {
           "label": "Hiển thị mô tả bộ sưu tập"
         },
         "show_image": {
           "label": "Hiển thị hình ảnh bộ sưu tập",
-          "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 16:9. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#under Hiểu-image-aspect-ratio)"
+          "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 16:9. [Tìm hiểu thêm](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#under Hiểu-image-aspect-ratio)"
         },
         "image": {
           "info": "Mặc định là hình ảnh bộ sưu tập."
@@ -2436,7 +2818,7 @@
         },
         "enable_filtering": {
           "label": "Bật bộ lọc",
-          "info": "Tùy chỉnh bộ lọc bằng ứng dụng Tìm kiếm & Khám phá. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
+          "info": "Tùy chỉnh bộ lọc bằng ứng dụng Tìm kiếm & Khám phá. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
         },
         "filter_collapsed": {
           "label": "Thu gọn bộ lọc"
@@ -2453,7 +2835,7 @@
         },
         "filter_color_swatches": {
           "label": "Bật mẫu màu",
-          "info": "[Xem hướng dẫn thiết lập](https:\/\/roartheme.co\/blogs\/concept\/how-to-set-up-color-swatches)"
+          "info": "[Xem hướng dẫn thiết lập](https://roartheme.co/blogs/concept/how-to-set-up-color-swatches)"
         },
         "enable_sorting": {
           "label": "Bật sắp xếp"
@@ -2467,13 +2849,10 @@
           "name": "Bộ sưu tập con",
           "settings": {
             "paragraph": {
-              "content": "Liên kết đến các bộ sưu tập từ menu của bạn sẽ xuất hiện ở đây. [Tìm hiểu thêm](https:\/\/roartheme.co\/blogs\/concept\/how-to-create-sub-collections)"
+              "content": "Liên kết đến các bộ sưu tập từ menu của bạn sẽ xuất hiện ở đây. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-create-sub-collections)"
             },
             "menu": {
               "label": "Menu"
-            },
-            "per_row": {
-              "label": "Bộ sưu tập con trên mỗi hàng"
             },
             "show_count": {
               "label": "Hiển thị số lượng bộ sưu tập"
@@ -2514,7 +2893,8 @@
         },
         "promotion-video": {
           "name": "Video khuyến mãi",
-          "settings": {}
+          "settings": {
+          }
         }
       }
     },
@@ -2580,7 +2960,7 @@
           }
         },
         "image_ratio": {
-          "info": "Thêm hình ảnh bằng cách chỉnh sửa bộ sưu tập của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/products\/collections)"
+          "info": "Thêm hình ảnh bằng cách chỉnh sửa bộ sưu tập của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/products/collections)"
         },
         "overlay_content": {
           "label": "Lớp phủ văn bản trên hình ảnh"
@@ -2624,7 +3004,7 @@
         },
         "header__media": {
           "content": "Phương tiện truyền thông",
-          "info": "Tìm hiểu thêm về [các loại phương tiện.](https:\/\/help.shopify.com\/manual\/products\/product-media)"
+          "info": "Tìm hiểu thêm về [các loại phương tiện.](https://help.shopify.com/manual/products/product-media)"
         },
         "media_size": {
           "label": "Chiều rộng phương tiện trên máy tính để bàn",
@@ -2711,12 +3091,9 @@
         "title": {
           "name": "Tiêu đề",
           "settings": {
-            "show_price": {
-              "label": "Hiển thị giá sản phẩm"
-            },
             "show_rating": {
               "label": "Hiển thị đánh giá sản phẩm",
-              "info": "Để hiển thị xếp hạng, hãy thêm ứng dụng xếp hạng sản phẩm. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rated-block)"
+              "info": "Để hiển thị đánh giá, hãy thêm ứng dụng đánh giá sản phẩm."
             }
           }
         },
@@ -2757,7 +3134,7 @@
             },
             "enable_color_swatches": {
               "label": "Bật mẫu màu",
-              "info": "Yêu cầu loại bộ chọn biến thể là \"Nút\". [Tìm hiểu cách thiết lập mẫu màu](https:\/\/roartheme.co\/blogs\/concept\/how-to-set-up-color-swatches)"
+              "info": "Yêu cầu loại bộ chọn biến thể là \"Nút\". [Tìm hiểu cách thiết lập mẫu màu](https://roartheme.co/blogs/concept/how-to-set-up-color-swatches)"
             },
             "color_swatch_type": {
               "options__1": {
@@ -2767,13 +3144,13 @@
                 "label": "Hình ảnh biến thể"
               },
               "label": "Loại mẫu",
-              "info": "Chế độ hình ảnh biến thể yêu cầu tất cả các biến thể phải có một hình ảnh liên quan. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/products\/product-media\/add-images-variants#add-images-to-being-variants)"
+              "info": "Chế độ hình ảnh biến thể yêu cầu tất cả các biến thể phải có một hình ảnh liên quan. [Tìm hiểu thêm](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-being-variants)"
             },
             "header__size": {
               "content": "Biểu đồ kích thước"
             },
             "paragraph__size": {
-              "content": "Các sản phẩm đủ điều kiện sử dụng chức năng biểu đồ kích thước [phải có tùy chọn Kích thước](https:\/\/roartheme.co\/blogs\/concept\/how-to-enable-size-chart-on-product-pages)"
+              "content": "Các sản phẩm đủ điều kiện sử dụng chức năng biểu đồ kích thước [phải có tùy chọn Kích thước](https://roartheme.co/blogs/concept/how-to-enable-size-chart-on-product-pages)"
             },
             "size_chart": {
               "label": "Trang biểu đồ kích thước"
@@ -2784,7 +3161,7 @@
           "name": "Các biến thể của sản phẩm",
           "settings": {
             "paragraph": {
-              "content": "Liên kết các sản phẩm có màu sắc khác nhau bằng cách sử dụng mẫu màu. [Tìm hiểu thêm](https:\/\/roartheme.co\/blogs\/concept\/creating-product-variations-to-link-to- Different-pages)"
+              "content": "Liên kết các sản phẩm có màu sắc khác nhau bằng cách sử dụng mẫu màu. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/creating-product-variations-to-link-to- Different-pages)"
             },
             "option_name": {
               "label": "Tên tùy chọn",
@@ -2806,7 +3183,7 @@
                 "label": "Hình ảnh sản phẩm"
               },
               "label": "Loại mẫu",
-              "info": "Chế độ hình ảnh sản phẩm yêu cầu tất cả các sản phẩm phải có hình ảnh liên quan. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/products\/product-media\/add-images-variants#add-images-to-being-variants)"
+              "info": "Chế độ hình ảnh sản phẩm yêu cầu tất cả các sản phẩm phải có hình ảnh liên quan. [Tìm hiểu thêm](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-being-variants)"
             }
           }
         },
@@ -2831,7 +3208,7 @@
             },
             "show_inventory_transfer": {
               "label": "Hiển thị thông báo chuyển hàng tồn kho",
-              "info": "Tìm hiểu cách chuyển hàng tồn kho [tại đây](https:\/\/help.shopify.com\/manual\/products\/inventory\/transfers\/create-transfer)"
+              "info": "Tìm hiểu cách chuyển hàng tồn kho [tại đây](https://help.shopify.com/manual/products/inventory/transfers/create-transfer)"
             },
             "color_scheme": {
               "options__1": {
@@ -2864,11 +3241,11 @@
             },
             "show_dynamic_checkout": {
               "label": "Hiển thị các nút thanh toán động",
-              "info": "Bằng cách sử dụng các phương thức thanh toán có sẵn trên cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưa thích của họ, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+              "info": "Bằng cách sử dụng các phương thức thanh toán có sẵn trên cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưa thích của họ, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
             },
             "show_gift_card_recipient": {
               "label": "Hiển thị mẫu thông tin người nhận thẻ quà tặng",
-              "info": "Cho phép người mua gửi thẻ quà tặng vào ngày đã lên lịch cùng với tin nhắn cá nhân. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+              "info": "Cho phép người mua gửi thẻ quà tặng vào ngày đã lên lịch cùng với tin nhắn cá nhân. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
             }
           }
         },
@@ -2876,7 +3253,7 @@
           "name": "Khả năng nhận hàng",
           "settings": {
             "paragraph": {
-              "content": "Cho phép khách hàng của bạn xem tình trạng còn hàng tại các cửa hàng bán lẻ bằng cách [thiết lập dịch vụ nhận hàng tại địa phương](https:\/\/help.shopify.com\/manual\/sell-in-person\/shopify-pos\/order-management\/local-pickup-for-online -lệnh)."
+              "content": "Cho phép khách hàng của bạn xem tình trạng còn hàng tại các cửa hàng bán lẻ bằng cách [thiết lập dịch vụ nhận hàng tại địa phương](https://help.shopify.com/manual/sell-in-person/shopify-pos/order-management/local-pickup-for-online -lệnh)."
             }
           }
         },
@@ -2887,10 +3264,10 @@
           "name": "Chia sẻ",
           "settings": {
             "featured_image_info": {
-              "content": "Nếu bạn đưa liên kết vào bài đăng trên mạng xã hội, hình ảnh nổi bật của trang sẽ được hiển thị dưới dạng hình ảnh xem trước. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/images\/showing-social-media-thumbnail-images)"
+              "content": "Nếu bạn đưa liên kết vào bài đăng trên mạng xã hội, hình ảnh nổi bật của trang sẽ được hiển thị dưới dạng hình ảnh xem trước. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)"
             },
             "title_info": {
-              "content": "Tiêu đề và mô tả cửa hàng được đính kèm với hình ảnh xem trước. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)"
+              "content": "Tiêu đề và mô tả cửa hàng được đính kèm với hình ảnh xem trước. [Tìm hiểu thêm](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "header__help": {
               "content": "Bàn trợ giúp"
@@ -2924,7 +3301,7 @@
           "name": "Đánh giá sản phẩm",
           "settings": {
             "paragraph": {
-              "content": "Để hiển thị xếp hạng, hãy thêm ứng dụng xếp hạng sản phẩm. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rated-block)"
+              "content": "Để hiển thị đánh giá, hãy thêm ứng dụng đánh giá sản phẩm."
             }
           }
         },
@@ -2932,16 +3309,7 @@
           "name": "Sản phẩm bổ sung",
           "settings": {
             "paragraph": {
-              "content": "Để chọn các sản phẩm bổ sung, hãy thêm ứng dụng Tìm kiếm & Khám phá. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)"
-            },
-            "product_limit": {
-              "label": "Sản phẩm tối đa để hiển thị"
-            },
-            "show_vendor": {
-              "label": "Hiển thị nhà cung cấp"
-            },
-            "show_price": {
-              "label": "Hiển thị giá"
+              "content": "Để chọn các sản phẩm bổ sung, hãy thêm ứng dụng Tìm kiếm & Khám phá. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             }
           }
         },
@@ -2956,6 +3324,18 @@
             },
             "page": {
               "label": "Hàng nội dung từ trang"
+            },
+            "opened": {
+              "label": "Mặc định hiển thị mở"
+            },
+            "style": {
+              "options__1": {
+                "label": "Có viền"
+              },
+              "options__2": {
+                "label": "Có nền"
+              },
+              "label": "Kiểu"
             }
           }
         },
@@ -2963,7 +3343,7 @@
           "name": "Đồng hồ đếm ngược",
           "settings": {
             "paragraph": {
-              "content": "Để cấu hình đồng hồ đếm ngược cho sản phẩm của bạn, vui lòng làm theo các bước được nêu trong [hướng dẫn này](https:\/\/roartheme.co\/blogs\/concept\/can-i-add-countdown-timer-to-my-products)."
+              "content": "Để cấu hình đồng hồ đếm ngược cho sản phẩm của bạn, vui lòng làm theo các bước được nêu trong [hướng dẫn này](https://roartheme.co/blogs/concept/can-i-add-countdown-timer-to-my-products)."
             }
           }
         },
@@ -3043,6 +3423,35 @@
             }
           }
         },
+        "product_bundle": {
+          "name": "Gói sản phẩm",
+          "settings": {
+            "paragraph": {
+              "content": "Cho phép khách hàng mua nhiều sản phẩm liên quan cùng nhau dưới dạng một bộ sưu tập được chọn lọc. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-setup-popular-upgrades-in-product-pages)"
+            },
+            "metafield": {
+              "label": "Trường thông tin",
+              "info": "Nhập không gian tên và khóa của trường thông tin chứa giá trị. Ví dụ: custom.bundle"
+            },
+            "clickable": {
+              "label": "Bật các mục có thể nhấp"
+            }
+          }
+        },
+        "icon_list": {
+          "name": "Danh sách biểu tượng",
+          "settings": {
+            "paragraph": {
+              "content": "Sử dụng các nguồn động để làm nổi bật các thuộc tính độc đáo bằng cách tạo trường thông tin sản phẩm cho danh sách biểu tượng. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-setup-product-icons)"
+            },
+            "enable_carousel": {
+              "label": "Bật băng chuyền trên máy tính để bàn"
+            },
+            "show_below_media": {
+              "label": "Hiển thị bên dưới phương tiện truyền thông"
+            }
+          }
+        },
         "sticky_buy_button": {
           "name": "Cố định nút mua",
           "settings": {
@@ -3082,7 +3491,7 @@
         },
         "map_api_key": {
           "label": "Khóa API của Google Maps",
-          "info": "Bạn sẽ cần [đăng ký Khóa API Google Maps](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/map-section-api-key) để hiển thị bản đồ"
+          "info": "Bạn sẽ cần [đăng ký Khóa API Google Maps](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) để hiển thị bản đồ"
         },
         "map_zoom": {
           "label": "Thu phóng bản đồ"
@@ -3120,9 +3529,6 @@
           },
           "label": "Bố cục trên thiết bị di động"
         }
-      },
-      "presets": {
-        "name": "Bản đồ"
       }
     },
     "maps": {
@@ -3131,9 +3537,6 @@
         "map": {
           "name": "Bản đồ"
         }
-      },
-      "presets": {
-        "name": "Nhiều bản đồ"
       }
     },
     "mobile-dock": {
@@ -3159,7 +3562,7 @@
           "settings": {
             "custom_icon": {
               "label": "Biểu tượng SVG tùy chỉnh",
-              "info": "Tìm hiểu thêm về [SVG](https:\/\/roartheme.co\/blogs\/news\/what-you-need-to-know-about-svg)"
+              "info": "Tìm hiểu thêm về [SVG](https://roartheme.co/blogs/news/what-you-need-to-know-about-svg)"
             },
             "link": {
               "label": "Liên kết"
@@ -3190,16 +3593,13 @@
           "settings": {
             "custom_icon": {
               "label": "Biểu tượng SVG tùy chỉnh",
-              "info": "Tìm hiểu thêm về [SVG](https:\/\/roartheme.co\/blogs\/news\/what-you-need-to-know-about-svg)"
+              "info": "Tìm hiểu thêm về [SVG](https://roartheme.co/blogs/news/what-you-need-to-know-about-svg)"
             },
             "show_border": {
               "label": "Hiển thị đường viền"
             }
           }
         }
-      },
-      "presets": {
-        "name": "Nhiều cột"
       }
     },
     "multicolumn-with-icons": {
@@ -3214,16 +3614,13 @@
           },
           "label": "Kiểu"
         }
-      },
-      "presets": {
-        "name": "Nhiều cột có biểu tượng"
       }
     },
     "newsletter": {
       "name": "Đăng ký email",
       "settings": {
         "paragraph": {
-          "content": "Người đăng ký được tự động thêm vào danh sách khách hàng \"tiếp thị được chấp nhận\" của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
+          "content": "Người đăng ký được tự động thêm vào danh sách khách hàng \"tiếp thị được chấp nhận\" của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/customers/manage-customers)"
         }
       },
       "blocks": {
@@ -3234,20 +3631,14 @@
           "name": "Biểu tượng truyền thông xã hội",
           "settings": {
             "paragraph": {
-              "content": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](\/editor?context=theme&category=social%20media)."
+              "content": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
             }
           }
         }
-      },
-      "presets": {
-        "name": "Đăng ký email"
       }
     },
     "newsletter-banner": {
-      "name": "Biểu ngữ đăng ký email",
-      "presets": {
-        "name": "Biểu ngữ đăng ký email"
-      }
+      "name": "Biểu ngữ đăng ký email"
     },
     "newsletter-popup": {
       "name": "Cửa sổ bật lên bản tin",
@@ -3304,7 +3695,7 @@
           "info": "Vị trí được tự động tối ưu hóa trên thiết bị di động."
         },
         "paragraph": {
-          "content": "Không xuất hiện trên thiết bị di động nhằm đáp ứng [nguyên tắc chuyển tiếp](https:\/\/developers.google.com\/search\/blog\/2016\/08\/helping-users-easily-access-content-on) của Google nhằm cải thiện SEO."
+          "content": "Không xuất hiện trên thiết bị di động nhằm đáp ứng [nguyên tắc chuyển tiếp](https://developers.google.com/search/blog/2016/08/helping-users-easily-access-content-on) của Google nhằm cải thiện SEO."
         }
       },
       "blocks": {
@@ -3325,7 +3716,7 @@
             },
             "show_social": {
               "label": "Hiển thị biểu tượng truyền thông xã hội",
-              "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](\/editor?context=theme&category=social%20media)."
+              "info": "Để hiển thị các tài khoản mạng xã hội của bạn, hãy liên kết chúng trong [cài đặt chủ đề](/editor?context=theme&category=social%20media)."
             },
             "social_heading": {
               "label": "Tiêu đề truyền thông xã hội"
@@ -3357,9 +3748,6 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Bộ đếm số"
       }
     },
     "portfolio": {
@@ -3379,23 +3767,17 @@
         "profile": {
           "name": "Hồ sơ"
         }
-      },
-      "presets": {
-        "name": "Danh mục giới thiệu"
       }
     },
     "portfolio-on-scroll": {
-      "name": "Danh mục giới thiệu trên cuộn",
-      "presets": {
-        "name": "Danh mục giới thiệu trên cuộn"
-      }
+      "name": "Danh mục giới thiệu trên cuộn"
     },
     "product-bundle": {
       "name": "Gói sản phẩm",
       "settings": {
         "header__discount": {
           "content": "Giảm giá",
-          "info": "Tìm hiểu cách tạo mã giảm giá [tại đây](https:\/\/help.shopify.com\/manual\/discounts)"
+          "info": "Tìm hiểu cách tạo mã giảm giá [tại đây](https://help.shopify.com/manual/discounts)"
         },
         "minimum_quantity": {
           "label": "Mặt hàng tối thiểu cần yêu cầu"
@@ -3421,9 +3803,6 @@
         "quantity_maximum": {
           "label": "Tối đa"
         }
-      },
-      "presets": {
-        "name": "Gói sản phẩm"
       }
     },
     "product-details": {
@@ -3464,16 +3843,13 @@
         "specification": {
           "name": "Thông tin đặc biệt"
         }
-      },
-      "presets": {
-        "name": "Thông tin chi tiết sản phẩm"
       }
     },
     "product-recommendations": {
       "name": "Những sảm phẩm tương tự",
       "settings": {
         "paragraph": {
-          "content": "Đề xuất động sử dụng thông tin đơn hàng và sản phẩm để thay đổi và cải thiện theo thời gian. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/themes\/development\/recommends-products)"
+          "content": "Đề xuất động sử dụng thông tin đơn hàng và sản phẩm để thay đổi và cải thiện theo thời gian. [Tìm hiểu thêm](https://help.shopify.com/en/themes/development/recommends-products)"
         },
         "product_limit": {
           "label": "Số lượng sản phẩm liên quan"
@@ -3498,9 +3874,6 @@
         "show_sku": {
           "label": "Hiển thị SKU"
         }
-      },
-      "presets": {
-        "name": "Danh sách đặt hàng nhanh"
       }
     },
     "recently-viewed": {
@@ -3512,59 +3885,36 @@
         "product_limit": {
           "label": "Số lượng sản phẩm gần đây"
         }
-      },
-      "presets": {
-        "name": "Đã xem gần đây"
       }
     },
     "reveal-image-with-text": {
-      "name": "Tiết lộ hình ảnh có văn bản",
-      "presets": {
-        "name": "Tiết lộ hình ảnh có văn bản"
-      }
+      "name": "Tiết lộ hình ảnh có văn bản"
     },
     "reveal-image-with-text-overlay": {
-      "name": "Tiết lộ hình ảnh có lớp phủ văn bản",
-      "presets": {
-        "name": "Tiết lộ hình ảnh có lớp phủ văn bản"
-      }
+      "name": "Tiết lộ hình ảnh có lớp phủ văn bản"
     },
     "reveal-video-with-text-overlay": {
-      "name": "Tiết lộ video có lớp phủ văn bản",
-      "presets": {
-        "name": "Tiết lộ video có lớp phủ văn bản"
-      }
+      "name": "Tiết lộ video có lớp phủ văn bản"
     },
     "reveal-testimonials": {
-      "name": "Tiết lộ lời chứng thực",
-      "presets": {
-        "name": "Tiết lộ lời chứng thực"
-      }
+      "name": "Tiết lộ lời chứng thực"
     },
     "rich-text": {
-      "name": "Văn bản đa dạng thức",
-      "presets": {
-        "name": "Văn bản đa dạng thức"
-      }
+      "name": "Văn bản đa dạng thức"
     },
     "search-drawer": {
       "name": "Ngăn tìm kiếm",
       "settings": {
         "paragraph": {
-          "content": "Ngăn tìm kiếm sẽ không xuất hiện với khách hàng nếu bạn đã đặt loại giỏ hàng thành \"Trang\" trong [cài đặt chủ đề](\/editor?context=theme&category=search)."
+          "content": "Ngăn tìm kiếm sẽ không xuất hiện với khách hàng nếu bạn đã đặt loại giỏ hàng thành \"Trang\" trong [cài đặt chủ đề](/editor?context=theme&category=search)."
         }
       }
     },
     "scrolling-banner": {
-      "name": "Cuộn biểu ngữ và văn bản",
-      "settings": {},
-      "blocks": {},
-      "presets": {
-        "name": "Cuộn biểu ngữ và văn bản"
-      }
+      "name": "Thanh cuộn biểu ngữ và văn bản"
     },
     "scrolling-text": {
-      "name": "Cuộn văn bản",
+      "name": "Thanh cuộn văn bản",
       "settings": {
         "direction": {
           "options__1": {
@@ -3601,16 +3951,55 @@
             }
           }
         }
+      }
+    },
+    "shop-the-feed": {
+      "name": "Khám phá & mua sắm",
+      "settings": {
+        "header__account": {
+          "content": "Tài khoản xã hội"
+        },
+        "account_avatar": {
+          "label": "Hình đại diện tài khoản xã hội"
+        },
+        "account_name": {
+          "label": "Tên tài khoản xã hội"
+        },
+        "account_description": {
+          "label": "Mô tả tài khoản xã hội"
+        },
+        "account_button": {
+          "label": "Nút tài khoản xã hội"
+        },
+        "account_link": {
+          "label": "Liên kết tài khoản xã hội"
+        }
       },
-      "presets": {
-        "name": "Thanh cuộn văn bản"
+      "blocks": {
+        "feed": {
+          "name": "Bảng tin",
+          "settings": {
+            "video_on_hover": {
+              "label": "Hiển thị video khi di chuột"
+            },
+            "header__hotspot_1": {
+              "content": "Điểm tương tác 1"
+            },
+            "header__hotspot_2": {
+              "content": "Điểm tương tác 2"
+            },
+            "header__hotspot_3": {
+              "content": "Điểm tương tác 3"
+            },
+            "header__hotspot_4": {
+              "content": "Điểm tương tác 4"
+            }
+          }
+        }
       }
     },
     "shop-the-look": {
-      "name": "Mua theo ảnh",
-      "presets": {
-        "name": "Mua theo ảnh"
-      }
+      "name": "Mua sắm theo gợi ý"
     },
     "slideshow": {
       "name": "Trình chiếu",
@@ -3633,15 +4022,18 @@
         },
         "show_navigation": {
           "label": "Hiển thị menu điều hướng"
+        },
+        "accessibility": {
+          "content": "Khả năng tiếp cận",
+          "label": "Mô tả trình chiếu",
+          "info": "Mô tả trình chiếu cho khách hàng sử dụng trình đọc màn hình.",
+          "default": "Trình chiếu về thương hiệu của chúng tôi"
         }
       },
       "blocks": {
         "slide": {
           "name": "Trang chiếu"
         }
-      },
-      "presets": {
-        "name": "Trình chiếu"
       }
     },
     "testimonials": {
@@ -3687,26 +4079,26 @@
             }
           }
         }
-      },
-      "presets": {
-        "name": "Lời chứng thực"
       }
     },
     "testimonials-banner": {
-      "name": "Biểu ngữ chứng thực",
-      "presets": {
-        "name": "Biểu ngữ chứng thực"
-      }
+      "name": "Biểu ngữ chứng thực"
     },
     "timeline": {
-      "name": "Mốc thời gian",
-      "presets": {
-        "name": "Mốc thời gian"
-      }
+      "name": "Mốc thời gian"
     },
     "video": {
       "name": "Video",
       "settings": {
+        "source": {
+          "options__1": {
+            "label": "Đã tải lên"
+          },
+          "options__2": {
+            "label": "URL bên ngoài"
+          },
+          "label": "Nguồn"
+        },
         "header__video": {
           "content": "Video được lưu trữ trên Shopify"
         },
@@ -3742,11 +4134,8 @@
         },
         "description": {
           "label": "Văn bản thay thế cho video",
-          "info": "Mô tả video cho khách hàng sử dụng trình đọc màn hình. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#video)"
+          "info": "Mô tả video cho khách hàng sử dụng trình đọc màn hình. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video)"
         }
-      },
-      "presets": {
-        "name": "Video"
       }
     },
     "video-hero": {
@@ -3755,9 +4144,6 @@
         "slide": {
           "name": "Trang chiếu"
         }
-      },
-      "presets": {
-        "name": "Video biểu ngữ"
       }
     },
     "video-with-text": {
@@ -3786,16 +4172,10 @@
           "label": "Vị trí video trên máy tính để bàn",
           "info": "Video đầu tiên là bố cục mặc định trên thiết bị di động."
         }
-      },
-      "presets": {
-        "name": "Video có văn bản"
       }
     },
     "video-with-text-overlay": {
-      "name": "Video có lớp phủ văn bản",
-      "presets": {
-        "name": "Video có lớp phủ văn bản"
-      }
+      "name": "Video có lớp phủ văn bản"
     }
   },
   "settings_schema": {
@@ -4139,7 +4519,7 @@
       }
     },
     "animation": {
-      "name": "Hiệu ứng động",
+      "name": "Hiệu ứng",
       "settings": {
         "enable_page_transition": {
           "label": "Bật khi chuyển đổi trang"
@@ -4199,7 +4579,7 @@
       "settings": {
         "swatch_config": {
           "label": "Cấu hình",
-          "info": "Mỗi quy tắc phải nằm trong dòng riêng của nó. [Tìm hiểu thêm](https:\/\/roartheme.co\/blogs\/concept\/how-to-set-up-color-swatches) về quy ước đặt tên chính xác."
+          "info": "Mỗi quy tắc phải nằm trong dòng riêng của nó. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-set-up-color-swatches) về quy ước đặt tên chính xác."
         },
         "header": {
           "content": "Mẫu hình ảnh"
@@ -4241,11 +4621,11 @@
         },
         "show_rating": {
           "label": "Hiển thị đánh giá sản phẩm",
-          "info": "Để hiển thị đánh giá, hãy thêm ứng dụng đánh giá sản phẩm. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/page-types#product-rated-block)"
+          "info": "Để hiển thị đánh giá, hãy thêm ứng dụng đánh giá sản phẩm."
         },
         "show_countdown": {
           "label": "Hiển thị đồng hồ đếm ngược",
-          "info": "Để cấu hình đồng hồ đếm ngược cho sản phẩm của bạn, vui lòng làm theo các bước được nêu trong [hướng dẫn này](https:\/\/roartheme.co\/blogs\/concept\/can-i-add-countdown-timer-to-my-products)."
+          "info": "Để cấu hình đồng hồ đếm ngược cho sản phẩm của bạn, vui lòng làm theo các bước được nêu trong [hướng dẫn này](https://roartheme.co/blogs/concept/can-i-add-countdown-timer-to-my-products)."
         },
         "enable_quick_add": {
           "label": "Bật nút thêm nhanh"
@@ -4268,7 +4648,7 @@
             "label": "Hình ảnh biến thể"
           },
           "label": "Loại mẫu",
-          "info": "Chế độ hình ảnh biến thể yêu cầu tất cả các biến thể phải có một hình ảnh liên quan. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/products\/product-media\/add-images-variants#add-images-to-being-variants)"
+          "info": "Chế độ hình ảnh biến thể yêu cầu tất cả các biến thể phải có một hình ảnh liên quan. [Tìm hiểu thêm](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-being-variants)"
         },
         "max_color_swatches": {
           "label": "Mẫu màu tối đa để hiển thị"
@@ -4290,6 +4670,23 @@
             "label": "Nhãn"
           },
           "label": "Kiểu hiển thị tiết kiệm"
+        },
+        "header__icon_list": {
+          "content": "Danh sách biểu tượng",
+          "info": "Sử dụng các nguồn động để làm nổi bật các thuộc tính độc đáo bằng cách tạo trường thông tin sản phẩm cho danh sách biểu tượng. [Tìm hiểu thêm](https://roartheme.co/blogs/concept/how-to-setup-product-icons)"
+        },
+        "product_icon_list": {
+          "label": "Hiển thị danh sách biểu tượng"
+        },
+        "product_icon_list_metafield": {
+          "label": "Trường thông tin",
+          "info": "Nhập không gian tên và khóa của trường thông tin chứa giá trị. Ví dụ: custom.icons"
+        },
+        "product_icon_list_max": {
+          "label": "Biểu tượng tối đa để hiển thị"
+        },
+        "product_icon_list_carousel": {
+          "label": "Bật băng chuyền trên máy tính để bàn"
         },
         "header__miscellaneous": {
           "content": "Điều khoản khác"
@@ -4336,43 +4733,43 @@
         },
         "social_twitter_link": {
           "label": "X (Twitter)",
-          "info": "https:\/\/x.com\/shopify"
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
-          "info": "https:\/\/facebook.com\/shopify"
+          "info": "https://facebook.com/shopify"
         },
         "social_pinterest_link": {
           "label": "Pinterest",
-          "info": "https:\/\/pinterest.com\/shopify"
+          "info": "https://pinterest.com/shopify"
         },
         "social_instagram_link": {
           "label": "Instagram",
-          "info": "http:\/\/instagram.com\/shopify"
+          "info": "http://instagram.com/shopify"
         },
         "social_tiktok_link": {
           "label": "TikTok",
-          "info": "https:\/\/tiktok.com\/@shopify"
+          "info": "https://tiktok.com/@shopify"
         },
         "social_tumblr_link": {
           "label": "Tumblr",
-          "info": "https:\/\/shopify.tumblr.com"
+          "info": "https://shopify.tumblr.com"
         },
         "social_linkedin_link": {
           "label": "LinkedIn",
-          "info": "https:\/\/www.linkedin.com\/in\/shopify"
+          "info": "https://www.linkedin.com/in/shopify"
         },
         "social_snapchat_link": {
           "label": "Snapchat",
-          "info": "https:\/\/www.snapchat.com\/add\/shopify"
+          "info": "https://www.snapchat.com/add/shopify"
         },
         "social_youtube_link": {
           "label": "YouTube",
-          "info": "https:\/\/www.youtube.com\/shopify"
+          "info": "https://www.youtube.com/shopify"
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https:\/\/vimeo.com\/shopify"
+          "info": "https://vimeo.com/shopify"
         },
         "header__sharing_options": {
           "content": "Chia sẻ lựa chọn"

@@ -7,8 +7,6 @@
   }
 </style>
 
-
-
 {%- assign description = section.blocks | where: "type", "description" | first -%}
 {%- assign specifications = section.blocks | where: "type", "specification" -%}
 {%- liquid
@@ -20,11 +18,9 @@
   endif
 -%}
 
-<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}{% if enable_split_mode == false %} specifications-section{% endif %}" id="product-details">
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}{% if enable_split_mode == false %} specifications-section{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
     {%- render 'section-heading', section: section -%}
-
-
 
     <div class="specifications {{ section.settings.style }} flex flex-col lg:flex-row">
       <div class="grow{% if description != blank and description.settings.split_mode == true %} flex flex-col items-start lg:grid grid-cols-2 gap-8 lg:gap-14{% endif %}">
@@ -33,13 +29,28 @@
             {%- if description.settings.heading != blank -%}
               <div class="heading text-base md:text-lg font-medium leading-none normal-case flex items-center gap-2d5 md:gap-3">
                 {%- if description.settings.icon_image != blank -%}
+                  {%- liquid
+                    if description.settings.iwidth == 'fit'
+                      assign icon_width = description.settings.icon_image.width
+                    else
+                      assign icon_width = description.settings.icon_width
+                    endif
+                  -%}
                   <figure class="media media--transparent relative inline-block">
-                    {%- capture sizes -%}{{ description.settings.icon_width }}px{%- endcapture -%}
-                    {%- capture widths -%}{{ description.settings.icon_width }}, {{ description.settings.icon_width | times: 2 | at_most: description.settings.icon_image.width }}{%- endcapture -%}
-                    {{- description.settings.icon_image | image_url: width: description.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
+                    {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
+                    {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: description.settings.icon_image.width }}{%- endcapture -%}
+                    {%- assign image_alt = description.settings.icon_image.alt | default: description.settings.accessibility_info | escape -%}
+                    {%- assign image_alt = image_alt | default: description.settings.heading | escape -%}
+                    {{- description.settings.icon_image | image_url: width: description.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
                   </figure>
                 {%- elsif description.settings.icon != 'none' -%}
-                  {%- render 'icon-guarantee', icon: description.settings.icon, size: 'lg', class: 'inline-block' -%}
+                  {%- liquid
+                    if description.settings.iwidth == 'fit'
+                      render 'icon-guarantee', icon: description.settings.icon, size: 'lg', class: 'inline-block'
+                    else
+                      render 'icon-guarantee', icon: description.settings.icon, size: 'custom', class: 'inline-block', width: description.settings.icon_width
+                    endif
+                  -%}
                 {%- endif -%}
                 {{- description.settings.heading | escape -}}
               </div>
@@ -49,9 +60,6 @@
             </div>
           </sticky-element>
         {%- endif -%}
-        <div class="accordion-description">
-        {{section.settings.product_details_description}} 
-        </div>
         <accordions-details class="accordions w-full">
           {%- assign first_row = true -%}
           {%- for block in section.blocks -%}
@@ -64,19 +72,32 @@
                         <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                           <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
                             {%- if block.settings.icon_image != blank -%}
+                              {%- liquid
+                                if block.settings.iwidth == 'fit'
+                                  assign icon_width = block.settings.icon_image.width
+                                else
+                                  assign icon_width = block.settings.icon_width
+                                endif
+                              -%}
                               <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
+                                {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
+                                {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                                {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
+                                {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
+                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
                               </figure>
                             {%- elsif block.settings.icon != 'none' -%}
-                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
+                              {%- liquid
+                                if block.settings.iwidth == 'fit'
+                                  render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block'
+                                else
+                                  render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block', width: block.settings.icon_width
+                                endif
+                              -%}
                             {%- endif -%}
                             {{- block.settings.heading | escape -}}
                           </span>
-
-                          {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
-                          
+                          {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'shrink-0' -%}
                         </summary>
                         <div class="details__content text-base rte">
                           <div class="specification">
@@ -93,20 +114,10 @@
                   {%- assign first_row = false -%}
                 {%- endif -%}
   
-
-
               {%- when 'collapsible_tab' -%}
-              
                 {%- capture collapsible_content -%}
-               
                   {%- liquid
-               
-                    if block.settings.heading == 'Dimensions'
-                    
-                      echo '<div class="col-span-full">'
-                      render 'dimensions-drawer'
-                      echo '</div>'
-                    elsif block.settings.content != blank
+                    if block.settings.content != blank
                       assign metafield_content = block.settings.content
   
                       if metafield_content contains '<h6>'
@@ -180,18 +191,32 @@
                         <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                           <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
                             {%- if block.settings.icon_image != blank -%}
+                              {%- liquid
+                                if block.settings.iwidth == 'fit'
+                                  assign icon_width = block.settings.icon_image.width
+                                else
+                                  assign icon_width = block.settings.icon_width
+                                endif
+                              -%}
                               <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
+                                {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
+                                {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
+                                {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
+                                {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
+                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
                               </figure>
                             {%- elsif block.settings.icon != 'none' -%}
-                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
+                              {%- liquid
+                                if block.settings.iwidth == 'fit'
+                                  render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block'
+                                else
+                                  render 'icon-guarantee', icon: block.settings.icon, size: 'custom', class: 'inline-block', width: block.settings.icon_width
+                                endif
+                              -%}
                             {%- endif -%}
                             {{- block.settings.heading | escape -}}
                           </span>
-
-                         {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
+                          {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'shrink-0' -%}
                         </summary>
                         <div class="details__content text-base rte">
                           <div class="specification grid grid-cols-12 gap-6 md:gap-10">
@@ -209,255 +234,6 @@
                   {%- endif -%}
                   {%- assign first_row = false -%}
                 {%- endif -%}
-
-              {%- when 'downloads' -%}
-                {%- capture collapsible_content -%}
-                  <div class="col-span-full">
-                    {%- if block.settings.content != blank -%}
-                      <div class="mb-6">
-                        {{ block.settings.content }}
-                      </div>
-                    {%- endif -%}
-                    
-                    {%- if block.settings.file_title_1 != blank and block.settings.file_1 != blank -%}
-                      <div class="download-item mb-4">
-                        {%- render 'icon', icon: 'file_text', size: 'sm', class: 'inline-block mr-2' -%}
-                        <div>
-                          <a href="{{ block.settings.file_1 }}" target="_blank" class="font-medium hover:underline">
-                            {{ block.settings.file_title_1 }}
-                          </a>
-                        </div>
-                      </div>
-                    {%- endif -%}
-                
-                    
-                    {%- if block.settings.file_title_2 != blank and block.settings.file_2 != blank -%}
-                      <div class="download-item mb-4">
-                        {%- render 'icon', icon: 'file_text', size: 'sm', class: 'inline-block mr-2' -%}
-                        <div>
-                          <a href="{{ block.settings.file_2 }}" target="_blank" class="font-medium hover:underline">
-                            {{ block.settings.file_title_2 }}
-                          </a>
-                        </div>
-                      </div>
-                    {%- endif -%}
-                    
-                    {%- if block.settings.file_title_3 != blank and block.settings.file_3 != blank -%}
-                      <div class="download-item mb-4">
-                        {%- render 'icon', icon: 'file_text', size: 'sm', class: 'inline-block mr-2' -%}
-                        <div>
-                          <a href="{{ block.settings.file_3 }}" target="_blank" class="font-medium hover:underline">
-                            {{ block.settings.file_title_3 }}
-                          </a>
-                        </div>
-                      </div>
-                    {%- endif -%}
-                  </div>
-                {%- endcapture -%}
-  
-                {%- if block.settings.heading != blank -%}
-                  <div class="accordion">
-                    <details class="details" is="accordion-details"{% if section.settings.open_first_row and first_row %} open{% endif %} {{ block.shopify_attributes }}>
-                      <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
-                        <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
-                          {%- if block.settings.icon_image != blank -%}
-                            <figure class="media media--transparent relative inline-block">
-                              {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                              {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                              {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
-                            </figure>
-                          {%- elsif block.settings.icon != 'none' -%}
-                            {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
-                          {%- endif -%}
-                          {{- block.settings.heading | escape -}}
-                        </span>
-
-                       {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
-                      </summary>
-                      <div class="details__content text-base rte">
-                        <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                          {{- collapsible_content -}}
-                        </div>
-                      </div>
-                    </details>
-                  </div>
-                {%- else -%}
-                  <div class="text-base rte" {{ block.shopify_attributes }}>
-                    <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                      {{- collapsible_content -}}
-                    </div>
-                  </div>
-                {%- endif -%}
-                {%- assign first_row = false -%}
-
-              {%- when 'reviews' -%}
-                {%- capture collapsible_content -%}
-                  <div class="col-span-full">
-                    {%- if block.settings.content != blank -%}
-                      <div class="mb-6">
-                        {{ block.settings.content }}
-                      </div>
-                    {%- endif -%}
-                  
-                    
-                    <div class="yotpo-widget-instance"
-                      data-yotpo-instance-id="{{ settings.yotpo_reviews_id }}"
-                      data-yotpo-product-id="{{product.id}}"
-                      data-yotpo-name="{{ product.title | escape }}"
-                      data-yotpo-url="{{ shop.url }}{{ product.url }}"
-                      data-yotpo-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}"
-                      data-yotpo-description="{{ product.description | escape }}">
-                    </div>
-                    
-                    
-                  </div>
-                {%- endcapture -%}
-  
-                {%- if block.settings.heading != blank -%}
-                  <div class="accordion">
-                    <details class="details" is="accordion-details"{% if section.settings.open_first_row and first_row %} open{% endif %} {{ block.shopify_attributes }}>
-                      <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
-                        <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
-                          {%- if block.settings.icon_image != blank -%}
-                            <figure class="media media--transparent relative inline-block">
-                              {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                              {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                              {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
-                            </figure>
-                          {%- elsif block.settings.icon != 'none' -%}
-                            {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
-                          {%- endif -%}
-                          {{- block.settings.heading | escape -}}
-                        </span>
-
-                        {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
-                      </summary>
-                      <div class="details__content text-base rte">
-                        <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                          {{- collapsible_content -}}
-                        </div>
-                      </div>
-                    </details>
-                  </div>
-                {%- else -%}
-                  <div class="text-base rte" {{ block.shopify_attributes }}>
-                    <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                      {{- collapsible_content -}}
-                    </div>
-                  </div>
-                {%- endif -%}
-                {%- assign first_row = false -%}
-
-              {%- when 'dimensions' -%}
-     
-                {%- if product.metafields.dimensions.show == true -%}
-                  {%- capture collapsible_content -%}
-                    <div class="col-span-full">
-                      {%- if block.settings.content != blank -%}
-                        <div class="mb-6">
-                          {{ block.settings.content }}
-                        </div>
-                      {%- endif -%}
-                      
-                      {%- render 'dimensions-drawer' -%}
-                    </div>
-                  {%- endcapture -%}
-
-                  {%- if block.settings.heading != blank -%}
-                    <div class="accordion">
-                      <details class="details" is="accordion-details"{% if section.settings.open_first_row and first_row %} open{% endif %} {{ block.shopify_attributes }}>
-                        <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
-                          <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
-                            {%- if block.settings.icon_image != blank -%}
-                              <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
-                              </figure>
-                            {%- elsif block.settings.icon != 'none' -%}
-                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
-                            {%- endif -%}
-                            {{- block.settings.heading | escape -}}
-                          </span>
-                          
-                          {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
-                        </summary>
-                        <div class="details__content text-base rte">
-                          <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                            {{- collapsible_content -}}
-                          </div>
-                        </div>
-                      </details>
-                    </div>
-                  {%- else -%}
-                    <div class="text-base rte" {{ block.shopify_attributes }}>
-                      <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                        {{- collapsible_content -}}
-                      </div>
-                    </div>
-                  {%- endif -%}
-                  {%- assign first_row = false -%}
-                {%- endif -%}
-
-              {%- when 'specification' -%}
-                <li class="flex-auto grid gap-2d5">
-                  {%- if block.settings.icon != blank -%}
-                    <div class="media relative flex items-center justify-center rounded-full">
-                      {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', widths: '80,96,160,192', is: 'lazy-image' -}}
-                    </div>
-                  {%- endif -%}
-
-                  {%- if block.settings.heading != blank -%}
-                    <p class="text-sm">{{ block.settings.heading | escape }}</p>
-                  {%- endif -%}
-                </li>
-
-              {%- when 'care_instructions' -%}
-                {%- capture collapsible_content -%}
-                  <div class="col-span-full">
-                   
-                      <div class="mb-6">
-                   
-                      {{product.metafields.product.assembly_and_care | metafield_tag}}
-                      </div>
-              
-                  </div>
-                {%- endcapture -%}
-
-                  {%- if block.settings.heading != blank -%}
-                    <div class="accordion">
-                      <details class="details" is="accordion-details"{% if section.settings.open_first_row and first_row %} open{% endif %} {{ block.shopify_attributes }}>
-                        <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
-                          <span class="heading text-base-xl font-medium leading-none flex items-center gap-2d5 md:gap-3">
-                            {%- if block.settings.icon_image != blank -%}
-                              <figure class="media media--transparent relative inline-block">
-                                {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                                {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                                {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'image-fit' -}}
-                              </figure>
-                            {%- elsif block.settings.icon != 'none' -%}
-                              {%- render 'icon-guarantee', icon: block.settings.icon, size: 'lg', class: 'inline-block' -%}
-                            {%- endif -%}
-                            {{- block.settings.heading | escape -}}
-                          </span>
-
-                          {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'flex-auto' -%}
-                        </summary>
-                        <div class="details__content text-base rte">
-                          <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                            {{- collapsible_content -}}
-                          </div>
-                        </div>
-                      </details>
-                    </div>
-                  {%- else -%}
-                    <div class="text-base rte" {{ block.shopify_attributes }}>
-                      <div class="specification grid grid-cols-12 gap-6 md:gap-10">
-                        {{- collapsible_content -}}
-                      </div>
-                    </div>
-                  {%- endif -%}
-                  {%- assign first_row = false -%}
             {%- endcase -%}
           {%- endfor -%}
         </accordions-details>
@@ -474,7 +250,7 @@
             <ul class="flex flex-wrap items-start justify-center gap-6 md:gap-10">
               {%- for block in specifications -%}
                 {%- if block.settings.icon != blank or block.settings.heading != blank -%}
-                  <li class="flex-auto grid gap-2d5">
+                  <li class="shrink-0 grid gap-2d5">
                     {%- if block.settings.icon != blank -%}
                       <div class="media relative flex items-center justify-center rounded-full">
                         {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', widths: '80,96,160,192', is: 'lazy-image' -}}
@@ -520,16 +296,6 @@
       "id": "open_first_row",
       "default": false,
       "label": "t:sections.product-details.settings.open_first_row.label"
-    },
-    {
-      "type": "header",
-      "content": "Product details description"
-    },
-    {
-      "type": "richtext",
-      "id": "product_details_description",
-      "label": "Description",
-      "default": "<p>Product description here</p>"
     },
     {
       "type": "inline_richtext",
@@ -658,6 +424,14 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
+    },
+    {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -705,6 +479,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -1069,14 +844,31 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
+          "type": "select",
+          "id": "iwidth",
+          "label": "t:sections.global.settings.icon_width.label",
+          "options": [
+            {
+              "value": "fit",
+              "label": "t:sections.global.settings.icon_width.options__1.label"
+            },
+            {
+              "value": "custom",
+              "label": "t:sections.global.settings.icon_width.options__2.label"
+            }
+          ],
+          "default": "custom"
+        },
+        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
+          "label": "t:sections.global.settings.custom_width.label",
           "default": 24,
-          "min": 20,
+          "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px"
+          "unit": "px",
+          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
         },
         {
           "type": "text",
@@ -1339,14 +1131,31 @@
           "label": "t:sections.global.settings.icon_image.label"
         },
         {
+          "type": "select",
+          "id": "iwidth",
+          "label": "t:sections.global.settings.icon_width.label",
+          "options": [
+            {
+              "value": "fit",
+              "label": "t:sections.global.settings.icon_width.options__1.label"
+            },
+            {
+              "value": "custom",
+              "label": "t:sections.global.settings.icon_width.options__2.label"
+            }
+          ],
+          "default": "custom"
+        },
+        {
           "type": "range",
           "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
+          "label": "t:sections.global.settings.custom_width.label",
           "default": 24,
-          "min": 20,
+          "min": 10,
           "max": 120,
           "step": 2,
-          "unit": "px"
+          "unit": "px",
+          "visible_if": "{{ block.settings.iwidth == 'custom' }}"
         },
         {
           "type": "text",
@@ -1371,1116 +1180,26 @@
       ]
     },
     {
-      "type": "dimensions",
-      "name": "Dimensions",
+      "type": "specification",
+      "name": "t:sections.product-details.blocks.specification.name",
       "settings": [
         {
-          "type": "select",
-          "id": "icon",
-          "label": "t:sections.global.settings.icon.label",
-          "default": "ruler",
-          "options": [
-            {
-              "value": "none",
-              "label": "t:sections.global.settings.icon.options__1.label"
-            },
-            {
-              "value": "alert",
-              "label": "t:sections.global.settings.icon.options__2.label"
-            },
-            {
-              "value": "award",
-              "label": "t:sections.global.settings.icon.options__3.label"
-            },
-            {
-              "value": "bag",
-              "label": "t:sections.global.settings.icon.options__4.label"
-            },
-            {
-              "value": "box",
-              "label": "t:sections.global.settings.icon.options__5.label"
-            },
-            {
-              "value": "briefcase",
-              "label": "t:sections.global.settings.icon.options__6.label"
-            },
-            {
-              "value": "calendar",
-              "label": "t:sections.global.settings.icon.options__7.label"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "t:sections.global.settings.icon.options__8.label"
-            },
-            {
-              "value": "check_mark",
-              "label": "t:sections.global.settings.icon.options__9.label"
-            },
-            {
-              "value": "clipboard",
-              "label": "t:sections.global.settings.icon.options__10.label"
-            },
-            {
-              "value": "cosmetics",
-              "label": "t:sections.global.settings.icon.options__11.label"
-            },
-            {
-              "value": "creadit_card",
-              "label": "t:sections.global.settings.icon.options__12.label"
-            },
-            {
-              "value": "dairy",
-              "label": "t:sections.global.settings.icon.options__13.label"
-            },
-            {
-              "value": "dairy_free",
-              "label": "t:sections.global.settings.icon.options__14.label"
-            },
-            {
-              "value": "devices",
-              "label": "t:sections.global.settings.icon.options__15.label"
-            },
-            {
-              "value": "email",
-              "label": "t:sections.global.settings.icon.options__16.label"
-            },
-            {
-              "value": "eye",
-              "label": "t:sections.global.settings.icon.options__17.label"
-            },
-            {
-              "value": "file_text",
-              "label": "t:sections.global.settings.icon.options__18.label"
-            },
-            {
-              "value": "gift",
-              "label": "t:sections.global.settings.icon.options__19.label"
-            },
-            {
-              "value": "gluten",
-              "label": "t:sections.global.settings.icon.options__20.label"
-            },
-            {
-              "value": "gluten_free",
-              "label": "t:sections.global.settings.icon.options__21.label"
-            },
-            {
-              "value": "headphone",
-              "label": "t:sections.global.settings.icon.options__22.label"
-            },
-            {
-              "value": "heart",
-              "label": "t:sections.global.settings.icon.options__23.label"
-            },
-            {
-              "value": "iron",
-              "label": "t:sections.global.settings.icon.options__24.label"
-            },
-            {
-              "value": "lightning",
-              "label": "t:sections.global.settings.icon.options__25.label"
-            },
-            {
-              "value": "lock",
-              "label": "t:sections.global.settings.icon.options__26.label"
-            },
-            {
-              "value": "map_pin",
-              "label": "t:sections.global.settings.icon.options__27.label"
-            },
-            {
-              "value": "newspaper",
-              "label": "t:sections.global.settings.icon.options__28.label"
-            },
-            {
-              "value": "organic",
-              "label": "t:sections.global.settings.icon.options__29.label"
-            },
-            {
-              "value": "perfume",
-              "label": "t:sections.global.settings.icon.options__30.label"
-            },
-            {
-              "value": "phone",
-              "label": "t:sections.global.settings.icon.options__31.label"
-            },
-            {
-              "value": "plane",
-              "label": "t:sections.global.settings.icon.options__32.label"
-            },
-            {
-              "value": "planet",
-              "label": "t:sections.global.settings.icon.options__33.label"
-            },
-            {
-              "value": "planet_2",
-              "label": "t:sections.global.settings.icon.options__34.label"
-            },
-            {
-              "value": "recycling",
-              "label": "t:sections.global.settings.icon.options__35.label"
-            },
-            {
-              "value": "return",
-              "label": "t:sections.global.settings.icon.options__36.label"
-            },
-            {
-              "value": "rocket",
-              "label": "t:sections.global.settings.icon.options__37.label"
-            },
-            {
-              "value": "ruler",
-              "label": "t:sections.global.settings.icon.options__38.label"
-            },
-            {
-              "value": "ruler_2",
-              "label": "t:sections.global.settings.icon.options__39.label"
-            },
-            {
-              "value": "ruler_3",
-              "label": "t:sections.global.settings.icon.options__40.label"
-            },
-            {
-              "value": "sale",
-              "label": "t:sections.global.settings.icon.options__41.label"
-            },
-            {
-              "value": "shield",
-              "label": "t:sections.global.settings.icon.options__42.label"
-            },
-            {
-              "value": "shirt",
-              "label": "t:sections.global.settings.icon.options__43.label"
-            },
-            {
-              "value": "shoe",
-              "label": "t:sections.global.settings.icon.options__44.label"
-            },
-            {
-              "value": "star",
-              "label": "t:sections.global.settings.icon.options__45.label"
-            },
-            {
-              "value": "support",
-              "label": "t:sections.global.settings.icon.options__46.label"
-            },
-            {
-              "value": "swatchbook",
-              "label": "t:sections.global.settings.icon.options__47.label"
-            },
-            {
-              "value": "tag",
-              "label": "t:sections.global.settings.icon.options__48.label"
-            },
-            {
-              "value": "tags",
-              "label": "t:sections.global.settings.icon.options__49.label"
-            },
-            {
-              "value": "time",
-              "label": "t:sections.global.settings.icon.options__50.label"
-            },
-            {
-              "value": "trophy",
-              "label": "t:sections.global.settings.icon.options__51.label"
-            },
-            {
-              "value": "truck",
-              "label": "t:sections.global.settings.icon.options__52.label"
-            },
-            {
-              "value": "users",
-              "label": "t:sections.global.settings.icon.options__53.label"
-            },
-            {
-              "value": "wallet",
-              "label": "t:sections.global.settings.icon.options__54.label"
-            },
-            {
-              "value": "wash",
-              "label": "t:sections.global.settings.icon.options__55.label"
-            },
-            {
-              "value": "watch",
-              "label": "t:sections.global.settings.icon.options__56.label"
-            },
-            {
-              "value": "wrench",
-              "label": "t:sections.global.settings.icon.options__57.label"
-            }
-          ]
-        },
-        {
           "type": "image_picker",
-          "id": "icon_image",
-          "label": "t:sections.global.settings.icon_image.label"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
-          "default": 24,
-          "min": 20,
-          "max": 120,
-          "step": 2,
-          "unit": "px"
+          "id": "icon",
+          "label": "t:sections.global.settings.icon.label"
         },
         {
           "type": "text",
           "id": "heading",
-          "default": "Dimensions",
+          "default": "Example heading",
           "label": "t:sections.global.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-          "default": "<p>Add dimension description here.</p>"
-        }
-      ]
-    },
-    {
-      "type": "downloads",
-      "name": "Downloads",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "t:sections.global.settings.icon.label",
-          "default": "none",
-          "options": [
-            {
-              "value": "none",
-              "label": "t:sections.global.settings.icon.options__1.label"
-            },
-            {
-              "value": "alert",
-              "label": "t:sections.global.settings.icon.options__2.label"
-            },
-            {
-              "value": "award",
-              "label": "t:sections.global.settings.icon.options__3.label"
-            },
-            {
-              "value": "bag",
-              "label": "t:sections.global.settings.icon.options__4.label"
-            },
-            {
-              "value": "box",
-              "label": "t:sections.global.settings.icon.options__5.label"
-            },
-            {
-              "value": "briefcase",
-              "label": "t:sections.global.settings.icon.options__6.label"
-            },
-            {
-              "value": "calendar",
-              "label": "t:sections.global.settings.icon.options__7.label"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "t:sections.global.settings.icon.options__8.label"
-            },
-            {
-              "value": "check_mark",
-              "label": "t:sections.global.settings.icon.options__9.label"
-            },
-            {
-              "value": "clipboard",
-              "label": "t:sections.global.settings.icon.options__10.label"
-            },
-            {
-              "value": "cosmetics",
-              "label": "t:sections.global.settings.icon.options__11.label"
-            },
-            {
-              "value": "creadit_card",
-              "label": "t:sections.global.settings.icon.options__12.label"
-            },
-            {
-              "value": "dairy",
-              "label": "t:sections.global.settings.icon.options__13.label"
-            },
-            {
-              "value": "dairy_free",
-              "label": "t:sections.global.settings.icon.options__14.label"
-            },
-            {
-              "value": "devices",
-              "label": "t:sections.global.settings.icon.options__15.label"
-            },
-            {
-              "value": "email",
-              "label": "t:sections.global.settings.icon.options__16.label"
-            },
-            {
-              "value": "eye",
-              "label": "t:sections.global.settings.icon.options__17.label"
-            },
-            {
-              "value": "file_text",
-              "label": "t:sections.global.settings.icon.options__18.label"
-            },
-            {
-              "value": "gift",
-              "label": "t:sections.global.settings.icon.options__19.label"
-            },
-            {
-              "value": "gluten",
-              "label": "t:sections.global.settings.icon.options__20.label"
-            },
-            {
-              "value": "gluten_free",
-              "label": "t:sections.global.settings.icon.options__21.label"
-            },
-            {
-              "value": "headphone",
-              "label": "t:sections.global.settings.icon.options__22.label"
-            },
-            {
-              "value": "heart",
-              "label": "t:sections.global.settings.icon.options__23.label"
-            },
-            {
-              "value": "iron",
-              "label": "t:sections.global.settings.icon.options__24.label"
-            },
-            {
-              "value": "lightning",
-              "label": "t:sections.global.settings.icon.options__25.label"
-            },
-            {
-              "value": "lock",
-              "label": "t:sections.global.settings.icon.options__26.label"
-            },
-            {
-              "value": "map_pin",
-              "label": "t:sections.global.settings.icon.options__27.label"
-            },
-            {
-              "value": "newspaper",
-              "label": "t:sections.global.settings.icon.options__28.label"
-            },
-            {
-              "value": "organic",
-              "label": "t:sections.global.settings.icon.options__29.label"
-            },
-            {
-              "value": "perfume",
-              "label": "t:sections.global.settings.icon.options__30.label"
-            },
-            {
-              "value": "phone",
-              "label": "t:sections.global.settings.icon.options__31.label"
-            },
-            {
-              "value": "plane",
-              "label": "t:sections.global.settings.icon.options__32.label"
-            },
-            {
-              "value": "planet",
-              "label": "t:sections.global.settings.icon.options__33.label"
-            },
-            {
-              "value": "planet_2",
-              "label": "t:sections.global.settings.icon.options__34.label"
-            },
-            {
-              "value": "recycling",
-              "label": "t:sections.global.settings.icon.options__35.label"
-            },
-            {
-              "value": "return",
-              "label": "t:sections.global.settings.icon.options__36.label"
-            },
-            {
-              "value": "rocket",
-              "label": "t:sections.global.settings.icon.options__37.label"
-            },
-            {
-              "value": "ruler",
-              "label": "t:sections.global.settings.icon.options__38.label"
-            },
-            {
-              "value": "ruler_2",
-              "label": "t:sections.global.settings.icon.options__39.label"
-            },
-            {
-              "value": "ruler_3",
-              "label": "t:sections.global.settings.icon.options__40.label"
-            },
-            {
-              "value": "sale",
-              "label": "t:sections.global.settings.icon.options__41.label"
-            },
-            {
-              "value": "shield",
-              "label": "t:sections.global.settings.icon.options__42.label"
-            },
-            {
-              "value": "shirt",
-              "label": "t:sections.global.settings.icon.options__43.label"
-            },
-            {
-              "value": "shoe",
-              "label": "t:sections.global.settings.icon.options__44.label"
-            },
-            {
-              "value": "star",
-              "label": "t:sections.global.settings.icon.options__45.label"
-            },
-            {
-              "value": "support",
-              "label": "t:sections.global.settings.icon.options__46.label"
-            },
-            {
-              "value": "swatchbook",
-              "label": "t:sections.global.settings.icon.options__47.label"
-            },
-            {
-              "value": "tag",
-              "label": "t:sections.global.settings.icon.options__48.label"
-            },
-            {
-              "value": "tags",
-              "label": "t:sections.global.settings.icon.options__49.label"
-            },
-            {
-              "value": "time",
-              "label": "t:sections.global.settings.icon.options__50.label"
-            },
-            {
-              "value": "trophy",
-              "label": "t:sections.global.settings.icon.options__51.label"
-            },
-            {
-              "value": "truck",
-              "label": "t:sections.global.settings.icon.options__52.label"
-            },
-            {
-              "value": "users",
-              "label": "t:sections.global.settings.icon.options__53.label"
-            },
-            {
-              "value": "wallet",
-              "label": "t:sections.global.settings.icon.options__54.label"
-            },
-            {
-              "value": "wash",
-              "label": "t:sections.global.settings.icon.options__55.label"
-            },
-            {
-              "value": "watch",
-              "label": "t:sections.global.settings.icon.options__56.label"
-            },
-            {
-              "value": "wrench",
-              "label": "t:sections.global.settings.icon.options__57.label"
-            }
-          ]
-        },
-        {
-          "type": "image_picker",
-          "id": "icon_image",
-          "label": "t:sections.global.settings.icon_image.label"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
-          "default": 24,
-          "min": 20,
-          "max": 120,
-          "step": 2,
-          "unit": "px"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Downloads",
-          "label": "t:sections.global.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-          "default": "<p>Add your download description here.</p>"
-        },
-        {
-          "type": "text",
-          "id": "file_title_1",
-          "label": "File 1 Name"
-        },
-        {
-          "type": "text",
-          "id": "file_1",
-          "label": "File 1 URL"
-        },
-        {
-          "type": "text",
-          "id": "file_title_2",
-          "label": "File 2 Name"
-        },
-        {
-          "type": "text",
-          "id": "file_2",
-          "label": "File 2 URL"
-        },
-        {
-          "type": "text",
-          "id": "file_title_3",
-          "label": "File 3 Name"
-        },
-        {
-          "type": "text",
-          "id": "file_3",
-          "label": "File 3 URL"
-        }
-      ]
-    },
-    {
-      "type": "reviews",
-      "name": "Reviews",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "t:sections.global.settings.icon.label",
-          "default": "none",
-          "options": [
-            {
-              "value": "none",
-              "label": "t:sections.global.settings.icon.options__1.label"
-            },
-            {
-              "value": "alert",
-              "label": "t:sections.global.settings.icon.options__2.label"
-            },
-            {
-              "value": "award",
-              "label": "t:sections.global.settings.icon.options__3.label"
-            },
-            {
-              "value": "bag",
-              "label": "t:sections.global.settings.icon.options__4.label"
-            },
-            {
-              "value": "box",
-              "label": "t:sections.global.settings.icon.options__5.label"
-            },
-            {
-              "value": "briefcase",
-              "label": "t:sections.global.settings.icon.options__6.label"
-            },
-            {
-              "value": "calendar",
-              "label": "t:sections.global.settings.icon.options__7.label"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "t:sections.global.settings.icon.options__8.label"
-            },
-            {
-              "value": "check_mark",
-              "label": "t:sections.global.settings.icon.options__9.label"
-            },
-            {
-              "value": "clipboard",
-              "label": "t:sections.global.settings.icon.options__10.label"
-            },
-            {
-              "value": "cosmetics",
-              "label": "t:sections.global.settings.icon.options__11.label"
-            },
-            {
-              "value": "creadit_card",
-              "label": "t:sections.global.settings.icon.options__12.label"
-            },
-            {
-              "value": "dairy",
-              "label": "t:sections.global.settings.icon.options__13.label"
-            },
-            {
-              "value": "dairy_free",
-              "label": "t:sections.global.settings.icon.options__14.label"
-            },
-            {
-              "value": "devices",
-              "label": "t:sections.global.settings.icon.options__15.label"
-            },
-            {
-              "value": "email",
-              "label": "t:sections.global.settings.icon.options__16.label"
-            },
-            {
-              "value": "eye",
-              "label": "t:sections.global.settings.icon.options__17.label"
-            },
-            {
-              "value": "file_text",
-              "label": "t:sections.global.settings.icon.options__18.label"
-            },
-            {
-              "value": "gift",
-              "label": "t:sections.global.settings.icon.options__19.label"
-            },
-            {
-              "value": "gluten",
-              "label": "t:sections.global.settings.icon.options__20.label"
-            },
-            {
-              "value": "gluten_free",
-              "label": "t:sections.global.settings.icon.options__21.label"
-            },
-            {
-              "value": "headphone",
-              "label": "t:sections.global.settings.icon.options__22.label"
-            },
-            {
-              "value": "heart",
-              "label": "t:sections.global.settings.icon.options__23.label"
-            },
-            {
-              "value": "iron",
-              "label": "t:sections.global.settings.icon.options__24.label"
-            },
-            {
-              "value": "lightning",
-              "label": "t:sections.global.settings.icon.options__25.label"
-            },
-            {
-              "value": "lock",
-              "label": "t:sections.global.settings.icon.options__26.label"
-            },
-            {
-              "value": "map_pin",
-              "label": "t:sections.global.settings.icon.options__27.label"
-            },
-            {
-              "value": "newspaper",
-              "label": "t:sections.global.settings.icon.options__28.label"
-            },
-            {
-              "value": "organic",
-              "label": "t:sections.global.settings.icon.options__29.label"
-            },
-            {
-              "value": "perfume",
-              "label": "t:sections.global.settings.icon.options__30.label"
-            },
-            {
-              "value": "phone",
-              "label": "t:sections.global.settings.icon.options__31.label"
-            },
-            {
-              "value": "plane",
-              "label": "t:sections.global.settings.icon.options__32.label"
-            },
-            {
-              "value": "planet",
-              "label": "t:sections.global.settings.icon.options__33.label"
-            },
-            {
-              "value": "planet_2",
-              "label": "t:sections.global.settings.icon.options__34.label"
-            },
-            {
-              "value": "recycling",
-              "label": "t:sections.global.settings.icon.options__35.label"
-            },
-            {
-              "value": "return",
-              "label": "t:sections.global.settings.icon.options__36.label"
-            },
-            {
-              "value": "rocket",
-              "label": "t:sections.global.settings.icon.options__37.label"
-            },
-            {
-              "value": "ruler",
-              "label": "t:sections.global.settings.icon.options__38.label"
-            },
-            {
-              "value": "ruler_2",
-              "label": "t:sections.global.settings.icon.options__39.label"
-            },
-            {
-              "value": "ruler_3",
-              "label": "t:sections.global.settings.icon.options__40.label"
-            },
-            {
-              "value": "sale",
-              "label": "t:sections.global.settings.icon.options__41.label"
-            },
-            {
-              "value": "shield",
-              "label": "t:sections.global.settings.icon.options__42.label"
-            },
-            {
-              "value": "shirt",
-              "label": "t:sections.global.settings.icon.options__43.label"
-            },
-            {
-              "value": "shoe",
-              "label": "t:sections.global.settings.icon.options__44.label"
-            },
-            {
-              "value": "star",
-              "label": "t:sections.global.settings.icon.options__45.label"
-            },
-            {
-              "value": "support",
-              "label": "t:sections.global.settings.icon.options__46.label"
-            },
-            {
-              "value": "swatchbook",
-              "label": "t:sections.global.settings.icon.options__47.label"
-            },
-            {
-              "value": "tag",
-              "label": "t:sections.global.settings.icon.options__48.label"
-            },
-            {
-              "value": "tags",
-              "label": "t:sections.global.settings.icon.options__49.label"
-            },
-            {
-              "value": "time",
-              "label": "t:sections.global.settings.icon.options__50.label"
-            },
-            {
-              "value": "trophy",
-              "label": "t:sections.global.settings.icon.options__51.label"
-            },
-            {
-              "value": "truck",
-              "label": "t:sections.global.settings.icon.options__52.label"
-            },
-            {
-              "value": "users",
-              "label": "t:sections.global.settings.icon.options__53.label"
-            },
-            {
-              "value": "wallet",
-              "label": "t:sections.global.settings.icon.options__54.label"
-            },
-            {
-              "value": "wash",
-              "label": "t:sections.global.settings.icon.options__55.label"
-            },
-            {
-              "value": "watch",
-              "label": "t:sections.global.settings.icon.options__56.label"
-            },
-            {
-              "value": "wrench",
-              "label": "t:sections.global.settings.icon.options__57.label"
-            }
-          ]
-        },
-        {
-          "type": "image_picker",
-          "id": "icon_image",
-          "label": "t:sections.global.settings.icon_image.label"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
-          "default": 24,
-          "min": 20,
-          "max": 120,
-          "step": 2,
-          "unit": "px"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Reviews",
-          "label": "t:sections.global.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-       
-        },
-        
-      ]
-    },
-    {
-      "type": "care_instructions",
-      "name": "Care Instructions",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "t:sections.global.settings.icon.label",
-          "default": "wash",
-          "options": [
-            {
-              "value": "none",
-              "label": "t:sections.global.settings.icon.options__1.label"
-            },
-            {
-              "value": "alert",
-              "label": "t:sections.global.settings.icon.options__2.label"
-            },
-            {
-              "value": "award",
-              "label": "t:sections.global.settings.icon.options__3.label"
-            },
-            {
-              "value": "bag",
-              "label": "t:sections.global.settings.icon.options__4.label"
-            },
-            {
-              "value": "box",
-              "label": "t:sections.global.settings.icon.options__5.label"
-            },
-            {
-              "value": "briefcase",
-              "label": "t:sections.global.settings.icon.options__6.label"
-            },
-            {
-              "value": "calendar",
-              "label": "t:sections.global.settings.icon.options__7.label"
-            },
-            {
-              "value": "chat_bubble",
-              "label": "t:sections.global.settings.icon.options__8.label"
-            },
-            {
-              "value": "check_mark",
-              "label": "t:sections.global.settings.icon.options__9.label"
-            },
-            {
-              "value": "clipboard",
-              "label": "t:sections.global.settings.icon.options__10.label"
-            },
-            {
-              "value": "cosmetics",
-              "label": "t:sections.global.settings.icon.options__11.label"
-            },
-            {
-              "value": "creadit_card",
-              "label": "t:sections.global.settings.icon.options__12.label"
-            },
-            {
-              "value": "dairy",
-              "label": "t:sections.global.settings.icon.options__13.label"
-            },
-            {
-              "value": "dairy_free",
-              "label": "t:sections.global.settings.icon.options__14.label"
-            },
-            {
-              "value": "devices",
-              "label": "t:sections.global.settings.icon.options__15.label"
-            },
-            {
-              "value": "email",
-              "label": "t:sections.global.settings.icon.options__16.label"
-            },
-            {
-              "value": "eye",
-              "label": "t:sections.global.settings.icon.options__17.label"
-            },
-            {
-              "value": "file_text",
-              "label": "t:sections.global.settings.icon.options__18.label"
-            },
-            {
-              "value": "gift",
-              "label": "t:sections.global.settings.icon.options__19.label"
-            },
-            {
-              "value": "gluten",
-              "label": "t:sections.global.settings.icon.options__20.label"
-            },
-            {
-              "value": "gluten_free",
-              "label": "t:sections.global.settings.icon.options__21.label"
-            },
-            {
-              "value": "headphone",
-              "label": "t:sections.global.settings.icon.options__22.label"
-            },
-            {
-              "value": "heart",
-              "label": "t:sections.global.settings.icon.options__23.label"
-            },
-            {
-              "value": "iron",
-              "label": "t:sections.global.settings.icon.options__24.label"
-            },
-            {
-              "value": "lightning",
-              "label": "t:sections.global.settings.icon.options__25.label"
-            },
-            {
-              "value": "lock",
-              "label": "t:sections.global.settings.icon.options__26.label"
-            },
-            {
-              "value": "map_pin",
-              "label": "t:sections.global.settings.icon.options__27.label"
-            },
-            {
-              "value": "newspaper",
-              "label": "t:sections.global.settings.icon.options__28.label"
-            },
-            {
-              "value": "organic",
-              "label": "t:sections.global.settings.icon.options__29.label"
-            },
-            {
-              "value": "perfume",
-              "label": "t:sections.global.settings.icon.options__30.label"
-            },
-            {
-              "value": "phone",
-              "label": "t:sections.global.settings.icon.options__31.label"
-            },
-            {
-              "value": "plane",
-              "label": "t:sections.global.settings.icon.options__32.label"
-            },
-            {
-              "value": "planet",
-              "label": "t:sections.global.settings.icon.options__33.label"
-            },
-            {
-              "value": "planet_2",
-              "label": "t:sections.global.settings.icon.options__34.label"
-            },
-            {
-              "value": "recycling",
-              "label": "t:sections.global.settings.icon.options__35.label"
-            },
-            {
-              "value": "return",
-              "label": "t:sections.global.settings.icon.options__36.label"
-            },
-            {
-              "value": "rocket",
-              "label": "t:sections.global.settings.icon.options__37.label"
-            },
-            {
-              "value": "ruler",
-              "label": "t:sections.global.settings.icon.options__38.label"
-            },
-            {
-              "value": "ruler_2",
-              "label": "t:sections.global.settings.icon.options__39.label"
-            },
-            {
-              "value": "ruler_3",
-              "label": "t:sections.global.settings.icon.options__40.label"
-            },
-            {
-              "value": "sale",
-              "label": "t:sections.global.settings.icon.options__41.label"
-            },
-            {
-              "value": "shield",
-              "label": "t:sections.global.settings.icon.options__42.label"
-            },
-            {
-              "value": "shirt",
-              "label": "t:sections.global.settings.icon.options__43.label"
-            },
-            {
-              "value": "shoe",
-              "label": "t:sections.global.settings.icon.options__44.label"
-            },
-            {
-              "value": "star",
-              "label": "t:sections.global.settings.icon.options__45.label"
-            },
-            {
-              "value": "support",
-              "label": "t:sections.global.settings.icon.options__46.label"
-            },
-            {
-              "value": "swatchbook",
-              "label": "t:sections.global.settings.icon.options__47.label"
-            },
-            {
-              "value": "tag",
-              "label": "t:sections.global.settings.icon.options__48.label"
-            },
-            {
-              "value": "tags",
-              "label": "t:sections.global.settings.icon.options__49.label"
-            },
-            {
-              "value": "time",
-              "label": "t:sections.global.settings.icon.options__50.label"
-            },
-            {
-              "value": "trophy",
-              "label": "t:sections.global.settings.icon.options__51.label"
-            },
-            {
-              "value": "truck",
-              "label": "t:sections.global.settings.icon.options__52.label"
-            },
-            {
-              "value": "users",
-              "label": "t:sections.global.settings.icon.options__53.label"
-            },
-            {
-              "value": "wallet",
-              "label": "t:sections.global.settings.icon.options__54.label"
-            },
-            {
-              "value": "wash",
-              "label": "t:sections.global.settings.icon.options__55.label"
-            },
-            {
-              "value": "watch",
-              "label": "t:sections.global.settings.icon.options__56.label"
-            },
-            {
-              "value": "wrench",
-              "label": "t:sections.global.settings.icon.options__57.label"
-            }
-          ]
-        },
-        {
-          "type": "image_picker",
-          "id": "icon_image",
-          "label": "t:sections.global.settings.icon_image.label"
-        },
-        {
-          "type": "range",
-          "id": "icon_width",
-          "label": "t:sections.global.settings.icon_width.label",
-          "default": 24,
-          "min": 20,
-          "max": 120,
-          "step": 2,
-          "unit": "px"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Care Instructions",
-          "label": "t:sections.global.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-          "default": "<p>Add care instructions description here.</p>"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.product-details.presets.name",
+      "name": "t:sections.product-details.name",
       "blocks": [
         {
           "type": "description"
