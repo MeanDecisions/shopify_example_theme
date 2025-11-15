@@ -1,0 +1,47 @@
+<!-- VENDOR 5.1.0 - START: Added support for badges on product pages... (lines: 233-236,1706-1746) -->
+            {%- when 'badges' -%}
+              <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
+                {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
+              </div>
+      "type": "badges",
+      "name": "t:sections.main-product.blocks.badges.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.badges.settings.paragraph.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sold_out",
+          "label": "t:sections.main-product.blocks.badges.settings.show_sold_out.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_save_amount",
+          "label": "t:sections.main-product.blocks.badges.settings.show_save_amount.label",
+          "default": true
+        },
+        {
+          "visible_if": "{{ block.settings.show_save_amount == true }}",
+          "type": "select",
+          "id": "save_type",
+          "label": "t:sections.main-product.blocks.badges.settings.save_type.label",
+          "default": "percent",
+          "options": [
+            {
+              "value": "dollar",
+              "label": "t:sections.main-product.blocks.badges.settings.save_type.options__1.label"
+            },
+            {
+              "value": "percent",
+              "label": "t:sections.main-product.blocks.badges.settings.save_type.options__2.label"
+            },
+            {
+              "value": "label",
+              "label": "t:sections.main-product.blocks.badges.settings.save_type.options__3.label"
+            }
+          ]
+        }
+<!-- VENDOR 5.1.0 - END: Added support for badges on product pages... -->

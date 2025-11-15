@@ -1,0 +1,17 @@
+<!-- VENDOR 5.1.0 - START: Overlapping thumbnails on Firefox. (lines: 12754-12768) -->
+  .product__thumbnails--beside {
+    order: -1;
+    width: var(--sp-28);
+  }
+
+  .product__thumbnails--beside .product__thumbnails-list {
+    grid-auto-flow: row;
+    overflow-y: scroll;
+    max-height: 630px;
+  }
+
+  .product__thumbnails--beside .product__thumbnail {
+    width: 100%;
+    contain: paint;
+    overflow: visible;
+<!-- VENDOR 5.1.0 - END: Overlapping thumbnails on Firefox. -->

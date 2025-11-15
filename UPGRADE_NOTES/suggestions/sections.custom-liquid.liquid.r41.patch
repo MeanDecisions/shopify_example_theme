@@ -1,0 +1,14 @@
+diff --git a/sections/custom-liquid.liquid b/sections/custom-liquid.liquid
+index e91ba45..f87756e 100644
+--- a/sections/custom-liquid.liquid
++++ b/sections/custom-liquid.liquid
+@@ -102,7 +102,8 @@
+   ],
+   "presets": [
+     {
+-      "name": "t:sections.custom-liquid.presets.name"
++      "name": "t:sections.custom-liquid.name",
++      "category": "t:categories.layout"
+     }
+   ],
+   "disabled_on": {

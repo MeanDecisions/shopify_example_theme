@@ -1,0 +1,11 @@
+<!-- VENDOR 5.1.0 - START: Option size selector too dense... (lines: 10355-10363) -->
+.quick-add .buttons {
+  padding-inline: clamp(var(--sp-4), 2.105vw, var(--sp-10));
+}
+
+.quick-add .buttons .button {
+  --buttons-radius: calc(var(--rounded-button) - 2px);
+  width: auto;
+  font-size: var(--text-sm);
+  padding: clamp(var(--sp-2), .526vw, var(--sp-2d5)) clamp(var(--sp-5), .842vw, var(--sp-5d5));
+<!-- VENDOR 5.1.0 - END: Option size selector too dense... -->

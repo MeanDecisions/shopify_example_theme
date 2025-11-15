@@ -1,0 +1,63 @@
+diff --git a/assets/product-bundle.css b/assets/product-bundle.css
+index f302a8e..b03613a 100644
+--- a/assets/product-bundle.css
++++ b/assets/product-bundle.css
+@@ -2,6 +2,7 @@
+
+ .compact-product-bundle-wrapper .product-card--promo {
+   --card-column-size: 1;
++  --card-row-size: 1;
+   color: rgb(var(--color-foreground));
+ }
+
+@@ -18,11 +19,7 @@
+ }
+
+ .compact-product-bundle .product-card__variants .variant-picker {
+-  padding: 0;
+-  border: 0;
+-  border-radius: 0;
+-  padding-block-start: var(--sp-4);
+-  border-block-start: 1px solid rgb(var(--color-border));
++  margin-block-end: calc(var(--sp-4) * -1);
+ }
+
+ @media screen and (max-width: 1023px) {
+@@ -60,6 +57,17 @@
+     }
+   }
+
++  .compact-product-bundle-wrapper .mobile\:media--adapt {
++    height: 0;
++    padding-block-end: var(--ratio-percent);
++  }
++
++  .compact-product-bundle-wrapper .mobile\:media--adapt>.media {
++    position: absolute;
++    inset: 0;
++    width: 100%;
++  }
++
+   .compact-product-bundle-wrapper .product-card--promo .product-card__media {
+     position: relative;
+   }
+@@ -195,6 +203,7 @@
+   }
+
+   .compact-product-bundle-section .banner .banner__content {
++    --color-background: var(--color-base-background);
+     position: static;
+     overflow: visible;
+   }
+@@ -245,9 +254,9 @@
+     border-start-end-radius: var(--border-radius);
+     border-start-start-radius: var(--border-radius);
+     margin-inline: calc(var(--page-padding) * -1);
+-    padding-block-start: var(--sp-6);
++    padding-block: var(--sp-6);
+     padding-inline: var(--page-padding);
+-    background-color: rgb(var(--color-base-background));
++    background-color: rgb(var(--color-background));
+     position: relative;
+   }
+ }

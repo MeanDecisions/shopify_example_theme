@@ -1,0 +1,15 @@
+diff --git a/assets/article.css b/assets/article.css
+index c31aaf1..a56f947 100644
+--- a/assets/article.css
++++ b/assets/article.css
+@@ -133,6 +133,10 @@
+   }
+ }
+
++.media--adapt .article__image .media--height>img {
++  position: static;
++}
++
+ /*! comments */
+
+ .comments-section {

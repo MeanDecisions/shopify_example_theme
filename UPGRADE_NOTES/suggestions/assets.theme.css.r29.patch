@@ -1,0 +1,24 @@
+<!-- VENDOR 5.0.0 - START: Vertical orientation for product badges. (lines: 10760-10781) -->
+  background-color: var(--badge-background);
+  color: var(--badge-foreground);
+  padding: var(--sp-1d5) var(--sp-2d5);
+  font-size: var(--text-2xs);
+  border-radius: var(--rounded-button);
+  width: max-content;
+}
+
+.badge--vertical {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
+
+@media screen and (min-width: 768px) {
+  .badge {
+    padding: var(--sp-2d5) var(--sp-4);
+    font-size: var(--text-sm);
+  }
+
+  .badge--vertical {
+    padding: var(--sp-4) var(--sp-2d5);
+  }
+<!-- VENDOR 5.0.0 - END: Vertical orientation for product badges. -->

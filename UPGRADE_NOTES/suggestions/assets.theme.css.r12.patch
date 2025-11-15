@@ -1,0 +1,32 @@
+<!-- VENDOR 5.1.0 - START: Text highlight lines wrapped incorrectly. (lines: 13195-13224) -->
+.highlighted-text:is([data-style=full_text], [data-style=half_text], [data-style=underline]) {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to var(--transform-origin-end), rgb(var(--color-highlight)) 0, rgb(var(--color-background)) 100%), linear-gradient(to var(--transform-origin-end), rgb(var(--color-highlight)) 0, rgb(var(--color-background)) 100%);
+  transition: background-size var(--animation-smooth);
+}
+
+.highlighted-text.with-gradient:is([data-style=full_text], [data-style=half_text], [data-style=underline]) {
+  background-image: var(--gradient-highlight);
+}
+
+.highlighted-text[data-style=full_text] {
+  background-position: var(--transform-origin-start) 70%;
+  background-size: 0 80%;
+}
+
+.highlighted-text.animated[data-style=full_text] {
+  background-size: 100% 80%;
+}
+
+.highlighted-text[data-style=half_text] {
+  background-position: var(--transform-origin-start) 90%;
+  background-size: 0 28%;
+}
+
+.highlighted-text.animated[data-style=half_text] {
+  background-size: 100% 28%;
+}
+
+.highlighted-text[data-style=underline] {
+  background-size: 0 3px, 0% 80%;
+<!-- VENDOR 5.1.0 - END: Text highlight lines wrapped incorrectly. -->

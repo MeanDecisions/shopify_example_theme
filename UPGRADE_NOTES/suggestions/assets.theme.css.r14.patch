@@ -1,0 +1,25 @@
+<!-- VENDOR 5.1.0 - START: Scaled preview image not fully visible... (lines: 12869-12891) -->
+.product--scroll .product__gallery.with-only1 {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  .product--scroll .product__gallery.with-only1 .product__preview.lg\:sticky {
+    height: auto;
+    max-height: unset;
+  }
+}
+
+.product--scroll .product__gallery.with-only1 .product__preview {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .product--scroll .product__gallery.with-only1 .product__preview {
+    display: block;
+  }
+
+  .product--scroll .product__gallery.with-only1 .product__preview .product__media {
+    height: auto;
+  }
+<!-- VENDOR 5.1.0 - END: Scaled preview image not fully visible... -->

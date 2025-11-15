@@ -1,0 +1,24 @@
+<!-- VENDOR 5.0.0 - START: Choose product card styles in Collection List. (lines: 47-58,99-108) -->
+    <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card"{% if section.settings.carousel_on_desktop or section.settings.swipe_on_mobile %} tabindex="0"{% endif %}>
+      <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
+        {%- for block in section.blocks -%}
+          {%- assign collection = collections[block.settings.collection] -%}
+          {%- render 'collection-card',
+            block: block,
+            collection: collection,
+            card_style: section.settings.card_style,
+            image_type: section.settings.image_type,
+            image_ratio: section.settings.image_ratio,
+            show_products_count: section.settings.show_products_count,
+            position: forloop.index
+      "id": "card_style",
+      "options": [
+        {
+          "value": "standard",
+          "label": "t:sections.main-list-collections.settings.style.options__1.label"
+        },
+        {
+          "value": "card",
+          "label": "t:sections.main-list-collections.settings.style.options__2.label"
+        },
+<!-- VENDOR 5.0.0 - END: Choose product card styles in Collection List. -->

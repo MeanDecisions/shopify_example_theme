@@ -1,0 +1,24 @@
+<!-- VENDOR 5.0.0 - START: Product-card hover videos. (lines: 117-138) -->
+          {%- unless featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}
+            {%- if show_secondary_image and media_count > 1 -%}
+              <template>
+                {%- for media in product_media limit: 4 -%}
+                  {%- capture media_class -%}media--height{% unless image_fill %} media--contain{% endunless %} w-full h-full overflow-hidden{%- endcapture -%}
+                  {%- unless media.media_type == 'video' or media.media_type == 'external_video' -%}
+                    <div class="media {{ media_class }}">
+                      {{- media | image_url: width: media.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
+                    </div>
+                  {%- else -%}
+                    {%- render 'product-video',
+                      video: media,
+                      muted: true,
+                      autoplay: false,
+                      loop: true,
+                      cover_image: media,
+                      show_play_button: false,
+                      class: media_class
+                    -%}
+                  {%- endunless -%}
+                {%- endfor -%}
+              </template>
+<!-- VENDOR 5.0.0 - END: Product-card hover videos. -->

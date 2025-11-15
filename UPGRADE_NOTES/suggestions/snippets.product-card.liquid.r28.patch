@@ -1,0 +1,39 @@
+<!-- VENDOR 5.0.0 - START: Quick size selection on product cards. (lines: 163-199) -->
+        {%- if product.available -%}
+          {%- liquid
+            assign should_show_size_variants = false
+            if settings.product_quick_add_by_size and product.options.size == 1
+              assign size_trigger = 'products.general.size_trigger' | t | downcase
+
+              for option in product.options_with_values
+                assign option_name = option.name | downcase
+
+                if option_name contains size_trigger
+                  assign should_show_size_variants = true
+                  break
+                endif
+              endfor
+            endif
+          -%}
+          {%- if should_show_size_variants -%}
+            <div class="quick-add flex justify-end md:justify-center absolute w-full z-1 pointer-events-none">
+              <div class="buttons hidden pointer-events-auto md:flex md:justify-center md:opacity-0">
+                {%- for option in product.options_with_values -%}
+                  <fieldset class="js product-form__input variant-input-wrapper relative">
+                    <legend class="sr-only">{{ option.name }}</legend>
+                    <div class="swatches swatches--round flex justify-center flex-wrap gap-2">
+                      {%- for variant in product.variants -%}
+                        {%- if variant.available -%}
+                          {%- capture product_form_id -%}QuickAddProductForm-{{ section_id }}-{{ product_id }}-{{ variant.id }}{%- endcapture -%}
+                          {%- form 'product', product, is: 'product-form', id: product_form_id -%}
+                            <input type="hidden" name="id" value="{{ variant.id }}" />
+                            <button type="submit" class="button button--primary" is="hover-button" data-variant-id="{{ variant.id }}" aria-label="{{ variant.title | escape }}">
+                              <span class="btn-fill" data-fill></span>
+                              <span class="btn-text">{{ variant.title }}</span>
+                            </button>
+                          {%- endform -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                  </fieldset>
+<!-- VENDOR 5.0.0 - END: Quick size selection on product cards. -->

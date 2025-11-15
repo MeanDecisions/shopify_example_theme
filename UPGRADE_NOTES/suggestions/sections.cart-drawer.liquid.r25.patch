@@ -1,0 +1,641 @@
+diff --git a/sections/cart-drawer.liquid b/sections/cart-drawer.liquid
+index b2067bb..7da59ef 100644
+--- a/sections/cart-drawer.liquid
++++ b/sections/cart-drawer.liquid
+@@ -1,6 +1,6 @@
+ {%- if request.page_type != 'cart' and settings.cart_type == 'drawer' -%}
+   <script src="{{ 'cart.js' | asset_url }}" defer></script>
+-  {%- if linklists.gift-wrapping.links != blank and linklists.gift-wrapping.links.first.type == 'product_link' -%}
++  {%- if settings.gift_wrap_product != blank and settings.gift_wrap_product.available -%}
+     <script src="{{ 'gift-wrapping.js' | asset_url }}" defer="defer"></script>
+   {%- endif -%}
+
+@@ -20,7 +20,7 @@
+   >
+     <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="CartDrawer" aria-expanded="false"></overlay-element>
+     <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+-      <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
++      <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative" tabindex="0">
+         <ul class="drawer__tabs flex gap-10" is="tab-list">
+           <li>
+             <button class="drawer__tab relative" type="button" aria-controls="MiniCart-{{ section.id }}" aria-expanded="true">
+@@ -51,7 +51,7 @@
+             {%- if cart == empty -%}
+               <div class="drawer__scrollable relative flex justify-center items-start grow shrink text-center">
+                 <div class="drawer__empty grid gap-5 md:gap-8">
+-                  <h2 class="drawer__empty-text heading leading-none tracking-tight">{{ 'cart.general.empty' | t }}</h2>
++                  <p class="drawer__empty-text h2 heading leading-none tracking-tight">{{ 'cart.general.empty' | t }}</p>
+                   <div class="drawer__empty-message text-sm md:text-base leading-tight rte">
+                     {{- section.settings.empty_cart_message -}}
+                   </div>
+@@ -114,39 +114,41 @@
+               -%}
+
+               {%- liquid
+-                if linklists.gift-wrapping.links != blank and linklists.gift-wrapping.links.first.type == 'product_link'
+-                  assign gift_wrapping = linklists.gift-wrapping.links.first
+-
+-                  assign gift_wrap_id = gift_wrapping.object.variants.first.id
+-                  assign gift_wraps_in_cart = 0
+-                  for item in cart.items
+-                    if item.id == gift_wrap_id
+-                      assign gift_wraps_in_cart = item.quantity
+-                      break
+-                    endif
+-                  endfor
+-                  assign items_in_cart = cart.item_count | minus: gift_wraps_in_cart
++                if settings.gift_wrap_product != blank and settings.gift_wrap_product.available
++                  assign enable_gift_wrapping = true
++
++                  assign gift_wrap_product = settings.gift_wrap_product
++                  assign gift_wrap_variant = gift_wrap_product.first_available_variant
++                  assign gift_wrap_per_product = settings.gift_wrap_per_product
++                  assign gift_items = cart.items | where: 'variant_id', gift_wrap_variant.id
++
++                  unless gift_wrap_per_product
++                    assign gift_wraps_in_cart = 0
++                    for item in gift_items
++                      assign gift_wraps_in_cart = gift_wraps_in_cart | plus: item.quantity
++                    endfor
++                  endunless
+                 endif
++
++                assign cart_gift_wrap_items = nil
+               -%}
+               <cart-items class="block grow" data-section-id="{{ section.id }}">
+                 <ul class="horizontal-products grid" role="list">
+                   {%- for item in cart.items -%}
+                     {%- liquid
+                       assign is_gift_wrap_item = false
+-
+-                      if gift_wrap_id != nil and item.id == gift_wrap_id
++                      if gift_wrap_variant != nil and item.id == gift_wrap_variant.id
+                         assign is_gift_wrap_item = true
+                       endif
+                     -%}
+-
+                     {%- capture cart_item -%}
+-                      <li id="CartDrawer-Item-{{ item.key }}" class="horizontal-product flex items-center gap-4 md:gap-6" data-variant-id="{{ item.variant_id }}" data-handle="{{ item.product.handle }}" data-quantity="{{ item.quantity }}" data-price="{{ item.original_price }}">
++                      <li id="CartDrawer-Item-{{ item.key }}" class="horizontal-product flex items-start gap-4 md:gap-6" data-variant-id="{{ item.variant_id }}" data-handle="{{ item.product.handle }}" data-quantity="{{ item.quantity }}" data-price="{{ item.original_price }}">
+                         {%- if item.image -%}
+                           <a class="horizontal-product__media media media--{{ settings.product_image_ratio }}{% unless settings.product_image_fill %} media--contain{% endunless %} relative overflow-hidden shrink-0" href="{{ item.url }}" tabindex="-1">
+                             {{- item.image | image_url: width: item.image.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image' -}}
+                           </a>
+                         {%- endif -%}
+-                        <div class="horizontal-product__details flex flex-col justify-start gap-1d5">
++                        <div class="horizontal-product__details grow flex flex-col justify-start align-self-center gap-1d5">
+                           <div class="flex flex-col gap-1">
+                             <div class="block leading-tight">
+                               {%- if section.settings.show_vendor -%}
+@@ -159,9 +161,9 @@
+                               <dl class="grid gap-1d5">
+                                 {%- unless item.product.has_only_default_variant -%}
+                                   {%- for option in item.options_with_values -%}
+-                                    <div class="flex gap-1 text-xs text-opacity leading-tight">
++                                    <div class="text-xs text-opacity leading-tight">
+                                       <dt class="sr-only">{{ option.name }}:</dt>
+-                                      <dd>{{ option.value }}</dd>
++                                      <dd class="inline">{{ option.value }}</dd>
+                                     </div>
+                                   {%- endfor -%}
+                                 {%- endunless -%}
+@@ -169,9 +171,9 @@
+                                 {%- for property in item.properties -%}
+                                   {%- assign property_first_char = property.first | slice: 0 -%}
+                                   {%- if property.last != blank and property_first_char != '_' -%}
+-                                    <div class="flex gap-1 text-xs text-opacity leading-tight">
+-                                      <dt class="font-medium">{{ property.first }}:&nbsp;</dt>
+-                                      <dd>
++                                    <div class="text-xs text-opacity leading-tight">
++                                      <dt class="inline">{{ property.first }}:&nbsp;</dt>
++                                      <dd class="inline">
+                                         {%- if property.last contains '/uploads/' -%}
+                                           <a href="{{ property.last }}" class="link" target="_blank" aria-describedby="a11y-new-window-message">
+                                             {{- property.last | split: '/' | last -}}
+@@ -191,66 +193,76 @@
+                             {%- endif -%}
+                           </div>
+
+-                          <div class="flex flex-col gap-1">
+-                            <div class="price{% if item.original_price != item.final_price %} price--on-sale{% endif %} text-sm flex flex-wrap gap-1d5">
+-                              {%- liquid
+-                                assign money_price = item.original_price | money
+-                                if settings.currency_code_enabled
+-                                  assign money_price = item.original_price | money_with_currency
+-                                endif
+-                              -%}
+-                              {%- if item.original_price != item.final_price -%}
+-                                <span class="sr-only">{{ 'products.price.regular_price' | t }}</span>
+-                                <span class="price__sale inline-flex items-center relative">{{ money_price }}</span>
+-                                <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
+-                                <span class="price__regular whitespace-nowrap">
+-                                  {%- liquid
+-                                    if settings.currency_code_enabled
+-                                      echo item.final_price | money_with_currency
+-                                    else
+-                                      echo item.final_price | money
+-                                    endif
+-                                  -%}
+-                                </span>
+-                              {%- else -%}
+-                                {{- money_price -}}
+-                              {%- endif -%}
++                          <div class="flex flex-col gap-3">
++                            <div class="flex flex-col gap-1">
++                              <div class="price{% if item.original_price != item.final_price %} price--on-sale{% endif %} text-sm flex flex-wrap gap-1d5">
++                                {%- liquid
++                                  assign money_price = item.original_price | money
++                                  if settings.currency_code_enabled
++                                    assign money_price = item.original_price | money_with_currency
++                                  endif
++                                -%}
++                                {%- if item.original_price != item.final_price -%}
++                                  <span class="sr-only">{{ 'products.price.regular_price' | t }}</span>
++                                  <span class="price__sale inline-flex items-center relative">{{ money_price }}</span>
++                                  <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
++                                  <span class="price__regular whitespace-nowrap">
++                                    {%- liquid
++                                      if settings.currency_code_enabled
++                                        echo item.final_price | money_with_currency
++                                      else
++                                        echo item.final_price | money
++                                      endif
++                                    -%}
++                                  </span>
++                                {%- else -%}
++                                  {{- money_price -}}
++                                {%- endif -%}
+
+-                              {%- if item.variant.available and item.unit_price_measurement -%}
+-                                <span class="sr-only">{{ 'products.price.unit_price' | t }}</span>
+-                                <span class="unit-price flex items-center">
+-                                  {%- liquid
+-                                    capture unit_price_base_unit
+-                                      if item.variant.unit_price_measurement
+-                                        if item.variant.unit_price_measurement.reference_value != 1
+-                                          echo item.variant.unit_price_measurement.reference_value
++                                {%- if item.variant.available and item.unit_price_measurement -%}
++                                  <span class="sr-only">{{ 'products.price.unit_price' | t }}</span>
++                                  <span class="unit-price flex items-center">
++                                    {%- liquid
++                                      capture unit_price_base_unit
++                                        if item.variant.unit_price_measurement
++                                          if item.variant.unit_price_measurement.reference_value != 1
++                                            echo item.variant.unit_price_measurement.reference_value
++                                          endif
++                                          echo item.variant.unit_price_measurement.reference_unit
+                                         endif
+-                                        echo item.variant.unit_price_measurement.reference_unit
+-                                      endif
+-                                    endcapture
+-                                  -%}
+-                                  ({{ item.variant.unit_price | money }}
+-                                  <span aria-hidden="true">/</span>
+-                                  <span class="sr-only">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+-                                  {{ unit_price_base_unit }})
++                                      endcapture
++                                    -%}
++                                    ({{ item.variant.unit_price | money }}
++                                    <span aria-hidden="true">/</span>
++                                    <span class="sr-only">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
++                                    {{ unit_price_base_unit }})
+                                   </span>
++                                {%- endif -%}
++                              </div>
++
++                              {%- if item.line_level_discount_allocations != blank -%}
++                                <ul class="discounts grid gap-2" role="list" aria-label="{{ 'customer.order.discounts' | t | escape }}">
++                                  {%- for discount_allocation in item.line_level_discount_allocations -%}
++                                    <li class="discounts__discount text-xs flex flex-wrap items-center gap-1">
++                                      <span class="badge badge--highlight flex items-center gap-1d5 font-medium leading-none">{{ discount_allocation.discount_application.title }}</span>
++                                      <span class="badge badge--onsale flex items-center gap-1d5 font-medium leading-none">-{{ discount_allocation.amount | money }}</span>
++                                    </li>
++                                  {%- endfor -%}
++                                </ul>
+                               {%- endif -%}
+                             </div>
+
+-                            {%- if item.line_level_discount_allocations != blank -%}
+-                              <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t | escape }}">
+-                                {%- for discount_allocation in item.line_level_discount_allocations -%}
+-                                  <li class="discounts__discount text-xs flex flex-wrap items-center gap-1">
+-                                    <span class="badge badge--highlight flex items-center gap-1d5 font-medium leading-none rounded-full">{{ discount_allocation.discount_application.title }}</span>
+-                                    <span class="badge badge--onsale flex items-center gap-1d5 font-medium leading-none rounded-full">-{{ discount_allocation.amount | money }}</span>
+-                                  </li>
+-                                {%- endfor -%}
+-                              </ul>
+-                            {%- endif -%}
++                            {%- liquid
++                              unless is_gift_wrap_item
++                                if gift_wrap_per_product
++                                  render 'gift-wrap-selector', gift_wrap_variant: gift_wrap_variant, line_item: item, section_id: section.id, context: 'drawer'
++                                endif
++                              endunless
++                            -%}
+                           </div>
+                         </div>
+
+-                        <div class="horizontal-product__quantity shrink-0 text-sm sm:block">
++                        <div class="horizontal-product__quantity align-self-stretch shrink-0 text-sm sm:block">
+                           {%- liquid
+                             assign has_qty_rules = false
+                             if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
+@@ -308,16 +320,16 @@
+                               {%- endif -%}
+                             {%- endcapture -%}
+                           {%- endif -%}
+-                          <div class="grid gap-3">
++                          <div class="flex flex-col justify-between gap-3 h-full">
+                             {%- unless is_gift_wrap_item -%}
+                               <div class="cart-quantity__info flex items-center gap-3">
+                                 {%- if has_qty_rules or has_vol_pricing -%}
+-                                  <button type="button" class="hotspot hidden md:flex items-center justify-end relative cursor-pointer">
++                                  <hover-element class="hotspot hidden md:flex items-center justify-end relative cursor-pointer">
+                                     {%- render 'icon', icon: 'info', size: 'lg' -%}
+-                                    <div class="hotspot__content grid gap-6 items-center absolute z-1 pointer-events-none overflow-hidden text-left">
++                                    <div class="hotspot__content absolute z-1 pointer-events-none cursor-default grid gap-6 items-center text-left">
+                                       {{- qty_rules_vol_pricing -}}
+                                     </div>
+-                                  </button>
++                                  </hover-element>
+                                   <button type="button" class="md:hidden flex items-center justify-center" aria-controls="VolumePricing-{{ section.id }}-{{ item.key }}" aria-expanded="false">
+                                     {%- render 'icon', icon: 'info', size: 'sm' -%}
+                                   </button>
+@@ -329,15 +341,15 @@
+                                   >
+                                     <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="VolumePricing-{{ section.id }}-{{ item.key }}" aria-expanded="false"></overlay-element>
+                                     <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+-                                      <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
++                                      <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative" tabindex="0">
+                                         <span class="drawer__title heading title-md grid gap-4">
+                                           {{ item.product.title | escape }}
+                                           {%- unless item.product.has_only_default_variant -%}
+                                             <dl class="grid gap-1d5">
+                                               {%- for option in item.options_with_values -%}
+-                                                <div class="flex gap-1 text-xs text-opacity leading-tight">
++                                                <div class="text-xs text-opacity leading-tight">
+                                                   <dt class="sr-only">{{ option.name }}:</dt>
+-                                                  <dd>{{ option.value }}</dd>
++                                                  <dd class="inline">{{ option.value }}</dd>
+                                                 </div>
+                                               {%- endfor -%}
+                                             </dl>
+@@ -416,14 +428,6 @@
+                                   value="{{ item.quantity }}"
+                                   disabled
+                                 />
+-                                <div class="quantity__buttons absolute right-0 hidden lg:flex flex-col items-center justify-center h-full sr-only">
+-                                  <button type="button" name="plus" class="quantity__button flex justify-center w-full items-end" aria-label="{{ 'products.quantity.increase' | t: product: item.product.title | escape }}" disabled>
+-                                    {%- render 'icon', icon: 'increase', size: 'sm', class: 'stroke-1' -%}
+-                                  </button>
+-                                  <button type="button" name="minus" class="quantity__button flex justify-center w-full items-start" aria-label="{{ 'products.quantity.decrease' | t: product: item.product.title | escape }}" disabled>
+-                                    {%- render 'icon', icon: 'decrease', size: 'sm', class: 'stroke-1' -%}
+-                                  </button>
+-                                </div>
+                               </div>
+                             {%- endunless -%}
+                             <div class="text-xs text-right relative">
+@@ -441,53 +445,76 @@
+                       unless is_gift_wrap_item
+                         echo cart_item
+                       else
+-                        assign cart_gift_wrap_item = cart_item
++                        assign cart_gift_wrap_items = cart_gift_wrap_items | append: cart_item
+                       endunless
+                     -%}
+                   {%- endfor -%}
+
+                   {%- liquid
+-                    if cart_gift_wrap_item
+-                      echo cart_gift_wrap_item
+-                    endif
++                    unless gift_wrap_per_product
++                      if cart_gift_wrap_items != nil
++                        echo cart_gift_wrap_items
++                      endif
++                    endunless
+                   -%}
+                 </ul>
+               </cart-items>
+
+-              {%- render 'gift-wrapping',
+-                section_id: section.id,
+-                gift_wrapping: gift_wrapping,
+-                gift_wrap_id: gift_wrap_id,
+-                gift_wraps_in_cart: gift_wraps_in_cart,
+-                items_in_cart: items_in_cart,
++              {%- liquid
++                if enable_gift_wrapping
++                  if gift_wrap_per_product
++                    render 'gift-wrapping-list-horizontal', gift_items: gift_items, section_id: section.id
++                  else
++                    render 'gift-wrapping', gift_wrap_variant: gift_wrap_variant, gift_wraps_in_cart: gift_wraps_in_cart, section_id: section.id
++                  endif
++                endif
+               -%}
+
+               {%- if cart != empty and section.settings.cart_recommendations_enabled -%}
+                 {%- liquid
+                   assign first_product_id = cart.items.first.product_id
+-                  if cart_gift_wrap_item
+-                    if first_product_id == gift_wrapping.object.id
+-                      if cart.items.size > 1
+-                        assign first_product_id = cart.items[1].product_id
+-                      endif
+-                    endif
++                  if enable_gift_wrapping
++                    assign cart_items = cart.items | reject: 'variant_id', gift_wrap_variant.id
++                    assign first_product_id = cart_items.first.product_id
+                   endif
+                 -%}
+-                {%- render 'product-complementary',
+-                  section_id: section.id,
+-                  product_id: first_product_id,
+-                  image_ratio: settings.product_image_ratio,
+-                  image_fill: settings.product_image_fill,
+-                  limit: section.settings.cart_recommendations_limit,
+-                  heading: section.settings.cart_recommendations_heading,
+-                  show_vendor: section.settings.show_cart_recommendations_vendor,
+-                  show_price: section.settings.show_cart_recommendations_price,
+-                  recommendations_products: section.settings.cart_recommendations_products,
+-                -%}
++                {%- if first_product_id != blank -%}
++                  {%- render 'product-complementary',
++                    section_id: section.id,
++                    product_id: first_product_id,
++                    image_ratio: settings.product_image_ratio,
++                    image_fill: settings.product_image_fill,
++                    limit: section.settings.cart_recommendations_limit,
++                    heading: section.settings.cart_recommendations_heading,
++                    show_vendor: section.settings.show_cart_recommendations_vendor,
++                    show_price: section.settings.show_cart_recommendations_price,
++                    recommendations_products: section.settings.cart_recommendations_products,
++                  -%}
++                {%- endif -%}
+               {%- endif -%}
+             </div>
++            {%- if gift_wrap_per_product and settings.gift_wrap_per_product_message != blank -%}
++              <modal-element id="GiftWrapInfo-{{ section.id }}" class="modal invisible absolute bottom-0 left-0 w-full h-full" role="dialog" hidden>
++                <overlay-element class="fixed-modal opacity-0 z-1 absolute top-0 left-0 w-full h-full" aria-controls="GiftWrapInfo-{{ section.id }}" aria-expanded="false"></overlay-element>
++                <div class="modal__container flex flex-col z-3 absolute left-0 bottom-0 w-full">
++                  <div class="modal__header flex items-center justify-between relative">
++                    <span class="font-medium text-sm md:text-base">{{ 'cart.gift_wrapping.gift_wrapping_label' | t }}</span>
++                    <button type="button" class="close flex items-center justify-center absolute top-0 right-0" is="magnet-button" aria-controls="GiftWrapInfo-{{ section.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
++                      {%- render 'icon', icon: 'close' -%}
++                    </button>
++                  </div>
++                  <div class="modal__content flex flex-col overflow-hidden">
++                    <div class="modal__scrollable grid gap-4">
++                      <div class="rte text-sm leading-tight">
++                        {{- settings.gift_wrap_per_product_message -}}
++                      </div>
++                    </div>
++                  </div>
++                </div>
++              </modal-element>
++            {%- endif -%}
+             <div class="drawer__footer grid w-full{% if cart == empty %} hidden{% endif %}">
+-              {%- if section.settings.show_cart_note or section.settings.show_shipping_calculator -%}
++              {%- if section.settings.show_cart_note or section.settings.show_shipping_calculator or section.settings.add_discount_code -%}
+                 <div class="drawer__footer-top flex">
+                   {%- if section.settings.show_cart_note -%}
+                     <button type="button" class="flex gap-2d5 grow items-center justify-center" aria-controls="CartNote-{{ section.id }}" aria-expanded="false">
+@@ -496,11 +523,35 @@
+                     </button>
+                   {%- endif -%}
+                   {%- if section.settings.show_shipping_calculator -%}
+-                    <button type="button" class="flex gap-2d5 grow items-center justify-center" aria-controls="ShippingCalculator-{{ section.id }}" aria-expanded="false"{% unless section_rendering_api %} is="api-button" data-id="cart_drawer_shipping_calculator" data-section-id="{{ section.id }}"{% endunless %}>
++                    <button type="button" class="flex gap-2d5 grow items-center justify-center" aria-controls="ShippingCalculator-{{ section.id }}" aria-expanded="false">
++                      {%- unless section_rendering_api -%}
++                        <api-button class="api-only" data-id="cart_drawer_shipping_calculator" data-section-id="{{ section.id }}"></api-button>
++                      {%- endunless -%}
+                       {%- render 'icon', icon: 'package', size: 'lg', class: 'icon-light shrink-0' -%}
+                       <span class="reversed-link text-sm leading-tight">{{ 'general.cart.shipping_calculator.title' | t }}</span>
+                     </button>
+                   {%- endif -%}
++                  {%- if section.settings.add_discount_code -%}
++                    {%- liquid
++                      assign discount_codes = cart.cart_level_discount_applications | where: 'type', 'discount_code' | map: 'title'
++                      for item in cart.items
++                        for allocation in item.line_level_discount_allocations
++                          if allocation.discount_application.type == 'discount_code'
++                            assign discount_codes = item.line_level_discount_allocations | slice: forloop.index0 | map: 'discount_application' | map: 'title' | concat: discount_codes
++                          endif
++                        endfor
++                      endfor
++
++                      assign discount_codes = discount_codes | uniq
++                    -%}
++                    <button type="button" class="flex gap-2d5 grow items-center justify-center" aria-controls="CartDiscount-{{ section.id }}" aria-expanded="false">
++                      {%- render 'icon', icon: 'sale', size: 'lg', class: 'icon-light shrink-0' -%}
++                      <span class="reversed-link text-sm leading-tight">{{ 'general.cart.discount.title' | t }}</span>
++                      {%- if discount_codes.size > 0 -%}
++                        <span class="cart-discount__count flex items-center justify-center text-xs font-medium rounded-full">{{ discount_codes.size }}</span>
++                      {%- endif -%}
++                    </button>
++                  {%- endif -%}
+
+                   {%- if section.settings.show_cart_note -%}
+                     <modal-element id="CartNote-{{ section.id }}" class="modal invisible absolute bottom-0 left-0 w-full h-full" role="dialog" hidden>
+@@ -516,7 +567,7 @@
+                           <cart-note class="modal__scrollable grid gap-4">
+                             <div class="field">
+                               <textarea name="note" class="textarea is-floating" rows="3" placeholder=" " id="CartNoteForm-{{ section.id }}">{{ cart.note }}</textarea>
+-                              <label class="label is-floating" for="CartNoteForm-{{ section.id }}">{{ 'general.cart.note.title' | t }}</label>
++                              <label class="label is-floating" for="CartNoteForm-{{ section.id }}">{{ 'general.cart.note.placeholder' | t }}</label>
+                             </div>
+                             <div class="justify-self-start">
+                               <button class="button button--primary" type="button" is="hover-button" aria-controls="CartNote-{{ section.id }}" aria-expanded="false">
+@@ -555,7 +606,7 @@
+                                   >
+                                     {{- all_country_option_tags -}}
+                                   </select>
+-                                  {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
++                                  {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
+                                   <label class="label is-floating" for="ShippingCalculatorCountry-{{ section.id }}">{{ 'customer.addresses.country' | t }}</label>
+                                 </div>
+                                 <div class="field" hidden>
+@@ -567,7 +618,7 @@
+                                     id="ShippingCalculatorProvince-{{ section.id }}"
+                                   >
+                                   </select>
+-                                  {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute' -%}
++                                  {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
+                                   <label class="label is-floating" for="ShippingCalculatorProvince-{{ section.id }}">{{ 'customer.addresses.province' | t }}</label>
+                                 </div>
+                               </country-province>
+@@ -590,23 +641,80 @@
+                                   <span class="btn-text">{{ 'general.cart.shipping_calculator.button' | t }}</span>
+                                 </button>
+                               </div>
+-                              <div class="grid gap-3 text-sm"></div>
++                              <div class="alert alert--error alert--transparent flex gap-2d5" hidden>
++                                {%- render 'icon', icon: 'alert-circle-filled', size: 'sm', class: 'shrink-0' -%}
++                                <div class="grid gap-2 align-self-center text-sm leading-tight"></div>
++                              </div>
+                             </form>
+                           </div>
+                         {%- endunless -%}
+                       </div>
+                     </modal-element>
+                   {%- endif -%}
++                  {%- if section.settings.add_discount_code -%}
++                    <modal-element id="CartDiscount-{{ section.id }}" class="modal invisible absolute bottom-0 left-0 w-full h-full" role="dialog" hidden>
++                      <overlay-element class="fixed-modal opacity-0 z-1 absolute top-0 left-0 w-full h-full" aria-controls="CartDiscount-{{ section.id }}" aria-expanded="false"></overlay-element>
++                      <div class="modal__container flex flex-col z-3 absolute left-0 bottom-0 w-full">
++                        <div class="modal__header flex items-center justify-between relative">
++                          <span class="font-medium text-sm md:text-base">{{ 'general.cart.discount.caption' | t }}</span>
++                          <button type="button" class="close flex items-center justify-center absolute top-0 right-0" is="magnet-button" aria-controls="CartDiscount-{{ section.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
++                            {%- render 'icon', icon: 'close' -%}
++                          </button>
++                        </div>
++                        <div class="modal__content flex flex-col overflow-hidden">
++                          <form class="modal__scrollable cart-discount grid gap-4" action="{{ routes.cart_url }}" method="POST" novalidate is="cart-discount" data-section-id="{{ section.id }}">
++                            <ul class="active-facets flex flex-wrap items-center gap-2" role="list" aria-label="{{ 'customer.order.discounts' | t | escape }}">
++                              {%- for discount_code in discount_codes -%}
++                                <li
++                                  class="removable-facet badge badge--highlight flex items-center justify-between gap-2 text-xs lg:text-sm leading-none"
++                                  aria-label="{{ 'general.cart.discount.applied' | t: code: discount_code | escape }}"
++                                >
++                                  <p class="facet-title">{{ discount_code }}</p>
++                                  <button type="button" class="block relative" aria-label="{{ 'general.cart.discount.remove' | t: code: discount_code | escape }}" is="discount-remove" data-magnet="3" data-discount="{{ discount_code }}">
++                                    <span class="btn-text" data-text>
++                                      {%- liquid
++                                        render 'icon', icon: 'remove', size: 'xs'
++                                        render 'icon', icon: 'loader', size: 'sm absolute opacity-0 invisible animate-spin'
++                                      -%}
++                                    </span>
++                                  </button>
++                                </li>
++                              {%- endfor -%}
++                            </ul>
++                            <div class="field">
++                              <input type="text" name="discount" class="input is-floating" rows="3" placeholder=" " id="CartDiscountForm-{{ section.id }}"/>
++                              <label class="label is-floating" for="CartDiscountForm-{{ section.id }}">{{ 'general.cart.discount.placeholder' | t }}</label>
++                            </div>
++                            <div class="justify-self-start">
++                              <button class="button button--primary" type="submit" is="hover-button">
++                                <span class="btn-fill" data-fill></span>
++                                <span class="btn-text">{{ 'general.cart.discount.button' | t }}</span>
++                              </button>
++                            </div>
++                            <div class="alert alert--error alert--transparent flex gap-2d5" hidden>
++                              {%- render 'icon', icon: 'alert-circle-filled', size: 'sm', class: 'shrink-0' -%}
++                              <div class="grid gap-2 align-self-center text-sm leading-tight"></div>
++                            </div>
++                          </form>
++                        </div>
++                      </div>
++                    </modal-element>
++                  {%- endif -%}
+                 </div>
+               {%- endif -%}
+               <div class="drawer__footer-bottom grid gap-6">
+                 <div class="grid gap-4 sm:grid-6">
+                   {%- if cart.cart_level_discount_applications.size > 0 -%}
+-                    <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t | escape }}">
++                    <ul class="discounts grid gap-2" role="list" aria-label="{{ 'customer.order.discounts' | t | escape }}">
+                       {%- for discount in cart.cart_level_discount_applications -%}
+                         <li class="discounts__discount text-sm sm:text-base flex flex-wrap items-center justify-between gap-1d5">
+-                          {{- discount.title -}}
+-                          <span class="badge badge--onsale flex items-center gap-1d5 font-medium leading-none rounded-full">-{{ discount.total_allocated_amount | money }}</span>
++                          <p class="flex items-center gap-1d5">
++                            {%- liquid
++                              render 'icon', icon: 'discount', size: 'sm'
++                              echo discount.title
++                            -%}
++                          </p>
++                          <span class="badge badge--onsale flex items-center gap-1d5 font-medium leading-none">-{{ discount.total_allocated_amount | money }}</span>
+                         </li>
+                       {%- endfor -%}
+                     </ul>
+@@ -671,7 +779,7 @@
+                       assign product_id = parsed_term | split: 'id:' | last | times: 1
+                       for item in search.results
+                         if item.id == product_id
+-                          render 'product-card-horizontal', product: item, product_id: item.id, section_id: section.id, image_ratio: settings.product_image_ratio, image_fill: settings.product_image_fill, show_vendor: section.settings.show_recent_products_vendor, show_price: section.settings.show_recent_products_price, show_quick_add: settings.product_quick_add, show_quick_view: settings.product_quick_view
++                          render 'product-card-horizontal', product: item, product_id: item.id, section_id: section.id, image_ratio: settings.product_image_ratio, image_fill: settings.product_image_fill, show_vendor: section.settings.show_recent_products_vendor, show_price: section.settings.show_recent_products_price, show_quick_add: settings.product_quick_add, show_quick_view: settings.product_quick_view, accessibility: true
+                         endif
+                       endfor
+                     endfor
+@@ -720,6 +828,12 @@
+       "info": "t:sections.cart-drawer.settings.show_shipping_calculator.info",
+       "default": true
+     },
++    {
++      "type": "checkbox",
++      "id": "add_discount_code",
++      "label": "t:sections.cart-drawer.settings.add_discount_code.label",
++      "default": true
++    },
+     {
+       "type": "checkbox",
+       "id": "show_view_cart_button",
+@@ -743,6 +857,7 @@
+       "default": false
+     },
+     {
++      "visible_if": "{{ section.settings.show_free_shipping_bar == true }}",
+       "type": "text",
+       "id": "free_shipping_minimum_amount",
+       "default": "100",
+@@ -761,12 +876,14 @@
+       "default": true
+     },
+     {
++      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
+       "type": "text",
+       "id": "cart_recommendations_heading",
+       "default": "You may also like",
+       "label": "t:sections.global.settings.heading.label"
+     },
+     {
++      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
+       "type": "range",
+       "id": "cart_recommendations_limit",
+       "min": 1,
+@@ -776,12 +893,14 @@
+       "label": "t:sections.global.settings.product_limit.label"
+     },
+     {
++      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
+       "type": "checkbox",
+       "id": "show_cart_recommendations_vendor",
+       "label": "t:sections.global.settings.show_vendor.label",
+       "default": false
+     },
+     {
++      "visible_if": "{{ section.settings.cart_recommendations_enabled == true }}",
+       "type": "checkbox",
+       "id": "show_cart_recommendations_price",
+       "label": "t:sections.global.settings.show_price.label",
+@@ -818,12 +937,14 @@
+       "default": true
+     },
+     {
++      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
+       "type": "text",
+       "id": "recent_products_heading",
+       "default": "Recently viewed",
+       "label": "t:sections.global.settings.heading.label"
+     },
+     {
++      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
+       "type": "range",
+       "id": "recent_products_limit",
+       "min": 1,
+@@ -833,12 +954,14 @@
+       "label": "t:sections.global.settings.product_limit.label"
+     },
+     {
++      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
+       "type": "checkbox",
+       "id": "show_recent_products_vendor",
+       "label": "t:sections.global.settings.show_vendor.label",
+       "default": false
+     },
+     {
++      "visible_if": "{{ section.settings.recent_products_enabled == true }}",
+       "type": "checkbox",
+       "id": "show_recent_products_price",
+       "label": "t:sections.global.settings.show_price.label",

@@ -1,0 +1,10 @@
+<!-- VENDOR 5.1.0 - START: Overly large product card images in Tabbed Mega Menu. (lines: 8292-8299) -->
+@media screen and (min-width: 768px) {
+  .mega-menu__panel :is(.card-grid--3, .card-grid--4) {
+    --card-grid-per-row: 2;
+  }
+
+  .mega-menu__panel.without-promo :is(.card-grid--3, .card-grid--4) {
+    --card-grid-per-row: 3;
+  }
+<!-- VENDOR 5.1.0 - END: Overly large product card images in Tabbed Mega Menu. -->

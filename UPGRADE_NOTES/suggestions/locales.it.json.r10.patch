@@ -1,0 +1,262 @@
+diff --git a/locales/it.json b/locales/it.json
+index d969d90..5918556 100644
+--- a/locales/it.json
++++ b/locales/it.json
+@@ -1,12 +1,3 @@
+-/*
+- * ------------------------------------------------------------
+- * IMPORTANT: The contents of this file are auto-generated.
+- *
+- * This file may be updated by the Shopify admin language editor
+- * or related systems. Please exercise caution as any changes
+- * made to this file may be overwritten.
+- * ------------------------------------------------------------
+- */
+ {
+   "general": {
+     "accessibility": {
+@@ -54,7 +45,7 @@
+       "login_form_password": "Password",
+       "login_form_error": "Password errata!",
+       "login_form_submit": "Accedi",
+-      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"link\">Accedi qui<\/a>",
++      "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"link\">Accedi qui</a>",
+       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
+     },
+     "breadcrumbs": {
+@@ -88,7 +79,9 @@
+         "snapchat": "Snapchat",
+         "youtube": "YouTube",
+         "vimeo": "Vimeo",
+-        "tiktok": "TikTok"
++        "tiktok": "TikTok",
++        "discord": "Discord",
++        "line": "LINE"
+       }
+     },
+     "newsletter": {
+@@ -132,11 +125,12 @@
+       "note": {
+         "title": "Nota",
+         "caption": "Ordina istruzioni speciali",
++        "placeholder": "Nota",
+         "button": "Applicare"
+       },
+       "shipping_calculator": {
+         "title": "Spedizione",
+-        "caption": "Stimare le tariffe di spedizione",
++        "caption": "Stima spedizione",
+         "tooltip": "La spedizione e le tasse verranno calcolate al momento del pagamento",
+         "button": "Calcolare",
+         "error": "Si è verificato almeno un errore durante il recupero delle tariffe di spedizione:",
+@@ -144,6 +138,16 @@
+         "one_result": "C'è un'unica tariffa di spedizione per il tuo indirizzo:",
+         "multiple_results": "Ci sono più tariffe di spedizione per il tuo indirizzo:"
+       },
++      "discount": {
++        "title": "Sconto",
++        "caption": "Sconto",
++        "placeholder": "Codice sconto",
++        "button": "Applicare",
++        "error": "Il codice sconto non può essere applicato al tuo carrello",
++        "shipping_error": "Gli sconti sulla spedizione vengono mostrati al momento del check-out dopo l'aggiunta di un indirizzo",
++        "applied": "Codice sconto applicato: {{ code }}",
++        "remove": "Rimuovi sconto {{ code }}"
++      },
+       "recently_viewed": {
+         "empty": "Non ci sono articoli visualizzati di recente."
+       }
+@@ -167,6 +171,11 @@
+     }
+   },
+   "sections": {
++    "announcements": {
++      "carousel": "Carousel",
++      "announcement": "Annuncio",
++      "announcement_bar": "Barra degli annunci"
++    },
+     "blog_posts": {
+       "view_all": "Visualizza tutto"
+     },
+@@ -182,10 +191,11 @@
+       "view_details": "Visualizza i dettagli",
+       "address_error": "Errore nella ricerca di questo indirizzo",
+       "address_no_results": "Nessun risultato per questo indirizzo",
+-      "address_query_limit_html": "Hai superato il limite di utilizzo delle API di Google. Considera l'aggiornamento ad un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Piano Premium<\/a>.",
+-      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> e  <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> della tua applicazione."
++      "address_query_limit_html": "Hai superato il limite di utilizzo delle API di Google. Considera l'aggiornamento ad un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Piano Premium</a>.",
++      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> e  <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> della tua applicazione."
+     },
+     "slideshow": {
++      "carousel": "Carousel",
+       "play_slideshow": "Avvia presentazione",
+       "pause_slideshow": "Metti in pausa presentazione"
+     },
+@@ -198,7 +208,7 @@
+     "quick_order_list": {
+       "product_total": "Subtotale",
+       "view_cart": "Visualizza carrello",
+-      "each": "{{ money }}\/ciascuno",
++      "each": "{{ money }}/ciascuno",
+       "product": "Prodotto",
+       "variant": "Variante",
+       "variant_total": "Totale varianti",
+@@ -219,6 +229,9 @@
+       "min_error": "Questo articolo ha un minimo di {{ min }}",
+       "max_error": "Questo articolo ha un massimo di {{ max }}",
+       "step_error": "Puoi aggiungere questo articolo solo in incrementi di {{ step }}"
++    },
++    "comparison-table": {
++      "highlight_differences": "Evidenziare differenze"
+     }
+   },
+   "blogs": {
+@@ -251,9 +264,9 @@
+       "subtotal": "Subtotale",
+       "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova più tardi.",
+       "cart_quantity_error_html": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
+-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione<\/a> calcolate al momento del check-out",
++      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione</a> calcolate al momento del check-out",
+       "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del check-out",
+-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione<\/a> calcolate al check-out.",
++      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
+       "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del check-out",
+       "update": "Aggiorna",
+       "checkout": "Check-out",
+@@ -269,7 +282,19 @@
+     },
+     "gift_wrapping": {
+       "message_html": "Per {{ price }} avvolgi i prodotti in questo ordine.",
+-      "note_placeholder": "Messaggio regalo (gratuito e facoltativo)"
++      "note_placeholder": "Messaggio regalo (gratuito e facoltativo)",
++      "gift_wrapping_label": "Confezione regalo:",
++      "gift_wrapping_list": "Elenco confezioni regalo",
++      "gift_wrapping_unavailable": "Questo prodotto non è disponibile per la confezione regalo. Ti preghiamo di comprendere.",
++      "boolean": {
++        "true": "Sì",
++        "false": "Nessuno"
++      },
++      "attributes": {
++        "gift_wrap": "Confezione regalo",
++        "gift_note": "Nota regalo",
++        "target_product": "Per"
++      }
+     }
+   },
+   "collections": {
+@@ -285,7 +310,9 @@
+       "product_count_simple": {
+         "one": "{{ count }} prodotto",
+         "other": "{{ count }} prodotti"
+-      }
++      },
++      "show_on_model": "Mostra su modello",
++      "product_view": "Vista prodotto"
+     },
+     "sorting": {
+       "sort_button": "Ordina per",
+@@ -303,17 +330,17 @@
+       "in_stock_only": "Solo prodotti disponibili",
+       "clear": "Rimuovi filtro \"{{ name }}\"",
+       "clear_all": "Rimuovi tutto",
+-      "apply": "Applica"
++      "view_results": "Visualizza risultati"
+     },
+     "subcollections": {
+       "all_products": "Tutti i {{ collection }}"
+     }
+   },
+   "localization": {
+-    "country_label": "Paese\/Area geografica",
++    "country_label": "Paese/Area geografica",
+     "language_label": "Lingua",
+     "update_language": "Aggiorna lingua",
+-    "update_country": "Aggiorna paese\/area geografica"
++    "update_country": "Aggiorna paese/area geografica"
+   },
+   "contact": {
+     "form": {
+@@ -352,7 +379,7 @@
+       "address1": "Indirizzo - campo 1",
+       "address2": "Indirizzo - campo 2",
+       "city": "Città",
+-      "country": "Paese\/Area geografica",
++      "country": "Paese/Area geografica",
+       "province": "Provincia",
+       "zip": "CAP",
+       "phone": "Numero di telefono",
+@@ -395,6 +422,7 @@
+       "payment_status": "Stato del pagamento",
+       "shipping_address": "Indirizzo di spedizione",
+       "fulfillment_status": "Stato di evasione",
++      "discounts": "Sconti",
+       "discount": "Sconto",
+       "shipping": "Spedizione",
+       "tax": "Imposta",
+@@ -464,9 +492,10 @@
+       "view_product": "Vedi prodotto",
+       "pre_order": "Pre-ordine",
+       "add_to_bundle": "Aggiungi al pacchetto",
++      "shop_the_look": "Acquista il Look",
+       "vendor": "Fornitore",
+       "include_taxes": "Imposte incluse.",
+-      "shipping_policy_html": "<a href='{{ link }}'>Spedizione<\/a> calcolata alla cassa.",
++      "shipping_policy_html": "<a href='{{ link }}'>Spedizione</a> calcolata alla cassa.",
+       "will_not_ship_until": "Pronto per la spedizione {{ date }}",
+       "will_be_in_stock_after": "Di nuovo in magazzino {{ date }}",
+       "waiting_for_stock": "Inventario in arrivo",
+@@ -480,7 +509,7 @@
+       "regular_price": "Prezzo di listino",
+       "sale_price": "Prezzo scontato",
+       "unit_price": "Prezzo unitario",
+-      "from_price_html": "<small>Da<\/small> {{ price }}"
++      "from_price_html": "<small>Da</small> {{ price }}"
+     },
+     "media": {
+       "open_media": "Apri contenuti multimediali {{ index }} in finestra modale",
+@@ -505,7 +534,7 @@
+       "title": "Prezzi basati sui volumi",
+       "note": "Prezzi basati sui volumi disponibili",
+       "minimum": "Più di {{ quantity }}",
+-      "price_at_each": "a {{ price }}\/ciascuno",
++      "price_at_each": "a {{ price }}/ciascuno",
+       "price_range": "{{ minimum }} - {{ maximum }}"
+     },
+     "inventory": {
+@@ -551,7 +580,7 @@
+       "subtext": "Ecco la tua carta regalo!",
+       "disabled": "Disabilitato",
+       "expired": "Scaduto",
+-      "active": "Scade il {{ expiry }}}",
++      "active": "Scade il {{ expiry }}",
+       "redeem": "Usa questo codice alla cassa per riscattare la tua carta regalo.",
+       "shop_link": "Visita il negozio online",
+       "copy_code_success": "Codice copiato correttamente",
+@@ -565,21 +594,18 @@
+   "recipient": {
+     "form": {
+       "checkbox": "Voglio inviarlo come regalo",
++      "expanded": "Modulo destinatario del buono regalo espanso",
++      "collapsed": "Modulo destinatario del buono regalo compresso",
+       "email_label": "Email destinatario",
++      "email_label_optional_for_no_js_behavior": "Email destinatario (facoltativa)",
+       "email": "email",
+       "name_label": "Nome destinatario (facoltativo)",
+       "name": "Nome",
+       "message_label": "Messaggio (facoltativo)",
+       "message": "Messaggio",
+       "max_characters": "Massimo {{ max_chars }} caratteri",
+-      "email_label_optional_for_no_js_behavior": "Email destinatario (facoltativa)",
+       "send_on": "AAAA-MM-GG",
+-      "send_on_label": "Spedisci il giorno (opzionale)",
+-      "expanded": "Modulo destinatario del buono regalo espanso",
+-      "collapsed": "Modulo destinatario del buono regalo compresso"
++      "send_on_label": "Spedisci il giorno (opzionale)"
+     }
+-  },
+-  "date_formats": {
+-    "month_day_year": "%b %d, %Y"
+   }
+-}
++}
+\ No newline at end of file

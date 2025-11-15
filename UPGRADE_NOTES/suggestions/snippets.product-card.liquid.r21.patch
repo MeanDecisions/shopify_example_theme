@@ -1,0 +1,9 @@
+<!-- VENDOR 5.0.1 - START: Show On Model didn’t work without second image. (lines: 142-148) -->
+            {{- featured_media | image_url: width: featured_media.width | image_tag: loading: loading, widths: '180,360,540,720,900,1080', is: lazyimage -}}
+
+            {%- if show_on_model and product.metafields.theme.model_media.value != blank -%}
+              {%- assign model_media = product.metafields.theme.model_media.value -%}
+              <div class="product-card__model media media--height absolute top-0 left-0 w-full h-full hidden md:block opacity-0 invisible pointer-events-none overflow-hidden">
+                {{- model_media | image_url: width: model_media.width | image_tag: loading: loading, widths: '180,360,540,720,900,1080', is: lazyimage -}}
+              </div>
+<!-- VENDOR 5.0.1 - END: Show On Model didn’t work without second image. -->

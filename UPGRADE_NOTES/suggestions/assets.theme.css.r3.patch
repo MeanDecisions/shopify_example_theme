@@ -1,0 +1,25 @@
+<!-- VENDOR 5.1.0 - START: Portfolio section columns misaligned on mobile. (lines: 13691-13713) -->
+@media screen and (max-width: 639px) {
+  .portfolio.mobile\:card-grid--2 .profile .media {
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+  }
+
+  .portfolio.mobile\:card-grid--2 .profile__content {
+    position: relative;
+    padding: var(--sp-4);
+    background-color: rgb(var(--color-background));
+    backdrop-filter: none;
+  }
+
+  .portfolio.mobile\:card-grid--2 .profile__content .heading {
+    font-size: var(--text-lg);
+    line-height: 1.25;
+  }
+
+  .portfolio.mobile\:card-grid--2 .profile__button {
+    position: absolute;
+    inset-block-end: calc(100% + var(--sp-3));
+    inset-inline-end: var(--sp-3);
+  }
+<!-- VENDOR 5.1.0 - END: Portfolio section columns misaligned on mobile. -->

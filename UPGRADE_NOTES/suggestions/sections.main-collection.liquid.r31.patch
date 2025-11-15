@@ -1,0 +1,115 @@
+<!-- VENDOR 5.0.0 - START: Sticky filter bar. (lines: 54-166) -->
+      {%- if enable_filtering or enable_sorting or subcollections != blank -%}
+        <facets-topbar id="FacetsTopbar-{{ section.id }}" class="collection__topbar hidden xl:block xl:sticky z-10" data-gap="0">
+          <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} facet-topbar flex items-center gap-4">
+            {%- if enable_filtering and collection.all_products_count > 0 -%}
+              {%- if filter_type == 'drawer' -%}
+                {%- render 'facets-drawer',
+                  results: collection,
+                  collapsed: section.settings.filter_collapsed,
+                  enable_filtering: enable_filtering,
+                  enable_sorting: enable_sorting,
+                  enable_color_swatches: section.settings.filter_color_swatches,
+                  filter_count: filter_count,
+                  buttons_style: buttons_style,
+                  section_id: section.id
+                -%}
+              {%- elsif filter_type == 'sidebar' -%}
+                <div class="facet-wrapper">
+                  <button class="button button--{{ buttons_style }} icon-with-text" type="button" is="filters-toggle" aria-controls="FacetFiltersContainer" aria-expanded="true">
+                    <span class="btn-fill" data-fill></span>
+                    <span class="btn-text">
+                      {%- liquid
+                        render 'icon', icon: 'filter'
+                        echo 'collections.filtering.filter_hide_button' | t
+                      -%}
+                    </span>
+                    <span class="btn-text btn-duplicate">
+                      {%- liquid
+                        render 'icon', icon: 'filter'
+                        echo 'collections.filtering.filter_show_button' | t
+                      -%}
+                      <facet-count class="facet-count flex items-center justify-center text-xs font-medium rounded-full"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
+                    </span>
+                  </button>
+                </div>
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- if subcollections != blank -%}
+              {%- render 'subcollections',
+                main_menu: subcollections.settings.menu,
+                show_count: subcollections.settings.show_count,
+                context: 'page'
+              -%}
+            {%- else -%}
+              <p id="ProductCount" class="grow text-base lg:text-lg" role="status">
+                {%- liquid
+                  if collection.results_count
+                    echo 'general.search.results_with_count' | t: terms: collection.terms, count: collection.results_count
+                  elsif collection.products_count == collection.all_products_count
+                    echo 'collections.general.product_count_simple' | t: count: collection.products_count
+                  else
+                    echo 'collections.general.product_count' | t: product_count: collection.products_count, count: collection.all_products_count
+                  endif
+                -%}
+              </p>
+            {%- endif -%}
+
+            {%- if show_on_model -%}
+              <div class="facet-wrapper">
+                {%- if show_on_model -%}
+                  <button class="link model-view" type="button" is="model-view">
+                    <span class="link-text">{{ 'collections.general.show_on_model' | t }}</span>
+                    <span class="link-text">{{ 'collections.general.product_view' | t }}</span>
+                  </button>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            {%- if enable_sorting and collection.all_products_count > 0 -%}
+              {%- liquid
+                assign sort_by = collection.sort_by | default: collection.default_sort_by
+                for option in collection.sort_options
+                  if option.value == sort_by
+                    assign sort_by_name = option.name
+                    break
+                  endif
+                endfor
+              -%}
+              <div class="facet-sorting inline-flex items-center gap-6" id="SortByContainer">
+                {%- unless show_on_model -%}
+                  <span>{{ 'collections.sorting.sort_by_label' | t }}</span>
+                {%- endunless -%}
+                <facet-sort class="sort-wrapper relative">
+                  <hover-element class="button button--{{ buttons_style }} sort-by whitespace-nowrap overflow-hidden z-3">
+                    <span class="btn-fill" data-fill></span>
+                    <div class="btn-text">
+                      <span class="sort-header flex items-center justify-center gap-5 relative w-full">
+                        <span class="sort-selection">{{ sort_by_name | escape }}</span>
+                        <span class="sort-title text-sm uppercase absolute left-0 opacity-0 tracking-widest">{{ 'collections.sorting.sort_button' | t }}</span>
+                        <span class="sort-close flex items-center justify-center rounded-full">
+                          {%- render 'icon', icon: 'close', size: 'sm' -%}
+                        </span>
+                      </span>
+                      <ul class="sort-listbox text-left grid gap-2 absolute left-0 opacity-0 invisible w-full h-auto">
+                        {%- for option in collection.sort_options -%}
+                          <li class="opacity-0 relative">
+                            <input id="SortBy-{{ option.value }}" class="sr-only" name="sort_by" type="radio" value="{{ option.value }}"{% if option.value == sort_by %} checked{% endif %} />
+                            <label for="SortBy-{{ option.value }}" class="reversed-link text-xl">{{ option.name | escape }}</label>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    </div>
+                  </hover-element>
+                </facet-sort>
+              </div>
+            {%- endif -%}
+          </div>
+          {%- if section.settings.rounded -%}
+            {%- render 'corner', dir: 'bottom', border: true, prefix: 'collection' -%}
+          {%- else -%}
+            <span class="collection__cutout cutout opacity-0 absolute left-0 top-100 w-full pointer-events-none"></span>
+          {%- endif -%}
+        </facets-topbar>
+<!-- VENDOR 5.0.0 - END: Sticky filter bar. -->
