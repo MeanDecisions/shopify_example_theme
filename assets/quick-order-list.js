@@ -211,7 +211,7 @@ if (!customElements.get('quick-order-list')) {
           sections_url: this.getAttribute('data-product-url')
         });
     
-        fetch(`${theme.routes.cart_update_url}`, { ...theme.utils.fetchConfig(), ...{ body } })
+        fetch(theme.routes.cart_update_url, { ...theme.utils.fetchConfig(), ...{ body } })
           .then((response) => response.json())
           .then((parsedState) => {
             theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.cartUpdate, { source: 'quick-order-list', cart: parsedState, target, line, name });

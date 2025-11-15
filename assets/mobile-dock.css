@@ -90,10 +90,15 @@
     transform: translateY(calc(-100% - var(--border-radius)));
   }
 
+  .header-sticky.header-hidden~.page-container .comparison-table__sticky {
+    inset-block-start: 0;
+  }
+
   .header-sticky.header-hidden~.mobile-dock-section .mobile-dock,
   .mobile-dock-section.active .mobile-dock,
   .mobile-dock-section.shopify-active .mobile-dock,
-  .mobile-dock-section .mobile-dock.active {
+  .mobile-dock-section .mobile-dock.active,
+  .mobile-dock-section .mobile-dock:has(> .dock__item:focus-visible) {
     transform: translateY(0)
   }
 
@@ -113,6 +118,14 @@
   .header-sticky.header-hidden~.mobile-dock-section~.page-container .product-sticky-form,
   .mobile-dock-section.active~.page-container .product-sticky-form {
     transform: translateY(calc(var(--mobile-dock-height) * -1));
+  }
+
+  .header-sticky~.page-container .scrollspy-section {
+    transition: inset-block-start var(--animation-primary);
+  }
+
+  .header-sticky.header-hidden~.page-container .scrollspy-section {
+    inset-block-start: var(--sp-2);
   }
 
   .mobile-dock[loaded] {

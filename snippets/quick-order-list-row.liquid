@@ -1,15 +1,29 @@
-{% comment %}
-  Variant List Row
+{% doc %}
+  Renders a table row for quick order lists with variant details and quantity controls.
 
-  Accepts:
-  - item: {Object} Variant or Product object
-  - sku: {String} Sku of Product or Variant (optional)
-  - image: {Object} Product or Variant image (optional)
-  - product_id: {String} The ID of the current product.
-  - section_id: {String} The ID of section to which this snippet belongs.
-  Usage:
-  {% render 'quick-order-list-row' variant: variant %}
-{% endcomment %}
+  Displays pricing with volume discounts, quantity rules, and cart update functionality.
+
+  @param {object} item - Product or variant object to display
+  @param {object} variant - Specific variant for pricing and cart
+  @param {string} product_id - Product ID for targeting
+  @param {string} section_id - Section ID for uniqueness
+  @param {object} [image] - Product/variant image
+  @param {string} [sku] - SKU code to display
+  @param {boolean} [show_image] - Display product image
+  @param {boolean} [show_sku] - Display SKU below title
+
+  @example
+  {% render 'quick-order-list-row',
+    item: variant,
+    variant: variant,
+    product_id: product.id,
+    section_id: section.id,
+    image: variant.image,
+    show_image: true,
+    show_sku: true,
+    sku: variant.sku
+  %}
+{% enddoc %}
 
 {%- assign cart_qty = cart | item_count_for_variant: variant.id -%}
 {%- capture variant_price -%}
@@ -178,12 +192,12 @@
   {%- endif -%}
   <div class="cart-quantity__info flex items-center justify-start gap-3 md:gap-4">
     {%- if has_qty_rules or has_vol_pricing -%}
-      <button type="button" class="hotspot hidden md:flex items-center justify-center relative cursor-pointer">
+      <hover-element class="hotspot hidden md:flex items-center justify-center relative cursor-pointer">
         {%- render 'icon', icon: 'info', size: 'lg' -%}
-        <div class="hotspot__content grid gap-6 items-center absolute z-1 pointer-events-none overflow-hidden text-left">
+        <div class="hotspot__content absolute z-1 pointer-events-none cursor-default grid gap-6 items-center text-left">
           {{- qty_rules_vol_pricing -}}
         </div>
-      </button>
+      </hover-element>
     {%- endif -%}
     <div class="flex gap-3">
       {%- if has_qty_rules or has_vol_pricing -%}
@@ -198,7 +212,7 @@
         >
           <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="VolumePricing-{{ section_id }}-{{ variant.id }}" aria-expanded="false"></overlay-element>
           <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
-            <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative">
+            <gesture-element class="drawer__header flex justify-between opacity-0 invisible relative" tabindex="0">
               <span class="drawer__title heading title-md grid gap-4">
                 {{ item.title | escape }}
               </span>

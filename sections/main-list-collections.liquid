@@ -10,7 +10,7 @@
     {%- if section.settings.heading != blank -%}
       <div class="title-wrapper leading-none {{ section.settings.heading_alignment }}">
         <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }}">
-          <split-words class="split-words block" data-animate="fade-up-large">{{ section.settings.heading | escape }}</split-words>
+          <split-words class="split-words js-invisible block" data-animate="fade-up-large">{{ section.settings.heading | escape }}</split-words>
         </{{ section.settings.heading_tag }}>
       </div>
     {%- endif -%}
@@ -40,13 +40,13 @@
               endif
 
               for collection in collections
-                render 'collection-card', collection: collection, image_type: section.settings.image_type, image_ratio: section.settings.image_ratio, overlay_content: section.settings.overlay_content, show_products_count: section.settings.show_products_count
+                render 'collection-card', collection: collection, card_style: section.settings.card_style, image_type: section.settings.image_type, image_ratio: section.settings.image_ratio, show_products_count: section.settings.show_products_count
               endfor
 
             else
               for block in section.blocks
                 assign collection = collections[block.settings.collection]
-                render 'collection-card', collection: collection, image_type: section.settings.image_type, image_ratio: section.settings.image_ratio, overlay_content: section.settings.overlay_content, show_products_count: section.settings.show_products_count, block: block
+                render 'collection-card', collection: collection, card_style: section.settings.card_style, image_type: section.settings.image_type, image_ratio: section.settings.image_ratio, show_products_count: section.settings.show_products_count, block: block
               endfor
             endif
           -%}
@@ -120,6 +120,30 @@
       "info": "t:sections.main-list-collections.settings.sort.info"
     },
     {
+      "type": "header",
+      "content": "t:sections.main-list-collections.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "options": [
+        {
+          "value": "standard",
+          "label": "t:sections.main-list-collections.settings.style.options__1.label"
+        },
+        {
+          "value": "card",
+          "label": "t:sections.main-list-collections.settings.style.options__2.label"
+        },
+        {
+          "value": "overlap",
+          "label": "t:sections.main-list-collections.settings.style.options__3.label"
+        }
+      ],
+      "default": "card",
+      "label": "t:sections.main-list-collections.settings.style.label"
+    },
+    {
       "type": "select",
       "id": "image_type",
       "options": [
@@ -163,12 +187,6 @@
       "default": "landscape",
       "label": "t:sections.global.settings.image_ratio.label",
       "info": "t:sections.main-list-collections.settings.image_ratio.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "overlay_content",
-      "default": false,
-      "label": "t:sections.main-list-collections.settings.overlay_content.label"
     },
     {
       "type": "checkbox",

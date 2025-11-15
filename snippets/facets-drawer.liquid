@@ -1,28 +1,39 @@
-{%- comment -%}
-  Renders facets drawer
+{%- doc -%}
+  Renders a mobile-optimized filter drawer with trigger button and full filtering interface.
 
-  Accepts:
-  - results: {Object} Liquid 'collection' or 'search' object
-  - enable_color_swatches: {Boolean}
-  - collapsed: {Boolean}
-  - enable_filtering: {Boolean}
-  - enable_sorting: {Boolean}
-  - filter_count: {Number}
-  - section_id: {String}
+  Provides slide-out drawer containing filters and sort options for collections/search.
 
-  Usage:
-  {% render 'facets-drawer', results: collection, collapsed: true, enable_color_swatches: true, filter_count: count %}
-{%- endcomment -%}
+  @param {object} results - Shopify collection or search results object
+  @param {boolean} [enable_filtering] - Display filter options
+  @param {boolean} [enable_sorting] - Display sort dropdown
+  @param {boolean} [enable_color_swatches] - Show colors as swatches
+  @param {boolean} [collapsed] - Start filter groups collapsed
+  @param {number} filter_count - Active filter count for badge
+  @param {string} buttons_style - Visual button style variant
+  @param {string} section_id - Parent section ID for state management
+
+  @example
+  {% render 'facets-drawer',
+     results: collection,
+     enable_filtering: true,
+     enable_sorting: true,
+     enable_color_swatches: true,
+     collapsed: false,
+     filter_count: filter_count,
+     buttons_style: buttons_style,
+     section_id: section.id
+  %}
+{%- enddoc -%}
 
 <div class="facet-wrapper">
-  <button class="button button--secondary icon-with-text" type="button" is="hover-button" aria-controls="FacetDrawer" aria-expanded="false">
+  <button class="button button--{{ buttons_style }} icon-with-text" type="button" is="hover-button" aria-controls="FacetDrawer" aria-expanded="false">
     <span class="btn-fill" data-fill></span>
     <span class="btn-text">
       {%- liquid
         render 'icon', icon: 'filter'
         echo 'collections.filtering.filter_show_button' | t
       -%}
-      <facet-count class="count flex items-center justify-center text-xs font-medium rounded-full"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
+      <facet-count class="facet-count flex items-center justify-center text-xs font-medium rounded-full"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
     </span>
   </button>
   <drawer-element id="FacetDrawer" class="facet-drawer drawer drawer--start z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
@@ -66,8 +77,8 @@
             <button class="button button--primary w-full" type="button" is="hover-button" aria-controls="FacetDrawer" aria-expanded="false">
               <span class="btn-fill" data-fill></span>
               <span class="btn-text flex gap-1">
-                {{- 'collections.filtering.apply' | t -}}
-                <facet-count class="block"{% if filter_count == 0 %} hidden{% endif %}>{{ filter_count }}</facet-count>
+                {{- 'collections.filtering.view_results' | t -}}
+                <results-count class="block">{{ results.results_count | default: results.products_count }}</results-count>
               </span>
             </button>
           </div>

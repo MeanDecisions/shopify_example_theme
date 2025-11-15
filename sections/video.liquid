@@ -1,10 +1,16 @@
 {%- liquid
-  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
-  assign video_mobile = section.settings.video_mobile | default: section.settings.video
-
-  if video_mobile
-    assign poster_mobile = video_mobile.preview_image | default: section.settings.cover_image_mobile
+  if section.index == 1
+    assign loading = 'eager'
+    assign fetchpriority = 'high'
+    assign lazyimage = null
+  else
+    assign loading = 'lazy'
+    assign fetchpriority = 'low'
+    assign lazyimage = 'lazy-image'
   endif
+
+  assign poster = section.settings.video.preview_image | default: section.settings.cover_image
+  assign poster_mobile = section.settings.video_mobile.preview_image | default: section.settings.cover_image_mobile
 -%}
 
 <style>
@@ -12,7 +18,7 @@
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
     {%- render 'section-variables', section: section -%}
-    {%- if poster != null and section.settings.image_height == 'adapt' %}
+    {%- if poster != blank and section.settings.image_height == 'adapt' %}
       --ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;
     {% endif -%}
   }
@@ -32,6 +38,9 @@
       {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
       {%- if section.settings.video_mobile or section.settings.video_url_mobile -%}
         {%- render 'video',
+          loading: loading,
+          fetchpriority: fetchpriority,
+          lazyimage: lazyimage,
           sizes: sizes,
           video: section.settings.video_mobile,
           video_url: section.settings.video_url_mobile,
@@ -47,6 +56,9 @@
       {%- endif -%}
 
       {%- render 'video',
+        loading: loading,
+        fetchpriority: fetchpriority,
+        lazyimage: lazyimage,
         sizes: sizes,
         video: section.settings.video,
         video_url: section.settings.video_url,
@@ -96,6 +108,7 @@
       "info": "t:sections.video.settings.video_url.info"
     },
     {
+      "visible_if": "{{ section.settings.video_url != blank }}",
       "type": "image_picker",
       "id": "cover_image",
       "label": "t:sections.video.settings.cover_image.label"
@@ -161,14 +174,18 @@
         },
         {
           "label": "t:sections.global.settings.image_height.options__10.label",
-          "value": "850px"
+          "value": "800px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__11.label",
-          "value": "900px"
+          "value": "850px"
         },
         {
           "label": "t:sections.global.settings.image_height.options__12.label",
+          "value": "900px"
+        },
+        {
+          "label": "t:sections.global.settings.image_height.options__13.label",
           "value": "100vh"
         }
       ],
@@ -192,6 +209,7 @@
       "info": "t:sections.video.settings.video_url.info"
     },
     {
+      "visible_if": "{{ section.settings.video_url_mobile != blank }}",
       "type": "image_picker",
       "id": "cover_image_mobile",
       "label": "t:sections.video.settings.cover_image_mobile.label"
@@ -285,7 +303,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.video.presets.name"
+      "name": "t:sections.video.name",
+      "category": "t:categories.media"
     }
   ],
   "disabled_on": {

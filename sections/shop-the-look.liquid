@@ -37,7 +37,7 @@
     <shop-the-look class="shop-the-look grid gap-6">
       {%- render 'section-heading', section: section -%}
 
-      <lookbook-element class="banner block media--adapt mobile:media--adapt relative overflow-hidden">
+      <lookbook-element class="banner block media--adapt mobile:media--adapt{% if section.settings.image == blank %} media--placeholder{% endif %} relative overflow-hidden">
         <div class="banner__media w-full h-full overflow-hidden">
           <picture class="media media--height w-full h-full block relative">
             {%- if section.settings.image != blank -%}
@@ -64,7 +64,7 @@
           {%- for block in section.blocks -%}
             {%- liquid
               assign product = block.settings.product
-              if product == null
+              if product == blank
                 assign placeholder = true
               endif
             -%}
@@ -103,7 +103,7 @@
                 </a>
               {%- endif -%}
             {%- else -%}
-              <button type="button" disabled class="hotspot flex items-center justify-center absolute z-1 cursor-pointer" aria-disabled="true" aria-current="{% if forloop.first %}true{% else %}false{% endif %}" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}></button>
+              <button type="button" disabled class="hotspot flex items-center justify-center absolute z-1 cursor-pointer" aria-label="{{ 'onboarding.product_title' | t | escape }}" aria-disabled="true" aria-current="{% if forloop.first %}true{% else %}false{% endif %}" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}></button>
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
@@ -126,6 +126,8 @@
             show_countdown: settings.product_countdown,
             show_quick_add: settings.product_quick_add,
             show_quick_view: settings.product_quick_view,
+            vertical_badges: settings.product_vertical_badges,
+            show_sold_out: settings.product_sold_out,
             show_save_amount: settings.product_save_amount,
             save_type: settings.product_save_type,
             show_icon_list: false,
@@ -272,12 +274,14 @@
       "label": "t:sections.global.settings.button_link.label"
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_external",
       "label": "t:sections.global.settings.button_external.label",
       "default": false
     },
     {
+      "visible_if": "{{ section.settings.button_label != blank }}",
       "type": "checkbox",
       "id": "button_icon",
       "label": "t:sections.global.settings.button_icon.label",
@@ -325,6 +329,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -528,6 +533,7 @@
   "presets": [
     {
       "name": "t:sections.shop-the-look.name",
+      "category": "t:categories.products",
       "blocks": [
         {
           "type": "product",

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "accessibility": {
@@ -54,7 +45,7 @@
       "login_form_password": "Heslo",
       "login_form_error": "Nesprávné heslo!",
       "login_form_submit": "Přihlásit se",
-      "admin_link_html": "Jste majitel obchodu? <a href=\"\/admin\" class=\"link\">Přihlásit se zde<\/a> ",
+      "admin_link_html": "Jste majitel obchodu? <a href=\"\/admin\" class=\"link\">Přihlásit se zde<\/a>",
       "powered_by_shopify_html": "Tento obchod bude podporován platformou {{ shopify }}"
     },
     "breadcrumbs": {
@@ -88,7 +79,9 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "discord": "Discord",
+        "line": "LINE"
       }
     },
     "newsletter": {
@@ -132,17 +125,28 @@
       "note": {
         "title": "Poznámka k objednávce",
         "caption": "Speciální pokyny k objednávce",
+        "placeholder": "Poznámka k objednávce",
         "button": "Použít"
       },
       "shipping_calculator": {
         "title": "Doprava",
-        "caption": "Náklady na dopravu",
+        "caption": "Odhad dopravy",
         "tooltip": "Náklady na dopravu a daně budou připočítány na stránce doprava a platba v pokladně.",
         "button": "Vypočítat",
         "error": "Při získávání sazeb za dopravu došlo k jedné nebo více chybám.",
         "not_found": "Omlouváme se, ale na zadanou adresu nelze zboží doručit.",
         "one_result": "Na vaši adresu je k dispozici jedna sazba za dopravu. ",
         "multiple_results": "Na vaši adresu je k dispozici několik sazeb za dopravu."
+      },
+      "discount": {
+        "title": "Sleva",
+        "caption": "Sleva",
+        "placeholder": "Slevový kód",
+        "button": "Použít",
+        "error": "Slevový kód nelze na váš košík uplatnit",
+        "shipping_error": "Slevy na dopravu se zobrazí při placení po přidání adresy.",
+        "applied": "Uplatněný slevový kód: {{ code }}",
+        "remove": "Odebrat slevu {{ code }}"
       },
       "recently_viewed": {
         "empty": "Vaše nedávno zobrazené položky jsou prázdné."
@@ -167,6 +171,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Karusel",
+      "announcement": "Oznámení",
+      "announcement_bar": "Panel oznámení"
+    },
     "blog_posts": {
       "view_all": "Zobrazit vše"
     },
@@ -186,6 +195,7 @@
       "auth_error_html": "Došlo k problému s ověřením vašeho účtu Google Maps. Vytvořte a povolte <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">a Geocoding API<\/a> oprávnění pro vaši aplikaci."
     },
     "slideshow": {
+      "carousel": "Karusel",
       "play_slideshow": "Spustit prezentaci",
       "pause_slideshow": "Pozastavit prezentaci"
     },
@@ -198,7 +208,7 @@
     "quick_order_list": {
       "product_total": "Mezisoučet produktu",
       "view_cart": "Zobrazit košík",
-      "each": "{{ money }}\/ea",
+      "each": "{{ money }}/ea",
       "product": "Produkt",
       "variant": "Varianta",
       "variant_total": "Celkový počet variant",
@@ -219,6 +229,9 @@
       "min_error": "Tato položka má minimální množství {{ min }}",
       "max_error": "Tato položka má maximální množství {{ max }}",
       "step_error": "Tuto položku můžete přidávat pouze v krocích po {{ step }}"
+    },
+    "comparison-table": {
+      "highlight_differences": "Zvýraznit rozdíly"
     }
   },
   "blogs": {
@@ -269,7 +282,19 @@
     },
     "gift_wrapping": {
       "message_html": "Za {{ price }}, prosím zabalte produkty v této objednávce.",
-      "note_placeholder": "Dárková zpráva (zdarma a volitelná)"
+      "note_placeholder": "Dárková zpráva (Nepovinné)",
+      "gift_wrapping_label": "Dárkové balení:",
+      "gift_wrapping_list": "Seznam dárkového balení",
+      "gift_wrapping_unavailable": "Tento produkt není dostupný pro dárkové balení. Prosím o pochopení.",
+      "boolean": {
+        "true": "Ano",
+        "false": "Žádné"
+      },
+      "attributes": {
+        "gift_wrap": "Dárkové balení",
+        "gift_note": "Dárkový vzkaz",
+        "target_product": "Pro"
+      }
     }
   },
   "collections": {
@@ -285,7 +310,9 @@
       "product_count_simple": {
         "one": "{{ count }} produkt",
         "other": "{{ count }} produktů"
-      }
+      },
+      "show_on_model": "Zobrazit na modelu",
+      "product_view": "Zobrazení produktu"
     },
     "sorting": {
       "sort_button": "Seřadit",
@@ -303,7 +330,7 @@
       "in_stock_only": "Pouze skladem",
       "clear": "Odstranit filtr \"{{ name }}\"",
       "clear_all": "Vymazat vše",
-      "apply": "Zobrazit"
+      "view_results": "Zobrazit výsledky"
     },
     "subcollections": {
       "all_products": "Toate {{ collection }}"
@@ -395,6 +422,7 @@
       "payment_status": "Stav platby",
       "shipping_address": "Dodací adresa",
       "fulfillment_status": "Stav objednávky",
+      "discounts": "Slevy",
       "discount": "Sleva",
       "shipping": "Doprava",
       "tax": "Daň",
@@ -464,6 +492,7 @@
       "view_product": "Zobrazit produkt",
       "pre_order": "Předobjednávka",
       "add_to_bundle": "Přidat do balíčku",
+      "shop_the_look": "Nakupujte styl",
       "vendor": "Prodejce",
       "include_taxes": "Daň je zahrnuta v ceně. ",
       "shipping_policy_html": "<a href='{{ link }}'>Doprava<\/a> bude připočtena na stránce doprava a platba v pokladně.",
@@ -505,7 +534,7 @@
       "title": "Cenová sleva na základě objemu",
       "note": "Dostupná cenová sleva na základě objemu",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "za {{ price }}\/ea",
+      "price_at_each": "za {{ price }}/ea",
       "price_range": "{{ minimum }} - {{ maximum }}"
     },
     "inventory": {
@@ -578,8 +607,5 @@
       "send_on": "RRRR-MM-DD",
       "send_on_label": "Odeslat na štítku (volitelný)"
     }
-  },
-  "date_formats": {
-    "month_day_year": "%d %b, %Y"
   }
 }

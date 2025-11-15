@@ -44,17 +44,18 @@
     {%- endcapture -%}
     {%- render 'section-heading', section: section, section_button: indicators -%}
 
-    <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+    <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card"{% if section.settings.carousel_on_desktop or section.settings.swipe_on_mobile %} tabindex="0"{% endif %}>
       <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
           {%- render 'collection-card',
             block: block,
             collection: collection,
+            card_style: section.settings.card_style,
             image_type: section.settings.image_type,
             image_ratio: section.settings.image_ratio,
             show_products_count: section.settings.show_products_count,
-            position: forloop.index,
+            position: forloop.index
           -%}
         {%- endfor -%}
       </motion-list>
@@ -90,19 +91,28 @@
   "name": "t:sections.collection-list.name",
   "settings": [
     {
-      "type": "range",
-      "id": "columns",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.global.settings.columns.label"
+      "type": "header",
+      "content": "t:sections.main-list-collections.settings.header.content"
     },
     {
-      "type": "checkbox",
-      "id": "carousel_on_desktop",
-      "label": "t:sections.global.settings.carousel_on_desktop.label",
-      "default": true
+      "type": "select",
+      "id": "card_style",
+      "options": [
+        {
+          "value": "standard",
+          "label": "t:sections.main-list-collections.settings.style.options__1.label"
+        },
+        {
+          "value": "card",
+          "label": "t:sections.main-list-collections.settings.style.options__2.label"
+        },
+        {
+          "value": "overlap",
+          "label": "t:sections.main-list-collections.settings.style.options__3.label"
+        }
+      ],
+      "default": "card",
+      "label": "t:sections.main-list-collections.settings.style.label"
     },
     {
       "type": "select",
@@ -161,6 +171,21 @@
       "default": false,
       "label": "t:sections.collection-list.settings.show_view_all.label",
       "info": "t:sections.collection-list.settings.show_view_all.info"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.global.settings.columns.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "carousel_on_desktop",
+      "label": "t:sections.global.settings.carousel_on_desktop.label",
+      "default": true
     },
     {
       "type": "header",
@@ -339,6 +364,7 @@
       "label": "t:sections.global.settings.highlighted_text.label"
     },
     {
+      "visible_if": "{{ section.settings.highlighted_text == 'scribble' }}",
       "type": "select",
       "id": "highlighted_scribble",
       "options": [
@@ -517,7 +543,8 @@
   ],
   "presets": [
     {
-      "name": "t:sections.collection-list.presets.name",
+      "name": "t:sections.collection-list.name",
+      "category": "t:categories.collections",
       "blocks": [
         {
           "type": "collection"

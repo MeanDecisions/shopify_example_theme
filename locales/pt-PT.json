@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "accessibility": {
@@ -54,7 +45,7 @@
       "login_form_password": "Password",
       "login_form_error": "Palavra-passe errada!",
       "login_form_submit": "Entrar",
-      "admin_link_html": "É o proprietário da loja? <a href=\"\/admin\" class=\"link\">Iniciar sessão <\/a>",
+      "admin_link_html": "É o proprietário da loja? <a href=\"/admin\" class=\"link\">Iniciar sessão </a>",
       "powered_by_shopify_html": "Developed by iSense"
     },
     "breadcrumbs": {
@@ -88,7 +79,9 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "discord": "Discord",
+        "line": "LINE"
       }
     },
     "newsletter": {
@@ -126,23 +119,34 @@
         "other": "{{ count }} artigos"
       },
       "free_shipping": {
-        "remaining_html": "Spend {{ remaining_amount }} more to reach free shipping!",
-        "congratulations_html": "Tens direito a envio gratuito. "
+        "remaining_html": "Só falta {{ remaining_amount }} para teres portes grátis!",
+        "congratulations_html": "Conseguiste portes grátis!"
       },
       "note": {
         "title": "Nota de encomenda",
         "caption": "Encomendar instruções especiais",
+        "placeholder": "Nota de encomenda",
         "button": "Aplicar"
       },
       "shipping_calculator": {
         "title": "Envio",
-        "caption": "Estimativa das taxas de envio",
+        "caption": "Estimar envio",
         "tooltip": "Os portes de envio e impostos serão calculados no momento do checkout",
         "button": "Calcular",
-        "error": "Ocorreram um ou mais erros durante a recuperação das taxas de envio:",
+        "error": "Ocorreram um ou mais erros durante a recuperação dos custos de envio:",
         "not_found": "Lamentamos, mas não enviamos para o seu endereço.",
         "one_result": "Existe uma taxa de envio para o seu endereço",
-        "multiple_results": "Existem várias taxas de envio para a sua morada:"
+        "multiple_results": "Existem diferentes opções de envio para a sua morada:"
+      },
+      "discount": {
+        "title": "Desconto",
+        "caption": "Desconto",
+        "placeholder": "Código de desconto",
+        "button": "Aplicar",
+        "error": "O código de desconto não pode ser aplicado ao seu carrinho",
+        "shipping_error": "Os descontos de envio são apresentados na finalização da compra após adicionar um endereço",
+        "applied": "Código de desconto aplicado: {{ code }}",
+        "remove": "Remover desconto {{ code }}"
       },
       "recently_viewed": {
         "empty": "O seu visualizado recentemente está vazio."
@@ -167,6 +171,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Carrossel",
+      "announcement": "Comunicado",
+      "announcement_bar": "Barra de comunicado"
+    },
     "blog_posts": {
       "view_all": "Ver tudo"
     },
@@ -182,10 +191,11 @@
       "view_details": "Ver detalhes",
       "address_error": "Erro ao procurar este endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Ultrapassou o limite de utilização da API do Google. Considere atualizar para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and  <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> permissions of your app."
+      "address_query_limit_html": "Ultrapassou o limite de utilização da API do Google. Considere atualizar para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
+      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> and  <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> permissions of your app."
     },
     "slideshow": {
+      "carousel": "Carrossel",
       "play_slideshow": "Reproduzir slideshow",
       "pause_slideshow": "Pausar slideshow"
     },
@@ -198,7 +208,7 @@
     "quick_order_list": {
       "product_total": "Subtotal do produto",
       "view_cart": "Ver carrinho",
-      "each": "{{ money }}\/ea",
+      "each": "{{ money }}/ea",
       "product": "Produto",
       "variant": "Variante",
       "variant_total": "Variante total",
@@ -219,6 +229,9 @@
       "min_error": "Este item tem um mínimo de {{ min }}",
       "max_error": "Este item tem no máximo {{ max }}",
       "step_error": "Só pode adicionar este item em incrementos de {{ step }}"
+    },
+    "comparison-table": {
+      "highlight_differences": "Realçar diferenças"
     }
   },
   "blogs": {
@@ -251,12 +264,12 @@
       "subtotal": "Subtotal",
       "cart_error": "Ocorreu um erro ao atualizar o seu carrinho. Tente novamente.",
       "cart_quantity_error_html": "É possível adicionar apenas {{ quantity }} unidade(s) deste item ao carrinho.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxas e <a href=\"{{ link }}\">transportes<\/a> calculado no checkout.",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxas e <a href=\"{{ link }}\">custos de envio</a> calculados no checkout.",
       "taxes_included_but_shipping_at_checkout": "Impostos incluídos e portes calculados no momento da finalização da compra.",
-      "taxes_included_and_shipping_policy_html": "Taxa incluída.  <a href=\"{{ link }}\">Transportes<\/a> calculado no checkout.",
+      "taxes_included_and_shipping_policy_html": "Taxa incluída.  <a href=\"{{ link }}\">Custos de envio</a> calculados no checkout.",
       "taxes_and_shipping_at_checkout": "Impostos incluídos e portes calculados no momento da finalização da compra.",
       "update": "Atualizar Carrinho ",
-      "checkout": "Adicionar ao Carrinho",
+      "checkout": "Finalizar compra",
       "we_accept": "Nós aceitamos",
       "empty": "O teu carrinho está vazio.",
       "continue_shopping": "Continuar a comprar "
@@ -269,7 +282,19 @@
     },
     "gift_wrapping": {
       "message_html": "Por {{ preço }}, embrulhe os produtos nesta encomenda.",
-      "note_placeholder": "Mensagem de oferta (gratuita e opcional)"
+      "note_placeholder": "Mensagem de oferta (gratuita e opcional)",
+      "gift_wrapping_label": "Embrulho de presente:",
+      "gift_wrapping_list": "Lista de embalagem de presente",
+      "gift_wrapping_unavailable": "Este produto não está disponível para embalagem de presente. Por favor, compreenda.",
+      "boolean": {
+        "true": "Sim",
+        "false": "Nenhum"
+      },
+      "attributes": {
+        "gift_wrap": "Embrulho de presente",
+        "gift_note": "Nota de presente",
+        "target_product": "Para"
+      }
     }
   },
   "collections": {
@@ -285,7 +310,9 @@
       "product_count_simple": {
         "one": "{{ count }} produtos",
         "other": "{{ count }} produtos"
-      }
+      },
+      "show_on_model": "Mostrar no modelo",
+      "product_view": "Vista do produto"
     },
     "sorting": {
       "sort_button": "Ordenar por",
@@ -303,17 +330,17 @@
       "in_stock_only": "Somente em stock",
       "clear": "Remover filtro \"{{ name }}\"",
       "clear_all": "Limpar tudo",
-      "apply": "Aplicar"
+      "view_results": "Ver resultados"
     },
     "subcollections": {
       "all_products": "Todos {{ collection }}"
     }
   },
   "localization": {
-    "country_label": "País\/região",
+    "country_label": "País/região",
     "language_label": "Idioma",
     "update_language": "Atualizar idioma",
-    "update_country": "Atualizar país\/região"
+    "update_country": "Atualizar país/região"
   },
   "contact": {
     "form": {
@@ -352,9 +379,9 @@
       "address1": "Morada 1",
       "address2": "Morada 2",
       "city": "Cidade",
-      "country": "Country\/region",
+      "country": "Country/region",
       "province": "Province",
-      "zip": "Postal\/ZIP code",
+      "zip": "Postal/ZIP code",
       "phone": "Telemóvel",
       "set_default": "Definir como endereço predefinido",
       "add": "Adicionar endereço",
@@ -395,6 +422,7 @@
       "payment_status": "Estado de pagamento",
       "shipping_address": "Endereço para envio",
       "fulfillment_status": "Estado de conformidade",
+      "discounts": "Descontos",
       "discount": "Desconto",
       "shipping": "Envio",
       "tax": "Imposto",
@@ -450,7 +478,7 @@
       "color_swatch_trigger": "Cor",
       "size_trigger": "Size",
       "size_chart": "Tabela de tamanhos",
-      "save_html": "Poupar {{ saved_amount }}",
+      "save_html": "- {{ saved_amount }}",
       "sale": "Promoção",
       "show_more": "Mostrar mais"
     },
@@ -464,9 +492,10 @@
       "view_product": "Ver produto",
       "pre_order": "Pedido antecipado",
       "add_to_bundle": "Adicionar ao pacote",
+      "shop_the_look": "Compre o Visual",
       "vendor": "Vendedor",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href='{{ link }}'>Envio<\/a> calculado na finalização da compra.",
+      "shipping_policy_html": "<a href='{{ link }}'>Envio</a> calculado na finalização da compra.",
       "will_not_ship_until": "Pronto para enviar {{ date }}",
       "will_be_in_stock_after": "De volta ao stock {{ date }}",
       "waiting_for_stock": "Stock a caminho",
@@ -480,7 +509,7 @@
       "regular_price": "Preço normal",
       "sale_price": "Promoção",
       "unit_price": "Preço unitário",
-      "from_price_html": "<small>De<\/small> {{ price }}"
+      "from_price_html": "<small>De</small> {{ price }}"
     },
     "media": {
       "open_media": "Open media {{ index }} in modal",
@@ -505,7 +534,7 @@
       "title": "Preço por volume",
       "note": "Preços por volume disponíveis",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "at {{ price }}\/ea",
+      "price_at_each": "at {{ price }}/ea",
       "price_range": "{{ minimum }} - {{ maximum }}"
     },
     "inventory": {
@@ -527,9 +556,9 @@
       "view_store_info": "Ver informações da loja",
       "check_other_stores": "Consulte disponibilidade noutras lojas",
       "pick_up_available": "Levantamento disponível",
-      "pick_up_available_at_html": "Levantamento disponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
+      "pick_up_available_at_html": "Levantamento disponível em <span class=\"color-foreground\">{{ location_name }}</span>",
       "pick_up_unavailable": "Levantamento indisponível no momento",
-      "pick_up_unavailable_at_html": "A recolha atualmente indisponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
+      "pick_up_unavailable_at_html": "A recolha atualmente indisponível em <span class=\"color-foreground\">{{ location_name }}</span>",
       "unavailable": "Não foi possível carregar a disponibilidade de levantamento",
       "refresh": "Atualizar"
     },
@@ -578,8 +607,5 @@
       "send_on": "AAAA-MM-DD",
       "send_on_label": "Enviar a (opcional)"
     }
-  },
-  "date_formats": {
-    "month_day_year": "%b %d, %Y"
   }
 }

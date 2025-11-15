@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "accessibility": {
@@ -54,7 +45,7 @@
       "login_form_password": "Adgangskode",
       "login_form_error": "Forkert adgangskode!",
       "login_form_submit": "Log ind",
-      "admin_link_html": "Er du butiksejeren? <a href=\"\/admin\" class=\"link\">Log ind her<\/a>",
+      "admin_link_html": "Er du butiksejeren? <a href=\"/admin\" class=\"link\">Log ind her</a>",
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
     },
     "breadcrumbs": {
@@ -88,7 +79,9 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "discord": "Discord",
+        "line": "LINE"
       }
     },
     "newsletter": {
@@ -97,10 +90,10 @@
       "submit": "Abonner"
     },
     "search": {
-      "title": "fejl",
+      "title": "Søg her",
       "title_results": "Søgeresultater",
       "placeholder": "Søg...",
-      "clear": "Klar",
+      "clear": "Ryd",
       "suggestions": "Forslag",
       "products": "Produkter",
       "collections": "Kollektioner",
@@ -132,17 +125,28 @@
       "note": {
         "title": "Besked",
         "caption": "Skriv din besked",
-        "button": "Brugt"
+        "placeholder": "Besked",
+        "button": "Anvend"
       },
       "shipping_calculator": {
         "title": "Fragt",
-        "caption": "Beregn forsendelsesomkostninger",
+        "caption": "Estimer forsendelse",
         "tooltip": "Dine forsendelsesomkostninger vil blive beregnet ved kassen",
         "button": "Find ud af det",
         "error": "Der opstod en fejl",
         "not_found": "Vi sender ikke til din adresse",
         "one_result": "Der er ét resultat for din adresse",
         "multiple_results": "Der er flere resultater for din adresse"
+      },
+      "discount": {
+        "title": "Rabat",
+        "caption": "Rabat",
+        "placeholder": "Rabatkode",
+        "button": "Anvend",
+        "error": "Rabatkoden kan ikke anvendes i din indkøbskurv",
+        "shipping_error": "Forsendelsesrabatter vises ved betaling efter tilføjelse af en adresse",
+        "applied": "Anvendt rabatkode: {{ code }}",
+        "remove": "Fjern rabatten {{ code }}"
       },
       "recently_viewed": {
         "empty": "Din tidligere viste er tom"
@@ -167,6 +171,11 @@
     }
   },
   "sections": {
+    "announcements": {
+      "carousel": "Karrusel",
+      "announcement": "Meddelelse",
+      "announcement_bar": "Meddelelseslinje"
+    },
     "blog_posts": {
       "view_all": "Hvis kl"
     },
@@ -186,19 +195,20 @@
       "auth_error_html": "Fejl, google maps auth"
     },
     "slideshow": {
+      "carousel": "Karrusel",
       "play_slideshow": "Afspil diasshow",
       "pause_slideshow": "Sæt diasshow på pause"
     },
     "product_bundle": {
       "total": "Total",
-      "remove": "Fjerne",
+      "remove": "Fjern",
       "add_to_cart": "Tilføj til kurv",
       "discounts_at_checkout": "Rabatter vil blive anvendt ved kassen."
     },
     "quick_order_list": {
       "product_total": "Subtotal for produkt",
       "view_cart": "Se indkøbskurv",
-      "each": "{{ money }}\/stk.",
+      "each": "{{ money }}/stk.",
       "product": "Produkt",
       "variant": "Variant",
       "variant_total": "Variant i alt",
@@ -219,6 +229,9 @@
       "min_error": "Denne vare har en minimumsgrænse på {{ min }}",
       "max_error": "Denne vare har en maksimumgrænse på {{ max }}",
       "step_error": "Du kan kun tilføje denne vare i intervaller på {{ step }}"
+    },
+    "comparison-table": {
+      "highlight_differences": "Fremhæv forskelle"
     }
   },
   "blogs": {
@@ -246,14 +259,14 @@
   "cart": {
     "general": {
       "title": "Indkøbskurv",
-      "remove": "Fjerne",
+      "remove": "Fjern",
       "note": "Besked",
-      "subtotal": "Subtotal",
+      "subtotal": "I alt",
       "cart_error": "Der opstod en fejl under opdatering af din indkøbskurv. Prøv venligst igen.",
       "cart_quantity_error_html": "Du kan kun tilføje {{ quantity }} af denne vare til din indkøbskurv.",
-      "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">forsendelse<\/a> beregnes ved kassen",
+      "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">forsendelse</a> beregnes ved kassen",
       "taxes_included_but_shipping_at_checkout": "Inklusiv moms, fragt beregnes ved kassen",
-      "taxes_included_and_shipping_policy_html": "Skat inkluderet. <a href=\"{{ link }}\">Forsendelse<\/a> beregnes ved kassen.",
+      "taxes_included_and_shipping_policy_html": "Skat inkluderet. <a href=\"{{ link }}\">Forsendelse</a> beregnes ved kassen.",
       "taxes_and_shipping_at_checkout": "Inklusiv moms, fragt beregnes ved kassen",
       "update": "Opdater indkøbskurven",
       "checkout": "Gå til kassen",
@@ -269,7 +282,19 @@
     },
     "gift_wrapping": {
       "message_html": "For {{ price }} skal du pakke mine produkter ind",
-      "note_placeholder": "Gavebesked (gratis og valgfrit)"
+      "note_placeholder": "Gavebesked (gratis og valgfrit)",
+      "gift_wrapping_label": "Gaveindpakning:",
+      "gift_wrapping_list": "Gaveindpakning liste",
+      "gift_wrapping_unavailable": "Dette produkt er ikke tilgængeligt til gaveindpakning. Tak for forståelsen.",
+      "boolean": {
+        "true": "Ja",
+        "false": "Ingen"
+      },
+      "attributes": {
+        "gift_wrap": "Gaveindpakning",
+        "gift_note": "Gaveseddel",
+        "target_product": "For"
+      }
     }
   },
   "collections": {
@@ -285,7 +310,9 @@
       "product_count_simple": {
         "one": "{{ count }} produkt",
         "other": "{{ count }} produkter"
-      }
+      },
+      "show_on_model": "Vis på model",
+      "product_view": "Produktvisning"
     },
     "sorting": {
       "sort_button": "Sortere",
@@ -303,17 +330,17 @@
       "in_stock_only": "På lager",
       "clear": "Fjern \"{{ name }}\"",
       "clear_all": "Slet alt",
-      "apply": "Brugt"
+      "view_results": "Se resultater"
     },
     "subcollections": {
-      "all_products": "Ved {{ collection }}"
+      "all_products": "Alle {{ collection }}"
     }
   },
   "localization": {
-    "country_label": "Land\/Region",
+    "country_label": "Land/Region",
     "language_label": "Sprog",
     "update_language": "Opdater sprog",
-    "update_country": "Opdater land\/område"
+    "update_country": "Opdater land/område"
   },
   "contact": {
     "form": {
@@ -330,7 +357,7 @@
       "title": "Min konto",
       "log_out": "Log ud",
       "details": "Kontooplysninger",
-      "view_addresses": "Kontakt",
+      "view_addresses": "Se adresser",
       "return": "Tilbage til konto"
     },
     "activate_account": {
@@ -342,26 +369,26 @@
       "cancel": "Afslå invitationen"
     },
     "addresses": {
-      "title": "Adressat",
+      "title": "Adresser",
       "default": "Standard",
       "add_new": "Tilføj ny adresse",
       "edit_address": "skifte adresse",
       "first_name": "Fornavn",
       "last_name": "Efternavn",
       "company": "Forretning",
-      "address1": "adresse 1",
+      "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "By",
-      "country": "Land\/Region",
+      "country": "Land/Region",
       "province": "Provins",
-      "zip": "Podkod\/postnummer",
+      "zip": "Podkod/postnummer",
       "phone": "Telefon",
       "set_default": "Indstil som standardadresse",
       "add": "Tilføj adresse",
       "update": "Opdater adresse",
       "cancel": "Afbestille",
       "edit": "Lave om",
-      "delete": "Fjerne",
+      "delete": "Fjern",
       "delete_confirm": "Er du sikker på, at du vil slette denne adresse?"
     },
     "login": {
@@ -395,6 +422,7 @@
       "payment_status": "Betalingsstatus",
       "shipping_address": "Leveringsadresse",
       "fulfillment_status": "Leveringsstatus",
+      "discounts": "Rabatter",
       "discount": "Rabat",
       "shipping": "Fragt",
       "tax": "Skat",
@@ -434,7 +462,7 @@
       "email": "E-mail",
       "password": "Adgangskode",
       "accepts_marketing": "Tilmeld dig vores nyhedsbrev",
-      "submit": "skab",
+      "submit": "Opret bruger",
       "sign_in": "Log ind",
       "return": "Tilbage til butikken"
     }
@@ -464,9 +492,10 @@
       "view_product": "Med produktet",
       "pre_order": "Forudbestil",
       "add_to_bundle": "Tilføj til bundt",
+      "shop_the_look": "Køb looket",
       "vendor": "Sælger",
       "include_taxes": "Skat inkluderet.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
       "will_not_ship_until": "Klar til at sende {{ date }}",
       "will_be_in_stock_after": "Tilbage på lager {{ date }}",
       "waiting_for_stock": "Lager på vej",
@@ -480,7 +509,7 @@
       "regular_price": "Almindelig pris",
       "sale_price": "Udsalgspris",
       "unit_price": "St pris",
-      "from_price_html": "<small>From<\/small> {{ price }}"
+      "from_price_html": "<small>From</small> {{ price }}"
     },
     "media": {
       "open_media": "Åbn medie {{ index }} i modul",
@@ -505,7 +534,7 @@
       "title": "Mængderabat",
       "note": "Mængderabat tilgængelig",
       "minimum": "Mere end {{ quantity }}",
-      "price_at_each": "til {{ price }}\/stk",
+      "price_at_each": "til {{ price }}/stk",
       "price_range": "{{ minimum }} – {{ maximum }}"
     },
     "inventory": {
@@ -517,7 +546,7 @@
         "other": "Skynd dig, kun {{ count }} varer tilbage på lager!"
       },
       "out_of_stock": "Udsolgt",
-      "out_of_stock_continue_selling": "Ledig",
+      "out_of_stock_continue_selling": "På lager",
       "will_not_ship_until": "Klar til at sende",
       "will_be_in_stock_after": "Tilbage på lager",
       "waiting_for_stock": "Lager på vej"
@@ -572,14 +601,11 @@
       "email": "E-mail",
       "name_label": "Modtagernavn (valgfrit)",
       "name": "Navn",
-      "message": "Besked",
       "message_label": "Besked (valgfrit)",
+      "message": "Besked",
       "max_characters": "{{ max_chars }} antal tegn",
       "send_on": "ÅÅÅÅ-MM-DD",
       "send_on_label": "Send videre (valgfrit)"
     }
-  },
-  "date_formats": {
-    "month_day_year": "%b %d, %Y"
   }
 }

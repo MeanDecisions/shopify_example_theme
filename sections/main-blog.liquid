@@ -6,6 +6,7 @@
 </style>
 
 {{ 'blog.css' | asset_url | stylesheet_tag }}
+{{ 'collection.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'blog.js' | asset_url }}" defer></script>
 
 {%- paginate blog.articles by section.settings.per_page -%}
@@ -26,7 +27,7 @@
         {%- endif -%}
 
         <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }}">
-          <split-words class="split-words block" data-animate="fade-up-large">{{ blog.title }}</split-words>
+          <split-words class="split-words js-invisible block" data-animate="fade-up-large">{{ blog.title }}</split-words>
         </{{ section.settings.heading_tag }}>
 
         {%- if section.settings.description != blank -%}
@@ -66,7 +67,7 @@
               <select id="TagFilter" class="select" is="tag-filter">
                 <option value="{{ blog.url }}">{{ 'blogs.article.all_tags' | t }}</option>
                 {%- for tag in blog.all_tags -%}
-                  <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
+                  <option value="{{ blog.url }}/tagged/{{ tag | handleize }}"{% if current_tags contains tag %} selected{% endif %}>{{ tag }}</option>
                 {%- endfor -%}
               </select>
               {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
