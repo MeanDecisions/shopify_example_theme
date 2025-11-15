@@ -9855,7 +9855,7 @@ details.active .drawer__promotions .mega-menu__item,
 }
 
 .product-card__bottom {
-  padding-block-start: var(--sp-4);
+  padding-block-start: 0.4REM;
 }
 
 .product-card__bottom .color-swatch {
