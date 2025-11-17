@@ -1,0 +1,38 @@
+# Shopify Theme Check configuration tailored for Concept upgrade workstreams
+# Keep vendor defaults enabled where possible to catch breaking changes early.
+
+root: .
+
+require:
+  - theme-check-shopify/liquid
+
+checks:
+  TranslationKeyExists:
+    enabled: true
+  NestedSnippet:
+    enabled: false
+  ImgWidthHeight:
+    enabled: true
+  RemoteAsset:
+    enabled: true
+  UnusedSnippet:
+    enabled: true
+  LiquidHtmlTag:
+    enabled: true
+  SchemaJsonFormat:
+    enabled: true
+  AssetSizeCSS:
+    enabled: true
+  AssetSizeJS:
+    enabled: true
+  AssetPreload:
+    enabled: true
+  DeprecatedTags:
+    enabled: true
+  RequiredThemeSettings:
+    enabled: true
+
+exclude:
+  - node_modules/**/*
+  - dist/**/*
+  - vendor/**/*
