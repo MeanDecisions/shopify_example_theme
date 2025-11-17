@@ -1,0 +1,43 @@
+name: Theme Lint and Format
+
+on:
+  pull_request:
+    branches:
+      - main
+      - upgrade/**
+  push:
+    branches:
+      - upgrade/**
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Node dependencies
+        run: |
+          npm install --no-fund
+
+      - name: Run Prettier formatting check
+        run: |
+          npx prettier --check "{assets,config,layout,locales,sections,snippets,templates}/**/*.{liquid,json,css,js}"
+
+      - name: Upload Prettier diff on failure
+        if: failure()
+        run: |
+          git diff
+
+      - name: Run Shopify Theme Check
+        uses: Shopify/theme-check-action@v1
+        with:
+          theme_root: .
+          token: ${{ secrets.SHOPIFY_CLI_THEME_TOKEN || '' }}
+          flags: "--config theme-check.yml"
